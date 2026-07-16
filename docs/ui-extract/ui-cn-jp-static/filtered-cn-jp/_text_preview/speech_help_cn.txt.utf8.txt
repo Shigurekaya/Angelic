@@ -1,0 +1,136 @@
+﻿# 文字朗读功能设置帮助
+
+这是一项为没有语音的部分（如叙事文本和主角对话）分配机械生成语音的功能。
+请注意以下限制：
+
+@if exp="condition('ancient')"
+  - 文字朗读功能将在消息文本完全显示并等待点击后执行。
+@endif
+  - 由于机械阅读的特性，可能会出现发音错误的情况。
+  - 回顾记录中的无语音文本没有朗读功能。
+
+可以从菜单的"[emb exp="getMenuPath()"]"更改各种设置。
+@if exp="condition('advanced')"
+※在菜单中勾选"[emb exp="getMenuPath('showAdvancedMenuItem')"]"后，将显示"[emb exp="getMenuPath('troubleShootMenu')"]"。
+@endif
+
+## 设置项目说明
+
+以下是设置对话框中各项目的说明。
+
+[*] [emb exp="getItemText('Enabled')"]
+  勾选此项以启用此功能。
+
+[*] [emb exp="getItemText('grpTYPE')"]
+  您可以从以下三种方法中选择机械生成语音的方式。
+  如果由于未安装运行时等原因而无法进行日语发音，则无法选择这些选项。
+  对于 Windows 10 及更高版本的运行环境，请使用"[emb exp="getItemText('UseSAPI')"]"。
+
+    - [emb exp="getItemText('UseSAPI')"]
+        这是微软开发的语音合成和识别API。
+        请从Windows语言设置中安装所需的语言语音合成。
+        在 Windows 10 及以上版本中，操作系统的语言语音功能从一开始就可用，无需安装。
+        对于其他语言，请从操作系统的语言设置中安装相应的语音。
+
+    - [emb exp="getItemText('UseMSSP')"]
+        这是微软开发的语音合成和识别API。
+        另外安装运行时和语言库。
+
+        可从以下网址下载并安装 (英文网页)
+        > http://www.microsoft.com/en-us/download/details.aspx?id=27225
+        > http://www.microsoft.com/en-us/download/details.aspx?id=27224
+        为所需语言安装 64 位和 32 位版本的运行时和 MSSpeech_TTS_*.msi。
+
+    - [emb exp="getItemText('UseXAPP')"]
+        这种方法通过调用指定的命令行应用程序，从任意文本
+        生成语音合成的wav文件。
+        勾选"外部应用程序调用"后，按"選択"按钮
+        选择命令行应用程序。
+        按下语音参数设置按钮可以显示命令行参数的描述方法。
+
+        由于每个应用程序的命令行规格不同，因此不保证操作支持。
+        请预先理解这一点。
+
+@if exp="condition('voicevox')"
+    - [emb exp="getItemText('UseVVOX')"]
+        这是使用开源VOICEVOX引擎的语音合成。
+        需要预先从 https://voicevox.hiroshiba.jp/ 下载、
+        安装并启动VOICEVOX应用程序。（※仅限日语）
+        如果找到引擎，选择项目时会显示版本。
+        如果引擎未运行，即使选择也无法更改各种设置。
+
+        仅在引擎启动选项中指定了主机地址或端口号时
+        才需要更改API地址设置。
+@endif
+
+[*] [emb exp="getItemText('grpVOICE')"]
+  您可以为"无语音对话"和"叙事文本"两种类型指定语音参数。
+  "无语音对话"指虽有角色名称显示但没有语音的消息文本，
+  "叙事文本"指没有名称显示的消息文本。
+
+  这两种类型的语音参数都可以从以下设置中选择：
+
+    - [emb exp="getItemText('ComSetting')"]
+        当两种类型使用相同的语音参数时选择此项。
+        可以使用"通用设置"栏右侧的"設定"按钮更改语音参数。
+
+    - [emb exp="getItemText('SepSetting')"]
+        当每种类型使用不同的语音参数时选择此项。
+        可以使用每个选择栏右侧的"設定"按钮更改语音参数。
+
+    - [emb exp="getItemText('Disabled')"]
+        禁用文字朗读功能。
+
+  按下"[emb exp="getItemText('Config')"]"按钮会打开"[emb exp="getItemText('grpTYPE')"]"中指定格式的设置对话框。
+  对于"[emb exp="getItemText('UseSAPI')"]"和"[emb exp="getItemText('UseMSSP')"]"，可以指定说话者、速度和音高。
+  对于"[emb exp="getItemText('UseXAPP')"]"，可以指定命令行选项。
+
+  按下各"[emb exp="getItemText('Play')"]"按钮可以使用"[emb exp="getItemText('txtLABEL')"]"中输入的文本进行语音测试。
+
+[*] [emb exp="getItemText('EnvSave')"]／[emb exp="getItemText('EnvLoad')"]
+  保存和加载语音合成方法和语音参数的各种设置。
+  保存的设置也可以在其他游戏中加载。
+
+[*] [emb exp="getItemText('grpVOLUME')"]
+  指定生成的合成语音的音量[if exp="condition('vocoder')"]和速度[endif]。
+
+    - [emb exp="getItemText('VolGame')"]
+        使用游戏设置中的音量进行朗读。
+
+    - [emb exp="getItemText('VolIndep')"]
+        使用下方滑块设置的音量进行朗读。
+@if exp="0 @if(SPEECH_ENABLE_VOCODER>0)||1 @endif"
+
+    - [emb exp="getItemText('EnVocoder')"]
+        使用游戏的语音速度设置播放合成后的语音。
+@endif
+
+[*] [emb exp="getItemText('grpDICT')"]
+  可以设置词典来纠正发音错误。
+  在执行朗读处理之前，会对要朗读的文本进行词典替换处理。
+
+    - "[emb exp="getItemText('DictAdd')"]"按钮
+        添加词典单词。
+        通过设置单词和读音，在朗读前进行替换处理。
+        双击单词列表中的单词可以编辑其读音。
+
+    - "[emb exp="getItemText('DictUp')"]"／"[emb exp="getItemText('DictDown')"]"按钮
+        更改所选单词的顺序。
+        由于替换处理优先考虑最长匹配，显示顺序并不特别影响。
+        请用于单词分类整理。
+
+    - "[emb exp="getItemText('DictSel')"]"按钮
+        执行单词的全选／取消全选。
+        在单词列表中按住Control键选择可以进行多选。
+
+    - "[emb exp="getItemText('DictDel')"]"按钮
+        删除所选单词。
+@if exp="condition('defdict')"
+        当单词列表为空时按下将重置为默认词典。
+@endif
+
+    - [emb exp="getItemText('DictImport')"]
+        将已注册的词典单词保存到文件。
+
+    - [emb exp="getItemText('DictExport')"]
+        从文件导入词典单词数据。

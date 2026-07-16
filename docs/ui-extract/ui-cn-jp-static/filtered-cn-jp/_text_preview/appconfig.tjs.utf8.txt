@@ -1,0 +1,14 @@
+﻿// 環境情報用変数
+with (typeof global.ENV_context == "Object" ? global.ENV_context : global) {
+	.ENV_Maker     = "YuzuSoft";
+	.ENV_MakerURL  = "http://yuzu-soft.com/";
+	.ENV_GameName  = "Angelic☆Chaos RE-BOOT!";
+	.ENV_GameURL   = "https://www.yuzu-soft.com/products/ten_sz/";
+	.ENV_GameId    = "{ED0ADFE2-F13E-4C6E-8B5E-FB47E8B2D07D}";
+	.ENV_ReadmeFile= "readme.txt";
+	.ENV_ReadmeName= "Open Readme File";
+	.ENV_IconFile  = "setup/desktop.ico";
+	.ENV_PKeyName  = "";
+}
+// ※このファイルは直接編集しないでください
+// （元となる MakeConfig.txt を編集して MakeMenuから直makeの「gameconfig」で更新）

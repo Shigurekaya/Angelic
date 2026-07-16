@@ -1,0 +1,35 @@
+﻿*.enter = @up
+*.leave = @down
+*.push  = @push
+*.pop   = @pop
+*.click = @click
+
+bg0 = alias : bgsel
+bg1 = alias : bgsel
+bg2 = alias : bgsel
+bg3 = alias : bgsel
+bg4 = alias : bgsel
+bg5 = alias : bgsel
+bg6 = alias : bgsel
+bg7 = alias : bgsel
+bg8 = alias : bgsel
+switch = alias : bgsel
+language = alias : bgsel
+
+up    = zoom(100)       : y(-8)/300/-1
+down  = zoom(100)/100/1 : y(0)/300/acdec
+push  = zoom(95)/100/-1
+pop   = zoom(100)/100/1
+click = zoom(100)/100/1 : y(0)/100
+
+bgsel.enter
+bgsel.leave
+bgsel.push
+bgsel.pop
+bgsel.click
+
+back.enter
+back.leave
+back.push
+back.pop
+back.click

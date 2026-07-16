@@ -1,0 +1,106 @@
+﻿# セーブロード画面ヘルプテキスト
+
+back	title	title2
+	返回标题界面。
+
+to_cg
+	跳转至ＣＧ鉴赏界面。
+to_scene
+	跳转至场景鉴赏界面。
+to_stand
+	跳转至立绘鉴赏界面。${_disableStand}
+DISABLE_STAND
+	（全部角色攻略完成前无法使用）
+to_voice
+	跳转至语音收藏夹界面。
+
+grouparea
+	选择目录一览。
+itemarea
+	选择鉴赏对象。
+
+keepbgm
+	回到标题界面后继续播放音乐。
+
+snd_itemarea
+	选择要播放的歌曲。
+
+seek
+	播放进度条。
+ptime_now	ptime_len
+	音乐时长。
+
+pprev
+	播放上一首。
+pnext
+	播放下一首。
+play
+	播放/停止
+playpause
+	暂停
+repeat_a
+	列表循环
+repeat_s
+	随机播放
+volume
+	设置音量（仅在当前界面有效）。
+
+
+snd_pageup
+	滚动到上一页。
+snd_pagedown
+	滚动到下一页。
+snd_top
+	滚动到顶部。
+snd_end
+	滚动到底部。
+
+#------------------------------------------------------------------------------
+# CG鑑賞中
+
+lock
+	始终显示缩略图。
+rep
+	循环显示同一组CG的差分/一组CG显示完后切换至下一组CG
+
+scr_hgrp
+	滚动或更改CG一览的显示模式。
+scr_vgrp
+	滚动或更改CG差分的显示模式。
+
+help_hbar
+	从CG一览中选择要显示的CG。可以用鼠标滚轮或拖动操作。
+help_vbar
+	从CG差分中选择要显示的CG。可以用鼠标滚轮或拖动操作。
+help_center
+	单击切换到下一张CG。
+itemview
+	这是当前显示的CG。鼠标滚轴可以纵向滚动。鼠标拖动可以横向滚动。
+help_center
+	${switchCgViewCenterHelp("CGVIEW_CLICK","CGVIEW_DRAG")}
+CGVIEW_CLICK
+	点击画面切换到下一张CG。
+CGVIEW_DRAG
+	拖动画面更改显示位置。滚动鼠标滚轴放大缩小。
+
+close
+	回到选择界面。
+
+kbd
+	↓,Space,Enter:下一张CG ／ ↑,BackSpace:上一张CG ／ ←→:CG选择 ／ ${ESC}:返回 ／	Delete,Control:PreviewLock切换
+#Shift+↑↓:CG滚动（※有些CG不可用）。
+ESC
+	ESC
+SCRAMBLE
+	半角/全角
+
+#------------------------------------------------------------------------------
+SUBITEM
+	从这张缩略图的场景开始鉴赏。
+SUBITEM_NODIV
+	鉴赏这个场景。（※无法选择开始位置）
+
+OPMOVIE	sitem0
+	播放ＯＰ动画。
+EDMOVIE	sitem1
+	播放ＥＤ动画

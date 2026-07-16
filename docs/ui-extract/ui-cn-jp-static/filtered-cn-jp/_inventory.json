@@ -1,0 +1,1507 @@
+[
+  {
+    "resolved": "locale/cn/snapcapture_twitter_cn.txt",
+    "src_pack": "data",
+    "bytes": 654
+  },
+  {
+    "resolved": "locale/cn/title_logo_cn.png",
+    "src_pack": "data",
+    "bytes": 444329
+  },
+  {
+    "resolved": "locale/cn/help_extra_cn.txt",
+    "src_pack": "data",
+    "bytes": 2850
+  },
+  {
+    "resolved": "locale/cn/extra_watermark_cn.png",
+    "src_pack": "data",
+    "bytes": 89955
+  },
+  {
+    "resolved": "locale/cn/aboutdialog_cn.png",
+    "src_pack": "data",
+    "bytes": 452754
+  },
+  {
+    "resolved": "locale/cn/help_tui_cn.txt",
+    "src_pack": "data",
+    "bytes": 4356
+  },
+  {
+    "resolved": "locale/cn/speech_defdic_cn.txt",
+    "src_pack": "data",
+    "bytes": 112
+  },
+  {
+    "resolved": "locale/cn/syslangtext_cn.ini",
+    "src_pack": "data",
+    "bytes": 43238
+  },
+  {
+    "resolved": "locale/cn/musictitle_cn.txt",
+    "src_pack": "data",
+    "bytes": 2700
+  },
+  {
+    "resolved": "locale/cn/help_opt_cn.txt",
+    "src_pack": "data",
+    "bytes": 21712
+  },
+  {
+    "resolved": "locale/cn/help_lang_cn.txt",
+    "src_pack": "data",
+    "bytes": 360
+  },
+  {
+    "resolved": "locale/cn/sqscrmask_cn.png",
+    "src_pack": "data",
+    "bytes": 23344
+  },
+  {
+    "resolved": "locale/cn/speech_app_cn.txt",
+    "src_pack": "data",
+    "bytes": 666
+  },
+  {
+    "resolved": "locale/cn/speech_help_cn.txt",
+    "src_pack": "data",
+    "bytes": 7570
+  },
+  {
+    "resolved": "locale/cn/deactivelogo_cn.png",
+    "src_pack": "data",
+    "bytes": 183484
+  },
+  {
+    "resolved": "locale/cn/uitexts_cn.toml",
+    "src_pack": "data",
+    "bytes": 26870
+  },
+  {
+    "resolved": "locale/cn/help_file_cn.txt",
+    "src_pack": "data",
+    "bytes": 6674
+  },
+  {
+    "resolved": "locale/cn/snapcapture_datefmt_cn.txt",
+    "src_pack": "data",
+    "bytes": 268
+  },
+  {
+    "resolved": "locale/cn/scramble2_cn.png",
+    "src_pack": "data",
+    "bytes": 54119
+  },
+  {
+    "resolved": "locale/cn/attention_cn.png",
+    "src_pack": "data",
+    "bytes": 2383331
+  },
+  {
+    "resolved": "locale/cn/help_stand_cn.txt",
+    "src_pack": "data",
+    "bytes": 2728
+  },
+  {
+    "resolved": "locale/cn/flow_texts_cn.ini",
+    "src_pack": "data",
+    "bytes": 14228
+  },
+  {
+    "resolved": "locale/cn/help_flow_cn.txt",
+    "src_pack": "data",
+    "bytes": 1338
+  },
+  {
+    "resolved": "k2compat/k2compat_fontselect.tjs",
+    "src_pack": "data",
+    "bytes": 10760
+  },
+  {
+    "resolved": "font/sourcehansansjp-heavy.otf",
+    "src_pack": "data",
+    "bytes": 4807164
+  },
+  {
+    "resolved": "font/numfont_atlas.tjs",
+    "src_pack": "data",
+    "bytes": 5345
+  },
+  {
+    "resolved": "font/font2_20.tft",
+    "src_pack": "data",
+    "bytes": 27520
+  },
+  {
+    "resolved": "font/sysfont_16.tft",
+    "src_pack": "data",
+    "bytes": 423120
+  },
+  {
+    "resolved": "font/font1_10.tft",
+    "src_pack": "data",
+    "bytes": 300384
+  },
+  {
+    "resolved": "font/sourcehanserifjp-heavy.otf",
+    "src_pack": "data",
+    "bytes": 6348180
+  },
+  {
+    "resolved": "font/sourcehanserifsc-bold.otf",
+    "src_pack": "data",
+    "bytes": 24683616
+  },
+  {
+    "resolved": "font/font1_20.tft",
+    "src_pack": "data",
+    "bytes": 757984
+  },
+  {
+    "resolved": "font/sysfont_30.tft",
+    "src_pack": "data",
+    "bytes": 877724
+  },
+  {
+    "resolved": "font/kosugi-notice.txt",
+    "src_pack": "data",
+    "bytes": 1432
+  },
+  {
+    "resolved": "font/font2_32.tft",
+    "src_pack": "data",
+    "bytes": 45356
+  },
+  {
+    "resolved": "font/sysfont_22.tft",
+    "src_pack": "data",
+    "bytes": 632216
+  },
+  {
+    "resolved": "font/font4it_26.tft",
+    "src_pack": "data",
+    "bytes": 33984
+  },
+  {
+    "resolved": "font/font4it_20.tft",
+    "src_pack": "data",
+    "bytes": 25708
+  },
+  {
+    "resolved": "font/font3it_14.tft",
+    "src_pack": "data",
+    "bytes": 17400
+  },
+  {
+    "resolved": "font/font4_32.tft",
+    "src_pack": "data",
+    "bytes": 40488
+  },
+  {
+    "resolved": "font/sourcehanserifsc-heavy.otf",
+    "src_pack": "data",
+    "bytes": 22915736
+  },
+  {
+    "resolved": "font/embfontlist.tjs",
+    "src_pack": "data",
+    "bytes": 10532
+  },
+  {
+    "resolved": "font/headfont_24.tft",
+    "src_pack": "data",
+    "bytes": 775596
+  },
+  {
+    "resolved": "font/font4it_14.tft",
+    "src_pack": "data",
+    "bytes": 17204
+  },
+  {
+    "resolved": "font/lets.txt",
+    "src_pack": "data",
+    "bytes": 354
+  },
+  {
+    "resolved": "font/font3it_26.tft",
+    "src_pack": "data",
+    "bytes": 33276
+  },
+  {
+    "resolved": "font/sourcehansansjp-regular.otf",
+    "src_pack": "data",
+    "bytes": 4480124
+  },
+  {
+    "resolved": "font/sourcehansanssc-heavy.otf",
+    "src_pack": "data",
+    "bytes": 17324776
+  },
+  {
+    "resolved": "font/headfont_36.tft",
+    "src_pack": "data",
+    "bytes": 1194052
+  },
+  {
+    "resolved": "font/lets_cn.txt",
+    "src_pack": "data",
+    "bytes": 504
+  },
+  {
+    "resolved": "font/font4_56.tft",
+    "src_pack": "data",
+    "bytes": 68128
+  },
+  {
+    "resolved": "font/ctxfontprefs.toml",
+    "src_pack": "data",
+    "bytes": 35270
+  },
+  {
+    "resolved": "font/font4_48.tft",
+    "src_pack": "data",
+    "bytes": 60964
+  },
+  {
+    "resolved": "font/sourcehansansandserif-license.txt",
+    "src_pack": "data",
+    "bytes": 8788
+  },
+  {
+    "resolved": "font/font1_56.tft",
+    "src_pack": "data",
+    "bytes": 2448580
+  },
+  {
+    "resolved": "font/font2_56.tft",
+    "src_pack": "data",
+    "bytes": 77280
+  },
+  {
+    "resolved": "font/sourcehansanstc-heavy.otf",
+    "src_pack": "data",
+    "bytes": 17343740
+  },
+  {
+    "resolved": "font/font4_10.tft",
+    "src_pack": "data",
+    "bytes": 11004
+  },
+  {
+    "resolved": "font/namefont_atlas.tjs",
+    "src_pack": "data",
+    "bytes": 31502
+  },
+  {
+    "resolved": "font/sourcehanserifjp-bold.otf",
+    "src_pack": "data",
+    "bytes": 6445704
+  },
+  {
+    "resolved": "font/ctxfontprefs.tjs",
+    "src_pack": "data",
+    "bytes": 18753
+  },
+  {
+    "resolved": "font/kosugi-license.txt",
+    "src_pack": "data",
+    "bytes": 20708
+  },
+  {
+    "resolved": "font/font2_10.tft",
+    "src_pack": "data",
+    "bytes": 13644
+  },
+  {
+    "resolved": "font/sourcehanseriftc-heavy.otf",
+    "src_pack": "data",
+    "bytes": 22916932
+  },
+  {
+    "resolved": "font/sourcehansanssc-regular.otf",
+    "src_pack": "data",
+    "bytes": 16412776
+  },
+  {
+    "resolved": "font/font3it_39.tft",
+    "src_pack": "data",
+    "bytes": 49756
+  },
+  {
+    "resolved": "font/headfont_20.tft",
+    "src_pack": "data",
+    "bytes": 608104
+  },
+  {
+    "resolved": "font/sourcehansanstc-bold.otf",
+    "src_pack": "data",
+    "bytes": 17002656
+  },
+  {
+    "resolved": "font/headfont_30.tft",
+    "src_pack": "data",
+    "bytes": 976580
+  },
+  {
+    "resolved": "font/sourcehansanssc-bold.otf",
+    "src_pack": "data",
+    "bytes": 16983696
+  },
+  {
+    "resolved": "font/sysfont_18.tft",
+    "src_pack": "data",
+    "bytes": 495796
+  },
+  {
+    "resolved": "font/kosugimaru-regular.ttf",
+    "src_pack": "data",
+    "bytes": 2558264
+  },
+  {
+    "resolved": "font/sysfont_12.tft",
+    "src_pack": "data",
+    "bytes": 286012
+  },
+  {
+    "resolved": "font/keyfont_atlas.png",
+    "src_pack": "data",
+    "bytes": 485008
+  },
+  {
+    "resolved": "font/font4_14.tft",
+    "src_pack": "data",
+    "bytes": 16364
+  },
+  {
+    "resolved": "font/keyfont_atlas.tjs",
+    "src_pack": "data",
+    "bytes": 26939
+  },
+  {
+    "resolved": "font/sysfont_10.tft",
+    "src_pack": "data",
+    "bytes": 226104
+  },
+  {
+    "resolved": "font/headfont_22.tft",
+    "src_pack": "data",
+    "bytes": 699496
+  },
+  {
+    "resolved": "font/sysfont_24.tft",
+    "src_pack": "data",
+    "bytes": 701924
+  },
+  {
+    "resolved": "font/headfont_atlas.tjs",
+    "src_pack": "data",
+    "bytes": 136208
+  },
+  {
+    "resolved": "font/font2_14.tft",
+    "src_pack": "data",
+    "bytes": 18628
+  },
+  {
+    "resolved": "font/sysfont_atlas.png",
+    "src_pack": "data",
+    "bytes": 3266410
+  },
+  {
+    "resolved": "font/font4_26.tft",
+    "src_pack": "data",
+    "bytes": 31808
+  },
+  {
+    "resolved": "font/font2_48.tft",
+    "src_pack": "data",
+    "bytes": 65980
+  },
+  {
+    "resolved": "font/font4_39.tft",
+    "src_pack": "data",
+    "bytes": 50184
+  },
+  {
+    "resolved": "font/font3it_32.tft",
+    "src_pack": "data",
+    "bytes": 40504
+  },
+  {
+    "resolved": "font/font2_39.tft",
+    "src_pack": "data",
+    "bytes": 53788
+  },
+  {
+    "resolved": "font/font4it_39.tft",
+    "src_pack": "data",
+    "bytes": 53192
+  },
+  {
+    "resolved": "font/sourcehanseriftc-bold.otf",
+    "src_pack": "data",
+    "bytes": 24684812
+  },
+  {
+    "resolved": "font/arsenal-notice.txt",
+    "src_pack": "data",
+    "bytes": 494
+  },
+  {
+    "resolved": "font/font4_20.tft",
+    "src_pack": "data",
+    "bytes": 24268
+  },
+  {
+    "resolved": "font/sysfont_15.tft",
+    "src_pack": "data",
+    "bytes": 384264
+  },
+  {
+    "resolved": "font/sysfont_20.tft",
+    "src_pack": "data",
+    "bytes": 545600
+  },
+  {
+    "resolved": "font/font4it_10.tft",
+    "src_pack": "data",
+    "bytes": 11592
+  },
+  {
+    "resolved": "font/headfont_15.tft",
+    "src_pack": "data",
+    "bytes": 396064
+  },
+  {
+    "resolved": "font/font4it_32.tft",
+    "src_pack": "data",
+    "bytes": 42932
+  },
+  {
+    "resolved": "font/font3it_20.tft",
+    "src_pack": "data",
+    "bytes": 26312
+  },
+  {
+    "resolved": "font/sourcehansansjp-bold.otf",
+    "src_pack": "data",
+    "bytes": 4631480
+  },
+  {
+    "resolved": "font/font2_26.tft",
+    "src_pack": "data",
+    "bytes": 36152
+  },
+  {
+    "resolved": "font/keyfont_14.tft",
+    "src_pack": "data",
+    "bytes": 327640
+  },
+  {
+    "resolved": "font/sourcehansanstc-regular.otf",
+    "src_pack": "data",
+    "bytes": 16431740
+  },
+  {
+    "resolved": "font/font1_32.tft",
+    "src_pack": "data",
+    "bytes": 1372788
+  },
+  {
+    "resolved": "font/font4it_56.tft",
+    "src_pack": "data",
+    "bytes": 73024
+  },
+  {
+    "resolved": "font/font1_39.tft",
+    "src_pack": "data",
+    "bytes": 1672560
+  },
+  {
+    "resolved": "font/headfont_atlas.png",
+    "src_pack": "data",
+    "bytes": 2672297
+  },
+  {
+    "resolved": "font/sysfont_atlas.tjs",
+    "src_pack": "data",
+    "bytes": 136241
+  },
+  {
+    "resolved": "font/kosugi-regular.ttf",
+    "src_pack": "data",
+    "bytes": 1918536
+  },
+  {
+    "resolved": "font/arsenal-license.txt",
+    "src_pack": "data",
+    "bytes": 8932
+  },
+  {
+    "resolved": "font/font1_14.tft",
+    "src_pack": "data",
+    "bytes": 471864
+  },
+  {
+    "resolved": "font/sourcehansansandserif-notice.txt",
+    "src_pack": "data",
+    "bytes": 356
+  },
+  {
+    "resolved": "font/namefont_atlas.png",
+    "src_pack": "data",
+    "bytes": 813368
+  },
+  {
+    "resolved": "font/font4it_48.tft",
+    "src_pack": "data",
+    "bytes": 64460
+  },
+  {
+    "resolved": "font/font1_26.tft",
+    "src_pack": "data",
+    "bytes": 1080820
+  },
+  {
+    "resolved": "font/font1_48.tft",
+    "src_pack": "data",
+    "bytes": 2116100
+  },
+  {
+    "resolved": "font/deffontmap.tjs",
+    "src_pack": "data",
+    "bytes": 4384
+  },
+  {
+    "resolved": "font/font3it_10.tft",
+    "src_pack": "data",
+    "bytes": 12392
+  },
+  {
+    "resolved": "font/numfont_atlas.png",
+    "src_pack": "data",
+    "bytes": 48984
+  },
+  {
+    "resolved": "font/font3it_48.tft",
+    "src_pack": "data",
+    "bytes": 61520
+  },
+  {
+    "resolved": "font/font3it_56.tft",
+    "src_pack": "data",
+    "bytes": 70380
+  },
+  {
+    "resolved": "uipsd/func/title_nolang.func",
+    "src_pack": "data",
+    "bytes": 132
+  },
+  {
+    "resolved": "uipsd/func/title_noclear.func",
+    "src_pack": "data",
+    "bytes": 784
+  },
+  {
+    "resolved": "uipsd/func/title_fixui.func",
+    "src_pack": "data",
+    "bytes": 136
+  },
+  {
+    "resolved": "uipsd/func/title_lang_right.func",
+    "src_pack": "data",
+    "bytes": 94
+  },
+  {
+    "resolved": "sysscn/option.tjs",
+    "src_pack": "data",
+    "bytes": 133784
+  },
+  {
+    "resolved": "sysscn/iconfader.tjs",
+    "src_pack": "data",
+    "bytes": 8040
+  },
+  {
+    "resolved": "sysscn/backlog.tjs",
+    "src_pack": "data",
+    "bytes": 90512
+  },
+  {
+    "resolved": "sysscn/backlog.ks",
+    "src_pack": "data",
+    "bytes": 4616
+  },
+  {
+    "resolved": "sysscn/browswindow.tjs",
+    "src_pack": "data",
+    "bytes": 38200
+  },
+  {
+    "resolved": "sysscn/title.ks",
+    "src_pack": "data",
+    "bytes": 2486
+  },
+  {
+    "resolved": "sysscn/help_resize.png",
+    "src_pack": "data",
+    "bytes": 3290
+  },
+  {
+    "resolved": "sysscn/fontalias.tjs",
+    "src_pack": "data",
+    "bytes": 7236
+  },
+  {
+    "resolved": "sysscn/embfontloader.tjs",
+    "src_pack": "data",
+    "bytes": 8508
+  },
+  {
+    "resolved": "sysscn/quickmenu.tjs",
+    "src_pack": "data",
+    "bytes": 34484
+  },
+  {
+    "resolved": "sysscn/bgmtitleindicator.tjs",
+    "src_pack": "data",
+    "bytes": 21396
+  },
+  {
+    "resolved": "sysscn/fonteffect.tjs",
+    "src_pack": "data",
+    "bytes": 12324
+  },
+  {
+    "resolved": "sysscn/multilang.tjs",
+    "src_pack": "data",
+    "bytes": 77332
+  },
+  {
+    "resolved": "sysscn/option.ks",
+    "src_pack": "data",
+    "bytes": 3060
+  },
+  {
+    "resolved": "sysscn/syslangtext.tjs",
+    "src_pack": "data",
+    "bytes": 8028
+  },
+  {
+    "resolved": "sysscn/advancedmenu.tjs",
+    "src_pack": "data",
+    "bytes": 3932
+  },
+  {
+    "resolved": "sysscn/prerenderfontex.tjs",
+    "src_pack": "data",
+    "bytes": 32748
+  },
+  {
+    "resolved": "sysscn/nocfchkdialog.tjs",
+    "src_pack": "data",
+    "bytes": 14204
+  },
+  {
+    "resolved": "sysscn/softcursor.tjs",
+    "src_pack": "data",
+    "bytes": 6352
+  },
+  {
+    "resolved": "sysscn/help_fszoom.png",
+    "src_pack": "data",
+    "bytes": 10117
+  },
+  {
+    "resolved": "sysscn/help_env.png",
+    "src_pack": "data",
+    "bytes": 6136
+  },
+  {
+    "resolved": "sysscn/myyesnodialog.tjs",
+    "src_pack": "data",
+    "bytes": 24184
+  },
+  {
+    "resolved": "sysscn/exmenuintf.tjs",
+    "src_pack": "data",
+    "bytes": 33276
+  },
+  {
+    "resolved": "sysscn/help_aspect.png",
+    "src_pack": "data",
+    "bytes": 9388
+  },
+  {
+    "resolved": "appconfig.tjs",
+    "src_pack": "data",
+    "bytes": 1128
+  },
+  {
+    "resolved": "motion/yuzulogo.mtn",
+    "src_pack": "data",
+    "bytes": 311719
+  },
+  {
+    "resolved": "motion/title_bg.mtn",
+    "src_pack": "data",
+    "bytes": 21821926
+  },
+  {
+    "resolved": "motion/m2logo.mtn",
+    "src_pack": "data",
+    "bytes": 102957
+  },
+  {
+    "resolved": "motion/title_bg4.mtn",
+    "src_pack": "data",
+    "bytes": 28502732
+  },
+  {
+    "resolved": "motion/title_bg2.mtn",
+    "src_pack": "data",
+    "bytes": 25422250
+  },
+  {
+    "resolved": "motion/yuzusourlogo.mtn",
+    "src_pack": "data",
+    "bytes": 296108
+  },
+  {
+    "resolved": "motion/title_bg3.mtn",
+    "src_pack": "data",
+    "bytes": 32803207
+  },
+  {
+    "resolved": "uipsd/option_2game1.pbd",
+    "src_pack": "data",
+    "bytes": 72132
+  },
+  {
+    "resolved": "uipsd/option_6dialog.pbd",
+    "src_pack": "data",
+    "bytes": 81766
+  },
+  {
+    "resolved": "uipsd/extra_stand_dialog__bg0.tlg",
+    "src_pack": "data",
+    "bytes": 974384
+  },
+  {
+    "resolved": "uipsd/window__bg0.tlg",
+    "src_pack": "data",
+    "bytes": 202
+  },
+  {
+    "resolved": "uipsd/option_1display.pbd",
+    "src_pack": "data",
+    "bytes": 75462
+  },
+  {
+    "resolved": "uipsd/window.pbd",
+    "src_pack": "data",
+    "bytes": 4572
+  },
+  {
+    "resolved": "uipsd/option_0simple.pbd",
+    "src_pack": "data",
+    "bytes": 93706
+  },
+  {
+    "resolved": "uipsd/bgmtitle.pbd",
+    "src_pack": "data",
+    "bytes": 842
+  },
+  {
+    "resolved": "uipsd/quickmenu__pack.tlg",
+    "src_pack": "data",
+    "bytes": 199655
+  },
+  {
+    "resolved": "uipsd/window_h__pack.tlg",
+    "src_pack": "data",
+    "bytes": 172026
+  },
+  {
+    "resolved": "uipsd/window_h.pbd",
+    "src_pack": "data",
+    "bytes": 3536
+  },
+  {
+    "resolved": "uipsd/dialog.pbd",
+    "src_pack": "data",
+    "bytes": 17558
+  },
+  {
+    "resolved": "uipsd/dialog__pack.tlg",
+    "src_pack": "data",
+    "bytes": 39157
+  },
+  {
+    "resolved": "uipsd/option_6dialog__pack.tlg",
+    "src_pack": "data",
+    "bytes": 6149
+  },
+  {
+    "resolved": "uipsd/backlog.pbd",
+    "src_pack": "data",
+    "bytes": 21976
+  },
+  {
+    "resolved": "uipsd/title_locale_cn.pbd",
+    "src_pack": "data",
+    "bytes": 13378
+  },
+  {
+    "resolved": "uipsd/dialog__bg0.tlg",
+    "src_pack": "data",
+    "bytes": 275404
+  },
+  {
+    "resolved": "uipsd/option_9gamepad.pbd",
+    "src_pack": "data",
+    "bytes": 80368
+  },
+  {
+    "resolved": "uipsd/option_5sound2.pbd",
+    "src_pack": "data",
+    "bytes": 92450
+  },
+  {
+    "resolved": "uipsd/option_9gamepad2_assign__pack.tlg",
+    "src_pack": "data",
+    "bytes": 6613
+  },
+  {
+    "resolved": "uipsd/option_keyinput__pack.tlg",
+    "src_pack": "data",
+    "bytes": 223652
+  },
+  {
+    "resolved": "uipsd/title__pack.tlg",
+    "src_pack": "data",
+    "bytes": 29671
+  },
+  {
+    "resolved": "uipsd/option_9gamepad__pack.tlg",
+    "src_pack": "data",
+    "bytes": 256785
+  },
+  {
+    "resolved": "uipsd/title.pbd",
+    "src_pack": "data",
+    "bytes": 21142
+  },
+  {
+    "resolved": "uipsd/quickmenu__bg0.tlg",
+    "src_pack": "data",
+    "bytes": 6107
+  },
+  {
+    "resolved": "uipsd/extra_locale_cn__pack.tlg",
+    "src_pack": "data",
+    "bytes": 60411
+  },
+  {
+    "resolved": "uipsd/option_5sound1.pbd",
+    "src_pack": "data",
+    "bytes": 169780
+  },
+  {
+    "resolved": "uipsd/option_8keyboard1.pbd",
+    "src_pack": "data",
+    "bytes": 68968
+  },
+  {
+    "resolved": "uipsd/quickmenu.pbd",
+    "src_pack": "data",
+    "bytes": 57562
+  },
+  {
+    "resolved": "uipsd/option_9gamepad2_assign.pbd",
+    "src_pack": "data",
+    "bytes": 18954
+  },
+  {
+    "resolved": "uipsd/backlog__pack.tlg",
+    "src_pack": "data",
+    "bytes": 163646
+  },
+  {
+    "resolved": "uipsd/extra_stand_dialog__pack.tlg",
+    "src_pack": "data",
+    "bytes": 1290685
+  },
+  {
+    "resolved": "uipsd/window__pack.tlg",
+    "src_pack": "data",
+    "bytes": 252075
+  },
+  {
+    "resolved": "uipsd/langselect__pack.tlg",
+    "src_pack": "data",
+    "bytes": 24142
+  },
+  {
+    "resolved": "uipsd/title_locale_cn__pack.tlg",
+    "src_pack": "data",
+    "bytes": 189088
+  },
+  {
+    "resolved": "uipsd/option_7mouse.pbd",
+    "src_pack": "data",
+    "bytes": 65344
+  },
+  {
+    "resolved": "uipsd/option_cmds__pack.tlg",
+    "src_pack": "data",
+    "bytes": 88084
+  },
+  {
+    "resolved": "uipsd/option_5sound1__pack.tlg",
+    "src_pack": "data",
+    "bytes": 639234
+  },
+  {
+    "resolved": "uipsd/option_4text.pbd",
+    "src_pack": "data",
+    "bytes": 76302
+  },
+  {
+    "resolved": "uipsd/backlog__bg0.tlg",
+    "src_pack": "data",
+    "bytes": 937324
+  },
+  {
+    "resolved": "uipsd/option_cmds.pbd",
+    "src_pack": "data",
+    "bytes": 12396
+  },
+  {
+    "resolved": "uipsd/window_h__bg0.tlg",
+    "src_pack": "data",
+    "bytes": 202
+  },
+  {
+    "resolved": "uipsd/option_8keyboard1__pack.tlg",
+    "src_pack": "data",
+    "bytes": 114827
+  },
+  {
+    "resolved": "uipsd/option_keyinput.pbd",
+    "src_pack": "data",
+    "bytes": 96078
+  },
+  {
+    "resolved": "uipsd/bgmtitle__bg0.tlg",
+    "src_pack": "data",
+    "bytes": 3753
+  },
+  {
+    "resolved": "uipsd/option_7mouse__pack.tlg",
+    "src_pack": "data",
+    "bytes": 55238
+  },
+  {
+    "resolved": "uipsd/option.pbd",
+    "src_pack": "data",
+    "bytes": 36872
+  },
+  {
+    "resolved": "uipsd/option_3game2.pbd",
+    "src_pack": "data",
+    "bytes": 69228
+  },
+  {
+    "resolved": "uipsd/option__pack.tlg",
+    "src_pack": "data",
+    "bytes": 163675
+  },
+  {
+    "resolved": "uipsd/option_4text__pack.tlg",
+    "src_pack": "data",
+    "bytes": 247538
+  },
+  {
+    "resolved": "uipsd/extra_locale_cn.pbd",
+    "src_pack": "data",
+    "bytes": 9150
+  },
+  {
+    "resolved": "uipsd/option__bg0.tlg",
+    "src_pack": "data",
+    "bytes": 1496105
+  },
+  {
+    "resolved": "uipsd/option_5sound2__pack.tlg",
+    "src_pack": "data",
+    "bytes": 718368
+  },
+  {
+    "resolved": "system/win32dialog.tjs",
+    "src_pack": "data",
+    "bytes": 65612
+  },
+  {
+    "resolved": "system/mainwindow.tjs",
+    "src_pack": "data",
+    "bytes": 465668
+  },
+  {
+    "resolved": "system/dummymenuitem.tjs",
+    "src_pack": "data",
+    "bytes": 7004
+  },
+  {
+    "resolved": "system/menus.tjs",
+    "src_pack": "data",
+    "bytes": 33752
+  },
+  {
+    "resolved": "system/langfileparser.tjs",
+    "src_pack": "data",
+    "bytes": 15276
+  },
+  {
+    "resolved": "system/messagelayer.tjs",
+    "src_pack": "data",
+    "bytes": 124340
+  },
+  {
+    "resolved": "system/updateconfig.tjs",
+    "src_pack": "data",
+    "bytes": 2932
+  },
+  {
+    "resolved": "system/sliderlayer.tjs",
+    "src_pack": "data",
+    "bytes": 28764
+  },
+  {
+    "resolved": "system/execdialog.tjs",
+    "src_pack": "data",
+    "bytes": 1016
+  },
+  {
+    "resolved": "system/subtitlelayer.tjs",
+    "src_pack": "data",
+    "bytes": 7268
+  },
+  {
+    "resolved": "system/logwindow.tjs",
+    "src_pack": "data",
+    "bytes": 3956
+  },
+  {
+    "resolved": "system/buttonlayer.tjs",
+    "src_pack": "data",
+    "bytes": 36468
+  },
+  {
+    "resolved": "system/dialoglayer.tjs",
+    "src_pack": "data",
+    "bytes": 35040
+  },
+  {
+    "resolved": "system/yesnodialog.tjs",
+    "src_pack": "data",
+    "bytes": 5360
+  },
+  {
+    "resolved": "system/langrender.tjs",
+    "src_pack": "data",
+    "bytes": 4600
+  },
+  {
+    "resolved": "locale/jp/extra_watermark.png",
+    "src_pack": "data",
+    "bytes": 69164
+  },
+  {
+    "resolved": "locale/jp/stamp_変態だ.png",
+    "src_pack": "data",
+    "bytes": 60918
+  },
+  {
+    "resolved": "locale/jp/stamp_嫌です.png",
+    "src_pack": "data",
+    "bytes": 30144
+  },
+  {
+    "resolved": "locale/jp/stamp_またね.png",
+    "src_pack": "data",
+    "bytes": 32505
+  },
+  {
+    "resolved": "locale/jp/stamp_やば.png",
+    "src_pack": "data",
+    "bytes": 23896
+  },
+  {
+    "resolved": "locale/jp/speech_defdic.txt",
+    "src_pack": "data",
+    "bytes": 394
+  },
+  {
+    "resolved": "locale/jp/stamp_祝福.png",
+    "src_pack": "data",
+    "bytes": 50850
+  },
+  {
+    "resolved": "locale/jp/stamp_お断り.png",
+    "src_pack": "data",
+    "bytes": 33137
+  },
+  {
+    "resolved": "locale/jp/占い2_2.asd",
+    "src_pack": "data",
+    "bytes": 404
+  },
+  {
+    "resolved": "locale/jp/help_opt.txt",
+    "src_pack": "data",
+    "bytes": 30322
+  },
+  {
+    "resolved": "locale/jp/占い4.png",
+    "src_pack": "data",
+    "bytes": 2054426
+  },
+  {
+    "resolved": "locale/jp/stamp_ばーん.png",
+    "src_pack": "data",
+    "bytes": 57966
+  },
+  {
+    "resolved": "locale/jp/stamp_喜び.png",
+    "src_pack": "data",
+    "bytes": 47962
+  },
+  {
+    "resolved": "locale/jp/占い3.png",
+    "src_pack": "data",
+    "bytes": 1886345
+  },
+  {
+    "resolved": "locale/jp/aboutdialog.png",
+    "src_pack": "data",
+    "bytes": 402113
+  },
+  {
+    "resolved": "locale/jp/help_extra.txt",
+    "src_pack": "data",
+    "bytes": 3618
+  },
+  {
+    "resolved": "locale/jp/アイテム_黒板_礎.png",
+    "src_pack": "data",
+    "bytes": 48100
+  },
+  {
+    "resolved": "locale/jp/screenshot_watermark.png",
+    "src_pack": "data",
+    "bytes": 64964
+  },
+  {
+    "resolved": "locale/jp/stamp_体調は.png",
+    "src_pack": "data",
+    "bytes": 36633
+  },
+  {
+    "resolved": "locale/jp/help_tui.txt",
+    "src_pack": "data",
+    "bytes": 5636
+  },
+  {
+    "resolved": "locale/jp/stamp_自慢か.png",
+    "src_pack": "data",
+    "bytes": 50878
+  },
+  {
+    "resolved": "locale/jp/uitexts.toml",
+    "src_pack": "data",
+    "bytes": 112858
+  },
+  {
+    "resolved": "locale/jp/stamp_ありがとう.png",
+    "src_pack": "data",
+    "bytes": 31838
+  },
+  {
+    "resolved": "locale/jp/help_file.txt",
+    "src_pack": "data",
+    "bytes": 8344
+  },
+  {
+    "resolved": "locale/jp/title_logo.png",
+    "src_pack": "data",
+    "bytes": 447471
+  },
+  {
+    "resolved": "locale/jp/help_lang.txt",
+    "src_pack": "data",
+    "bytes": 558
+  },
+  {
+    "resolved": "locale/jp/stamp_そうですね.png",
+    "src_pack": "data",
+    "bytes": 40627
+  },
+  {
+    "resolved": "locale/jp/help_stand.txt",
+    "src_pack": "data",
+    "bytes": 3684
+  },
+  {
+    "resolved": "locale/jp/占い2_2.png",
+    "src_pack": "data",
+    "bytes": 1651500
+  },
+  {
+    "resolved": "locale/jp/scramble2.png",
+    "src_pack": "data",
+    "bytes": 54119
+  },
+  {
+    "resolved": "locale/jp/stamp_無.png",
+    "src_pack": "data",
+    "bytes": 37220
+  },
+  {
+    "resolved": "locale/jp/bar1.png",
+    "src_pack": "data",
+    "bytes": 40783
+  },
+  {
+    "resolved": "locale/jp/アイテム_黒板_覚悟.png",
+    "src_pack": "data",
+    "bytes": 25239
+  },
+  {
+    "resolved": "locale/jp/sqscrmask.png",
+    "src_pack": "data",
+    "bytes": 18385
+  },
+  {
+    "resolved": "locale/jp/占い1_2.png",
+    "src_pack": "data",
+    "bytes": 1631044
+  },
+  {
+    "resolved": "locale/jp/アイテム_黒板_乃愛.png",
+    "src_pack": "data",
+    "bytes": 24863
+  },
+  {
+    "resolved": "locale/jp/占い1_2.asd",
+    "src_pack": "data",
+    "bytes": 404
+  },
+  {
+    "resolved": "locale/jp/attention.png",
+    "src_pack": "data",
+    "bytes": 3069915
+  },
+  {
+    "resolved": "locale/jp/アイテム_黒板_かぐ耶.png",
+    "src_pack": "data",
+    "bytes": 29073
+  },
+  {
+    "resolved": "locale/jp/deactivelogo.png",
+    "src_pack": "data",
+    "bytes": 196555
+  },
+  {
+    "resolved": "locale/jp/アイテム_黒板_オリエ.png",
+    "src_pack": "data",
+    "bytes": 21398
+  },
+  {
+    "resolved": "locale/jp/アイキャッチ共通.png",
+    "src_pack": "data",
+    "bytes": 2614513
+  },
+  {
+    "resolved": "locale/jp/stamp_ごはん.png",
+    "src_pack": "data",
+    "bytes": 41141
+  },
+  {
+    "resolved": "locale/jp/stamp_秘密.png",
+    "src_pack": "data",
+    "bytes": 31153
+  },
+  {
+    "resolved": "locale/jp/syslangtext_jp.ini",
+    "src_pack": "data",
+    "bytes": 34260
+  },
+  {
+    "resolved": "locale/jp/scramble1.png",
+    "src_pack": "data",
+    "bytes": 1487683
+  },
+  {
+    "resolved": "locale/jp/help_flow.txt",
+    "src_pack": "data",
+    "bytes": 1714
+  },
+  {
+    "resolved": "locale/jp/アイテム_黒板_抽象的.png",
+    "src_pack": "data",
+    "bytes": 25879
+  },
+  {
+    "resolved": "main/uioption.tjs",
+    "src_pack": "data",
+    "bytes": 74392
+  },
+  {
+    "resolved": "main/config.tjs",
+    "src_pack": "data",
+    "bytes": 53156
+  },
+  {
+    "resolved": "main/uitext.tjs",
+    "src_pack": "data",
+    "bytes": 65796
+  },
+  {
+    "resolved": "main/tuiconf.ks",
+    "src_pack": "data",
+    "bytes": 948
+  },
+  {
+    "resolved": "main/anim_title.ini",
+    "src_pack": "data",
+    "bytes": 1236
+  },
+  {
+    "resolved": "main/sysmenu.ks",
+    "src_pack": "data",
+    "bytes": 1122
+  },
+  {
+    "resolved": "chaticon_fum.png",
+    "src_pack": "image",
+    "bytes": 20172
+  },
+  {
+    "resolved": "chaticon_kag.png",
+    "src_pack": "image",
+    "bytes": 22483
+  },
+  {
+    "resolved": "title_bg3.png",
+    "src_pack": "image",
+    "bytes": 1213308
+  },
+  {
+    "resolved": "title_bg4.png",
+    "src_pack": "image",
+    "bytes": 1443741
+  },
+  {
+    "resolved": "title_bg5_logo.pbd",
+    "src_pack": "image",
+    "bytes": 724
+  },
+  {
+    "resolved": "chaticon_ori.png",
+    "src_pack": "image",
+    "bytes": 21669
+  },
+  {
+    "resolved": "title_bg6.png",
+    "src_pack": "image",
+    "bytes": 1057335
+  },
+  {
+    "resolved": "chaticon_rik.png",
+    "src_pack": "image",
+    "bytes": 18047
+  },
+  {
+    "resolved": "chaticon_kur.png",
+    "src_pack": "image",
+    "bytes": 25547
+  },
+  {
+    "resolved": "title_bg4_logo.pbd",
+    "src_pack": "image",
+    "bytes": 724
+  },
+  {
+    "resolved": "title_bg7.png",
+    "src_pack": "image",
+    "bytes": 1189749
+  },
+  {
+    "resolved": "title_bg6_logo.pbd",
+    "src_pack": "image",
+    "bytes": 724
+  },
+  {
+    "resolved": "title_bg1_logo.pbd",
+    "src_pack": "image",
+    "bytes": 724
+  },
+  {
+    "resolved": "title_logo_trial.png",
+    "src_pack": "image",
+    "bytes": 47421
+  },
+  {
+    "resolved": "title_bg0.png",
+    "src_pack": "image",
+    "bytes": 2206680
+  },
+  {
+    "resolved": "chaticon_ama.png",
+    "src_pack": "image",
+    "bytes": 22364
+  },
+  {
+    "resolved": "title_bg0_logo.pbd",
+    "src_pack": "image",
+    "bytes": 724
+  },
+  {
+    "resolved": "title_bg5.png",
+    "src_pack": "image",
+    "bytes": 1441947
+  },
+  {
+    "resolved": "hf_nn_logo.png",
+    "src_pack": "image",
+    "bytes": 88626
+  },
+  {
+    "resolved": "title_bg1.png",
+    "src_pack": "image",
+    "bytes": 2818115
+  },
+  {
+    "resolved": "title_bg2_logo.pbd",
+    "src_pack": "image",
+    "bytes": 724
+  },
+  {
+    "resolved": "title_bg2.png",
+    "src_pack": "image",
+    "bytes": 1395316
+  },
+  {
+    "resolved": "title_bg7_logo.pbd",
+    "src_pack": "image",
+    "bytes": 724
+  },
+  {
+    "resolved": "title_bg3_logo.pbd",
+    "src_pack": "image",
+    "bytes": 724
+  }
+]

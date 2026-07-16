@@ -1,0 +1,90 @@
+﻿# 立ち絵鑑賞画面ヘルプテキスト
+
+back	title	title2
+	回到标题界面。
+
+to_cg
+	跳转到ＣＧ鉴赏界面。
+to_scene
+	跳转到场景鉴赏画面。
+to_voice
+	跳转到语音收藏夹界面。
+to_stand
+	跳转到立绘鉴赏界面。
+
+?meswin
+	显示文本框，文本框中可以输入任意文字。	（保存图片或隐藏ＵＩ时文字不会消失）
+
+edit_save
+	将现在的状态以文件形式保存。	点击时按住Shift键可以临时保存在内存中。
+
+edit_load
+	读取文件，还原之前保存的状态。点击时按住Shift键可以读取临时保存在内存中的数据。
+
+edit_hide
+	暂时隐藏UI，允许用拖动的方式移动角色或背景图片（固定壁纸除外）的位置。（与右键的功能相同）
+
+edit_capt
+	隐藏UI并截图保存。
+
+edit_mybg
+	导入外部图片当做背景。
+
+edit_init
+	将选中的角色初始化。（位置也将初始化）	点击时按住Shift键可以直接将立绘鉴赏模式初始化。
+
+
+dress_frame	HELP_CHSEL_DRESS
+	更改当前角色的服装。
+pose_frame	HELP_CHSEL_DIFF
+	更改当前角色的姿势。
+face_help	HELP_CHSEL_FACE
+	更改当前角色的表情。
+
+fopt_h	fopt_n	fopt_r	fopt_d	fopt_e
+	为表情添加红晕。取消勾选将恢复标准状态。
+
+chzoom_frame
+	更改当前角色的大小。（不会影响与其他角色的前后关系）
+
+stage_frame	HELP_BGSEL_STAGE
+	更改背景。
+time_frame	HELP_BGSEL_TIME
+	切换背景的时间段/特殊差分。
+?chsel_pageup	?chsel_pagedown	?bgsel_pageup	?bgsel_pagedown
+	滚动缩略图一览。
+?chsel_close	?bgsel_close
+	关闭缩略图一览显示。	点击右键也可以关闭。
+
+chlock
+	锁定当前操作中的角色的位置和大小，并使其无法移动且无法移除。
+
+?chadd
+	添加可操作的角色。
+?chpale
+	将非正在操作的角色半透明化。打开这个选项后，拖动操作将只对当前角色有效。
+
+chdel
+	移除当前正在操作的角色。${!_chlocked?"":"\n※请先解除当前角色的锁定再进行移除操作"}
+?chfront
+	更改操作对象时，是否将选中的对象移到最前。
+?chsort
+	将角色一览从大到小按顺序排列。
+
+
+HELP_DRAG
+	点击选中角色，拖动鼠标移动角色。
+HELP_NODRAG
+	这个角色目前不能移动。请先选中角色并解除锁定，然后再进行移动操作。
+
+HELP_CHIDX
+	更改操作角色。
+HELP_CHIDX_DRAG
+	更改操作角色。	拖动鼠标可更改显示顺序。
+
+HELP_CHDEL
+	移除此角色。
+
+HELP_CHDRAG
+	请拖动至想要移动的位置。
+

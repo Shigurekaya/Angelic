@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-07-16T14:30:48.101739+00:00",
+  "hxnames": "D:\\gamedev\\Angelic\\tools\\vendor\\ten_sz_hxnames\\HxNames-Tenshi.lst",
+  "hx_entries": 57748,
+  "archives": [
+    {
+      "archive": "image.xp3",
+      "error": "TypeError(\"'XP3File' object is not iterable\")"
+    },
+    {
+      "archive": "data.xp3",
+      "error": "TypeError(\"'XP3File' object is not iterable\")"
+    }
+  ]
+}

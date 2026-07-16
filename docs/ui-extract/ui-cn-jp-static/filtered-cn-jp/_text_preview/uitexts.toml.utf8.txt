@@ -1,0 +1,297 @@
+﻿# UI画面テキスト描画一覧
+
+#//////////////////////////////////////////////////////////////////////////////
+#調整中文言
+[debug]
+#extra_stand = "UNDER_CONSTRUCTION"
+
+#//////////////////////////////////////////////////////////////////////////////
+# テキスト文言一覧
+
+[texts]
+#UNDER_CONSTRUCTION = "※現在実装中につき、各所の挙動がおかしい可能性があります！(wamsoft)"
+#UNDER_CONSTRUCTION = "※開発中につき，ボタン類等のテキスト描画の文字修飾が未調整です！(wamsoft)"
+#UC_QCONF = "※テキスト未調整"
+
+# 汎用ボタン名
+common_on		= "ＯＮ"
+common_off		= "ＯＦＦ"
+common_close		= "閉じる"
+common_back		= "戻る"
+common_back_title	= "タイトル画面に戻る"
+common_back_game	= "ゲーム画面に戻る"
+common_init		= "初期設定に戻す"
+common_revert		= "変更を元に戻す"
+common_reset		= "リセット"
+common_detail		= "詳細設定"
+common_start_scene	= "シーンスタート"
+
+common_game_backlog	= "バックログ"
+common_game_flowchart	= "フローチャート"
+
+# 機能入れ替えボタン＠ゲーム中ポップアップ
+common_qconf_switch	= "Switch"
+
+
+# 画面キャプション（※未使用）
+common_caps_save	= "DATA SAVE"
+common_caps_load	= "DATA LOAD"
+common_caps_qload	= "QUICK LOAD"
+
+common_caps_option	= "SYSTEM SETTING"
+common_caps_backlog	= "BACKLOG"
+common_caps_search	= "SEARCH"
+common_caps_extra	= "EXTRA"
+common_caps_afterstory	= "AFTER STORY"
+
+
+# 汎用キャラ名
+common_chname_noa	= "乃愛"
+common_chname_ama	= "天音"
+common_chname_kur	= "来海"
+common_chname_kag	= "かぐ耶"
+common_chname_ori	= "オリエ"
+common_chname_fum	= "風実花"
+common_chname_kae	= "カエデ"
+common_chname_chi	= "チカ"
+common_chname_sai	= "彩里"
+common_chname_yuz	= "由月"
+
+common_chname_clr	= "クラヴィ"
+common_chname_veg	= "ヴェガ"
+
+common_chname_tkn	= "月乃"
+common_chname_gto	= "五島"
+common_chname_sht	= "シュティ"
+common_chname_oji	= "第一王子"
+common_chname_sho	= "迷子の少女"
+common_chname_mao	= "魔王"
+
+
+# 汎用キャラ名（フルネーム）
+common_chfull_noa	= "白雪 乃愛"
+common_chfull_ama	= "谷風 天音"
+common_chfull_kur	= "小雲雀 来海"
+common_chfull_kag	= "星河 かぐ耶"
+common_chfull_ori	= "高楯 オリエ"
+common_chfull_fum	= "百里 風実花"
+common_chfull_kae	= "木下 カエデ"
+common_chfull_chi	= "白石 チカ"
+common_chfull_sai	= "三国 彩里"
+common_chfull_yuz	= "谷風 由月"
+
+#------------------------------------------------------------------------------
+# 雑多
+
+# フローチャート（ルート選択）
+scnchart_common_route	= "共通ルート"
+
+# 鑑賞画面グループ選択
+extra_cgscene_grp_etc	= "その他"
+extra_cgscene_grp_sd	= "ＳＤ"
+extra_cgscene_grp_movie	= "ムービー"
+extra_label_cg		= "ＣＧ鑑賞"
+extra_label_scene	= "シーン鑑賞"
+extra_label_music	= "音楽鑑賞"
+
+extra_scene_cut1	= "1"
+extra_scene_cut2	= "2"
+extra_scene_cut3	= "3"
+
+# 立ち絵鑑賞
+extra_stand_chprop	= "キャラクター設定"
+extra_stand_bgprop	= "背景設定"
+extra_stand_prop_dress	= "服装"
+extra_stand_prop_pose	= "ポーズ"
+extra_stand_prop_face	= "表情"
+extra_stand_prop_cheek	= "頬染め"
+extra_stand_prop_chzoom	= "大きさ"
+extra_stand_prop_bgzoom	= "大きさ"
+extra_stand_prop_stage	= "背景"
+extra_stand_prop_time	= "時間帯"
+extra_stand_sel_char	= "キャラクターを選択して下さい"
+extra_stand_sel_dress	= "服装を選択して下さい"
+extra_stand_sel_pose	= "ポーズを選択して下さい"
+extra_stand_sel_face	= "表情を選択して下さい"
+extra_stand_sel_stage	= "背景を選択して下さい"
+extra_stand_sel_time	= "時間帯を選択して下さい"
+extra_stand_view	= "操作ボタン非表示"
+extra_stand_capture	= "画像を保存する"
+extra_stand_user_bg	= "背景画像を読み込む"
+extra_stand_user_text	= "台詞の表示・編集"
+extra_stand_save	= "立ち絵情報セーブ"
+extra_stand_load	= "立ち絵情報ロード"
+extra_stand_conf_front	= "操作時に手前に移動"
+extra_stand_conf_pale	= "操作対象以外半透明"
+extra_stand_chara_add	= "キャラクター追加"
+extra_stand_chara_sort	= "大きさ順に変更"
+extra_stand_chcount	= " 選択数"
+
+
+# 音楽鑑賞
+extra_sound_titlebgm	= "タイトル画面でもBGMを継続"
+
+
+# 選択肢特殊アイコン
+select_hscene		= "Ｈシーン"
+
+#------------------------------------------------------------------------------
+# ダイアログ関係
+
+dialog_mes_resume	= "タイトル画面を飛ばして\n前回終了時の状態に復帰しますか？"
+dialog_mes_quit		= "回想を中断しますか？"
+dialog_mes_standinit	= "立ち絵鑑賞編集を初期化しますか？"
+dialog_mes_initall	= "システムを全て初期化しますか？"
+dialog_mes_init		= "システムを初期化しますか？"
+dialog_mes_exit		= "ゲームを終了しますか？"
+dialog_mes_title	= "タイトルに戻りますか？"
+dialog_mes_jump		= "シーンジャンプしますか？"
+dialog_mes_nextsel	= "次の選択肢まで進みますか？"
+dialog_mes_nextscn	= "次のシーンまで進みますか？"
+dialog_mes_prevsel	= "前の選択肢まで戻りますか？"
+dialog_mes_prevscn	= "前のシーンまで戻りますか？"
+dialog_mes_delete	= "データを削除しますか？"
+dialog_mes_swap		= "データを入れ換えますか？"
+dialog_mes_copy		= "データをコピーしますか？"
+dialog_mes_qload	= "クイックロードしますか？"
+dialog_mes_qsave	= "クイックセーブしますか？"
+dialog_mes_overwrite	= "上書きセーブしますか？"
+dialog_mes_load		= "ロードしますか？"
+dialog_mes_save		= "セーブしますか？"
+dialog_mes_dsave	= "空き枠にセーブしますか？"
+dialog_mes_vsave	= "お気に入りボイスに登録しますか"
+dialog_btn_yes		= "はい"
+dialog_btn_no		= "いいえ"
+dialog_btn_check	= "次回から確認しない"
+
+dialog_suspend_comment	= "この機能が不要な場合は、システム設定画面の\n【ゲーム進行１】サスペンド機能により無効にすることが出来ます。"
+dialog_suspend_label	= "サスペンド機能"
+
+#------------------------------------------------------------------------------
+# セーブロード関係
+
+file_edit_copy		= "データコピー"
+file_edit_swap		= "データ入れ替え"
+file_edit_comment	= "コメント編集"
+file_edit_remove	= "データ削除"
+file_edit_hold		= "EDITボタンのホールド"
+file_item_nothumb	= "コメントを詳細表示"
+
+qconf_file_dsave	= "D.SAVE"
+qconf_file_save		= "SAVE"
+
+qconf_voice_qvsave	= "ボイス登録"
+qconf_voice_vsave	= "ボイス画面"
+
+voice_playlist_show	= "プレイリストの表示"
+voice_playlist_add	= "リストに\n登録"
+voice_playlist_delete	= "リストから\n削除"
+voice_playlist_clear	= "リストを\nクリア"
+voice_playlist_save	= "リストを\nセーブ"
+voice_playlist_load	= "リストを\nロード"
+
+voice_scene_replay	= "ボイスシーンを回想する"
+
+#------------------------------------------------------------------------------
+# コンフィグ関係
+
+# 切り替えタブ
+config_tabs_simple	= "簡易設定"
+config_tabs_screen	= "画像表示"
+config_tabs_game1	= "ゲーム進行１"
+config_tabs_game2	= "ゲーム進行２"
+config_tabs_text	= "テキスト"
+config_tabs_sound	= "サウンド"
+config_tabs_dialog	= "ダイアログ"
+config_tabs_mouse	= "マウス"
+config_tabs_keyboard	= "キーボード"
+config_tabs_gamepad	= "ゲームパッド"
+
+#- - - - - - - - - - - - - - - -
+# 画像表示
+
+config_label_screen	= "画面サイズ"
+config_label_scrwide	= "画面切り替え"
+config_label_screff	= "画面効果"
+config_label_anim	= "アニメーション効果"
+config_label_esc	= "ＥＳＣ機能"
+config_label_scramble	= "スクランブル機能の選択"
+config_label_ontop	= "ゲーム画面を常に手前に表示"
+config_label_scritems	= "画面アイテムの表示"
+config_label_chapter	= "チャプター表示"
+config_label_mustitle	= "曲名表示"
+config_label_talkface	= "話者の表情を表示"
+config_label_popup	= "ポップアップ表示"
+
+config_scr_fullscreen	= "フルスクリーン"
+config_scr_windowed	= "ウインドウ"
+config_scr_square	= "４：３"
+config_scr_wide		= "１６：９"
+config_scr_rclick	= "右クリック"
+config_scr_mouseover	= "マウスオーバー"
+config_scr_scramble	= "スクランブル機能"
+config_scr_minimize	= "最小化"
+config_scr_image1	= "画像１"
+config_scr_image2	= "画像２"
+config_scr_userimage	= "ユーザー指定"
+
+config_scr_stateicon	= "進行状態アイコン"
+config_scr_progress	= "進行メーター"
+config_scr_winmenu	= "ウインドウメニュー"
+config_scr_touchui	= "タッチＵＩ"
+
+
+#- - - - - - - - - - - - - - - -
+# ゲーム進行１
+
+config_label_askipjump	= "既読自動スキップ／ジャンプ"
+config_label_askiptype	= "既読自動スキップ／ジャンプ　機能選択"
+config_label_mscurmove	= "マウスカーソル自動移動"
+config_label_mscurpos	= "マウスカーソル自動移動場所"
+config_label_mscurhide	= "マウスカーソル自動消去"
+config_label_svldtype	= "セーブ・ロードの実行操作"
+config_label_hselfix	= "Ｈシーン選択肢固定"
+config_label_allflow	= "フローチャート未到達箇所の表示"
+config_label_deactive	= "非アクティブ時動作"
+config_label_preview	= "プレビュー表示機能"
+config_label_suspend	= "サスペンド機能"
+
+config_game_skip	= "スキップ"
+config_game_jump	= "ジャンプ"
+
+config_game_mshide_none	= "しない"
+config_game_mshide_5	= "５秒"
+config_game_mshide_10	= "１０秒"
+config_game_mshide_20	= "２０秒"
+
+config_game_dclick	= "ダブルクリック"
+config_game_sclick	= "シングルクリック"
+
+config_game_fin_in	= "中出し"
+config_game_fin_out	= "外出し"
+config_game_fin_mouth	= "口内射精"
+config_game_fin_face	= "顔面射精"
+
+config_game_deact_stop	= "停止"
+config_game_deact_keep	= "継続"
+
+#- - - - - - - - - - - - - - - -
+# ゲーム進行２
+
+config_label_drawspeed	= "ゲーム再生速度"
+config_label_voplspeed	= "音声再生速度"
+config_label_skipspeed	= "スキップ速度調整"
+config_label_skipstyle	= "スキップスタイル"
+config_label_rclkmvskip	= "右クリックでのムービースキップ"
+config_label_skipmvskip	= "スキップ時のムービースキップ"
+config_label_dramatic	= "テキストウインドウ表示（ドラマチックモード）"
+config_label_drmenvo	= "ボイスありのセリフ（主人公以外のセリフ）"
+config_label_drmnovo	= "ボイスなしのセリフ（主人公のセリフ）"
+config_label_drmtext	= "その他のテキスト"
+config_label_snapshot	= "スクリーンショット保存設定"
+
+config_game_vspdsync	= "ゲーム再生速度と連動"
+
+config_game_skipst_n	= "ノーマル"
+config_game_skipst_f	= "ファスト"
+config_game_skipst_t	= "テキスト

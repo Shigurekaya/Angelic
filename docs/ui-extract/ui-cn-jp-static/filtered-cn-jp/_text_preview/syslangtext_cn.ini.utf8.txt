@@ -1,0 +1,298 @@
+﻿###############################################################################
+#
+# システム画面系の言語別テキスト設定
+
+!section system
+#------------------------------------------------------------------------------
+# システム全般
+
+# ウィンドウタイトルバーのキャプション
+TitleCaption		天使☆嚣嚣 RE-BOOT!
+
+# スクリーンショット・立ち絵鑑賞ファイルネームベース
+SaveSnapshotName	天使☆嚣嚣_screenshot
+ExChViewCaptureFileBase	天使☆嚣嚣_portrait
+
+
+# ゲーム画面やバックログのキャラ名前欄 (pad == nameに応じた空白）
+CharNameBracketFormat	【${pad}${name}${pad}】
+
+# セーブデータ等のチャプター表示
+ChapterBracketFormat	【${chapter}】
+
+# フローチャートシーン末尾
+FlowChartEndOfScene	（场景结束）
+
+# 作中チャットにおける画像拡大
+PhoneChatTapZoom	（点击放大）
+
+#------------------------------------------------------------------------------
+# セーブ画面
+
+# コメント入力
+SaveCommentDialog	编辑注释 ${num}
+#GenericDateFormat	${"JanFebMarAprMayJunJulAugSepOctNovDec".substr((month-1)*3,3)}/${zdate}/${year}, ${zhour}:${zmin}
+GenericDateFormat	${year}/${zmonth}/${zdate} ${zhour}:${zmin}
+# ${year}   20xx
+# ${zmonth} 01-09,10-12 / ${month} 1-12
+# ${"JanFebMarAprMayJunJulAugSepOctNovDec".substr((month-1)*3,3)} -> Jan, Feb, ... , Dec
+# ${zdate}  01-09,10-31 / ${date}  1-31
+# ${zhour}  00-09,10-23 / ${hour}  0-23
+# ${zmin}   00-09,10-59 / ${min}   0-59
+# ${zsec}   00-09,10-59 / ${sec}   0-59
+
+# MEMO: 日付表示フォーマットはプログラム側での特殊対応で対処済み
+
+# ルート表記
+SaveRouteName共通ルート		共通路线
+#SaveRouteNameアフターストーリー	After Story
+#SaveRouteNameサイドエピソード		Side Episode
+
+#------------------------------------------------------------------------------
+# 特殊選択(cf. macro.ks:[●●選択])
+
+#SceneModeXXXSelect_off	请照常做
+#SceneModeXXXSelect_on	让她戴眼镜
+
+#------------------------------------------------------------------------------
+# バックログ画面
+
+# 選択肢分岐の選択内容表記
+BacklogChoiceTextFormat	选择项：${text}
+
+#------------------------------------------------------------------------------
+# シナリオ検索
+
+# シナリオ検索はゲーム全クリア後のヘルプメニュー内に項目が生えます（デバッグ鑑賞ONでも可）
+SearchTextInput		输入搜索文字
+SearchTextResultFormat	「${cuttext}」的搜索结果(${language}:${blockCount}个)
+SearchTextUnsupported	※不支持该功能　
+
+#------------------------------------------------------------------------------
+# コンフィグ画面
+
+# テキストプレビュー（\nで改行)
+ConfigPreviewText1	文字显示速度展示、\n自动模式速度展示。
+ConfigPreviewText2	天使☆嚣嚣 RE-BOOT!\n(C)YUZUSOFT/JUNOS inc.
+
+#ConfigRenameCharあやせ		绫濑
+ConfigRenameChar乃愛		乃爱
+ConfigRenameChar天音		天音
+ConfigRenameChar来海		来海
+ConfigRenameCharかぐ耶		辉耶
+ConfigRenameCharオリエ		欧丽叶
+ConfigRenameChar風実花		风实花
+ConfigRenameChar木下		木下
+ConfigRenameChar白石		白石
+ConfigRenameChar三国		三国
+ConfigRenameChar由月		由月
+ConfigRenameChar？？？		？？？
+ConfigRenameCharその他男	其他（男性）
+ConfigRenameCharその他女	其他（女性）
+
+# 立ち絵鑑賞のみ
+#ConfigRenameChar追加キャラ名	XXX
+ConfigRenameCharクラヴィ	克拉比
+ConfigRenameCharヴェガ		维嘉
+ConfigRenameChar月乃		月乃
+ConfigRenameChar五島		五岛
+ConfigRenameCharシュティ	斯蒂
+ConfigRenameChar第一王子	第一王子
+ConfigRenameChar迷子の女の子	走失的女孩
+ConfigRenameChar魔王		魔王
+
+ShortCutInputHelp	按下按键或选择一个按键分配${"\n"}${bindtext}
+ShortCutInputBind	"${caption}"
+ShortCutDeleteHelp	按下按键取消设置
+ShortCutNoBind		未设置
+
+ShortCutBind_save	    保存
+ShortCutBind_load	    载入
+ShortCutBind_dsave	    直接保持
+ShortCutBind_qsave	    快速保持
+ShortCutBind_qload	    快速载入
+ShortCutBind_option	    游戏设置
+ShortCutBind_screen	    更改分辨率
+ShortCutBind_click	    文本/确认
+ShortCutBind_auto	    自动模式
+ShortCutBind_skip	    快进模式
+ShortCutBind_ctrl	    Ctrl快进
+ShortCutBind_nextscn	下一个场景
+ShortCutBind_next	    下一个选项
+ShortCutBind_log	    历史记录
+ShortCutBind_pageup	    向上滚动
+ShortCutBind_pagedown	向下滚动
+ShortCutBind_backone	返回上一行
+ShortCutBind_backskip	快退
+ShortCutBind_prevscn	上一个场景
+ShortCutBind_prev	    上一个选项
+ShortCutBind_scnchart	流程图
+ShortCutBind_title	    标题界面
+ShortCutBind_volume	    音量调整
+ShortCutBind_hide	    隐藏窗口
+ShortCutBind_vreplay	语音重播
+ShortCutBind_vsave	    语音书签
+ShortCutBind_qvsave	    语音保存
+ShortCutBind_snapshot	截图
+ShortCutBind_panic	老板键
+
+# ゲーム中の画面下部ボタンのヘルプ
+QuickMenuHelp_custom		自定义
+QuickMenuHelp_hold		    固定/解除
+QuickMenuHelp_dsave		    直接保存
+QuickMenuHelp_save		    保存界面
+QuickMenuHelp_load		    读档界面
+QuickMenuHelp_qsave		    快速保存
+QuickMenuHelp_qload		    快读速档
+QuickMenuHelp_option		游戏设置
+QuickMenuHelp_prev		    上一个选项
+QuickMenuHelp_prevscn		上一个场景
+QuickMenuHelp_backskip		快退
+QuickMenuHelp_backone		返回上一句
+QuickMenuHelp_log		    历史记录
+QuickMenuHelp_auto		    自动模式
+QuickMenuHelp_skip		    快进模式
+QuickMenuHelp_nextscn		下一个场景
+QuickMenuHelp_next		    下一个选项
+QuickMenuHelp_scnchart		流程图
+QuickMenuHelp_volchg		音量跳转
+QuickMenuHelp_vreplay		语音重播
+QuickMenuHelp_vsave		    语音书签
+QuickMenuHelp_qvsave		语音保存
+QuickMenuHelp_hide		    关闭
+QuickMenuHelp_endreplay		中断回想模式
+QuickMenuHelp_title		    返回标题界面
+QuickMenuHelp_swap		    按钮切换
+QuickMenuHelp_snapshot		截图
+
+# 既読自動スキップ／ジャンプ通知
+AutoSkipJump_read_skip		Auto-skip
+AutoSkipJump_read_paused	Auto-skip paused
+AutoSkipJump_read_contskip	Continue auto-skip
+AutoSkipJump_read_endskip	Auto-skip canceled
+AutoSkipJump_read_doneskip	Auto-skip finished
+AutoSkipJump_read_jumped	Auto-jumped
+
+# ゲームパッド割り当て系（ゲームパッドを繋いでReassignボタン押した後）
+GamePadAssign_input		    按下所指示的游戏手柄上的按键
+GamePadAssign_nobutton		如果没有按键或在按下时没有响应，请选择“忽略此按键”
+GamePadAssign_reset		    按下重置按钮可将所有按键设置恢复为初始状态
+GamePadAssign_already       此按键已被分配，请按下另一个按键
+GamePadAssign_done		    按键输入已接受，请释放所有按键
+GamePadAssign_firstrelease	释放所有按键，进行第一个输入
+GamePadAssign_norelease		如果您释放了按键且无法继续，请按重置按钮并联系技术支持。
+# エラー通知（Windowsダイアログ）
+GamePadFailed			    插件无法正常工作，无法启用。
+
+#------------------------------------------------------------------------------
+# スクランブル画面
+
+#スクランブル表示中のタイトルバー表記
+ScrambleTitle0		无标题
+ScrambleTitle1		YouZube - 浏览器
+ScrambleTitle2		Yoozle 搜索 - 浏览器
+#スクランブル表示中に終了ボタンを押したときの確認ダイアログメッセージ
+ScrambleExitText	确定关闭？
+ScrambleExitTitle	确认
+#スクランブル中のメニューバー表記改変
+ScrambleDisplayMenu	    编辑(&E)
+#[MEMO] characterMenu unused...
+ScrambleCharacterMenu	格式(&O)
+ScrambleControlMenu	    显示(&V)
+
+ScrambleFileSelectCaption	选择图片作为预览
+
+#------------------------------------------------------------------------------
+# エクストラ画面
+
+ExchviewSaveDialogCaption	保存设置
+ExchviewLoadDialogCaption	读取设置
+ExchviewUserBGFileCaption	选择背景
+ExchviewEditMessageCaption	编辑文本
+ExchViewCaptureCaption		截图
+
+ExChViewPopupText		使用鼠标左键拖动人物或背景
+
+ExchviewSaveFailed		保存设置失败:
+ExchviewLoadFailed		读取设置失败:
+ExchviewCaptureFailed	截图失败:
+
+# CG鑑賞のラベル
+#CgViewLabelText_xxx		XXX%02d
+CgViewLabelText_noa		乃%02d
+CgViewLabelText_ama		天%02d
+CgViewLabelText_kur		来%02d
+CgViewLabelText_kag		辉%02d
+CgViewLabelText_ori		欧%02d
+CgViewLabelText_fum		风%02d
+#CgViewLabelText_etc		他%02d
+#CgViewLabelText_sd		SD%02d
+
+
+
+###############################################################################
+#
+# Windowsダイアログ系の言語別テキスト設定
+
+!section dialog
+#------------------------------------------------------------------------------
+
+# ダイアログ汎用
+DialogOK		    确认
+DialogCancel		取消
+DialogClose		    关闭
+DialogInit		    默认
+DialogDetail		详细
+
+# 立ち絵鑑賞コメント編集
+EditCommentCharName	    名字
+EditCommentMessage	    消息
+EditCommentEnabled	启用消息显示
+EditCommentGroup	消息内容
+
+# バージョン情報 （メニューバーの「ヘルプ／バージョン情報」で開くウィンドウのタイトル）
+VersionInfo		版本信息
+
+# フォント選択ダイアログ
+FontDialogCaption	    字体选择
+FontDialogDoSelect	    请选择字体
+FontDialogLicenseHead	「${name}」的版权声明
+FontDialogLicenseInfo	点击详细按钮查看版权声明
+FontDialogInfoFormat	${name}的详细信息
+FontDialogEmbeddedMark	*
+
+# 組み込みフォント表記差し替え
+#FontFace_XXXX			XXXX(for another languages)
+FontFace_スキップ		(JP)スキップ
+
+# [MEMO] "日语"は該当フォントに"语"が無いため表示できない
+FontFace_源ノ角ゴシックR	(JP)源ノ角ゴシックR
+FontFace_源ノ角ゴシックB	(JP)源ノ角ゴシックB
+FontFace_源ノ角ゴシックH	(JP)源ノ角ゴシックH
+FontFace_源ノ明朝B		(JP)源ノ明朝B
+FontFace_源ノ明朝H		(JP)源ノ明朝H
+
+FontFace_思源黑体R		(简体)思源黑体R
+FontFace_思源黑体B		(简体)思源黑体B
+FontFace_思源黑体H		(简体)思源黑体H
+FontFace_思源宋体B		(简体)思源宋体B
+FontFace_思源宋体H		(简体)思源宋体H
+
+FontFace_思源黑體R		(繁体)思源黑體R
+FontFace_思源黑體B		(繁体)思源黑體B
+FontFace_思源黑體H		(繁体)思源黑體H
+FontFace_思源宋體B		(繁体)思源宋體B
+FontFace_思源宋體H		(繁体)思源宋體H
+
+# フォント変更の警告
+WarnChangeUserFont	选择自定义字体有可能导致游戏无法正常显示文字
+
+# 高度な設定の一部設定変更後
+# 	「ヘルプ／高度な設定を表示」で「高度な設定」内の
+#	「マウスホイールの取得方法を変更」(InfoApplyOnRestart)等や「最大フレームレート」(InfoApplyOnAfter)を変更後
+#	※表示されるのは各項目ごと起動中１回のみ
+InfoApplyOnRestart	该设置需要重启游戏后生效
+InfoApplyOnAfter	该设定可能不会立即生效
+InfoApplyRebootNow	你想现在重启吗？
+
+#

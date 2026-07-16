@@ -1,0 +1,233 @@
+﻿// コンパイル設定
+@set (CUSTOM_MULTILANG=1)  // 多言語有効
+@set (CUSTOM_STEAM=1)      // Steam機能有効
+@set (CUSTOM_USE_MP4=1)    // mp4動画有効
+@set (CUSTOM_USE_MOTION=1) // motion有効
+@set (CUSTOM_USE_R18HACK=CUSTOM_STEAM) // R18分離有効
+@set (SCNCHART_USE_R18=CUSTOM_STEAM)
+@set (MULTILANG_DEBUGMENU_FORCEUILANG=CUSTOM_MULTILANG)
+
+// Config.tjs - KAG 設定
+// Copyright (C) 2001-2004 W.Dee and contributors  改変・配布は自由です
+;global.config_version = "EX 3.27-dev.20070519"; // この行を消さないでください
+
+// このファイル内で設定できる項目は、すべて
+// ;設定名 = 値;
+// の形式になっています。
+// 「追加の設定」を除いて、設定は各項目につき１行で記述する必要があります。
+
+
+//------------------------------------------------------- 全体の設定 -----
+
+
+// ◆ タイトル
+// ウィンドウのキャプション(タイトル)および
+// タスクバーに表示されるものです。
+;System.title = "吉里吉里";
+
+
+// ◆ シナリオ解析モード
+// シナリオファイル中の改行に従わせたい場合に false を設定します。
+// false を指定すると、KAG のシナリオ中の改行が、行末に \ または [p] を書か
+// ない限りそのままメッセージレイヤ上での改行として扱われます。
+// true を設定すると [r] タグを書かない限り改行されません。
+// KAG2.x 互換にするには false を指定してください。
+;global.ignoreCR = true;
+
+
+// ◆ 画像キャッシュ制限
+// 画像キャッシュの制限値を MB 単位で指定します。
+// gcsAuto を指定すると、自動的に決定されます。
+;System.graphicCacheLimit = gcsAuto; // 画像キャッシュ制限
+
+
+// ◆ global 追加の設定
+// 追加の設定項目がある場合は
+// [start-global-additionals] と [end-global-additionals] で囲まれた
+// 部分に設定を記述してください
+// ( [start-global-additionals] と [end-global-additionals] の行は
+//  編集したり消したりしないでください )
+
+//[start-global-additionals]
+
+// 拡張トランジションexnNagano.dllプラグインを使用する
+;global.extNaganoEnabled = true;
+
+// デフォルトのD3Dモード（-d3dmodeが空の場合どちらをデフォルトにするか）
+global.DefaultD3DMode = false;
+global.DefaultD3DMotion = true;
+
+// M2 CheeseWare motionplayer使用指定
+global.motionEnabled = true;
+
+// ◆ コンバートモードを有効・無効にする
+;global.envPlayerConvertEnabled = true; //inXP3archivePacked;
+
+// ◆ コンバートモードはデフォルト読み取り専用
+;global.envPlayerReadOnlyEnabled = true; //inXP3archivePacked || !debugWindowEnabled;
+
+// ◆ コンバートモードで逆順データを含める(バックスキップ機能は@set(BACKSKIP_ENABLED=1)指定で有効にすること)
+;global.envPlayerReverseDataEnabled = true;
+
+// [NOTICE] デフォルトフォント定義は data/font/deffontmap.tjs へ移動
+/*
+;global.SystemDefaultFontFace  = "*SystemFont*"; // システム用
+;global.SystemHeaderFontFace   = "*HeaderFont*"; // 見出し用フォント
+;global.UserInputTextFontFace  = "*UserInputFont*";
+property MessageDefaultFontFace { getter { return GetFontFaceMap(CurrentLanguageTag, MessageDefaultFontFaceMap, "源ノ角ゴシックB", "MessageDefaultFontFace"); } }
+
+;global.SystemDefaultFontFaceMap  = %[ jp:"*システム", en:"*システム",      cn:"思源黑体B", tw:"思源黑體B" ]; // 言語別システムフォントマップ
+;global.HeaderDefaultFontFaceMap  = %[ jp:"*ヘッダ",   en:"*ヘッダ",        cn:"思源黑体B", tw:"思源黑體B" ]; // 言語別システムフォントマップ
+;global.MessageDefaultFontFaceMap = %[ jp:"スキップ",  en:"スキップ",       cn:"思源黑体B", tw:"思源黑體B" ]; // 言語別メッセージフォントマップ
+;global.UserInputTextFontFaceMap  = %[ jp:"源ノ角ゴシックB", en:"スキップ", cn:"思源黑体B", tw:"思源黑體B" ]; // ユーザー入力用
+*/
+
+;global.wuOpusEnabled=true;
+//@set (GENERATE_SPEECHWAV_FOR_NO_VOICE=1) //声無し台詞でスピーチデータを作成（要speech.tjs, デバッグ用)
+
+// 1にすると機能が有効化する
+//@set (ENABLE_MOTION_GUI=1)
+//@set (BGM_SUPPORT_MULTISONGS=1)
+//@set (LOGWINDOW_ENABLE_WIN32DIALOG=1)
+//@set (KAGHOOK_PROCESSCH=1)
+@set (KAGHOOK_EVENTACTION=1)
+//@set (KAG_DEFAULT_SHORTCUTKEYS=1) // KAG3標準ショートカットキー
+//@set (OLDBOOKMARK=1)
+//@set (KAG_UNKNOWNTAG_EXCEPTION=1)
+//@set (KAGEX_EVALBEGINSKIP_DISABLE_RCLICK=1)
+@set (SOUNDGAIN_ENABLED=1) // サウンドゲイン機能の有効化
+//@set (MESSAGE_SYSTEMSLIDER_ENABLED=1)
+//@set (ENABLE_LOGFACE=1) // バックログに顔情報を記録するかどうか
+@set (EXCHVIEW_GLOBALFLAG_IS_TF=-1)
+//@set (GESTURE_TRACE_ENABLED=1)
+//@set (USE_GETABOUT_DLL=1)
+@set (MSGHACK_GRADCOLOR=1)
+@set (MSGHACK_GRADEXTENT=2) // 高さ*1 サイズ拡張
+@set (MSGHACK_AUTOCOLOR=2)
+//@set (QUICKMENU_PROXY_DISABLEDBUTTON_PRIMARYCLICK=1)
+//@set (QUICKMENU_USEBRINK=1)
+@set (SPEECH_ENABLE_VOCODER=1)
+@set (SPEECH_ENABLE_VOICEVOX=1) // VOICEVOX API を利用する(要 httprequest.dll, json.dll)
+//@set (SQSCR_RESET_MASK_ABSOLUTE=1)
+//@set (VOICEBOOST_SHIFTSUPPORT=1)
+@set (BACKSKIP_ENABLED=1)
+@set (KEYBIND_USE_KEYBOARD_PANEL=1)
+@set (ENABLE_MOVIE_MFEVR=1) // mp4再生用
+@set (UILOAD_PARSECACHE_ENABLED=1) // uiloadParaseキャッシュ
+@set (MOUSEGESTURE_USEBUTTON_X1X2=1) // mbX1,mbX2ジェスチャを使用する
+
+
+// 1にすると現在の機能が無効になる
+//@set (DISABLE_DEFAULT_EMBFONT=1) // 組み込みフォントを無効にする
+//@set (KAGEX_ACCEL_KAGCOMPAT=1)
+//@set (KAGENVPLAYER_NO_MSGON_BEFORE_DISPNAME=1)
+//@set (KAGENVPLAYER_NO_HISTORYOFSTORE_AT_START=1)
+//@set (DEBUG_DISABLE_SKIPTOLINE=1)
+//@set (MOUSEGESTURE_DISABLE_TOUCH=1)
+//@set (MYHISTORY_OLD_SCROLL=1)
+//@set (SUPPORT_BOOTSTRAP=1)
+//@set (PRERENDERFONTEX_INCLUDED=1)
+@set (STOPDEACTIVE_NOMUTE=1) // stopdeactive.tjsで停止時にミュートしない
+
+@set (STEAM_R18HACK_DISABLE_APPEND_CUT=1)
+
+@if (CUSTOM_MULTILANG)
+global.bootFailDelayedInform = true;
+@endif
+
+// [XXX]motion.tjsをロードする前に存在しなければならないのでここに配置
+function CustomSystemExceptionHandlerHook(e, message) {
+	var message = "";
+	try { message = (e instanceof "Exception") ? ((string)e.message).toLowerCase() : ""; } catch {} // [MEMO] eがオブジェクトでない場合がある
+	if (message.indexOf("direct3dcreate9") >= 0 || message.indexOf("motionplayer") >= 0) {
+		var enKag = typeof global.kag == "Object";
+		var text = (("DirectXのランタイムが古い／もしくはグラフィックドライバが古い可能性があります。\n"
+					"ゲーム付属の「お読みください」のテキストにに従い、ランタイムやドライバを更新してみてください。\n"
+					"更新しても改善されない場合は、ここでDirect3Dを使用しない設定（ただし表示負荷が高い）に変更することができます。"
+					"（この設定は「ヘルプ／環境依存の不具合回避」で後から変更することができます）\n")
+					+(@"【サポート用エラーメッセージ：${e.message}】\n")+
+					("\n設定を変更" + (enKag?"してゲームを再起動しますか？":"しますか？")));
+		if (System.confirm(text)) with (Storages) {
+			// [XXX]
+			try { Plugins.link("PackinOne.dll") if (typeof global.Array.save2 == "undefined"); } catch{}
+			var path = Storages.getFullPath(System.dataPath + "/" + .chopStorageExt(.extractStorageName(System.exeName)) + ".cfu");
+			var cfu;
+			if (Storages.isExistentStorage(path)) {
+				cfu = [];
+				try { cfu.load(path); } catch { cfu = void; }
+			}
+			if (cfu === void) cfu = [
+				'; ============================================================================',
+				'; *DO NOT EDIT* this file unless you are understanding what you are doing.',
+				'; FYI:',
+				';  Each line consists of NAME="VALUE" pair, VALUE is a series of',
+				';  \\xNN, where NN is hexadecimal representation of UNICODE codepoint.',
+				';  For example, opt="\\x61\\x62\\x63\\x3042\\x3044\\x3046" means that the',
+				';  value of options "opt" is alphabets a, b, and c followed by Japanese',
+				';  Hiraganas A, I, and U.',
+				';  DO NOT PUT non-escaped value like opt="abc". This doesn\'t work and should',
+				';  be like opt="\\x61\\x62\\x63".',
+				'; ============================================================================' ];
+
+			var key = "nod3dm=", value = '"\\x79\\x65\\x73"', found = false; // "yes"
+			for (var i = 0; i < cfu.count; i++) {
+				if (((string)cfu[i]).substr(key.length) == key) {
+					cfu[i] = !found ? (key + value) : void;
+					found = true;
+				}
+			}
+			if (found) cfu.remove(void, true);
+			else cfu.add(key+value);
+
+			try { cfu.save2(path); }
+			catch { System.inform(@"設定を保存できませんでした: 書き込み失敗\n${Storages.getLocalName(path)}"); }
+
+			if (enKag) systemReboot();
+		}
+		return true;
+	}
+}
+//[end-global-additionals]
+
+//-------------------------------------------- ウィンドウや動作の設定 -----
+
+function KAGWindow_config()
+{
+// d3dモード
+;d3dMode = global.DefaultD3DMode;
+;d3dMotion = global.DefaultD3DMotion;
+;d3dForceRenderTarget = false;
+
+// ◆ 画面サイズ
+// scWidth に画面の幅、scHeight に画面の高さをピクセル単位で指定します。
+// 標準的に使われている 640x480 や 800x600 のような画面サイズではないサイズ
+// に設定すると、フルスクリーンにできない場合があります。
+if (FullHDMode) {
+;scWidth = 1920;
+;scHeight =1080;
+;exHeight =1440;
+}else{
+;scWidth = 1280;
+;scHeight = 720;
+;exHeight = 960;
+}
+
+// UIパーツのサイズ
+// 定義しておくと画面サイズに対してセンタリング処理します
+//;uiWidth  = 800;
+//;uiHeight = 600;
+
+// ◆ 読みとり専用モード
+// readOnlyMode = true とすると、ディスクへのいっさいの書き込み動作をしなく
+// なります。CD-ROM 上から実行させるときなどに指定してください。
+// もちろん、その場合は栞の保存などができなくなります。
+;readOnlyMode = false;
+
+
+// ◆ フリーセーブ
+// 栞の保存形式を指定します。
+// false を指定すると、メニューバーの「栞をたどる」「栞をはさむ」の
+// サブメニュー項目からセーブデータを保存したり読み込んだりします。
+// この場合は保存可能な栞の最大の個数は numBookMarks によって制限
+// されます。
+/

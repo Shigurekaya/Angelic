@@ -1,0 +1,296 @@
+﻿###############################################################################
+#
+# システム画面系の言語別テキスト設定
+
+!section system
+#------------------------------------------------------------------------------
+# システム全般
+
+# ウィンドウタイトルバーのキャプション
+TitleCaption		天使☆騒々 RE-BOOT!
+
+# ゲーム画面やバックログのキャラ名前欄 (pad == nameに応じた空白）
+CharNameBracketFormat	【${pad}${name}${pad}】
+
+# セーブデータ等のチャプター表示
+ChapterBracketFormat	【${chapter}】
+
+# フローチャートシーン末尾
+FlowChartEndOfScene	（ここまで）
+
+# 作中チャットにおける画像拡大
+PhoneChatTapZoom	（タップして拡大）
+
+#------------------------------------------------------------------------------
+# セーブ画面
+
+# コメント入力
+SaveCommentDialog	${num} のコメントを編集
+
+# MEMO: 日付表示フォーマットはプログラム側での特殊対応で対処済み
+
+# ルート表記
+#SaveRouteName共通ルート		共通ルート
+#SaveRouteNameアフターストーリー	アフターストーリー
+#SaveRouteNameサイドエピソード		サイドエピソード
+
+#------------------------------------------------------------------------------
+# 特殊選択(cf. macro.ks:[耳選択])
+
+#SceneModeKemoMimiSelect_off	本編通りの芳乃で
+#SceneModeKemoMimiSelect_on	獣耳の芳乃が見たい
+
+#------------------------------------------------------------------------------
+# バックログ画面
+
+# 選択肢分岐の選択内容表記
+BacklogChoiceTextFormat	選択肢：${text}
+
+#------------------------------------------------------------------------------
+# シナリオ検索
+
+# シナリオ検索はゲーム全クリア後のヘルプメニュー内に項目が生えます（デバッグ鑑賞ONでも可）
+SearchTextInput		検索文字列を入力
+SearchTextResultFormat	「${cuttext}」の検索結果(${language}:${blockCount}件)
+SearchTextUnsupported	※この機能はサポート対象外です　
+
+#------------------------------------------------------------------------------
+# コンフィグ画面
+
+# テキストプレビュー（\nで改行)
+ConfigPreviewText1	テキスト速度のサンプルと、\nオート速度のサンプルです。
+ConfigPreviewText2	天使☆騒々 RE-BOOT!\n(C)YUZUSOFT/JUNOS inc.
+
+#ConfigRenameCharあやせ		あやせ
+ConfigRenameCharその他男	その他（男性）
+ConfigRenameCharその他女	その他（女性）
+
+# 立ち絵鑑賞のみ
+#ConfigRenameChar追加キャラ名	XXX
+
+ShortCutNoBind		- EMPTY -
+ShortCutInputHelp	${bindtext}のキーを押すか選択してください
+ShortCutInputBind	『${caption}』
+ShortCutDeleteHelp	割り当てを解除するキーを押してください
+
+# ゲームパッド割り当て系（ゲームパッドを繋いでボタンを再配置ボタン押した後）
+GamePadAssign_input		図に表示されたゲームパッドのボタンを押してください。
+GamePadAssign_nobutton		ボタンがないか、押しても反応がない場合は「スキップ」ボタンを押してください。
+GamePadAssign_reset		すべての配置を初期状態に戻すには「リセット」ボタンを押してください。
+GamePadAssign_already		このボタンは既に割り当て済みのため、他のボタンを押してください。
+GamePadAssign_done		入力を受け付けましたのでボタンを全て離してください。
+GamePadAssign_firstrelease	最初の入力を行うので押しているボタンを全て離してください。
+GamePadAssign_norelease		ボタンを離しているのに進まない時は「リセット」ボタンを押してゲームパッドを再接続してみてください。
+
+
+#------------------------------------------------------------------------------
+# スクランブル画面
+
+#スクランブル表示中のタイトルバー表記
+ScrambleTitle0		無題
+ScrambleTitle1		YuzuTube - ブラウザ
+ScrambleTitle2		Yoozle検索 - ブラウザ
+#スクランブル表示中に終了ボタンを押したときの確認ダイアログメッセージ
+ScrambleExitText	終了しますか？
+ScrambleExitTitle	確認
+#スクランブル中のメニューバー表記改変
+ScrambleDisplayMenu	編集(&E)
+#[MEMO] characterMenu unused...
+ScrambleCharacterMenu	書式(&O)
+ScrambleControlMenu	表示(&V)
+
+
+###############################################################################
+#
+# Windowsダイアログ系の言語別テキスト設定
+
+!section dialog
+#------------------------------------------------------------------------------
+
+# ダイアログ汎用
+DialogOK		OK
+DialogCancel		キャンセル
+DialogClose		閉じる
+DialogInit		初期設定
+DialogDetail		詳細情報
+
+# バージョン情報 （メニューバーの「ヘルプ／バージョン情報」で開くウィンドウのタイトル）
+VersionInfo		バージョン情報
+
+# フォント選択ダイアログ
+FontDialogCaption	フォントの選択
+FontDialogDoSelect	フォントを選択してください
+FontDialogLicenseHead	「${name}」のライセンス
+FontDialogLicenseInfo	このフォントのライセンスは詳細情報ボタンで確認してください
+FontDialogInfoFormat	${name}の詳細情報
+FontDialogEmbeddedMark	■
+
+# 組み込みフォント表記差し替え
+#FontFace_XXXX			XXXX(for another languages)
+#FontFace_シーダ		Caeda
+#FontFace_マルベリ		Mulberry
+#FontFace_源ノ角ゴシックR	Source Han Sans Regular
+#FontFace_源ノ角ゴシックB	Source Han Sans Bold
+#FontFace_源ノ角ゴシックH	Source Han Sans Heavy
+#FontFace_源ノ明朝B		Source Han Serif Bold
+#FontFace_源ノ明朝H		Source Han Serif Heavy
+#FontFace_スキップ		Skip
+
+FontCaption_シーダ	モトヤLシーダ3
+FontCaption_マルベリ	モトヤLマルベリ3
+FontCaption_源ノ角ゴシックR	源ノ角ゴシック JP Regular
+FontCaption_源ノ角ゴシックB	源ノ角ゴシック JP Bold
+FontCaption_源ノ角ゴシックH	源ノ角ゴシック JP Heavy
+FontCaption_源ノ明朝B		源ノ明朝 JP
+FontCaption_源ノ明朝H		源ノ明朝 JP Heavy
+FontCaption_スキップ	フォントワークスLETS
+
+# フォント変更の警告
+WarnChangeUserFont	ユーザー独自のフォントに変更した場合、選択したフォントによってはゲーム本文メッセージが正しく表示されないことがありますので予めご了承ください
+
+# 高度な設定の一部設定変更後
+# 	「ヘルプ／高度な設定を表示」で「高度な設定」内の
+#	「マウスホイールの取得方法を変更」(InfoApplyOnRestart)等や「最大フレームレート」(InfoApplyOnAfter)を変更後
+#	※表示されるのは各項目ごと起動中１回のみ
+InfoApplyOnRestart	設定は再起動後に有効となります
+InfoApplyOnAfter	設定は即座に反映されない場合があります
+InfoApplyRebootNow	今すぐ再起動しますか？
+
+# 開始メニューの表示
+#	「ヘルプ／開始メニューの表示」から
+#	※ゲームがインストールされた状態でないと選択できません
+BootStrapKickConfirm	ゲームを終了して開始メニューを表示します
+BootStrapKickFailed	開始メニューの起動に失敗しました
+
+# ゲームパッドのボタン割り当て変更
+# 	「ヘルプ／高度な設定を表示」で「高度な設定」内の「ゲームパッドのボタン割り当て変更」から
+GamePadBindCaption	ゲームパッド割り当て変更
+GamePadBindHeader	ゲームパッドボタン
+GamePadBindButton	ボタン${num}
+GamePadBindKeyName	${key}キー
+GamePadBindNothing	なし
+
+# ファイル選択拡張子
+FileSelectExts*			すべてのファイル
+FileSelectExtsTXT		テキストファイル
+FileSelectExtsEXE		実行ファイル
+
+# スクリーンショット保存ダイアログ
+SaveSnapDlgTitle		${System.title} スクリーンショット保存
+SaveSnapDlgSample		保存イメージ
+SaveSnapDlgTarget		この画像の保存先：
+SaveSnapDlgCaptureOpt		キャプチャ設定
+SaveSnapDlgWithMes		テキストあり
+SaveSnapDlgWithoutMes		テキストなし
+SaveSnapDlgDetail		詳細設定
+SaveSnapDlgHintTwitter		Twitter投稿に関するヒント
+SaveSnapDlgSaveAndClose		保存して閉じる
+# スクリーンショット保存詳細設定
+SaveSnapDlgOptionTitle		スクリーンショット保存設定
+SaveSnapDlgOption		保存設定
+SaveSnapDlgDefFolder		デフォルト保存先フォルダ：
+SaveSnapDlgDefFile		デフォルトファイル名：
+SaveSnapDlgOverwrite		既存のファイルを無視して上書きする
+SaveSnapDlgNoDialog		スクリーンショット保存ダイアログを表示しない
+SaveSnapDlgUseDefault		デフォルト設定を使用して画像を保存
+SaveSnapDlgUseSelect		ファイル保存ダイアログを使用する
+SaveSnapDlgNoDialogComment	※非表示設定から保存ダイアログを表示するには、ファイルメニューから設定を変更するか、Shiftキーを押しながらスクリーンショットを実行します
+# Twitter投稿に関するヒントボタンを押した後のダイアログ
+SaveSnapDlgOpenCapture		キャプチャフォルダをデフォルト保存先にする
+# スクリーンショット通知／エラー
+SaveSnapshotSetCaptureFolder	デフォルト保存先を${_1}へ変更しました
+SaveSnapshotErrNoCaptureFolder	キャプチャフォルダが見つかりません
+SaveSnapshotErrSaveFailed	セーブに失敗しました
+
+
+# テキスト読み上げ定義
+ttsdata_LangName	Japanese
+ttsdata_Sample		こんにちは
+
+ttsdata_PrimLangID	11
+ttsdata_DictEnabled	1
+#ttsconf_VoParamLeftPer	40
+
+# テキスト読み上げ設定
+ttsconf_Title			テキスト読み上げ機能設定
+ttsconf_TargetLang		対象言語：${name}
+
+ttsconf_grpALL			読み上げ設定
+ttsconf_Enabled			テキスト読み上げ機能を有効にする
+
+ttsconf_grpTYPE			音声合成方法
+ttsconf_UseSAPI			Speech API
+ttsconf_UseMSSP			Microsoft Speech Platform
+ttsconf_UseXAPP			外部アプリケーション呼び出し
+ttsconf_AppSel			選択
+ttsconf_fileAppSel		外部アプリケーション選択
+
+ttsconf_grpVOICE		音声パラメータ
+ttsconf_NamLabel		声なし発言
+ttsconf_DscLabel		地の文章
+ttsconf_ComLabel		共通設定
+
+ttsconf_ComSetting		共通設定
+ttsconf_SepSetting		専用設定
+ttsconf_Disabled		無効
+
+ttsconf_Play			発声
+ttsconf_Config			設定
+
+ttsconf_txtLABEL		↑発声テスト文章
+
+ttsconf_EnvSave			設定の保存
+ttsconf_EnvLoad			設定の読み込み
+ttsconf_dlgEnvSave		ユーザー環境変数「${key}」に設定を保存します。\nよろしいですか？
+ttsconf_dlgEnvLoad		ユーザー環境変数「${key}」から設定を読み込みます。\nよろしいですか？
+
+ttsconf_grpVOLUME		音量
+ttsconf_VolGame			ゲーム中の全体ボイス音量設定
+ttsconf_VolIndep		独立した音量設定
+
+ttsconf_grpDICT			読み上げ辞書
+ttsconf_DictUnsupport		- サポートされていません -
+ttsconf_DictImport		インポート
+ttsconf_DictExport		エクスポート
+ttsconf_DictAdd			＋
+ttsconf_DictUp			↑
+ttsconf_DictDown		↓
+ttsconf_DictSel			＠
+ttsconf_DictDel			×
+ttsconf_fileDictImport		読み上げ辞書のインポート
+ttsconf_fileDictExport		読み上げ辞書のエクスポート
+ttsconf_dlgImport		既存の読み上げ辞書が存在します。維持したままインポートしますか？（同名の単語があった場合は上書きされます）
+ttsconf_dlgImportFailed		インポートに失敗しました
+ttsconf_dlgExportFailed		エクスポートに失敗しました
+ttsconf_exportTextHeader	読み上げ辞書一覧ファイル（タブ区切りテキスト）
+
+ttsconf_Help			ヘルプ
+
+# 音声パラメータ設定
+ttstoken_Title			音声パラメータ設定(${name})
+ttstoken_grpALL			${name}パラメータ
+ttstoken_Test			発声テスト
+ttstoken_Token			話者
+ttstoken_EnPitch		音程
+ttstoken_EnRate			速さ
+
+ttstoken_TitleXAPP		音声パラメータ設定(外部アプリケーション呼び出し)
+ttstoken_CmdTarget		実行ファイル：
+ttstoken_NoCmdTarget		*コマンドを設定してください*
+ttstoken_CmdArgs		コマンドラインオプション：
+ttstoken_Description		補足説明：
+
+# 読み上げ辞書追加・編集
+ttsdict_TitleNew		読み上げ辞書追加
+ttsdict_TitleEdit		読み上げ辞書編集
+ttsdict_grpALL			読み上げ辞書
+ttsdict_DictWord		単語
+ttsdict_DictRead		読み
+ttsdict_Add			追加
+ttsdict_Edit			編集
+
+
+
+# ビットマップメモリ確保失敗時の再起動復帰確認
+EmergencyRebootConfirm	ビットマップ用メモリが確保できませんでした。ゲームを再起動して復帰処理を試みますか？
+EmergencyRebootExit	

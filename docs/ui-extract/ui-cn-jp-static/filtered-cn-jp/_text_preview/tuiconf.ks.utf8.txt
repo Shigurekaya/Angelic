@@ -1,0 +1,24 @@
+﻿*start_game
+	[rclick enabled=false]
+	[sysse name="touchui.conf.open"]
+	[panel class="TouchUIConf"]
+	[sysjump from="tuiconf" to="game"]
+	[s]
+
+*start_volume
+	[rclick enabled=false]
+	[sysse name="touchui.volume.open"]
+	[panel class="TouchVolumeConf"]
+	[sysjump from="tuiconf" to="game" back]
+	[s]
+
+*return
+	[sysrestore]
+;;	[freesnapshot]
+	[return]
+
+*sysfrom_game
+	[sysjump from="game" to="tuiconf"]
+
+*volfrom_game
+	[sysjump from="volume" to="tuiconf"]

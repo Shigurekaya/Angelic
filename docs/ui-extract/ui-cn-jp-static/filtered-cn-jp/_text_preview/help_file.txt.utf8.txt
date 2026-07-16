@@ -1,0 +1,197 @@
+﻿# セーブロード画面ヘルプテキスト
+
+back	back2
+	ゲーム画面に戻ります。
+title	title2
+	タイトル画面に戻ります。
+
+to_quick
+	クイックロード画面に移動します。
+to_load
+	ロード画面に移動します。
+to_save
+	セーブ画面に移動します。
+to_voice
+	お気に入りボイス画面に移動します。
+to_cg
+	ＣＧ鑑賞画面に移動します。${_disableExtra}
+to_scene
+	シーン鑑賞画面に移動します。${_disableExtra}
+to_stand
+	立ち絵鑑賞画面に移動します。${_disableStand}
+DISABLE_EXTRA
+	（メインストーリーをクリアするまでは選択できません）
+DISABLE_STAND
+	（アフターストーリーの分岐ルートを全てクリアするまでは選択できません）
+# ※↑help_extra.txt にも同文のテキストがあるので注意
+
+cgmode
+	ＣＧ鑑賞画面へ移動します。
+scenemode
+	シーン鑑賞画面へ移動します。
+exchview
+	立ち絵鑑賞画面へ移動します。
+
+slider	sl_rail
+	ページを選択します。
+
+# ${_dataName}切り替え(セーブロード/お気に入りボイス)
+FILE_DATA
+	データ
+VOICE_DATA
+	ボイス
+
+edit_copy
+	${_dataName}をコピーするモードに切り替えます。
+edit_swap
+	${_dataName}を入れ替えるモードに切り替えます。
+edit_comment
+	${_dataName}のコメントを編集するモードに切り替えます。
+edit_remove
+	${_dataName}を削除するモードに切り替えます。
+
+EDIT_COPY
+	コピーする対象を選んでください。
+EDIT_SWAP
+	入れ替える対象を選んでください。
+EDIT_COMMENT
+	コメントを編集する対象を選んでください。
+EDIT_REMOVE
+	削除する対象を選んでください。
+
+
+hide_thumb
+	個別${_dataName}枠のコメント欄の大きさを変更して詳細内容を表示します。	※詳細表示にするとサムネイルは非表示になります。
+#	個別${_dataName}枠のサムネイルとコメントテキストの表示を切り替えます。
+
+edit_hold
+	${_dataName}編集後に編集モードの状態を維持するかどうか設定します。	連続で編集する場合にチェックしてください。
+
+sceneplay
+	上記のお気に入りボイスのシーンを回想します。
+listmode
+	お気に入りボイスのプレイリスト編集画面に切り替えます。	選択中のボタンを再度クリックすることでお気に入りボイス画面に戻ります。
+
+page_num
+	現在のページの表示です。
+
+page_add
+	ページを追加します。
+page_sub
+	最後のページを削除します。	削除は最後のページが空の状態である必要があります。
+
+page_dw100
+	${_max>101?"１００ページ先":"最後のページ"}に進みます。
+page_dw10
+	１０ページ先に進みます。
+page_dw1
+	１ページ先に進みます。
+
+page_up100
+	${_max>101?"１００ページ前":"最初のページ"}に戻ります。
+page_up10
+	１０ページ前に戻ります。
+page_up1
+	１ページ前に戻ります。
+
+HELP_EDIT
+	${_currentNumberText}の${_dataName}を編集します。${_currentNumber?"":"\nQuick1は移動・削除できませんのでご注意ください。"}
+
+#HELP_LOAD
+#	${_currentNumberText}の${_dataName}を${_loadName}します。
+#HELP_SAVE
+#	現在の${_dataName}を${_currentNumberText}へ${_saveName}します。
+#HELP_OVERWRITE
+#	現在の${_dataName}を${_currentNumberText}へ上書き${_saveName}します。
+#HELP_JUMP
+#	${_currentNumberText}の${_dataName}のシーンを回想します。
+
+# ${_loadName} ${_saveName}切り替え(セーブロード/お気に入りボイス)
+FILE_LOAD
+	ロード
+FILE_SAVE
+	セーブ
+VOICE_LOAD
+	再生
+VOICE_SAVE
+	記録
+
+ITEM_VOICE
+	${_curHelpNum}の${_dataName}を${_loadName}します。
+ITEM_LOAD
+	${_curHelpNum}の${_dataName}を${_loadName}します。
+ITEM_SAVE
+	現在の${_dataName}を${_curHelpNum}へ${_saveName}します。
+
+
+HELP_COPY
+	${getNumberText(_copysrc,true)}のコピー先を選んでください。${_specialPageMode?"":"\n"}${inDrag?"":"（右クリックでキャンセル）"}${!_specialPageMode?"":"　※Quick枠は末尾からあふれた順に消失します。"}
+
+HELP_SWAP
+	${getNumberText(_copysrc,true)}の入れ替え先を選んでください。${_specialPageMode?"":"\n"}${inDrag?"":"（右クリックでキャンセル）"}${!_specialPageMode?"":"　※Quick枠は末尾からあふれた順に消失します。"}
+
+HELP_EDITCOPY
+	${_currentNumberText}をコピーします。	クリックした後にコピー先を指定、もしくはドラッグで直接コピー先を指定します。
+HELP_EDITMOVE
+	${_currentNumberText}を別の${_dataName}と入れ替えます。	クリックした後に入れ替え先を指定、もしくはドラッグで直接入れ替え先を指定します。
+HELP_EDITEDIT
+	${_currentNumberText}のコメントを編集します。
+HELP_EDITDEL
+	${_currentNumberText}を削除します。
+
+EDIT_ADDLIST
+	リストに登録する対象を選んでください。
+EDIT_DELLIST
+	リストから削除する対象を選んでください。
+
+EDIT_SAVELIST
+	現在のプレイリストの保存先を選んでください。
+
+EDIT_LOADLIST
+	ロードするプレイリストを選んでください。	（現在のプレイリストは破棄されます）
+
+HELP_PLIST_DRAG
+	プレイリストの順序を入れ替え先を指定してください。
+
+pitem0	pitem1	pitem2	pitem3	pitem4	pitem5	pitem6	pitem7	pitem8	pitem9
+	プレイリストの一覧です。クリックで指定のお気に入りボイスを再生します。	お気に入りボイスの項目をドラッグして順序を入れ替えることもできます。
+
+edit_addlist
+	プレイリストにお気に入りボイスを追加します。	リストには最大${_voicePlayListMaxCount}個までお気に入りボイスを追加できます。
+edit_dellist
+	プレイリストからお気に入りボイスを削除します。
+edit_clearlist
+	現在のプレイリストの内容をすべて消去します。
+edit_savelist
+	現在のプレイリストの内容をセーブします。（右側のボイス枠に保存できます）${_canExport?"\nShiftキーを押しながらクリックするとデータをファイルに保存することができます。":""}
+edit_loadlist
+	セーブされたプレイリストのデータをロードします。${_canExport?"\nShiftキーを押しながらクリックするとファイルからデータを読み込むことができます。":""}
+
+pslider	pslider_base	plist_top	plist_pageup	plist_pagedown	plist_end
+	プレイリストをスクロールします。
+
+plist_prev
+	現在の１つ前のプレイリストのお気に入りボイスを再生します。
+plist_stop
+	プレイリストの再生を停止します。
+plist_play
+	プレイリストを先頭から再生します。
+plist_next
+	次のプレイリストのお気に入りボイスを再生します。
+plist_all
+	プレイリストを順次再生します。	チェックを外すと１項目のみの再生になります。
+plist_loop
+	プレイリストをループ再生します。
+
+WEAK_SAVE
+	セーブ画面です。セーブするデータを選んでください。
+
+WEAK_LOAD
+	ロード画面です。ロードするデータを選んでください。
+
+WEAK_QUICK
+	クイックロード画面です。ロードするデータを選んでください。
+
+WEAK_VOICE
+	${!_listMode?"お気に入りボイス画面です。":"お気に入りボイスのプレイリスト編集画面です。"}
+

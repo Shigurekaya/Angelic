@@ -1,0 +1,177 @@
+﻿# タッチＵＩカスタマイズ画面ヘルプテキスト
+
+FIRST
+	可以通过拖放来更改${!qmEditMode?"触控面板":"窗口菜单"}的按钮布局。
+
+DRAG
+	将其拖放到目标位置。
+
+DROP
+	将其放置在目标位置。您不能放置多个相同的按钮。
+
+ONDRAG1
+	${DROP}	（操作后另一个地方的相同按钮可能会消失）
+
+ONDRAG2
+	${DROP}	（请注意，无法从栏中删除此按钮）
+
+
+preview
+	这是实际游戏中显示的预览。可以检查尺寸和透明度。	不能通过拖放在此处放置按钮。使用下栏进行放置。
+
+icons_area
+	当前按钮的放置状态。可以通过向左或向右拖动来更改顺序。	将其放置在空白区域以删除。
+
+tab_window
+	自定义窗口菜单按钮。
+tab_touch
+	自定义触控面板按钮。
+menulink
+	统一窗口菜单与触控面板的按钮布局。
+entouch	qmlock
+	启用显示${!qmEditMode?"触控面板":"窗口菜单"}。
+
+func0
+	这是打开此自定义屏幕的按钮。无法从工具栏上删除此按钮。${!qmEditMode?"\n您也可以通过点击并按住（右键单击）触摸面板上的ＵＩ栏来打开它。":""}
+
+func1
+	${GetFuncHelp(1)}	${DRAG}
+func2
+	${GetFuncHelp(2)}	${DRAG}
+func3
+	${GetFuncHelp(3)}	${DRAG}
+func4
+	${GetFuncHelp(4)}	${DRAG}
+func5
+	${GetFuncHelp(5)}	${DRAG}
+func6
+	${GetFuncHelp(6)}	${DRAG}
+func7
+	${GetFuncHelp(7)}	${DRAG}
+func8
+	${GetFuncHelp(8)}	${DRAG}
+func9
+	${GetFuncHelp(9)}	${DRAG}
+func10
+	${GetFuncHelp(10)}	${DRAG}
+func11
+	${GetFuncHelp(11)}	${DRAG}
+func12
+	${GetFuncHelp(12)}	${DRAG}
+func13
+	${GetFuncHelp(13)}	${DRAG}
+func14
+	${GetFuncHelp(14)}	${DRAG}
+func15
+	${GetFuncHelp(15)}	${DRAG}
+func16
+	${GetFuncHelp(16)}	${DRAG}
+func17
+	${GetFuncHelp(17)}	${DRAG}
+func18
+	${GetFuncHelp(18)}	${DRAG}
+func19
+	${GetFuncHelp(19)}	${DRAG}
+func20
+	${GetFuncHelp(20)}	${DRAG}
+func21
+	${GetFuncHelp(21)}	${DRAG}
+
+cmd_pad
+	${qmEditMode?"在这里留出空间":syncMode?"在窗口菜单旁边留出空间":""}
+
+ITEM_SAVE
+	存档。
+
+ITEM_LOAD
+	读档。
+
+ITEM_QSAVE
+	快速存档。
+
+ITEM_DSAVE
+	直接存档。
+
+ITEM_QLOAD
+	快速读档。
+
+ITEM_OPTION
+	系统设定。
+
+ITEM_VREPLAY
+	语音重放。
+
+ITEM_VSAVE
+	语音收藏夹。
+
+ITEM_QVSAVE
+	加入语音收藏。
+
+ITEM_PREVSCN
+	上一个场景。
+
+ITEM_PREV
+	上一个选项。
+
+ITEM_BACKONE
+	上一行文本。
+
+ITEM_BACKSKIP
+	快退。
+
+ITEM_LOG
+	历史记录。
+
+ITEM_AUTO
+	自动模式。
+
+ITEM_SKIP
+	快进模式。
+
+ITEM_NEXTSCN
+	下一个场景。
+
+ITEM_NEXT
+	下一个选择项。
+
+ITEM_SCNCHART
+	流程图。
+
+ITEM_VOLUME
+	音量调整。
+
+ITEM_HIDE
+	隐藏消息窗口。
+
+ITEM_TITLE
+	返回标题界面。
+
+ITEM_SNAPSHOT
+	这是保存截图的按键。
+
+sl_size
+	更改触控面板的尺寸。	在游戏过程中，可以随时通过触摸来放大或缩小尺寸。
+
+useqvsave
+	切换语音收藏按键。
+
+usedsave
+	切换存档按键。
+	
+
+
+sl_opac
+	更改触控面板的透明度。
+
+init
+	将${_helpTabName}的自定义内容初始化。
+NAME_WINDOW
+	文本框菜单
+NAME_TOUCH
+	触控菜单
+
+revert
+	将设置恢复到打开此界面时的状态。	※注意，该操作无需确认。
+
+ok
+	关闭自定义按钮界面。

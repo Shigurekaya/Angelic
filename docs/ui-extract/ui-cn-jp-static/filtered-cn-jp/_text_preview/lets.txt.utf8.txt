@@ -1,0 +1,6 @@
+﻿フォントワークスLETS
+フォントワークス提供の組み込みフォントです
+Fontworks、LETSの名称とロゴ及びフォントワークスLETSで提供されるすべての書体名は
+フォントワークス株式会社の商標または登録商標です。
+
+Copyright(C) 2002-2018 Fontworks Inc. All rights reserved.

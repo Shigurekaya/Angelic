@@ -1,0 +1,60 @@
+﻿# フローチャート画面ヘルプテキスト
+
+back
+	ゲーム画面に戻ります。
+
+title	title2
+	タイトル画面に戻ります。
+
+backlog
+	バックログ画面へ移動します。
+
+page0	page1	page2	page3	page4	page5	page6
+	各ルートを選択します。
+
+top
+	前のCHAPTERまでスクロールします。
+pageup
+	前のページにスクロールします。
+pagedown
+	次のページにスクロールします。
+end
+	次のCHAPTERまでスクロールします。
+
+
+data_bg
+	選択中のシナリオが簡易表示されます。
+
+minimap_base
+	縮小マップが表示されます。	ドラッグしてスクロールすることも可能です。
+
+JUMP
+	選択中のシナリオにジャンプします。
+
+HELP_START
+	フローチャート画面です。	指定のシーンにジャンプすることができます。
+
+HELP_JUMP
+	もう一度クリックするとこのシーンにジャンプします。
+HELP_SECTION
+	${_curHelpChapter}クリックしてこのシーンを選択します。
+HELP_SELECT
+	選択肢です。クリックすると選択肢を決定できます。${_curHelpSelect}
+HELP_WARP
+	個別ルートへの分岐です。	クリックすると該当ルートのページを表示します。
+
+HELP_INDEXHEAD
+	このルートを選択します。
+
+HELP_INDEXITEM
+	このシーンのフローチャートの場所を表示します。
+
+
+HELP_INOUT
+	※Ｈシーン選択肢固定によりルートが選べない場合があります。
+
+HELP_CLEARSEL
+	※ゲームクリア状況によりルートが選べない場合があります。
+
+HELP_CONDSEL
+	※進行状況によりルートが選べない場合があります。

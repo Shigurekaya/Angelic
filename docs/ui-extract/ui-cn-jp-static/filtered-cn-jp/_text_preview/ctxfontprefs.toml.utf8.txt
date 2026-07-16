@@ -1,0 +1,184 @@
+﻿#///////////////////////////////////////////////////////////////
+# テキスト装飾定義ファイル
+#///////////////////////////////////////////////////////////////
+
+#-------------------------------
+# パラメータ集約／参照用
+
+# 省略初期値
+"*"			= { fontface='*SystemFont*', fontbold=false, color=0xFFFFFF, halign=-1, valign=-1 }
+
+# 文字色
+#"_col_xxxx"		= { color:0x012345 }
+"_col_white"		= { color=0xFFFFFF }
+"_col_black"		= { color=0x000000 }
+
+# フォントフェイス
+"_font_sys"		= { fontface='*SystemFont*' }
+"_font_user"		= { fontface='*UserInputFont*' }
+"_font_num"		= { fontface='*NumberFont*' }
+"_font_chapter"		= { fontface='*ChapterFont*' }
+"_font_pgnum"		= { fontface='*PageFont*' }
+"_font_head"		= { fontface='*HeaderFont*' }
+"_font_key"		= { fontface='*KeyFont*' }
+"_font_cmd"		= { fontface='*CommandFont*' }
+"_font_afname"		= { fontface='*NameFont*' }
+"_font_click"		= { fontface='*ClickFont*' }
+
+# 装飾
+"_font_edge"		= { edge=true, edgeColor=0xFFFFFF, edgeEmphasis=3072, edgeExtent=3 }
+"_font_noedge"		= { edge=false }
+
+# 配置
+"_align_left"		= { halign=-1 }
+"_align_center"		= { halign= 0 }
+"_align_right"		= { halign= 1 }
+
+"_valign_top"		= { valign=-1 }
+"_valign_center"	= { valign= 0 }
+"_valign_bottom"	= { valign= 1 }
+
+"_center"		= [ "_align_center", "_valign_center" ]
+"_vcenter"		= [ "_align_left",  "_valign_center" ]
+
+#-------------------------------
+# デバッグ向け
+
+# 開発中コメント
+"debug.*"		= [{ padding=8, color=0x00FF00, edgeColor=0x800080 }, "_font_edge" ]
+
+# ダミーサムネ生成ツール用
+"dummythumb"		= { halign=0, valign=0, color=0x800000, edge=true, edgeColor=0xFFFFFF, edgeExtent=2, edgeEmphasis=4096, fontface="ＭＳ Ｐゴシック" }
+
+#-------------------------------
+# ＵＩ汎用
+
+# 全て暫定
+"_uitext_edge"		= [ {   edgeColor=0x022d67, edgeEmphasis=512 }, "_font_edge" ]
+"_uitext_shadow"	=   { shadowColor=0x0e050a,  shadowWidth=4, shadowOffsetX=2, shadowOffsetY=3, shadow=true, edge=false }
+"_uitext_center"	= [ "_uitext_edge", "_center" ]
+"_uitext_vcenter"	= [ "_uitext_edge", "_vcenter" ]
+
+"_uitext_headerfont"	= [ { fontheight=22 }, "_uitext_center", "_font_head" ]
+"_uitext_basicfont"	= [ { fontheight=22 }, "_uitext_center", "_font_sys" ]
+"_uitext_checkfont"	= [ { fontheight=20 }, "_uitext_center", "_font_sys" ]
+
+"_uitext_states3btn"	= { esstate=true, states=[ "off", "on",   "over" ] }
+"_uitext_states3rad"	= { esstate=true, states=[ "off", "on",   "over", "on" ] }
+"_uitext_states6rad"	= { esstate=true, states=[ "off", "on",   "over", "on", "off", "over" ] }
+"_uitext_states2chk"	= { esstate=true, states=[ "off", "over", "over", "off", "over", "over" ] }
+"_uitext_states2ds"	= { esstate=true, states=[ "off", "off", "off", "ds", "off", "off", "off", "ds" ] }
+"_uitext_0state"	= {               states={""=1} }
+
+"_font_skyedge"		= { edge=true, color=0x0068e8, edgeColor=0xe8f8eb, edgeExtent=4, edgeEmphasis=512 }
+"_uitext_off_skyedge"	= { stat_off={ color=0x0068e8, edgeColor=0xe8f8eb, edgeExtent=4, edgeEmphasis=512 } }
+
+"uitext_bgsel.*"	= [ { edge=false, color=0xFFFFFF, fontheight=20 }, "_uitext_headerfont" ]
+"uitext_btn.*"		= [ { edge=false, colors={ off=0xFFFFFF, over=0x002b7b, on=0xFFFFFF } },
+			    "_uitext_states3btn", "_uitext_basicfont" ]
+"uitext_wbtn.*"		= [ "_col_white",          "_uitext_states3btn", "_uitext_basicfont" ]
+
+"uitext_rbt.*"		= [ "_uitext_off_skyedge", "_uitext_states3btn", "_uitext_basicfont" ]
+"uitext_rad.*"		= [ "_uitext_off_skyedge", "_uitext_states3rad", "_uitext_basicfont" ]
+"uitext_rads.*"		= [ { fontheight=20 }, "uitext_rad.*" ]
+
+# cf. dialog/suspend_on
+"uitext_wrad.*"		= [ { stat_off={ color=0xFFFFFF, edge=false } }, "_uitext_states3rad", "_uitext_basicfont" ]
+
+"uitext_sys.*"		= [ { marginB=8, edgeExtent=7, edgeEmphasis=1024 }, 
+			    { stat_off ={ edgeColor=0x004aa4 } },
+			    { stat_over={ edgeColor=0x0094b9 } },
+			    { stat_on  ={ edgeColor=0xd0ba00 } },
+			    "_uitext_states3btn", "_uitext_headerfont" ]
+
+"uitext_check.*"	= [ { stat_off = { color=0x1c6eaf, edgeColor=0xe8f8eb, edgeExtent=4, edgeEmphasis=512 } },
+			    { stat_over= { color=0xFFFFFF, edgeColor=0x19d6ff, edgeExtent=4, edgeEmphasis=512 } },
+			    "_uitext_vcenter", "_uitext_states2chk", "_uitext_checkfont" ]
+"uitext_wchk.*"		= [ { stat_off = { color=0xFFFFFF, edge=false } },
+			    { stat_over= { color=0xFFFFFF, edgeColor=0x19d6ff, edgeExtent=4, edgeEmphasis=512 } },
+			    "_uitext_vcenter", "_uitext_states2chk", "_uitext_checkfont" ]
+"uitext_swchk.*"	= [ { stat_off = { color=0xFFFFFF, edgeColor=0x002b66, edge=true } }, "uitext_wchk.*" ]
+
+"uitext_label.*"	= [ { color=0x002b66, fontheight=22 }, "_vcenter", "_font_head", "_uitext_0state" ]
+"uitext_dlabel.*"	= [ { linestep=30 },"_align_right", "uitext_label.*" ]
+"uitext_qlabel.*"	= [ {             fontheight=18 }, "uitext_label.*" ]
+"uitext_slabel.*"	= [ { marginL=16, fontheight=20 }, "uitext_label.*" ]
+"uitext_rlabel.*"	= [ { halign=1,   fontheight=20 }, "uitext_label.*" ]
+"uitext_cslabel.*"	= [ { halign=0,   fontheight=18 }, "_font_sys", "uitext_label.*" ]
+"uitext_wlabel.*"	= [ "_col_white", "uitext_label.*" ]
+"uitext_cblabel.*"	= [ { halign=0, fontheight=30 }, "uitext_label.*" ]
+
+"uitext_cslabel.description"	= { fontheight=20 }
+"uitext_label.tocancel"	= { halign=0, fontheight=18 }
+
+
+# クイックポップアップ枠
+"uitext_qpchk.*"	= "uitext_check.*"
+"uitext_qpsw.*"		= "uitext_rbt.*"
+"uitext_qpbtn_off.*"	= [ "_font_skyedge", "_uitext_basicfont" ]
+"uitext_qpbtn_ov.*"	=                    "_uitext_basicfont"
+
+# データ枠編集
+"uitext_edit.*"		= "uitext_rbt.*"
+
+# プレイリスト編集
+"uitext_pled.*"		= "_uitext_center"
+
+# 個別システムボイス
+#"uitext_svnm.*"		= [ { stat_off={ edgeColor=0x002b66 }, stat_over={ edgeColor=0x00d5ee }, stat_on={ edgeColor=0xff64b8 } },
+#			    "_uitext_states6rad", "_uitext_headerfont" ]
+"uitext_svnm.*"		= [ { color=0x002b66, edgeColor=0xFFFFFF, edgeEmphasis=4096 }, "_uitext_headerfont" ]
+
+# フローチャート個別ルート
+"uitext_route.*"	= [ { color=0x002b66, fontheight=28, linestep=24 }, "_font_head", "_center" ]
+
+# エクストラ分類名
+"uitext_grp.*"		= [ { fontheight=24 }, "_col_white", "_font_head",  "_center" ]
+
+# 立ち絵鑑賞キャラ名
+"uitext_chsel.*"	= [ { valign=1, marginB=20, fontheight=24 }, "_col_white", "_uitext_states3btn", "_uitext_headerfont" ]
+
+# キーボード文字
+"uitext_key.*"		= [ { fontheight=14, padding=2, stat_ds={color=0x002b66, edge=false} }, "_uitext_edge", "_uitext_states2ds", "_font_key" ]
+# 固定キー
+"uitext_fxk.*"		= [ { fontheight=14, padding=2, color=0x002b66 }, "_font_key" ]
+# キー割り当て済みポップアップ
+"uitext_bind.*"		= "_uitext_vcenter"
+
+# コマンドパレット
+"uitext_cmd.*"		= [ { fontheight=13 }, "_center", "_font_cmd" ]
+
+# アフターストーリーキャラ名前
+"uitext_afn.*"		= [ { fontheight=48, edgeColor=0xd74826, edgeExtent=10, edgeEmphasis=512 }, "_uitext_center", "_font_afname" ]
+"uitext_afn2.*"		= [ { edgeEmphasis=1024 }, "uitext_afn.*" ]
+
+
+# ダイアログテキスト
+"uitext_dlgtext.*"	= [ { fontheight=36, linestep=40, color=0xFFFFFF }, "_uitext_shadow", "_uitext_headerfont" ]
+
+"uitext_dlgsus.suspend|comment" = [ { fontheight=24, linestep=33, color=0x2cbcff }, "uitext_cslabel.*" ]
+"uitext_dlgsus.suspend|header"  = [ { fontheight=22, linestep=30 }, "_col_white", "uitext_rlabel.*" ]
+
+# 選択肢特殊
+"uitext_selicon.*"	= [ { fontheight=14, color=0xFFFFFF, edgeColor=0x400000 }, "_uitext_center", "_uitext_headerfont" ]
+
+# キャプション(画面左上)
+"uitext_caption.*"	= [ { ox=1, oy=3, fontheight=36, edgeColor=0x002b66, edgeExtent=8, edgeEmphasis=256 }, "_col_white", "_uitext_vcenter", "_font_chapter" ]
+
+# CG/シーン鑑賞グループ内番号
+"uitext_subpg.*"	= [ { fontheight=16, marginB=2, marginR=1 }, "uitext_bgsel.*" ]
+
+
+#-------------------------------
+# ヘルプ全般
+
+"help.text"		= { color=0x002b66, halign=-1, valign=0, fontheight=18, linestep=24 }
+"*.help"		= "help.text"
+"flow.help"		=  [ "_col_white", "help.text" ]
+#"cgmode.help"		=  [ { padding=8, edgeColor=0xFFFFFF }, "_font_edge", "help.text" ]
+
+# ゲームパッドボタン割り当て中の特殊サイズヘルプ
+"gpbassign.text"	= [ { marginL=16 }, "help.text" ]
+
+# ゲーム中qmenuヘルプ
+"quickmenu.help"	= { halign=0, valign=0, marginT=1, fontheight=18, color=0xFFF

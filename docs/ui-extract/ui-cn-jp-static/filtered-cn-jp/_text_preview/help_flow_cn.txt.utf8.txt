@@ -1,0 +1,60 @@
+﻿# フローチャート画面ヘルプテキスト
+
+back
+	返回游戏界面。
+
+title	title2
+	返回标题界面。
+
+backlog
+	移动至历史记录界面。
+
+page0	page1	page2	page3	page4	page5	page6
+	页面选择。
+
+top
+	滚动到上一章节。
+pageup
+	滚动到上一页。
+pagedown
+	滚动到下一页。
+end
+	滚动到下一章节。
+
+
+data_bg
+	预览选择的场景。
+
+minimap_base
+	这里是缩略图。拖动鼠标可以快速滚动。
+
+JUMP
+	跳转至选择的场景。
+
+HELP_START
+	流程图界面。	查看剧情全部流程并跳转至指定场景。
+
+HELP_JUMP
+	再次单击以跳转至该场景。
+HELP_SECTION
+	${_curHelpChapter}单击选择该场景。
+HELP_SELECT
+	选择项。单击选择分支。${_curHelpSelect}
+HELP_WARP
+	选择个人路线。	单击以显示对应的路线页面。
+
+HELP_INDEXHEAD
+	选择该路线。
+
+HELP_INDEXITEM
+	显示该场景的流程图位置。
+
+
+HELP_INOUT
+	※根据对Ｈ场景的系统设置，该选项可能无法选择。
+
+HELP_CLEARSEL
+	※根据游戏结局完成情况，可能无法选择此路线。
+
+HELP_CONDSEL
+	※根据游戏完成进度，可能无法选择此路线。

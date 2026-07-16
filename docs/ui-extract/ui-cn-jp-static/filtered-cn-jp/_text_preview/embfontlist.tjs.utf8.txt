@@ -1,0 +1,95 @@
+﻿(const)[
+	// 小杉ゴシックフォント（＝旧モトヤフォント）
+	(const)%[ "license" => "Kosugi-NOTICE.txt", "detail" => "Kosugi-LICENSE.txt", "ignorelang"=>"cn,tw" ], (const)[
+		(const)%[ "name"=>"小杉ゴシック",   "file"=>"Kosugi-Regular.ttf",     "face"=>"MotoyaLCedar", "capname"=>"Kosugi"   ],
+		(const)%[ "name"=>"小杉丸ゴシック", "file"=>"KosugiMaru-Regular.ttf", "face"=>"MotoyaLMaru",  "capname"=>"Kosugi Maru" ]
+		],
+
+	// 源ノ｛角ゴシック／明朝｝
+	(const)%[ "license" => "SourceHanSansAndSerif-NOTICE.txt", "detail" => "SourceHanSansAndSerif-LICENSE.txt", "ignorelang"=>"cn,tw" ], (const)[
+		(const)%[ "name"=>"源ノ角ゴシックR", "file"=>"SourceHanSansJP-Regular.otf", "face"=>"源ノ角ゴシック JP Regular" ],
+		(const)%[ "name"=>"源ノ角ゴシックB", "file"=>"SourceHanSansJP-Bold.otf",    "face"=>"源ノ角ゴシック JP Bold"    ],
+		(const)%[ "name"=>"源ノ角ゴシックH", "file"=>"SourceHanSansJP-Heavy.otf",   "face"=>"源ノ角ゴシック JP Heavy"   ],
+
+		(const)%[ "name"=>"源ノ明朝B", "file"=>"SourceHanSerifJP-Bold.otf",  "face"=>"源ノ明朝 JP"         ],
+		(const)%[ "name"=>"源ノ明朝H", "file"=>"SourceHanSerifJP-Heavy.otf", "face"=>"源ノ明朝 JP Heavy"   ]
+		],
+
+	@if (1)
+	// SourceHanSans/Serif (Traditional_Chinese)
+	(const)%[ "license" => "SourceHanSansAndSerif-NOTICE.txt", "detail" => "SourceHanSansAndSerif-LICENSE.txt", "uselang"=>"tw" ], (const)[
+		(const)%[ "name"=>"思源黑體R", "file"=>"SourceHanSansTC-Regular.otf", "face"=>"Source Han Sans TC Regular" ],
+		(const)%[ "name"=>"思源黑體B", "file"=>"SourceHanSansTC-Bold.otf",    "face"=>"Source Han Sans TC Bold"    ],
+		(const)%[ "name"=>"思源黑體H", "file"=>"SourceHanSansTC-Heavy.otf",   "face"=>"Source Han Sans TC Heavy"   ],
+
+		(const)%[ "name"=>"思源宋體B", "file"=>"SourceHanSerifTC-Bold.otf",   "face"=>"Source Han Serif TC"        ],
+		(const)%[ "name"=>"思源宋體H", "file"=>"SourceHanSerifTC-Heavy.otf",  "face"=>"Source Han Serif TC Heavy"  ]
+		],
+
+	// SourceHanSans/Serif (Simplified_Chinese)
+	(const)%[ "license" => "SourceHanSansAndSerif-NOTICE.txt", "detail" => "SourceHanSansAndSerif-LICENSE.txt", "uselang"=>"cn" ], (const)[
+		(const)%[ "name"=>"思源黑体R", "file"=>"SourceHanSansSC-Regular.otf", "face"=>"Source Han Sans SC Regular" ],
+		(const)%[ "name"=>"思源黑体B", "file"=>"SourceHanSansSC-Bold.otf",    "face"=>"Source Han Sans SC Bold"    ],
+		(const)%[ "name"=>"思源黑体H", "file"=>"SourceHanSansSC-Heavy.otf",   "face"=>"Source Han Sans SC Heavy"   ],
+
+		(const)%[ "name"=>"思源宋体B", "file"=>"SourceHanSerifSC-Bold.otf",  "face"=>"Source Han Serif SC"         ],
+		(const)%[ "name"=>"思源宋体H", "file"=>"SourceHanSerifSC-Heavy.otf", "face"=>"Source Han Serif SC Heavy"   ]
+		],
+	@endif
+
+	// 組み込みフォント
+	(const)%[
+		//"ignorelang"=>"cn,tw",
+		"uselang"=>"jp",
+		"copyright" => "LETS.txt",
+		/*
+		"comment" => "フォントワークス提供の組み込みフォントです",
+		"caption" => "フォントワークスLETS",
+		"detail"  => (const)[
+			"Fontworks、LETSの名称とロゴ及びフォントワークスLETSで提供されるすべての書体名は",
+			"フォントワークス株式会社の商標または登録商標です。",
+			"",
+			"Copyright(C) 2002-2019 Fontworks Inc. All rights reserved."
+			],
+		 */
+		"size" => (const)[ 56, 48, 39, 32, 26, 20, 14, 10 ] // 共通サイズリスト
+		], (const)[
+			(const)%[ "name"=>"スキップ", "file"=>"font1_${size}.tft", "deffont"=>true ]
+		],
+	(const)%[
+		"uselang"=>"en",
+		"copyright" => "LETS.txt",
+		"size" => (const)[ 56, 48, 39, 32, 26, 20, 14, 10 ] // 共通サイズリスト
+		], (const)[
+			(const)%[ "name"=>"Skip(en)", "file"=>"font2_${size}.tft" ],
+			@set (SKIP_ITALIC_TEST=0)
+			@if (SKIP_ITALIC_TEST)
+			(const)%[ "name"=>"Skip(en)", "file"=>"font2it_${size}.tft", "italic"=>true ], // Arsenal-Italic, fontsize/baseline modified.
+			(const)%[ "name"=>"Skip(en)ItalicTest", "file"=>"font2_${size}.tft" ],
+			(const)%[ "name"=>"Skip(en)ItalicTest", "file"=>"font2it_${size}.tft", "italic"=>true ]
+			@endif
+			@if (!SKIP_ITALIC_TEST)
+			(const)%[ "name"=>"Skip(en)", "file"=>"font3it_${size}.tft", "italic"=>true ] // Arsenal-Italic, fontsize/baseline modified.
+			@endif
+		],
+
+	// Arsenal (For English only)
+	(const)%[
+		"license" => "Arsenal-NOTICE.txt", "detail" => "Arsenal-LICENSE.txt", "uselang"=>"en",
+		"size" => (const)[ 56, 48, 39, 32, 26, 20, 14, 10 ] // 共通サイズリスト
+		], (const)[
+			(const)%[ "name"=>"ArsenalBold", "file"=>"font4_${size}.tft" ],
+			(const)%[ "name"=>"ArsenalBold", "file"=>"font4it_${size}.tft", "italic"=>true ]
+		],
+
+	// システム用フォント
+	(const)%[ "noentry"=>true ], (const)[
+		(const)%[ "name"=>"*システム", "file"=>"sysfont_%d.tft",  "size"=>(const)[ 10,12,15,16,18,20,22,24,30 ], "atlas"=>"sysfont_atlas.png",  "tftpri"=>true ],
+		(const)%[ "name"=>"*ヘッダ",   "file"=>"headfont_%d.tft", "size"=>(const)[ 20,22,24,30,36 ],             "atlas"=>"headfont_atlas.png", "tftpri"=>true ],
+		(const)%[ "name"=>"*SysAtlas",                                                                            "file"=>"sysfont_atlas.png"                  ], // [NOTE] 英語用
+		(const)%[ "name"=>"*HeadAtlas",                                                                           "file"=>"headfont_atlas.png"                 ], // [NOTE] 英語用
+		(const)%[ "name"=>"*番号",                                             "file"=>"numfont_atlas.png"  ],
+		(const)%[ "name"=>"*小鍵",     "file"=>"keyfont_%d.tft",  "size"=>14, "atlas"=>"keyfont_atlas.png"  ],
+		(const)%[ "name"=>"*大名",                                            "file"=>"namefont_atlas.png"  ]
+		]
+	]

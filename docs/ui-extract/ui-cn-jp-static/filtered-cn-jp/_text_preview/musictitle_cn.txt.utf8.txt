@@ -1,0 +1,71 @@
+﻿# 音楽鑑賞／ゲーム中BGMタイトル表記翻訳定義
+#
+#bgmfile	translate
+#
+
+# Unlistened(locked)
+???	No Data
+
+#※翻訳が必要な曲のみ列挙（書き換えたら # を外すこと）
+#
+BGM91	FUN FUN RE-BOOT(TitleVer.)
+BGM01	Hot Morning
+BGM02	Blazing Sunshine
+BGM03	Familiar School
+BGM04	Fun Fun Friends
+BGM05	Fine Everyday
+BGM06	Usual Interaction
+BGM07	Summer Holiday
+BGM08	Happy Memories
+BGM09	Good Work
+BGM10	Relaxation
+BGM19	Slow Time
+BGM51	你和我的第一次(BGM Ver.)
+BGM61	你和我的第一次(QuietVer.)
+BGM52	只有我。(BGM Ver.)
+BGM62	只有我。(QuietVer.)
+BGM53	青春的日子(BGM Ver.)
+BGM63	青春的日子(QuietVer.)
+BGM54	春心摇曳(BGM Ver.)
+BGM64	春心摇曳(QuietVer.)
+BGM55	Loyal Servant
+BGM65	幸福的魔法(QuietVer.)
+BGM56	Dear Teacher
+BGM66	wish(QuietVer.)
+BGM11	Kawaii…?
+BGM12	AYASHIGE
+BGM13	I-KAN
+BGM14	U・F・N
+BGM15	Punchline
+BGM24	King's Soul
+BGM25	Previous Era
+BGM18	Angel Advent
+BGM31	Thought
+BGM21	Flicker
+BGM22	Strange World
+BGM23	Uninvited Visitor
+BGM27	Distortion
+BGM26	Tense Up
+BGM28	Incomprehensible
+BGM32	Temptation
+BGM36	Fear
+BGM35	Strain
+BGM33	Lonely
+BGM34	Disclose
+BGM37	Figure Out
+BGM29	Magic Battle
+BGM30	Target Shooting
+BGM47	Confrontation
+BGM48	Beyond Destiny
+BGM49	Judgment
+BGM38	Heart-to-Heart
+BGM20	Make Love
+BGM50	FUN FUN RE-BOOT(PianoVer.)
+SongOP	FUN FUN RE-BOOT
+SongED1	Call My Name
+SongED2	听我说。
+SongED3	印心之旅
+SongED4	DIVE
+SongED5	幸福的魔法
+SongED6	wish
+BGM17	Welcome to Cafe Stella!

@@ -1,0 +1,90 @@
+﻿// 各種デフォルトフォント・エイリアス定義
+%[
+	// 共通定義
+	"*" => %[
+		"lang_*"  => "源ノ角ゴシックB", // failsafe用
+		"lang_jp" => "源ノ角ゴシックB",
+		"lang_en" => "源ノ角ゴシックB",
+		"lang_cn" => "思源黑体B",
+		"lang_tw" => "思源黑體B",
+		], 
+
+	// 旧フォント名のエイリアス
+	"シーダ"   => "小杉ゴシック",
+	"マルベリ" => "小杉丸ゴシック",
+
+	// [▼]マクロ用
+	"$ハート$" => "源ノ角ゴシックH",
+
+	/**
+	 * "Key" => %[ face, lang, lang_*, parent, name?=Key+"FontFace", map?=Key+"FontFaceMap" ],
+	 */
+
+	"SystemDefault"  => %[
+	lang:"ui",alias:"SystemFont", // システム用
+		"lang_jp" => "*システム", // "*システム" = 組み込み(cf. embfontlist.tjs)
+		"lang_en" => "*SysAtlas", //"*システム",
+		"lang_cn" => "思源黑体R",
+		"lang_tw" => "思源黑體R",
+		"lang_*" => "MS Shell Dlg 2",
+		],
+
+	"SystemHeader"   => %[
+	lang:"ui", alias:"HeaderFont", // 見出し用フォント
+		"lang_jp" => "*ヘッダ", // "*ヘッダ" = 組み込み(cf. embfontlist.tjs)
+		"lang_en" => "*HeadAtlas", //"*ヘッダ",
+		"lang_cn" => "思源黑体B",
+		"lang_tw" => "思源黑體B",
+		],
+
+	"MessageDefault" => %[
+	lang:"text", alias:"MessageFont", // 通常テキスト
+		"lang_jp" => "スキップ", // "スキップ" = 組み込み(cf. embfontlist.tjs)
+		"lang_en" => "Skip(en)",
+		"lang_cn" => "思源黑体B",
+		"lang_tw" => "思源黑體B",
+		],
+
+	"UserInputText"  => %[
+	lang:"ui", alias:"UserInputFont", // ユーザー入力用
+		"lang_jp" => "源ノ角ゴシックB",
+//		"lang_en" => "スキップ",
+		],
+
+	"SystemNumber" => %[
+	lang:"ui", alias:"NumberFont", // ページ番号・チャプター表記用
+		"lang_jp" => "*番号", // "*番号" = 組み込み(cf. embfontlist.tjs)
+		],
+
+
+	// alias
+	"*PageFont*"	=> "小杉丸ゴシック", // セーブロード画面等のページ番号
+	"*KeyFont*"		=> "*番号", // コンフィグキーボード
+	"*ChapterFont*"	=> "*番号", // チャプター表記
+//	"*CommandFont*"	=> "*小鍵", // コマンドパレット小テキスト
+//	"*NameFont*"		=> "*大名", // アフター選択キャラ名
+	// 多言語時
+	"AfterName" => %[
+	lang:"ui", alias:"NameFont", // アフターストーリー名前
+		"lang_jp" => "*大名",
+		"lang_en" => "*大名",
+		"lang_cn" => "思源宋体H",
+		"lang_tw" => "思源宋體H",
+		],
+	"CommandName" => %[
+	lang:"ui", alias:"CommandFont", // ページ番号・チャプター表記用
+		"lang_jp" => "*小鍵",
+		"lang_en" => "*小鍵",
+		"lang_cn" => "思源黑体R",
+		"lang_tw" => "思源黑體R",
+		],
+	
+	"ClickName" => %[
+	lang:"ui", alias:"ClickFont", // ページ番号・チャプター表記用
+		"lang_jp" => "小杉丸ゴシック", // セーブロード画面等のページ番号
+		"lang_en" => "*番号",
+		"lang_cn" => "思源黑体B",
+		"lang_tw" => "思源黑體B",
+		],
+
+	]

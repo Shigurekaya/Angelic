@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Full dumps / duplicates (not CN-JP UI scope)
+docs/ui-extract/full-static/
+docs/ui-extract/static-force/
+
+# Raw / full data.xp3 mirrors (contain non-UI + >100MB blobs).
+# UI images + design logic live in image/ and filtered-cn-jp/.
+docs/ui-extract/ui-cn-jp-static/data/
+docs/ui-extract/ui-cn-jp-static/renamed/
