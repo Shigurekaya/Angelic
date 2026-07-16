@@ -37,7 +37,14 @@ UI_FILE = re.compile(
     # save/load, CG gallery, flowchart, extras (JP base + CN overlays)
     r"save|load|qsave|qload|qconf|file_save|file_load|saveload|savelist|"
     r"cgmode|cgview|cglist|exgallery|extra|scnchart|uichart|uiextra|"
-    r"photoview|uiloader|rotatesave"
+    r"photoview|uiloader|rotatesave|"
+    # in-game dialogue / story flow UI
+    r"select|clickglyph|autoskipmark|phonechat|qlpopup|qvpopup|"
+    r"touchui|touchvolume|voicebar|chapter|btncustom|file_quick|"
+    r"msghack|rendermsgwin|nameframe|name\.|scenemode|drawtext|"
+    r"historylayer|selectlayer|mapselect|linebreak|pagebreak|"
+    r"textrender|tagtext|linemode|uimain|uiparts|uifile|uisystem|"
+    r"uisupport|uistand|uitouch|uivoice|uiqconf|envinit|yuzu_default"
     r")"
 )
 SKIP_FILE = re.compile(r"(?i)(_en|_tw)(\.|$)")
