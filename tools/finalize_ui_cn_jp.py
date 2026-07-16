@@ -33,7 +33,11 @@ UI_FILE = re.compile(
     r"backlog|message|button|icon|window|panel|staff|logo|tips|font|"
     r"cursor|gauge|slider|flow_text|locale|lang|uioption|aboutdialog|"
     r"attention|watermark|deactivelogo|multilang|langselect|langfile|"
-    r"langrender|menus\.|ui/"
+    r"langrender|menus\.|ui/|"
+    # save/load, CG gallery, flowchart, extras (JP base + CN overlays)
+    r"save|load|qsave|qload|qconf|file_save|file_load|saveload|savelist|"
+    r"cgmode|cgview|cglist|exgallery|extra|scnchart|uichart|uiextra|"
+    r"photoview|uiloader|rotatesave"
     r")"
 )
 SKIP_FILE = re.compile(r"(?i)(_en|_tw)(\.|$)")
