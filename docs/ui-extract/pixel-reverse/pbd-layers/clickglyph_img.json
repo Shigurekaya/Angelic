@@ -1,0 +1,377 @@
+{
+  "source": "clickglyph_img.pbd",
+  "layer_count": 31,
+  "hotspot_count": 21,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "copy",
+      "sort_index": 1265,
+      "height": 29
+    },
+    {
+      "layer_id": "anim5",
+      "sort_index": 1285,
+      "width": 145,
+      "height": 168
+    },
+    {
+      "layer_id": "anim1",
+      "sort_index": 1319,
+      "width": 202,
+      "height": 202
+    },
+    {
+      "layer_id": "anim2",
+      "sort_index": 1355,
+      "width": 216,
+      "height": 142
+    },
+    {
+      "layer_id": "anim8",
+      "sort_index": 1411,
+      "width": 218,
+      "height": 40
+    },
+    {
+      "layer_id": "anim7",
+      "sort_index": 1439,
+      "width": 80,
+      "height": 54
+    },
+    {
+      "layer_id": "anim0",
+      "sort_index": 1450,
+      "width": 130,
+      "height": 29
+    },
+    {
+      "layer_id": "anim3",
+      "sort_index": 1467,
+      "width": 125,
+      "height": 115
+    },
+    {
+      "layer_id": "anim4",
+      "sort_index": 1478,
+      "width": 192,
+      "height": 163
+    },
+    {
+      "layer_id": "anim6",
+      "sort_index": 1486,
+      "width": 235,
+      "height": 56
+    },
+    {
+      "layer_id": "icon",
+      "sort_index": 1497,
+      "height": 220
+    },
+    {
+      "layer_id": "anim10",
+      "sort_index": 1663,
+      "width": 57,
+      "height": 68
+    },
+    {
+      "layer_id": "anim9",
+      "sort_index": 1731,
+      "width": 117,
+      "height": 102
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2113,
+      "height": 253
+    },
+    {
+      "layer_id": "anim11",
+      "sort_index": null,
+      "width": 197,
+      "height": 29
+    },
+    {
+      "layer_id": "b",
+      "sort_index": null,
+      "height": 29,
+      "cy": 84
+    },
+    {
+      "layer_id": "clickglyph_img__pack",
+      "sort_index": null,
+      "width": 160
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 29
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 200
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 162
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 202
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "overlay",
+      "sort_index": 767,
+      "properties": {},
+      "file_offset": 1384
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1265,
+      "properties": {
+        "height": 29
+      },
+      "file_offset": 1292
+    },
+    {
+      "layer_id": "anim5",
+      "sort_index": 1285,
+      "properties": {
+        "height": 168,
+        "width": 145
+      },
+      "file_offset": 236
+    },
+    {
+      "layer_id": "anim1",
+      "sort_index": 1319,
+      "properties": {
+        "height": 202,
+        "width": 202
+      },
+      "file_offset": 172
+    },
+    {
+      "layer_id": "anim2",
+      "sort_index": 1355,
+      "properties": {
+        "height": 142,
+        "width": 216
+      },
+      "file_offset": 188
+    },
+    {
+      "layer_id": "anim8",
+      "sort_index": 1411,
+      "properties": {
+        "height": 40,
+        "width": 218
+      },
+      "file_offset": 284
+    },
+    {
+      "layer_id": "anim7",
+      "sort_index": 1439,
+      "properties": {
+        "height": 54,
+        "width": 80
+      },
+      "file_offset": 268
+    },
+    {
+      "layer_id": "anim0",
+      "sort_index": 1450,
+      "properties": {
+        "height": 29,
+        "width": 130
+      },
+      "file_offset": 156
+    },
+    {
+      "layer_id": "anim3",
+      "sort_index": 1467,
+      "properties": {
+        "height": 115,
+        "width": 125
+      },
+      "file_offset": 204
+    },
+    {
+      "layer_id": "anim4",
+      "sort_index": 1478,
+      "properties": {
+        "height": 163,
+        "width": 192
+      },
+      "file_offset": 220
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 1480,
+      "properties": {},
+      "file_offset": 1434
+    },
+    {
+      "layer_id": "anim6",
+      "sort_index": 1486,
+      "properties": {
+        "height": 56,
+        "width": 235
+      },
+      "file_offset": 252
+    },
+    {
+      "layer_id": "icon",
+      "sort_index": 1497,
+      "properties": {
+        "height": 29,
+        "h": 220
+      },
+      "file_offset": 142
+    },
+    {
+      "layer_id": "anim10",
+      "sort_index": 1663,
+      "properties": {
+        "height": 68,
+        "width": 57
+      },
+      "file_offset": 316
+    },
+    {
+      "layer_id": "anim9",
+      "sort_index": 1731,
+      "properties": {
+        "height": 102,
+        "width": 117
+      },
+      "file_offset": 300
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2113,
+      "properties": {
+        "height": 253
+      },
+      "file_offset": 4806
+    },
+    {
+      "layer_id": "a",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 2605
+    },
+    {
+      "layer_id": "anim11",
+      "sort_index": null,
+      "properties": {
+        "height": 29,
+        "width": 197
+      },
+      "file_offset": 334
+    },
+    {
+      "layer_id": "b",
+      "sort_index": null,
+      "properties": {
+        "height": 29,
+        "cy": 84
+      },
+      "file_offset": 512
+    },
+    {
+      "layer_id": "clickglyph_img__pack",
+      "sort_index": null,
+      "properties": {
+        "w": 160
+      },
+      "file_offset": 76
+    },
+    {
+      "layer_id": "e",
+      "sort_index": null,
+      "properties": {
+        "height": 29,
+        "h": 12294
+      },
+      "file_offset": 1182
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 26
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "properties": {
+        "height": 29
+      },
+      "file_offset": 394
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 46
+    },
+    {
+      "layer_id": "l",
+      "sort_index": null,
+      "properties": {
+        "height": 29,
+        "h": 14068
+      },
+      "file_offset": 852
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 37
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 120
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 2663
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 200
+      },
+      "file_offset": 1492
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 162
+      },
+      "file_offset": 1516
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 202
+      },
+      "file_offset": 1532
+    }
+  ]
+}

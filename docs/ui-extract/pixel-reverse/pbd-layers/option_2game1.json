@@ -1,0 +1,2171 @@
+{
+  "source": "option_2game1.pbd",
+  "layer_count": 187,
+  "hotspot_count": 73,
+  "binding_count": 33,
+  "hotspots": [
+    {
+      "layer_id": "title",
+      "sort_index": 1066,
+      "width": 177,
+      "height": 230
+    },
+    {
+      "layer_id": "caption",
+      "sort_index": 1137,
+      "height": 80,
+      "ch": 12
+    },
+    {
+      "layer_id": "sep_a",
+      "sort_index": 1342,
+      "height": 232,
+      "ch": 53
+    },
+    {
+      "layer_id": "helpbase",
+      "sort_index": 1403,
+      "height": 41,
+      "ch": 253
+    },
+    {
+      "layer_id": "reset",
+      "sort_index": 1480,
+      "width": 49,
+      "height": 230
+    },
+    {
+      "layer_id": "suspend",
+      "sort_index": 1525,
+      "width": 44,
+      "height": 66
+    },
+    {
+      "layer_id": "readjump",
+      "sort_index": 1795,
+      "width": 81,
+      "height": 234
+    },
+    {
+      "layer_id": "flowshow",
+      "sort_index": 1869,
+      "width": 72,
+      "height": 163
+    },
+    {
+      "layer_id": "stopdeactive",
+      "sort_index": 1870,
+      "width": 1,
+      "height": 13
+    },
+    {
+      "layer_id": "readskip",
+      "sort_index": 1881,
+      "width": 133,
+      "height": 206
+    },
+    {
+      "layer_id": "hsel_area",
+      "sort_index": 1902,
+      "width": 75,
+      "height": 139
+    },
+    {
+      "layer_id": "curhidestep",
+      "sort_index": 1915,
+      "width": 33,
+      "height": 255
+    },
+    {
+      "layer_id": "curmove",
+      "sort_index": 1917,
+      "width": 164,
+      "height": 242
+    },
+    {
+      "layer_id": "filedclk",
+      "sort_index": 1928,
+      "width": 253,
+      "height": 18
+    },
+    {
+      "layer_id": "curmoveyes",
+      "sort_index": 1944,
+      "width": 84,
+      "height": 82
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1982,
+      "width": 91,
+      "height": 154,
+      "storagex": 83
+    },
+    {
+      "layer_id": "icpreview",
+      "sort_index": 1996,
+      "width": 227,
+      "height": 66
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 2037,
+      "height": 142
+    },
+    {
+      "layer_id": "scanim_rev",
+      "sort_index": 2130,
+      "height": 232
+    },
+    {
+      "layer_id": "back",
+      "sort_index": 2134,
+      "width": 95,
+      "height": 230
+    },
+    {
+      "layer_id": "hout_chk",
+      "sort_index": 2140,
+      "height": 233
+    },
+    {
+      "layer_id": "hsel_chk",
+      "sort_index": 2187,
+      "height": 223
+    },
+    {
+      "layer_id": "filedclk_rev",
+      "sort_index": 2189,
+      "height": 163
+    },
+    {
+      "layer_id": "hmou_chk",
+      "sort_index": 2219,
+      "height": 169
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2223,
+      "height": 80
+    },
+    {
+      "layer_id": "hout_rev",
+      "sort_index": 2254,
+      "height": 139
+    },
+    {
+      "layer_id": "hsel_rev",
+      "sort_index": 2261,
+      "height": 66
+    },
+    {
+      "layer_id": "curmove_rev",
+      "sort_index": 2516,
+      "height": 82
+    },
+    {
+      "layer_id": "scanim_chk",
+      "sort_index": 2560,
+      "height": 232
+    },
+    {
+      "layer_id": "scanim_on",
+      "sort_index": 2608,
+      "height": 232
+    },
+    {
+      "layer_id": "scanim_off",
+      "sort_index": 2673,
+      "height": 232
+    },
+    {
+      "layer_id": "icpreview_rev",
+      "sort_index": 2825,
+      "height": 38
+    },
+    {
+      "layer_id": "suspend_chk",
+      "sort_index": 2828,
+      "height": 167
+    },
+    {
+      "layer_id": "readjump_rev",
+      "sort_index": 2903,
+      "height": 206
+    },
+    {
+      "layer_id": "curmove_chk",
+      "sort_index": 3011,
+      "height": 180
+    },
+    {
+      "layer_id": "readjump_chk",
+      "sort_index": 3077,
+      "height": 9
+    },
+    {
+      "layer_id": "flowshow_chk",
+      "sort_index": 3078,
+      "height": 76
+    },
+    {
+      "layer_id": "curmoveyes_rev",
+      "sort_index": 3085,
+      "height": 18
+    },
+    {
+      "layer_id": "sep_b",
+      "sort_index": 3114,
+      "height": 110,
+      "ch": 89
+    },
+    {
+      "layer_id": "readskip_chk",
+      "sort_index": 3120,
+      "height": 191
+    },
+    {
+      "layer_id": "filedclk_chk",
+      "sort_index": 3131,
+      "height": 35
+    },
+    {
+      "layer_id": "hmou_rev",
+      "sort_index": 3165,
+      "height": 233
+    },
+    {
+      "layer_id": "readskip_rev",
+      "sort_index": 3190,
+      "height": 95
+    },
+    {
+      "layer_id": "icpreview_chk",
+      "sort_index": 3331,
+      "height": 215
+    },
+    {
+      "layer_id": "stayontop_on",
+      "sort_index": 3357,
+      "height": 13
+    },
+    {
+      "layer_id": "stayontop_off",
+      "sort_index": 3419,
+      "height": 13
+    },
+    {
+      "layer_id": "stayontop_chk",
+      "sort_index": 3566,
+      "height": 13
+    },
+    {
+      "layer_id": "flowshow_rev",
+      "sort_index": 3580,
+      "height": 41
+    },
+    {
+      "layer_id": "stopdeactive_rev",
+      "sort_index": 3602,
+      "height": 66
+    },
+    {
+      "layer_id": "curmoveyes_chk",
+      "sort_index": 3692,
+      "height": 83
+    },
+    {
+      "layer_id": "stopdeactive_chk",
+      "sort_index": 4133,
+      "height": 229
+    },
+    {
+      "layer_id": "stayontop_rev",
+      "sort_index": 4309,
+      "height": 13
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 255
+    },
+    {
+      "layer_id": "cr",
+      "sort_index": null,
+      "cw": 203
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "x": 45,
+      "width": 76
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 139
+    },
+    {
+      "layer_id": "hmou",
+      "sort_index": null,
+      "height": 169
+    },
+    {
+      "layer_id": "hout",
+      "sort_index": null,
+      "height": 233
+    },
+    {
+      "layer_id": "hsel",
+      "sort_index": null,
+      "height": 223
+    },
+    {
+      "layer_id": "i",
+      "sort_index": null,
+      "y": 73
+    },
+    {
+      "layer_id": "initialize",
+      "sort_index": null,
+      "width": 49
+    },
+    {
+      "layer_id": "j",
+      "sort_index": null,
+      "height": 230,
+      "cy": 156
+    },
+    {
+      "layer_id": "option__bg0",
+      "sort_index": null,
+      "storagex": 83
+    },
+    {
+      "layer_id": "option__pack",
+      "sort_index": null,
+      "width": 28
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "height": 215
+    },
+    {
+      "layer_id": "scanim",
+      "sort_index": null,
+      "height": 232
+    },
+    {
+      "layer_id": "stayontop",
+      "sort_index": null,
+      "height": 13
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 74
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "width": 91
+    },
+    {
+      "layer_id": "suspend_rev",
+      "sort_index": null,
+      "height": 230
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 93
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 230
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 142
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "changeSysArg",
+      "bindings": [
+        "changeSysArg/toggle/curmove",
+        "changeSysArg/false/curmove",
+        "changeSysArg/true/curmove",
+        "changeSysArg/toggle/curmove",
+        "changeSysArg/toggle/scanim",
+        "changeSysArg/false/scanim",
+        "changeSysArg/true/scanim",
+        "changeSysArg/toggle/scanim",
+        "changeSysArg/toggle/sqscr",
+        "changeSysArg/false/sqscr",
+        "changeSysArg/true/sqscr",
+        "changeSysArg/toggle/sqscr",
+        "changeSysArg/toggle/stayontop",
+        "changeSysArg/false/stayontop",
+        "changeSysArg/true/stayontop",
+        "changeSysArg/toggle/stayontop",
+        "changeSysArg/toggle/stopdeactive",
+        "changeSysArg/false/stopdeactive",
+        "changeSysArg/true/stopdeactive",
+        "changeSysArg/toggle/stopdeactive"
+      ],
+      "geometry": {
+        "height": 230,
+        "ch": 50,
+        "cx": 46,
+        "oy": 25,
+        "opacity": 100,
+        "w": 176,
+        "ox": 141,
+        "width": 133
+      }
+    },
+    {
+      "layer_id": "off_curmoveyes",
+      "bindings": [
+        "setBasicOptionValue/curmoveyes/off"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "off_filedclk",
+      "bindings": [
+        "setBasicOptionValue/filedclk/off"
+      ],
+      "geometry": {
+        "height": 27
+      }
+    },
+    {
+      "layer_id": "off_flowshow",
+      "bindings": [
+        "setBasicOptionValue/flowshow/off"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "off_hmou",
+      "bindings": [
+        "setBasicOptionValue/hmou/off"
+      ],
+      "geometry": {
+        "x": 34
+      }
+    },
+    {
+      "layer_id": "off_hout",
+      "bindings": [
+        "setBasicOptionValue/hout/off"
+      ],
+      "geometry": {
+        "oy": 90
+      }
+    },
+    {
+      "layer_id": "off_hsel",
+      "bindings": [
+        "setBasicOptionValue/hsel/off"
+      ],
+      "geometry": {
+        "w": 251
+      }
+    },
+    {
+      "layer_id": "off_icpreview",
+      "bindings": [
+        "setBasicOptionValue/icpreview/off"
+      ],
+      "geometry": {
+        "ch": 216
+      }
+    },
+    {
+      "layer_id": "off_readjump",
+      "bindings": [
+        "setBasicOptionValue/readjump/off"
+      ],
+      "geometry": {
+        "height": 179
+      }
+    },
+    {
+      "layer_id": "off_readskip",
+      "bindings": [
+        "setBasicOptionValue/readskip/off"
+      ],
+      "geometry": {
+        "ox": 71
+      }
+    },
+    {
+      "layer_id": "off_suspend",
+      "bindings": [
+        "setBasicOptionValue/suspend/off"
+      ],
+      "geometry": {
+        "height": 232
+      }
+    },
+    {
+      "layer_id": "on_curmoveyes",
+      "bindings": [
+        "setBasicOptionValue/curmoveyes/on"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "on_filedclk",
+      "bindings": [
+        "setBasicOptionValue/filedclk/on"
+      ],
+      "geometry": {
+        "height": 242
+      }
+    },
+    {
+      "layer_id": "on_flowshow",
+      "bindings": [
+        "setBasicOptionValue/flowshow/on"
+      ],
+      "geometry": {
+        "width": 84
+      }
+    },
+    {
+      "layer_id": "on_hmou",
+      "bindings": [
+        "setBasicOptionValue/hmou/on"
+      ],
+      "geometry": {
+        "height": 35
+      }
+    },
+    {
+      "layer_id": "on_hout",
+      "bindings": [
+        "setBasicOptionValue/hout/on"
+      ],
+      "geometry": {
+        "height": 76
+      }
+    },
+    {
+      "layer_id": "on_hsel",
+      "bindings": [
+        "setBasicOptionValue/hsel/on"
+      ],
+      "geometry": {
+        "ch": 253
+      }
+    },
+    {
+      "layer_id": "on_icpreview",
+      "bindings": [
+        "setBasicOptionValue/icpreview/on"
+      ],
+      "geometry": {
+        "cx": 172
+      }
+    },
+    {
+      "layer_id": "on_readjump",
+      "bindings": [
+        "setBasicOptionValue/readjump/on"
+      ],
+      "geometry": {
+        "height": 154
+      }
+    },
+    {
+      "layer_id": "on_readskip",
+      "bindings": [
+        "setBasicOptionValue/readskip/on"
+      ],
+      "geometry": {
+        "ox": 11
+      }
+    },
+    {
+      "layer_id": "on_suspend",
+      "bindings": [
+        "setBasicOptionValue/suspend/on"
+      ],
+      "geometry": {
+        "ch": 53
+      }
+    },
+    {
+      "layer_id": "reset",
+      "bindings": [
+        "reset"
+      ],
+      "geometry": {
+        "height": 47
+      }
+    },
+    {
+      "layer_id": "setCurHideTime",
+      "bindings": [
+        "setCurHideTime/0",
+        "setCurHideTime/10",
+        "setCurHideTime/20",
+        "setCurHideTime/5"
+      ],
+      "geometry": {
+        "height": 230
+      }
+    },
+    {
+      "layer_id": "toggle_curmoveyes",
+      "bindings": [
+        "setBasicOptionValue/curmoveyes/toggle",
+        "setBasicOptionValue/curmoveyes/toggle"
+      ],
+      "geometry": {
+        "height": 20
+      }
+    },
+    {
+      "layer_id": "toggle_filedclk",
+      "bindings": [
+        "setBasicOptionValue/filedclk/toggle",
+        "setBasicOptionValue/filedclk/toggle"
+      ],
+      "geometry": {
+        "ch": 228
+      }
+    },
+    {
+      "layer_id": "toggle_flowshow",
+      "bindings": [
+        "setBasicOptionValue/flowshow/toggle",
+        "setBasicOptionValue/flowshow/toggle"
+      ],
+      "geometry": {
+        "height": 51,
+        "ch": 187
+      }
+    },
+    {
+      "layer_id": "toggle_hmou",
+      "bindings": [
+        "setBasicOptionValue/hmou/toggle",
+        "setBasicOptionValue/hmou/toggle"
+      ],
+      "geometry": {
+        "cx": 251,
+        "height": 209
+      }
+    },
+    {
+      "layer_id": "toggle_hout",
+      "bindings": [
+        "setBasicOptionValue/hout/toggle",
+        "setBasicOptionValue/hout/toggle"
+      ],
+      "geometry": {
+        "w": 209
+      }
+    },
+    {
+      "layer_id": "toggle_hsel",
+      "bindings": [
+        "setBasicOptionValue/hsel/toggle",
+        "setBasicOptionValue/hsel/toggle"
+      ],
+      "geometry": {
+        "height": 145
+      }
+    },
+    {
+      "layer_id": "toggle_icpreview",
+      "bindings": [
+        "setBasicOptionValue/icpreview/toggle",
+        "setBasicOptionValue/icpreview/toggle"
+      ],
+      "geometry": {
+        "ox": 116,
+        "ch": 2
+      }
+    },
+    {
+      "layer_id": "toggle_readjump",
+      "bindings": [
+        "setBasicOptionValue/readjump/toggle",
+        "setBasicOptionValue/readjump/toggle"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "toggle_readskip",
+      "bindings": [
+        "setBasicOptionValue/readskip/toggle",
+        "setBasicOptionValue/readskip/toggle"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "toggle_suspend",
+      "bindings": [
+        "setBasicOptionValue/suspend/toggle",
+        "setBasicOptionValue/suspend/toggle"
+      ],
+      "geometry": {
+        "width": 49,
+        "height": 13
+      }
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "title",
+      "sort_index": 1066,
+      "properties": {
+        "height": 230,
+        "width": 177
+      },
+      "file_offset": 8574
+    },
+    {
+      "layer_id": "caption",
+      "sort_index": 1137,
+      "properties": {
+        "height": 80,
+        "ch": 12
+      },
+      "file_offset": 9168
+    },
+    {
+      "layer_id": "sename",
+      "sort_index": 1265,
+      "properties": {},
+      "file_offset": 48880
+    },
+    {
+      "layer_id": "page2",
+      "sort_index": 1289,
+      "properties": {
+        "height": 230,
+        "h": 20822
+      },
+      "file_offset": 9040
+    },
+    {
+      "layer_id": "page5",
+      "sort_index": 1323,
+      "properties": {
+        "height": 230,
+        "h": 20786
+      },
+      "file_offset": 9088
+    },
+    {
+      "layer_id": "page4",
+      "sort_index": 1334,
+      "properties": {
+        "height": 230,
+        "h": 20767
+      },
+      "file_offset": 9072
+    },
+    {
+      "layer_id": "sep_a",
+      "sort_index": 1342,
+      "properties": {
+        "height": 232,
+        "ch": 53
+      },
+      "file_offset": 10482
+    },
+    {
+      "layer_id": "helpbase",
+      "sort_index": 1403,
+      "properties": {
+        "height": 41,
+        "ch": 253
+      },
+      "file_offset": 8986
+    },
+    {
+      "layer_id": "page0",
+      "sort_index": 1417,
+      "properties": {
+        "height": 230,
+        "h": 20805
+      },
+      "file_offset": 9008
+    },
+    {
+      "layer_id": "page1",
+      "sort_index": 1426,
+      "properties": {
+        "height": 230,
+        "h": 20959
+      },
+      "file_offset": 9024
+    },
+    {
+      "layer_id": "page6",
+      "sort_index": 1426,
+      "properties": {
+        "height": 230,
+        "h": 20833
+      },
+      "file_offset": 9104
+    },
+    {
+      "layer_id": "page3",
+      "sort_index": 1431,
+      "properties": {
+        "height": 230,
+        "h": 20930
+      },
+      "file_offset": 9056
+    },
+    {
+      "layer_id": "visible",
+      "sort_index": 1442,
+      "properties": {},
+      "file_offset": 32284
+    },
+    {
+      "layer_id": "page8",
+      "sort_index": 1469,
+      "properties": {
+        "height": 230,
+        "h": 20783
+      },
+      "file_offset": 9136
+    },
+    {
+      "layer_id": "reset",
+      "sort_index": 1480,
+      "properties": {
+        "height": 230,
+        "width": 49
+      },
+      "file_offset": 7588
+    },
+    {
+      "layer_id": "target",
+      "sort_index": 1490,
+      "properties": {},
+      "file_offset": 13426
+    },
+    {
+      "layer_id": "page7",
+      "sort_index": 1496,
+      "properties": {
+        "height": 230,
+        "h": 20782
+      },
+      "file_offset": 9120
+    },
+    {
+      "layer_id": "suspend",
+      "sort_index": 1525,
+      "properties": {
+        "height": 66,
+        "width": 44
+      },
+      "file_offset": 10462
+    },
+    {
+      "layer_id": "readjump",
+      "sort_index": 1795,
+      "properties": {
+        "height": 234,
+        "width": 81
+      },
+      "file_offset": 9380
+    },
+    {
+      "layer_id": "page9",
+      "sort_index": 1817,
+      "properties": {
+        "height": 230,
+        "h": 20934
+      },
+      "file_offset": 9152
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 1839,
+      "properties": {},
+      "file_offset": 12434
+    },
+    {
+      "layer_id": "curmove_off",
+      "sort_index": 1844,
+      "properties": {
+        "height": 180,
+        "h": 13038
+      },
+      "file_offset": 1530
+    },
+    {
+      "layer_id": "flowshow",
+      "sort_index": 1869,
+      "properties": {
+        "height": 163,
+        "width": 72
+      },
+      "file_offset": 10136
+    },
+    {
+      "layer_id": "stopdeactive",
+      "sort_index": 1870,
+      "properties": {
+        "height": 13,
+        "width": 1
+      },
+      "file_offset": 10252
+    },
+    {
+      "layer_id": "readskip",
+      "sort_index": 1881,
+      "properties": {
+        "height": 206,
+        "width": 133
+      },
+      "file_offset": 9280
+    },
+    {
+      "layer_id": "hsel_area",
+      "sort_index": 1902,
+      "properties": {
+        "height": 139,
+        "width": 75
+      },
+      "file_offset": 10034
+    },
+    {
+      "layer_id": "curhidestep",
+      "sort_index": 1915,
+      "properties": {
+        "height": 255,
+        "width": 33
+      },
+      "file_offset": 9760
+    },
+    {
+      "layer_id": "curmove",
+      "sort_index": 1917,
+      "properties": {
+        "height": 242,
+        "width": 164
+      },
+      "file_offset": 9476
+    },
+    {
+      "layer_id": "hout_on",
+      "sort_index": 1920,
+      "properties": {
+        "height": 170,
+        "h": 12944
+      },
+      "file_offset": 3660
+    },
+    {
+      "layer_id": "filedclk",
+      "sort_index": 1928,
+      "properties": {
+        "height": 18,
+        "width": 253
+      },
+      "file_offset": 9866
+    },
+    {
+      "layer_id": "curmoveyes",
+      "sort_index": 1944,
+      "properties": {
+        "height": 82,
+        "width": 84
+      },
+      "file_offset": 9582
+    },
+    {
+      "layer_id": "hout_off",
+      "sort_index": 1960,
+      "properties": {
+        "height": 233,
+        "h": 12805
+      },
+      "file_offset": 3470
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1982,
+      "properties": {
+        "height": 154,
+        "storagex": 83,
+        "width": 91
+      },
+      "file_offset": 562
+    },
+    {
+      "layer_id": "icpreview",
+      "sort_index": 1996,
+      "properties": {
+        "height": 66,
+        "width": 227
+      },
+      "file_offset": 10364
+    },
+    {
+      "layer_id": "label_g",
+      "sort_index": 2030,
+      "properties": {
+        "height": 87,
+        "h": 8312
+      },
+      "file_offset": 5756
+    },
+    {
+      "layer_id": "suspend_off",
+      "sort_index": 2033,
+      "properties": {
+        "height": 167,
+        "h": 12854
+      },
+      "file_offset": 8208
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 2037,
+      "properties": {
+        "height": 142
+      },
+      "file_offset": 13312
+    },
+    {
+      "layer_id": "helptext",
+      "sort_index": 2054,
+      "properties": {
+        "height": 120,
+        "h": 15925
+      },
+      "file_offset": 8964
+    },
+    {
+      "layer_id": "hmou_on",
+      "sort_index": 2058,
+      "properties": {
+        "height": 11,
+        "h": 12849
+      },
+      "file_offset": 3278
+    },
+    {
+      "layer_id": "hsel_on",
+      "sort_index": 2068,
+      "properties": {
+        "height": 131,
+        "h": 12949
+      },
+      "file_offset": 4022
+    },
+    {
+      "layer_id": "scanim_rev",
+      "sort_index": 2130,
+      "properties": {
+        "height": 232
+      },
+      "file_offset": 10766
+    },
+    {
+      "layer_id": "back",
+      "sort_index": 2134,
+      "properties": {
+        "height": 230,
+        "width": 95
+      },
+      "file_offset": 392
+    },
+    {
+      "layer_id": "hout_chk",
+      "sort_index": 2140,
+      "properties": {
+        "height": 233
+      },
+      "file_offset": 11260
+    },
+    {
+      "layer_id": "hsel_off",
+      "sort_index": 2186,
+      "properties": {
+        "height": 223,
+        "h": 12861
+      },
+      "file_offset": 3848
+    },
+    {
+      "layer_id": "hsel_chk",
+      "sort_index": 2187,
+      "properties": {
+        "height": 223
+      },
+      "file_offset": 11216
+    },
+    {
+      "layer_id": "filedclk_rev",
+      "sort_index": 2189,
+      "properties": {
+        "height": 163
+      },
+      "file_offset": 11186
+    },
+    {
+      "layer_id": "filedclk_off",
+      "sort_index": 2208,
+      "properties": {
+        "height": 35,
+        "h": 12913
+      },
+      "file_offset": 2302
+    },
+    {
+      "layer_id": "hmou_chk",
+      "sort_index": 2219,
+      "properties": {
+        "height": 169
+      },
+      "file_offset": 11304
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2223,
+      "properties": {
+        "height": 80
+      },
+      "file_offset": 13926
+    },
+    {
+      "layer_id": "readskip_off",
+      "sort_index": 2240,
+      "properties": {
+        "height": 191,
+        "h": 12904
+      },
+      "file_offset": 7214
+    },
+    {
+      "layer_id": "hout_rev",
+      "sort_index": 2254,
+      "properties": {
+        "height": 139
+      },
+      "file_offset": 11282
+    },
+    {
+      "layer_id": "flowshow_off",
+      "sort_index": 2260,
+      "properties": {
+        "height": 76,
+        "h": 12934
+      },
+      "file_offset": 2710
+    },
+    {
+      "layer_id": "hsel_rev",
+      "sort_index": 2261,
+      "properties": {
+        "height": 66
+      },
+      "file_offset": 11238
+    },
+    {
+      "layer_id": "readjump_on",
+      "sort_index": 2297,
+      "properties": {
+        "height": 80,
+        "h": 12983
+      },
+      "file_offset": 7016
+    },
+    {
+      "layer_id": "sqscr_chk",
+      "sort_index": 2365,
+      "properties": {},
+      "file_offset": 10838
+    },
+    {
+      "layer_id": "icpreview_on",
+      "sort_index": 2505,
+      "properties": {
+        "height": 243,
+        "h": 12929
+      },
+      "file_offset": 4382
+    },
+    {
+      "layer_id": "sqscr_on",
+      "sort_index": 2511,
+      "properties": {},
+      "file_offset": 10792
+    },
+    {
+      "layer_id": "curmove_rev",
+      "sort_index": 2516,
+      "properties": {
+        "height": 82
+      },
+      "file_offset": 10662
+    },
+    {
+      "layer_id": "sqscr_off",
+      "sort_index": 2518,
+      "properties": {},
+      "file_offset": 10814
+    },
+    {
+      "layer_id": "hmou_off",
+      "sort_index": 2548,
+      "properties": {
+        "height": 169,
+        "h": 12981
+      },
+      "file_offset": 3084
+    },
+    {
+      "layer_id": "scanim_chk",
+      "sort_index": 2560,
+      "properties": {
+        "height": 232
+      },
+      "file_offset": 10740
+    },
+    {
+      "layer_id": "scanim_on",
+      "sort_index": 2608,
+      "properties": {
+        "height": 232
+      },
+      "file_offset": 10690
+    },
+    {
+      "layer_id": "label_c",
+      "sort_index": 2619,
+      "properties": {
+        "height": 224,
+        "h": 8404
+      },
+      "file_offset": 4968
+    },
+    {
+      "layer_id": "scanim_off",
+      "sort_index": 2673,
+      "properties": {
+        "height": 232
+      },
+      "file_offset": 10714
+    },
+    {
+      "layer_id": "label_k",
+      "sort_index": 2806,
+      "properties": {
+        "height": 154,
+        "h": 8313
+      },
+      "file_offset": 6534
+    },
+    {
+      "layer_id": "curmoveyes_off",
+      "sort_index": 2815,
+      "properties": {
+        "height": 83,
+        "h": 13005
+      },
+      "file_offset": 1896
+    },
+    {
+      "layer_id": "icpreview_rev",
+      "sort_index": 2825,
+      "properties": {
+        "height": 38
+      },
+      "file_offset": 11440
+    },
+    {
+      "layer_id": "suspend_chk",
+      "sort_index": 2828,
+      "properties": {
+        "height": 167
+      },
+      "file_offset": 11472
+    },
+    {
+      "layer_id": "readjump_off",
+      "sort_index": 2839,
+      "properties": {
+        "height": 9,
+        "h": 13003
+      },
+      "file_offset": 6814
+    },
+    {
+      "layer_id": "curmove_on",
+      "sort_index": 2871,
+      "properties": {
+        "height": 51,
+        "h": 13045
+      },
+      "file_offset": 1716
+    },
+    {
+      "layer_id": "readjump_rev",
+      "sort_index": 2903,
+      "properties": {
+        "height": 206
+      },
+      "file_offset": 10604
+    },
+    {
+      "layer_id": "label_h",
+      "sort_index": 2941,
+      "properties": {
+        "height": 179,
+        "h": 8197
+      },
+      "file_offset": 5950
+    },
+    {
+      "layer_id": "label_a",
+      "sort_index": 2947,
+      "properties": {
+        "height": 38,
+        "h": 8241
+      },
+      "file_offset": 4572
+    },
+    {
+      "layer_id": "suspend_on",
+      "sort_index": 2993,
+      "properties": {
+        "height": 99,
+        "h": 12855
+      },
+      "file_offset": 8394
+    },
+    {
+      "layer_id": "curhidestep_20",
+      "sort_index": 2996,
+      "properties": {
+        "height": 211,
+        "h": 12923
+      },
+      "file_offset": 1096
+    },
+    {
+      "layer_id": "curmove_chk",
+      "sort_index": 3011,
+      "properties": {
+        "height": 180
+      },
+      "file_offset": 10634
+    },
+    {
+      "layer_id": "label_f",
+      "sort_index": 3051,
+      "properties": {
+        "height": 226,
+        "h": 8446
+      },
+      "file_offset": 5560
+    },
+    {
+      "layer_id": "readskip_on",
+      "sort_index": 3076,
+      "properties": {
+        "height": 142,
+        "h": 12807
+      },
+      "file_offset": 7404
+    },
+    {
+      "layer_id": "readjump_chk",
+      "sort_index": 3077,
+      "properties": {
+        "height": 9
+      },
+      "file_offset": 10574
+    },
+    {
+      "layer_id": "flowshow_chk",
+      "sort_index": 3078,
+      "properties": {
+        "height": 76
+      },
+      "file_offset": 11348
+    },
+    {
+      "layer_id": "curmoveyes_rev",
+      "sort_index": 3085,
+      "properties": {
+        "height": 18
+      },
+      "file_offset": 11122
+    },
+    {
+      "layer_id": "icpreview_off",
+      "sort_index": 3102,
+      "properties": {
+        "height": 215,
+        "h": 13034
+      },
+      "file_offset": 4190
+    },
+    {
+      "layer_id": "sep_b",
+      "sort_index": 3114,
+      "properties": {
+        "height": 110,
+        "ch": 89
+      },
+      "file_offset": 10498
+    },
+    {
+      "layer_id": "filedclk_on",
+      "sort_index": 3116,
+      "properties": {
+        "height": 209,
+        "h": 13003
+      },
+      "file_offset": 2508
+    },
+    {
+      "layer_id": "readskip_chk",
+      "sort_index": 3120,
+      "properties": {
+        "height": 191
+      },
+      "file_offset": 10514
+    },
+    {
+      "layer_id": "filedclk_chk",
+      "sort_index": 3131,
+      "properties": {
+        "height": 35
+      },
+      "file_offset": 11156
+    },
+    {
+      "layer_id": "stopdeactive_off",
+      "sort_index": 3153,
+      "properties": {
+        "height": 229,
+        "h": 12808
+      },
+      "file_offset": 7752
+    },
+    {
+      "layer_id": "hmou_rev",
+      "sort_index": 3165,
+      "properties": {
+        "height": 233
+      },
+      "file_offset": 11326
+    },
+    {
+      "layer_id": "label_b",
+      "sort_index": 3166,
+      "properties": {
+        "height": 214,
+        "h": 8307
+      },
+      "file_offset": 4770
+    },
+    {
+      "layer_id": "sqscr_rev",
+      "sort_index": 3177,
+      "properties": {},
+      "file_offset": 10862
+    },
+    {
+      "layer_id": "flowshow_on",
+      "sort_index": 3182,
+      "properties": {
+        "height": 145,
+        "h": 12888
+      },
+      "file_offset": 2900
+    },
+    {
+      "layer_id": "readskip_rev",
+      "sort_index": 3190,
+      "properties": {
+        "height": 95
+      },
+      "file_offset": 10544
+    },
+    {
+      "layer_id": "icpreview_chk",
+      "sort_index": 3331,
+      "properties": {
+        "height": 215
+      },
+      "file_offset": 11408
+    },
+    {
+      "layer_id": "label_e",
+      "sort_index": 3353,
+      "properties": {
+        "height": 67,
+        "h": 8209
+      },
+      "file_offset": 5362
+    },
+    {
+      "layer_id": "curhidestep_0",
+      "sort_index": 3355,
+      "properties": {
+        "height": 20,
+        "h": 12898
+      },
+      "file_offset": 656
+    },
+    {
+      "layer_id": "stayontop_on",
+      "sort_index": 3357,
+      "properties": {
+        "height": 13
+      },
+      "file_offset": 10886
+    },
+    {
+      "layer_id": "label_d",
+      "sort_index": 3369,
+      "properties": {
+        "height": 196,
+        "h": 8346
+      },
+      "file_offset": 5166
+    },
+    {
+      "layer_id": "stayontop_off",
+      "sort_index": 3419,
+      "properties": {
+        "height": 13
+      },
+      "file_offset": 10916
+    },
+    {
+      "layer_id": "stayontop_chk",
+      "sort_index": 3566,
+      "properties": {
+        "height": 13
+      },
+      "file_offset": 10948
+    },
+    {
+      "layer_id": "label_j",
+      "sort_index": 3572,
+      "properties": {
+        "height": 113,
+        "h": 8248
+      },
+      "file_offset": 6340
+    },
+    {
+      "layer_id": "flowshow_rev",
+      "sort_index": 3580,
+      "properties": {
+        "height": 41
+      },
+      "file_offset": 11378
+    },
+    {
+      "layer_id": "stopdeactive_rev",
+      "sort_index": 3602,
+      "properties": {
+        "height": 66
+      },
+      "file_offset": 11050
+    },
+    {
+      "layer_id": "curmoveyes_chk",
+      "sort_index": 3692,
+      "properties": {
+        "height": 83
+      },
+      "file_offset": 11088
+    },
+    {
+      "layer_id": "curmoveyes_on",
+      "sort_index": 3698,
+      "properties": {
+        "height": 89,
+        "h": 12904
+      },
+      "file_offset": 2100
+    },
+    {
+      "layer_id": "curhidestep_10",
+      "sort_index": 3721,
+      "properties": {
+        "height": 121,
+        "h": 13046
+      },
+      "file_offset": 876
+    },
+    {
+      "layer_id": "curhidestep_5",
+      "sort_index": 3765,
+      "properties": {
+        "height": 27,
+        "h": 12962
+      },
+      "file_offset": 1316
+    },
+    {
+      "layer_id": "common_back_game",
+      "sort_index": 4035,
+      "properties": {},
+      "file_offset": 490
+    },
+    {
+      "layer_id": "label_i",
+      "sort_index": 4083,
+      "properties": {
+        "height": 163,
+        "h": 8307
+      },
+      "file_offset": 6144
+    },
+    {
+      "layer_id": "stopdeactive_chk",
+      "sort_index": 4133,
+      "properties": {
+        "height": 229
+      },
+      "file_offset": 11012
+    },
+    {
+      "layer_id": "common_init",
+      "sort_index": 4198,
+      "properties": {},
+      "file_offset": 7688
+    },
+    {
+      "layer_id": "stopdeactive_on",
+      "sort_index": 4242,
+      "properties": {
+        "height": 54,
+        "h": 12878
+      },
+      "file_offset": 7982
+    },
+    {
+      "layer_id": "common_back_title",
+      "sort_index": 4256,
+      "properties": {},
+      "file_offset": 8674
+    },
+    {
+      "layer_id": "stayontop_rev",
+      "sort_index": 4309,
+      "properties": {
+        "height": 13
+      },
+      "file_offset": 10980
+    },
+    {
+      "layer_id": "config_game_fin_mouth",
+      "sort_index": 4608,
+      "properties": {},
+      "file_offset": 3382
+    },
+    {
+      "layer_id": "config_game_fin_out",
+      "sort_index": 4808,
+      "properties": {},
+      "file_offset": 3764
+    },
+    {
+      "layer_id": "config_game_fin_face",
+      "sort_index": 5068,
+      "properties": {},
+      "file_offset": 3190
+    },
+    {
+      "layer_id": "config_game_fin_in",
+      "sort_index": 5106,
+      "properties": {},
+      "file_offset": 3576
+    },
+    {
+      "layer_id": "config_label_deactive",
+      "sort_index": 5123,
+      "properties": {},
+      "file_offset": 6248
+    },
+    {
+      "layer_id": "config_label_mscurpos",
+      "sort_index": 5132,
+      "properties": {},
+      "file_offset": 5270
+    },
+    {
+      "layer_id": "config_label_suspend",
+      "sort_index": 5143,
+      "properties": {},
+      "file_offset": 6638
+    },
+    {
+      "layer_id": "config_label_mscurmove",
+      "sort_index": 5145,
+      "properties": {},
+      "file_offset": 5072
+    },
+    {
+      "layer_id": "config_label_preview",
+      "sort_index": 5171,
+      "properties": {},
+      "file_offset": 6444
+    },
+    {
+      "layer_id": "config_label_mscurhide",
+      "sort_index": 5191,
+      "properties": {},
+      "file_offset": 5466
+    },
+    {
+      "layer_id": "config_label_svldtype",
+      "sort_index": 5195,
+      "properties": {},
+      "file_offset": 5664
+    },
+    {
+      "layer_id": "config_label_askipjump",
+      "sort_index": 5232,
+      "properties": {},
+      "file_offset": 4676
+    },
+    {
+      "layer_id": "config_label_askiptype",
+      "sort_index": 5254,
+      "properties": {},
+      "file_offset": 4874
+    },
+    {
+      "layer_id": "config_label_hselfix",
+      "sort_index": 5330,
+      "properties": {},
+      "file_offset": 5860
+    },
+    {
+      "layer_id": "config_label_allflow",
+      "sort_index": 5366,
+      "properties": {},
+      "file_offset": 6054
+    },
+    {
+      "layer_id": "common_on",
+      "sort_index": 5511,
+      "properties": {},
+      "file_offset": 1826
+    },
+    {
+      "layer_id": "config_game_jump",
+      "sort_index": 5712,
+      "properties": {},
+      "file_offset": 7128
+    },
+    {
+      "layer_id": "common_off",
+      "sort_index": 5713,
+      "properties": {},
+      "file_offset": 1642
+    },
+    {
+      "layer_id": "config_game_dclick",
+      "sort_index": 5743,
+      "properties": {},
+      "file_offset": 2620
+    },
+    {
+      "layer_id": "config_game_skip",
+      "sort_index": 5942,
+      "properties": {},
+      "file_offset": 6928
+    },
+    {
+      "layer_id": "config_game_sclick",
+      "sort_index": 6074,
+      "properties": {},
+      "file_offset": 2416
+    },
+    {
+      "layer_id": "dialog_btn_yes",
+      "sort_index": 6148,
+      "properties": {},
+      "file_offset": 2216
+    },
+    {
+      "layer_id": "config_game_mshide_none",
+      "sort_index": 6170,
+      "properties": {},
+      "file_offset": 772
+    },
+    {
+      "layer_id": "config_game_mshide_5",
+      "sort_index": 6184,
+      "properties": {},
+      "file_offset": 1432
+    },
+    {
+      "layer_id": "dialog_btn_no",
+      "sort_index": 6503,
+      "properties": {},
+      "file_offset": 2014
+    },
+    {
+      "layer_id": "config_game_mshide_10",
+      "sort_index": 6530,
+      "properties": {},
+      "file_offset": 994
+    },
+    {
+      "layer_id": "config_game_mshide_20",
+      "sort_index": 6611,
+      "properties": {},
+      "file_offset": 1214
+    },
+    {
+      "layer_id": "config_game_deact_stop",
+      "sort_index": 6721,
+      "properties": {},
+      "file_offset": 8102
+    },
+    {
+      "layer_id": "config_game_deact_keep",
+      "sort_index": 7029,
+      "properties": {},
+      "file_offset": 7874
+    },
+    {
+      "layer_id": "overlay",
+      "sort_index": 8273,
+      "properties": {},
+      "file_offset": 48792
+    },
+    {
+      "layer_id": "exp",
+      "sort_index": 11124,
+      "properties": {},
+      "file_offset": 74
+    },
+    {
+      "layer_id": "a",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 55839
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "properties": {
+        "height": 255
+      },
+      "file_offset": 14414
+    },
+    {
+      "layer_id": "b",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 20253
+    },
+    {
+      "layer_id": "c",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 18931
+    },
+    {
+      "layer_id": "cr",
+      "sort_index": null,
+      "properties": {
+        "cw": 203
+      },
+      "file_offset": 15542
+    },
+    {
+      "layer_id": "d",
+      "sort_index": null,
+      "properties": {
+        "h": 12893
+      },
+      "file_offset": 20762
+    },
+    {
+      "layer_id": "e",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 47775
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 26
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "properties": {
+        "width": 76,
+        "x": 45
+      },
+      "file_offset": 24727
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "properties": {
+        "width": 139
+      },
+      "file_offset": 32304
+    },
+    {
+      "layer_id": "g",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 20813
+    },
+    {
+      "layer_id": "hmou",
+      "sort_index": null,
+      "properties": {
+        "height": 169
+      },
+      "file_offset": 33228
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 8750
+    },
+    {
+      "layer_id": "hout",
+      "sort_index": null,
+      "properties": {
+        "height": 233
+      },
+      "file_offset": 35984
+    },
+    {
+      "layer_id": "hsel",
+      "sort_index": null,
+      "properties": {
+        "height": 223
+      },
+      "file_offset": 38980
+    },
+    {
+      "layer_id": "i",
+      "sort_index": null,
+      "properties": {
+        "y": 73
+      },
+      "file_offset": 8908
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 8808
+    },
+    {
+      "layer_id": "initialize",
+      "sort_index": null,
+      "properties": {
+        "width": 49
+      },
+      "file_offset": 60984
+    },
+    {
+      "layer_id": "j",
+      "sort_index": null,
+      "properties": {
+        "height": 230,
+        "cy": 156
+      },
+      "file_offset": 12312
+    },
+    {
+      "layer_id": "l",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 36389
+    },
+    {
+      "layer_id": "m",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 17399
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 63199
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 6728
+    },
+    {
+      "layer_id": "o",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 60537
+    },
+    {
+      "layer_id": "option",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 6798
+    },
+    {
+      "layer_id": "option__bg0",
+      "sort_index": null,
+      "properties": {
+        "storagex": 83
+      },
+      "file_offset": 13688
+    },
+    {
+      "layer_id": "option__pack",
+      "sort_index": null,
+      "properties": {
+        "w": 28
+      },
+      "file_offset": 8780
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 24547
+    },
+    {
+      "layer_id": "r",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 17763
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "properties": {
+        "height": 215
+      },
+      "file_offset": 41884
+    },
+    {
+      "layer_id": "s",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 32155
+    },
+    {
+      "layer_id": "scanim",
+      "sort_index": null,
+      "properties": {
+        "height": 232
+      },
+      "file_offset": 61564
+    },
+    {
+      "layer_id": "sqscr",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 63572
+    },
+    {
+      "layer_id": "stayontop",
+      "sort_index": null,
+      "properties": {
+        "height": 13
+      },
+      "file_offset": 64668
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 74
+      },
+      "file_offset": 13714
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "width": 91
+      },
+      "file_offset": 13744
+    },
+    {
+      "layer_id": "suspend_rev",
+      "sort_index": null,
+      "properties": {
+        "height": 230
+      },
+      "file_offset": 11500
+    },
+    {
+      "layer_id": "t",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 13127
+    },
+    {
+      "layer_id": "u",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 64255
+    },
+    {
+      "layer_id": "v",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 45895
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 93
+      },
+      "file_offset": 13222
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 230
+      },
+      "file_offset": 13246
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 142
+      },
+      "file_offset": 13262
+    }
+  ]
+}

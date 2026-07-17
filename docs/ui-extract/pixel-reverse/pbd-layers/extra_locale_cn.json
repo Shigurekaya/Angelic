@@ -1,0 +1,314 @@
+{
+  "source": "extra_locale_cn.pbd",
+  "layer_count": 28,
+  "hotspot_count": 16,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "to_scene",
+      "sort_index": 2087,
+      "height": 131,
+      "ch": 23
+    },
+    {
+      "layer_id": "to_stand",
+      "sort_index": 2123,
+      "height": 238,
+      "ch": 13
+    },
+    {
+      "layer_id": "to_cg",
+      "sort_index": 2218,
+      "height": 17,
+      "ch": 124
+    },
+    {
+      "layer_id": "c",
+      "sort_index": null,
+      "height": 28,
+      "cx": 201,
+      "cy": 218
+    },
+    {
+      "layer_id": "cref",
+      "sort_index": null,
+      "height": 28
+    },
+    {
+      "layer_id": "dot_on",
+      "sort_index": null,
+      "ch": 124
+    },
+    {
+      "layer_id": "dot_ov",
+      "sort_index": null,
+      "ch": 112
+    },
+    {
+      "layer_id": "extra_locale_cn__pack",
+      "sort_index": null,
+      "width": 172
+    },
+    {
+      "layer_id": "k",
+      "sort_index": null,
+      "height": 28
+    },
+    {
+      "layer_id": "l",
+      "sort_index": null,
+      "height": 28,
+      "cx": 74,
+      "cy": 23
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "height": 17
+    },
+    {
+      "layer_id": "to_voice",
+      "sort_index": null,
+      "height": 28,
+      "ch": 244
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 156
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 14
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 17
+    },
+    {
+      "layer_id": "z",
+      "sort_index": null,
+      "height": 28,
+      "cx": 47,
+      "cy": 217
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "alltabs",
+      "sort_index": 1497,
+      "properties": {
+        "height": 28,
+        "h": 5607
+      },
+      "file_offset": 164
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 1843,
+      "properties": {},
+      "file_offset": 2266
+    },
+    {
+      "layer_id": "to_scene",
+      "sort_index": 2087,
+      "properties": {
+        "height": 131,
+        "ch": 23
+      },
+      "file_offset": 200
+    },
+    {
+      "layer_id": "to_stand",
+      "sort_index": 2123,
+      "properties": {
+        "height": 238,
+        "ch": 13
+      },
+      "file_offset": 222
+    },
+    {
+      "layer_id": "to_cg",
+      "sort_index": 2218,
+      "properties": {
+        "height": 17,
+        "ch": 124
+      },
+      "file_offset": 184
+    },
+    {
+      "layer_id": "a",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 8403
+    },
+    {
+      "layer_id": "c",
+      "sort_index": null,
+      "properties": {
+        "height": 28,
+        "cy": 218,
+        "cx": 201
+      },
+      "file_offset": 374
+    },
+    {
+      "layer_id": "cref",
+      "sort_index": null,
+      "properties": {
+        "height": 28
+      },
+      "file_offset": 2196
+    },
+    {
+      "layer_id": "d",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 984
+    },
+    {
+      "layer_id": "dot_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 124
+      },
+      "file_offset": 3156
+    },
+    {
+      "layer_id": "dot_ov",
+      "sort_index": null,
+      "properties": {
+        "ch": 112
+      },
+      "file_offset": 3384
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 26
+    },
+    {
+      "layer_id": "extra_cgscene_cn",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 308
+    },
+    {
+      "layer_id": "extra_locale_cn__pack",
+      "sort_index": null,
+      "properties": {
+        "w": 172
+      },
+      "file_offset": 76
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 46
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 122
+    },
+    {
+      "layer_id": "k",
+      "sort_index": null,
+      "properties": {
+        "height": 28
+      },
+      "file_offset": 1120
+    },
+    {
+      "layer_id": "l",
+      "sort_index": null,
+      "properties": {
+        "height": 28,
+        "cy": 23,
+        "cx": 74
+      },
+      "file_offset": 506
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 37
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 142
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "properties": {
+        "height": 17
+      },
+      "file_offset": 2972
+    },
+    {
+      "layer_id": "s",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 1875
+    },
+    {
+      "layer_id": "to_voice",
+      "sort_index": null,
+      "properties": {
+        "height": 28,
+        "ch": 244
+      },
+      "file_offset": 244
+    },
+    {
+      "layer_id": "u",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 1633
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 156
+      },
+      "file_offset": 2880
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 14
+      },
+      "file_offset": 2904
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 17
+      },
+      "file_offset": 2920
+    },
+    {
+      "layer_id": "z",
+      "sort_index": null,
+      "properties": {
+        "height": 28,
+        "cy": 217,
+        "cx": 47
+      },
+      "file_offset": 642
+    }
+  ]
+}

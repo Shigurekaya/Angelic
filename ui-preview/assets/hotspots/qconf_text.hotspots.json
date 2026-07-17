@@ -1,0 +1,238 @@
+{
+  "source": "qconf_text.pbd",
+  "hotspots": [
+    {
+      "layer_id": "layer",
+      "sort_index": 2116,
+      "height": 237
+    },
+    {
+      "layer_id": "skipall_off",
+      "sort_index": 2775,
+      "height": 114,
+      "ch": 181
+    },
+    {
+      "layer_id": "drawspeed_slider",
+      "sort_index": 2820,
+      "height": 114
+    },
+    {
+      "layer_id": "skipall_chk",
+      "sort_index": 2843,
+      "height": 114
+    },
+    {
+      "layer_id": "winopac_numbase",
+      "sort_index": 2876,
+      "height": 66,
+      "ch": 193
+    },
+    {
+      "layer_id": "skipall_on",
+      "sort_index": 3109,
+      "height": 237,
+      "ch": 93
+    },
+    {
+      "layer_id": "winopac_slider",
+      "sort_index": 3417,
+      "height": 58,
+      "ch": 49
+    },
+    {
+      "layer_id": "autospeed_numbase",
+      "sort_index": 3719,
+      "height": 237,
+      "ch": 42
+    },
+    {
+      "layer_id": "textspeed_slider",
+      "sort_index": 3925,
+      "height": 74,
+      "ch": 215
+    },
+    {
+      "layer_id": "autospeed_slider",
+      "sort_index": 4024,
+      "height": 223,
+      "ch": 29
+    },
+    {
+      "layer_id": "textspeed_numbase",
+      "sort_index": 4169,
+      "height": 41,
+      "ch": 41
+    },
+    {
+      "layer_id": "skipspeed_slider",
+      "sort_index": 4206,
+      "height": 41
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 4341,
+      "storagex": 744
+    },
+    {
+      "layer_id": "color",
+      "sort_index": null,
+      "cw": 255
+    },
+    {
+      "layer_id": "disable",
+      "sort_index": null,
+      "ch": 29
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "ch": 68
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 181
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 138
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 201
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 5
+    },
+    {
+      "layer_id": "qconf__pack",
+      "sort_index": null,
+      "height": 237,
+      "width": 22
+    },
+    {
+      "layer_id": "qconf_text__bg0",
+      "sort_index": null,
+      "storagex": 744
+    },
+    {
+      "layer_id": "skipall",
+      "sort_index": null,
+      "height": 114
+    },
+    {
+      "layer_id": "skipall_rev",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "slider",
+      "sort_index": null,
+      "height": 223
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 747
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 114
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 204
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 238
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 223
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "changeBasicSlider",
+      "bindings": [
+        "changeBasicSlider"
+      ],
+      "geometry": {
+        "height": 114
+      }
+    },
+    {
+      "layer_id": "off_skipall",
+      "bindings": [
+        "setBasicOptionValue/skipall/off"
+      ],
+      "geometry": {
+        "height": 237
+      }
+    },
+    {
+      "layer_id": "onSpeedSliderChange",
+      "bindings": [
+        "onSpeedSliderChange",
+        "onSpeedSliderChange",
+        "onSpeedSliderChange",
+        "onSpeedSliderChange"
+      ],
+      "geometry": {
+        "height": 237,
+        "cw": 110,
+        "w": 233
+      }
+    },
+    {
+      "layer_id": "on_skipall",
+      "bindings": [
+        "setBasicOptionValue/skipall/on"
+      ],
+      "geometry": {
+        "height": 237
+      }
+    },
+    {
+      "layer_id": "toggle_skipall",
+      "bindings": [
+        "setBasicOptionValue/skipall/toggle",
+        "setBasicOptionValue/skipall/toggle"
+      ],
+      "geometry": {
+        "height": 237,
+        "ch": 29
+      }
+    }
+  ]
+}

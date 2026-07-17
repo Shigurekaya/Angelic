@@ -1,0 +1,544 @@
+{
+  "source": "qconf_qvsave.pbd",
+  "layer_count": 44,
+  "hotspot_count": 31,
+  "binding_count": 4,
+  "hotspots": [
+    {
+      "layer_id": "qvsave",
+      "sort_index": 1238,
+      "height": 184,
+      "ch": 17
+    },
+    {
+      "layer_id": "switch_qvsave",
+      "sort_index": 1580,
+      "height": 87
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "storagex": 723
+    },
+    {
+      "layer_id": "color",
+      "sort_index": null,
+      "cw": 128
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 87
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 87
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 87
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 87
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 17
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 107
+    },
+    {
+      "layer_id": "nose",
+      "sort_index": null,
+      "ch": 17
+    },
+    {
+      "layer_id": "on_off",
+      "sort_index": null,
+      "ch": 222
+    },
+    {
+      "layer_id": "on_on",
+      "sort_index": null,
+      "ch": 238
+    },
+    {
+      "layer_id": "option",
+      "sort_index": null,
+      "height": 87
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 29
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 104
+    },
+    {
+      "layer_id": "qconf__pack",
+      "sort_index": null,
+      "height": 87,
+      "width": 182
+    },
+    {
+      "layer_id": "qconf_qvsave__bg0",
+      "sort_index": null,
+      "storagex": 723
+    },
+    {
+      "layer_id": "qconf_voice_qvsave",
+      "sort_index": null,
+      "width": 25
+    },
+    {
+      "layer_id": "qconf_voice_vsave",
+      "sort_index": null,
+      "width": 25
+    },
+    {
+      "layer_id": "qv_on",
+      "sort_index": null,
+      "width": 25
+    },
+    {
+      "layer_id": "qv_ovr",
+      "sort_index": null,
+      "width": 25
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 605
+    },
+    {
+      "layer_id": "text",
+      "sort_index": null,
+      "width": 25
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 184
+    },
+    {
+      "layer_id": "vs_off",
+      "sort_index": null,
+      "width": 25
+    },
+    {
+      "layer_id": "vs_on",
+      "sort_index": null,
+      "width": 25
+    },
+    {
+      "layer_id": "vs_ovr",
+      "sort_index": null,
+      "width": 25
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 80
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 81
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 184
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "hideHelp",
+      "bindings": [
+        "hideHelp/qvsave",
+        "hideHelp/swap"
+      ],
+      "geometry": {
+        "height": 87
+      }
+    },
+    {
+      "layer_id": "invokeQVSave",
+      "bindings": [
+        "invokeQVSave"
+      ],
+      "geometry": {
+        "height": 87
+      }
+    },
+    {
+      "layer_id": "showHelp",
+      "bindings": [
+        "showHelp/qvsave",
+        "showHelp/swap"
+      ],
+      "geometry": {
+        "height": 87
+      }
+    },
+    {
+      "layer_id": "toggleQVSave",
+      "bindings": [
+        "toggleQVSave"
+      ],
+      "geometry": {
+        "height": 87
+      }
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "uiname",
+      "sort_index": 1069,
+      "properties": {},
+      "file_offset": 970
+    },
+    {
+      "layer_id": "sename",
+      "sort_index": 1084,
+      "properties": {},
+      "file_offset": 1694
+    },
+    {
+      "layer_id": "qvsave",
+      "sort_index": 1238,
+      "properties": {
+        "height": 184,
+        "ch": 17
+      },
+      "file_offset": 550
+    },
+    {
+      "layer_id": "switch_qvsave",
+      "sort_index": 1580,
+      "properties": {
+        "height": 87,
+        "ch": 3875
+      },
+      "file_offset": 226
+    },
+    {
+      "layer_id": "common_qconf_switch",
+      "sort_index": 6595,
+      "properties": {},
+      "file_offset": 342
+    },
+    {
+      "layer_id": "exp",
+      "sort_index": 6985,
+      "properties": {},
+      "file_offset": 1250
+    },
+    {
+      "layer_id": "textparam",
+      "sort_index": 7680,
+      "properties": {},
+      "file_offset": 3302
+    },
+    {
+      "layer_id": "onleave",
+      "sort_index": 7769,
+      "properties": {},
+      "file_offset": 1460
+    },
+    {
+      "layer_id": "onenter",
+      "sort_index": 7815,
+      "properties": {},
+      "file_offset": 1376
+    },
+    {
+      "layer_id": "overlay",
+      "sort_index": 16293,
+      "properties": {},
+      "file_offset": 1544
+    },
+    {
+      "layer_id": "b",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 2667
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "properties": {
+        "height": 87,
+        "storagex": 723,
+        "h": 20183
+      },
+      "file_offset": 46
+    },
+    {
+      "layer_id": "color",
+      "sort_index": null,
+      "properties": {
+        "cw": 128
+      },
+      "file_offset": 5328
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {
+        "height": 87
+      },
+      "file_offset": 26
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "properties": {
+        "height": 87
+      },
+      "file_offset": 624
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {
+        "height": 87
+      },
+      "file_offset": 440
+    },
+    {
+      "layer_id": "icon",
+      "sort_index": null,
+      "properties": {
+        "ch": 3875
+      },
+      "file_offset": 5080
+    },
+    {
+      "layer_id": "icon_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 4050
+      },
+      "file_offset": 5284
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {
+        "height": 87
+      },
+      "file_offset": 140
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 17
+      },
+      "file_offset": 1784
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 107
+      },
+      "file_offset": 2000
+    },
+    {
+      "layer_id": "nose",
+      "sort_index": null,
+      "properties": {
+        "ch": 17
+      },
+      "file_offset": 1712
+    },
+    {
+      "layer_id": "on_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 222
+      },
+      "file_offset": 2328
+    },
+    {
+      "layer_id": "on_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 238
+      },
+      "file_offset": 2536
+    },
+    {
+      "layer_id": "option",
+      "sort_index": null,
+      "properties": {
+        "height": 87
+      },
+      "file_offset": 210
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 29
+      },
+      "file_offset": 2742
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 104
+      },
+      "file_offset": 2954
+    },
+    {
+      "layer_id": "qconf__pack",
+      "sort_index": null,
+      "properties": {
+        "height": 87,
+        "w": 182
+      },
+      "file_offset": 470
+    },
+    {
+      "layer_id": "qconf_qvsave__bg0",
+      "sort_index": null,
+      "properties": {
+        "storagex": 723
+      },
+      "file_offset": 872
+    },
+    {
+      "layer_id": "qconf_voice_qvsave",
+      "sort_index": null,
+      "properties": {
+        "width": 25
+      },
+      "file_offset": 3262
+    },
+    {
+      "layer_id": "qconf_voice_vsave",
+      "sort_index": null,
+      "properties": {
+        "width": 25
+      },
+      "file_offset": 3932
+    },
+    {
+      "layer_id": "qv_off",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 3164
+    },
+    {
+      "layer_id": "qv_on",
+      "sort_index": null,
+      "properties": {
+        "width": 25
+      },
+      "file_offset": 3390
+    },
+    {
+      "layer_id": "qv_ovr",
+      "sort_index": null,
+      "properties": {
+        "width": 25
+      },
+      "file_offset": 3610
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 605
+      },
+      "file_offset": 910
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "h": 20183
+      },
+      "file_offset": 940
+    },
+    {
+      "layer_id": "text",
+      "sort_index": null,
+      "properties": {
+        "width": 25
+      },
+      "file_offset": 3186
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "properties": {
+        "height": 184
+      },
+      "file_offset": 1234
+    },
+    {
+      "layer_id": "vs_off",
+      "sort_index": null,
+      "properties": {
+        "width": 25
+      },
+      "file_offset": 3834
+    },
+    {
+      "layer_id": "vs_on",
+      "sort_index": null,
+      "properties": {
+        "width": 25
+      },
+      "file_offset": 4058
+    },
+    {
+      "layer_id": "vs_ovr",
+      "sort_index": null,
+      "properties": {
+        "width": 25
+      },
+      "file_offset": 4276
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 80
+      },
+      "file_offset": 1140
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 81
+      },
+      "file_offset": 1164
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 184
+      },
+      "file_offset": 1180
+    }
+  ]
+}

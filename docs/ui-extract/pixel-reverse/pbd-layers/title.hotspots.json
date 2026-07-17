@@ -1,0 +1,299 @@
+{
+  "source": "title.pbd",
+  "hotspots": [
+    {
+      "layer_id": "bg7",
+      "sort_index": 790,
+      "width": 215,
+      "height": 165
+    },
+    {
+      "layer_id": "popup",
+      "sort_index": 945,
+      "height": 53,
+      "ch": 93
+    },
+    {
+      "layer_id": "bg3",
+      "sort_index": 946,
+      "width": 201,
+      "height": 125
+    },
+    {
+      "layer_id": "bg6",
+      "sort_index": 961,
+      "width": 179,
+      "height": 18
+    },
+    {
+      "layer_id": "bg5",
+      "sort_index": 972,
+      "width": 171,
+      "height": 37
+    },
+    {
+      "layer_id": "bg1",
+      "sort_index": 991,
+      "width": 59,
+      "height": 113
+    },
+    {
+      "layer_id": "bg4",
+      "sort_index": 1006,
+      "width": 207,
+      "height": 48
+    },
+    {
+      "layer_id": "bg2",
+      "sort_index": 1010,
+      "width": 238,
+      "height": 25
+    },
+    {
+      "layer_id": "bg8",
+      "sort_index": 1011,
+      "width": 98,
+      "height": 16
+    },
+    {
+      "layer_id": "amv_pos1",
+      "sort_index": 1224,
+      "width": 98,
+      "height": 38
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1497,
+      "height": 252
+    },
+    {
+      "layer_id": "bg0",
+      "sort_index": 1556,
+      "width": 9,
+      "height": 252
+    },
+    {
+      "layer_id": "amv_pos0",
+      "sort_index": 1791,
+      "width": 102,
+      "height": 194
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2146,
+      "height": 21,
+      "ch": 93
+    },
+    {
+      "layer_id": "lang_left",
+      "sort_index": 2152,
+      "height": 14,
+      "ch": 161
+    },
+    {
+      "layer_id": "lang_right",
+      "sort_index": 2356,
+      "height": 217,
+      "ch": 64
+    },
+    {
+      "layer_id": "help_right",
+      "sort_index": 2414,
+      "width": 121,
+      "height": 3
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 2434,
+      "height": 23,
+      "storagex": 243
+    },
+    {
+      "layer_id": "pos_lang1",
+      "sort_index": 2504,
+      "width": 238,
+      "height": 45
+    },
+    {
+      "layer_id": "pos_lang0",
+      "sort_index": 2722,
+      "width": 135,
+      "height": 57
+    },
+    {
+      "layer_id": "helpbase",
+      "sort_index": 2762,
+      "height": 21,
+      "ch": 169
+    },
+    {
+      "layer_id": "title__pack",
+      "sort_index": 4318,
+      "width": 105
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 194
+    },
+    {
+      "layer_id": "bgsel",
+      "sort_index": null,
+      "height": 252
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 9,
+      "height": 131
+    },
+    {
+      "layer_id": "help_left",
+      "sort_index": null,
+      "width": 146,
+      "height": 229
+    },
+    {
+      "layer_id": "icon",
+      "sort_index": null,
+      "ch": 161
+    },
+    {
+      "layer_id": "langselect__pack",
+      "sort_index": null,
+      "width": 191
+    },
+    {
+      "layer_id": "language",
+      "sort_index": null,
+      "ch": 161
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 229
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 220
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "height": 23
+    },
+    {
+      "layer_id": "title",
+      "sort_index": null,
+      "height": 229
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 229
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 140
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 161
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 131
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "changeBG",
+      "bindings": [
+        "changeBG/0",
+        "changeBG/1",
+        "changeBG/2",
+        "changeBG/3",
+        "changeBG/4",
+        "changeBG/5",
+        "changeBG/6",
+        "changeBG/7",
+        "changeBG/8"
+      ],
+      "geometry": {
+        "height": 229
+      }
+    },
+    {
+      "layer_id": "contPopup",
+      "bindings": [
+        "contPopup/1/continue",
+        "contPopup/0/continue"
+      ],
+      "geometry": {
+        "ch": 111,
+        "cx": 229
+      }
+    },
+    {
+      "layer_id": "popupBG",
+      "bindings": [
+        "popupBG/0/1",
+        "popupBG/0/0",
+        "popupBG/1/1",
+        "popupBG/1/0",
+        "popupBG/2/1",
+        "popupBG/2/0",
+        "popupBG/3/1",
+        "popupBG/3/0",
+        "popupBG/4/1",
+        "popupBG/4/0",
+        "popupBG/5/1",
+        "popupBG/5/0",
+        "popupBG/6/1",
+        "popupBG/6/0",
+        "popupBG/7/1",
+        "popupBG/7/0",
+        "popupBG/8/1",
+        "popupBG/8/0",
+        "popupBG/-1/1",
+        "popupBG/-1/0"
+      ],
+      "geometry": {
+        "height": 229,
+        "opacity": 41
+      }
+    },
+    {
+      "layer_id": "selectLanguage",
+      "bindings": [
+        "selectLanguage",
+        "selectLanguage"
+      ],
+      "geometry": {
+        "height": 25
+      }
+    },
+    {
+      "layer_id": "start",
+      "bindings": [
+        "start/after/after",
+        "start/start/"
+      ],
+      "geometry": {
+        "height": 229,
+        "width": 98
+      }
+    },
+    {
+      "layer_id": "toggleBGSel",
+      "bindings": [
+        "toggleBGSel"
+      ],
+      "geometry": null
+    }
+  ]
+}

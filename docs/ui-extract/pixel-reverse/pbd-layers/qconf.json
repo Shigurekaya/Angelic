@@ -1,0 +1,790 @@
+{
+  "source": "qconf.pbd",
+  "layer_count": 68,
+  "hotspot_count": 47,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "slider_numbase",
+      "sort_index": 1068,
+      "height": 97,
+      "ch": 13
+    },
+    {
+      "layer_id": "save",
+      "sort_index": 1241,
+      "height": 220,
+      "ch": 26
+    },
+    {
+      "layer_id": "load",
+      "sort_index": 1450,
+      "height": 220,
+      "ch": 49
+    },
+    {
+      "layer_id": "mute",
+      "sort_index": 1494,
+      "height": 250,
+      "ch": 182
+    },
+    {
+      "layer_id": "page_dw100",
+      "sort_index": 1663,
+      "width": 81,
+      "height": 98
+    },
+    {
+      "layer_id": "page_base",
+      "sort_index": 1723,
+      "height": 76,
+      "ch": 83
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1787,
+      "height": 201
+    },
+    {
+      "layer_id": "qload",
+      "sort_index": 2087,
+      "height": 54,
+      "ch": 5
+    },
+    {
+      "layer_id": "page_up1",
+      "sort_index": 2207,
+      "width": 109,
+      "height": 198
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2213,
+      "height": 76
+    },
+    {
+      "layer_id": "page_up10",
+      "sort_index": 2254,
+      "width": 199,
+      "height": 2
+    },
+    {
+      "layer_id": "page_up100",
+      "sort_index": 2309,
+      "width": 58,
+      "height": 21
+    },
+    {
+      "layer_id": "page_dw1",
+      "sort_index": 2435,
+      "width": 121,
+      "height": 201
+    },
+    {
+      "layer_id": "page_dw10",
+      "sort_index": 2755,
+      "width": 109,
+      "height": 144
+    },
+    {
+      "layer_id": "switch",
+      "sort_index": 3569,
+      "height": 83
+    },
+    {
+      "layer_id": "check",
+      "sort_index": null,
+      "height": 6,
+      "ch": 176
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "ch": 8
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 176
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 123
+    },
+    {
+      "layer_id": "of_btm",
+      "sort_index": null,
+      "ch": 26
+    },
+    {
+      "layer_id": "of_dw",
+      "sort_index": null,
+      "ch": 37
+    },
+    {
+      "layer_id": "of_dw10",
+      "sort_index": null,
+      "ch": 171
+    },
+    {
+      "layer_id": "of_top",
+      "sort_index": null,
+      "ch": 28
+    },
+    {
+      "layer_id": "of_up",
+      "sort_index": null,
+      "ch": 47
+    },
+    {
+      "layer_id": "of_up10",
+      "sort_index": null,
+      "ch": 34
+    },
+    {
+      "layer_id": "on_btm",
+      "sort_index": null,
+      "ch": 163
+    },
+    {
+      "layer_id": "on_dw",
+      "sort_index": null,
+      "ch": 230
+    },
+    {
+      "layer_id": "on_dw10",
+      "sort_index": null,
+      "ch": 111
+    },
+    {
+      "layer_id": "on_off",
+      "sort_index": null,
+      "ch": 99
+    },
+    {
+      "layer_id": "on_on",
+      "sort_index": null,
+      "ch": 81
+    },
+    {
+      "layer_id": "on_top",
+      "sort_index": null,
+      "ch": 41
+    },
+    {
+      "layer_id": "on_up",
+      "sort_index": null,
+      "ch": 55
+    },
+    {
+      "layer_id": "on_up10",
+      "sort_index": null,
+      "ch": 74
+    },
+    {
+      "layer_id": "ov_btm",
+      "sort_index": null,
+      "ch": 47
+    },
+    {
+      "layer_id": "ov_dw",
+      "sort_index": null,
+      "ch": 74
+    },
+    {
+      "layer_id": "ov_dw10",
+      "sort_index": null,
+      "ch": 10
+    },
+    {
+      "layer_id": "ov_top",
+      "sort_index": null,
+      "ch": 82
+    },
+    {
+      "layer_id": "ov_up",
+      "sort_index": null,
+      "ch": 145
+    },
+    {
+      "layer_id": "ov_up10",
+      "sort_index": null,
+      "ch": 87
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 66
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 249
+    },
+    {
+      "layer_id": "qconf__pack",
+      "sort_index": null,
+      "width": 238
+    },
+    {
+      "layer_id": "slider",
+      "sort_index": null,
+      "height": 226
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 6
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 131
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 54
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 6
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "slider_numbase",
+      "sort_index": 1068,
+      "properties": {
+        "height": 97,
+        "ch": 13
+      },
+      "file_offset": 456
+    },
+    {
+      "layer_id": "save",
+      "sort_index": 1241,
+      "properties": {
+        "height": 220,
+        "ch": 26
+      },
+      "file_offset": 124
+    },
+    {
+      "layer_id": "load",
+      "sort_index": 1450,
+      "properties": {
+        "height": 220,
+        "ch": 49
+      },
+      "file_offset": 138
+    },
+    {
+      "layer_id": "mute",
+      "sort_index": 1494,
+      "properties": {
+        "height": 250,
+        "ch": 182
+      },
+      "file_offset": 490
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 1578,
+      "properties": {},
+      "file_offset": 3712
+    },
+    {
+      "layer_id": "page_dw100",
+      "sort_index": 1663,
+      "properties": {
+        "height": 98,
+        "width": 81
+      },
+      "file_offset": 350
+    },
+    {
+      "layer_id": "page_base",
+      "sort_index": 1723,
+      "properties": {
+        "height": 76,
+        "ch": 83
+      },
+      "file_offset": 190
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1787,
+      "properties": {
+        "height": 201
+      },
+      "file_offset": 11818
+    },
+    {
+      "layer_id": "qload",
+      "sort_index": 2087,
+      "properties": {
+        "height": 54,
+        "ch": 5
+      },
+      "file_offset": 152
+    },
+    {
+      "layer_id": "page_up1",
+      "sort_index": 2207,
+      "properties": {
+        "height": 198,
+        "width": 109
+      },
+      "file_offset": 282
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2213,
+      "properties": {
+        "height": 76
+      },
+      "file_offset": 11330
+    },
+    {
+      "layer_id": "page_up10",
+      "sort_index": 2254,
+      "properties": {
+        "height": 2,
+        "width": 199
+      },
+      "file_offset": 258
+    },
+    {
+      "layer_id": "page_up100",
+      "sort_index": 2309,
+      "properties": {
+        "height": 21,
+        "width": 58
+      },
+      "file_offset": 232
+    },
+    {
+      "layer_id": "page_num",
+      "sort_index": 2379,
+      "properties": {
+        "height": 141,
+        "h": 9073
+      },
+      "file_offset": 168
+    },
+    {
+      "layer_id": "page_dw1",
+      "sort_index": 2435,
+      "properties": {
+        "height": 201,
+        "width": 121
+      },
+      "file_offset": 304
+    },
+    {
+      "layer_id": "page_dw10",
+      "sort_index": 2755,
+      "properties": {
+        "height": 144,
+        "width": 109
+      },
+      "file_offset": 326
+    },
+    {
+      "layer_id": "slider_slider",
+      "sort_index": 3240,
+      "properties": {
+        "height": 226,
+        "h": 13936
+      },
+      "file_offset": 394
+    },
+    {
+      "layer_id": "switch",
+      "sort_index": 3569,
+      "properties": {
+        "height": 83,
+        "ch": 4039
+      },
+      "file_offset": 376
+    },
+    {
+      "layer_id": "slider_value",
+      "sort_index": 3640,
+      "properties": {
+        "height": 217,
+        "h": 7544
+      },
+      "file_offset": 426
+    },
+    {
+      "layer_id": "check",
+      "sort_index": null,
+      "properties": {
+        "height": 6,
+        "ch": 176
+      },
+      "file_offset": 504
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 26
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 2633
+    },
+    {
+      "layer_id": "g",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 18538
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 562
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 46
+    },
+    {
+      "layer_id": "i",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 18339
+    },
+    {
+      "layer_id": "icon",
+      "sort_index": null,
+      "properties": {
+        "ch": 4039
+      },
+      "file_offset": 17560
+    },
+    {
+      "layer_id": "k",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 1049
+    },
+    {
+      "layer_id": "knob",
+      "sort_index": null,
+      "properties": {
+        "h": 13936
+      },
+      "file_offset": 16292
+    },
+    {
+      "layer_id": "m",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 14387
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 37
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 102
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "properties": {
+        "ch": 8
+      },
+      "file_offset": 16402
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 176
+      },
+      "file_offset": 7850
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 123
+      },
+      "file_offset": 8066
+    },
+    {
+      "layer_id": "o",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 1115
+    },
+    {
+      "layer_id": "of_btm",
+      "sort_index": null,
+      "properties": {
+        "ch": 26
+      },
+      "file_offset": 3886
+    },
+    {
+      "layer_id": "of_dw",
+      "sort_index": null,
+      "properties": {
+        "ch": 37
+      },
+      "file_offset": 4094
+    },
+    {
+      "layer_id": "of_dw10",
+      "sort_index": null,
+      "properties": {
+        "ch": 171
+      },
+      "file_offset": 4300
+    },
+    {
+      "layer_id": "of_top",
+      "sort_index": null,
+      "properties": {
+        "ch": 28
+      },
+      "file_offset": 4510
+    },
+    {
+      "layer_id": "of_up",
+      "sort_index": null,
+      "properties": {
+        "ch": 47
+      },
+      "file_offset": 4718
+    },
+    {
+      "layer_id": "of_up10",
+      "sort_index": null,
+      "properties": {
+        "ch": 34
+      },
+      "file_offset": 4924
+    },
+    {
+      "layer_id": "on_btm",
+      "sort_index": null,
+      "properties": {
+        "ch": 163
+      },
+      "file_offset": 5134
+    },
+    {
+      "layer_id": "on_dw",
+      "sort_index": null,
+      "properties": {
+        "ch": 230
+      },
+      "file_offset": 5342
+    },
+    {
+      "layer_id": "on_dw10",
+      "sort_index": null,
+      "properties": {
+        "ch": 111
+      },
+      "file_offset": 5548
+    },
+    {
+      "layer_id": "on_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 99
+      },
+      "file_offset": 10394
+    },
+    {
+      "layer_id": "on_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 81
+      },
+      "file_offset": 10602
+    },
+    {
+      "layer_id": "on_top",
+      "sort_index": null,
+      "properties": {
+        "ch": 41
+      },
+      "file_offset": 5758
+    },
+    {
+      "layer_id": "on_up",
+      "sort_index": null,
+      "properties": {
+        "ch": 55
+      },
+      "file_offset": 5966
+    },
+    {
+      "layer_id": "on_up10",
+      "sort_index": null,
+      "properties": {
+        "ch": 74
+      },
+      "file_offset": 6172
+    },
+    {
+      "layer_id": "ov_btm",
+      "sort_index": null,
+      "properties": {
+        "ch": 47
+      },
+      "file_offset": 6382
+    },
+    {
+      "layer_id": "ov_dw",
+      "sort_index": null,
+      "properties": {
+        "ch": 74
+      },
+      "file_offset": 6590
+    },
+    {
+      "layer_id": "ov_dw10",
+      "sort_index": null,
+      "properties": {
+        "ch": 10
+      },
+      "file_offset": 6796
+    },
+    {
+      "layer_id": "ov_top",
+      "sort_index": null,
+      "properties": {
+        "ch": 82
+      },
+      "file_offset": 7006
+    },
+    {
+      "layer_id": "ov_up",
+      "sort_index": null,
+      "properties": {
+        "ch": 145
+      },
+      "file_offset": 7214
+    },
+    {
+      "layer_id": "ov_up10",
+      "sort_index": null,
+      "properties": {
+        "ch": 87
+      },
+      "file_offset": 7420
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 66
+      },
+      "file_offset": 8394
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 249
+      },
+      "file_offset": 8606
+    },
+    {
+      "layer_id": "q",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 15207
+    },
+    {
+      "layer_id": "qconf__pack",
+      "sort_index": null,
+      "properties": {
+        "w": 238
+      },
+      "file_offset": 76
+    },
+    {
+      "layer_id": "r",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 3263
+    },
+    {
+      "layer_id": "rail",
+      "sort_index": null,
+      "properties": {
+        "ch": 3372
+      },
+      "file_offset": 16724
+    },
+    {
+      "layer_id": "slider",
+      "sort_index": null,
+      "properties": {
+        "height": 226
+      },
+      "file_offset": 16132
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "properties": {
+        "height": 6
+      },
+      "file_offset": 7722
+    },
+    {
+      "layer_id": "u",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 14335
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 131
+      },
+      "file_offset": 7630
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 54
+      },
+      "file_offset": 7654
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 6
+      },
+      "file_offset": 7670
+    }
+  ]
+}

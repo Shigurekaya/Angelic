@@ -1,0 +1,790 @@
+{
+  "source": "option_1display.pbd",
+  "hotspots": [
+    {
+      "layer_id": "title",
+      "sort_index": 1231,
+      "width": 183,
+      "height": 63
+    },
+    {
+      "layer_id": "caption",
+      "sort_index": 1276,
+      "height": 44,
+      "ch": 9
+    },
+    {
+      "layer_id": "sep_a",
+      "sort_index": 1390,
+      "height": 149,
+      "ch": 250
+    },
+    {
+      "layer_id": "qcpopover",
+      "sort_index": 1405,
+      "width": 92,
+      "height": 140
+    },
+    {
+      "layer_id": "helpbase",
+      "sort_index": 1435,
+      "height": 100,
+      "ch": 21
+    },
+    {
+      "layer_id": "reset",
+      "sort_index": 1471,
+      "width": 168,
+      "height": 63
+    },
+    {
+      "layer_id": "panictype",
+      "sort_index": 1795,
+      "width": 4,
+      "height": 80
+    },
+    {
+      "layer_id": "esccancel",
+      "sort_index": 1796,
+      "width": 146,
+      "height": 169
+    },
+    {
+      "layer_id": "scanim",
+      "sort_index": 1817,
+      "width": 91,
+      "height": 110
+    },
+    {
+      "layer_id": "noeffect",
+      "sort_index": 1835,
+      "width": 177,
+      "height": 10
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1847,
+      "height": 50
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1876,
+      "width": 210,
+      "height": 93,
+      "storagex": 198
+    },
+    {
+      "layer_id": "fullscreen",
+      "sort_index": 1878,
+      "width": 62,
+      "height": 222
+    },
+    {
+      "layer_id": "chapthidetime_numbase",
+      "sort_index": 1915,
+      "height": 162,
+      "ch": 9
+    },
+    {
+      "layer_id": "stayontop",
+      "sort_index": 1917,
+      "width": 28,
+      "height": 1
+    },
+    {
+      "layer_id": "facemode",
+      "sort_index": 1920,
+      "width": 83,
+      "height": 156
+    },
+    {
+      "layer_id": "sqscr",
+      "sort_index": 1938,
+      "width": 97,
+      "height": 26
+    },
+    {
+      "layer_id": "bgmhidetime_numbase",
+      "sort_index": 2030,
+      "height": 51,
+      "ch": 236
+    },
+    {
+      "layer_id": "back",
+      "sort_index": 2071,
+      "width": 116,
+      "height": 63
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2094,
+      "height": 51
+    },
+    {
+      "layer_id": "scanim_rev",
+      "sort_index": 2505,
+      "height": 149
+    },
+    {
+      "layer_id": "sqscr_chk",
+      "sort_index": 2508,
+      "height": 131
+    },
+    {
+      "layer_id": "scanim_chk",
+      "sort_index": 2590,
+      "height": 185
+    },
+    {
+      "layer_id": "fullscreen_rev",
+      "sort_index": 2803,
+      "height": 100
+    },
+    {
+      "layer_id": "curmove_rev",
+      "sort_index": 2804,
+      "height": 169
+    },
+    {
+      "layer_id": "bgmhidetime_slider",
+      "sort_index": 2860,
+      "height": 99,
+      "ch": 98
+    },
+    {
+      "layer_id": "curmove_chk",
+      "sort_index": 2894,
+      "height": 169
+    },
+    {
+      "layer_id": "curmove_off",
+      "sort_index": 2897,
+      "height": 169
+    },
+    {
+      "layer_id": "curmove_on",
+      "sort_index": 2962,
+      "height": 169
+    },
+    {
+      "layer_id": "noeffect_rev",
+      "sort_index": 3077,
+      "height": 115
+    },
+    {
+      "layer_id": "qcpopover_rev",
+      "sort_index": 3120,
+      "height": 184
+    },
+    {
+      "layer_id": "stopdeactive_rev",
+      "sort_index": 3120,
+      "height": 72
+    },
+    {
+      "layer_id": "item_vprg_rev",
+      "sort_index": 3133,
+      "height": 13
+    },
+    {
+      "layer_id": "item_icon_rev",
+      "sort_index": 3154,
+      "height": 65
+    },
+    {
+      "layer_id": "facemode_chk",
+      "sort_index": 3159,
+      "height": 155
+    },
+    {
+      "layer_id": "item_qmlk_rev",
+      "sort_index": 3163,
+      "height": 182
+    },
+    {
+      "layer_id": "noeffect_chk",
+      "sort_index": 3190,
+      "height": 224
+    },
+    {
+      "layer_id": "item_icon_off",
+      "sort_index": 3328,
+      "height": 65
+    },
+    {
+      "layer_id": "esccancel_chk",
+      "sort_index": 3346,
+      "height": 12
+    },
+    {
+      "layer_id": "item_qmlk_off",
+      "sort_index": 3357,
+      "height": 182
+    },
+    {
+      "layer_id": "item_toch_rev",
+      "sort_index": 3365,
+      "height": 171
+    },
+    {
+      "layer_id": "item_qmlk_on",
+      "sort_index": 3433,
+      "height": 182
+    },
+    {
+      "layer_id": "item_icon_on",
+      "sort_index": 3441,
+      "height": 65
+    },
+    {
+      "layer_id": "stayontop_chk",
+      "sort_index": 3505,
+      "height": 111
+    },
+    {
+      "layer_id": "chapthidetime_slider",
+      "sort_index": 3509,
+      "height": 180,
+      "ch": 71
+    },
+    {
+      "layer_id": "facemode_rev",
+      "sort_index": 3523,
+      "height": 222
+    },
+    {
+      "layer_id": "item_vprg_on",
+      "sort_index": 3535,
+      "height": 13
+    },
+    {
+      "layer_id": "qcpopover_chk",
+      "sort_index": 3540,
+      "height": 10
+    },
+    {
+      "layer_id": "item_toch_off",
+      "sort_index": 3541,
+      "height": 171
+    },
+    {
+      "layer_id": "item_vprg_off",
+      "sort_index": 3542,
+      "height": 13
+    },
+    {
+      "layer_id": "item_toch_on",
+      "sort_index": 3566,
+      "height": 171
+    },
+    {
+      "layer_id": "sqscr_rev",
+      "sort_index": 3574,
+      "height": 1
+    },
+    {
+      "layer_id": "fullscreen_chk",
+      "sort_index": 3661,
+      "height": 49
+    },
+    {
+      "layer_id": "sep_b",
+      "sort_index": 3796,
+      "height": 38,
+      "ch": 65
+    },
+    {
+      "layer_id": "stopdeactive_chk",
+      "sort_index": 4138,
+      "height": 72
+    },
+    {
+      "layer_id": "stopdeactive_off",
+      "sort_index": 4158,
+      "height": 72
+    },
+    {
+      "layer_id": "stopdeactive_on",
+      "sort_index": 4341,
+      "height": 72
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 213
+    },
+    {
+      "layer_id": "color",
+      "sort_index": null,
+      "cw": 234
+    },
+    {
+      "layer_id": "cr",
+      "sort_index": null,
+      "cw": 234
+    },
+    {
+      "layer_id": "curmove",
+      "sort_index": null,
+      "height": 169
+    },
+    {
+      "layer_id": "disable",
+      "sort_index": null,
+      "ch": 98
+    },
+    {
+      "layer_id": "dsbase",
+      "sort_index": null,
+      "ch": 161
+    },
+    {
+      "layer_id": "esccancel_rev",
+      "sort_index": null,
+      "height": 63
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "x": 76,
+      "width": 74
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 62
+    },
+    {
+      "layer_id": "initialize",
+      "sort_index": null,
+      "width": 168
+    },
+    {
+      "layer_id": "item_icon",
+      "sort_index": null,
+      "height": 65
+    },
+    {
+      "layer_id": "item_qmlk",
+      "sort_index": null,
+      "height": 182
+    },
+    {
+      "layer_id": "item_toch",
+      "sort_index": null,
+      "height": 171
+    },
+    {
+      "layer_id": "item_vprg",
+      "sort_index": null,
+      "height": 13
+    },
+    {
+      "layer_id": "j",
+      "sort_index": null,
+      "y": 149,
+      "cy": 249
+    },
+    {
+      "layer_id": "m",
+      "sort_index": null,
+      "height": 63
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "ch": 172
+    },
+    {
+      "layer_id": "option__bg0",
+      "sort_index": null,
+      "storagex": 198
+    },
+    {
+      "layer_id": "option__pack",
+      "sort_index": null,
+      "width": 98
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "height": 115
+    },
+    {
+      "layer_id": "rail",
+      "sort_index": null,
+      "ch": 181
+    },
+    {
+      "layer_id": "stopdeactive",
+      "sort_index": null,
+      "height": 72
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 245
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "width": 210
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 41
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 193
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 50
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "0_panictype",
+      "bindings": [
+        "setBasicOptionValue/panictype/0"
+      ],
+      "geometry": {
+        "w": 177
+      }
+    },
+    {
+      "layer_id": "1_panictype",
+      "bindings": [
+        "setBasicOptionValue/panictype/1"
+      ],
+      "geometry": {
+        "w": 233
+      }
+    },
+    {
+      "layer_id": "2_panictype",
+      "bindings": [
+        "setBasicOptionValue/panictype/2"
+      ],
+      "geometry": {
+        "height": 1
+      }
+    },
+    {
+      "layer_id": "3_panictype",
+      "bindings": [
+        "setBasicOptionValue/panictype/3"
+      ],
+      "geometry": {
+        "height": 236
+      }
+    },
+    {
+      "layer_id": "changeBasicSlider",
+      "bindings": [
+        "changeBasicSlider",
+        "changeBasicSlider"
+      ],
+      "geometry": {
+        "height": 63
+      }
+    },
+    {
+      "layer_id": "changeSysArg",
+      "bindings": [
+        "changeSysArg/toggle/curmove",
+        "changeSysArg/false/curmove",
+        "changeSysArg/true/curmove",
+        "changeSysArg/toggle/curmove",
+        "changeSysArg/toggle/scanim",
+        "changeSysArg/false/scanim",
+        "changeSysArg/true/scanim",
+        "changeSysArg/toggle/scanim",
+        "changeSysArg/toggle/sqscr",
+        "changeSysArg/false/sqscr",
+        "changeSysArg/true/sqscr",
+        "changeSysArg/toggle/sqscr",
+        "changeSysArg/toggle/stayontop",
+        "changeSysArg/false/stayontop",
+        "changeSysArg/true/stayontop",
+        "changeSysArg/toggle/stayontop",
+        "changeSysArg/toggle/stopdeactive",
+        "changeSysArg/false/stopdeactive",
+        "changeSysArg/true/stopdeactive",
+        "changeSysArg/toggle/stopdeactive"
+      ],
+      "geometry": {
+        "oy": 147,
+        "ch": 236,
+        "w": 146,
+        "cx": 139,
+        "y": 37,
+        "cw": 32,
+        "height": 140,
+        "ox": 93
+      }
+    },
+    {
+      "layer_id": "off_esccancel",
+      "bindings": [
+        "setBasicOptionValue/esccancel/off"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "off_facemode",
+      "bindings": [
+        "setBasicOptionValue/facemode/off"
+      ],
+      "geometry": {
+        "ch": 9
+      }
+    },
+    {
+      "layer_id": "off_fullscreen",
+      "bindings": [
+        "setBasicOptionValue/fullscreen/off"
+      ],
+      "geometry": {
+        "height": 169
+      }
+    },
+    {
+      "layer_id": "off_item_icon",
+      "bindings": [
+        "setBasicOptionValue/item_icon/off"
+      ],
+      "geometry": {
+        "height": 155
+      }
+    },
+    {
+      "layer_id": "off_item_qmlk",
+      "bindings": [
+        "setBasicOptionValue/item_qmlk/off"
+      ],
+      "geometry": {
+        "cx": 191
+      }
+    },
+    {
+      "layer_id": "off_item_toch",
+      "bindings": [
+        "setBasicOptionValue/item_toch/off"
+      ],
+      "geometry": {
+        "w": 95
+      }
+    },
+    {
+      "layer_id": "off_item_vprg",
+      "bindings": [
+        "setBasicOptionValue/item_vprg/off"
+      ],
+      "geometry": {
+        "x": 216
+      }
+    },
+    {
+      "layer_id": "off_noeffect",
+      "bindings": [
+        "setBasicOptionValue/noeffect/off"
+      ],
+      "geometry": {
+        "height": 171
+      }
+    },
+    {
+      "layer_id": "off_qcpopover",
+      "bindings": [
+        "setBasicOptionValue/qcpopover/off"
+      ],
+      "geometry": {
+        "width": 118
+      }
+    },
+    {
+      "layer_id": "on_esccancel",
+      "bindings": [
+        "setBasicOptionValue/esccancel/on"
+      ],
+      "geometry": {
+        "w": 143
+      }
+    },
+    {
+      "layer_id": "on_facemode",
+      "bindings": [
+        "setBasicOptionValue/facemode/on"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "on_fullscreen",
+      "bindings": [
+        "setBasicOptionValue/fullscreen/on"
+      ],
+      "geometry": {
+        "width": 146
+      }
+    },
+    {
+      "layer_id": "on_item_icon",
+      "bindings": [
+        "setBasicOptionValue/item_icon/on"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "on_item_qmlk",
+      "bindings": [
+        "setBasicOptionValue/item_qmlk/on"
+      ],
+      "geometry": {
+        "height": 222
+      }
+    },
+    {
+      "layer_id": "on_item_toch",
+      "bindings": [
+        "setBasicOptionValue/item_toch/on"
+      ],
+      "geometry": {
+        "height": 126
+      }
+    },
+    {
+      "layer_id": "on_item_vprg",
+      "bindings": [
+        "setBasicOptionValue/item_vprg/on"
+      ],
+      "geometry": {
+        "oy": 205
+      }
+    },
+    {
+      "layer_id": "on_noeffect",
+      "bindings": [
+        "setBasicOptionValue/noeffect/on"
+      ],
+      "geometry": {
+        "ox": 245
+      }
+    },
+    {
+      "layer_id": "on_qcpopover",
+      "bindings": [
+        "setBasicOptionValue/qcpopover/on"
+      ],
+      "geometry": {
+        "width": 74
+      }
+    },
+    {
+      "layer_id": "reset",
+      "bindings": [
+        "reset"
+      ],
+      "geometry": {
+        "height": 169
+      }
+    },
+    {
+      "layer_id": "toggle_esccancel",
+      "bindings": [
+        "setBasicOptionValue/esccancel/toggle",
+        "setBasicOptionValue/esccancel/toggle"
+      ],
+      "geometry": {
+        "ch": 98,
+        "w": 222
+      }
+    },
+    {
+      "layer_id": "toggle_facemode",
+      "bindings": [
+        "setBasicOptionValue/facemode/toggle",
+        "setBasicOptionValue/facemode/toggle"
+      ],
+      "geometry": {
+        "w": 146
+      }
+    },
+    {
+      "layer_id": "toggle_fullscreen",
+      "bindings": [
+        "setBasicOptionValue/fullscreen/toggle",
+        "setBasicOptionValue/fullscreen/toggle"
+      ],
+      "geometry": {
+        "cx": 196
+      }
+    },
+    {
+      "layer_id": "toggle_item_icon",
+      "bindings": [
+        "setBasicOptionValue/item_icon/toggle",
+        "setBasicOptionValue/item_icon/toggle"
+      ],
+      "geometry": {
+        "w": 101
+      }
+    },
+    {
+      "layer_id": "toggle_item_qmlk",
+      "bindings": [
+        "setBasicOptionValue/item_qmlk/toggle",
+        "setBasicOptionValue/item_qmlk/toggle"
+      ],
+      "geometry": {
+        "cy": 144,
+        "width": 62
+      }
+    },
+    {
+      "layer_id": "toggle_item_toch",
+      "bindings": [
+        "setBasicOptionValue/item_toch/toggle",
+        "setBasicOptionValue/item_toch/toggle"
+      ],
+      "geometry": {
+        "height": 49
+      }
+    },
+    {
+      "layer_id": "toggle_item_vprg",
+      "bindings": [
+        "setBasicOptionValue/item_vprg/toggle",
+        "setBasicOptionValue/item_vprg/toggle"
+      ],
+      "geometry": {
+        "oy": 146
+      }
+    },
+    {
+      "layer_id": "toggle_noeffect",
+      "bindings": [
+        "setBasicOptionValue/noeffect/toggle",
+        "setBasicOptionValue/noeffect/toggle"
+      ],
+      "geometry": {
+        "w": 134,
+        "height": 13
+      }
+    },
+    {
+      "layer_id": "toggle_qcpopover",
+      "bindings": [
+        "setBasicOptionValue/qcpopover/toggle",
+        "setBasicOptionValue/qcpopover/toggle"
+      ],
+      "geometry": {
+        "w": 25
+      }
+    }
+  ]
+}

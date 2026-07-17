@@ -1,0 +1,1127 @@
+{
+  "source": "option_9gamepad.pbd",
+  "hotspots": [
+    {
+      "layer_id": "gsicon24",
+      "sort_index": 1034,
+      "width": 71,
+      "height": 231
+    },
+    {
+      "layer_id": "caption",
+      "sort_index": 1200,
+      "height": 223,
+      "ch": 195
+    },
+    {
+      "layer_id": "title",
+      "sort_index": 1226,
+      "width": 188,
+      "height": 169,
+      "ch": 146
+    },
+    {
+      "layer_id": "helpbase",
+      "sort_index": 1301,
+      "height": 27,
+      "ch": 66
+    },
+    {
+      "layer_id": "reset",
+      "sort_index": 1378,
+      "width": 3,
+      "height": 120
+    },
+    {
+      "layer_id": "sep_a",
+      "sort_index": 1457,
+      "height": 186,
+      "ch": 139
+    },
+    {
+      "layer_id": "drag",
+      "sort_index": 1524,
+      "width": 8,
+      "height": 132
+    },
+    {
+      "layer_id": "gamepad",
+      "sort_index": 1526,
+      "height": 255,
+      "ch": 151
+    },
+    {
+      "layer_id": "gsicon25",
+      "sort_index": 1795,
+      "width": 144,
+      "height": 185
+    },
+    {
+      "layer_id": "gsicon3",
+      "sort_index": 1815,
+      "width": 77,
+      "height": 185
+    },
+    {
+      "layer_id": "gsicon7",
+      "sort_index": 1844,
+      "width": 235,
+      "height": 182
+    },
+    {
+      "layer_id": "gsicon6",
+      "sort_index": 1847,
+      "width": 132,
+      "height": 125
+    },
+    {
+      "layer_id": "gsicon5",
+      "sort_index": 1851,
+      "width": 20,
+      "height": 151
+    },
+    {
+      "layer_id": "gsicon1",
+      "sort_index": 1881,
+      "width": 66,
+      "height": 46
+    },
+    {
+      "layer_id": "gsicon2",
+      "sort_index": 1886,
+      "width": 21,
+      "height": 194
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1905,
+      "height": 211
+    },
+    {
+      "layer_id": "gsicon8",
+      "sort_index": 1917,
+      "width": 186,
+      "height": 38
+    },
+    {
+      "layer_id": "gsicon0",
+      "sort_index": 1984,
+      "width": 104,
+      "height": 45
+    },
+    {
+      "layer_id": "button_r3",
+      "sort_index": 1996,
+      "height": 139,
+      "ch": 191
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 2003,
+      "width": 62,
+      "height": 199,
+      "storagex": 73
+    },
+    {
+      "layer_id": "holder03",
+      "sort_index": 2057,
+      "height": 132,
+      "ch": 231
+    },
+    {
+      "layer_id": "gsicon21",
+      "sort_index": 2068,
+      "width": 239,
+      "height": 34
+    },
+    {
+      "layer_id": "gsicon12",
+      "sort_index": 2073,
+      "width": 22,
+      "height": 104
+    },
+    {
+      "layer_id": "holder10",
+      "sort_index": 2073,
+      "height": 36,
+      "ch": 233
+    },
+    {
+      "layer_id": "gsicon13",
+      "sort_index": 2075,
+      "width": 51,
+      "height": 130
+    },
+    {
+      "layer_id": "gsicon9",
+      "sort_index": 2089,
+      "width": 69,
+      "height": 235
+    },
+    {
+      "layer_id": "holder06",
+      "sort_index": 2091,
+      "height": 7,
+      "ch": 22
+    },
+    {
+      "layer_id": "gsicon18",
+      "sort_index": 2092,
+      "width": 40,
+      "height": 56
+    },
+    {
+      "layer_id": "holder05",
+      "sort_index": 2102,
+      "height": 27,
+      "ch": 247
+    },
+    {
+      "layer_id": "button_b",
+      "sort_index": 2158,
+      "height": 255,
+      "ch": 152
+    },
+    {
+      "layer_id": "lines",
+      "sort_index": 2158,
+      "height": 135,
+      "ch": 238
+    },
+    {
+      "layer_id": "holder11",
+      "sort_index": 2161,
+      "height": 82,
+      "ch": 189
+    },
+    {
+      "layer_id": "gsicon26",
+      "sort_index": 2162,
+      "width": 219,
+      "height": 161
+    },
+    {
+      "layer_id": "gamepad_bind2",
+      "sort_index": 2171,
+      "width": 203,
+      "height": 44
+    },
+    {
+      "layer_id": "gsicon16",
+      "sort_index": 2171,
+      "width": 12,
+      "height": 7
+    },
+    {
+      "layer_id": "button_a",
+      "sort_index": 2173,
+      "height": 24,
+      "ch": 52
+    },
+    {
+      "layer_id": "gsicon29",
+      "sort_index": 2176,
+      "width": 140,
+      "height": 204
+    },
+    {
+      "layer_id": "gsicon28",
+      "sort_index": 2184,
+      "width": 73,
+      "height": 64
+    },
+    {
+      "layer_id": "gsicon27",
+      "sort_index": 2185,
+      "width": 131,
+      "height": 95
+    },
+    {
+      "layer_id": "holder01",
+      "sort_index": 2185,
+      "height": 39,
+      "ch": 172
+    },
+    {
+      "layer_id": "gsicon22",
+      "sort_index": 2186,
+      "width": 125,
+      "height": 6
+    },
+    {
+      "layer_id": "holder02",
+      "sort_index": 2194,
+      "height": 12,
+      "ch": 138
+    },
+    {
+      "layer_id": "holder07",
+      "sort_index": 2194,
+      "height": 44,
+      "ch": 214
+    },
+    {
+      "layer_id": "holder04",
+      "sort_index": 2199,
+      "height": 233,
+      "ch": 107
+    },
+    {
+      "layer_id": "gsicon11",
+      "sort_index": 2200,
+      "width": 138,
+      "height": 7
+    },
+    {
+      "layer_id": "gsicon19",
+      "sort_index": 2208,
+      "width": 98,
+      "height": 55
+    },
+    {
+      "layer_id": "gsicon23",
+      "sort_index": 2216,
+      "width": 89,
+      "height": 243
+    },
+    {
+      "layer_id": "gsicon15",
+      "sort_index": 2228,
+      "width": 161,
+      "height": 182
+    },
+    {
+      "layer_id": "gsicon14",
+      "sort_index": 2229,
+      "width": 51,
+      "height": 145
+    },
+    {
+      "layer_id": "holder09",
+      "sort_index": 2237,
+      "height": 5,
+      "ch": 149
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2252,
+      "height": 54
+    },
+    {
+      "layer_id": "button_x",
+      "sort_index": 2260,
+      "height": 112,
+      "ch": 49
+    },
+    {
+      "layer_id": "holder08",
+      "sort_index": 2264,
+      "height": 114,
+      "ch": 80
+    },
+    {
+      "layer_id": "gsicon17",
+      "sort_index": 2283,
+      "width": 86,
+      "height": 165
+    },
+    {
+      "layer_id": "gsicon20",
+      "sort_index": 2286,
+      "width": 188,
+      "height": 235
+    },
+    {
+      "layer_id": "gsicon4",
+      "sort_index": 2297,
+      "width": 159,
+      "height": 24
+    },
+    {
+      "layer_id": "back",
+      "sort_index": 2301,
+      "width": 188,
+      "height": 211
+    },
+    {
+      "layer_id": "gsicon10",
+      "sort_index": 2303,
+      "width": 128,
+      "height": 227
+    },
+    {
+      "layer_id": "button_r2",
+      "sort_index": 2334,
+      "height": 203,
+      "ch": 100
+    },
+    {
+      "layer_id": "button_r1",
+      "sort_index": 2382,
+      "height": 42,
+      "ch": 50
+    },
+    {
+      "layer_id": "button_l1",
+      "sort_index": 2385,
+      "height": 23,
+      "ch": 6
+    },
+    {
+      "layer_id": "button_start",
+      "sort_index": 2450,
+      "ch": 153
+    },
+    {
+      "layer_id": "button_l3",
+      "sort_index": 2505,
+      "height": 68,
+      "ch": 65
+    },
+    {
+      "layer_id": "button_l2",
+      "sort_index": 2548,
+      "height": 47,
+      "ch": 233
+    },
+    {
+      "layer_id": "gamepad_bind1",
+      "sort_index": 2556,
+      "width": 165,
+      "height": 81
+    },
+    {
+      "layer_id": "gsflick_rev",
+      "sort_index": 2608,
+      "height": 116
+    },
+    {
+      "layer_id": "sep_b",
+      "sort_index": 2801,
+      "height": 212,
+      "ch": 69
+    },
+    {
+      "layer_id": "gsmouse_off",
+      "sort_index": 2821,
+      "height": 27
+    },
+    {
+      "layer_id": "gsflick_chk",
+      "sort_index": 2858,
+      "height": 116
+    },
+    {
+      "layer_id": "gsflick_off",
+      "sort_index": 2878,
+      "height": 116
+    },
+    {
+      "layer_id": "gsmouse_chk",
+      "sort_index": 2903,
+      "height": 27
+    },
+    {
+      "layer_id": "gsmouse_on",
+      "sort_index": 2934,
+      "height": 27
+    },
+    {
+      "layer_id": "gsmouse_rev",
+      "sort_index": 3011,
+      "height": 27
+    },
+    {
+      "layer_id": "gsflick_on",
+      "sort_index": 3061,
+      "height": 116
+    },
+    {
+      "layer_id": "remove",
+      "sort_index": 3154,
+      "height": 120
+    },
+    {
+      "layer_id": "option_cmds__pack",
+      "sort_index": 3233,
+      "width": 184
+    },
+    {
+      "layer_id": "button_select",
+      "sort_index": 3315,
+      "ch": 186
+    },
+    {
+      "layer_id": "button_y",
+      "sort_index": 3405,
+      "height": 79,
+      "ch": 29
+    },
+    {
+      "layer_id": "engamepad_rev",
+      "sort_index": 3515,
+      "height": 123,
+      "ch": 131
+    },
+    {
+      "layer_id": "engamepad_on",
+      "sort_index": 3535,
+      "height": 123
+    },
+    {
+      "layer_id": "engamepad_off",
+      "sort_index": 3542,
+      "height": 123
+    },
+    {
+      "layer_id": "holder12",
+      "sort_index": 3774,
+      "height": 41,
+      "ch": 67
+    },
+    {
+      "layer_id": "option_9gamepad__pack",
+      "sort_index": 4403,
+      "width": 204
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 81
+    },
+    {
+      "layer_id": "arrow",
+      "sort_index": null,
+      "ch": 73
+    },
+    {
+      "layer_id": "auto",
+      "sort_index": null,
+      "width": 138,
+      "ch": 2
+    },
+    {
+      "layer_id": "backone",
+      "sort_index": null,
+      "width": 69,
+      "ch": 79
+    },
+    {
+      "layer_id": "backskip",
+      "sort_index": null,
+      "width": 186,
+      "ch": 252
+    },
+    {
+      "layer_id": "click",
+      "sort_index": null,
+      "width": 98,
+      "ch": 138
+    },
+    {
+      "layer_id": "cr",
+      "sort_index": null,
+      "cw": 32
+    },
+    {
+      "layer_id": "custom",
+      "sort_index": null,
+      "ch": 251
+    },
+    {
+      "layer_id": "deftext",
+      "sort_index": null,
+      "width": 8,
+      "ch": 120
+    },
+    {
+      "layer_id": "dsave",
+      "sort_index": null,
+      "width": 66,
+      "ch": 116
+    },
+    {
+      "layer_id": "engamepad",
+      "sort_index": null,
+      "height": 123
+    },
+    {
+      "layer_id": "engamepad_chk",
+      "sort_index": null,
+      "height": 123
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "x": 237,
+      "width": 210
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 138,
+      "height": 59
+    },
+    {
+      "layer_id": "front",
+      "sort_index": null,
+      "ch": 151
+    },
+    {
+      "layer_id": "gsflick",
+      "sort_index": null,
+      "height": 116
+    },
+    {
+      "layer_id": "gsfunc_auto",
+      "sort_index": null,
+      "width": 138
+    },
+    {
+      "layer_id": "gsfunc_backone",
+      "sort_index": null,
+      "width": 69
+    },
+    {
+      "layer_id": "gsfunc_backskip",
+      "sort_index": null,
+      "width": 186
+    },
+    {
+      "layer_id": "gsfunc_click",
+      "sort_index": null,
+      "width": 98
+    },
+    {
+      "layer_id": "gsfunc_dsave",
+      "sort_index": null,
+      "width": 66
+    },
+    {
+      "layer_id": "gsfunc_key_ctrl",
+      "sort_index": null,
+      "width": 131
+    },
+    {
+      "layer_id": "gsfunc_key_pagedown",
+      "sort_index": null,
+      "width": 219
+    },
+    {
+      "layer_id": "gsfunc_key_pageup",
+      "sort_index": null,
+      "width": 144
+    },
+    {
+      "layer_id": "gsfunc_load",
+      "sort_index": null,
+      "width": 21
+    },
+    {
+      "layer_id": "gsfunc_log",
+      "sort_index": null,
+      "width": 128
+    },
+    {
+      "layer_id": "gsfunc_next",
+      "sort_index": null,
+      "width": 51
+    },
+    {
+      "layer_id": "gsfunc_nextscn",
+      "sort_index": null,
+      "width": 51
+    },
+    {
+      "layer_id": "gsfunc_none",
+      "sort_index": null,
+      "width": 71
+    },
+    {
+      "layer_id": "gsfunc_option",
+      "sort_index": null,
+      "width": 20
+    },
+    {
+      "layer_id": "gsfunc_panic",
+      "sort_index": null,
+      "width": 89
+    },
+    {
+      "layer_id": "gsfunc_prev",
+      "sort_index": null,
+      "width": 132
+    },
+    {
+      "layer_id": "gsfunc_prevscn",
+      "sort_index": null,
+      "width": 235
+    },
+    {
+      "layer_id": "gsfunc_qload",
+      "sort_index": null,
+      "width": 159
+    },
+    {
+      "layer_id": "gsfunc_qsave",
+      "sort_index": null,
+      "width": 77
+    },
+    {
+      "layer_id": "gsfunc_qvsave",
+      "sort_index": null,
+      "width": 86
+    },
+    {
+      "layer_id": "gsfunc_rclick",
+      "sort_index": null,
+      "width": 73
+    },
+    {
+      "layer_id": "gsfunc_save",
+      "sort_index": null,
+      "width": 104
+    },
+    {
+      "layer_id": "gsfunc_scnchart",
+      "sort_index": null,
+      "width": 161
+    },
+    {
+      "layer_id": "gsfunc_screen",
+      "sort_index": null,
+      "width": 239
+    },
+    {
+      "layer_id": "gsfunc_skip",
+      "sort_index": null,
+      "width": 22
+    },
+    {
+      "layer_id": "gsfunc_snapshot",
+      "sort_index": null,
+      "width": 125
+    },
+    {
+      "layer_id": "gsfunc_title",
+      "sort_index": null,
+      "width": 188
+    },
+    {
+      "layer_id": "gsfunc_volume",
+      "sort_index": null,
+      "width": 140
+    },
+    {
+      "layer_id": "gsfunc_vreplay",
+      "sort_index": null,
+      "width": 12
+    },
+    {
+      "layer_id": "gsfunc_vsave",
+      "sort_index": null,
+      "width": 40
+    },
+    {
+      "layer_id": "gsicon",
+      "sort_index": null,
+      "height": 116,
+      "ch": 2
+    },
+    {
+      "layer_id": "gsmouse",
+      "sort_index": null,
+      "height": 27
+    },
+    {
+      "layer_id": "hide",
+      "sort_index": null,
+      "ch": 136
+    },
+    {
+      "layer_id": "initialize",
+      "sort_index": null,
+      "width": 3
+    },
+    {
+      "layer_id": "j",
+      "sort_index": null,
+      "y": 223,
+      "cy": 253
+    },
+    {
+      "layer_id": "key_ctrl",
+      "sort_index": null,
+      "width": 131,
+      "ch": 64
+    },
+    {
+      "layer_id": "key_pagedown",
+      "sort_index": null,
+      "width": 219,
+      "ch": 37
+    },
+    {
+      "layer_id": "key_pageup",
+      "sort_index": null,
+      "width": 144,
+      "ch": 99
+    },
+    {
+      "layer_id": "load",
+      "sort_index": null,
+      "width": 21,
+      "ch": 183
+    },
+    {
+      "layer_id": "log",
+      "sort_index": null,
+      "width": 128,
+      "ch": 219
+    },
+    {
+      "layer_id": "next",
+      "sort_index": null,
+      "width": 51,
+      "ch": 9
+    },
+    {
+      "layer_id": "nextscn",
+      "sort_index": null,
+      "width": 51,
+      "ch": 108
+    },
+    {
+      "layer_id": "none",
+      "sort_index": null,
+      "width": 71,
+      "ch": 88
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 131
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 236
+    },
+    {
+      "layer_id": "option",
+      "sort_index": null,
+      "width": 20,
+      "ch": 251
+    },
+    {
+      "layer_id": "option__bg0",
+      "sort_index": null,
+      "storagex": 73
+    },
+    {
+      "layer_id": "option__pack",
+      "sort_index": null,
+      "width": 106
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 104
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 51
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "ch": 146
+    },
+    {
+      "layer_id": "panic",
+      "sort_index": null,
+      "width": 89,
+      "ch": 141
+    },
+    {
+      "layer_id": "part",
+      "sort_index": null,
+      "height": 120
+    },
+    {
+      "layer_id": "prev",
+      "sort_index": null,
+      "width": 132,
+      "ch": 168
+    },
+    {
+      "layer_id": "prevscn",
+      "sort_index": null,
+      "width": 235,
+      "ch": 180
+    },
+    {
+      "layer_id": "qload",
+      "sort_index": null,
+      "width": 159,
+      "ch": 237
+    },
+    {
+      "layer_id": "qsave",
+      "sort_index": null,
+      "width": 77,
+      "ch": 80
+    },
+    {
+      "layer_id": "qvsave",
+      "sort_index": null,
+      "width": 86,
+      "ch": 48
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "height": 54
+    },
+    {
+      "layer_id": "rclick",
+      "sort_index": null,
+      "width": 73,
+      "ch": 149
+    },
+    {
+      "layer_id": "s",
+      "sort_index": null,
+      "height": 54
+    },
+    {
+      "layer_id": "save",
+      "sort_index": null,
+      "width": 104,
+      "ch": 62
+    },
+    {
+      "layer_id": "scnchart",
+      "sort_index": null,
+      "width": 161,
+      "ch": 146
+    },
+    {
+      "layer_id": "screen",
+      "sort_index": null,
+      "width": 239,
+      "ch": 205
+    },
+    {
+      "layer_id": "skip",
+      "sort_index": null,
+      "width": 22,
+      "ch": 95
+    },
+    {
+      "layer_id": "snapshot",
+      "sort_index": null,
+      "width": 125,
+      "ch": 108
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 122
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "width": 62
+    },
+    {
+      "layer_id": "sub",
+      "sort_index": null,
+      "ch": 65
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 43
+    },
+    {
+      "layer_id": "top",
+      "sort_index": null,
+      "ch": 151
+    },
+    {
+      "layer_id": "volume",
+      "sort_index": null,
+      "width": 140,
+      "ch": 24
+    },
+    {
+      "layer_id": "vreplay",
+      "sort_index": null,
+      "width": 12,
+      "ch": 112
+    },
+    {
+      "layer_id": "vsave",
+      "sort_index": null,
+      "width": 40,
+      "ch": 181
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 53
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 253
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "y": 106,
+      "height": 43
+    },
+    {
+      "layer_id": "z",
+      "sort_index": null,
+      "y": 155,
+      "height": 123
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "off_engamepad",
+      "bindings": [
+        "setBasicOptionValue/engamepad/off"
+      ],
+      "geometry": {
+        "w": 204
+      }
+    },
+    {
+      "layer_id": "off_gsenable",
+      "bindings": [
+        "setBasicOptionValue/gsenable/off"
+      ],
+      "geometry": {
+        "w": 75
+      }
+    },
+    {
+      "layer_id": "off_gsflick",
+      "bindings": [
+        "setBasicOptionValue/gsflick/off"
+      ],
+      "geometry": {
+        "y": 192
+      }
+    },
+    {
+      "layer_id": "off_gsmouse",
+      "bindings": [
+        "setBasicOptionValue/gsmouse/off"
+      ],
+      "geometry": {
+        "height": 165
+      }
+    },
+    {
+      "layer_id": "on_engamepad",
+      "bindings": [
+        "setBasicOptionValue/engamepad/on"
+      ],
+      "geometry": {
+        "ch": 152
+      }
+    },
+    {
+      "layer_id": "on_gsenable",
+      "bindings": [
+        "setBasicOptionValue/gsenable/on"
+      ],
+      "geometry": {
+        "ox": 143
+      }
+    },
+    {
+      "layer_id": "on_gsflick",
+      "bindings": [
+        "setBasicOptionValue/gsflick/on"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "on_gsmouse",
+      "bindings": [
+        "setBasicOptionValue/gsmouse/on"
+      ],
+      "geometry": {
+        "height": 56
+      }
+    },
+    {
+      "layer_id": "reassignGamePadButtons",
+      "bindings": [
+        "reassignGamePadButtons"
+      ],
+      "geometry": {
+        "ch": 50
+      }
+    },
+    {
+      "layer_id": "reset",
+      "bindings": [
+        "reset"
+      ],
+      "geometry": {
+        "w": 179
+      }
+    },
+    {
+      "layer_id": "toggle_engamepad",
+      "bindings": [
+        "setBasicOptionValue/engamepad/toggle",
+        "setBasicOptionValue/engamepad/toggle"
+      ],
+      "geometry": {
+        "ch": 52,
+        "x": 7
+      }
+    },
+    {
+      "layer_id": "toggle_gsenable",
+      "bindings": [
+        "setBasicOptionValue/gsenable/toggle",
+        "setBasicOptionValue/gsenable/toggle"
+      ],
+      "geometry": {
+        "cy": 144,
+        "ch": 151
+      }
+    },
+    {
+      "layer_id": "toggle_gsflick",
+      "bindings": [
+        "setBasicOptionValue/gsflick/toggle",
+        "setBasicOptionValue/gsflick/toggle"
+      ],
+      "geometry": {
+        "ch": 205,
+        "w": 7
+      }
+    },
+    {
+      "layer_id": "toggle_gsmouse",
+      "bindings": [
+        "setBasicOptionValue/gsmouse/toggle",
+        "setBasicOptionValue/gsmouse/toggle"
+      ],
+      "geometry": {
+        "width": 12
+      }
+    }
+  ]
+}

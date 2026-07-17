@@ -1,0 +1,4018 @@
+{
+  "id": "motion",
+  "label": "title_bg",
+  "metadata": null,
+  "object": {
+    "logo": {
+      "metadata": null,
+      "motion": {
+        "logo_cn": {
+          "lastTime": 41,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [-566,300,0],
+                    "mask": 9315,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_cn/logo_cn",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "zx": 1.1,
+                    "zy": 1.1
+                  },
+                  "time": 0.0,
+                  "type": 3
+                },{
+                  "content": {
+                    "coord": [-566,300,0],
+                    "mask": 8195,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_cn/logo_cn",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 30.0,
+                  "type": 3
+                },{
+                  "time": 41.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 41,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "logo_en": {
+          "lastTime": 41,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [-466,297,0],
+                    "mask": 9315,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_en/logo_en",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "zx": 1.1,
+                    "zy": 1.1
+                  },
+                  "time": 0.0,
+                  "type": 3
+                },{
+                  "content": {
+                    "coord": [-466,297,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_en/logo_en"
+                  },
+                  "time": 30.0,
+                  "type": 3
+                },{
+                  "time": 41.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33556476,
+              "joinTarget": 1,
+              "label": "en",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 41,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "logo_jp": {
+          "lastTime": 41,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [-566,301,0],
+                    "mask": 9315,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "zx": 1.1,
+                    "zy": 1.1
+                  },
+                  "time": 0.0,
+                  "type": 3
+                },{
+                  "content": {
+                    "coord": [-566,301,0],
+                    "mask": 8195,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 30.0,
+                  "type": 3
+                },{
+                  "time": 41.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 41,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "logo_sel": {
+          "lastTime": 4,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [-566,301,0],
+                    "mask": 8195,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 0.0,
+                  "type": 2
+                },{
+                  "content": {
+                    "coord": [-466,297,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_en/logo_en"
+                  },
+                  "time": 1.0,
+                  "type": 2
+                },{
+                  "content": {
+                    "coord": [-566,300,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_cn/logo_cn"
+                  },
+                  "time": 2,
+                  "type": 2
+                },{
+                  "content": {
+                    "coord": [-566,300,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_tw/logo_tw"
+                  },
+                  "time": 3,
+                  "type": 2
+                },{
+                  "time": 4.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "logo_en",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [{
+              "discretization": 1,
+              "division": 3,
+              "enabled": 1,
+              "id": "language",
+              "rangeBegin": 0,
+              "rangeEnd": 3
+            }],
+          "parameterize": 0,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 4,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "logo_tw": {
+          "lastTime": 41,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [-566,300,0],
+                    "mask": 9315,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_tw/logo_tw",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "zx": 1.1,
+                    "zy": 1.1
+                  },
+                  "time": 0.0,
+                  "type": 3
+                },{
+                  "content": {
+                    "coord": [-566,300,0],
+                    "mask": 8195,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_tw/logo_tw",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 30.0,
+                  "type": 3
+                },{
+                  "time": 41.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 41,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "logoflash_cn": {
+          "lastTime": 20,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "bm": 20,
+                    "color": 4294967295,
+                    "coord": [-566,300,0],
+                    "mask": 132707,
+                    "opa": 128,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_cn/logo_cn",
+                    "zx": 1.06682289,
+                    "zy": 1.06682289
+                  },
+                  "time": 0.0,
+                  "type": 3
+                },{
+                  "content": {
+                    "bm": 20,
+                    "color": 4294967295,
+                    "coord": [-566,300,0],
+                    "mask": 132611,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_cn/logo_cn"
+                  },
+                  "time": 19.0,
+                  "type": 3
+                },{
+                  "time": 20.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 20,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "logoflash_en": {
+          "lastTime": 20,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "bm": 20,
+                    "color": 4294967295,
+                    "coord": [-466,297,0],
+                    "mask": 132707,
+                    "opa": 128,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_en/logo_en",
+                    "zx": 1.06682289,
+                    "zy": 1.06682289
+                  },
+                  "time": 0,
+                  "type": 3
+                },{
+                  "content": {
+                    "bm": 20,
+                    "color": 4294967295,
+                    "coord": [-466,297,0],
+                    "mask": 132611,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_en/logo_en"
+                  },
+                  "time": 19,
+                  "type": 3
+                },{
+                  "time": 20,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "logo_en",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 20,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "logoflash_jp": {
+          "lastTime": 20,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "bm": 20,
+                    "color": 4294967295,
+                    "coord": [-566,301,0],
+                    "mask": 132707,
+                    "opa": 128,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+                    "zx": 1.06682289,
+                    "zy": 1.06682289
+                  },
+                  "time": 0.0,
+                  "type": 3
+                },{
+                  "content": {
+                    "bm": 20,
+                    "color": 4294967295,
+                    "coord": [-566,301,0],
+                    "mask": 132611,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/天使☆騒々RE-BOOT！ロゴ[RGB-4c]"
+                  },
+                  "time": 19.0,
+                  "type": 3
+                },{
+                  "time": 20.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 20,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "logoflash_sel": {
+          "lastTime": 4,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 524289,
+                    "motion": {
+                      "mask": 0,
+                      "timeOffset": 0
+                    },
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "motion/logo/logoflash_jp"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "content": {
+                    "mask": 524289,
+                    "motion": {
+                      "mask": 0,
+                      "timeOffset": 0
+                    },
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "motion/logo/logoflash_en"
+                  },
+                  "time": 1,
+                  "type": 2
+                },{
+                  "content": {
+                    "mask": 524289,
+                    "motion": {
+                      "mask": 0,
+                      "timeOffset": 0
+                    },
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "motion/logo/logoflash_cn"
+                  },
+                  "time": 2,
+                  "type": 2
+                },{
+                  "content": {
+                    "mask": 524289,
+                    "motion": {
+                      "mask": 0,
+                      "timeOffset": 0
+                    },
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "motion/logo/logoflash_tw"
+                  },
+                  "time": 3,
+                  "type": 2
+                },{
+                  "time": 4,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33556476,
+              "joinTarget": 1,
+              "label": "レイヤ1",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "motionIndependentLayerInherit": 0,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 3
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [{
+              "discretization": 1,
+              "division": 3,
+              "enabled": 1,
+              "id": "language",
+              "rangeBegin": 0,
+              "rangeEnd": 3
+            }],
+          "parameterize": 0,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 4,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "logoflash_tw": {
+          "lastTime": 20,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "bm": 20,
+                    "color": 4294967295,
+                    "coord": [-566,300,0],
+                    "mask": 132707,
+                    "opa": 128,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_tw/logo_tw",
+                    "zx": 1.06682289,
+                    "zy": 1.06682289
+                  },
+                  "time": 0.0,
+                  "type": 3
+                },{
+                  "content": {
+                    "bm": 20,
+                    "color": 4294967295,
+                    "coord": [-566,300,0],
+                    "mask": 132611,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/logo_tw/logo_tw"
+                  },
+                  "time": 19.0,
+                  "type": 3
+                },{
+                  "time": 20.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 20,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "logomove_sel": {
+          "lastTime": 4,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 524289,
+                    "motion": {
+                      "mask": 0,
+                      "timeOffset": 0
+                    },
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "motion/logo/logo_jp"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "content": {
+                    "mask": 524289,
+                    "motion": {
+                      "mask": 0,
+                      "timeOffset": 0
+                    },
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "motion/logo/logo_en"
+                  },
+                  "time": 1,
+                  "type": 2
+                },{
+                  "content": {
+                    "mask": 524289,
+                    "motion": {
+                      "mask": 0,
+                      "timeOffset": 0
+                    },
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "motion/logo/logo_cn"
+                  },
+                  "time": 2,
+                  "type": 2
+                },{
+                  "content": {
+                    "mask": 524289,
+                    "motion": {
+                      "mask": 0,
+                      "timeOffset": 0
+                    },
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "motion/logo/logo_tw"
+                  },
+                  "time": 3,
+                  "type": 2
+                },{
+                  "time": 4,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33556476,
+              "joinTarget": 1,
+              "label": "レイヤ1",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "motionIndependentLayerInherit": 0,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 3
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [{
+              "discretization": 1,
+              "division": 3,
+              "enabled": 1,
+              "id": "language",
+              "rangeBegin": 0,
+              "rangeEnd": 3
+            }],
+          "parameterize": 0,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 4,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        }
+      },
+      "type": 0
+    },
+    "title_bg": {
+      "metadata": null,
+      "motion": {
+        "char_move": {
+          "lastTime": 121,
+          "layer": [{
+              "children": [{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 10337,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常bg",
+                        "zcc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "zx": 1.1,
+                        "zy": 1.1
+                      },
+                      "time": 0,
+                      "type": 3
+                    },{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 2049,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常bg"
+                      },
+                      "time": 90,
+                      "type": 3
+                    },{
+                      "time": 121,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常bg",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 1
+                },{
+                  "children": [{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "time": 0,
+                          "type": 0
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [-69.0,-79.0,0],
+                            "mask": 44035,
+                            "occ": {
+                              "c": [1,1],
+                              "x": [0.0,0.323333323,0.24,1.0],
+                              "y": [0.0,1.0,1.0,1.0]
+                            },
+                            "opa": 0,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常来海 (結合)",
+                            "zcc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            }
+                          },
+                          "time": 30,
+                          "type": 3
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [-85,-31,0],
+                            "mask": 2051,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常来海 (結合)"
+                          },
+                          "time": 90.0,
+                          "type": 3
+                        },{
+                          "time": 121.0,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常来海 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "time": 0,
+                          "type": 0
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [-422.0,-24.0,0],
+                            "mask": 44035,
+                            "occ": {
+                              "c": [1,1],
+                              "x": [0.0,0.323333323,0.24,1.0],
+                              "y": [0.0,1.0,1.0,1.0]
+                            },
+                            "opa": 0,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常乃愛 (結合) ",
+                            "zcc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            }
+                          },
+                          "time": 30,
+                          "type": 3
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [-358,0,0],
+                            "mask": 2051,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常乃愛 (結合) "
+                          },
+                          "time": 90.0,
+                          "type": 3
+                        },{
+                          "time": 121.0,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常乃愛 (結合) ",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "time": 0,
+                          "type": 0
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [387.0,-108.0,0],
+                            "mask": 44035,
+                            "occ": {
+                              "c": [1,1],
+                              "x": [0.0,0.323333323,0.24,1.0],
+                              "y": [0.0,1.0,1.0,1.0]
+                            },
+                            "opa": 0,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常かぐ耶 (結合)",
+                            "zcc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            }
+                          },
+                          "time": 30,
+                          "type": 3
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [347,-44,0],
+                            "mask": 2051,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常かぐ耶 (結合)"
+                          },
+                          "time": 90.0,
+                          "type": 3
+                        },{
+                          "time": 121.0,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常かぐ耶 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "time": 0,
+                          "type": 0
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [236.0,281.0,0],
+                            "mask": 44035,
+                            "occ": {
+                              "c": [1,1],
+                              "x": [0.0,0.323333323,0.24,1.0],
+                              "y": [0.0,1.0,1.0,1.0]
+                            },
+                            "opa": 0,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常天音 (結合)",
+                            "zcc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            }
+                          },
+                          "time": 30,
+                          "type": 3
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [164,241,0],
+                            "mask": 2051,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常天音 (結合)"
+                          },
+                          "time": 90.0,
+                          "type": 3
+                        },{
+                          "time": 121.0,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常天音 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    }],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 10241,
+                        "ox": -16,
+                        "oy": -16,
+                        "src": "layout",
+                        "zcc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        }
+                      },
+                      "time": 0,
+                      "type": 3
+                    },{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 2049,
+                        "ox": -16,
+                        "oy": -16,
+                        "src": "layout"
+                      },
+                      "time": 120,
+                      "type": 3
+                    },{
+                      "time": 121,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "キャラ",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "parameterize": null,
+                  "transformOrder": [0,3,2,1],
+                  "type": 2,
+                  "visible": 1
+                },{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "time": 0,
+                      "type": 0
+                    },{
+                      "content": {
+                        "acc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "angle": 30,
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "coord": [16,0,0],
+                        "mask": 64627,
+                        "occ": {
+                          "c": [1,1],
+                          "x": [0.0,0.323333323,0.24,1.0],
+                          "y": [0.0,1.0,1.0,1.0]
+                        },
+                        "opa": 0,
+                        "ox": 0,
+                        "oy": 0,
+                        "scc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "src": "src/normal/通常|通常羽",
+                        "zcc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "zx": 1.5,
+                        "zy": 1.5
+                      },
+                      "time": 30,
+                      "type": 3
+                    },{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "coord": [16,0,0],
+                        "mask": 2051,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常羽"
+                      },
+                      "time": 90,
+                      "type": 3
+                    },{
+                      "time": 121.0,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常羽",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 0
+                },{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "time": 0,
+                      "type": 0
+                    },{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 3073,
+                        "opa": 0,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常セット"
+                      },
+                      "time": 90.0,
+                      "type": 3
+                    },{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 2049,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常セット"
+                      },
+                      "time": 120.0,
+                      "type": 3
+                    },{
+                      "time": 121.0,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常セット",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 0
+                }],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "ccc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "mask": 10241,
+                    "ox": -16,
+                    "oy": -16,
+                    "src": "layout",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 0,
+                  "type": 3
+                },{
+                  "content": {
+                    "ccc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "mask": 2049,
+                    "ox": -16,
+                    "oy": -16,
+                    "src": "layout"
+                  },
+                  "time": 120,
+                  "type": 3
+                },{
+                  "time": 121,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "通常",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "parameterize": null,
+              "transformOrder": [0,3,2,1],
+              "type": 2,
+              "visible": 0
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "time": 0,
+                  "type": 0
+                },{
+                  "content": {
+                    "ccc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "coord": [0.0,530.0,0],
+                    "mask": 11267,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/lower_gradient",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 90.0,
+                  "type": 3
+                },{
+                  "content": {
+                    "ccc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "coord": [0,466,0],
+                    "mask": 3075,
+                    "opa": 204,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/lower_gradient"
+                  },
+                  "time": 120.0,
+                  "type": 3
+                },{
+                  "time": 121.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "lower_gradient",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "time": 0,
+                  "type": 0
+                },{
+                  "content": {
+                    "coord": [1,-15,0],
+                    "mask": 9219,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/frame",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 90,
+                  "type": 3
+                },{
+                  "content": {
+                    "coord": [1.0,-15.0,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/frame"
+                  },
+                  "time": 120,
+                  "type": 3
+                },{
+                  "time": 121.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "frame",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "time": 0,
+                  "type": 0
+                },{
+                  "content": {
+                    "mask": 532481,
+                    "motion": {
+                      "mask": 0,
+                      "timeOffset": 0
+                    },
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "motion/logo/logomove_sel",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 80.0,
+                  "type": 3
+                },{
+                  "time": 121,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "motionIndependentLayerInherit": 0,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 3
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 1,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/背景"
+                  },
+                  "time": 0,
+                  "type": 3
+                },{
+                  "content": {
+                    "mask": 1025,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/背景"
+                  },
+                  "time": 50,
+                  "type": 3
+                },{
+                  "time": 51,
+                  "type": 0
+                },{
+                  "time": 121,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33556476,
+              "joinTarget": 1,
+              "label": "siro",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [12,11,10,9,8,7,6,5,4,3,2,1,0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 121,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "char_moveのコピー": {
+          "lastTime": 121,
+          "layer": [{
+              "children": [{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 10337,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常bg",
+                        "zcc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "zx": 1.1,
+                        "zy": 1.1
+                      },
+                      "time": 0,
+                      "type": 3
+                    },{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 2049,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常bg"
+                      },
+                      "time": 90,
+                      "type": 3
+                    },{
+                      "time": 121,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常bg",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 1
+                },{
+                  "children": [{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "time": 0,
+                          "type": 0
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [-69.0,-79.0,0],
+                            "mask": 44035,
+                            "occ": {
+                              "c": [1,1],
+                              "x": [0.0,0.323333323,0.24,1.0],
+                              "y": [0.0,1.0,1.0,1.0]
+                            },
+                            "opa": 0,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常来海 (結合)",
+                            "zcc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            }
+                          },
+                          "time": 30,
+                          "type": 3
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [-85,-31,0],
+                            "mask": 2051,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常来海 (結合)"
+                          },
+                          "time": 90.0,
+                          "type": 3
+                        },{
+                          "time": 121.0,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常来海 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "time": 0,
+                          "type": 0
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [-422.0,-24.0,0],
+                            "mask": 44035,
+                            "occ": {
+                              "c": [1,1],
+                              "x": [0.0,0.323333323,0.24,1.0],
+                              "y": [0.0,1.0,1.0,1.0]
+                            },
+                            "opa": 0,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常乃愛 (結合) ",
+                            "zcc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            }
+                          },
+                          "time": 30,
+                          "type": 3
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [-358,0,0],
+                            "mask": 2051,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常乃愛 (結合) "
+                          },
+                          "time": 90.0,
+                          "type": 3
+                        },{
+                          "time": 121.0,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常乃愛 (結合) ",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "time": 0,
+                          "type": 0
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [387.0,-108.0,0],
+                            "mask": 44035,
+                            "occ": {
+                              "c": [1,1],
+                              "x": [0.0,0.323333323,0.24,1.0],
+                              "y": [0.0,1.0,1.0,1.0]
+                            },
+                            "opa": 0,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常かぐ耶 (結合)",
+                            "zcc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            }
+                          },
+                          "time": 30,
+                          "type": 3
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [347,-44,0],
+                            "mask": 2051,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常かぐ耶 (結合)"
+                          },
+                          "time": 90.0,
+                          "type": 3
+                        },{
+                          "time": 121.0,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常かぐ耶 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "time": 0,
+                          "type": 0
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [236.0,281.0,0],
+                            "mask": 44035,
+                            "occ": {
+                              "c": [1,1],
+                              "x": [0.0,0.323333323,0.24,1.0],
+                              "y": [0.0,1.0,1.0,1.0]
+                            },
+                            "opa": 0,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常天音 (結合)",
+                            "zcc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            }
+                          },
+                          "time": 30,
+                          "type": 3
+                        },{
+                          "content": {
+                            "ccc": {
+                              "c": [1,1],
+                              "x": [0,0.0884927,0.4412791,1],
+                              "y": [0,0.5587209,0.9115073,1]
+                            },
+                            "coord": [164,241,0],
+                            "mask": 2051,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常天音 (結合)"
+                          },
+                          "time": 90.0,
+                          "type": 3
+                        },{
+                          "time": 121.0,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常天音 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    }],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 10241,
+                        "ox": -16,
+                        "oy": -16,
+                        "src": "layout",
+                        "zcc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        }
+                      },
+                      "time": 0,
+                      "type": 3
+                    },{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 2049,
+                        "ox": -16,
+                        "oy": -16,
+                        "src": "layout"
+                      },
+                      "time": 120,
+                      "type": 3
+                    },{
+                      "time": 121,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "キャラ",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "parameterize": null,
+                  "transformOrder": [0,3,2,1],
+                  "type": 2,
+                  "visible": 1
+                },{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "time": 0,
+                      "type": 0
+                    },{
+                      "content": {
+                        "acc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "angle": 30,
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "coord": [16,0,0],
+                        "mask": 64627,
+                        "occ": {
+                          "c": [1,1],
+                          "x": [0.0,0.323333323,0.24,1.0],
+                          "y": [0.0,1.0,1.0,1.0]
+                        },
+                        "opa": 0,
+                        "ox": 0,
+                        "oy": 0,
+                        "scc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "src": "src/normal/通常|通常羽",
+                        "zcc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "zx": 1.5,
+                        "zy": 1.5
+                      },
+                      "time": 30,
+                      "type": 3
+                    },{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "coord": [16,0,0],
+                        "mask": 2051,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常羽"
+                      },
+                      "time": 90,
+                      "type": 3
+                    },{
+                      "time": 121.0,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常羽",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 0
+                },{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "time": 0,
+                      "type": 0
+                    },{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 3073,
+                        "opa": 0,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常セット"
+                      },
+                      "time": 90.0,
+                      "type": 3
+                    },{
+                      "content": {
+                        "ccc": {
+                          "c": [1,1],
+                          "x": [0,0.0884927,0.4412791,1],
+                          "y": [0,0.5587209,0.9115073,1]
+                        },
+                        "mask": 2049,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常セット"
+                      },
+                      "time": 120.0,
+                      "type": 3
+                    },{
+                      "time": 121.0,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常セット",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 0
+                }],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "ccc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "mask": 10241,
+                    "ox": -16,
+                    "oy": -16,
+                    "src": "layout",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 0,
+                  "type": 3
+                },{
+                  "content": {
+                    "ccc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "mask": 2049,
+                    "ox": -16,
+                    "oy": -16,
+                    "src": "layout"
+                  },
+                  "time": 120,
+                  "type": 3
+                },{
+                  "time": 121,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "通常",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "parameterize": null,
+              "transformOrder": [0,3,2,1],
+              "type": 2,
+              "visible": 0
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "time": 0,
+                  "type": 0
+                },{
+                  "content": {
+                    "ccc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "coord": [0.0,530.0,0],
+                    "mask": 11267,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/lower_gradient",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 90.0,
+                  "type": 3
+                },{
+                  "content": {
+                    "ccc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "coord": [0,466,0],
+                    "mask": 3075,
+                    "opa": 204,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/lower_gradient"
+                  },
+                  "time": 120.0,
+                  "type": 3
+                },{
+                  "time": 121.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "lower_gradient",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "time": 0,
+                  "type": 0
+                },{
+                  "content": {
+                    "coord": [1,-15,0],
+                    "mask": 9219,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/frame",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 90,
+                  "type": 3
+                },{
+                  "content": {
+                    "coord": [1.0,-15.0,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/frame"
+                  },
+                  "time": 120,
+                  "type": 3
+                },{
+                  "time": 121.0,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "frame",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "time": 0,
+                  "type": 0
+                },{
+                  "content": {
+                    "coord": [-566,301,0],
+                    "mask": 9315,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    },
+                    "zx": 1.1,
+                    "zy": 1.1
+                  },
+                  "time": 80.0,
+                  "type": 3
+                },{
+                  "content": {
+                    "coord": [-566,301,0],
+                    "mask": 8195,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+                    "zcc": {
+                      "c": [1,1],
+                      "x": [0,0.0884927,0.4412791,1],
+                      "y": [0,0.5587209,0.9115073,1]
+                    }
+                  },
+                  "time": 110,
+                  "type": 3
+                },{
+                  "time": 121,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 1,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/背景"
+                  },
+                  "time": 0,
+                  "type": 3
+                },{
+                  "content": {
+                    "mask": 1025,
+                    "opa": 0,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/背景"
+                  },
+                  "time": 50,
+                  "type": 3
+                },{
+                  "time": 51,
+                  "type": 0
+                },{
+                  "time": 121,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33556476,
+              "joinTarget": 1,
+              "label": "siro",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [12,11,10,9,8,7,6,5,4,3,2,1,0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 121,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "master": {
+          "lastTime": 1,
+          "layer": [{
+              "children": [{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "mask": 1,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常bg"
+                      },
+                      "time": 0,
+                      "type": 2
+                    },{
+                      "time": 1,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常bg",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 1
+                },{
+                  "children": [{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "content": {
+                            "coord": [-85,-31,0],
+                            "mask": 3,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常来海 (結合)"
+                          },
+                          "time": 0,
+                          "type": 2
+                        },{
+                          "time": 1,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常来海 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "content": {
+                            "coord": [-358,0,0],
+                            "mask": 3,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常乃愛 (結合) "
+                          },
+                          "time": 0,
+                          "type": 2
+                        },{
+                          "time": 1,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常乃愛 (結合) ",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "content": {
+                            "coord": [347,-44,0],
+                            "mask": 3,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常かぐ耶 (結合)"
+                          },
+                          "time": 0,
+                          "type": 2
+                        },{
+                          "time": 1,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常かぐ耶 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "content": {
+                            "coord": [164,241,0],
+                            "mask": 3,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常天音 (結合)"
+                          },
+                          "time": 0,
+                          "type": 2
+                        },{
+                          "time": 1,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常天音 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    }],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "mask": 1,
+                        "ox": -16,
+                        "oy": -16,
+                        "src": "layout"
+                      },
+                      "time": 0,
+                      "type": 2
+                    },{
+                      "time": 1,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "キャラ",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "parameterize": null,
+                  "transformOrder": [0,3,2,1],
+                  "type": 2,
+                  "visible": 1
+                },{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "coord": [16,0,0],
+                        "mask": 3,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常羽"
+                      },
+                      "time": 0,
+                      "type": 2
+                    },{
+                      "time": 1,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常羽",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 0
+                },{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "mask": 1,
+                        "ox": -16,
+                        "oy": -16,
+                        "src": "layout"
+                      },
+                      "time": 0,
+                      "type": 2
+                    },{
+                      "time": 1,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "全体効果",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "parameterize": null,
+                  "transformOrder": [0,3,2,1],
+                  "type": 2,
+                  "visible": 1
+                },{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "mask": 1,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常セット"
+                      },
+                      "time": 0,
+                      "type": 2
+                    },{
+                      "time": 1,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常セット",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 0
+                }],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 1,
+                    "ox": -16,
+                    "oy": -16,
+                    "src": "layout"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "通常",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "parameterize": null,
+              "transformOrder": [0,3,2,1],
+              "type": 2,
+              "visible": 0
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [0,466,0],
+                    "mask": 1027,
+                    "opa": 204,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/lower_gradient"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "lower_gradient",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [1.0,-15.0,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/frame"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "frame",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [-566,301,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/天使☆騒々RE-BOOT！ロゴ[RGB-4c]"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [12,11,10,9,8,7,6,5,4,3,2,1,0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 1,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "normal": {
+          "lastTime": 1,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 1,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/背景"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "背景",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 1,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/通常|通常セット"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "通常セット",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 0
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [0,466,0],
+                    "mask": 1027,
+                    "opa": 204,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/lower_gradient"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "lower_gradient",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [1.0,-15.0,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/frame"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "frame",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 524289,
+                    "motion": {
+                      "mask": 0,
+                      "timeOffset": 0
+                    },
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "motion/logo/logo_sel"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "motionIndependentLayerInherit": 0,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 3
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [4,3,2,1,0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 1,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "normalのコピー": {
+          "lastTime": 1,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 1,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/背景"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "背景",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 1,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/通常|通常セット"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "通常セット",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 0
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [0,466,0],
+                    "mask": 1027,
+                    "opa": 204,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/lower_gradient"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "lower_gradient",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [1.0,-15.0,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/frame"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "frame",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [-566,301,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/天使☆騒々RE-BOOT！ロゴ[RGB-4c]"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [4,3,2,1,0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 1,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "set": {
+          "lastTime": 1,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 1,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/背景"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "背景",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "mask": 1,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常bg"
+                      },
+                      "time": 0,
+                      "type": 2
+                    },{
+                      "time": 1,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常bg",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 1
+                },{
+                  "children": [{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "content": {
+                            "coord": [-85,-31,0],
+                            "mask": 3,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常来海 (結合)"
+                          },
+                          "time": 0,
+                          "type": 2
+                        },{
+                          "time": 1,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常来海 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "content": {
+                            "coord": [-358,0,0],
+                            "mask": 3,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常乃愛 (結合) "
+                          },
+                          "time": 0,
+                          "type": 2
+                        },{
+                          "time": 1,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常乃愛 (結合) ",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "content": {
+                            "coord": [347,-44,0],
+                            "mask": 3,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常かぐ耶 (結合)"
+                          },
+                          "time": 0,
+                          "type": 2
+                        },{
+                          "time": 1,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常かぐ耶 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    },{
+                      "children": [],
+                      "coordinate": 0,
+                      "exportSelf": 1,
+                      "frameList": [{
+                          "content": {
+                            "coord": [164,241,0],
+                            "mask": 3,
+                            "ox": 0,
+                            "oy": 0,
+                            "src": "src/normal/通常|キャラ|通常天音 (結合)"
+                          },
+                          "time": 0,
+                          "type": 2
+                        },{
+                          "time": 1,
+                          "type": 0
+                        }],
+                      "groundCorrection": 0,
+                      "inheritMask": 33554960,
+                      "joinTarget": 1,
+                      "label": "通常天音 (結合)",
+                      "meshCombine": 0,
+                      "meshDivision": 10,
+                      "meshTransform": 0,
+                      "metadata": null,
+                      "objTriPriority": 2,
+                      "parameterize": null,
+                      "stencilType": 0,
+                      "transformOrder": [0,3,2,1],
+                      "type": 0,
+                      "visible": 1
+                    }],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "mask": 1,
+                        "ox": -16,
+                        "oy": -16,
+                        "src": "layout"
+                      },
+                      "time": 0,
+                      "type": 2
+                    },{
+                      "time": 1,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "キャラ",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "parameterize": null,
+                  "transformOrder": [0,3,2,1],
+                  "type": 2,
+                  "visible": 1
+                },{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "coord": [16,0,0],
+                        "mask": 3,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常羽"
+                      },
+                      "time": 0,
+                      "type": 2
+                    },{
+                      "time": 1,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常羽",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 0
+                },{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "mask": 1,
+                        "ox": -16,
+                        "oy": -16,
+                        "src": "layout"
+                      },
+                      "time": 0,
+                      "type": 2
+                    },{
+                      "time": 1,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "全体効果",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "parameterize": null,
+                  "transformOrder": [0,3,2,1],
+                  "type": 2,
+                  "visible": 1
+                },{
+                  "children": [],
+                  "coordinate": 0,
+                  "exportSelf": 1,
+                  "frameList": [{
+                      "content": {
+                        "mask": 1,
+                        "ox": 0,
+                        "oy": 0,
+                        "src": "src/normal/通常|通常セット"
+                      },
+                      "time": 0,
+                      "type": 2
+                    },{
+                      "time": 1,
+                      "type": 0
+                    }],
+                  "groundCorrection": 0,
+                  "inheritMask": 33554960,
+                  "joinTarget": 1,
+                  "label": "通常セット",
+                  "meshCombine": 0,
+                  "meshDivision": 10,
+                  "meshTransform": 0,
+                  "metadata": null,
+                  "objTriPriority": 2,
+                  "parameterize": null,
+                  "stencilType": 0,
+                  "transformOrder": [0,3,2,1],
+                  "type": 0,
+                  "visible": 0
+                }],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 1,
+                    "ox": -16,
+                    "oy": -16,
+                    "src": "layout"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "通常",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "parameterize": null,
+              "transformOrder": [0,3,2,1],
+              "type": 2,
+              "visible": 0
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [0,466,0],
+                    "mask": 1027,
+                    "opa": 204,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/lower_gradient"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "lower_gradient",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [1.0,-15.0,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/frame"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "frame",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            },{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "coord": [-566,301,0],
+                    "mask": 3,
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "src/normal/天使☆騒々RE-BOOT！ロゴ[RGB-4c]"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 1,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33554960,
+              "joinTarget": 1,
+              "label": "天使☆騒々RE-BOOT！ロゴ[RGB-4c]",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "objTriPriority": 2,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 0,
+              "visible": 1
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [13,12,11,10,9,8,7,6,5,4,3,2,1,0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 1,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        },
+        "title": {
+          "lastTime": 120,
+          "layer": [{
+              "children": [],
+              "coordinate": 0,
+              "exportSelf": 1,
+              "frameList": [{
+                  "content": {
+                    "mask": 524289,
+                    "motion": {
+                      "mask": 0,
+                      "timeOffset": 0
+                    },
+                    "ox": 0,
+                    "oy": 0,
+                    "src": "motion/title_bg/char_move"
+                  },
+                  "time": 0,
+                  "type": 2
+                },{
+                  "time": 120,
+                  "type": 0
+                }],
+              "groundCorrection": 0,
+              "inheritMask": 33556476,
+              "joinTarget": 1,
+              "label": "char_move",
+              "meshCombine": 0,
+              "meshDivision": 10,
+              "meshTransform": 0,
+              "metadata": null,
+              "motionIndependentLayerInherit": 0,
+              "parameterize": null,
+              "stencilType": 0,
+              "transformOrder": [0,3,2,1],
+              "type": 3
+            }],
+          "loopTime": -1,
+          "metadata": null,
+          "parameter": [],
+          "parameterize": null,
+          "priority": [{
+              "content": [0],
+              "time": 0,
+              "type": 1
+            },{
+              "content": null,
+              "time": 120,
+              "type": 1
+            }],
+          "referenceModelFileList": [],
+          "referenceProjectFileList": [],
+          "tag": [],
+          "type": 0,
+          "variable": []
+        }
+      },
+      "type": 0
+    }
+  },
+  "screenSize": {
+    "height": 1080,
+    "originX": 0,
+    "originY": 0,
+    "width": 1920
+  },
+  "source": {
+    "logo_cn": {
+      "icon": {
+        "logo_cn": {
+          "attr": 0,
+          "clip": {
+            "bottom": 0.9407266,
+            "left": 0.0,
+            "right": 1.0,
+            "top": 0.0
+          },
+          "compress": "RL",
+          "height": 492,
+          "metadata": null,
+          "originX": 388,
+          "originY": 261,
+          "pixel": "#resource#7",
+          "resolution": 1,
+          "width": 777
+        }
+      },
+      "metadata": null,
+      "type": 1
+    },
+    "logo_en": {
+      "icon": {
+        "logo_en": {
+          "attr": 0,
+          "clip": {
+            "bottom": 0.940520465,
+            "left": 0.0,
+            "right": 1.0,
+            "top": 0.0
+          },
+          "compress": "RL",
+          "height": 506,
+          "metadata": null,
+          "originX": 424,
+          "originY": 269,
+          "pixel": "#resource#8",
+          "resolution": 1,
+          "width": 848
+        }
+      },
+      "metadata": null,
+      "type": 1
+    },
+    "logo_tw": {
+      "icon": {
+        "logo_tw": {
+          "attr": 0,
+          "clip": {
+            "bottom": 0.9407266,
+            "left": 0.0,
+            "right": 1.0,
+            "top": 0.0
+          },
+          "compress": "RL",
+          "height": 492,
+          "metadata": null,
+          "originX": 388,
+          "originY": 261,
+          "pixel": "#resource#6",
+          "resolution": 1,
+          "width": 777
+        }
+      },
+      "metadata": null,
+      "type": 1
+    },
+    "normal": {
+      "icon": {
+        "frame": {
+          "attr": 0,
+          "clip": {
+            "bottom": 0.9971154,
+            "left": 0.00156903767,
+            "right": 0.997907937,
+            "top": 0.00192307692
+          },
+          "compress": "RL",
+          "height": 1035,
+          "metadata": null,
+          "originX": 953,
+          "originY": 518,
+          "pixel": "#resource#2",
+          "resolution": 1,
+          "width": 1905
+        },
+        "lower_gradient": {
+          "attr": 0,
+          "compress": "RL",
+          "height": 148,
+          "metadata": null,
+          "originX": 960,
+          "originY": 74,
+          "pixel": "#resource#0",
+          "resolution": 1,
+          "width": 1920
+        },
+        "天使☆騒々RE-BOOT！ロゴ[RGB-4c]": {
+          "attr": 0,
+          "clip": {
+            "bottom": 0.935606062,
+            "left": 0.0,
+            "right": 1.0,
+            "top": 0.0
+          },
+          "compress": "RL",
+          "height": 494,
+          "metadata": null,
+          "originX": 389,
+          "originY": 264,
+          "pixel": "#resource#5",
+          "resolution": 1,
+          "width": 778
+        },
+        "背景": {
+          "attr": 0,
+          "compress": "RL",
+          "height": 1208,
+          "metadata": null,
+          "originX": 1024,
+          "originY": 604,
+          "pixel": "#resource#1",
+          "resolution": 1,
+          "width": 2048
+        },
+        "通常|キャラ|通常かぐ耶 (結合)": {
+          "attr": 0,
+          "compress": "RL",
+          "height": 1120,
+          "metadata": null,
+          "originX": 645,
+          "originY": 560,
+          "pixel": "#resource#10",
+          "resolution": 1,
+          "width": 1290
+        },
+        "通常|キャラ|通常乃愛 (結合) ": {
+          "attr": 0,
+          "compress": "RL",
+          "height": 1208,
+          "metadata": null,
+          "originX": 666,
+          "originY": 604,
+          "pixel": "#resource#11",
+          "resolution": 1,
+          "width": 1332
+        },
+        "通常|キャラ|通常天音 (結合)": {
+          "attr": 0,
+          "compress": "RL",
+          "height": 725,
+          "metadata": null,
+          "originX": 821,
+          "originY": 362,
+          "pixel": "#resource#9",
+          "resolution": 1,
+          "width": 1642
+        },
+        "通常|キャラ|通常来海 (結合)": {
+          "attr": 0,
+          "compress": "RL",
+          "height": 497,
+          "metadata": null,
+          "originX": 200,
+          "originY": 248,
+          "pixel": "#resource#3",
+          "resolution": 1,
+          "width": 400
+        },
+        "通常|通常bg": {
+          "attr": 0,
+          "compress": "RL",
+          "height": 1208,
+          "metadata": null,
+          "originX": 960,
+          "originY": 604,
+          "pixel": "#resource#13",
+          "resolution": 1,
+          "width": 1920
+        },
+        "通常|通常セット": {
+          "attr": 0,
+          "compress": "RL",
+          "height": 1080,
+          "metadata": null,
+          "originX": 960,
+          "originY": 540,
+          "pixel": "#resource#12",
+          "resolution": 1,
+          "width": 1920
+        },
+        "通常|通常羽": {
+          "attr": 0,
+          "compress": "RL",
+          "height": 1208,
+          "metadata": null,
+          "originX": 942,
+          "originY": 604,
+          "pixel": "#resource#4",
+          "resolution": 1,
+          "width": 1885
+        }
+      },
+      "metadata": null,
+      "type": 1
+    }
+  },
+  "spec": "krkr",
+  "stereovisionProfile": {
+    "dist_e2d": 972.0,
+    "dist_eye": 65.0,
+    "eye_angle_ltd": 1.0,
+    "f_level": 700,
+    "fov": 0.6,
+    "len_disp": 324.0
+  },
+  "version": 3.03
+}

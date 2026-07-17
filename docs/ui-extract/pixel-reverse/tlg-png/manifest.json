@@ -1,0 +1,502 @@
+{
+  "generated_at": "2026-07-17T01:16:55.363130+00:00",
+  "items": [
+    {
+      "name": "afterstory__bg0.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 1080,
+      "png": "afterstory__bg0.png"
+    },
+    {
+      "name": "afterstory__pack.tlg",
+      "verdict": "OK",
+      "w": 1428,
+      "h": 1589,
+      "png": "afterstory__pack.png"
+    },
+    {
+      "name": "autoskipmark_img__pack.tlg",
+      "verdict": "OK",
+      "w": 119,
+      "h": 136,
+      "png": "autoskipmark_img__pack.png"
+    },
+    {
+      "name": "backlog__bg0.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 1440,
+      "png": "backlog__bg0.png"
+    },
+    {
+      "name": "backlog__pack.tlg",
+      "verdict": "OK",
+      "w": 1721,
+      "h": 284,
+      "png": "backlog__pack.png"
+    },
+    {
+      "name": "bgmtitle__bg0.tlg",
+      "verdict": "OK",
+      "w": 462,
+      "h": 27,
+      "png": "bgmtitle__bg0.png"
+    },
+    {
+      "name": "btncustom__pack.tlg",
+      "verdict": "OK",
+      "w": 1804,
+      "h": 198,
+      "png": "btncustom__pack.png"
+    },
+    {
+      "name": "chapter__bg0.tlg",
+      "verdict": "OK",
+      "w": 340,
+      "h": 93,
+      "png": "chapter__bg0.png"
+    },
+    {
+      "name": "clickglyph_img__pack.tlg",
+      "verdict": "OK",
+      "w": 198,
+      "h": 162,
+      "png": "clickglyph_img__pack.png"
+    },
+    {
+      "name": "dialog__bg0.tlg",
+      "verdict": "OK",
+      "w": 842,
+      "h": 438,
+      "png": "dialog__bg0.png"
+    },
+    {
+      "name": "dialog__pack.tlg",
+      "verdict": "OK",
+      "w": 833,
+      "h": 318,
+      "png": "dialog__pack.png"
+    },
+    {
+      "name": "extra__bg0.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 1080,
+      "png": "extra__bg0.png"
+    },
+    {
+      "name": "extra__pack.tlg",
+      "verdict": "OK",
+      "w": 731,
+      "h": 193,
+      "png": "extra__pack.png"
+    },
+    {
+      "name": "extra_cg__pack.tlg",
+      "verdict": "OK",
+      "w": 385,
+      "h": 288,
+      "png": "extra_cg__pack.png"
+    },
+    {
+      "name": "extra_cgscene__pack.tlg",
+      "verdict": "OK",
+      "w": 637,
+      "h": 830,
+      "png": "extra_cgscene__pack.png"
+    },
+    {
+      "name": "extra_cgview__pack.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 1348,
+      "png": "extra_cgview__pack.png"
+    },
+    {
+      "name": "extra_locale_cn__pack.tlg",
+      "verdict": "OK",
+      "w": 207,
+      "h": 196,
+      "png": "extra_locale_cn__pack.png"
+    },
+    {
+      "name": "extra_scene__pack.tlg",
+      "verdict": "OK",
+      "w": 509,
+      "h": 400,
+      "png": "extra_scene__pack.png"
+    },
+    {
+      "name": "extra_stand__bg0.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 81,
+      "png": "extra_stand__bg0.png"
+    },
+    {
+      "name": "extra_stand__pack.tlg",
+      "verdict": "OK",
+      "w": 1348,
+      "h": 1920,
+      "png": "extra_stand__pack.png"
+    },
+    {
+      "name": "extra_stand_dialog__bg0.tlg",
+      "verdict": "OK",
+      "w": 1543,
+      "h": 863,
+      "png": "extra_stand_dialog__bg0.png"
+    },
+    {
+      "name": "extra_stand_dialog__pack.tlg",
+      "verdict": "OK",
+      "w": 913,
+      "h": 906,
+      "png": "extra_stand_dialog__pack.png"
+    },
+    {
+      "name": "extra_voice__pack.tlg",
+      "verdict": "OK",
+      "w": 909,
+      "h": 1106,
+      "png": "extra_voice__pack.png"
+    },
+    {
+      "name": "file__pack.tlg",
+      "verdict": "OK",
+      "w": 731,
+      "h": 287,
+      "png": "file__pack.png"
+    },
+    {
+      "name": "file_load__bg0.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 1080,
+      "png": "file_load__bg0.png"
+    },
+    {
+      "name": "file_load__pack.tlg",
+      "verdict": "OK",
+      "w": 822,
+      "h": 719,
+      "png": "file_load__pack.png"
+    },
+    {
+      "name": "file_quick__bg0.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 1080,
+      "png": "file_quick__bg0.png"
+    },
+    {
+      "name": "file_quick__pack.tlg",
+      "verdict": "OK",
+      "w": 822,
+      "h": 719,
+      "png": "file_quick__pack.png"
+    },
+    {
+      "name": "file_save__bg0.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 1080,
+      "png": "file_save__bg0.png"
+    },
+    {
+      "name": "file_save__pack.tlg",
+      "verdict": "OK",
+      "w": 822,
+      "h": 719,
+      "png": "file_save__pack.png"
+    },
+    {
+      "name": "langselect__pack.tlg",
+      "verdict": "OK",
+      "w": 482,
+      "h": 377,
+      "png": "langselect__pack.png"
+    },
+    {
+      "name": "option_4text__pack.tlg",
+      "verdict": "OK",
+      "w": 800,
+      "h": 425,
+      "png": "option_4text__pack.png"
+    },
+    {
+      "name": "option_5sound1__pack.tlg",
+      "verdict": "OK",
+      "w": 660,
+      "h": 665,
+      "png": "option_5sound1__pack.png"
+    },
+    {
+      "name": "option_5sound2__pack.tlg",
+      "verdict": "OK",
+      "w": 778,
+      "h": 711,
+      "png": "option_5sound2__pack.png"
+    },
+    {
+      "name": "option_6dialog__pack.tlg",
+      "verdict": "OK",
+      "w": 124,
+      "h": 150,
+      "png": "option_6dialog__pack.png"
+    },
+    {
+      "name": "option_7mouse__pack.tlg",
+      "verdict": "OK",
+      "w": 333,
+      "h": 271,
+      "png": "option_7mouse__pack.png"
+    },
+    {
+      "name": "option_8keyboard1__pack.tlg",
+      "verdict": "OK",
+      "w": 440,
+      "h": 449,
+      "png": "option_8keyboard1__pack.png"
+    },
+    {
+      "name": "option_9gamepad2_assign__pack.tlg",
+      "verdict": "OK",
+      "w": 731,
+      "h": 133,
+      "png": "option_9gamepad2_assign__pack.png"
+    },
+    {
+      "name": "option_9gamepad__pack.tlg",
+      "verdict": "OK",
+      "w": 714,
+      "h": 605,
+      "png": "option_9gamepad__pack.png"
+    },
+    {
+      "name": "option__bg0.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 1080,
+      "png": "option__bg0.png"
+    },
+    {
+      "name": "option__pack.tlg",
+      "verdict": "OK",
+      "w": 527,
+      "h": 830,
+      "png": "option__pack.png"
+    },
+    {
+      "name": "option_cmds__pack.tlg",
+      "verdict": "OK",
+      "w": 446,
+      "h": 473,
+      "png": "option_cmds__pack.png"
+    },
+    {
+      "name": "option_keyinput__pack.tlg",
+      "verdict": "OK",
+      "w": 1827,
+      "h": 962,
+      "png": "option_keyinput__pack.png"
+    },
+    {
+      "name": "phonechat__bg0.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 1080,
+      "png": "phonechat__bg0.png"
+    },
+    {
+      "name": "phonechat__pack.tlg",
+      "verdict": "OK",
+      "w": 89,
+      "h": 615,
+      "png": "phonechat__pack.png"
+    },
+    {
+      "name": "qconf__pack.tlg",
+      "verdict": "OK",
+      "w": 337,
+      "h": 316,
+      "png": "qconf__pack.png"
+    },
+    {
+      "name": "qconf_load__bg0.tlg",
+      "verdict": "OK",
+      "w": 434,
+      "h": 256,
+      "png": "qconf_load__bg0.png"
+    },
+    {
+      "name": "qconf_qload__bg0.tlg",
+      "verdict": "OK",
+      "w": 434,
+      "h": 207,
+      "png": "qconf_qload__bg0.png"
+    },
+    {
+      "name": "qconf_qvsave__bg0.tlg",
+      "verdict": "OK",
+      "w": 434,
+      "h": 74,
+      "png": "qconf_qvsave__bg0.png"
+    },
+    {
+      "name": "qconf_save__bg0.tlg",
+      "verdict": "OK",
+      "w": 434,
+      "h": 308,
+      "png": "qconf_save__bg0.png"
+    },
+    {
+      "name": "qconf_text__bg0.tlg",
+      "verdict": "OK",
+      "w": 532,
+      "h": 256,
+      "png": "qconf_text__bg0.png"
+    },
+    {
+      "name": "qconf_volume__bg0.tlg",
+      "verdict": "OK",
+      "w": 615,
+      "h": 256,
+      "png": "qconf_volume__bg0.png"
+    },
+    {
+      "name": "qlpopup__bg0.tlg",
+      "verdict": "OK",
+      "w": 282,
+      "h": 267,
+      "png": "qlpopup__bg0.png"
+    },
+    {
+      "name": "qlpopup__pack.tlg",
+      "verdict": "OK",
+      "w": 528,
+      "h": 549,
+      "png": "qlpopup__pack.png"
+    },
+    {
+      "name": "quickmenu__bg0.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 61,
+      "png": "quickmenu__bg0.png"
+    },
+    {
+      "name": "quickmenu__pack.tlg",
+      "verdict": "OK",
+      "w": 412,
+      "h": 418,
+      "png": "quickmenu__pack.png"
+    },
+    {
+      "name": "qvpopup__pack.tlg",
+      "verdict": "OK",
+      "w": 228,
+      "h": 185,
+      "png": "qvpopup__pack.png"
+    },
+    {
+      "name": "scnchart__bg0.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 1440,
+      "png": "scnchart__bg0.png"
+    },
+    {
+      "name": "scnchart__pack.tlg",
+      "verdict": "OK",
+      "w": 982,
+      "h": 934,
+      "png": "scnchart__pack.png"
+    },
+    {
+      "name": "select__pack.tlg",
+      "verdict": "OK",
+      "w": 1260,
+      "h": 343,
+      "png": "select__pack.png"
+    },
+    {
+      "name": "title__pack.tlg",
+      "verdict": "OK",
+      "w": 241,
+      "h": 256,
+      "png": "title__pack.png"
+    },
+    {
+      "name": "title_locale_cn__pack.tlg",
+      "verdict": "OK",
+      "w": 377,
+      "h": 366,
+      "png": "title_locale_cn__pack.png"
+    },
+    {
+      "name": "touchuibar__bg0.tlg",
+      "verdict": "OK",
+      "w": 228,
+      "h": 146,
+      "png": "touchuibar__bg0.png"
+    },
+    {
+      "name": "touchuibar__pack.tlg",
+      "verdict": "OK",
+      "w": 413,
+      "h": 425,
+      "png": "touchuibar__pack.png"
+    },
+    {
+      "name": "touchvolume__bg0.tlg",
+      "verdict": "OK",
+      "w": 978,
+      "h": 498,
+      "png": "touchvolume__bg0.png"
+    },
+    {
+      "name": "touchvolume__pack.tlg",
+      "verdict": "OK",
+      "w": 610,
+      "h": 80,
+      "png": "touchvolume__pack.png"
+    },
+    {
+      "name": "voicebar__pack.tlg",
+      "verdict": "OK",
+      "w": 124,
+      "h": 151,
+      "png": "voicebar__pack.png"
+    },
+    {
+      "name": "window__bg0.tlg",
+      "verdict": "OK",
+      "w": 16,
+      "h": 16,
+      "png": "window__bg0.png"
+    },
+    {
+      "name": "window__pack.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 769,
+      "png": "window__pack.png"
+    },
+    {
+      "name": "window_h__bg0.tlg",
+      "verdict": "OK",
+      "w": 16,
+      "h": 16,
+      "png": "window_h__bg0.png"
+    },
+    {
+      "name": "window_h__pack.tlg",
+      "verdict": "OK",
+      "w": 1920,
+      "h": 688,
+      "png": "window_h__pack.png"
+    }
+  ]
+}

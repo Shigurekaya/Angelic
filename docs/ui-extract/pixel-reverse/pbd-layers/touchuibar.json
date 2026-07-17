@@ -1,0 +1,1260 @@
+{
+  "source": "touchuibar.pbd",
+  "layer_count": 96,
+  "hotspot_count": 78,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "auto",
+      "sort_index": 824,
+      "width": 172,
+      "height": 237
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 1024,
+      "height": 113
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1063,
+      "storagex": 95
+    },
+    {
+      "layer_id": "skip",
+      "sort_index": 1192,
+      "width": 245,
+      "height": 153
+    },
+    {
+      "layer_id": "arrows",
+      "sort_index": 1194,
+      "height": 98,
+      "ch": 193
+    },
+    {
+      "layer_id": "qsave",
+      "sort_index": 1204,
+      "width": 236,
+      "height": 160
+    },
+    {
+      "layer_id": "scnchart",
+      "sort_index": 1219,
+      "width": 222,
+      "height": 228
+    },
+    {
+      "layer_id": "dsave",
+      "sort_index": 1235,
+      "width": 185,
+      "height": 146
+    },
+    {
+      "layer_id": "prevscn",
+      "sort_index": 1249,
+      "width": 113,
+      "height": 199
+    },
+    {
+      "layer_id": "nextscn",
+      "sort_index": 1265,
+      "width": 48,
+      "height": 45
+    },
+    {
+      "layer_id": "qvsave",
+      "sort_index": 1285,
+      "width": 56,
+      "height": 110
+    },
+    {
+      "layer_id": "option",
+      "sort_index": 1306,
+      "width": 246,
+      "height": 15
+    },
+    {
+      "layer_id": "qload",
+      "sort_index": 1339,
+      "width": 199,
+      "height": 188
+    },
+    {
+      "layer_id": "hide",
+      "sort_index": 1355,
+      "width": 46,
+      "height": 247
+    },
+    {
+      "layer_id": "custom",
+      "sort_index": 1410,
+      "width": 66,
+      "height": 123
+    },
+    {
+      "layer_id": "load",
+      "sort_index": 1421,
+      "width": 61,
+      "height": 217
+    },
+    {
+      "layer_id": "save",
+      "sort_index": 1555,
+      "width": 193,
+      "height": 69
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1645,
+      "height": 237
+    },
+    {
+      "layer_id": "prev",
+      "sort_index": 1668,
+      "width": 28,
+      "height": 205
+    },
+    {
+      "layer_id": "vreplay",
+      "sort_index": 1695,
+      "width": 39,
+      "height": 46
+    },
+    {
+      "layer_id": "snapshot",
+      "sort_index": 1734,
+      "width": 233,
+      "height": 49
+    },
+    {
+      "layer_id": "log",
+      "sort_index": 1836,
+      "width": 83,
+      "height": 86
+    },
+    {
+      "layer_id": "next",
+      "sort_index": 1919,
+      "width": 216,
+      "height": 81
+    },
+    {
+      "layer_id": "backskip",
+      "sort_index": 1926,
+      "width": 12,
+      "height": 97
+    },
+    {
+      "layer_id": "vsave",
+      "sort_index": 1998,
+      "width": 180,
+      "height": 74
+    },
+    {
+      "layer_id": "volume",
+      "sort_index": 2179,
+      "width": 190,
+      "height": 249
+    },
+    {
+      "layer_id": "title",
+      "sort_index": 2235,
+      "width": 145,
+      "height": 113
+    },
+    {
+      "layer_id": "backone",
+      "sort_index": 2262,
+      "width": 180,
+      "height": 70
+    },
+    {
+      "layer_id": "disable",
+      "sort_index": null,
+      "ch": 7
+    },
+    {
+      "layer_id": "down",
+      "sort_index": null,
+      "ch": 105
+    },
+    {
+      "layer_id": "e",
+      "sort_index": null,
+      "oy": 40
+    },
+    {
+      "layer_id": "empty",
+      "sort_index": null,
+      "width": 47,
+      "height": 186
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "width": 13
+    },
+    {
+      "layer_id": "i_auto",
+      "sort_index": null,
+      "width": 172,
+      "ch": 180
+    },
+    {
+      "layer_id": "i_backone",
+      "sort_index": null,
+      "width": 180,
+      "ch": 142
+    },
+    {
+      "layer_id": "i_backskip",
+      "sort_index": null,
+      "width": 12,
+      "ch": 207
+    },
+    {
+      "layer_id": "i_click",
+      "sort_index": null,
+      "ch": 1
+    },
+    {
+      "layer_id": "i_custom",
+      "sort_index": null,
+      "width": 66,
+      "ch": 10
+    },
+    {
+      "layer_id": "i_dsave",
+      "sort_index": null,
+      "width": 185,
+      "ch": 210
+    },
+    {
+      "layer_id": "i_hide",
+      "sort_index": null,
+      "width": 46,
+      "ch": 228
+    },
+    {
+      "layer_id": "i_load",
+      "sort_index": null,
+      "width": 61,
+      "ch": 80
+    },
+    {
+      "layer_id": "i_log",
+      "sort_index": null,
+      "width": 83,
+      "ch": 111
+    },
+    {
+      "layer_id": "i_next",
+      "sort_index": null,
+      "width": 216,
+      "ch": 255
+    },
+    {
+      "layer_id": "i_nextscn",
+      "sort_index": null,
+      "width": 48,
+      "ch": 121
+    },
+    {
+      "layer_id": "i_none",
+      "sort_index": null,
+      "ch": 96
+    },
+    {
+      "layer_id": "i_option",
+      "sort_index": null,
+      "width": 246,
+      "ch": 95
+    },
+    {
+      "layer_id": "i_panic",
+      "sort_index": null,
+      "ch": 253
+    },
+    {
+      "layer_id": "i_prev",
+      "sort_index": null,
+      "width": 28,
+      "ch": 17
+    },
+    {
+      "layer_id": "i_prevscn",
+      "sort_index": null,
+      "width": 113,
+      "ch": 121
+    },
+    {
+      "layer_id": "i_qload",
+      "sort_index": null,
+      "width": 199,
+      "ch": 23
+    },
+    {
+      "layer_id": "i_qsave",
+      "sort_index": null,
+      "width": 236,
+      "ch": 79
+    },
+    {
+      "layer_id": "i_qvsave",
+      "sort_index": null,
+      "width": 56,
+      "ch": 54
+    },
+    {
+      "layer_id": "i_save",
+      "sort_index": null,
+      "width": 193,
+      "ch": 90
+    },
+    {
+      "layer_id": "i_scnchart",
+      "sort_index": null,
+      "width": 222,
+      "ch": 32
+    },
+    {
+      "layer_id": "i_screen",
+      "sort_index": null,
+      "ch": 250
+    },
+    {
+      "layer_id": "i_skip",
+      "sort_index": null,
+      "width": 245,
+      "ch": 58
+    },
+    {
+      "layer_id": "i_snapshot",
+      "sort_index": null,
+      "width": 233,
+      "ch": 200
+    },
+    {
+      "layer_id": "i_title",
+      "sort_index": null,
+      "width": 145,
+      "ch": 108
+    },
+    {
+      "layer_id": "i_volume",
+      "sort_index": null,
+      "width": 190,
+      "ch": 115
+    },
+    {
+      "layer_id": "i_vreplay",
+      "sort_index": null,
+      "width": 39,
+      "ch": 117
+    },
+    {
+      "layer_id": "i_vsave",
+      "sort_index": null,
+      "width": 180,
+      "ch": 248
+    },
+    {
+      "layer_id": "left",
+      "sort_index": null,
+      "ch": 141
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 193
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 113
+    },
+    {
+      "layer_id": "on_off",
+      "sort_index": null,
+      "ch": 65
+    },
+    {
+      "layer_id": "on_on",
+      "sort_index": null,
+      "ch": 192
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 158
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 16
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "width": 98
+    },
+    {
+      "layer_id": "right",
+      "sort_index": null,
+      "ch": 9
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 66
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 98
+    },
+    {
+      "layer_id": "touchuibar__bg0",
+      "sort_index": null,
+      "storagex": 95
+    },
+    {
+      "layer_id": "touchuibar__pack",
+      "sort_index": null,
+      "width": 13
+    },
+    {
+      "layer_id": "up",
+      "sort_index": null,
+      "ch": 20
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 87
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "height": 201,
+      "cx": 163,
+      "cy": 18,
+      "cw": 125,
+      "ch": 180,
+      "ox": 1485
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 113
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "auto",
+      "sort_index": 824,
+      "properties": {
+        "height": 237,
+        "width": 172
+      },
+      "file_offset": 378
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 1024,
+      "properties": {
+        "height": 113
+      },
+      "file_offset": 3938
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1063,
+      "properties": {
+        "height": 82,
+        "storagex": 95,
+        "h": 9765
+      },
+      "file_offset": 170
+    },
+    {
+      "layer_id": "skip",
+      "sort_index": 1192,
+      "properties": {
+        "height": 153,
+        "width": 245
+      },
+      "file_offset": 364
+    },
+    {
+      "layer_id": "arrows",
+      "sort_index": 1194,
+      "properties": {
+        "height": 98,
+        "ch": 193
+      },
+      "file_offset": 152
+    },
+    {
+      "layer_id": "qsave",
+      "sort_index": 1204,
+      "properties": {
+        "height": 160,
+        "width": 236
+      },
+      "file_offset": 514
+    },
+    {
+      "layer_id": "scnchart",
+      "sort_index": 1219,
+      "properties": {
+        "height": 228,
+        "width": 222
+      },
+      "file_offset": 308
+    },
+    {
+      "layer_id": "dsave",
+      "sort_index": 1235,
+      "properties": {
+        "height": 146,
+        "width": 185
+      },
+      "file_offset": 544
+    },
+    {
+      "layer_id": "prevscn",
+      "sort_index": 1249,
+      "properties": {
+        "height": 199,
+        "width": 113
+      },
+      "file_offset": 446
+    },
+    {
+      "layer_id": "nextscn",
+      "sort_index": 1265,
+      "properties": {
+        "height": 45,
+        "width": 48
+      },
+      "file_offset": 344
+    },
+    {
+      "layer_id": "qvsave",
+      "sort_index": 1285,
+      "properties": {
+        "height": 110,
+        "width": 56
+      },
+      "file_offset": 236
+    },
+    {
+      "layer_id": "option",
+      "sort_index": 1306,
+      "properties": {
+        "height": 15,
+        "width": 246
+      },
+      "file_offset": 480
+    },
+    {
+      "layer_id": "qload",
+      "sort_index": 1339,
+      "properties": {
+        "height": 188,
+        "width": 199
+      },
+      "file_offset": 498
+    },
+    {
+      "layer_id": "hide",
+      "sort_index": 1355,
+      "properties": {
+        "height": 247,
+        "width": 46
+      },
+      "file_offset": 184
+    },
+    {
+      "layer_id": "custom",
+      "sort_index": 1410,
+      "properties": {
+        "height": 123,
+        "width": 66
+      },
+      "file_offset": 574
+    },
+    {
+      "layer_id": "load",
+      "sort_index": 1421,
+      "properties": {
+        "height": 217,
+        "width": 61
+      },
+      "file_offset": 530
+    },
+    {
+      "layer_id": "save",
+      "sort_index": 1555,
+      "properties": {
+        "height": 69,
+        "width": 193
+      },
+      "file_offset": 560
+    },
+    {
+      "layer_id": "overlay",
+      "sort_index": 1639,
+      "properties": {},
+      "file_offset": 14448
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1645,
+      "properties": {
+        "height": 237
+      },
+      "file_offset": 14354
+    },
+    {
+      "layer_id": "prev",
+      "sort_index": 1668,
+      "properties": {
+        "height": 205,
+        "width": 28
+      },
+      "file_offset": 466
+    },
+    {
+      "layer_id": "vreplay",
+      "sort_index": 1695,
+      "properties": {
+        "height": 46,
+        "width": 39
+      },
+      "file_offset": 270
+    },
+    {
+      "layer_id": "snapshot",
+      "sort_index": 1734,
+      "properties": {
+        "height": 49,
+        "width": 233
+      },
+      "file_offset": 214
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 1782,
+      "properties": {},
+      "file_offset": 3664
+    },
+    {
+      "layer_id": "log",
+      "sort_index": 1836,
+      "properties": {
+        "height": 86,
+        "width": 83
+      },
+      "file_offset": 392
+    },
+    {
+      "layer_id": "next",
+      "sort_index": 1919,
+      "properties": {
+        "height": 81,
+        "width": 216
+      },
+      "file_offset": 330
+    },
+    {
+      "layer_id": "backskip",
+      "sort_index": 1926,
+      "properties": {
+        "height": 97,
+        "width": 12
+      },
+      "file_offset": 424
+    },
+    {
+      "layer_id": "vsave",
+      "sort_index": 1998,
+      "properties": {
+        "height": 74,
+        "width": 180
+      },
+      "file_offset": 254
+    },
+    {
+      "layer_id": "volume",
+      "sort_index": 2179,
+      "properties": {
+        "height": 249,
+        "width": 190
+      },
+      "file_offset": 290
+    },
+    {
+      "layer_id": "title",
+      "sort_index": 2235,
+      "properties": {
+        "height": 113,
+        "width": 145
+      },
+      "file_offset": 198
+    },
+    {
+      "layer_id": "backone",
+      "sort_index": 2262,
+      "properties": {
+        "height": 70,
+        "width": 180
+      },
+      "file_offset": 404
+    },
+    {
+      "layer_id": "a",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 952
+    },
+    {
+      "layer_id": "arrow",
+      "sort_index": null,
+      "properties": {
+        "h": 9765
+      },
+      "file_offset": 15526
+    },
+    {
+      "layer_id": "arrow_l",
+      "sort_index": null,
+      "properties": {
+        "h": 9832
+      },
+      "file_offset": 15638
+    },
+    {
+      "layer_id": "arrow_r",
+      "sort_index": null,
+      "properties": {
+        "h": 9966
+      },
+      "file_offset": 15754
+    },
+    {
+      "layer_id": "disable",
+      "sort_index": null,
+      "properties": {
+        "ch": 7
+      },
+      "file_offset": 5306
+    },
+    {
+      "layer_id": "down",
+      "sort_index": null,
+      "properties": {
+        "ch": 105
+      },
+      "file_offset": 3994
+    },
+    {
+      "layer_id": "e",
+      "sort_index": null,
+      "properties": {
+        "oy": 40
+      },
+      "file_offset": 4650
+    },
+    {
+      "layer_id": "empty",
+      "sort_index": null,
+      "properties": {
+        "height": 186,
+        "width": 47
+      },
+      "file_offset": 592
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 26
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "properties": {
+        "w": 13
+      },
+      "file_offset": 4238
+    },
+    {
+      "layer_id": "g",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 941
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 46
+    },
+    {
+      "layer_id": "i",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 19047
+    },
+    {
+      "layer_id": "i_auto",
+      "sort_index": null,
+      "properties": {
+        "ch": 180,
+        "width": 172
+      },
+      "file_offset": 5526
+    },
+    {
+      "layer_id": "i_backone",
+      "sort_index": null,
+      "properties": {
+        "ch": 142,
+        "width": 180
+      },
+      "file_offset": 5744
+    },
+    {
+      "layer_id": "i_backskip",
+      "sort_index": null,
+      "properties": {
+        "ch": 207,
+        "width": 12
+      },
+      "file_offset": 5968
+    },
+    {
+      "layer_id": "i_click",
+      "sort_index": null,
+      "properties": {
+        "ch": 1
+      },
+      "file_offset": 6194
+    },
+    {
+      "layer_id": "i_custom",
+      "sort_index": null,
+      "properties": {
+        "ch": 10,
+        "width": 66
+      },
+      "file_offset": 6414
+    },
+    {
+      "layer_id": "i_dsave",
+      "sort_index": null,
+      "properties": {
+        "ch": 210,
+        "width": 185
+      },
+      "file_offset": 6636
+    },
+    {
+      "layer_id": "i_hide",
+      "sort_index": null,
+      "properties": {
+        "ch": 228,
+        "width": 46
+      },
+      "file_offset": 6856
+    },
+    {
+      "layer_id": "i_load",
+      "sort_index": null,
+      "properties": {
+        "ch": 80,
+        "width": 61
+      },
+      "file_offset": 7074
+    },
+    {
+      "layer_id": "i_log",
+      "sort_index": null,
+      "properties": {
+        "ch": 111,
+        "width": 83
+      },
+      "file_offset": 7292
+    },
+    {
+      "layer_id": "i_next",
+      "sort_index": null,
+      "properties": {
+        "ch": 255,
+        "width": 216
+      },
+      "file_offset": 7508
+    },
+    {
+      "layer_id": "i_nextscn",
+      "sort_index": null,
+      "properties": {
+        "ch": 121,
+        "width": 48
+      },
+      "file_offset": 7726
+    },
+    {
+      "layer_id": "i_none",
+      "sort_index": null,
+      "properties": {
+        "ch": 96
+      },
+      "file_offset": 7950
+    },
+    {
+      "layer_id": "i_option",
+      "sort_index": null,
+      "properties": {
+        "ch": 95,
+        "width": 246
+      },
+      "file_offset": 8168
+    },
+    {
+      "layer_id": "i_panic",
+      "sort_index": null,
+      "properties": {
+        "ch": 253
+      },
+      "file_offset": 8390
+    },
+    {
+      "layer_id": "i_prev",
+      "sort_index": null,
+      "properties": {
+        "ch": 17,
+        "width": 28
+      },
+      "file_offset": 8610
+    },
+    {
+      "layer_id": "i_prevscn",
+      "sort_index": null,
+      "properties": {
+        "ch": 121,
+        "width": 113
+      },
+      "file_offset": 8828
+    },
+    {
+      "layer_id": "i_qload",
+      "sort_index": null,
+      "properties": {
+        "ch": 23,
+        "width": 199
+      },
+      "file_offset": 9052
+    },
+    {
+      "layer_id": "i_qsave",
+      "sort_index": null,
+      "properties": {
+        "ch": 79,
+        "width": 236
+      },
+      "file_offset": 9272
+    },
+    {
+      "layer_id": "i_qvsave",
+      "sort_index": null,
+      "properties": {
+        "ch": 54,
+        "width": 56
+      },
+      "file_offset": 9492
+    },
+    {
+      "layer_id": "i_save",
+      "sort_index": null,
+      "properties": {
+        "ch": 90,
+        "width": 193
+      },
+      "file_offset": 9714
+    },
+    {
+      "layer_id": "i_scnchart",
+      "sort_index": null,
+      "properties": {
+        "ch": 32,
+        "width": 222
+      },
+      "file_offset": 9932
+    },
+    {
+      "layer_id": "i_screen",
+      "sort_index": null,
+      "properties": {
+        "ch": 250
+      },
+      "file_offset": 10158
+    },
+    {
+      "layer_id": "i_skip",
+      "sort_index": null,
+      "properties": {
+        "ch": 58,
+        "width": 245
+      },
+      "file_offset": 10380
+    },
+    {
+      "layer_id": "i_snapshot",
+      "sort_index": null,
+      "properties": {
+        "ch": 200,
+        "width": 233
+      },
+      "file_offset": 10598
+    },
+    {
+      "layer_id": "i_title",
+      "sort_index": null,
+      "properties": {
+        "ch": 108,
+        "width": 145
+      },
+      "file_offset": 10824
+    },
+    {
+      "layer_id": "i_volume",
+      "sort_index": null,
+      "properties": {
+        "ch": 115,
+        "width": 190
+      },
+      "file_offset": 11044
+    },
+    {
+      "layer_id": "i_vreplay",
+      "sort_index": null,
+      "properties": {
+        "ch": 117,
+        "width": 39
+      },
+      "file_offset": 11266
+    },
+    {
+      "layer_id": "i_vsave",
+      "sort_index": null,
+      "properties": {
+        "ch": 248,
+        "width": 180
+      },
+      "file_offset": 11490
+    },
+    {
+      "layer_id": "item",
+      "sort_index": null,
+      "properties": {
+        "h": 33490
+      },
+      "file_offset": 15870
+    },
+    {
+      "layer_id": "left",
+      "sort_index": null,
+      "properties": {
+        "ch": 141
+      },
+      "file_offset": 4322
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 37
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 112
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 193
+      },
+      "file_offset": 12796
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 113
+      },
+      "file_offset": 13022
+    },
+    {
+      "layer_id": "on_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 65
+      },
+      "file_offset": 13388
+    },
+    {
+      "layer_id": "on_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 192
+      },
+      "file_offset": 13606
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 158
+      },
+      "file_offset": 13822
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 16
+      },
+      "file_offset": 14044
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "properties": {
+        "width": 98
+      },
+      "file_offset": 1733
+    },
+    {
+      "layer_id": "q",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 3119
+    },
+    {
+      "layer_id": "right",
+      "sort_index": null,
+      "properties": {
+        "ch": 9
+      },
+      "file_offset": 4536
+    },
+    {
+      "layer_id": "step",
+      "sort_index": null,
+      "properties": {
+        "h": 37419
+      },
+      "file_offset": 15980
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 66
+      },
+      "file_offset": 15410
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "h": 9765
+      },
+      "file_offset": 15440
+    },
+    {
+      "layer_id": "text",
+      "sort_index": null,
+      "properties": {
+        "h": 7056
+      },
+      "file_offset": 12460
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "properties": {
+        "height": 98
+      },
+      "file_offset": 12664
+    },
+    {
+      "layer_id": "touchuibar",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 650
+    },
+    {
+      "layer_id": "touchuibar__bg0",
+      "sort_index": null,
+      "properties": {
+        "storagex": 95
+      },
+      "file_offset": 15376
+    },
+    {
+      "layer_id": "touchuibar__pack",
+      "sort_index": null,
+      "properties": {
+        "w": 13
+      },
+      "file_offset": 76
+    },
+    {
+      "layer_id": "up",
+      "sort_index": null,
+      "properties": {
+        "ch": 20
+      },
+      "file_offset": 4752
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 87
+      },
+      "file_offset": 3838
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "height": 201,
+        "y": 2243,
+        "cy": 18,
+        "cw": 125,
+        "cx": 163,
+        "ox": 1485,
+        "ch": 180
+      },
+      "file_offset": 836
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 113
+      },
+      "file_offset": 3878
+    }
+  ]
+}

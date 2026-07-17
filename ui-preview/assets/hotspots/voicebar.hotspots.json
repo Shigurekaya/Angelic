@@ -1,0 +1,151 @@
+{
+  "source": "voicebar.pbd",
+  "hotspots": [
+    {
+      "layer_id": "text",
+      "sort_index": 773,
+      "height": 73,
+      "ch": 140
+    },
+    {
+      "layer_id": "wait_voice",
+      "sort_index": 1099,
+      "height": 97,
+      "ch": 110
+    },
+    {
+      "layer_id": "frame",
+      "sort_index": 1183,
+      "height": 192,
+      "ch": 168
+    },
+    {
+      "layer_id": "auto_voice",
+      "sort_index": 1194,
+      "height": 26,
+      "ch": 242
+    },
+    {
+      "layer_id": "voice",
+      "sort_index": 1222,
+      "height": 17,
+      "ch": 83
+    },
+    {
+      "layer_id": "wait",
+      "sort_index": 1467,
+      "height": 117,
+      "ch": 65
+    },
+    {
+      "layer_id": "bar",
+      "sort_index": 1486,
+      "height": 1909,
+      "ch": 1823
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2185,
+      "height": 170
+    },
+    {
+      "layer_id": "auto",
+      "sort_index": 2599,
+      "height": 170,
+      "ch": 33
+    },
+    {
+      "layer_id": "auto_wait",
+      "sort_index": 2777,
+      "height": 170,
+      "ch": 194
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "storagex": 35
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 137
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "l",
+      "sort_index": null,
+      "x": 244,
+      "width": 57,
+      "height": 170,
+      "cx": 0
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "x": 146,
+      "width": 137,
+      "height": 170,
+      "cx": 252
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "height": 1889,
+      "cx": 134
+    },
+    {
+      "layer_id": "r",
+      "sort_index": null,
+      "x": 132,
+      "width": 104,
+      "height": 170,
+      "cx": 198
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 232
+    },
+    {
+      "layer_id": "voicebar__pack",
+      "sort_index": null,
+      "height": 170,
+      "width": 204
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 178
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 242
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 26
+    }
+  ],
+  "bindings": []
+}

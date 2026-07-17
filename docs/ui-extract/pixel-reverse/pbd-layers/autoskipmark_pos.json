@@ -1,0 +1,122 @@
+{
+  "source": "autoskipmark_pos.pbd",
+  "layer_count": 10,
+  "hotspot_count": 7,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "markpos",
+      "sort_index": null,
+      "width": 198,
+      "height": 170
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 5
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 206
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "uiname",
+      "sort_index": 1867,
+      "properties": {},
+      "file_offset": 258
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "properties": {
+        "height": 170
+      },
+      "file_offset": 188
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {
+        "height": 170
+      },
+      "file_offset": 26
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {
+        "height": 170
+      },
+      "file_offset": 46
+    },
+    {
+      "layer_id": "markpos",
+      "sort_index": null,
+      "properties": {
+        "height": 170,
+        "width": 198
+      },
+      "file_offset": 92
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 37
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {
+        "height": 170
+      },
+      "file_offset": 70
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 5
+      },
+      "file_offset": 320
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 206
+      },
+      "file_offset": 344
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 360
+    }
+  ]
+}

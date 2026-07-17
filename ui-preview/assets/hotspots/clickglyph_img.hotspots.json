@@ -1,0 +1,124 @@
+{
+  "source": "clickglyph_img.pbd",
+  "hotspots": [
+    {
+      "layer_id": "copy",
+      "sort_index": 1265,
+      "height": 29
+    },
+    {
+      "layer_id": "anim5",
+      "sort_index": 1285,
+      "width": 145,
+      "height": 168
+    },
+    {
+      "layer_id": "anim1",
+      "sort_index": 1319,
+      "width": 202,
+      "height": 202
+    },
+    {
+      "layer_id": "anim2",
+      "sort_index": 1355,
+      "width": 216,
+      "height": 142
+    },
+    {
+      "layer_id": "anim8",
+      "sort_index": 1411,
+      "width": 218,
+      "height": 40
+    },
+    {
+      "layer_id": "anim7",
+      "sort_index": 1439,
+      "width": 80,
+      "height": 54
+    },
+    {
+      "layer_id": "anim0",
+      "sort_index": 1450,
+      "width": 130,
+      "height": 29
+    },
+    {
+      "layer_id": "anim3",
+      "sort_index": 1467,
+      "width": 125,
+      "height": 115
+    },
+    {
+      "layer_id": "anim4",
+      "sort_index": 1478,
+      "width": 192,
+      "height": 163
+    },
+    {
+      "layer_id": "anim6",
+      "sort_index": 1486,
+      "width": 235,
+      "height": 56
+    },
+    {
+      "layer_id": "icon",
+      "sort_index": 1497,
+      "height": 220
+    },
+    {
+      "layer_id": "anim10",
+      "sort_index": 1663,
+      "width": 57,
+      "height": 68
+    },
+    {
+      "layer_id": "anim9",
+      "sort_index": 1731,
+      "width": 117,
+      "height": 102
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2113,
+      "height": 253
+    },
+    {
+      "layer_id": "anim11",
+      "sort_index": null,
+      "width": 197,
+      "height": 29
+    },
+    {
+      "layer_id": "b",
+      "sort_index": null,
+      "height": 29,
+      "cy": 84
+    },
+    {
+      "layer_id": "clickglyph_img__pack",
+      "sort_index": null,
+      "width": 160
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 29
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 200
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 162
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 202
+    }
+  ],
+  "bindings": []
+}

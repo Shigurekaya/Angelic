@@ -1,0 +1,195 @@
+{
+  "source": "chapter.pbd",
+  "layer_count": 16,
+  "hotspot_count": 11,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "layer",
+      "sort_index": 1648,
+      "height": 87
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "storagex": 56
+    },
+    {
+      "layer_id": "chapter__bg0",
+      "sort_index": null,
+      "storagex": 56
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 127
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 127
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 127
+    },
+    {
+      "layer_id": "i",
+      "sort_index": null,
+      "ox": 26,
+      "storagex": 56
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 127
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 19
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 130
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 87
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "uiname",
+      "sort_index": 1238,
+      "properties": {},
+      "file_offset": 498
+    },
+    {
+      "layer_id": "text",
+      "sort_index": 1241,
+      "properties": {
+        "height": 87,
+        "h": 10334
+      },
+      "file_offset": 92
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 1648,
+      "properties": {
+        "height": 87
+      },
+      "file_offset": 758
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "properties": {
+        "height": 127,
+        "storagex": 56,
+        "h": 27012
+      },
+      "file_offset": 106
+    },
+    {
+      "layer_id": "chapter__bg0",
+      "sort_index": null,
+      "properties": {
+        "storagex": 56
+      },
+      "file_offset": 410
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {
+        "height": 127
+      },
+      "file_offset": 26
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "properties": {
+        "height": 127
+      },
+      "file_offset": 162
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {
+        "height": 127
+      },
+      "file_offset": 46
+    },
+    {
+      "layer_id": "i",
+      "sort_index": null,
+      "properties": {
+        "storagex": 56,
+        "ox": 26
+      },
+      "file_offset": 352
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 37
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {
+        "height": 127
+      },
+      "file_offset": 70
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 2860
+      },
+      "file_offset": 438
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "h": 27012
+      },
+      "file_offset": 468
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 19
+      },
+      "file_offset": 668
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 130
+      },
+      "file_offset": 692
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 87
+      },
+      "file_offset": 708
+    }
+  ]
+}

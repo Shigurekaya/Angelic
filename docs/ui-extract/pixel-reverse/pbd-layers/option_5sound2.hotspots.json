@@ -1,0 +1,1478 @@
+{
+  "source": "option_5sound2.pbd",
+  "hotspots": [
+    {
+      "layer_id": "helpbase",
+      "sort_index": 1104,
+      "height": 146,
+      "ch": 72
+    },
+    {
+      "layer_id": "sep_a",
+      "sort_index": 1303,
+      "height": 144,
+      "ch": 251
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1938,
+      "height": 71
+    },
+    {
+      "layer_id": "sysvoplay15_chk",
+      "sort_index": 1953,
+      "height": 135,
+      "ch": 133
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 2043,
+      "height": 82,
+      "storagex": 12
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2055,
+      "height": 103
+    },
+    {
+      "layer_id": "sysvomask_area",
+      "sort_index": 2239,
+      "width": 37,
+      "height": 59
+    },
+    {
+      "layer_id": "sysvo5_rev",
+      "sort_index": 2310,
+      "height": 38
+    },
+    {
+      "layer_id": "sysvo7_rev",
+      "sort_index": 2358,
+      "height": 81
+    },
+    {
+      "layer_id": "sysvo6_rev",
+      "sort_index": 2450,
+      "height": 52
+    },
+    {
+      "layer_id": "sysvo4_rev",
+      "sort_index": 2504,
+      "height": 51
+    },
+    {
+      "layer_id": "sep_b",
+      "sort_index": 2514,
+      "height": 241,
+      "ch": 142
+    },
+    {
+      "layer_id": "sysvo0_rev",
+      "sort_index": 2515,
+      "height": 80
+    },
+    {
+      "layer_id": "sysvo8_rev",
+      "sort_index": 2520,
+      "height": 238
+    },
+    {
+      "layer_id": "sysvo2_rev",
+      "sort_index": 2521,
+      "height": 132
+    },
+    {
+      "layer_id": "sysvo1_rev",
+      "sort_index": 2522,
+      "height": 235
+    },
+    {
+      "layer_id": "sysvo11_chk",
+      "sort_index": 2524,
+      "width": 30,
+      "height": 191
+    },
+    {
+      "layer_id": "sysvo3_rev",
+      "sort_index": 2556,
+      "height": 126
+    },
+    {
+      "layer_id": "sysvoplay0_rev",
+      "sort_index": 2563,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvo10_rev",
+      "sort_index": 2564,
+      "height": 191
+    },
+    {
+      "layer_id": "sysvo7_on",
+      "sort_index": 2569,
+      "height": 81
+    },
+    {
+      "layer_id": "sysvoplay6_rev",
+      "sort_index": 2570,
+      "height": 248
+    },
+    {
+      "layer_id": "sysvo8_chk",
+      "sort_index": 2576,
+      "width": 155,
+      "height": 81
+    },
+    {
+      "layer_id": "sysvoplay5_rev",
+      "sort_index": 2580,
+      "height": 49
+    },
+    {
+      "layer_id": "sysvo7_chk",
+      "sort_index": 2581,
+      "width": 158,
+      "height": 52
+    },
+    {
+      "layer_id": "sysvo9_off",
+      "sort_index": 2585,
+      "height": 16
+    },
+    {
+      "layer_id": "sysvoplay9_rev",
+      "sort_index": 2590,
+      "height": 82
+    },
+    {
+      "layer_id": "sysvo5_on",
+      "sort_index": 2602,
+      "height": 38
+    },
+    {
+      "layer_id": "sysvo8_on",
+      "sort_index": 2603,
+      "height": 238
+    },
+    {
+      "layer_id": "sysvoplay4_rev",
+      "sort_index": 2604,
+      "height": 177
+    },
+    {
+      "layer_id": "sysvo6_chk",
+      "sort_index": 2625,
+      "width": 153,
+      "height": 38
+    },
+    {
+      "layer_id": "sysvo4_on",
+      "sort_index": 2644,
+      "height": 51
+    },
+    {
+      "layer_id": "sysvo5_off",
+      "sort_index": 2646,
+      "height": 38
+    },
+    {
+      "layer_id": "sysvo1_on",
+      "sort_index": 2657,
+      "height": 235
+    },
+    {
+      "layer_id": "sysvo3_chk",
+      "sort_index": 2658,
+      "width": 227,
+      "height": 132
+    },
+    {
+      "layer_id": "sysvo2_on",
+      "sort_index": 2663,
+      "height": 132
+    },
+    {
+      "layer_id": "sysvo3_on",
+      "sort_index": 2670,
+      "height": 126
+    },
+    {
+      "layer_id": "sysvoplay7_rev",
+      "sort_index": 2670,
+      "height": 28
+    },
+    {
+      "layer_id": "sysvo9_rev",
+      "sort_index": 2673,
+      "height": 16
+    },
+    {
+      "layer_id": "sysvo0_chk",
+      "sort_index": 2677,
+      "width": 41,
+      "height": 60
+    },
+    {
+      "layer_id": "sysvo6_on",
+      "sort_index": 2683,
+      "height": 52
+    },
+    {
+      "layer_id": "sysvoplay1_rev",
+      "sort_index": 2685,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvo3_off",
+      "sort_index": 2692,
+      "height": 126
+    },
+    {
+      "layer_id": "sysvo6_off",
+      "sort_index": 2697,
+      "height": 52
+    },
+    {
+      "layer_id": "sysvoplay3_rev",
+      "sort_index": 2697,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvo8_off",
+      "sort_index": 2706,
+      "height": 238
+    },
+    {
+      "layer_id": "sysvoplay8_rev",
+      "sort_index": 2706,
+      "height": 102
+    },
+    {
+      "layer_id": "sysvo7_off",
+      "sort_index": 2711,
+      "height": 81
+    },
+    {
+      "layer_id": "sysvoplay2_rev",
+      "sort_index": 2712,
+      "height": 64
+    },
+    {
+      "layer_id": "sysvo0_on",
+      "sort_index": 2715,
+      "height": 80
+    },
+    {
+      "layer_id": "sysvo1_chk",
+      "sort_index": 2719,
+      "width": 169,
+      "height": 9
+    },
+    {
+      "layer_id": "sysvo2_off",
+      "sort_index": 2720,
+      "height": 132
+    },
+    {
+      "layer_id": "sysvo0_off",
+      "sort_index": 2736,
+      "height": 80
+    },
+    {
+      "layer_id": "sysvo1_off",
+      "sort_index": 2747,
+      "height": 235
+    },
+    {
+      "layer_id": "sysvo9_on",
+      "sort_index": 2749,
+      "height": 16
+    },
+    {
+      "layer_id": "sysvo4_chk",
+      "sort_index": 2762,
+      "width": 22,
+      "height": 126
+    },
+    {
+      "layer_id": "sysvo4_off",
+      "sort_index": 2774,
+      "height": 51
+    },
+    {
+      "layer_id": "sysvo2_chk",
+      "sort_index": 2789,
+      "width": 171,
+      "height": 235
+    },
+    {
+      "layer_id": "sysvoplay15",
+      "sort_index": 2798,
+      "height": 135
+    },
+    {
+      "layer_id": "sysvo5_chk",
+      "sort_index": 2813,
+      "width": 30,
+      "height": 51
+    },
+    {
+      "layer_id": "sysvoplay11_rev",
+      "sort_index": 2858,
+      "height": 144
+    },
+    {
+      "layer_id": "sysvoplay12_rev",
+      "sort_index": 2903,
+      "height": 8
+    },
+    {
+      "layer_id": "sysvo11_off",
+      "sort_index": 2905,
+      "height": 9
+    },
+    {
+      "layer_id": "sysvoplay15_rev",
+      "sort_index": 2907,
+      "height": 53
+    },
+    {
+      "layer_id": "sysvoplay13_rev",
+      "sort_index": 2929,
+      "height": 201
+    },
+    {
+      "layer_id": "sysvo10_off",
+      "sort_index": 2947,
+      "height": 191
+    },
+    {
+      "layer_id": "sysvoplay10_rev",
+      "sort_index": 2993,
+      "height": 30
+    },
+    {
+      "layer_id": "sysvo10_on",
+      "sort_index": 3006,
+      "height": 191
+    },
+    {
+      "layer_id": "sysvo11_on",
+      "sort_index": 3008,
+      "height": 9
+    },
+    {
+      "layer_id": "sysvoplay14_rev",
+      "sort_index": 3030,
+      "height": 135
+    },
+    {
+      "layer_id": "sysvo9_chk",
+      "sort_index": 3031,
+      "width": 160,
+      "height": 238
+    },
+    {
+      "layer_id": "sysvo10_chk",
+      "sort_index": 3059,
+      "width": 49,
+      "height": 80
+    },
+    {
+      "layer_id": "option_5sound2__pack",
+      "sort_index": 3203,
+      "width": 246
+    },
+    {
+      "layer_id": "sysvo_init",
+      "sort_index": 3285,
+      "height": 16
+    },
+    {
+      "layer_id": "sysvoplay2",
+      "sort_index": 3353,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvoplay1",
+      "sort_index": 3369,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvoplay0",
+      "sort_index": 3387,
+      "height": 22
+    },
+    {
+      "layer_id": "sysvoplay8",
+      "sort_index": 3409,
+      "height": 28
+    },
+    {
+      "layer_id": "sysvo11_rev",
+      "sort_index": 3422,
+      "height": 9
+    },
+    {
+      "layer_id": "sysvoplay5",
+      "sort_index": 3466,
+      "height": 177
+    },
+    {
+      "layer_id": "sysvoplay4",
+      "sort_index": 3488,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvoplay3",
+      "sort_index": 3508,
+      "height": 64
+    },
+    {
+      "layer_id": "sysvoplay7",
+      "sort_index": 3540,
+      "height": 248
+    },
+    {
+      "layer_id": "sysvoplay6",
+      "sort_index": 3572,
+      "height": 49
+    },
+    {
+      "layer_id": "sysvoplay13",
+      "sort_index": 3584,
+      "height": 8
+    },
+    {
+      "layer_id": "sysvoplay1_chk",
+      "sort_index": 3591,
+      "height": 53,
+      "ch": 243
+    },
+    {
+      "layer_id": "sysvoall",
+      "sort_index": 3593,
+      "width": 4,
+      "height": 222
+    },
+    {
+      "layer_id": "sysvoplay0_on",
+      "sort_index": 3607,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvoplay3_on",
+      "sort_index": 3611,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvoplay0_chk",
+      "sort_index": 3615,
+      "height": 22,
+      "ch": 41
+    },
+    {
+      "layer_id": "sysvoplay11",
+      "sort_index": 3632,
+      "height": 30
+    },
+    {
+      "layer_id": "sysvoplay6_chk",
+      "sort_index": 3635,
+      "height": 49,
+      "ch": 149
+    },
+    {
+      "layer_id": "sysvoplay1_off",
+      "sort_index": 3636,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvoplay1_on",
+      "sort_index": 3639,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvoplay14",
+      "sort_index": 3645,
+      "height": 201
+    },
+    {
+      "layer_id": "sysvoplay8_on",
+      "sort_index": 3661,
+      "height": 102
+    },
+    {
+      "layer_id": "sysvoplay9_on",
+      "sort_index": 3662,
+      "height": 82
+    },
+    {
+      "layer_id": "sysvoplay4_chk",
+      "sort_index": 3664,
+      "height": 140,
+      "ch": 47
+    },
+    {
+      "layer_id": "sysvoplay3_chk",
+      "sort_index": 3667,
+      "height": 64,
+      "ch": 26
+    },
+    {
+      "layer_id": "sysvoplay7_on",
+      "sort_index": 3694,
+      "height": 28
+    },
+    {
+      "layer_id": "sysvoplay2_on",
+      "sort_index": 3698,
+      "height": 64
+    },
+    {
+      "layer_id": "sysvoplay4_on",
+      "sort_index": 3707,
+      "height": 177
+    },
+    {
+      "layer_id": "sysvoplay2_chk",
+      "sort_index": 3708,
+      "height": 140,
+      "ch": 102
+    },
+    {
+      "layer_id": "sysvoplay7_off",
+      "sort_index": 3709,
+      "height": 28
+    },
+    {
+      "layer_id": "sysvoplay6_off",
+      "sort_index": 3712,
+      "height": 248
+    },
+    {
+      "layer_id": "sysvoplay5_on",
+      "sort_index": 3720,
+      "height": 49
+    },
+    {
+      "layer_id": "sysvoplay6_on",
+      "sort_index": 3752,
+      "height": 248
+    },
+    {
+      "layer_id": "sysvoplay3_off",
+      "sort_index": 3765,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvoplay8_chk",
+      "sort_index": 3767,
+      "height": 28,
+      "ch": 161
+    },
+    {
+      "layer_id": "sysvo_rnd",
+      "sort_index": 3773,
+      "width": 156,
+      "height": 226
+    },
+    {
+      "layer_id": "sysvoplay7_chk",
+      "sort_index": 3778,
+      "height": 248,
+      "ch": 179
+    },
+    {
+      "layer_id": "sysvoplay12",
+      "sort_index": 3779,
+      "height": 144
+    },
+    {
+      "layer_id": "sysvoplay9",
+      "sort_index": 3785,
+      "height": 102
+    },
+    {
+      "layer_id": "sysvoplay5_chk",
+      "sort_index": 3802,
+      "height": 177,
+      "ch": 226
+    },
+    {
+      "layer_id": "sysvoplay4_off",
+      "sort_index": 3819,
+      "height": 177
+    },
+    {
+      "layer_id": "sysvoplay5_off",
+      "sort_index": 3822,
+      "height": 49
+    },
+    {
+      "layer_id": "sysvoplay10",
+      "sort_index": 3825,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvoplay8_off",
+      "sort_index": 3827,
+      "height": 102
+    },
+    {
+      "layer_id": "sysvoplay9_off",
+      "sort_index": 3828,
+      "height": 82
+    },
+    {
+      "layer_id": "sysvoplay0_off",
+      "sort_index": 3833,
+      "height": 140
+    },
+    {
+      "layer_id": "sysvoplay2_off",
+      "sort_index": 3839,
+      "height": 64
+    },
+    {
+      "layer_id": "sysvoplay12_off",
+      "sort_index": 3845,
+      "height": 8
+    },
+    {
+      "layer_id": "sysvoplay15_off",
+      "sort_index": 3869,
+      "height": 53
+    },
+    {
+      "layer_id": "sysvoplay13_off",
+      "sort_index": 3888,
+      "height": 201
+    },
+    {
+      "layer_id": "sysvoplay14_chk",
+      "sort_index": 3891,
+      "height": 201,
+      "ch": 208
+    },
+    {
+      "layer_id": "sysvoplay11_off",
+      "sort_index": 3902,
+      "height": 144
+    },
+    {
+      "layer_id": "sysvoplay14_on",
+      "sort_index": 3922,
+      "height": 135
+    },
+    {
+      "layer_id": "sysvoplay11_chk",
+      "sort_index": 3942,
+      "height": 30,
+      "ch": 76
+    },
+    {
+      "layer_id": "sysvoplay15_on",
+      "sort_index": 3945,
+      "height": 53
+    },
+    {
+      "layer_id": "sysvoplay12_chk",
+      "sort_index": 3952,
+      "height": 144,
+      "ch": 4
+    },
+    {
+      "layer_id": "sysvoplay12_on",
+      "sort_index": 3958,
+      "height": 8
+    },
+    {
+      "layer_id": "sysvoplay13_chk",
+      "sort_index": 3981,
+      "height": 8,
+      "ch": 110
+    },
+    {
+      "layer_id": "sysvoplay10_chk",
+      "sort_index": 4012,
+      "height": 140,
+      "ch": 130
+    },
+    {
+      "layer_id": "sysvoplay10_on",
+      "sort_index": 4044,
+      "height": 30
+    },
+    {
+      "layer_id": "sysvoplay14_off",
+      "sort_index": 4047,
+      "height": 135
+    },
+    {
+      "layer_id": "sysvoplay13_on",
+      "sort_index": 4052,
+      "height": 201
+    },
+    {
+      "layer_id": "sysvoplay11_on",
+      "sort_index": 4085,
+      "height": 144
+    },
+    {
+      "layer_id": "sysvoplay10_off",
+      "sort_index": 4086,
+      "height": 30
+    },
+    {
+      "layer_id": "sysvoplay9_chk",
+      "sort_index": 4086,
+      "height": 102,
+      "ch": 133
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 222
+    },
+    {
+      "layer_id": "back",
+      "sort_index": null,
+      "width": 29
+    },
+    {
+      "layer_id": "caption",
+      "sort_index": null,
+      "height": 103,
+      "ch": 187
+    },
+    {
+      "layer_id": "ch0",
+      "sort_index": null,
+      "ch": 66
+    },
+    {
+      "layer_id": "ch1",
+      "sort_index": null,
+      "ch": 249
+    },
+    {
+      "layer_id": "ch10",
+      "sort_index": null,
+      "ch": 138
+    },
+    {
+      "layer_id": "ch11",
+      "sort_index": null,
+      "ch": 251
+    },
+    {
+      "layer_id": "ch2",
+      "sort_index": null,
+      "ch": 116
+    },
+    {
+      "layer_id": "ch3",
+      "sort_index": null,
+      "ch": 136
+    },
+    {
+      "layer_id": "ch4",
+      "sort_index": null,
+      "ch": 64
+    },
+    {
+      "layer_id": "ch5",
+      "sort_index": null,
+      "ch": 37
+    },
+    {
+      "layer_id": "ch6",
+      "sort_index": null,
+      "ch": 99
+    },
+    {
+      "layer_id": "ch7",
+      "sort_index": null,
+      "ch": 183
+    },
+    {
+      "layer_id": "ch8",
+      "sort_index": null,
+      "ch": 219
+    },
+    {
+      "layer_id": "ch9",
+      "sort_index": null,
+      "ch": 9
+    },
+    {
+      "layer_id": "color",
+      "sort_index": null,
+      "cw": 27
+    },
+    {
+      "layer_id": "cr",
+      "sort_index": null,
+      "cw": 31
+    },
+    {
+      "layer_id": "d",
+      "sort_index": null,
+      "cw": 31,
+      "ch": 138
+    },
+    {
+      "layer_id": "dsch10",
+      "sort_index": null,
+      "ch": 108
+    },
+    {
+      "layer_id": "dsch11",
+      "sort_index": null,
+      "ch": 14
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "x": 159,
+      "width": 212
+    },
+    {
+      "layer_id": "i",
+      "sort_index": null,
+      "height": 99,
+      "cx": 99,
+      "ch": 219
+    },
+    {
+      "layer_id": "icon_off",
+      "sort_index": null,
+      "ch": 83
+    },
+    {
+      "layer_id": "icon_ov",
+      "sort_index": null,
+      "ch": 189
+    },
+    {
+      "layer_id": "j",
+      "sort_index": null,
+      "y": 41,
+      "cy": 169
+    },
+    {
+      "layer_id": "k",
+      "sort_index": null,
+      "height": 99,
+      "cx": 81,
+      "ch": 9
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 109
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 81
+    },
+    {
+      "layer_id": "opr_chk_off",
+      "sort_index": null,
+      "ch": 75
+    },
+    {
+      "layer_id": "opr_chk_ov",
+      "sort_index": null,
+      "ch": 109
+    },
+    {
+      "layer_id": "opr_unc_ov",
+      "sort_index": null,
+      "ch": 199
+    },
+    {
+      "layer_id": "option__bg0",
+      "sort_index": null,
+      "storagex": 12
+    },
+    {
+      "layer_id": "option__pack",
+      "sort_index": null,
+      "width": 6
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 58
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 5
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "width": 49,
+      "height": 99,
+      "cx": 67,
+      "ch": 108
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "height": 183
+    },
+    {
+      "layer_id": "reset",
+      "sort_index": null,
+      "width": 65,
+      "height": 243
+    },
+    {
+      "layer_id": "rnd",
+      "sort_index": null,
+      "ch": 169
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 159
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "height": 82
+    },
+    {
+      "layer_id": "sysvo0",
+      "sort_index": null,
+      "height": 80
+    },
+    {
+      "layer_id": "sysvo1",
+      "sort_index": null,
+      "height": 235
+    },
+    {
+      "layer_id": "sysvo10",
+      "sort_index": null,
+      "height": 191
+    },
+    {
+      "layer_id": "sysvo11",
+      "sort_index": null,
+      "height": 9
+    },
+    {
+      "layer_id": "sysvo2",
+      "sort_index": null,
+      "height": 132
+    },
+    {
+      "layer_id": "sysvo3",
+      "sort_index": null,
+      "height": 126
+    },
+    {
+      "layer_id": "sysvo4",
+      "sort_index": null,
+      "height": 51
+    },
+    {
+      "layer_id": "sysvo5",
+      "sort_index": null,
+      "height": 38
+    },
+    {
+      "layer_id": "sysvo6",
+      "sort_index": null,
+      "height": 52
+    },
+    {
+      "layer_id": "sysvo7",
+      "sort_index": null,
+      "height": 81
+    },
+    {
+      "layer_id": "sysvo8",
+      "sort_index": null,
+      "height": 238
+    },
+    {
+      "layer_id": "sysvo9",
+      "sort_index": null,
+      "height": 16
+    },
+    {
+      "layer_id": "sysvo_revert",
+      "sort_index": null,
+      "height": 226
+    },
+    {
+      "layer_id": "t",
+      "sort_index": null,
+      "width": 82,
+      "cx": 172,
+      "cw": 32,
+      "ch": 249
+    },
+    {
+      "layer_id": "title",
+      "sort_index": null,
+      "width": 215,
+      "height": 217
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 4
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 2
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 241
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 4
+    },
+    {
+      "layer_id": "z",
+      "sort_index": null,
+      "width": 41
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "changeSysvoPlay",
+      "bindings": [
+        "changeSysvoPlay/attention/0/tgl",
+        "changeSysvoPlay/attention/0/off",
+        "changeSysvoPlay/attention/0/on",
+        "changeSysvoPlay/attention/0/tgl",
+        "changeSysvoPlay/option/10/tgl",
+        "changeSysvoPlay/option/10/off",
+        "changeSysvoPlay/option/10/on",
+        "changeSysvoPlay/option/10/tgl",
+        "changeSysvoPlay/optpage/11/tgl",
+        "changeSysvoPlay/optpage/11/off",
+        "changeSysvoPlay/optpage/11/on",
+        "changeSysvoPlay/optpage/11/tgl",
+        "changeSysvoPlay/extra/12/tgl",
+        "changeSysvoPlay/extra/12/off",
+        "changeSysvoPlay/extra/12/on",
+        "changeSysvoPlay/extra/12/tgl",
+        "changeSysvoPlay/after/13/tgl",
+        "changeSysvoPlay/after/13/off",
+        "changeSysvoPlay/after/13/on",
+        "changeSysvoPlay/after/13/tgl",
+        "changeSysvoPlay/dialog/14/tgl",
+        "changeSysvoPlay/dialog/14/off",
+        "changeSysvoPlay/dialog/14/on",
+        "changeSysvoPlay/dialog/14/tgl",
+        "changeSysvoPlay/onexit/15/tgl",
+        "changeSysvoPlay/onexit/15/off",
+        "changeSysvoPlay/onexit/15/on",
+        "changeSysvoPlay/onexit/15/tgl",
+        "changeSysvoPlay/brand/1/tgl",
+        "changeSysvoPlay/brand/1/off",
+        "changeSysvoPlay/brand/1/on",
+        "changeSysvoPlay/brand/1/tgl",
+        "changeSysvoPlay/title/2/tgl",
+        "changeSysvoPlay/title/2/off",
+        "changeSysvoPlay/title/2/on",
+        "changeSysvoPlay/title/2/tgl",
+        "changeSysvoPlay/custom/3/tgl",
+        "changeSysvoPlay/custom/3/off",
+        "changeSysvoPlay/custom/3/on",
+        "changeSysvoPlay/custom/3/tgl",
+        "changeSysvoPlay/save/4/tgl",
+        "changeSysvoPlay/save/4/off",
+        "changeSysvoPlay/save/4/on",
+        "changeSysvoPlay/save/4/tgl",
+        "changeSysvoPlay/load/5/tgl",
+        "changeSysvoPlay/load/5/off",
+        "changeSysvoPlay/load/5/on",
+        "changeSysvoPlay/load/5/tgl",
+        "changeSysvoPlay/voice/6/tgl",
+        "changeSysvoPlay/voice/6/off",
+        "changeSysvoPlay/voice/6/on",
+        "changeSysvoPlay/voice/6/tgl",
+        "changeSysvoPlay/vsave/7/tgl",
+        "changeSysvoPlay/vsave/7/off",
+        "changeSysvoPlay/vsave/7/on",
+        "changeSysvoPlay/vsave/7/tgl",
+        "changeSysvoPlay/backlog/8/tgl",
+        "changeSysvoPlay/backlog/8/off",
+        "changeSysvoPlay/backlog/8/on",
+        "changeSysvoPlay/backlog/8/tgl",
+        "changeSysvoPlay/chart/9/tgl",
+        "changeSysvoPlay/chart/9/off",
+        "changeSysvoPlay/chart/9/on",
+        "changeSysvoPlay/chart/9/tgl"
+      ],
+      "geometry": {
+        "height": 81,
+        "width": 160,
+        "y": 4,
+        "cy": 224,
+        "cx": 107,
+        "w": 198,
+        "ch": 139,
+        "cw": 207,
+        "ox": 54,
+        "x": 157
+      }
+    },
+    {
+      "layer_id": "off_sysvo0",
+      "bindings": [
+        "setBasicOptionValue/sysvo0/off"
+      ],
+      "geometry": {
+        "ch": 187
+      }
+    },
+    {
+      "layer_id": "off_sysvo1",
+      "bindings": [
+        "setBasicOptionValue/sysvo1/off"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "off_sysvo10",
+      "bindings": [
+        "setBasicOptionValue/sysvo10/off"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "off_sysvo11",
+      "bindings": [
+        "setBasicOptionValue/sysvo11/off"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "off_sysvo2",
+      "bindings": [
+        "setBasicOptionValue/sysvo2/off"
+      ],
+      "geometry": {
+        "width": 65
+      }
+    },
+    {
+      "layer_id": "off_sysvo3",
+      "bindings": [
+        "setBasicOptionValue/sysvo3/off"
+      ],
+      "geometry": {
+        "width": 41
+      }
+    },
+    {
+      "layer_id": "off_sysvo4",
+      "bindings": [
+        "setBasicOptionValue/sysvo4/off"
+      ],
+      "geometry": {
+        "width": 49
+      }
+    },
+    {
+      "layer_id": "off_sysvo5",
+      "bindings": [
+        "setBasicOptionValue/sysvo5/off"
+      ],
+      "geometry": {
+        "width": 30
+      }
+    },
+    {
+      "layer_id": "off_sysvo6",
+      "bindings": [
+        "setBasicOptionValue/sysvo6/off"
+      ],
+      "geometry": {
+        "width": 169
+      }
+    },
+    {
+      "layer_id": "off_sysvo7",
+      "bindings": [
+        "setBasicOptionValue/sysvo7/off"
+      ],
+      "geometry": {
+        "width": 171
+      }
+    },
+    {
+      "layer_id": "off_sysvo8",
+      "bindings": [
+        "setBasicOptionValue/sysvo8/off"
+      ],
+      "geometry": {
+        "width": 227
+      }
+    },
+    {
+      "layer_id": "off_sysvo9",
+      "bindings": [
+        "setBasicOptionValue/sysvo9/off"
+      ],
+      "geometry": {
+        "width": 22
+      }
+    },
+    {
+      "layer_id": "on_sysvo0",
+      "bindings": [
+        "setBasicOptionValue/sysvo0/on"
+      ],
+      "geometry": {
+        "w": 166
+      }
+    },
+    {
+      "layer_id": "on_sysvo1",
+      "bindings": [
+        "setBasicOptionValue/sysvo1/on"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "on_sysvo10",
+      "bindings": [
+        "setBasicOptionValue/sysvo10/on"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "on_sysvo11",
+      "bindings": [
+        "setBasicOptionValue/sysvo11/on"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "on_sysvo2",
+      "bindings": [
+        "setBasicOptionValue/sysvo2/on"
+      ],
+      "geometry": {
+        "ch": 251
+      }
+    },
+    {
+      "layer_id": "on_sysvo3",
+      "bindings": [
+        "setBasicOptionValue/sysvo3/on"
+      ],
+      "geometry": {
+        "height": 80
+      }
+    },
+    {
+      "layer_id": "on_sysvo4",
+      "bindings": [
+        "setBasicOptionValue/sysvo4/on"
+      ],
+      "geometry": {
+        "height": 191
+      }
+    },
+    {
+      "layer_id": "on_sysvo5",
+      "bindings": [
+        "setBasicOptionValue/sysvo5/on"
+      ],
+      "geometry": {
+        "height": 9
+      }
+    },
+    {
+      "layer_id": "on_sysvo6",
+      "bindings": [
+        "setBasicOptionValue/sysvo6/on"
+      ],
+      "geometry": {
+        "height": 235
+      }
+    },
+    {
+      "layer_id": "on_sysvo7",
+      "bindings": [
+        "setBasicOptionValue/sysvo7/on"
+      ],
+      "geometry": {
+        "height": 132
+      }
+    },
+    {
+      "layer_id": "on_sysvo8",
+      "bindings": [
+        "setBasicOptionValue/sysvo8/on"
+      ],
+      "geometry": {
+        "height": 126
+      }
+    },
+    {
+      "layer_id": "on_sysvo9",
+      "bindings": [
+        "setBasicOptionValue/sysvo9/on"
+      ],
+      "geometry": {
+        "height": 51
+      }
+    },
+    {
+      "layer_id": "toggleSysvoRandom",
+      "bindings": [
+        "toggleSysvoRandom"
+      ],
+      "geometry": {
+        "height": 38
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo0",
+      "bindings": [
+        "setBasicOptionValue/sysvo0/toggle",
+        "setBasicOptionValue/sysvo0/toggle"
+      ],
+      "geometry": {
+        "width": 29,
+        "ch": 72
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo1",
+      "bindings": [
+        "setBasicOptionValue/sysvo1/toggle",
+        "setBasicOptionValue/sysvo1/toggle"
+      ],
+      "geometry": {
+        "width": 24,
+        "height": 244
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo10",
+      "bindings": [
+        "setBasicOptionValue/sysvo10/toggle",
+        "setBasicOptionValue/sysvo10/toggle"
+      ],
+      "geometry": {
+        "y": 66,
+        "height": 183
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo11",
+      "bindings": [
+        "setBasicOptionValue/sysvo11/toggle",
+        "setBasicOptionValue/sysvo11/toggle"
+      ],
+      "geometry": {
+        "x": 216,
+        "height": 233
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo2",
+      "bindings": [
+        "setBasicOptionValue/sysvo2/toggle",
+        "setBasicOptionValue/sysvo2/toggle"
+      ],
+      "geometry": {
+        "w": 167,
+        "height": 241
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo3",
+      "bindings": [
+        "setBasicOptionValue/sysvo3/toggle",
+        "setBasicOptionValue/sysvo3/toggle"
+      ],
+      "geometry": {
+        "ox": 210,
+        "height": 80
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo4",
+      "bindings": [
+        "setBasicOptionValue/sysvo4/toggle",
+        "setBasicOptionValue/sysvo4/toggle"
+      ],
+      "geometry": {
+        "height": 80
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo5",
+      "bindings": [
+        "setBasicOptionValue/sysvo5/toggle",
+        "setBasicOptionValue/sysvo5/toggle"
+      ],
+      "geometry": {
+        "height": 191
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo6",
+      "bindings": [
+        "setBasicOptionValue/sysvo6/toggle",
+        "setBasicOptionValue/sysvo6/toggle"
+      ],
+      "geometry": {
+        "height": 9
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo7",
+      "bindings": [
+        "setBasicOptionValue/sysvo7/toggle",
+        "setBasicOptionValue/sysvo7/toggle"
+      ],
+      "geometry": {
+        "height": 235
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo8",
+      "bindings": [
+        "setBasicOptionValue/sysvo8/toggle",
+        "setBasicOptionValue/sysvo8/toggle"
+      ],
+      "geometry": {
+        "height": 132
+      }
+    },
+    {
+      "layer_id": "toggle_sysvo9",
+      "bindings": [
+        "setBasicOptionValue/sysvo9/toggle",
+        "setBasicOptionValue/sysvo9/toggle"
+      ],
+      "geometry": {
+        "height": 126
+      }
+    }
+  ]
+}

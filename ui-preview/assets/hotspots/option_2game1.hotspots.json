@@ -1,0 +1,724 @@
+{
+  "source": "option_2game1.pbd",
+  "hotspots": [
+    {
+      "layer_id": "title",
+      "sort_index": 1066,
+      "width": 177,
+      "height": 230
+    },
+    {
+      "layer_id": "caption",
+      "sort_index": 1137,
+      "height": 80,
+      "ch": 12
+    },
+    {
+      "layer_id": "sep_a",
+      "sort_index": 1342,
+      "height": 232,
+      "ch": 53
+    },
+    {
+      "layer_id": "helpbase",
+      "sort_index": 1403,
+      "height": 41,
+      "ch": 253
+    },
+    {
+      "layer_id": "reset",
+      "sort_index": 1480,
+      "width": 49,
+      "height": 230
+    },
+    {
+      "layer_id": "suspend",
+      "sort_index": 1525,
+      "width": 44,
+      "height": 66
+    },
+    {
+      "layer_id": "readjump",
+      "sort_index": 1795,
+      "width": 81,
+      "height": 234
+    },
+    {
+      "layer_id": "flowshow",
+      "sort_index": 1869,
+      "width": 72,
+      "height": 163
+    },
+    {
+      "layer_id": "stopdeactive",
+      "sort_index": 1870,
+      "width": 1,
+      "height": 13
+    },
+    {
+      "layer_id": "readskip",
+      "sort_index": 1881,
+      "width": 133,
+      "height": 206
+    },
+    {
+      "layer_id": "hsel_area",
+      "sort_index": 1902,
+      "width": 75,
+      "height": 139
+    },
+    {
+      "layer_id": "curhidestep",
+      "sort_index": 1915,
+      "width": 33,
+      "height": 255
+    },
+    {
+      "layer_id": "curmove",
+      "sort_index": 1917,
+      "width": 164,
+      "height": 242
+    },
+    {
+      "layer_id": "filedclk",
+      "sort_index": 1928,
+      "width": 253,
+      "height": 18
+    },
+    {
+      "layer_id": "curmoveyes",
+      "sort_index": 1944,
+      "width": 84,
+      "height": 82
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1982,
+      "width": 91,
+      "height": 154,
+      "storagex": 83
+    },
+    {
+      "layer_id": "icpreview",
+      "sort_index": 1996,
+      "width": 227,
+      "height": 66
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 2037,
+      "height": 142
+    },
+    {
+      "layer_id": "scanim_rev",
+      "sort_index": 2130,
+      "height": 232
+    },
+    {
+      "layer_id": "back",
+      "sort_index": 2134,
+      "width": 95,
+      "height": 230
+    },
+    {
+      "layer_id": "hout_chk",
+      "sort_index": 2140,
+      "height": 233
+    },
+    {
+      "layer_id": "hsel_chk",
+      "sort_index": 2187,
+      "height": 223
+    },
+    {
+      "layer_id": "filedclk_rev",
+      "sort_index": 2189,
+      "height": 163
+    },
+    {
+      "layer_id": "hmou_chk",
+      "sort_index": 2219,
+      "height": 169
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2223,
+      "height": 80
+    },
+    {
+      "layer_id": "hout_rev",
+      "sort_index": 2254,
+      "height": 139
+    },
+    {
+      "layer_id": "hsel_rev",
+      "sort_index": 2261,
+      "height": 66
+    },
+    {
+      "layer_id": "curmove_rev",
+      "sort_index": 2516,
+      "height": 82
+    },
+    {
+      "layer_id": "scanim_chk",
+      "sort_index": 2560,
+      "height": 232
+    },
+    {
+      "layer_id": "scanim_on",
+      "sort_index": 2608,
+      "height": 232
+    },
+    {
+      "layer_id": "scanim_off",
+      "sort_index": 2673,
+      "height": 232
+    },
+    {
+      "layer_id": "icpreview_rev",
+      "sort_index": 2825,
+      "height": 38
+    },
+    {
+      "layer_id": "suspend_chk",
+      "sort_index": 2828,
+      "height": 167
+    },
+    {
+      "layer_id": "readjump_rev",
+      "sort_index": 2903,
+      "height": 206
+    },
+    {
+      "layer_id": "curmove_chk",
+      "sort_index": 3011,
+      "height": 180
+    },
+    {
+      "layer_id": "readjump_chk",
+      "sort_index": 3077,
+      "height": 9
+    },
+    {
+      "layer_id": "flowshow_chk",
+      "sort_index": 3078,
+      "height": 76
+    },
+    {
+      "layer_id": "curmoveyes_rev",
+      "sort_index": 3085,
+      "height": 18
+    },
+    {
+      "layer_id": "sep_b",
+      "sort_index": 3114,
+      "height": 110,
+      "ch": 89
+    },
+    {
+      "layer_id": "readskip_chk",
+      "sort_index": 3120,
+      "height": 191
+    },
+    {
+      "layer_id": "filedclk_chk",
+      "sort_index": 3131,
+      "height": 35
+    },
+    {
+      "layer_id": "hmou_rev",
+      "sort_index": 3165,
+      "height": 233
+    },
+    {
+      "layer_id": "readskip_rev",
+      "sort_index": 3190,
+      "height": 95
+    },
+    {
+      "layer_id": "icpreview_chk",
+      "sort_index": 3331,
+      "height": 215
+    },
+    {
+      "layer_id": "stayontop_on",
+      "sort_index": 3357,
+      "height": 13
+    },
+    {
+      "layer_id": "stayontop_off",
+      "sort_index": 3419,
+      "height": 13
+    },
+    {
+      "layer_id": "stayontop_chk",
+      "sort_index": 3566,
+      "height": 13
+    },
+    {
+      "layer_id": "flowshow_rev",
+      "sort_index": 3580,
+      "height": 41
+    },
+    {
+      "layer_id": "stopdeactive_rev",
+      "sort_index": 3602,
+      "height": 66
+    },
+    {
+      "layer_id": "curmoveyes_chk",
+      "sort_index": 3692,
+      "height": 83
+    },
+    {
+      "layer_id": "stopdeactive_chk",
+      "sort_index": 4133,
+      "height": 229
+    },
+    {
+      "layer_id": "stayontop_rev",
+      "sort_index": 4309,
+      "height": 13
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 255
+    },
+    {
+      "layer_id": "cr",
+      "sort_index": null,
+      "cw": 203
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "x": 45,
+      "width": 76
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 139
+    },
+    {
+      "layer_id": "hmou",
+      "sort_index": null,
+      "height": 169
+    },
+    {
+      "layer_id": "hout",
+      "sort_index": null,
+      "height": 233
+    },
+    {
+      "layer_id": "hsel",
+      "sort_index": null,
+      "height": 223
+    },
+    {
+      "layer_id": "i",
+      "sort_index": null,
+      "y": 73
+    },
+    {
+      "layer_id": "initialize",
+      "sort_index": null,
+      "width": 49
+    },
+    {
+      "layer_id": "j",
+      "sort_index": null,
+      "height": 230,
+      "cy": 156
+    },
+    {
+      "layer_id": "option__bg0",
+      "sort_index": null,
+      "storagex": 83
+    },
+    {
+      "layer_id": "option__pack",
+      "sort_index": null,
+      "width": 28
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "height": 215
+    },
+    {
+      "layer_id": "scanim",
+      "sort_index": null,
+      "height": 232
+    },
+    {
+      "layer_id": "stayontop",
+      "sort_index": null,
+      "height": 13
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 74
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "width": 91
+    },
+    {
+      "layer_id": "suspend_rev",
+      "sort_index": null,
+      "height": 230
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 93
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 230
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 142
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "changeSysArg",
+      "bindings": [
+        "changeSysArg/toggle/curmove",
+        "changeSysArg/false/curmove",
+        "changeSysArg/true/curmove",
+        "changeSysArg/toggle/curmove",
+        "changeSysArg/toggle/scanim",
+        "changeSysArg/false/scanim",
+        "changeSysArg/true/scanim",
+        "changeSysArg/toggle/scanim",
+        "changeSysArg/toggle/sqscr",
+        "changeSysArg/false/sqscr",
+        "changeSysArg/true/sqscr",
+        "changeSysArg/toggle/sqscr",
+        "changeSysArg/toggle/stayontop",
+        "changeSysArg/false/stayontop",
+        "changeSysArg/true/stayontop",
+        "changeSysArg/toggle/stayontop",
+        "changeSysArg/toggle/stopdeactive",
+        "changeSysArg/false/stopdeactive",
+        "changeSysArg/true/stopdeactive",
+        "changeSysArg/toggle/stopdeactive"
+      ],
+      "geometry": {
+        "height": 230,
+        "ch": 50,
+        "cx": 46,
+        "oy": 25,
+        "opacity": 100,
+        "w": 176,
+        "ox": 141,
+        "width": 133
+      }
+    },
+    {
+      "layer_id": "off_curmoveyes",
+      "bindings": [
+        "setBasicOptionValue/curmoveyes/off"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "off_filedclk",
+      "bindings": [
+        "setBasicOptionValue/filedclk/off"
+      ],
+      "geometry": {
+        "height": 27
+      }
+    },
+    {
+      "layer_id": "off_flowshow",
+      "bindings": [
+        "setBasicOptionValue/flowshow/off"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "off_hmou",
+      "bindings": [
+        "setBasicOptionValue/hmou/off"
+      ],
+      "geometry": {
+        "x": 34
+      }
+    },
+    {
+      "layer_id": "off_hout",
+      "bindings": [
+        "setBasicOptionValue/hout/off"
+      ],
+      "geometry": {
+        "oy": 90
+      }
+    },
+    {
+      "layer_id": "off_hsel",
+      "bindings": [
+        "setBasicOptionValue/hsel/off"
+      ],
+      "geometry": {
+        "w": 251
+      }
+    },
+    {
+      "layer_id": "off_icpreview",
+      "bindings": [
+        "setBasicOptionValue/icpreview/off"
+      ],
+      "geometry": {
+        "ch": 216
+      }
+    },
+    {
+      "layer_id": "off_readjump",
+      "bindings": [
+        "setBasicOptionValue/readjump/off"
+      ],
+      "geometry": {
+        "height": 179
+      }
+    },
+    {
+      "layer_id": "off_readskip",
+      "bindings": [
+        "setBasicOptionValue/readskip/off"
+      ],
+      "geometry": {
+        "ox": 71
+      }
+    },
+    {
+      "layer_id": "off_suspend",
+      "bindings": [
+        "setBasicOptionValue/suspend/off"
+      ],
+      "geometry": {
+        "height": 232
+      }
+    },
+    {
+      "layer_id": "on_curmoveyes",
+      "bindings": [
+        "setBasicOptionValue/curmoveyes/on"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "on_filedclk",
+      "bindings": [
+        "setBasicOptionValue/filedclk/on"
+      ],
+      "geometry": {
+        "height": 242
+      }
+    },
+    {
+      "layer_id": "on_flowshow",
+      "bindings": [
+        "setBasicOptionValue/flowshow/on"
+      ],
+      "geometry": {
+        "width": 84
+      }
+    },
+    {
+      "layer_id": "on_hmou",
+      "bindings": [
+        "setBasicOptionValue/hmou/on"
+      ],
+      "geometry": {
+        "height": 35
+      }
+    },
+    {
+      "layer_id": "on_hout",
+      "bindings": [
+        "setBasicOptionValue/hout/on"
+      ],
+      "geometry": {
+        "height": 76
+      }
+    },
+    {
+      "layer_id": "on_hsel",
+      "bindings": [
+        "setBasicOptionValue/hsel/on"
+      ],
+      "geometry": {
+        "ch": 253
+      }
+    },
+    {
+      "layer_id": "on_icpreview",
+      "bindings": [
+        "setBasicOptionValue/icpreview/on"
+      ],
+      "geometry": {
+        "cx": 172
+      }
+    },
+    {
+      "layer_id": "on_readjump",
+      "bindings": [
+        "setBasicOptionValue/readjump/on"
+      ],
+      "geometry": {
+        "height": 154
+      }
+    },
+    {
+      "layer_id": "on_readskip",
+      "bindings": [
+        "setBasicOptionValue/readskip/on"
+      ],
+      "geometry": {
+        "ox": 11
+      }
+    },
+    {
+      "layer_id": "on_suspend",
+      "bindings": [
+        "setBasicOptionValue/suspend/on"
+      ],
+      "geometry": {
+        "ch": 53
+      }
+    },
+    {
+      "layer_id": "reset",
+      "bindings": [
+        "reset"
+      ],
+      "geometry": {
+        "height": 47
+      }
+    },
+    {
+      "layer_id": "setCurHideTime",
+      "bindings": [
+        "setCurHideTime/0",
+        "setCurHideTime/10",
+        "setCurHideTime/20",
+        "setCurHideTime/5"
+      ],
+      "geometry": {
+        "height": 230
+      }
+    },
+    {
+      "layer_id": "toggle_curmoveyes",
+      "bindings": [
+        "setBasicOptionValue/curmoveyes/toggle",
+        "setBasicOptionValue/curmoveyes/toggle"
+      ],
+      "geometry": {
+        "height": 20
+      }
+    },
+    {
+      "layer_id": "toggle_filedclk",
+      "bindings": [
+        "setBasicOptionValue/filedclk/toggle",
+        "setBasicOptionValue/filedclk/toggle"
+      ],
+      "geometry": {
+        "ch": 228
+      }
+    },
+    {
+      "layer_id": "toggle_flowshow",
+      "bindings": [
+        "setBasicOptionValue/flowshow/toggle",
+        "setBasicOptionValue/flowshow/toggle"
+      ],
+      "geometry": {
+        "height": 51,
+        "ch": 187
+      }
+    },
+    {
+      "layer_id": "toggle_hmou",
+      "bindings": [
+        "setBasicOptionValue/hmou/toggle",
+        "setBasicOptionValue/hmou/toggle"
+      ],
+      "geometry": {
+        "cx": 251,
+        "height": 209
+      }
+    },
+    {
+      "layer_id": "toggle_hout",
+      "bindings": [
+        "setBasicOptionValue/hout/toggle",
+        "setBasicOptionValue/hout/toggle"
+      ],
+      "geometry": {
+        "w": 209
+      }
+    },
+    {
+      "layer_id": "toggle_hsel",
+      "bindings": [
+        "setBasicOptionValue/hsel/toggle",
+        "setBasicOptionValue/hsel/toggle"
+      ],
+      "geometry": {
+        "height": 145
+      }
+    },
+    {
+      "layer_id": "toggle_icpreview",
+      "bindings": [
+        "setBasicOptionValue/icpreview/toggle",
+        "setBasicOptionValue/icpreview/toggle"
+      ],
+      "geometry": {
+        "ox": 116,
+        "ch": 2
+      }
+    },
+    {
+      "layer_id": "toggle_readjump",
+      "bindings": [
+        "setBasicOptionValue/readjump/toggle",
+        "setBasicOptionValue/readjump/toggle"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "toggle_readskip",
+      "bindings": [
+        "setBasicOptionValue/readskip/toggle",
+        "setBasicOptionValue/readskip/toggle"
+      ],
+      "geometry": null
+    },
+    {
+      "layer_id": "toggle_suspend",
+      "bindings": [
+        "setBasicOptionValue/suspend/toggle",
+        "setBasicOptionValue/suspend/toggle"
+      ],
+      "geometry": {
+        "width": 49,
+        "height": 13
+      }
+    }
+  ]
+}

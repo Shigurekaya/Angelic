@@ -1,0 +1,101 @@
+{
+  "source": "qlpopup.pbd",
+  "hotspots": [
+    {
+      "layer_id": "route",
+      "sort_index": 1063,
+      "height": 23
+    },
+    {
+      "layer_id": "save",
+      "sort_index": 1099,
+      "height": 189,
+      "ch": 192
+    },
+    {
+      "layer_id": "thumb",
+      "sort_index": 1241,
+      "height": 235
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1450,
+      "storagex": 20
+    },
+    {
+      "layer_id": "load",
+      "sort_index": 1467,
+      "height": 97,
+      "ch": 225
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2119,
+      "height": 97
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 178
+    },
+    {
+      "layer_id": "file_data",
+      "sort_index": null,
+      "height": 178
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 178
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 178
+    },
+    {
+      "layer_id": "qlpopup__bg0",
+      "sort_index": null,
+      "storagex": 20
+    },
+    {
+      "layer_id": "qlpopup__pack",
+      "sort_index": null,
+      "height": 178,
+      "width": 24
+    },
+    {
+      "layer_id": "quick",
+      "sort_index": null,
+      "height": 178,
+      "ch": 77
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 0
+    },
+    {
+      "layer_id": "voice",
+      "sort_index": null,
+      "height": 10,
+      "ch": 77
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 173
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 142
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 97
+    }
+  ],
+  "bindings": []
+}

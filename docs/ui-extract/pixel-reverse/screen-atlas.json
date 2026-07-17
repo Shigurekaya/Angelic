@@ -1,0 +1,6692 @@
+{
+  "generated_at": "2026-07-17T01:16:55.367038+00:00",
+  "screens": {
+    "title": [
+      {
+        "pbd": "title.pbd",
+        "hotspot_count": 37,
+        "hotspots_sample": [
+          {
+            "layer_id": "bg7",
+            "sort_index": 790,
+            "width": 215,
+            "height": 165
+          },
+          {
+            "layer_id": "popup",
+            "sort_index": 945,
+            "height": 53,
+            "ch": 93
+          },
+          {
+            "layer_id": "bg3",
+            "sort_index": 946,
+            "width": 201,
+            "height": 125
+          },
+          {
+            "layer_id": "bg6",
+            "sort_index": 961,
+            "width": 179,
+            "height": 18
+          },
+          {
+            "layer_id": "bg5",
+            "sort_index": 972,
+            "width": 171,
+            "height": 37
+          },
+          {
+            "layer_id": "bg1",
+            "sort_index": 991,
+            "width": 59,
+            "height": 113
+          },
+          {
+            "layer_id": "bg4",
+            "sort_index": 1006,
+            "width": 207,
+            "height": 48
+          },
+          {
+            "layer_id": "bg2",
+            "sort_index": 1010,
+            "width": 238,
+            "height": 25
+          },
+          {
+            "layer_id": "bg8",
+            "sort_index": 1011,
+            "width": 98,
+            "height": 16
+          },
+          {
+            "layer_id": "amv_pos1",
+            "sort_index": 1224,
+            "width": 98,
+            "height": 38
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1497,
+            "height": 252
+          },
+          {
+            "layer_id": "bg0",
+            "sort_index": 1556,
+            "width": 9,
+            "height": 252
+          },
+          {
+            "layer_id": "amv_pos0",
+            "sort_index": 1791,
+            "width": 102,
+            "height": 194
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2146,
+            "height": 21,
+            "ch": 93
+          },
+          {
+            "layer_id": "lang_left",
+            "sort_index": 2152,
+            "height": 14,
+            "ch": 161
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "changeBG",
+            "bindings": [
+              "changeBG/0",
+              "changeBG/1",
+              "changeBG/2",
+              "changeBG/3",
+              "changeBG/4",
+              "changeBG/5",
+              "changeBG/6",
+              "changeBG/7",
+              "changeBG/8"
+            ],
+            "geometry": {
+              "height": 229
+            }
+          },
+          {
+            "layer_id": "contPopup",
+            "bindings": [
+              "contPopup/1/continue",
+              "contPopup/0/continue"
+            ],
+            "geometry": {
+              "ch": 111,
+              "cx": 229
+            }
+          },
+          {
+            "layer_id": "popupBG",
+            "bindings": [
+              "popupBG/0/1",
+              "popupBG/0/0",
+              "popupBG/1/1",
+              "popupBG/1/0",
+              "popupBG/2/1",
+              "popupBG/2/0",
+              "popupBG/3/1",
+              "popupBG/3/0",
+              "popupBG/4/1",
+              "popupBG/4/0",
+              "popupBG/5/1",
+              "popupBG/5/0",
+              "popupBG/6/1",
+              "popupBG/6/0",
+              "popupBG/7/1",
+              "popupBG/7/0",
+              "popupBG/8/1",
+              "popupBG/8/0",
+              "popupBG/-1/1",
+              "popupBG/-1/0"
+            ],
+            "geometry": {
+              "height": 229,
+              "opacity": 41
+            }
+          },
+          {
+            "layer_id": "selectLanguage",
+            "bindings": [
+              "selectLanguage",
+              "selectLanguage"
+            ],
+            "geometry": {
+              "height": 25
+            }
+          },
+          {
+            "layer_id": "start",
+            "bindings": [
+              "start/after/after",
+              "start/start/"
+            ],
+            "geometry": {
+              "height": 229,
+              "width": 98
+            }
+          },
+          {
+            "layer_id": "toggleBGSel",
+            "bindings": [
+              "toggleBGSel"
+            ],
+            "geometry": null
+          }
+        ]
+      },
+      {
+        "pbd": "title_locale_cn.pbd",
+        "hotspot_count": 9,
+        "hotspots_sample": [
+          {
+            "layer_id": "amv_pos1",
+            "sort_index": 1155,
+            "width": 41,
+            "height": 68
+          },
+          {
+            "layer_id": "amv_pos0",
+            "sort_index": 1742,
+            "width": 244,
+            "height": 188
+          },
+          {
+            "layer_id": "area",
+            "sort_index": null,
+            "height": 188
+          },
+          {
+            "layer_id": "c",
+            "sort_index": null,
+            "cx": 117
+          },
+          {
+            "layer_id": "cref",
+            "sort_index": null,
+            "height": 61
+          },
+          {
+            "layer_id": "title_locale_cn__pack",
+            "sort_index": null,
+            "width": 3
+          },
+          {
+            "layer_id": "width",
+            "sort_index": null,
+            "x": 165
+          },
+          {
+            "layer_id": "x",
+            "sort_index": null,
+            "y": 234
+          },
+          {
+            "layer_id": "y",
+            "sort_index": null,
+            "height": 34
+          }
+        ],
+        "bindings_sample": []
+      }
+    ],
+    "option": [
+      {
+        "pbd": "option.pbd",
+        "hotspot_count": 42,
+        "hotspots_sample": [
+          {
+            "layer_id": "layer",
+            "sort_index": 355,
+            "height": 3
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1041,
+            "height": 205,
+            "ch": 144
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1104,
+            "width": 85,
+            "height": 3
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1448,
+            "height": 15,
+            "ch": 62
+          },
+          {
+            "layer_id": "reset",
+            "sort_index": 1530,
+            "width": 140,
+            "height": 171
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1901,
+            "height": 98
+          },
+          {
+            "layer_id": "back",
+            "sort_index": 2129,
+            "width": 98,
+            "height": 98
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 2175,
+            "width": 209,
+            "height": 193,
+            "storagex": 58
+          },
+          {
+            "layer_id": "a",
+            "sort_index": null,
+            "ch": 1879
+          },
+          {
+            "layer_id": "area",
+            "sort_index": null,
+            "height": 5
+          },
+          {
+            "layer_id": "b",
+            "sort_index": null,
+            "ch": 54
+          },
+          {
+            "layer_id": "c",
+            "sort_index": null,
+            "ch": 139
+          },
+          {
+            "layer_id": "cr",
+            "sort_index": null,
+            "cw": 245
+          },
+          {
+            "layer_id": "d",
+            "sort_index": null,
+            "ch": 1879
+          },
+          {
+            "layer_id": "dot_on",
+            "sort_index": null,
+            "ch": 131
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "reset",
+            "bindings": [
+              "reset"
+            ],
+            "geometry": null
+          }
+        ]
+      },
+      {
+        "pbd": "option_0simple.pbd",
+        "hotspot_count": 121,
+        "hotspots_sample": [
+          {
+            "layer_id": "se_mute",
+            "sort_index": 540,
+            "height": 9,
+            "ch": 109
+          },
+          {
+            "layer_id": "bgm_mute",
+            "sort_index": 813,
+            "height": 228,
+            "ch": 204
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1095,
+            "height": 199,
+            "ch": 216
+          },
+          {
+            "layer_id": "wave_mute",
+            "sort_index": 1101,
+            "height": 2,
+            "ch": 29
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1253,
+            "width": 157,
+            "height": 5
+          },
+          {
+            "layer_id": "sep_a",
+            "sort_index": 1297,
+            "height": 218,
+            "ch": 157
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1311,
+            "height": 114,
+            "ch": 60
+          },
+          {
+            "layer_id": "bgm_test",
+            "sort_index": 1331,
+            "height": 219
+          },
+          {
+            "layer_id": "reset",
+            "sort_index": 1392,
+            "width": 18,
+            "height": 5
+          },
+          {
+            "layer_id": "voice_mute",
+            "sort_index": 1482,
+            "height": 28,
+            "ch": 57
+          },
+          {
+            "layer_id": "movie_mute",
+            "sort_index": 1515,
+            "height": 81,
+            "ch": 223
+          },
+          {
+            "layer_id": "wave_test",
+            "sort_index": 1660,
+            "height": 85
+          },
+          {
+            "layer_id": "se_on",
+            "sort_index": 1730,
+            "height": 171
+          },
+          {
+            "layer_id": "bgv_slider",
+            "sort_index": 1779,
+            "height": 199
+          },
+          {
+            "layer_id": "sep_b",
+            "sort_index": 1801,
+            "height": 161,
+            "ch": 15
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "bgm",
+            "bindings": [
+              "setAudioOnOff/bgm/toggle",
+              "setAudioOnOff/bgm/0",
+              "setAudioOnOff/bgm/1",
+              "setAudioOnOff/bgm/toggle"
+            ],
+            "geometry": {
+              "height": 5,
+              "w": 163,
+              "ch": 47
+            }
+          },
+          {
+            "layer_id": "bgv",
+            "bindings": [
+              "setAudioOnOff/bgv/toggle",
+              "setAudioOnOff/bgv/0",
+              "setAudioOnOff/bgv/1",
+              "setAudioOnOff/bgv/toggle"
+            ],
+            "geometry": {
+              "width": 90,
+              "ox": 69,
+              "x": 66,
+              "height": 228
+            }
+          },
+          {
+            "layer_id": "bgv2",
+            "bindings": [
+              "setAudioOnOff/bgv2/toggle",
+              "setAudioOnOff/bgv2/0",
+              "setAudioOnOff/bgv2/1",
+              "setAudioOnOff/bgv2/toggle"
+            ],
+            "geometry": {
+              "ch": 167,
+              "w": 3,
+              "h": 249
+            }
+          },
+          {
+            "layer_id": "changeSysArg",
+            "bindings": [
+              "changeSysArg/toggle/curmove",
+              "changeSysArg/false/curmove",
+              "changeSysArg/true/curmove",
+              "changeSysArg/toggle/curmove",
+              "changeSysArg/toggle/scanim",
+              "changeSysArg/false/scanim",
+              "changeSysArg/true/scanim",
+              "changeSysArg/toggle/scanim",
+              "changeSysArg/toggle/sqscr",
+              "changeSysArg/false/sqscr",
+              "changeSysArg/true/sqscr",
+              "changeSysArg/toggle/sqscr",
+              "changeSysArg/toggle/stayontop",
+              "changeSysArg/false/stayontop",
+              "changeSysArg/true/stayontop",
+              "changeSysArg/toggle/stayontop",
+              "changeSysArg/toggle/stopdeactive",
+              "changeSysArg/false/stopdeactive",
+              "changeSysArg/true/stopdeactive",
+              "changeSysArg/toggle/stopdeactive"
+            ],
+            "geometry": {
+              "w": 42,
+              "width": 189,
+              "ch": 180,
+              "height": 168,
+              "cy": 130,
+              "oy": 110,
+              "y": 131
+            }
+          },
+          {
+            "layer_id": "down",
+            "bindings": [
+              "setAudioOnOff/down/toggle",
+              "setAudioOnOff/down/0",
+              "setAudioOnOff/down/1",
+              "setAudioOnOff/down/toggle"
+            ],
+            "geometry": {
+              "height": 168,
+              "ch": 198
+            }
+          },
+          {
+            "layer_id": "movie",
+            "bindings": [
+              "setAudioOnOff/movie/toggle",
+              "setAudioOnOff/movie/0",
+              "setAudioOnOff/movie/1",
+              "setAudioOnOff/movie/toggle"
+            ],
+            "geometry": {
+              "height": 172,
+              "x": 251
+            }
+          },
+          {
+            "layer_id": "off_fullscreen",
+            "bindings": [
+              "setBasicOptionValue/fullscreen/off"
+            ],
+            "geometry": {
+              "w": 82
+            }
+          },
+          {
+            "layer_id": "off_mvaudiosample",
+            "bindings": [
+              "setBasicOptionValue/mvaudiosample/off"
+            ],
+            "geometry": {
+              "x": 111
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "option_1display.pbd",
+        "hotspot_count": 84,
+        "hotspots_sample": [
+          {
+            "layer_id": "title",
+            "sort_index": 1231,
+            "width": 183,
+            "height": 63
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1276,
+            "height": 44,
+            "ch": 9
+          },
+          {
+            "layer_id": "sep_a",
+            "sort_index": 1390,
+            "height": 149,
+            "ch": 250
+          },
+          {
+            "layer_id": "qcpopover",
+            "sort_index": 1405,
+            "width": 92,
+            "height": 140
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1435,
+            "height": 100,
+            "ch": 21
+          },
+          {
+            "layer_id": "reset",
+            "sort_index": 1471,
+            "width": 168,
+            "height": 63
+          },
+          {
+            "layer_id": "panictype",
+            "sort_index": 1795,
+            "width": 4,
+            "height": 80
+          },
+          {
+            "layer_id": "esccancel",
+            "sort_index": 1796,
+            "width": 146,
+            "height": 169
+          },
+          {
+            "layer_id": "scanim",
+            "sort_index": 1817,
+            "width": 91,
+            "height": 110
+          },
+          {
+            "layer_id": "noeffect",
+            "sort_index": 1835,
+            "width": 177,
+            "height": 10
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1847,
+            "height": 50
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 1876,
+            "width": 210,
+            "height": 93,
+            "storagex": 198
+          },
+          {
+            "layer_id": "fullscreen",
+            "sort_index": 1878,
+            "width": 62,
+            "height": 222
+          },
+          {
+            "layer_id": "chapthidetime_numbase",
+            "sort_index": 1915,
+            "height": 162,
+            "ch": 9
+          },
+          {
+            "layer_id": "stayontop",
+            "sort_index": 1917,
+            "width": 28,
+            "height": 1
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "0_panictype",
+            "bindings": [
+              "setBasicOptionValue/panictype/0"
+            ],
+            "geometry": {
+              "w": 177
+            }
+          },
+          {
+            "layer_id": "1_panictype",
+            "bindings": [
+              "setBasicOptionValue/panictype/1"
+            ],
+            "geometry": {
+              "w": 233
+            }
+          },
+          {
+            "layer_id": "2_panictype",
+            "bindings": [
+              "setBasicOptionValue/panictype/2"
+            ],
+            "geometry": {
+              "height": 1
+            }
+          },
+          {
+            "layer_id": "3_panictype",
+            "bindings": [
+              "setBasicOptionValue/panictype/3"
+            ],
+            "geometry": {
+              "height": 236
+            }
+          },
+          {
+            "layer_id": "changeBasicSlider",
+            "bindings": [
+              "changeBasicSlider",
+              "changeBasicSlider"
+            ],
+            "geometry": {
+              "height": 63
+            }
+          },
+          {
+            "layer_id": "changeSysArg",
+            "bindings": [
+              "changeSysArg/toggle/curmove",
+              "changeSysArg/false/curmove",
+              "changeSysArg/true/curmove",
+              "changeSysArg/toggle/curmove",
+              "changeSysArg/toggle/scanim",
+              "changeSysArg/false/scanim",
+              "changeSysArg/true/scanim",
+              "changeSysArg/toggle/scanim",
+              "changeSysArg/toggle/sqscr",
+              "changeSysArg/false/sqscr",
+              "changeSysArg/true/sqscr",
+              "changeSysArg/toggle/sqscr",
+              "changeSysArg/toggle/stayontop",
+              "changeSysArg/false/stayontop",
+              "changeSysArg/true/stayontop",
+              "changeSysArg/toggle/stayontop",
+              "changeSysArg/toggle/stopdeactive",
+              "changeSysArg/false/stopdeactive",
+              "changeSysArg/true/stopdeactive",
+              "changeSysArg/toggle/stopdeactive"
+            ],
+            "geometry": {
+              "oy": 147,
+              "ch": 236,
+              "w": 146,
+              "cx": 139,
+              "y": 37,
+              "cw": 32,
+              "height": 140,
+              "ox": 93
+            }
+          },
+          {
+            "layer_id": "off_esccancel",
+            "bindings": [
+              "setBasicOptionValue/esccancel/off"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "off_facemode",
+            "bindings": [
+              "setBasicOptionValue/facemode/off"
+            ],
+            "geometry": {
+              "ch": 9
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "option_2game1.pbd",
+        "hotspot_count": 73,
+        "hotspots_sample": [
+          {
+            "layer_id": "title",
+            "sort_index": 1066,
+            "width": 177,
+            "height": 230
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1137,
+            "height": 80,
+            "ch": 12
+          },
+          {
+            "layer_id": "sep_a",
+            "sort_index": 1342,
+            "height": 232,
+            "ch": 53
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1403,
+            "height": 41,
+            "ch": 253
+          },
+          {
+            "layer_id": "reset",
+            "sort_index": 1480,
+            "width": 49,
+            "height": 230
+          },
+          {
+            "layer_id": "suspend",
+            "sort_index": 1525,
+            "width": 44,
+            "height": 66
+          },
+          {
+            "layer_id": "readjump",
+            "sort_index": 1795,
+            "width": 81,
+            "height": 234
+          },
+          {
+            "layer_id": "flowshow",
+            "sort_index": 1869,
+            "width": 72,
+            "height": 163
+          },
+          {
+            "layer_id": "stopdeactive",
+            "sort_index": 1870,
+            "width": 1,
+            "height": 13
+          },
+          {
+            "layer_id": "readskip",
+            "sort_index": 1881,
+            "width": 133,
+            "height": 206
+          },
+          {
+            "layer_id": "hsel_area",
+            "sort_index": 1902,
+            "width": 75,
+            "height": 139
+          },
+          {
+            "layer_id": "curhidestep",
+            "sort_index": 1915,
+            "width": 33,
+            "height": 255
+          },
+          {
+            "layer_id": "curmove",
+            "sort_index": 1917,
+            "width": 164,
+            "height": 242
+          },
+          {
+            "layer_id": "filedclk",
+            "sort_index": 1928,
+            "width": 253,
+            "height": 18
+          },
+          {
+            "layer_id": "curmoveyes",
+            "sort_index": 1944,
+            "width": 84,
+            "height": 82
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "changeSysArg",
+            "bindings": [
+              "changeSysArg/toggle/curmove",
+              "changeSysArg/false/curmove",
+              "changeSysArg/true/curmove",
+              "changeSysArg/toggle/curmove",
+              "changeSysArg/toggle/scanim",
+              "changeSysArg/false/scanim",
+              "changeSysArg/true/scanim",
+              "changeSysArg/toggle/scanim",
+              "changeSysArg/toggle/sqscr",
+              "changeSysArg/false/sqscr",
+              "changeSysArg/true/sqscr",
+              "changeSysArg/toggle/sqscr",
+              "changeSysArg/toggle/stayontop",
+              "changeSysArg/false/stayontop",
+              "changeSysArg/true/stayontop",
+              "changeSysArg/toggle/stayontop",
+              "changeSysArg/toggle/stopdeactive",
+              "changeSysArg/false/stopdeactive",
+              "changeSysArg/true/stopdeactive",
+              "changeSysArg/toggle/stopdeactive"
+            ],
+            "geometry": {
+              "height": 230,
+              "ch": 50,
+              "cx": 46,
+              "oy": 25,
+              "opacity": 100,
+              "w": 176,
+              "ox": 141,
+              "width": 133
+            }
+          },
+          {
+            "layer_id": "off_curmoveyes",
+            "bindings": [
+              "setBasicOptionValue/curmoveyes/off"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "off_filedclk",
+            "bindings": [
+              "setBasicOptionValue/filedclk/off"
+            ],
+            "geometry": {
+              "height": 27
+            }
+          },
+          {
+            "layer_id": "off_flowshow",
+            "bindings": [
+              "setBasicOptionValue/flowshow/off"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "off_hmou",
+            "bindings": [
+              "setBasicOptionValue/hmou/off"
+            ],
+            "geometry": {
+              "x": 34
+            }
+          },
+          {
+            "layer_id": "off_hout",
+            "bindings": [
+              "setBasicOptionValue/hout/off"
+            ],
+            "geometry": {
+              "oy": 90
+            }
+          },
+          {
+            "layer_id": "off_hsel",
+            "bindings": [
+              "setBasicOptionValue/hsel/off"
+            ],
+            "geometry": {
+              "w": 251
+            }
+          },
+          {
+            "layer_id": "off_icpreview",
+            "bindings": [
+              "setBasicOptionValue/icpreview/off"
+            ],
+            "geometry": {
+              "ch": 216
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "option_3game2.pbd",
+        "hotspot_count": 65,
+        "hotspots_sample": [
+          {
+            "layer_id": "title",
+            "sort_index": 1165,
+            "width": 222,
+            "height": 13
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1267,
+            "height": 74,
+            "ch": 50
+          },
+          {
+            "layer_id": "sep_a",
+            "sort_index": 1305,
+            "height": 69,
+            "ch": 51
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1318,
+            "height": 53,
+            "ch": 93
+          },
+          {
+            "layer_id": "reset",
+            "sort_index": 1392,
+            "width": 139,
+            "height": 13
+          },
+          {
+            "layer_id": "vspeed_slider",
+            "sort_index": 1747,
+            "height": 88,
+            "ch": 102
+          },
+          {
+            "layer_id": "skipst",
+            "sort_index": 1834,
+            "width": 227,
+            "height": 177
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1839,
+            "height": 1
+          },
+          {
+            "layer_id": "dramatic_chk",
+            "sort_index": 1844,
+            "height": 142,
+            "ch": 95
+          },
+          {
+            "layer_id": "movieskip",
+            "sort_index": 1846,
+            "width": 222,
+            "height": 152
+          },
+          {
+            "layer_id": "skipspeed_numbase",
+            "sort_index": 1924,
+            "height": 33,
+            "ch": 241
+          },
+          {
+            "layer_id": "movierclick",
+            "sort_index": 1929,
+            "width": 156,
+            "height": 61
+          },
+          {
+            "layer_id": "drawspeed_numbase",
+            "sort_index": 2002,
+            "height": 3,
+            "ch": 161
+          },
+          {
+            "layer_id": "vspeed_numbase",
+            "sort_index": 2010,
+            "height": 25,
+            "ch": 1
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 2012,
+            "width": 41,
+            "height": 146,
+            "storagex": 68
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "0_skipst",
+            "bindings": [
+              "setBasicOptionValue/skipst/0"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "0_txv_novo",
+            "bindings": [
+              "setBasicOptionValue/txv_novo/0"
+            ],
+            "geometry": {
+              "height": 27
+            }
+          },
+          {
+            "layer_id": "0_txv_other",
+            "bindings": [
+              "setBasicOptionValue/txv_other/0"
+            ],
+            "geometry": {
+              "w": 85
+            }
+          },
+          {
+            "layer_id": "0_txv_voice",
+            "bindings": [
+              "setBasicOptionValue/txv_voice/0"
+            ],
+            "geometry": {
+              "height": 122
+            }
+          },
+          {
+            "layer_id": "1_skipst",
+            "bindings": [
+              "setBasicOptionValue/skipst/1"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "1_txv_novo",
+            "bindings": [
+              "setBasicOptionValue/txv_novo/1"
+            ],
+            "geometry": {
+              "height": 67
+            }
+          },
+          {
+            "layer_id": "1_txv_other",
+            "bindings": [
+              "setBasicOptionValue/txv_other/1"
+            ],
+            "geometry": {
+              "height": 133
+            }
+          },
+          {
+            "layer_id": "1_txv_voice",
+            "bindings": [
+              "setBasicOptionValue/txv_voice/1"
+            ],
+            "geometry": {
+              "w": 84
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "option_4text.pbd",
+        "hotspot_count": 78,
+        "hotspots_sample": [
+          {
+            "layer_id": "caption",
+            "sort_index": 1062,
+            "height": 8,
+            "ch": 87
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1148,
+            "width": 108,
+            "height": 47
+          },
+          {
+            "layer_id": "reset",
+            "sort_index": 1287,
+            "width": 55,
+            "height": 47
+          },
+          {
+            "layer_id": "sep_a",
+            "sort_index": 1305,
+            "height": 98,
+            "ch": 253
+          },
+          {
+            "layer_id": "sep_d",
+            "sort_index": 1432,
+            "height": 173,
+            "ch": 231
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1498,
+            "height": 11,
+            "ch": 67
+          },
+          {
+            "layer_id": "sep_c",
+            "sort_index": 1535,
+            "height": 63,
+            "ch": 1065
+          },
+          {
+            "layer_id": "winopac_slider",
+            "sort_index": 1847,
+            "height": 137,
+            "ch": 80
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1867,
+            "height": 69
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 1909,
+            "width": 135,
+            "height": 216,
+            "ch": 251,
+            "storagex": 120
+          },
+          {
+            "layer_id": "atextwait_numbase",
+            "sort_index": 2003,
+            "height": 191,
+            "ch": 7
+          },
+          {
+            "layer_id": "textspeed_numbase",
+            "sort_index": 2045,
+            "height": 250,
+            "ch": 159
+          },
+          {
+            "layer_id": "ctrlskip",
+            "sort_index": 2090,
+            "width": 122,
+            "height": 52
+          },
+          {
+            "layer_id": "afterauto",
+            "sort_index": 2102,
+            "width": 28,
+            "height": 234
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2119,
+            "height": 191
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "0_autovwait",
+            "bindings": [
+              "setBasicOptionValue/autovwait/0"
+            ],
+            "geometry": {
+              "x": 231
+            }
+          },
+          {
+            "layer_id": "1_autovwait",
+            "bindings": [
+              "setBasicOptionValue/autovwait/1"
+            ],
+            "geometry": {
+              "oy": 431
+            }
+          },
+          {
+            "layer_id": "2_autovwait",
+            "bindings": [
+              "setBasicOptionValue/autovwait/2"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "changeBasicSlider",
+            "bindings": [
+              "changeBasicSlider"
+            ],
+            "geometry": {
+              "cw": 247
+            }
+          },
+          {
+            "layer_id": "off_afterauto",
+            "bindings": [
+              "setBasicOptionValue/afterauto/off"
+            ],
+            "geometry": {
+              "height": 47
+            }
+          },
+          {
+            "layer_id": "off_afterskip",
+            "bindings": [
+              "setBasicOptionValue/afterskip/off"
+            ],
+            "geometry": {
+              "height": 47
+            }
+          },
+          {
+            "layer_id": "off_ctrlskip",
+            "bindings": [
+              "setBasicOptionValue/ctrlskip/off"
+            ],
+            "geometry": {
+              "ch": 247
+            }
+          },
+          {
+            "layer_id": "off_nohwindow",
+            "bindings": [
+              "setBasicOptionValue/nohwindow/off"
+            ],
+            "geometry": {
+              "x": 163
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "option_5sound1.pbd",
+        "hotspot_count": 204,
+        "hotspots_sample": [
+          {
+            "layer_id": "c",
+            "sort_index": 0,
+            "height": 58
+          },
+          {
+            "layer_id": "se_slider",
+            "sort_index": 560,
+            "height": 18,
+            "ch": 101
+          },
+          {
+            "layer_id": "bgv_slider",
+            "sort_index": 829,
+            "height": 243,
+            "ch": 38
+          },
+          {
+            "layer_id": "bgm_slider",
+            "sort_index": 845,
+            "height": 35,
+            "ch": 175
+          },
+          {
+            "layer_id": "wave_mute",
+            "sort_index": 1034,
+            "height": 207,
+            "ch": 182
+          },
+          {
+            "layer_id": "down_slider",
+            "sort_index": 1054,
+            "height": 67,
+            "ch": 27
+          },
+          {
+            "layer_id": "bgv2_slider",
+            "sort_index": 1061,
+            "height": 87,
+            "ch": 119
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1162,
+            "height": 168,
+            "ch": 44
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1279,
+            "width": 87,
+            "height": 198
+          },
+          {
+            "layer_id": "voice_mute",
+            "sort_index": 1283,
+            "height": 217,
+            "ch": 1
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1307,
+            "height": 92,
+            "ch": 22
+          },
+          {
+            "layer_id": "sysse_slider",
+            "sort_index": 1308,
+            "height": 164,
+            "ch": 78
+          },
+          {
+            "layer_id": "bgm_test",
+            "sort_index": 1354,
+            "height": 15
+          },
+          {
+            "layer_id": "sysvo_slider",
+            "sort_index": 1391,
+            "height": 94,
+            "ch": 114
+          },
+          {
+            "layer_id": "reset",
+            "sort_index": 1394,
+            "width": 57,
+            "height": 102
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "bgm",
+            "bindings": [
+              "setAudioOnOff/bgm/toggle",
+              "setAudioOnOff/bgm/0",
+              "setAudioOnOff/bgm/1",
+              "setAudioOnOff/bgm/toggle"
+            ],
+            "geometry": {
+              "height": 58
+            }
+          },
+          {
+            "layer_id": "bgv",
+            "bindings": [
+              "setAudioOnOff/bgv/toggle",
+              "setAudioOnOff/bgv/0",
+              "setAudioOnOff/bgv/1",
+              "setAudioOnOff/bgv/toggle"
+            ],
+            "geometry": {
+              "w": 30,
+              "ox": 200
+            }
+          },
+          {
+            "layer_id": "bgv2",
+            "bindings": [
+              "setAudioOnOff/bgv2/toggle",
+              "setAudioOnOff/bgv2/0",
+              "setAudioOnOff/bgv2/1",
+              "setAudioOnOff/bgv2/toggle"
+            ],
+            "geometry": {
+              "cx": 199,
+              "w": 37
+            }
+          },
+          {
+            "layer_id": "down",
+            "bindings": [
+              "setAudioOnOff/down/toggle",
+              "setAudioOnOff/down/0",
+              "setAudioOnOff/down/1",
+              "setAudioOnOff/down/toggle"
+            ],
+            "geometry": {
+              "ch": 211,
+              "height": 249
+            }
+          },
+          {
+            "layer_id": "movie",
+            "bindings": [
+              "setAudioOnOff/movie/toggle",
+              "setAudioOnOff/movie/0",
+              "setAudioOnOff/movie/1",
+              "setAudioOnOff/movie/toggle"
+            ],
+            "geometry": {
+              "x": 104,
+              "w": 194
+            }
+          },
+          {
+            "layer_id": "off_lowprisysvo",
+            "bindings": [
+              "setBasicOptionValue/lowprisysvo/off"
+            ],
+            "geometry": {
+              "ch": 52
+            }
+          },
+          {
+            "layer_id": "off_mvaudiosample",
+            "bindings": [
+              "setBasicOptionValue/mvaudiosample/off"
+            ],
+            "geometry": {
+              "height": 176
+            }
+          },
+          {
+            "layer_id": "off_voicecut",
+            "bindings": [
+              "setBasicOptionValue/voicecut/off"
+            ],
+            "geometry": {
+              "x": 14
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "option_5sound2.pbd",
+        "hotspot_count": 200,
+        "hotspots_sample": [
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1104,
+            "height": 146,
+            "ch": 72
+          },
+          {
+            "layer_id": "sep_a",
+            "sort_index": 1303,
+            "height": 144,
+            "ch": 251
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1938,
+            "height": 71
+          },
+          {
+            "layer_id": "sysvoplay15_chk",
+            "sort_index": 1953,
+            "height": 135,
+            "ch": 133
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 2043,
+            "height": 82,
+            "storagex": 12
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2055,
+            "height": 103
+          },
+          {
+            "layer_id": "sysvomask_area",
+            "sort_index": 2239,
+            "width": 37,
+            "height": 59
+          },
+          {
+            "layer_id": "sysvo5_rev",
+            "sort_index": 2310,
+            "height": 38
+          },
+          {
+            "layer_id": "sysvo7_rev",
+            "sort_index": 2358,
+            "height": 81
+          },
+          {
+            "layer_id": "sysvo6_rev",
+            "sort_index": 2450,
+            "height": 52
+          },
+          {
+            "layer_id": "sysvo4_rev",
+            "sort_index": 2504,
+            "height": 51
+          },
+          {
+            "layer_id": "sep_b",
+            "sort_index": 2514,
+            "height": 241,
+            "ch": 142
+          },
+          {
+            "layer_id": "sysvo0_rev",
+            "sort_index": 2515,
+            "height": 80
+          },
+          {
+            "layer_id": "sysvo8_rev",
+            "sort_index": 2520,
+            "height": 238
+          },
+          {
+            "layer_id": "sysvo2_rev",
+            "sort_index": 2521,
+            "height": 132
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "changeSysvoPlay",
+            "bindings": [
+              "changeSysvoPlay/attention/0/tgl",
+              "changeSysvoPlay/attention/0/off",
+              "changeSysvoPlay/attention/0/on",
+              "changeSysvoPlay/attention/0/tgl",
+              "changeSysvoPlay/option/10/tgl",
+              "changeSysvoPlay/option/10/off",
+              "changeSysvoPlay/option/10/on",
+              "changeSysvoPlay/option/10/tgl",
+              "changeSysvoPlay/optpage/11/tgl",
+              "changeSysvoPlay/optpage/11/off",
+              "changeSysvoPlay/optpage/11/on",
+              "changeSysvoPlay/optpage/11/tgl",
+              "changeSysvoPlay/extra/12/tgl",
+              "changeSysvoPlay/extra/12/off",
+              "changeSysvoPlay/extra/12/on",
+              "changeSysvoPlay/extra/12/tgl",
+              "changeSysvoPlay/after/13/tgl",
+              "changeSysvoPlay/after/13/off",
+              "changeSysvoPlay/after/13/on",
+              "changeSysvoPlay/after/13/tgl",
+              "changeSysvoPlay/dialog/14/tgl",
+              "changeSysvoPlay/dialog/14/off",
+              "changeSysvoPlay/dialog/14/on",
+              "changeSysvoPlay/dialog/14/tgl",
+              "changeSysvoPlay/onexit/15/tgl",
+              "changeSysvoPlay/onexit/15/off",
+              "changeSysvoPlay/onexit/15/on",
+              "changeSysvoPlay/onexit/15/tgl",
+              "changeSysvoPlay/brand/1/tgl",
+              "changeSysvoPlay/brand/1/off",
+              "changeSysvoPlay/brand/1/on",
+              "changeSysvoPlay/brand/1/tgl",
+              "changeSysvoPlay/title/2/tgl",
+              "changeSysvoPlay/title/2/off",
+              "changeSysvoPlay/title/2/on",
+              "changeSysvoPlay/title/2/tgl",
+              "changeSysvoPlay/custom/3/tgl",
+              "changeSysvoPlay/custom/3/off",
+              "changeSysvoPlay/custom/3/on",
+              "changeSysvoPlay/custom/3/tgl",
+              "changeSysvoPlay/save/4/tgl",
+              "changeSysvoPlay/save/4/off",
+              "changeSysvoPlay/save/4/on",
+              "changeSysvoPlay/save/4/tgl",
+              "changeSysvoPlay/load/5/tgl",
+              "changeSysvoPlay/load/5/off",
+              "changeSysvoPlay/load/5/on",
+              "changeSysvoPlay/load/5/tgl",
+              "changeSysvoPlay/voice/6/tgl",
+              "changeSysvoPlay/voice/6/off",
+              "changeSysvoPlay/voice/6/on",
+              "changeSysvoPlay/voice/6/tgl",
+              "changeSysvoPlay/vsave/7/tgl",
+              "changeSysvoPlay/vsave/7/off",
+              "changeSysvoPlay/vsave/7/on",
+              "changeSysvoPlay/vsave/7/tgl",
+              "changeSysvoPlay/backlog/8/tgl",
+              "changeSysvoPlay/backlog/8/off",
+              "changeSysvoPlay/backlog/8/on",
+              "changeSysvoPlay/backlog/8/tgl",
+              "changeSysvoPlay/chart/9/tgl",
+              "changeSysvoPlay/chart/9/off",
+              "changeSysvoPlay/chart/9/on",
+              "changeSysvoPlay/chart/9/tgl"
+            ],
+            "geometry": {
+              "height": 81,
+              "width": 160,
+              "y": 4,
+              "cy": 224,
+              "cx": 107,
+              "w": 198,
+              "ch": 139,
+              "cw": 207,
+              "ox": 54,
+              "x": 157
+            }
+          },
+          {
+            "layer_id": "off_sysvo0",
+            "bindings": [
+              "setBasicOptionValue/sysvo0/off"
+            ],
+            "geometry": {
+              "ch": 187
+            }
+          },
+          {
+            "layer_id": "off_sysvo1",
+            "bindings": [
+              "setBasicOptionValue/sysvo1/off"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "off_sysvo10",
+            "bindings": [
+              "setBasicOptionValue/sysvo10/off"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "off_sysvo11",
+            "bindings": [
+              "setBasicOptionValue/sysvo11/off"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "off_sysvo2",
+            "bindings": [
+              "setBasicOptionValue/sysvo2/off"
+            ],
+            "geometry": {
+              "width": 65
+            }
+          },
+          {
+            "layer_id": "off_sysvo3",
+            "bindings": [
+              "setBasicOptionValue/sysvo3/off"
+            ],
+            "geometry": {
+              "width": 41
+            }
+          },
+          {
+            "layer_id": "off_sysvo4",
+            "bindings": [
+              "setBasicOptionValue/sysvo4/off"
+            ],
+            "geometry": {
+              "width": 49
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "option_6dialog.pbd",
+        "hotspot_count": 138,
+        "hotspots_sample": [
+          {
+            "layer_id": "caption",
+            "sort_index": 1098,
+            "height": 175,
+            "ch": 103
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1268,
+            "width": 139,
+            "height": 228
+          },
+          {
+            "layer_id": "sep_a",
+            "sort_index": 1286,
+            "height": 1,
+            "ch": 125
+          },
+          {
+            "layer_id": "sep_b",
+            "sort_index": 1360,
+            "width": 1238,
+            "height": 186
+          },
+          {
+            "layer_id": "cf_resume",
+            "sort_index": 1364,
+            "width": 27,
+            "height": 176
+          },
+          {
+            "layer_id": "reset",
+            "sort_index": 1391,
+            "width": 89,
+            "height": 228
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1436,
+            "height": 69,
+            "ch": 41
+          },
+          {
+            "layer_id": "cf_init_off",
+            "sort_index": 1795,
+            "width": 169,
+            "height": 78
+          },
+          {
+            "layer_id": "cf_save_off",
+            "sort_index": 1802,
+            "width": 42,
+            "height": 212
+          },
+          {
+            "layer_id": "cf_next_off",
+            "sort_index": 1813,
+            "width": 169,
+            "height": 11
+          },
+          {
+            "layer_id": "cf_swap_off",
+            "sort_index": 1813,
+            "width": 93,
+            "height": 223
+          },
+          {
+            "layer_id": "cf_copy_off",
+            "sort_index": 1857,
+            "width": 159,
+            "height": 205
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1890,
+            "height": 149
+          },
+          {
+            "layer_id": "cf_exit_off",
+            "sort_index": 1961,
+            "width": 106,
+            "height": 176
+          },
+          {
+            "layer_id": "cf_jump_off",
+            "sort_index": 1966,
+            "width": 210,
+            "height": 50
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "changeOnOffProp",
+            "bindings": [
+              "changeOnOffProp/cf_backto/SystemConfig.askBackTo/toggle",
+              "changeOnOffProp/cf_backto/SystemConfig.askBackTo/false",
+              "changeOnOffProp/cf_backto/SystemConfig.askBackTo/true",
+              "changeOnOffProp/cf_backto/SystemConfig.askBackTo/toggle",
+              "changeOnOffProp/cf_copy/SystemConfig.askCopy/toggle",
+              "changeOnOffProp/cf_copy/SystemConfig.askCopy/false",
+              "changeOnOffProp/cf_copy/SystemConfig.askCopy/true",
+              "changeOnOffProp/cf_copy/SystemConfig.askCopy/toggle",
+              "changeOnOffProp/cf_delete/SystemConfig.askDelete/toggle",
+              "changeOnOffProp/cf_delete/SystemConfig.askDelete/false",
+              "changeOnOffProp/cf_delete/SystemConfig.askDelete/true",
+              "changeOnOffProp/cf_delete/SystemConfig.askDelete/toggle",
+              "changeOnOffProp/cf_dsave/SystemConfig.askDSave/toggle",
+              "changeOnOffProp/cf_dsave/SystemConfig.askDSave/false",
+              "changeOnOffProp/cf_dsave/SystemConfig.askDSave/true",
+              "changeOnOffProp/cf_dsave/SystemConfig.askDSave/toggle",
+              "changeOnOffProp/cf_exit/SystemConfig.askExit/toggle",
+              "changeOnOffProp/cf_exit/SystemConfig.askExit/false",
+              "changeOnOffProp/cf_exit/SystemConfig.askExit/true",
+              "changeOnOffProp/cf_exit/SystemConfig.askExit/toggle",
+              "changeOnOffProp/cf_flow/SystemConfig.askFlow/toggle",
+              "changeOnOffProp/cf_flow/SystemConfig.askFlow/false",
+              "changeOnOffProp/cf_flow/SystemConfig.askFlow/true",
+              "changeOnOffProp/cf_flow/SystemConfig.askFlow/toggle",
+              "changeOnOffProp/cf_init/SystemConfig.askInit/toggle",
+              "changeOnOffProp/cf_init/SystemConfig.askInit/false",
+              "changeOnOffProp/cf_init/SystemConfig.askInit/true",
+              "changeOnOffProp/cf_init/SystemConfig.askInit/toggle",
+              "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/toggle",
+              "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/false",
+              "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/true",
+              "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/toggle",
+              "changeOnOffProp/cf_jump/SystemConfig.askJump/toggle",
+              "changeOnOffProp/cf_jump/SystemConfig.askJump/false",
+              "changeOnOffProp/cf_jump/SystemConfig.askJump/true",
+              "changeOnOffProp/cf_jump/SystemConfig.askJump/toggle",
+              "changeOnOffProp/cf_load/SystemConfig.askLoad/toggle",
+              "changeOnOffProp/cf_load/SystemConfig.askLoad/false",
+              "changeOnOffProp/cf_load/SystemConfig.askLoad/true",
+              "changeOnOffProp/cf_load/SystemConfig.askLoad/toggle",
+              "changeOnOffProp/cf_move/SystemConfig.askMove/toggle",
+              "changeOnOffProp/cf_move/SystemConfig.askMove/false",
+              "changeOnOffProp/cf_move/SystemConfig.askMove/true",
+              "changeOnOffProp/cf_move/SystemConfig.askMove/toggle",
+              "changeOnOffProp/cf_next/SystemConfig.askNext/toggle",
+              "changeOnOffProp/cf_next/SystemConfig.askNext/false",
+              "changeOnOffProp/cf_next/SystemConfig.askNext/true",
+              "changeOnOffProp/cf_next/SystemConfig.askNext/toggle",
+              "changeOnOffProp/cf_nextscn/SystemConfig.askNextScn/toggle",
+              "changeOnOffProp/cf_nextscn/SystemConfig.askNextScn/false",
+              "changeOnOffProp/cf_nextscn/SystemConfig.askNextScn/true",
+              "changeOnOffProp/cf_nextscn/SystemConfig.askNextScn/toggle",
+              "changeOnOffProp/cf_overwrite/SystemConfig.askOverwrite/toggle",
+              "changeOnOffProp/cf_overwrite/SystemConfig.askOverwrite/false",
+              "changeOnOffProp/cf_overwrite/SystemConfig.askOverwrite/true",
+              "changeOnOffProp/cf_overwrite/SystemConfig.askOverwrite/toggle",
+              "changeOnOffProp/cf_prevscn/SystemConfig.askPrevScn/toggle",
+              "changeOnOffProp/cf_prevscn/SystemConfig.askPrevScn/false",
+              "changeOnOffProp/cf_prevscn/SystemConfig.askPrevScn/true",
+              "changeOnOffProp/cf_prevscn/SystemConfig.askPrevScn/toggle",
+              "changeOnOffProp/cf_qload/SystemConfig.askQLoad/toggle",
+              "changeOnOffProp/cf_qload/SystemConfig.askQLoad/false",
+              "changeOnOffProp/cf_qload/SystemConfig.askQLoad/true",
+              "changeOnOffProp/cf_qload/SystemConfig.askQLoad/toggle",
+              "changeOnOffProp/cf_qsave/SystemConfig.askQSave/toggle",
+              "changeOnOffProp/cf_qsave/SystemConfig.askQSave/false",
+              "changeOnOffProp/cf_qsave/SystemConfig.askQSave/true",
+              "changeOnOffProp/cf_qsave/SystemConfig.askQSave/toggle",
+              "changeOnOffProp/cf_resume/SystemConfig.askResume/toggle",
+              "changeOnOffProp/cf_resume/SystemConfig.askResume/false",
+              "changeOnOffProp/cf_resume/SystemConfig.askResume/true",
+              "changeOnOffProp/cf_resume/SystemConfig.askResume/toggle",
+              "changeOnOffProp/cf_save/SystemConfig.askSave/toggle",
+              "changeOnOffProp/cf_save/SystemConfig.askSave/false",
+              "changeOnOffProp/cf_save/SystemConfig.askSave/true",
+              "changeOnOffProp/cf_save/SystemConfig.askSave/toggle",
+              "changeOnOffProp/cf_swap/SystemConfig.askSwap/toggle",
+              "changeOnOffProp/cf_swap/SystemConfig.askSwap/false",
+              "changeOnOffProp/cf_swap/SystemConfig.askSwap/true",
+              "changeOnOffProp/cf_swap/SystemConfig.askSwap/toggle",
+              "changeOnOffProp/cf_title/SystemConfig.askTitle/toggle",
+              "changeOnOffProp/cf_title/SystemConfig.askTitle/false",
+              "changeOnOffProp/cf_title/SystemConfig.askTitle/true",
+              "changeOnOffProp/cf_title/SystemConfig.askTitle/toggle",
+              "changeOnOffProp/cf_vsave/SystemConfig.askVSave/toggle",
+              "changeOnOffProp/cf_vsave/SystemConfig.askVSave/false",
+              "changeOnOffProp/cf_vsave/SystemConfig.askVSave/true",
+              "changeOnOffProp/cf_vsave/SystemConfig.askVSave/toggle"
+            ],
+            "geometry": {
+              "height": 228,
+              "y": 27,
+              "cw": 213,
+              "oy": 557,
+              "width": 192,
+              "x": 5
+            }
+          },
+          {
+            "layer_id": "reset",
+            "bindings": [
+              "reset"
+            ],
+            "geometry": {
+              "width": 47
+            }
+          },
+          {
+            "layer_id": "setAllConfirm",
+            "bindings": [
+              "setAllConfirm/0",
+              "setAllConfirm/1"
+            ],
+            "geometry": {
+              "x": 69,
+              "height": 212
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "option_7mouse.pbd",
+        "hotspot_count": 154,
+        "hotspots_sample": [
+          {
+            "layer_id": "gsicon24",
+            "sort_index": 1160,
+            "width": 177,
+            "height": 118
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1234,
+            "width": 246,
+            "height": 244,
+            "ch": 56
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1238,
+            "height": 15,
+            "ch": 112
+          },
+          {
+            "layer_id": "mouse2",
+            "sort_index": 1290,
+            "height": 198,
+            "ch": 104
+          },
+          {
+            "layer_id": "reset",
+            "sort_index": 1303,
+            "width": 234,
+            "height": 244
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1491,
+            "height": 122,
+            "ch": 222
+          },
+          {
+            "layer_id": "sep_a",
+            "sort_index": 1524,
+            "height": 208,
+            "ch": 185
+          },
+          {
+            "layer_id": "mouse1",
+            "sort_index": 1664,
+            "height": 244,
+            "ch": 201
+          },
+          {
+            "layer_id": "gsenable_chk",
+            "sort_index": 1737,
+            "height": 152
+          },
+          {
+            "layer_id": "gsicon6",
+            "sort_index": 1795,
+            "width": 134,
+            "height": 26
+          },
+          {
+            "layer_id": "gsicon0",
+            "sort_index": 1796,
+            "width": 176,
+            "height": 60
+          },
+          {
+            "layer_id": "gsicon4",
+            "sort_index": 1815,
+            "width": 215,
+            "height": 95
+          },
+          {
+            "layer_id": "gsicon8",
+            "sort_index": 1847,
+            "width": 247,
+            "height": 23
+          },
+          {
+            "layer_id": "gsicon7",
+            "sort_index": 1851,
+            "width": 130,
+            "height": 140
+          },
+          {
+            "layer_id": "gsicon2",
+            "sort_index": 1881,
+            "width": 238,
+            "height": 231
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "off_gsenable",
+            "bindings": [
+              "setBasicOptionValue/gsenable/off"
+            ],
+            "geometry": {
+              "w": 152
+            }
+          },
+          {
+            "layer_id": "off_gsflick",
+            "bindings": [
+              "setBasicOptionValue/gsflick/off"
+            ],
+            "geometry": {
+              "y": 237
+            }
+          },
+          {
+            "layer_id": "off_gsmouse",
+            "bindings": [
+              "setBasicOptionValue/gsmouse/off"
+            ],
+            "geometry": {
+              "height": 226
+            }
+          },
+          {
+            "layer_id": "on_gsenable",
+            "bindings": [
+              "setBasicOptionValue/gsenable/on"
+            ],
+            "geometry": {
+              "cw": 37
+            }
+          },
+          {
+            "layer_id": "on_gsflick",
+            "bindings": [
+              "setBasicOptionValue/gsflick/on"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "on_gsmouse",
+            "bindings": [
+              "setBasicOptionValue/gsmouse/on"
+            ],
+            "geometry": {
+              "height": 37
+            }
+          },
+          {
+            "layer_id": "reset",
+            "bindings": [
+              "reset"
+            ],
+            "geometry": {
+              "width": 92
+            }
+          },
+          {
+            "layer_id": "toggle_gsenable",
+            "bindings": [
+              "setBasicOptionValue/gsenable/toggle",
+              "setBasicOptionValue/gsenable/toggle"
+            ],
+            "geometry": {
+              "x": 165,
+              "ch": 56
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "option_8keyboard1.pbd",
+        "hotspot_count": 120,
+        "hotspots_sample": [
+          {
+            "layer_id": "title",
+            "sort_index": 1055,
+            "width": 219,
+            "height": 217
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1196,
+            "height": 148,
+            "ch": 58
+          },
+          {
+            "layer_id": "sep_b",
+            "sort_index": 1309,
+            "width": 1187,
+            "height": 126
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1320,
+            "height": 37,
+            "ch": 108
+          },
+          {
+            "layer_id": "keyboard",
+            "sort_index": 1341,
+            "height": 212,
+            "ch": 80
+          },
+          {
+            "layer_id": "sep_a",
+            "sort_index": 1385,
+            "height": 125,
+            "ch": 58
+          },
+          {
+            "layer_id": "reset",
+            "sort_index": 1526,
+            "width": 6,
+            "height": 137
+          },
+          {
+            "layer_id": "key_log_right",
+            "sort_index": 1817,
+            "width": 155,
+            "height": 81
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1993,
+            "height": 141
+          },
+          {
+            "layer_id": "key_ctrl_right",
+            "sort_index": 2051,
+            "width": 44,
+            "height": 180
+          },
+          {
+            "layer_id": "key_auto_right",
+            "sort_index": 2052,
+            "width": 164,
+            "height": 242
+          },
+          {
+            "layer_id": "back",
+            "sort_index": 2065,
+            "width": 90,
+            "height": 141
+          },
+          {
+            "layer_id": "key_skip_right",
+            "sort_index": 2142,
+            "width": 243,
+            "height": 171
+          },
+          {
+            "layer_id": "key_next_right",
+            "sort_index": 2162,
+            "width": 41,
+            "height": 224
+          },
+          {
+            "layer_id": "key_prev_right",
+            "sort_index": 2173,
+            "width": 100,
+            "height": 136
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "reset",
+            "bindings": [
+              "reset"
+            ],
+            "geometry": {
+              "width": 100
+            }
+          },
+          {
+            "layer_id": "setKeyBind",
+            "bindings": [
+              "setKeyBind/0/auto",
+              "setKeyBind/1/auto",
+              "setKeyBind/0/backone",
+              "setKeyBind/1/backone",
+              "setKeyBind/0/backskip",
+              "setKeyBind/1/backskip",
+              "setKeyBind/0/click",
+              "setKeyBind/1/click",
+              "setKeyBind/0/ctrl",
+              "setKeyBind/1/ctrl",
+              "setKeyBind/0/dsave",
+              "setKeyBind/1/dsave",
+              "setKeyBind/0/hide",
+              "setKeyBind/1/hide",
+              "setKeyBind/0/load",
+              "setKeyBind/1/load",
+              "setKeyBind/0/log",
+              "setKeyBind/1/log",
+              "setKeyBind/0/next",
+              "setKeyBind/1/next",
+              "setKeyBind/0/nextscn",
+              "setKeyBind/1/nextscn",
+              "setKeyBind/0/option",
+              "setKeyBind/1/option",
+              "setKeyBind/0/pagedown",
+              "setKeyBind/1/pagedown",
+              "setKeyBind/0/pageup",
+              "setKeyBind/1/pageup",
+              "setKeyBind/0/panic",
+              "setKeyBind/1/panic",
+              "setKeyBind/0/prev",
+              "setKeyBind/1/prev",
+              "setKeyBind/0/prevscn",
+              "setKeyBind/1/prevscn",
+              "setKeyBind/0/qload",
+              "setKeyBind/1/qload",
+              "setKeyBind/0/qsave",
+              "setKeyBind/1/qsave",
+              "setKeyBind/0/qvsave",
+              "setKeyBind/1/qvsave",
+              "setKeyBind/0/save",
+              "setKeyBind/1/save",
+              "setKeyBind/0/scnchart",
+              "setKeyBind/1/scnchart",
+              "setKeyBind/0/screen",
+              "setKeyBind/1/screen",
+              "setKeyBind/0/skip",
+              "setKeyBind/1/skip",
+              "setKeyBind/0/snapshot",
+              "setKeyBind/1/snapshot",
+              "setKeyBind/0/title",
+              "setKeyBind/1/title",
+              "setKeyBind/0/volume",
+              "setKeyBind/1/volume",
+              "setKeyBind/0/vreplay",
+              "setKeyBind/1/vreplay",
+              "setKeyBind/0/vsave",
+              "setKeyBind/1/vsave"
+            ],
+            "geometry": {
+              "height": 187,
+              "ox": 82,
+              "cx": 223,
+              "oy": 139,
+              "w": 34,
+              "ch": 58,
+              "width": 53,
+              "x": 139,
+              "y": 73
+            }
+          },
+          {
+            "layer_id": "showKeyBind",
+            "bindings": [
+              "showKeyBind"
+            ],
+            "geometry": {
+              "width": 252
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "option_9gamepad.pbd",
+        "hotspot_count": 177,
+        "hotspots_sample": [
+          {
+            "layer_id": "gsicon24",
+            "sort_index": 1034,
+            "width": 71,
+            "height": 231
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1200,
+            "height": 223,
+            "ch": 195
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1226,
+            "width": 188,
+            "height": 169,
+            "ch": 146
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1301,
+            "height": 27,
+            "ch": 66
+          },
+          {
+            "layer_id": "reset",
+            "sort_index": 1378,
+            "width": 3,
+            "height": 120
+          },
+          {
+            "layer_id": "sep_a",
+            "sort_index": 1457,
+            "height": 186,
+            "ch": 139
+          },
+          {
+            "layer_id": "drag",
+            "sort_index": 1524,
+            "width": 8,
+            "height": 132
+          },
+          {
+            "layer_id": "gamepad",
+            "sort_index": 1526,
+            "height": 255,
+            "ch": 151
+          },
+          {
+            "layer_id": "gsicon25",
+            "sort_index": 1795,
+            "width": 144,
+            "height": 185
+          },
+          {
+            "layer_id": "gsicon3",
+            "sort_index": 1815,
+            "width": 77,
+            "height": 185
+          },
+          {
+            "layer_id": "gsicon7",
+            "sort_index": 1844,
+            "width": 235,
+            "height": 182
+          },
+          {
+            "layer_id": "gsicon6",
+            "sort_index": 1847,
+            "width": 132,
+            "height": 125
+          },
+          {
+            "layer_id": "gsicon5",
+            "sort_index": 1851,
+            "width": 20,
+            "height": 151
+          },
+          {
+            "layer_id": "gsicon1",
+            "sort_index": 1881,
+            "width": 66,
+            "height": 46
+          },
+          {
+            "layer_id": "gsicon2",
+            "sort_index": 1886,
+            "width": 21,
+            "height": 194
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "off_engamepad",
+            "bindings": [
+              "setBasicOptionValue/engamepad/off"
+            ],
+            "geometry": {
+              "w": 204
+            }
+          },
+          {
+            "layer_id": "off_gsenable",
+            "bindings": [
+              "setBasicOptionValue/gsenable/off"
+            ],
+            "geometry": {
+              "w": 75
+            }
+          },
+          {
+            "layer_id": "off_gsflick",
+            "bindings": [
+              "setBasicOptionValue/gsflick/off"
+            ],
+            "geometry": {
+              "y": 192
+            }
+          },
+          {
+            "layer_id": "off_gsmouse",
+            "bindings": [
+              "setBasicOptionValue/gsmouse/off"
+            ],
+            "geometry": {
+              "height": 165
+            }
+          },
+          {
+            "layer_id": "on_engamepad",
+            "bindings": [
+              "setBasicOptionValue/engamepad/on"
+            ],
+            "geometry": {
+              "ch": 152
+            }
+          },
+          {
+            "layer_id": "on_gsenable",
+            "bindings": [
+              "setBasicOptionValue/gsenable/on"
+            ],
+            "geometry": {
+              "ox": 143
+            }
+          },
+          {
+            "layer_id": "on_gsflick",
+            "bindings": [
+              "setBasicOptionValue/gsflick/on"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "on_gsmouse",
+            "bindings": [
+              "setBasicOptionValue/gsmouse/on"
+            ],
+            "geometry": {
+              "height": 56
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "option_9gamepad2_assign.pbd",
+        "hotspot_count": 40,
+        "hotspots_sample": [
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1154,
+            "height": 34,
+            "ch": 94
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 1235,
+            "height": 235,
+            "storagex": 52
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1890,
+            "height": 83
+          },
+          {
+            "layer_id": "button_r3",
+            "sort_index": 1936,
+            "height": 192,
+            "ch": 59
+          },
+          {
+            "layer_id": "button_x",
+            "sort_index": 2088,
+            "height": 92,
+            "ch": 3
+          },
+          {
+            "layer_id": "button_a",
+            "sort_index": 2135,
+            "height": 68,
+            "ch": 57
+          },
+          {
+            "layer_id": "button_b",
+            "sort_index": 2160,
+            "height": 126,
+            "ch": 71
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2247,
+            "height": 68
+          },
+          {
+            "layer_id": "button_r2",
+            "sort_index": 2344,
+            "height": 252,
+            "ch": 6
+          },
+          {
+            "layer_id": "button_start",
+            "sort_index": 2349,
+            "ch": 207
+          },
+          {
+            "layer_id": "button_l1",
+            "sort_index": 2398,
+            "height": 107,
+            "ch": 111
+          },
+          {
+            "layer_id": "button_r1",
+            "sort_index": 2485,
+            "height": 65,
+            "ch": 189
+          },
+          {
+            "layer_id": "button_l2",
+            "sort_index": 2519,
+            "height": 145,
+            "ch": 56
+          },
+          {
+            "layer_id": "button_l3",
+            "sort_index": 2548,
+            "height": 156,
+            "ch": 17
+          },
+          {
+            "layer_id": "option_9gamepad__pack",
+            "sort_index": 3098,
+            "width": 181
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "option_cmds.pbd",
+        "hotspot_count": 42,
+        "hotspots_sample": [
+          {
+            "layer_id": "layer",
+            "sort_index": 2057,
+            "height": 146
+          },
+          {
+            "layer_id": "arrow",
+            "sort_index": null,
+            "ch": 238
+          },
+          {
+            "layer_id": "auto",
+            "sort_index": null,
+            "ch": 255
+          },
+          {
+            "layer_id": "backone",
+            "sort_index": null,
+            "ch": 160
+          },
+          {
+            "layer_id": "backskip",
+            "sort_index": null,
+            "ch": 125
+          },
+          {
+            "layer_id": "click",
+            "sort_index": null,
+            "ch": 201
+          },
+          {
+            "layer_id": "cr",
+            "sort_index": null,
+            "cw": 139
+          },
+          {
+            "layer_id": "custom",
+            "sort_index": null,
+            "ch": 5
+          },
+          {
+            "layer_id": "deftext",
+            "sort_index": null,
+            "ch": 99
+          },
+          {
+            "layer_id": "dsave",
+            "sort_index": null,
+            "ch": 61
+          },
+          {
+            "layer_id": "hide",
+            "sort_index": null,
+            "ch": 59
+          },
+          {
+            "layer_id": "key_ctrl",
+            "sort_index": null,
+            "ch": 9
+          },
+          {
+            "layer_id": "key_pagedown",
+            "sort_index": null,
+            "ch": 20
+          },
+          {
+            "layer_id": "key_pageup",
+            "sort_index": null,
+            "ch": 244
+          },
+          {
+            "layer_id": "load",
+            "sort_index": null,
+            "ch": 63
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "option_keyinput.pbd",
+        "hotspot_count": 143,
+        "hotspots_sample": [
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1159,
+            "height": 179,
+            "ch": 5
+          },
+          {
+            "layer_id": "frame",
+            "sort_index": 1239,
+            "height": 18,
+            "ch": 34
+          },
+          {
+            "layer_id": "key_x",
+            "sort_index": 1287,
+            "width": 63,
+            "height": 141
+          },
+          {
+            "layer_id": "key_n",
+            "sort_index": 1291,
+            "width": 102,
+            "height": 37
+          },
+          {
+            "layer_id": "key_t",
+            "sort_index": 1292,
+            "width": 36,
+            "height": 99
+          },
+          {
+            "layer_id": "key_5",
+            "sort_index": 1297,
+            "width": 9,
+            "height": 151
+          },
+          {
+            "layer_id": "key_q",
+            "sort_index": 1306,
+            "width": 180,
+            "height": 243
+          },
+          {
+            "layer_id": "key_7",
+            "sort_index": 1309,
+            "width": 97,
+            "height": 155
+          },
+          {
+            "layer_id": "key_k",
+            "sort_index": 1317,
+            "width": 174,
+            "height": 156
+          },
+          {
+            "layer_id": "key_8",
+            "sort_index": 1324,
+            "width": 66,
+            "height": 11
+          },
+          {
+            "layer_id": "key_f",
+            "sort_index": 1346,
+            "width": 253,
+            "height": 203
+          },
+          {
+            "layer_id": "key_3",
+            "sort_index": 1351,
+            "width": 80,
+            "height": 236
+          },
+          {
+            "layer_id": "key_9",
+            "sort_index": 1358,
+            "width": 74,
+            "height": 166
+          },
+          {
+            "layer_id": "key_p",
+            "sort_index": 1362,
+            "width": 111,
+            "height": 189
+          },
+          {
+            "layer_id": "key_r",
+            "sort_index": 1363,
+            "width": 226,
+            "height": 182
+          }
+        ],
+        "bindings_sample": []
+      }
+    ],
+    "file": [
+      {
+        "pbd": "file.pbd",
+        "hotspot_count": 75,
+        "hotspots_sample": [
+          {
+            "layer_id": "title",
+            "sort_index": 1222,
+            "width": 192,
+            "height": 249
+          },
+          {
+            "layer_id": "edit_hold",
+            "sort_index": 1503,
+            "height": 155,
+            "ch": 151
+          },
+          {
+            "layer_id": "page_add",
+            "sort_index": 1740,
+            "width": 50,
+            "height": 169
+          },
+          {
+            "layer_id": "page_up1",
+            "sort_index": 1758,
+            "width": 187,
+            "height": 198
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1876,
+            "height": 146
+          },
+          {
+            "layer_id": "edit_remove",
+            "sort_index": 1881,
+            "width": 25,
+            "height": 17
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 1906,
+            "height": 205
+          },
+          {
+            "layer_id": "page_up10",
+            "sort_index": 2090,
+            "width": 25,
+            "height": 91
+          },
+          {
+            "layer_id": "page_dw100",
+            "sort_index": 2132,
+            "width": 112,
+            "height": 3
+          },
+          {
+            "layer_id": "page_sub",
+            "sort_index": 2225,
+            "width": 216,
+            "height": 64
+          },
+          {
+            "layer_id": "page_numbase",
+            "sort_index": 2241,
+            "height": 102,
+            "ch": 235
+          },
+          {
+            "layer_id": "back",
+            "sort_index": 2248,
+            "width": 29,
+            "height": 146
+          },
+          {
+            "layer_id": "edit_copy",
+            "sort_index": 2304,
+            "width": 199,
+            "height": 178
+          },
+          {
+            "layer_id": "page_dw1",
+            "sort_index": 2392,
+            "width": 219,
+            "height": 104
+          },
+          {
+            "layer_id": "sdmove_from",
+            "sort_index": 2399,
+            "width": 150,
+            "height": 24
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "file_load.pbd",
+        "hotspot_count": 88,
+        "hotspots_sample": [
+          {
+            "layer_id": "caption",
+            "sort_index": 1032,
+            "height": 61,
+            "ch": 23
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1156,
+            "width": 223,
+            "height": 197
+          },
+          {
+            "layer_id": "page_up1",
+            "sort_index": 1774,
+            "width": 177,
+            "height": 237
+          },
+          {
+            "layer_id": "page_add",
+            "sort_index": 1777,
+            "width": 90,
+            "height": 159
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1915,
+            "height": 41
+          },
+          {
+            "layer_id": "detail_nodata",
+            "sort_index": 1962,
+            "height": 76,
+            "ch": 83
+          },
+          {
+            "layer_id": "edit_remove",
+            "sort_index": 1992,
+            "width": 103,
+            "height": 235
+          },
+          {
+            "layer_id": "page_sub",
+            "sort_index": 2048,
+            "width": 235,
+            "height": 106
+          },
+          {
+            "layer_id": "page_dw100",
+            "sort_index": 2068,
+            "width": 2,
+            "height": 23
+          },
+          {
+            "layer_id": "page_numbase",
+            "sort_index": 2137,
+            "height": 138,
+            "ch": 238
+          },
+          {
+            "layer_id": "back",
+            "sort_index": 2250,
+            "width": 87,
+            "height": 41
+          },
+          {
+            "layer_id": "page_up10",
+            "sort_index": 2252,
+            "width": 198,
+            "height": 216
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2294,
+            "height": 61
+          },
+          {
+            "layer_id": "sdmove_from",
+            "sort_index": 2354,
+            "width": 205,
+            "height": 15
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 2357,
+            "width": 172,
+            "height": 4,
+            "storagex": 3
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "addFlexPageCount",
+            "bindings": [
+              "addFlexPageCount"
+            ],
+            "geometry": {
+              "width": 84
+            }
+          },
+          {
+            "layer_id": "changeEditMode",
+            "bindings": [
+              "changeEditMode/comment",
+              "changeEditMode/copy",
+              "changeEditMode/move",
+              "changeEditMode/remove",
+              "changeEditMode/swap"
+            ],
+            "geometry": {
+              "cx": 18,
+              "ch": 28,
+              "x": 82
+            }
+          },
+          {
+            "layer_id": "changeMode",
+            "bindings": [
+              "changeMode/load",
+              "changeMode/quick",
+              "changeMode/save"
+            ],
+            "geometry": {
+              "w": 253,
+              "width": 90
+            }
+          },
+          {
+            "layer_id": "onSliderChanged",
+            "bindings": [
+              "onSliderChanged"
+            ],
+            "geometry": {
+              "cw": 200
+            }
+          },
+          {
+            "layer_id": "pageMove",
+            "bindings": [
+              "pageMove/1",
+              "pageMove/10",
+              "pageMove/100",
+              "pageMove/-1",
+              "pageMove/-10",
+              "pageMove/-100"
+            ],
+            "geometry": {
+              "ox": 104,
+              "cx": 43,
+              "w": 121,
+              "cw": 175
+            }
+          },
+          {
+            "layer_id": "subFlexPageCount",
+            "bindings": [
+              "subFlexPageCount"
+            ],
+            "geometry": {
+              "w": 10
+            }
+          },
+          {
+            "layer_id": "toggleEditHold",
+            "bindings": [
+              "toggleEditHold"
+            ],
+            "geometry": {
+              "oy": 1771
+            }
+          },
+          {
+            "layer_id": "toggleNonThumbMode",
+            "bindings": [
+              "toggleNonThumbMode",
+              "toggleNonThumbMode"
+            ],
+            "geometry": {
+              "x": 2,
+              "ox": 244
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "file_quick.pbd",
+        "hotspot_count": 87,
+        "hotspots_sample": [
+          {
+            "layer_id": "caption",
+            "sort_index": 1224,
+            "height": 4,
+            "ch": 79
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1265,
+            "width": 193,
+            "height": 143
+          },
+          {
+            "layer_id": "edit_remove",
+            "sort_index": 1792,
+            "width": 110,
+            "height": 64
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1983,
+            "height": 95
+          },
+          {
+            "layer_id": "detail_nodata",
+            "sort_index": 1990,
+            "height": 180,
+            "ch": 88
+          },
+          {
+            "layer_id": "back",
+            "sort_index": 2077,
+            "width": 227,
+            "height": 95
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2102,
+            "height": 4
+          },
+          {
+            "layer_id": "sdmove_from",
+            "sort_index": 2354,
+            "width": 178,
+            "height": 195
+          },
+          {
+            "layer_id": "edit_hold",
+            "sort_index": 2482,
+            "height": 144,
+            "ch": 98
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 2512,
+            "width": 87,
+            "height": 253,
+            "storagex": 43
+          },
+          {
+            "layer_id": "hide_thumb",
+            "sort_index": 2542,
+            "height": 219,
+            "ch": 17
+          },
+          {
+            "layer_id": "edit_copy",
+            "sort_index": 2546,
+            "width": 121,
+            "height": 201
+          },
+          {
+            "layer_id": "edit_move",
+            "sort_index": 2690,
+            "height": 64
+          },
+          {
+            "layer_id": "file_quick__pack",
+            "sort_index": 2697,
+            "width": 169
+          },
+          {
+            "layer_id": "itemmove_to",
+            "sort_index": 2737,
+            "width": 247,
+            "height": 65
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "changeEditMode",
+            "bindings": [
+              "changeEditMode/comment",
+              "changeEditMode/copy",
+              "changeEditMode/move",
+              "changeEditMode/remove",
+              "changeEditMode/swap"
+            ],
+            "geometry": {
+              "x": 113,
+              "ch": 92,
+              "cw": 187,
+              "cy": 47
+            }
+          },
+          {
+            "layer_id": "changeMode",
+            "bindings": [
+              "changeMode/load",
+              "changeMode/quick",
+              "changeMode/save"
+            ],
+            "geometry": {
+              "width": 247
+            }
+          },
+          {
+            "layer_id": "toggleEditHold",
+            "bindings": [
+              "toggleEditHold"
+            ],
+            "geometry": {
+              "oy": 1558
+            }
+          },
+          {
+            "layer_id": "toggleNonThumbMode",
+            "bindings": [
+              "toggleNonThumbMode",
+              "toggleNonThumbMode"
+            ],
+            "geometry": {
+              "x": 102,
+              "w": 72
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "file_save.pbd",
+        "hotspot_count": 88,
+        "hotspots_sample": [
+          {
+            "layer_id": "caption",
+            "sort_index": 1032,
+            "height": 61,
+            "ch": 23
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1156,
+            "width": 223,
+            "height": 197
+          },
+          {
+            "layer_id": "page_up1",
+            "sort_index": 1774,
+            "width": 177,
+            "height": 237
+          },
+          {
+            "layer_id": "page_add",
+            "sort_index": 1777,
+            "width": 90,
+            "height": 159
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1915,
+            "height": 41
+          },
+          {
+            "layer_id": "detail_nodata",
+            "sort_index": 1962,
+            "height": 76,
+            "ch": 83
+          },
+          {
+            "layer_id": "edit_remove",
+            "sort_index": 1992,
+            "width": 103,
+            "height": 235
+          },
+          {
+            "layer_id": "page_sub",
+            "sort_index": 2048,
+            "width": 235,
+            "height": 106
+          },
+          {
+            "layer_id": "page_dw100",
+            "sort_index": 2068,
+            "width": 2,
+            "height": 23
+          },
+          {
+            "layer_id": "page_numbase",
+            "sort_index": 2137,
+            "height": 138,
+            "ch": 238
+          },
+          {
+            "layer_id": "back",
+            "sort_index": 2250,
+            "width": 87,
+            "height": 41
+          },
+          {
+            "layer_id": "page_up10",
+            "sort_index": 2252,
+            "width": 198,
+            "height": 216
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2294,
+            "height": 61
+          },
+          {
+            "layer_id": "sdmove_from",
+            "sort_index": 2354,
+            "width": 205,
+            "height": 15
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 2357,
+            "width": 172,
+            "height": 4,
+            "storagex": 3
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "addFlexPageCount",
+            "bindings": [
+              "addFlexPageCount"
+            ],
+            "geometry": {
+              "width": 84
+            }
+          },
+          {
+            "layer_id": "changeEditMode",
+            "bindings": [
+              "changeEditMode/comment",
+              "changeEditMode/copy",
+              "changeEditMode/move",
+              "changeEditMode/remove",
+              "changeEditMode/swap"
+            ],
+            "geometry": {
+              "cx": 18,
+              "ch": 28,
+              "x": 82
+            }
+          },
+          {
+            "layer_id": "changeMode",
+            "bindings": [
+              "changeMode/load",
+              "changeMode/quick",
+              "changeMode/save"
+            ],
+            "geometry": {
+              "w": 253,
+              "width": 90
+            }
+          },
+          {
+            "layer_id": "onSliderChanged",
+            "bindings": [
+              "onSliderChanged"
+            ],
+            "geometry": {
+              "cw": 200
+            }
+          },
+          {
+            "layer_id": "pageMove",
+            "bindings": [
+              "pageMove/1",
+              "pageMove/10",
+              "pageMove/100",
+              "pageMove/-1",
+              "pageMove/-10",
+              "pageMove/-100"
+            ],
+            "geometry": {
+              "ox": 104,
+              "cx": 43,
+              "w": 121,
+              "cw": 175
+            }
+          },
+          {
+            "layer_id": "subFlexPageCount",
+            "bindings": [
+              "subFlexPageCount"
+            ],
+            "geometry": {
+              "w": 10
+            }
+          },
+          {
+            "layer_id": "toggleEditHold",
+            "bindings": [
+              "toggleEditHold"
+            ],
+            "geometry": {
+              "oy": 1771
+            }
+          },
+          {
+            "layer_id": "toggleNonThumbMode",
+            "bindings": [
+              "toggleNonThumbMode",
+              "toggleNonThumbMode"
+            ],
+            "geometry": {
+              "x": 2,
+              "ox": 244
+            }
+          }
+        ]
+      }
+    ],
+    "qconf": [
+      {
+        "pbd": "qconf.pbd",
+        "hotspot_count": 47,
+        "hotspots_sample": [
+          {
+            "layer_id": "slider_numbase",
+            "sort_index": 1068,
+            "height": 97,
+            "ch": 13
+          },
+          {
+            "layer_id": "save",
+            "sort_index": 1241,
+            "height": 220,
+            "ch": 26
+          },
+          {
+            "layer_id": "load",
+            "sort_index": 1450,
+            "height": 220,
+            "ch": 49
+          },
+          {
+            "layer_id": "mute",
+            "sort_index": 1494,
+            "height": 250,
+            "ch": 182
+          },
+          {
+            "layer_id": "page_dw100",
+            "sort_index": 1663,
+            "width": 81,
+            "height": 98
+          },
+          {
+            "layer_id": "page_base",
+            "sort_index": 1723,
+            "height": 76,
+            "ch": 83
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1787,
+            "height": 201
+          },
+          {
+            "layer_id": "qload",
+            "sort_index": 2087,
+            "height": 54,
+            "ch": 5
+          },
+          {
+            "layer_id": "page_up1",
+            "sort_index": 2207,
+            "width": 109,
+            "height": 198
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2213,
+            "height": 76
+          },
+          {
+            "layer_id": "page_up10",
+            "sort_index": 2254,
+            "width": 199,
+            "height": 2
+          },
+          {
+            "layer_id": "page_up100",
+            "sort_index": 2309,
+            "width": 58,
+            "height": 21
+          },
+          {
+            "layer_id": "page_dw1",
+            "sort_index": 2435,
+            "width": 121,
+            "height": 201
+          },
+          {
+            "layer_id": "page_dw10",
+            "sort_index": 2755,
+            "width": 109,
+            "height": 144
+          },
+          {
+            "layer_id": "switch",
+            "sort_index": 3569,
+            "height": 83
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "qconf_load.pbd",
+        "hotspot_count": 47,
+        "hotspots_sample": [
+          {
+            "layer_id": "base",
+            "sort_index": 812,
+            "storagex": 112
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1536,
+            "height": 20
+          },
+          {
+            "layer_id": "item_pos11",
+            "sort_index": 1611,
+            "width": 214,
+            "height": 113
+          },
+          {
+            "layer_id": "page_add",
+            "sort_index": 2067,
+            "height": 13
+          },
+          {
+            "layer_id": "page_up10",
+            "sort_index": 2074,
+            "width": 245,
+            "height": 147
+          },
+          {
+            "layer_id": "page_up1",
+            "sort_index": 2107,
+            "width": 187,
+            "height": 41
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2208,
+            "height": 218
+          },
+          {
+            "layer_id": "page_dw100",
+            "sort_index": 2259,
+            "width": 36,
+            "height": 190
+          },
+          {
+            "layer_id": "hit",
+            "sort_index": 2262,
+            "height": 84
+          },
+          {
+            "layer_id": "page_up100",
+            "sort_index": 2436,
+            "width": 228,
+            "height": 177
+          },
+          {
+            "layer_id": "page_dw1",
+            "sort_index": 2484,
+            "width": 249,
+            "height": 20
+          },
+          {
+            "layer_id": "page_dw10",
+            "sort_index": 2701,
+            "width": 124,
+            "height": 235
+          },
+          {
+            "layer_id": "item_pos00",
+            "sort_index": 2728,
+            "width": 5,
+            "height": 62
+          },
+          {
+            "layer_id": "page_base",
+            "sort_index": 2785,
+            "height": 13,
+            "ch": 206
+          },
+          {
+            "layer_id": "area",
+            "sort_index": null,
+            "height": 62
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "pageMove",
+            "bindings": [
+              "pageMove/1",
+              "pageMove/10",
+              "pageMove/100",
+              "pageMove/-1",
+              "pageMove/-10",
+              "pageMove/-100"
+            ],
+            "geometry": {
+              "height": 40,
+              "oy": 1718,
+              "ch": 8,
+              "cw": 112,
+              "ox": 583
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "qconf_qload.pbd",
+        "hotspot_count": 19,
+        "hotspots_sample": [
+          {
+            "layer_id": "base",
+            "sort_index": 812,
+            "storagex": 40
+          },
+          {
+            "layer_id": "item_pos11",
+            "sort_index": 1611,
+            "width": 182,
+            "height": 55
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2293,
+            "height": 127
+          },
+          {
+            "layer_id": "item_pos00",
+            "sort_index": 2728,
+            "width": 117,
+            "height": 244
+          },
+          {
+            "layer_id": "area",
+            "sort_index": null,
+            "height": 244
+          },
+          {
+            "layer_id": "evals",
+            "sort_index": null,
+            "height": 204
+          },
+          {
+            "layer_id": "false",
+            "sort_index": null,
+            "width": 68
+          },
+          {
+            "layer_id": "file",
+            "sort_index": null,
+            "height": 204
+          },
+          {
+            "layer_id": "gameparts",
+            "sort_index": null,
+            "height": 204
+          },
+          {
+            "layer_id": "hit",
+            "sort_index": null,
+            "height": 182
+          },
+          {
+            "layer_id": "holdimage",
+            "sort_index": null,
+            "height": 204
+          },
+          {
+            "layer_id": "names",
+            "sort_index": null,
+            "height": 204
+          },
+          {
+            "layer_id": "qconf__pack",
+            "sort_index": null,
+            "height": 204,
+            "width": 208
+          },
+          {
+            "layer_id": "qconf_qload__bg0",
+            "sort_index": null,
+            "storagex": 40
+          },
+          {
+            "layer_id": "scroll",
+            "sort_index": null,
+            "height": 204
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "qconf_qvsave.pbd",
+        "hotspot_count": 31,
+        "hotspots_sample": [
+          {
+            "layer_id": "qvsave",
+            "sort_index": 1238,
+            "height": 184,
+            "ch": 17
+          },
+          {
+            "layer_id": "switch_qvsave",
+            "sort_index": 1580,
+            "height": 87
+          },
+          {
+            "layer_id": "base",
+            "sort_index": null,
+            "storagex": 723
+          },
+          {
+            "layer_id": "color",
+            "sort_index": null,
+            "cw": 128
+          },
+          {
+            "layer_id": "evals",
+            "sort_index": null,
+            "height": 87
+          },
+          {
+            "layer_id": "gameparts",
+            "sort_index": null,
+            "height": 87
+          },
+          {
+            "layer_id": "holdimage",
+            "sort_index": null,
+            "height": 87
+          },
+          {
+            "layer_id": "names",
+            "sort_index": null,
+            "height": 87
+          },
+          {
+            "layer_id": "normal_off",
+            "sort_index": null,
+            "ch": 17
+          },
+          {
+            "layer_id": "normal_on",
+            "sort_index": null,
+            "ch": 107
+          },
+          {
+            "layer_id": "nose",
+            "sort_index": null,
+            "ch": 17
+          },
+          {
+            "layer_id": "on_off",
+            "sort_index": null,
+            "ch": 222
+          },
+          {
+            "layer_id": "on_on",
+            "sort_index": null,
+            "ch": 238
+          },
+          {
+            "layer_id": "option",
+            "sort_index": null,
+            "height": 87
+          },
+          {
+            "layer_id": "over_off",
+            "sort_index": null,
+            "ch": 29
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "hideHelp",
+            "bindings": [
+              "hideHelp/qvsave",
+              "hideHelp/swap"
+            ],
+            "geometry": {
+              "height": 87
+            }
+          },
+          {
+            "layer_id": "invokeQVSave",
+            "bindings": [
+              "invokeQVSave"
+            ],
+            "geometry": {
+              "height": 87
+            }
+          },
+          {
+            "layer_id": "showHelp",
+            "bindings": [
+              "showHelp/qvsave",
+              "showHelp/swap"
+            ],
+            "geometry": {
+              "height": 87
+            }
+          },
+          {
+            "layer_id": "toggleQVSave",
+            "bindings": [
+              "toggleQVSave"
+            ],
+            "geometry": {
+              "height": 87
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "qconf_save.pbd",
+        "hotspot_count": 66,
+        "hotspots_sample": [
+          {
+            "layer_id": "base",
+            "sort_index": 996,
+            "storagex": 21
+          },
+          {
+            "layer_id": "dsave",
+            "sort_index": 1165,
+            "height": 123,
+            "ch": 125
+          },
+          {
+            "layer_id": "switch_dsave",
+            "sort_index": 1460,
+            "height": 135
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1618,
+            "height": 15
+          },
+          {
+            "layer_id": "item_pos11",
+            "sort_index": 1742,
+            "width": 249,
+            "height": 95
+          },
+          {
+            "layer_id": "page_up1",
+            "sort_index": 2141,
+            "width": 169,
+            "height": 121
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2227,
+            "height": 22
+          },
+          {
+            "layer_id": "page_dw100",
+            "sort_index": 2229,
+            "width": 176,
+            "height": 84
+          },
+          {
+            "layer_id": "hit",
+            "sort_index": 2252,
+            "height": 59
+          },
+          {
+            "layer_id": "page_up10",
+            "sort_index": 2259,
+            "width": 3,
+            "height": 13
+          },
+          {
+            "layer_id": "page_add",
+            "sort_index": 2263,
+            "height": 77
+          },
+          {
+            "layer_id": "page_up100",
+            "sort_index": 2344,
+            "width": 227,
+            "height": 49
+          },
+          {
+            "layer_id": "page_dw1",
+            "sort_index": 2349,
+            "width": 147,
+            "height": 15
+          },
+          {
+            "layer_id": "item_pos00",
+            "sort_index": 2579,
+            "width": 142,
+            "height": 230
+          },
+          {
+            "layer_id": "page_dw10",
+            "sort_index": 2654,
+            "width": 65,
+            "height": 87
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "hideHelp",
+            "bindings": [
+              "hideHelp/dsave",
+              "hideHelp/swap"
+            ],
+            "geometry": {
+              "height": 135,
+              "w": 204
+            }
+          },
+          {
+            "layer_id": "invokeDSave",
+            "bindings": [
+              "invokeDSave"
+            ],
+            "geometry": {
+              "height": 135
+            }
+          },
+          {
+            "layer_id": "pageMove",
+            "bindings": [
+              "pageMove/1",
+              "pageMove/10",
+              "pageMove/100",
+              "pageMove/-1",
+              "pageMove/-10",
+              "pageMove/-100"
+            ],
+            "geometry": {
+              "ch": 147,
+              "w": 196,
+              "ox": 624
+            }
+          },
+          {
+            "layer_id": "showHelp",
+            "bindings": [
+              "showHelp/dsave",
+              "showHelp/swap"
+            ],
+            "geometry": {
+              "height": 135
+            }
+          },
+          {
+            "layer_id": "toggleDSave",
+            "bindings": [
+              "toggleDSave"
+            ],
+            "geometry": {
+              "oy": 110
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "qconf_text.pbd",
+        "hotspot_count": 34,
+        "hotspots_sample": [
+          {
+            "layer_id": "layer",
+            "sort_index": 2116,
+            "height": 237
+          },
+          {
+            "layer_id": "skipall_off",
+            "sort_index": 2775,
+            "height": 114,
+            "ch": 181
+          },
+          {
+            "layer_id": "drawspeed_slider",
+            "sort_index": 2820,
+            "height": 114
+          },
+          {
+            "layer_id": "skipall_chk",
+            "sort_index": 2843,
+            "height": 114
+          },
+          {
+            "layer_id": "winopac_numbase",
+            "sort_index": 2876,
+            "height": 66,
+            "ch": 193
+          },
+          {
+            "layer_id": "skipall_on",
+            "sort_index": 3109,
+            "height": 237,
+            "ch": 93
+          },
+          {
+            "layer_id": "winopac_slider",
+            "sort_index": 3417,
+            "height": 58,
+            "ch": 49
+          },
+          {
+            "layer_id": "autospeed_numbase",
+            "sort_index": 3719,
+            "height": 237,
+            "ch": 42
+          },
+          {
+            "layer_id": "textspeed_slider",
+            "sort_index": 3925,
+            "height": 74,
+            "ch": 215
+          },
+          {
+            "layer_id": "autospeed_slider",
+            "sort_index": 4024,
+            "height": 223,
+            "ch": 29
+          },
+          {
+            "layer_id": "textspeed_numbase",
+            "sort_index": 4169,
+            "height": 41,
+            "ch": 41
+          },
+          {
+            "layer_id": "skipspeed_slider",
+            "sort_index": 4206,
+            "height": 41
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 4341,
+            "storagex": 744
+          },
+          {
+            "layer_id": "color",
+            "sort_index": null,
+            "cw": 255
+          },
+          {
+            "layer_id": "disable",
+            "sort_index": null,
+            "ch": 29
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "changeBasicSlider",
+            "bindings": [
+              "changeBasicSlider"
+            ],
+            "geometry": {
+              "height": 114
+            }
+          },
+          {
+            "layer_id": "off_skipall",
+            "bindings": [
+              "setBasicOptionValue/skipall/off"
+            ],
+            "geometry": {
+              "height": 237
+            }
+          },
+          {
+            "layer_id": "onSpeedSliderChange",
+            "bindings": [
+              "onSpeedSliderChange",
+              "onSpeedSliderChange",
+              "onSpeedSliderChange",
+              "onSpeedSliderChange"
+            ],
+            "geometry": {
+              "height": 237,
+              "cw": 110,
+              "w": 233
+            }
+          },
+          {
+            "layer_id": "on_skipall",
+            "bindings": [
+              "setBasicOptionValue/skipall/on"
+            ],
+            "geometry": {
+              "height": 237
+            }
+          },
+          {
+            "layer_id": "toggle_skipall",
+            "bindings": [
+              "setBasicOptionValue/skipall/toggle",
+              "setBasicOptionValue/skipall/toggle"
+            ],
+            "geometry": {
+              "height": 237,
+              "ch": 29
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "qconf_volume.pbd",
+        "hotspot_count": 68,
+        "hotspots_sample": [
+          {
+            "layer_id": "bgm_test",
+            "sort_index": 1390,
+            "height": 42
+          },
+          {
+            "layer_id": "se_on",
+            "sort_index": 1540,
+            "height": 88
+          },
+          {
+            "layer_id": "wave_test",
+            "sort_index": 1553,
+            "height": 238
+          },
+          {
+            "layer_id": "bgv_slider",
+            "sort_index": 1578,
+            "height": 234
+          },
+          {
+            "layer_id": "se_off",
+            "sort_index": 1819,
+            "height": 88
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 1852,
+            "storagex": 644
+          },
+          {
+            "layer_id": "voice_numbase",
+            "sort_index": 1873,
+            "height": 58,
+            "ch": 67
+          },
+          {
+            "layer_id": "bgm_on",
+            "sort_index": 1919,
+            "height": 202
+          },
+          {
+            "layer_id": "se_play",
+            "sort_index": 1967,
+            "height": 88
+          },
+          {
+            "layer_id": "bgv_on",
+            "sort_index": 2014,
+            "height": 234
+          },
+          {
+            "layer_id": "bgv_off",
+            "sort_index": 2081,
+            "height": 234
+          },
+          {
+            "layer_id": "bgv_play",
+            "sort_index": 2098,
+            "height": 234
+          },
+          {
+            "layer_id": "sysse_test",
+            "sort_index": 2138,
+            "height": 12
+          },
+          {
+            "layer_id": "sysse_slider",
+            "sort_index": 2188,
+            "height": 12
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2209,
+            "height": 235
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "bgm",
+            "bindings": [
+              "setAudioOnOff/bgm/toggle",
+              "setAudioOnOff/bgm/0",
+              "setAudioOnOff/bgm/1",
+              "setAudioOnOff/bgm/toggle"
+            ],
+            "geometry": {
+              "height": 162
+            }
+          },
+          {
+            "layer_id": "bgv",
+            "bindings": [
+              "setAudioOnOff/bgv/toggle",
+              "setAudioOnOff/bgv/0",
+              "setAudioOnOff/bgv/1",
+              "setAudioOnOff/bgv/toggle"
+            ],
+            "geometry": {
+              "height": 162,
+              "storagex": 644,
+              "x": 133
+            }
+          },
+          {
+            "layer_id": "bgv2",
+            "bindings": [
+              "setAudioOnOff/bgv2/toggle",
+              "setAudioOnOff/bgv2/0",
+              "setAudioOnOff/bgv2/1",
+              "setAudioOnOff/bgv2/toggle"
+            ],
+            "geometry": {
+              "height": 162
+            }
+          },
+          {
+            "layer_id": "down",
+            "bindings": [
+              "setAudioOnOff/down/toggle",
+              "setAudioOnOff/down/0",
+              "setAudioOnOff/down/1",
+              "setAudioOnOff/down/toggle"
+            ],
+            "geometry": {
+              "height": 202,
+              "ch": 220
+            }
+          },
+          {
+            "layer_id": "movie",
+            "bindings": [
+              "setAudioOnOff/movie/toggle",
+              "setAudioOnOff/movie/0",
+              "setAudioOnOff/movie/1",
+              "setAudioOnOff/movie/toggle"
+            ],
+            "geometry": {
+              "y": 146,
+              "ch": 3,
+              "cw": 123,
+              "cx": 110
+            }
+          },
+          {
+            "layer_id": "onAudioVolumeChange",
+            "bindings": [
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange"
+            ],
+            "geometry": {
+              "height": 162,
+              "ch": 155,
+              "w": 97
+            }
+          },
+          {
+            "layer_id": "se",
+            "bindings": [
+              "setAudioOnOff/se/toggle",
+              "setAudioOnOff/se/0",
+              "setAudioOnOff/se/1",
+              "setAudioOnOff/se/toggle"
+            ],
+            "geometry": {
+              "height": 234
+            }
+          },
+          {
+            "layer_id": "sysse",
+            "bindings": [
+              "setAudioOnOff/sysse/toggle",
+              "setAudioOnOff/sysse/0",
+              "setAudioOnOff/sysse/1",
+              "setAudioOnOff/sysse/toggle"
+            ],
+            "geometry": {
+              "height": 62
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "qlpopup.pbd",
+        "hotspot_count": 18,
+        "hotspots_sample": [
+          {
+            "layer_id": "route",
+            "sort_index": 1063,
+            "height": 23
+          },
+          {
+            "layer_id": "save",
+            "sort_index": 1099,
+            "height": 189,
+            "ch": 192
+          },
+          {
+            "layer_id": "thumb",
+            "sort_index": 1241,
+            "height": 235
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 1450,
+            "storagex": 20
+          },
+          {
+            "layer_id": "load",
+            "sort_index": 1467,
+            "height": 97,
+            "ch": 225
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2119,
+            "height": 97
+          },
+          {
+            "layer_id": "evals",
+            "sort_index": null,
+            "height": 178
+          },
+          {
+            "layer_id": "file_data",
+            "sort_index": null,
+            "height": 178
+          },
+          {
+            "layer_id": "holdimage",
+            "sort_index": null,
+            "height": 178
+          },
+          {
+            "layer_id": "names",
+            "sort_index": null,
+            "height": 178
+          },
+          {
+            "layer_id": "qlpopup__bg0",
+            "sort_index": null,
+            "storagex": 20
+          },
+          {
+            "layer_id": "qlpopup__pack",
+            "sort_index": null,
+            "height": 178,
+            "width": 24
+          },
+          {
+            "layer_id": "quick",
+            "sort_index": null,
+            "height": 178,
+            "ch": 77
+          },
+          {
+            "layer_id": "storagex",
+            "sort_index": null,
+            "storagey": 0
+          },
+          {
+            "layer_id": "voice",
+            "sort_index": null,
+            "height": 10,
+            "ch": 77
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "qvpopup.pbd",
+        "hotspot_count": 15,
+        "hotspots_sample": [
+          {
+            "layer_id": "voice",
+            "sort_index": 1063,
+            "height": 229,
+            "ch": 128
+          },
+          {
+            "layer_id": "thumb",
+            "sort_index": 1241,
+            "height": 115
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 1450,
+            "storagex": 131
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 1556,
+            "height": 90
+          },
+          {
+            "layer_id": "evals",
+            "sort_index": null,
+            "height": 5
+          },
+          {
+            "layer_id": "false",
+            "sort_index": null,
+            "height": 90
+          },
+          {
+            "layer_id": "holdimage",
+            "sort_index": null,
+            "height": 5
+          },
+          {
+            "layer_id": "mask",
+            "sort_index": null,
+            "height": 5
+          },
+          {
+            "layer_id": "names",
+            "sort_index": null,
+            "height": 5
+          },
+          {
+            "layer_id": "qlpopup__bg0",
+            "sort_index": null,
+            "storagex": 131
+          },
+          {
+            "layer_id": "qlpopup__pack",
+            "sort_index": null,
+            "height": 5,
+            "width": 193
+          },
+          {
+            "layer_id": "storagex",
+            "sort_index": null,
+            "storagey": 195
+          },
+          {
+            "layer_id": "width",
+            "sort_index": null,
+            "x": 4
+          },
+          {
+            "layer_id": "x",
+            "sort_index": null,
+            "y": 27
+          },
+          {
+            "layer_id": "y",
+            "sort_index": null,
+            "height": 90
+          }
+        ],
+        "bindings_sample": []
+      }
+    ],
+    "window": [
+      {
+        "pbd": "backlog.pbd",
+        "hotspot_count": 36,
+        "hotspots_sample": [
+          {
+            "layer_id": "chapter",
+            "sort_index": 805,
+            "height": 80,
+            "ch": 139
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1051,
+            "width": 83,
+            "height": 92
+          },
+          {
+            "layer_id": "vreplay",
+            "sort_index": 1205,
+            "height": 41,
+            "ch": 92
+          },
+          {
+            "layer_id": "flowchart",
+            "sort_index": 1284,
+            "width": 32,
+            "height": 34
+          },
+          {
+            "layer_id": "vsave",
+            "sort_index": 1320,
+            "height": 44,
+            "ch": 202
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1405,
+            "height": 163
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 1629,
+            "height": 74
+          },
+          {
+            "layer_id": "back",
+            "sort_index": 1711,
+            "width": 111,
+            "height": 163
+          },
+          {
+            "layer_id": "hitarea",
+            "sort_index": 1895,
+            "ch": 92
+          },
+          {
+            "layer_id": "slider",
+            "sort_index": 2175,
+            "height": 135,
+            "ch": 244
+          },
+          {
+            "layer_id": "search",
+            "sort_index": 2230,
+            "height": 237,
+            "ch": 89
+          },
+          {
+            "layer_id": "navi2",
+            "sort_index": 2414,
+            "width": 53,
+            "height": 180
+          },
+          {
+            "layer_id": "rm_backlog",
+            "sort_index": 2434,
+            "height": 237
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 2621,
+            "width": 188,
+            "height": 230,
+            "ch": 139,
+            "storagex": 1
+          },
+          {
+            "layer_id": "caption_backlog",
+            "sort_index": 3691,
+            "height": 19,
+            "ch": 82
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "inputSearchText",
+            "bindings": [
+              "inputSearchText"
+            ],
+            "geometry": {
+              "w": 241
+            }
+          },
+          {
+            "layer_id": "nextPage",
+            "bindings": [
+              "nextPage"
+            ],
+            "geometry": {
+              "height": 59
+            }
+          },
+          {
+            "layer_id": "nextStop",
+            "bindings": [
+              "nextStop"
+            ],
+            "geometry": {
+              "height": 59
+            }
+          },
+          {
+            "layer_id": "prevPage",
+            "bindings": [
+              "prevPage"
+            ],
+            "geometry": {
+              "x": 63
+            }
+          },
+          {
+            "layer_id": "prevStop",
+            "bindings": [
+              "prevStop"
+            ],
+            "geometry": {
+              "height": 34
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "dialog.pbd",
+        "hotspot_count": 37,
+        "hotspots_sample": [
+          {
+            "layer_id": "yes",
+            "sort_index": 572,
+            "width": 99,
+            "height": 222
+          },
+          {
+            "layer_id": "frame",
+            "sort_index": 768,
+            "ch": 63
+          },
+          {
+            "layer_id": "no",
+            "sort_index": 983,
+            "width": 33,
+            "height": 18
+          },
+          {
+            "layer_id": "text",
+            "sort_index": 1028,
+            "width": 10
+          },
+          {
+            "layer_id": "readjumpoff",
+            "sort_index": 1134,
+            "height": 35,
+            "ch": 63
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 1310,
+            "height": 235
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1544,
+            "height": 18
+          },
+          {
+            "layer_id": "readskip_off",
+            "sort_index": 1718,
+            "width": 188,
+            "height": 18
+          },
+          {
+            "layer_id": "suspend_off",
+            "sort_index": 2012,
+            "width": 9,
+            "height": 18
+          },
+          {
+            "layer_id": "grp_askresume",
+            "sort_index": 2155,
+            "height": 18
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 2843,
+            "width": 123,
+            "height": 252,
+            "storagex": 200
+          },
+          {
+            "layer_id": "suspend_on",
+            "sort_index": 2943,
+            "width": 47,
+            "height": 146
+          },
+          {
+            "layer_id": "readjump_mes",
+            "sort_index": 2987,
+            "height": 35
+          },
+          {
+            "layer_id": "grp_readjump",
+            "sort_index": 3133,
+            "height": 18
+          },
+          {
+            "layer_id": "readskip_on",
+            "sort_index": 3247,
+            "width": 237,
+            "height": 146
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "select.pbd",
+        "hotspot_count": 47,
+        "hotspots_sample": [
+          {
+            "layer_id": "select_pos1",
+            "sort_index": 2309,
+            "width": 191,
+            "height": 84
+          },
+          {
+            "layer_id": "select4_6",
+            "sort_index": 2323,
+            "width": 116,
+            "height": 187
+          },
+          {
+            "layer_id": "select4_5",
+            "sort_index": 2330,
+            "width": 193,
+            "height": 39
+          },
+          {
+            "layer_id": "select4_7",
+            "sort_index": 2344,
+            "width": 245,
+            "height": 93
+          },
+          {
+            "layer_id": "select3_4",
+            "sort_index": 2348,
+            "width": 58,
+            "height": 235
+          },
+          {
+            "layer_id": "select2_4",
+            "sort_index": 2360,
+            "width": 91,
+            "height": 214
+          },
+          {
+            "layer_id": "select5_5",
+            "sort_index": 2363,
+            "width": 41,
+            "height": 47
+          },
+          {
+            "layer_id": "select2_7",
+            "sort_index": 2391,
+            "width": 123,
+            "height": 28
+          },
+          {
+            "layer_id": "select6_7",
+            "sort_index": 2397,
+            "width": 145,
+            "height": 47
+          },
+          {
+            "layer_id": "select3_7",
+            "sort_index": 2416,
+            "width": 186,
+            "height": 28
+          },
+          {
+            "layer_id": "select2_3",
+            "sort_index": 2431,
+            "width": 48,
+            "height": 5
+          },
+          {
+            "layer_id": "select5_6",
+            "sort_index": 2434,
+            "width": 91,
+            "height": 83
+          },
+          {
+            "layer_id": "select2_2",
+            "sort_index": 2435,
+            "width": 245,
+            "height": 204
+          },
+          {
+            "layer_id": "select3_5",
+            "sort_index": 2436,
+            "width": 190,
+            "height": 77
+          },
+          {
+            "layer_id": "select1_5",
+            "sort_index": 2438,
+            "width": 235,
+            "height": 181
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "window.pbd",
+        "hotspot_count": 22,
+        "hotspots_sample": [
+          {
+            "layer_id": "logo",
+            "sort_index": 1068,
+            "height": 107,
+            "ch": 111
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2180,
+            "height": 104
+          },
+          {
+            "layer_id": "colorover",
+            "sort_index": 2438,
+            "height": 173,
+            "ch": 112
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 2518,
+            "storagex": 82
+          },
+          {
+            "layer_id": "colorbase",
+            "sort_index": 2785,
+            "height": 104,
+            "ch": 8
+          },
+          {
+            "layer_id": "colorframe",
+            "sort_index": null,
+            "height": 112
+          },
+          {
+            "layer_id": "elm",
+            "sort_index": null,
+            "height": 68
+          },
+          {
+            "layer_id": "false",
+            "sort_index": null,
+            "width": 223
+          },
+          {
+            "layer_id": "holdimage",
+            "sort_index": null,
+            "height": 68
+          },
+          {
+            "layer_id": "imports",
+            "sort_index": null,
+            "height": 68
+          },
+          {
+            "layer_id": "logo_cn",
+            "sort_index": null,
+            "ch": 111
+          },
+          {
+            "layer_id": "logo_en",
+            "sort_index": null,
+            "ch": 168
+          },
+          {
+            "layer_id": "logo_jp",
+            "sort_index": null,
+            "ch": 111
+          },
+          {
+            "layer_id": "logo_tw",
+            "sort_index": null,
+            "ch": 140
+          },
+          {
+            "layer_id": "names",
+            "sort_index": null,
+            "height": 68
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "window_h.pbd",
+        "hotspot_count": 22,
+        "hotspots_sample": [
+          {
+            "layer_id": "nametext",
+            "sort_index": 1165,
+            "width": 112,
+            "height": 215
+          },
+          {
+            "layer_id": "colorframe",
+            "sort_index": 1252,
+            "height": 235
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2241,
+            "height": 22
+          },
+          {
+            "layer_id": "colorover",
+            "sort_index": 2323,
+            "height": 30,
+            "ch": 46
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 2515,
+            "storagex": 17
+          },
+          {
+            "layer_id": "colorbase",
+            "sort_index": 2690,
+            "height": 22,
+            "ch": 223
+          },
+          {
+            "layer_id": "area",
+            "sort_index": null,
+            "height": 25
+          },
+          {
+            "layer_id": "elm",
+            "sort_index": null,
+            "height": 215
+          },
+          {
+            "layer_id": "evals",
+            "sort_index": null,
+            "height": 215
+          },
+          {
+            "layer_id": "f",
+            "sort_index": null,
+            "ox": 161
+          },
+          {
+            "layer_id": "false",
+            "sort_index": null,
+            "width": 198,
+            "height": 25
+          },
+          {
+            "layer_id": "holdimage",
+            "sort_index": null,
+            "height": 215
+          },
+          {
+            "layer_id": "imports",
+            "sort_index": null,
+            "height": 215
+          },
+          {
+            "layer_id": "logo",
+            "sort_index": null,
+            "height": 215
+          },
+          {
+            "layer_id": "names",
+            "sort_index": null,
+            "height": 215
+          }
+        ],
+        "bindings_sample": []
+      }
+    ],
+    "extra": [
+      {
+        "pbd": "bgmtitle.pbd",
+        "hotspot_count": 10,
+        "hotspots_sample": [
+          {
+            "layer_id": "base",
+            "sort_index": null,
+            "storagex": 168
+          },
+          {
+            "layer_id": "bgmtitle__bg0",
+            "sort_index": null,
+            "storagex": 168
+          },
+          {
+            "layer_id": "evals",
+            "sort_index": null,
+            "height": 195
+          },
+          {
+            "layer_id": "gameparts",
+            "sort_index": null,
+            "height": 195
+          },
+          {
+            "layer_id": "holdimage",
+            "sort_index": null,
+            "height": 195
+          },
+          {
+            "layer_id": "imports",
+            "sort_index": null,
+            "height": 195
+          },
+          {
+            "layer_id": "names",
+            "sort_index": null,
+            "height": 195
+          },
+          {
+            "layer_id": "storagex",
+            "sort_index": null,
+            "storagey": 56
+          },
+          {
+            "layer_id": "width",
+            "sort_index": null,
+            "x": 112
+          },
+          {
+            "layer_id": "x",
+            "sort_index": null,
+            "y": 40
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "chapter.pbd",
+        "hotspot_count": 11,
+        "hotspots_sample": [
+          {
+            "layer_id": "layer",
+            "sort_index": 1648,
+            "height": 87
+          },
+          {
+            "layer_id": "base",
+            "sort_index": null,
+            "storagex": 56
+          },
+          {
+            "layer_id": "chapter__bg0",
+            "sort_index": null,
+            "storagex": 56
+          },
+          {
+            "layer_id": "evals",
+            "sort_index": null,
+            "height": 127
+          },
+          {
+            "layer_id": "gameparts",
+            "sort_index": null,
+            "height": 127
+          },
+          {
+            "layer_id": "holdimage",
+            "sort_index": null,
+            "height": 127
+          },
+          {
+            "layer_id": "i",
+            "sort_index": null,
+            "ox": 26,
+            "storagex": 56
+          },
+          {
+            "layer_id": "names",
+            "sort_index": null,
+            "height": 127
+          },
+          {
+            "layer_id": "width",
+            "sort_index": null,
+            "x": 19
+          },
+          {
+            "layer_id": "x",
+            "sort_index": null,
+            "y": 130
+          },
+          {
+            "layer_id": "y",
+            "sort_index": null,
+            "height": 87
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "extra.pbd",
+        "hotspot_count": 21,
+        "hotspots_sample": [
+          {
+            "layer_id": "caption",
+            "sort_index": 1151,
+            "height": 193,
+            "ch": 181
+          },
+          {
+            "layer_id": "title2",
+            "sort_index": 1230,
+            "width": 161,
+            "height": 61
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1541,
+            "width": 202,
+            "height": 61
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1924,
+            "height": 202
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1987,
+            "height": 112,
+            "ch": 90
+          },
+          {
+            "layer_id": "back",
+            "sort_index": 2207,
+            "width": 8,
+            "height": 61
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2245,
+            "height": 193
+          },
+          {
+            "layer_id": "base",
+            "sort_index": null,
+            "width": 68,
+            "height": 61,
+            "storagex": 68
+          },
+          {
+            "layer_id": "evals",
+            "sort_index": null,
+            "height": 61
+          },
+          {
+            "layer_id": "extra__bg0",
+            "sort_index": null,
+            "storagex": 68
+          },
+          {
+            "layer_id": "extra__pack",
+            "sort_index": null,
+            "height": 61,
+            "width": 177
+          },
+          {
+            "layer_id": "extra_cgscene",
+            "sort_index": null,
+            "height": 61
+          },
+          {
+            "layer_id": "holdimage",
+            "sort_index": null,
+            "height": 61
+          },
+          {
+            "layer_id": "imports",
+            "sort_index": null,
+            "height": 61
+          },
+          {
+            "layer_id": "names",
+            "sort_index": null,
+            "height": 61
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "extra_cg.pbd",
+        "hotspot_count": 79,
+        "hotspots_sample": [
+          {
+            "layer_id": "grouparea",
+            "sort_index": 941,
+            "width": 28,
+            "height": 184
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1027,
+            "height": 177,
+            "ch": 228
+          },
+          {
+            "layer_id": "grp2",
+            "sort_index": 1055,
+            "height": 75,
+            "ch": 198
+          },
+          {
+            "layer_id": "play",
+            "sort_index": 1075,
+            "width": 101,
+            "height": 155
+          },
+          {
+            "layer_id": "grp1",
+            "sort_index": 1079,
+            "height": 88,
+            "ch": 76
+          },
+          {
+            "layer_id": "grp4",
+            "sort_index": 1158,
+            "height": 66,
+            "ch": 146
+          },
+          {
+            "layer_id": "snd_down",
+            "sort_index": 1169,
+            "height": 115
+          },
+          {
+            "layer_id": "grp0",
+            "sort_index": 1205,
+            "height": 44,
+            "ch": 9
+          },
+          {
+            "layer_id": "grp5",
+            "sort_index": 1206,
+            "height": 113,
+            "ch": 10
+          },
+          {
+            "layer_id": "grp3",
+            "sort_index": 1221,
+            "height": 191,
+            "ch": 220
+          },
+          {
+            "layer_id": "subpg",
+            "sort_index": 1253,
+            "height": 199,
+            "ch": 85
+          },
+          {
+            "layer_id": "slider",
+            "sort_index": 1258,
+            "height": 224,
+            "ch": 150
+          },
+          {
+            "layer_id": "grp6",
+            "sort_index": 1261,
+            "height": 77,
+            "ch": 56
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1337,
+            "height": 21,
+            "ch": 136
+          },
+          {
+            "layer_id": "ptime_base",
+            "sort_index": 1387,
+            "height": 11,
+            "ch": 69
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "changeGroup",
+            "bindings": [
+              "changeGroup/0",
+              "changeGroup/1",
+              "changeGroup/2",
+              "changeGroup/3",
+              "changeGroup/4",
+              "changeGroup/5",
+              "changeGroup/6",
+              "changeGroup/7"
+            ],
+            "geometry": {
+              "w": 43,
+              "ch": 28,
+              "height": 21,
+              "width": 28
+            }
+          },
+          {
+            "layer_id": "cosound_onSliderChanged",
+            "bindings": [
+              "cosound_onSliderChanged"
+            ],
+            "geometry": null
+          },
+          {
+            "layer_id": "invokeCoSound",
+            "bindings": [
+              "invokeCoSound/onScrollButton/down",
+              "invokeCoSound/onScrollButton/end",
+              "invokeCoSound/onScrollButton/pagedown",
+              "invokeCoSound/onScrollButton/pageup",
+              "invokeCoSound/onScrollButton/top",
+              "invokeCoSound/onScrollButton/up"
+            ],
+            "geometry": {
+              "height": 155,
+              "width": 81,
+              "ch": 69,
+              "y": 124,
+              "w": 1026
+            }
+          },
+          {
+            "layer_id": "onScrollButton",
+            "bindings": [
+              "onScrollButton/down",
+              "onScrollButton/end",
+              "onScrollButton/pagedown",
+              "onScrollButton/pageup",
+              "onScrollButton/top",
+              "onScrollButton/up"
+            ],
+            "geometry": {
+              "height": 246,
+              "w": 86,
+              "cy": 97,
+              "width": 119
+            }
+          },
+          {
+            "layer_id": "onSliderChanged",
+            "bindings": [
+              "onSliderChanged"
+            ],
+            "geometry": {
+              "ch": 123
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "extra_cgview.pbd",
+        "hotspot_count": 50,
+        "hotspots_sample": [
+          {
+            "layer_id": "scr_pd",
+            "sort_index": 982,
+            "width": 103,
+            "height": 135
+          },
+          {
+            "layer_id": "cursor_base",
+            "sort_index": 996,
+            "height": 255,
+            "ch": 3
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1065,
+            "height": 249
+          },
+          {
+            "layer_id": "scr_pr",
+            "sort_index": 1083,
+            "width": 43,
+            "height": 37
+          },
+          {
+            "layer_id": "hitem",
+            "sort_index": 1222,
+            "height": 34,
+            "ch": 32
+          },
+          {
+            "layer_id": "vitem",
+            "sort_index": 1230,
+            "height": 58,
+            "ch": 67
+          },
+          {
+            "layer_id": "item",
+            "sort_index": 1285,
+            "height": 178,
+            "ch": 27
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1373,
+            "height": 249,
+            "ch": 13
+          },
+          {
+            "layer_id": "itemview_right",
+            "sort_index": 1555,
+            "width": 147,
+            "height": 224
+          },
+          {
+            "layer_id": "scr_rg",
+            "sort_index": 1562,
+            "width": 146,
+            "height": 215
+          },
+          {
+            "layer_id": "scr_dw",
+            "sort_index": 1580,
+            "width": 44,
+            "height": 71
+          },
+          {
+            "layer_id": "scr_up",
+            "sort_index": 1592,
+            "width": 186,
+            "height": 102
+          },
+          {
+            "layer_id": "scr_lf",
+            "sort_index": 1668,
+            "width": 205,
+            "height": 83
+          },
+          {
+            "layer_id": "rep",
+            "sort_index": 1670,
+            "width": 82,
+            "height": 62,
+            "ch": 55
+          },
+          {
+            "layer_id": "scr_pu",
+            "sort_index": 1704,
+            "width": 123,
+            "height": 238
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "extra_locale_cn.pbd",
+        "hotspot_count": 16,
+        "hotspots_sample": [
+          {
+            "layer_id": "to_scene",
+            "sort_index": 2087,
+            "height": 131,
+            "ch": 23
+          },
+          {
+            "layer_id": "to_stand",
+            "sort_index": 2123,
+            "height": 238,
+            "ch": 13
+          },
+          {
+            "layer_id": "to_cg",
+            "sort_index": 2218,
+            "height": 17,
+            "ch": 124
+          },
+          {
+            "layer_id": "c",
+            "sort_index": null,
+            "height": 28,
+            "cx": 201,
+            "cy": 218
+          },
+          {
+            "layer_id": "cref",
+            "sort_index": null,
+            "height": 28
+          },
+          {
+            "layer_id": "dot_on",
+            "sort_index": null,
+            "ch": 124
+          },
+          {
+            "layer_id": "dot_ov",
+            "sort_index": null,
+            "ch": 112
+          },
+          {
+            "layer_id": "extra_locale_cn__pack",
+            "sort_index": null,
+            "width": 172
+          },
+          {
+            "layer_id": "k",
+            "sort_index": null,
+            "height": 28
+          },
+          {
+            "layer_id": "l",
+            "sort_index": null,
+            "height": 28,
+            "cx": 74,
+            "cy": 23
+          },
+          {
+            "layer_id": "radio",
+            "sort_index": null,
+            "height": 17
+          },
+          {
+            "layer_id": "to_voice",
+            "sort_index": null,
+            "height": 28,
+            "ch": 244
+          },
+          {
+            "layer_id": "width",
+            "sort_index": null,
+            "x": 156
+          },
+          {
+            "layer_id": "x",
+            "sort_index": null,
+            "y": 14
+          },
+          {
+            "layer_id": "y",
+            "sort_index": null,
+            "height": 17
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "extra_voice.pbd",
+        "hotspot_count": 124,
+        "hotspots_sample": [
+          {
+            "layer_id": "title2",
+            "sort_index": 1185,
+            "width": 2,
+            "height": 217
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1220,
+            "height": 211,
+            "ch": 203
+          },
+          {
+            "layer_id": "plist_end",
+            "sort_index": 1290,
+            "width": 244,
+            "height": 196
+          },
+          {
+            "layer_id": "page_up1",
+            "sort_index": 1651,
+            "width": 81,
+            "height": 4
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1676,
+            "width": 116,
+            "height": 237
+          },
+          {
+            "layer_id": "page_numbase",
+            "sort_index": 1765,
+            "height": 196,
+            "ch": 80
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1846,
+            "height": 22,
+            "ch": 149
+          },
+          {
+            "layer_id": "plist_pageup",
+            "sort_index": 1848,
+            "width": 97,
+            "height": 59
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 2038,
+            "height": 191
+          },
+          {
+            "layer_id": "rm_listmode_off",
+            "sort_index": 2065,
+            "height": 217
+          },
+          {
+            "layer_id": "page_sub",
+            "sort_index": 2072,
+            "width": 145,
+            "height": 153
+          },
+          {
+            "layer_id": "back",
+            "sort_index": 2129,
+            "width": 205,
+            "height": 191
+          },
+          {
+            "layer_id": "page_up10",
+            "sort_index": 2138,
+            "width": 216,
+            "height": 194
+          },
+          {
+            "layer_id": "page_add",
+            "sort_index": 2173,
+            "width": 229,
+            "height": 197
+          },
+          {
+            "layer_id": "detail_base",
+            "sort_index": 2211,
+            "height": 76,
+            "ch": 80
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "addFlexPageCount",
+            "bindings": [
+              "addFlexPageCount"
+            ],
+            "geometry": {
+              "height": 22
+            }
+          },
+          {
+            "layer_id": "changeEditMode",
+            "bindings": [
+              "changeEditMode/addlist",
+              "changeEditMode/comment",
+              "changeEditMode/copy",
+              "changeEditMode/dellist",
+              "changeEditMode/loadlist",
+              "changeEditMode/move",
+              "changeEditMode/remove",
+              "changeEditMode/savelist",
+              "changeEditMode/swap"
+            ],
+            "geometry": {
+              "cw": 57,
+              "w": 180,
+              "oy": 322,
+              "cx": 179,
+              "ox": 253,
+              "width": 205
+            }
+          },
+          {
+            "layer_id": "clearPlayList",
+            "bindings": [
+              "clearPlayList"
+            ],
+            "geometry": {
+              "cw": 109
+            }
+          },
+          {
+            "layer_id": "movePlayList",
+            "bindings": [
+              "movePlayList/1",
+              "movePlayList/-1"
+            ],
+            "geometry": {
+              "width": 81
+            }
+          },
+          {
+            "layer_id": "onPlayListSliderChanged",
+            "bindings": [
+              "onPlayListSliderChanged"
+            ],
+            "geometry": {
+              "w": 82
+            }
+          },
+          {
+            "layer_id": "onSliderChanged",
+            "bindings": [
+              "onSliderChanged"
+            ],
+            "geometry": {
+              "width": 244
+            }
+          },
+          {
+            "layer_id": "pageMove",
+            "bindings": [
+              "pageMove/1",
+              "pageMove/10",
+              "pageMove/100",
+              "pageMove/-1",
+              "pageMove/-10",
+              "pageMove/-100"
+            ],
+            "geometry": {
+              "ch": 149,
+              "ox": 99,
+              "w": 227,
+              "x": 213
+            }
+          },
+          {
+            "layer_id": "playListScroll",
+            "bindings": [
+              "playListScroll/down",
+              "playListScroll/end",
+              "playListScroll/pagedown",
+              "playListScroll/pageup",
+              "playListScroll/top",
+              "playListScroll/up"
+            ],
+            "geometry": {
+              "width": 229,
+              "cx": 166
+            }
+          }
+        ]
+      },
+      {
+        "pbd": "scnchart.pbd",
+        "hotspot_count": 66,
+        "hotspots_sample": [
+          {
+            "layer_id": "section_pick",
+            "sort_index": 967,
+            "height": 69
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1077,
+            "width": 155,
+            "height": 169
+          },
+          {
+            "layer_id": "data_bg",
+            "sort_index": 1128,
+            "height": 183,
+            "ch": 117
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1157,
+            "height": 139,
+            "ch": 109
+          },
+          {
+            "layer_id": "backlog",
+            "sort_index": 1288,
+            "width": 45,
+            "height": 201
+          },
+          {
+            "layer_id": "page0",
+            "sort_index": 1309,
+            "width": 251,
+            "height": 20
+          },
+          {
+            "layer_id": "mapsection2",
+            "sort_index": 1348,
+            "height": 253
+          },
+          {
+            "layer_id": "page3",
+            "sort_index": 1478,
+            "width": 41,
+            "height": 2
+          },
+          {
+            "layer_id": "page4",
+            "sort_index": 1480,
+            "width": 20,
+            "height": 21
+          },
+          {
+            "layer_id": "page5",
+            "sort_index": 1488,
+            "width": 53,
+            "height": 17
+          },
+          {
+            "layer_id": "page1",
+            "sort_index": 1522,
+            "width": 241,
+            "height": 86
+          },
+          {
+            "layer_id": "page2",
+            "sort_index": 1535,
+            "width": 90,
+            "height": 50
+          },
+          {
+            "layer_id": "page7",
+            "sort_index": 1582,
+            "height": 144
+          },
+          {
+            "layer_id": "jump",
+            "sort_index": 1668,
+            "width": 35,
+            "height": 240
+          },
+          {
+            "layer_id": "helpbase",
+            "sort_index": 1679,
+            "height": 240,
+            "ch": 101
+          }
+        ],
+        "bindings_sample": [
+          {
+            "layer_id": "drawHelpText",
+            "bindings": [
+              "drawHelpText/JUMP",
+              "drawHelpText"
+            ],
+            "geometry": {
+              "cx": 44,
+              "w": 9
+            }
+          },
+          {
+            "layer_id": "jumpCurrent",
+            "bindings": [
+              "jumpCurrent"
+            ],
+            "geometry": {
+              "w": 109
+            }
+          },
+          {
+            "layer_id": "moveChapter",
+            "bindings": [
+              "moveChapter/1",
+              "moveChapter/-1"
+            ],
+            "geometry": {
+              "height": 43,
+              "w": 194
+            }
+          },
+          {
+            "layer_id": "moveScroll",
+            "bindings": [
+              "moveScroll/1",
+              "moveScroll/-1"
+            ],
+            "geometry": {
+              "w": 41,
+              "height": 253
+            }
+          },
+          {
+            "layer_id": "setPage",
+            "bindings": [
+              "setPage/0",
+              "setPage/1",
+              "setPage/2",
+              "setPage/3",
+              "setPage/4",
+              "setPage/5",
+              "setPage/6",
+              "setPage/7"
+            ],
+            "geometry": {
+              "w": 57,
+              "ch": 117,
+              "width": 71,
+              "height": 240
+            }
+          }
+        ]
+      }
+    ],
+    "hud": [
+      {
+        "pbd": "autoskipmark_img.pbd",
+        "hotspot_count": 31,
+        "hotspots_sample": [
+          {
+            "layer_id": "icon_back",
+            "sort_index": 1222,
+            "height": 126,
+            "ch": 158
+          },
+          {
+            "layer_id": "anim8",
+            "sort_index": 1324,
+            "width": 200,
+            "height": 110
+          },
+          {
+            "layer_id": "anim7",
+            "sort_index": 1336,
+            "width": 97,
+            "height": 23
+          },
+          {
+            "layer_id": "anim4",
+            "sort_index": 1407,
+            "width": 80,
+            "height": 40
+          },
+          {
+            "layer_id": "anim2",
+            "sort_index": 1411,
+            "width": 161,
+            "height": 73
+          },
+          {
+            "layer_id": "anim1",
+            "sort_index": 1439,
+            "width": 97,
+            "height": 126
+          },
+          {
+            "layer_id": "anim6",
+            "sort_index": 1448,
+            "width": 215,
+            "height": 202
+          },
+          {
+            "layer_id": "anim3",
+            "sort_index": 1475,
+            "width": 80,
+            "height": 196
+          },
+          {
+            "layer_id": "anim0",
+            "sort_index": 1486,
+            "width": 55,
+            "height": 58
+          },
+          {
+            "layer_id": "anim5",
+            "sort_index": 1521,
+            "width": 161,
+            "height": 172
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 1667,
+            "height": 190
+          },
+          {
+            "layer_id": "anim12",
+            "sort_index": 1668,
+            "width": 105,
+            "height": 192
+          },
+          {
+            "layer_id": "anim10",
+            "sort_index": 1670,
+            "width": 166,
+            "height": 225
+          },
+          {
+            "layer_id": "anim9",
+            "sort_index": 1750,
+            "width": 146,
+            "height": 146
+          },
+          {
+            "layer_id": "anim11",
+            "sort_index": 1761,
+            "width": 163,
+            "height": 107
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "autoskipmark_pos.pbd",
+        "hotspot_count": 7,
+        "hotspots_sample": [
+          {
+            "layer_id": "area",
+            "sort_index": null,
+            "height": 170
+          },
+          {
+            "layer_id": "evals",
+            "sort_index": null,
+            "height": 170
+          },
+          {
+            "layer_id": "holdimage",
+            "sort_index": null,
+            "height": 170
+          },
+          {
+            "layer_id": "markpos",
+            "sort_index": null,
+            "width": 198,
+            "height": 170
+          },
+          {
+            "layer_id": "names",
+            "sort_index": null,
+            "height": 170
+          },
+          {
+            "layer_id": "width",
+            "sort_index": null,
+            "x": 5
+          },
+          {
+            "layer_id": "x",
+            "sort_index": null,
+            "y": 206
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "btncustom.pbd",
+        "hotspot_count": 139,
+        "hotspots_sample": [
+          {
+            "layer_id": "revert",
+            "sort_index": 547,
+            "width": 218,
+            "height": 108
+          },
+          {
+            "layer_id": "pad4",
+            "sort_index": 1076,
+            "height": 255,
+            "ch": 151
+          },
+          {
+            "layer_id": "label_spc",
+            "sort_index": 1095,
+            "height": 171,
+            "ch": 34
+          },
+          {
+            "layer_id": "pad5",
+            "sort_index": 1128,
+            "height": 114,
+            "ch": 26
+          },
+          {
+            "layer_id": "pad8",
+            "sort_index": 1134,
+            "height": 15,
+            "ch": 55
+          },
+          {
+            "layer_id": "pad1",
+            "sort_index": 1154,
+            "height": 69,
+            "ch": 55
+          },
+          {
+            "layer_id": "pad6",
+            "sort_index": 1156,
+            "height": 21,
+            "ch": 54
+          },
+          {
+            "layer_id": "caption",
+            "sort_index": 1161,
+            "height": 56,
+            "ch": 193
+          },
+          {
+            "layer_id": "pad3",
+            "sort_index": 1186,
+            "height": 109,
+            "ch": 127
+          },
+          {
+            "layer_id": "icons_area",
+            "sort_index": 1224,
+            "width": 20,
+            "height": 65
+          },
+          {
+            "layer_id": "pad2",
+            "sort_index": 1224,
+            "height": 177,
+            "ch": 55
+          },
+          {
+            "layer_id": "pad7",
+            "sort_index": 1226,
+            "height": 199,
+            "ch": 251
+          },
+          {
+            "layer_id": "pad0",
+            "sort_index": 1232,
+            "height": 171,
+            "ch": 21
+          },
+          {
+            "layer_id": "pad18",
+            "sort_index": 1280,
+            "height": 146,
+            "ch": 171
+          },
+          {
+            "layer_id": "pad11",
+            "sort_index": 1288,
+            "height": 252,
+            "ch": 241
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "clickglyph_img.pbd",
+        "hotspot_count": 21,
+        "hotspots_sample": [
+          {
+            "layer_id": "copy",
+            "sort_index": 1265,
+            "height": 29
+          },
+          {
+            "layer_id": "anim5",
+            "sort_index": 1285,
+            "width": 145,
+            "height": 168
+          },
+          {
+            "layer_id": "anim1",
+            "sort_index": 1319,
+            "width": 202,
+            "height": 202
+          },
+          {
+            "layer_id": "anim2",
+            "sort_index": 1355,
+            "width": 216,
+            "height": 142
+          },
+          {
+            "layer_id": "anim8",
+            "sort_index": 1411,
+            "width": 218,
+            "height": 40
+          },
+          {
+            "layer_id": "anim7",
+            "sort_index": 1439,
+            "width": 80,
+            "height": 54
+          },
+          {
+            "layer_id": "anim0",
+            "sort_index": 1450,
+            "width": 130,
+            "height": 29
+          },
+          {
+            "layer_id": "anim3",
+            "sort_index": 1467,
+            "width": 125,
+            "height": 115
+          },
+          {
+            "layer_id": "anim4",
+            "sort_index": 1478,
+            "width": 192,
+            "height": 163
+          },
+          {
+            "layer_id": "anim6",
+            "sort_index": 1486,
+            "width": 235,
+            "height": 56
+          },
+          {
+            "layer_id": "icon",
+            "sort_index": 1497,
+            "height": 220
+          },
+          {
+            "layer_id": "anim10",
+            "sort_index": 1663,
+            "width": 57,
+            "height": 68
+          },
+          {
+            "layer_id": "anim9",
+            "sort_index": 1731,
+            "width": 117,
+            "height": 102
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2113,
+            "height": 253
+          },
+          {
+            "layer_id": "anim11",
+            "sort_index": null,
+            "width": 197,
+            "height": 29
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "gesture_help.pbd",
+        "hotspot_count": 55,
+        "hotspots_sample": [
+          {
+            "layer_id": "right",
+            "sort_index": 1063,
+            "width": 210,
+            "height": 193
+          },
+          {
+            "layer_id": "down",
+            "sort_index": 1099,
+            "width": 234,
+            "height": 126
+          },
+          {
+            "layer_id": "b_down",
+            "sort_index": 1230,
+            "width": 223,
+            "height": 204
+          },
+          {
+            "layer_id": "up",
+            "sort_index": 1241,
+            "width": 54,
+            "height": 234
+          },
+          {
+            "layer_id": "left",
+            "sort_index": 1450,
+            "width": 130,
+            "height": 15
+          },
+          {
+            "layer_id": "b_right",
+            "sort_index": 1541,
+            "width": 110,
+            "height": 52
+          },
+          {
+            "layer_id": "b_up",
+            "sort_index": 1723,
+            "width": 50,
+            "height": 203
+          },
+          {
+            "layer_id": "copy",
+            "sort_index": 1985,
+            "height": 204
+          },
+          {
+            "layer_id": "b_left",
+            "sort_index": 1990,
+            "width": 198,
+            "height": 241
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2289,
+            "height": 127
+          },
+          {
+            "layer_id": "auto",
+            "sort_index": null,
+            "ch": 166
+          },
+          {
+            "layer_id": "backone",
+            "sort_index": null,
+            "ch": 163
+          },
+          {
+            "layer_id": "backskip",
+            "sort_index": null,
+            "ch": 105
+          },
+          {
+            "layer_id": "base",
+            "sort_index": null,
+            "height": 117,
+            "ch": 16,
+            "storagex": 57
+          },
+          {
+            "layer_id": "base_off",
+            "sort_index": null,
+            "ch": 235
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "phonechat.pbd",
+        "hotspot_count": 19,
+        "hotspots_sample": [
+          {
+            "layer_id": "self",
+            "sort_index": 963,
+            "ch": 91
+          },
+          {
+            "layer_id": "talk",
+            "sort_index": 1029,
+            "ch": 95
+          },
+          {
+            "layer_id": "self_arrow",
+            "sort_index": 1155,
+            "height": 18,
+            "ch": 123
+          },
+          {
+            "layer_id": "talk_arrow",
+            "sort_index": 1222,
+            "height": 21,
+            "ch": 111
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 1742,
+            "storagex": 75
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2255,
+            "height": 82
+          },
+          {
+            "layer_id": "area",
+            "sort_index": null,
+            "height": 81
+          },
+          {
+            "layer_id": "false",
+            "sort_index": null,
+            "width": 252
+          },
+          {
+            "layer_id": "g",
+            "sort_index": null,
+            "cw": 16,
+            "ox": 948
+          },
+          {
+            "layer_id": "k",
+            "sort_index": null,
+            "height": 18
+          },
+          {
+            "layer_id": "normal",
+            "sort_index": null,
+            "ch": 205
+          },
+          {
+            "layer_id": "phonechat__bg0",
+            "sort_index": null,
+            "storagex": 75
+          },
+          {
+            "layer_id": "phonechat__pack",
+            "sort_index": null,
+            "width": 54
+          },
+          {
+            "layer_id": "rail",
+            "sort_index": null,
+            "ch": 55
+          },
+          {
+            "layer_id": "storagex",
+            "sort_index": null,
+            "storagey": 107
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "quickmenu.pbd",
+        "hotspot_count": 50,
+        "hotspots_sample": [
+          {
+            "layer_id": "auto",
+            "sort_index": 902,
+            "height": 163,
+            "ch": 200
+          },
+          {
+            "layer_id": "title",
+            "sort_index": 1029,
+            "height": 106,
+            "ch": 21
+          },
+          {
+            "layer_id": "qsave",
+            "sort_index": 1043,
+            "height": 139,
+            "ch": 122
+          },
+          {
+            "layer_id": "help_base",
+            "sort_index": 1064,
+            "height": 203,
+            "ch": 149
+          },
+          {
+            "layer_id": "nextscn",
+            "sort_index": 1068,
+            "height": 179,
+            "ch": 200
+          },
+          {
+            "layer_id": "prevscn",
+            "sort_index": 1083,
+            "height": 4,
+            "ch": 51
+          },
+          {
+            "layer_id": "custom",
+            "sort_index": 1111,
+            "height": 240,
+            "ch": 44
+          },
+          {
+            "layer_id": "load",
+            "sort_index": 1154,
+            "height": 22,
+            "ch": 170
+          },
+          {
+            "layer_id": "scnchart",
+            "sort_index": 1192,
+            "height": 111,
+            "ch": 31
+          },
+          {
+            "layer_id": "skip",
+            "sort_index": 1238,
+            "height": 172,
+            "ch": 14
+          },
+          {
+            "layer_id": "option",
+            "sort_index": 1421,
+            "height": 149,
+            "ch": 39
+          },
+          {
+            "layer_id": "snapshot",
+            "sort_index": 1439,
+            "height": 89,
+            "ch": 1
+          },
+          {
+            "layer_id": "endreplay",
+            "sort_index": 1478,
+            "height": 212,
+            "ch": 212
+          },
+          {
+            "layer_id": "qload",
+            "sort_index": 1491,
+            "height": 169,
+            "ch": 249
+          },
+          {
+            "layer_id": "save",
+            "sort_index": 1508,
+            "height": 62,
+            "ch": 110
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "touchuibar.pbd",
+        "hotspot_count": 78,
+        "hotspots_sample": [
+          {
+            "layer_id": "auto",
+            "sort_index": 824,
+            "width": 172,
+            "height": 237
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 1024,
+            "height": 113
+          },
+          {
+            "layer_id": "base",
+            "sort_index": 1063,
+            "storagex": 95
+          },
+          {
+            "layer_id": "skip",
+            "sort_index": 1192,
+            "width": 245,
+            "height": 153
+          },
+          {
+            "layer_id": "arrows",
+            "sort_index": 1194,
+            "height": 98,
+            "ch": 193
+          },
+          {
+            "layer_id": "qsave",
+            "sort_index": 1204,
+            "width": 236,
+            "height": 160
+          },
+          {
+            "layer_id": "scnchart",
+            "sort_index": 1219,
+            "width": 222,
+            "height": 228
+          },
+          {
+            "layer_id": "dsave",
+            "sort_index": 1235,
+            "width": 185,
+            "height": 146
+          },
+          {
+            "layer_id": "prevscn",
+            "sort_index": 1249,
+            "width": 113,
+            "height": 199
+          },
+          {
+            "layer_id": "nextscn",
+            "sort_index": 1265,
+            "width": 48,
+            "height": 45
+          },
+          {
+            "layer_id": "qvsave",
+            "sort_index": 1285,
+            "width": 56,
+            "height": 110
+          },
+          {
+            "layer_id": "option",
+            "sort_index": 1306,
+            "width": 246,
+            "height": 15
+          },
+          {
+            "layer_id": "qload",
+            "sort_index": 1339,
+            "width": 199,
+            "height": 188
+          },
+          {
+            "layer_id": "hide",
+            "sort_index": 1355,
+            "width": 46,
+            "height": 247
+          },
+          {
+            "layer_id": "custom",
+            "sort_index": 1410,
+            "width": 66,
+            "height": 123
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "touchvolume.pbd",
+        "hotspot_count": 22,
+        "hotspots_sample": [
+          {
+            "layer_id": "header",
+            "sort_index": 1043,
+            "height": 168,
+            "ch": 145
+          },
+          {
+            "layer_id": "wave_numbase",
+            "sort_index": 1204,
+            "height": 52,
+            "ch": 25
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2051,
+            "height": 168
+          },
+          {
+            "layer_id": "wave_mute",
+            "sort_index": 2948,
+            "height": 40,
+            "ch": 80
+          },
+          {
+            "layer_id": "base",
+            "sort_index": null,
+            "width": 246,
+            "height": 14,
+            "storagex": 128
+          },
+          {
+            "layer_id": "gameparts",
+            "sort_index": null,
+            "height": 14
+          },
+          {
+            "layer_id": "normal",
+            "sort_index": null,
+            "ch": 30
+          },
+          {
+            "layer_id": "normal_off",
+            "sort_index": null,
+            "ch": 80
+          },
+          {
+            "layer_id": "normal_on",
+            "sort_index": null,
+            "ch": 51
+          },
+          {
+            "layer_id": "on_off",
+            "sort_index": null,
+            "ch": 207
+          },
+          {
+            "layer_id": "on_on",
+            "sort_index": null,
+            "ch": 160
+          },
+          {
+            "layer_id": "over_off",
+            "sort_index": null,
+            "ch": 6
+          },
+          {
+            "layer_id": "over_on",
+            "sort_index": null,
+            "ch": 189
+          },
+          {
+            "layer_id": "slider",
+            "sort_index": null,
+            "height": 128
+          },
+          {
+            "layer_id": "storagex",
+            "sort_index": null,
+            "storagey": 229
+          }
+        ],
+        "bindings_sample": []
+      },
+      {
+        "pbd": "voicebar.pbd",
+        "hotspot_count": 25,
+        "hotspots_sample": [
+          {
+            "layer_id": "text",
+            "sort_index": 773,
+            "height": 73,
+            "ch": 140
+          },
+          {
+            "layer_id": "wait_voice",
+            "sort_index": 1099,
+            "height": 97,
+            "ch": 110
+          },
+          {
+            "layer_id": "frame",
+            "sort_index": 1183,
+            "height": 192,
+            "ch": 168
+          },
+          {
+            "layer_id": "auto_voice",
+            "sort_index": 1194,
+            "height": 26,
+            "ch": 242
+          },
+          {
+            "layer_id": "voice",
+            "sort_index": 1222,
+            "height": 17,
+            "ch": 83
+          },
+          {
+            "layer_id": "wait",
+            "sort_index": 1467,
+            "height": 117,
+            "ch": 65
+          },
+          {
+            "layer_id": "bar",
+            "sort_index": 1486,
+            "height": 1909,
+            "ch": 1823
+          },
+          {
+            "layer_id": "layer",
+            "sort_index": 2185,
+            "height": 170
+          },
+          {
+            "layer_id": "auto",
+            "sort_index": 2599,
+            "height": 170,
+            "ch": 33
+          },
+          {
+            "layer_id": "auto_wait",
+            "sort_index": 2777,
+            "height": 170,
+            "ch": 194
+          },
+          {
+            "layer_id": "base",
+            "sort_index": null,
+            "storagex": 35
+          },
+          {
+            "layer_id": "evals",
+            "sort_index": null,
+            "height": 170
+          },
+          {
+            "layer_id": "false",
+            "sort_index": null,
+            "width": 137
+          },
+          {
+            "layer_id": "gameparts",
+            "sort_index": null,
+            "height": 170
+          },
+          {
+            "layer_id": "holdimage",
+            "sort_index": null,
+            "height": 170
+          }
+        ],
+        "bindings_sample": []
+      }
+    ],
+    "other": []
+  }
+}

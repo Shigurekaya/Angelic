@@ -1,0 +1,463 @@
+{
+  "source": "touchvolume.pbd",
+  "layer_count": 45,
+  "hotspot_count": 22,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "header",
+      "sort_index": 1043,
+      "height": 168,
+      "ch": 145
+    },
+    {
+      "layer_id": "wave_numbase",
+      "sort_index": 1204,
+      "height": 52,
+      "ch": 25
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2051,
+      "height": 168
+    },
+    {
+      "layer_id": "wave_mute",
+      "sort_index": 2948,
+      "height": 40,
+      "ch": 80
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "width": 246,
+      "height": 14,
+      "storagex": 128
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 14
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "ch": 30
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 80
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 51
+    },
+    {
+      "layer_id": "on_off",
+      "sort_index": null,
+      "ch": 207
+    },
+    {
+      "layer_id": "on_on",
+      "sort_index": null,
+      "ch": 160
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 6
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 189
+    },
+    {
+      "layer_id": "slider",
+      "sort_index": null,
+      "height": 128
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 229
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "width": 246
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 40
+    },
+    {
+      "layer_id": "touchvolume__bg0",
+      "sort_index": null,
+      "storagex": 128
+    },
+    {
+      "layer_id": "touchvolume__pack",
+      "sort_index": null,
+      "width": 126
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 107
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 229
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 163
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "step",
+      "sort_index": 622,
+      "properties": {},
+      "file_offset": 6354
+    },
+    {
+      "layer_id": "jumpmode",
+      "sort_index": 1034,
+      "properties": {},
+      "file_offset": 6280
+    },
+    {
+      "layer_id": "header",
+      "sort_index": 1043,
+      "properties": {
+        "height": 168,
+        "ch": 145
+      },
+      "file_offset": 710
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 1070,
+      "properties": {},
+      "file_offset": 1904
+    },
+    {
+      "layer_id": "wave_numbase",
+      "sort_index": 1204,
+      "properties": {
+        "height": 52,
+        "ch": 25
+      },
+      "file_offset": 650
+    },
+    {
+      "layer_id": "back",
+      "sort_index": 1421,
+      "properties": {
+        "height": 14,
+        "h": 20891
+      },
+      "file_offset": 680
+    },
+    {
+      "layer_id": "auto",
+      "sort_index": 1497,
+      "properties": {},
+      "file_offset": 54
+    },
+    {
+      "layer_id": "label",
+      "sort_index": 1747,
+      "properties": {
+        "height": 140,
+        "h": 8323
+      },
+      "file_offset": 196
+    },
+    {
+      "layer_id": "exp",
+      "sort_index": 2015,
+      "properties": {},
+      "file_offset": 1822
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2051,
+      "properties": {
+        "height": 168
+      },
+      "file_offset": 3136
+    },
+    {
+      "layer_id": "wave_slider",
+      "sort_index": 2586,
+      "properties": {
+        "height": 128,
+        "h": 13901
+      },
+      "file_offset": 596
+    },
+    {
+      "layer_id": "wave_mute",
+      "sort_index": 2948,
+      "properties": {
+        "height": 40,
+        "ch": 80
+      },
+      "file_offset": 572
+    },
+    {
+      "layer_id": "wave_value",
+      "sort_index": 3131,
+      "properties": {
+        "height": 59,
+        "h": 7595
+      },
+      "file_offset": 624
+    },
+    {
+      "layer_id": "config_label_wave",
+      "sort_index": 4739,
+      "properties": {},
+      "file_offset": 296
+    },
+    {
+      "layer_id": "a",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 4863
+    },
+    {
+      "layer_id": "audio",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 68
+    },
+    {
+      "layer_id": "b",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 4501
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "properties": {
+        "height": 14,
+        "storagex": 128,
+        "width": 246
+      },
+      "file_offset": 102
+    },
+    {
+      "layer_id": "delay",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 26
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 82
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "properties": {
+        "height": 14
+      },
+      "file_offset": 784
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 462
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 530
+    },
+    {
+      "layer_id": "knob",
+      "sort_index": null,
+      "properties": {
+        "h": 13901
+      },
+      "file_offset": 6446
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 376
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "properties": {
+        "ch": 30
+      },
+      "file_offset": 6556
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 80
+      },
+      "file_offset": 4134
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 51
+      },
+      "file_offset": 4362
+    },
+    {
+      "layer_id": "on_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 207
+      },
+      "file_offset": 4730
+    },
+    {
+      "layer_id": "on_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 160
+      },
+      "file_offset": 4950
+    },
+    {
+      "layer_id": "option",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 446
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 6
+      },
+      "file_offset": 5168
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 189
+      },
+      "file_offset": 5392
+    },
+    {
+      "layer_id": "rail",
+      "sort_index": null,
+      "properties": {
+        "ch": 3328
+      },
+      "file_offset": 6918
+    },
+    {
+      "layer_id": "slider",
+      "sort_index": null,
+      "properties": {
+        "height": 128
+      },
+      "file_offset": 6238
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 229
+      },
+      "file_offset": 2926
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "width": 246
+      },
+      "file_offset": 2956
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "properties": {
+        "height": 40
+      },
+      "file_offset": 3990
+    },
+    {
+      "layer_id": "touchvolume__bg0",
+      "sort_index": null,
+      "properties": {
+        "storagex": 128
+      },
+      "file_offset": 2890
+    },
+    {
+      "layer_id": "touchvolume__pack",
+      "sort_index": null,
+      "properties": {
+        "w": 126
+      },
+      "file_offset": 492
+    },
+    {
+      "layer_id": "true",
+      "sort_index": null,
+      "properties": {
+        "h": 13901
+      },
+      "file_offset": 6302
+    },
+    {
+      "layer_id": "u",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 2049
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 107
+      },
+      "file_offset": 2716
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 229
+      },
+      "file_offset": 2740
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 163
+      },
+      "file_offset": 2756
+    }
+  ]
+}

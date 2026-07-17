@@ -1,0 +1,120 @@
+{
+  "source": "window.pbd",
+  "hotspots": [
+    {
+      "layer_id": "logo",
+      "sort_index": 1068,
+      "height": 107,
+      "ch": 111
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2180,
+      "height": 104
+    },
+    {
+      "layer_id": "colorover",
+      "sort_index": 2438,
+      "height": 173,
+      "ch": 112
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 2518,
+      "storagex": 82
+    },
+    {
+      "layer_id": "colorbase",
+      "sort_index": 2785,
+      "height": 104,
+      "ch": 8
+    },
+    {
+      "layer_id": "colorframe",
+      "sort_index": null,
+      "height": 112
+    },
+    {
+      "layer_id": "elm",
+      "sort_index": null,
+      "height": 68
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 223
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 68
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "height": 68
+    },
+    {
+      "layer_id": "logo_cn",
+      "sort_index": null,
+      "ch": 111
+    },
+    {
+      "layer_id": "logo_en",
+      "sort_index": null,
+      "ch": 168
+    },
+    {
+      "layer_id": "logo_jp",
+      "sort_index": null,
+      "ch": 111
+    },
+    {
+      "layer_id": "logo_tw",
+      "sort_index": null,
+      "ch": 140
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 68
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 161
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 130
+    },
+    {
+      "layer_id": "window__bg0",
+      "sort_index": null,
+      "storagex": 82
+    },
+    {
+      "layer_id": "window__pack",
+      "sort_index": null,
+      "height": 68,
+      "width": 68
+    },
+    {
+      "layer_id": "window_tw",
+      "sort_index": null,
+      "height": 68
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 200
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 104
+    }
+  ],
+  "bindings": []
+}

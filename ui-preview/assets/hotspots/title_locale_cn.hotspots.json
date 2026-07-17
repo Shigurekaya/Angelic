@@ -1,0 +1,53 @@
+{
+  "source": "title_locale_cn.pbd",
+  "hotspots": [
+    {
+      "layer_id": "amv_pos1",
+      "sort_index": 1155,
+      "width": 41,
+      "height": 68
+    },
+    {
+      "layer_id": "amv_pos0",
+      "sort_index": 1742,
+      "width": 244,
+      "height": 188
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 188
+    },
+    {
+      "layer_id": "c",
+      "sort_index": null,
+      "cx": 117
+    },
+    {
+      "layer_id": "cref",
+      "sort_index": null,
+      "height": 61
+    },
+    {
+      "layer_id": "title_locale_cn__pack",
+      "sort_index": null,
+      "width": 3
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 165
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 234
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 34
+    }
+  ],
+  "bindings": []
+}

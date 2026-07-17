@@ -1,0 +1,751 @@
+{
+  "source": "qconf_text.pbd",
+  "layer_count": 66,
+  "hotspot_count": 34,
+  "binding_count": 5,
+  "hotspots": [
+    {
+      "layer_id": "layer",
+      "sort_index": 2116,
+      "height": 237
+    },
+    {
+      "layer_id": "skipall_off",
+      "sort_index": 2775,
+      "height": 114,
+      "ch": 181
+    },
+    {
+      "layer_id": "drawspeed_slider",
+      "sort_index": 2820,
+      "height": 114
+    },
+    {
+      "layer_id": "skipall_chk",
+      "sort_index": 2843,
+      "height": 114
+    },
+    {
+      "layer_id": "winopac_numbase",
+      "sort_index": 2876,
+      "height": 66,
+      "ch": 193
+    },
+    {
+      "layer_id": "skipall_on",
+      "sort_index": 3109,
+      "height": 237,
+      "ch": 93
+    },
+    {
+      "layer_id": "winopac_slider",
+      "sort_index": 3417,
+      "height": 58,
+      "ch": 49
+    },
+    {
+      "layer_id": "autospeed_numbase",
+      "sort_index": 3719,
+      "height": 237,
+      "ch": 42
+    },
+    {
+      "layer_id": "textspeed_slider",
+      "sort_index": 3925,
+      "height": 74,
+      "ch": 215
+    },
+    {
+      "layer_id": "autospeed_slider",
+      "sort_index": 4024,
+      "height": 223,
+      "ch": 29
+    },
+    {
+      "layer_id": "textspeed_numbase",
+      "sort_index": 4169,
+      "height": 41,
+      "ch": 41
+    },
+    {
+      "layer_id": "skipspeed_slider",
+      "sort_index": 4206,
+      "height": 41
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 4341,
+      "storagex": 744
+    },
+    {
+      "layer_id": "color",
+      "sort_index": null,
+      "cw": 255
+    },
+    {
+      "layer_id": "disable",
+      "sort_index": null,
+      "ch": 29
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "ch": 68
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 181
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 138
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 201
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 5
+    },
+    {
+      "layer_id": "qconf__pack",
+      "sort_index": null,
+      "height": 237,
+      "width": 22
+    },
+    {
+      "layer_id": "qconf_text__bg0",
+      "sort_index": null,
+      "storagex": 744
+    },
+    {
+      "layer_id": "skipall",
+      "sort_index": null,
+      "height": 114
+    },
+    {
+      "layer_id": "skipall_rev",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "slider",
+      "sort_index": null,
+      "height": 223
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 747
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 114
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 204
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 238
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 223
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "changeBasicSlider",
+      "bindings": [
+        "changeBasicSlider"
+      ],
+      "geometry": {
+        "height": 114
+      }
+    },
+    {
+      "layer_id": "off_skipall",
+      "bindings": [
+        "setBasicOptionValue/skipall/off"
+      ],
+      "geometry": {
+        "height": 237
+      }
+    },
+    {
+      "layer_id": "onSpeedSliderChange",
+      "bindings": [
+        "onSpeedSliderChange",
+        "onSpeedSliderChange",
+        "onSpeedSliderChange",
+        "onSpeedSliderChange"
+      ],
+      "geometry": {
+        "height": 237,
+        "cw": 110,
+        "w": 233
+      }
+    },
+    {
+      "layer_id": "on_skipall",
+      "bindings": [
+        "setBasicOptionValue/skipall/on"
+      ],
+      "geometry": {
+        "height": 237
+      }
+    },
+    {
+      "layer_id": "toggle_skipall",
+      "bindings": [
+        "setBasicOptionValue/skipall/toggle",
+        "setBasicOptionValue/skipall/toggle"
+      ],
+      "geometry": {
+        "height": 237,
+        "ch": 29
+      }
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "min",
+      "sort_index": 259,
+      "properties": {},
+      "file_offset": 15546
+    },
+    {
+      "layer_id": "max",
+      "sort_index": 906,
+      "properties": {},
+      "file_offset": 15524
+    },
+    {
+      "layer_id": "caps_skipall",
+      "sort_index": 1244,
+      "properties": {
+        "height": 112,
+        "h": 12447
+      },
+      "file_offset": 360
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2116,
+      "properties": {
+        "height": 237
+      },
+      "file_offset": 2500
+    },
+    {
+      "layer_id": "skipall_off",
+      "sort_index": 2775,
+      "properties": {
+        "height": 114,
+        "ch": 181
+      },
+      "file_offset": 1098
+    },
+    {
+      "layer_id": "drawspeed_slider",
+      "sort_index": 2820,
+      "properties": {
+        "height": 114
+      },
+      "file_offset": 2174
+    },
+    {
+      "layer_id": "skipall_chk",
+      "sort_index": 2843,
+      "properties": {
+        "height": 114
+      },
+      "file_offset": 2212
+    },
+    {
+      "layer_id": "winopac_numbase",
+      "sort_index": 2876,
+      "properties": {
+        "height": 66,
+        "ch": 193
+      },
+      "file_offset": 1912
+    },
+    {
+      "layer_id": "onchangefuncdata",
+      "sort_index": 2914,
+      "properties": {},
+      "file_offset": 3232
+    },
+    {
+      "layer_id": "caps_autospd",
+      "sort_index": 3089,
+      "properties": {
+        "height": 246,
+        "h": 12295
+      },
+      "file_offset": 140
+    },
+    {
+      "layer_id": "skipall_on",
+      "sort_index": 3109,
+      "properties": {
+        "height": 237,
+        "ch": 93
+      },
+      "file_offset": 1314
+    },
+    {
+      "layer_id": "caps_textspd",
+      "sort_index": 3175,
+      "properties": {
+        "height": 189,
+        "h": 12464
+      },
+      "file_offset": 576
+    },
+    {
+      "layer_id": "caps_winopac",
+      "sort_index": 3199,
+      "properties": {
+        "height": 84,
+        "h": 12411
+      },
+      "file_offset": 796
+    },
+    {
+      "layer_id": "winopac_slider",
+      "sort_index": 3417,
+      "properties": {
+        "height": 58,
+        "ch": 49
+      },
+      "file_offset": 1846
+    },
+    {
+      "layer_id": "autospeed_numbase",
+      "sort_index": 3719,
+      "properties": {
+        "height": 237,
+        "ch": 42
+      },
+      "file_offset": 1806
+    },
+    {
+      "layer_id": "textspeed_slider",
+      "sort_index": 3925,
+      "properties": {
+        "height": 74,
+        "ch": 215
+      },
+      "file_offset": 1618
+    },
+    {
+      "layer_id": "winopac_value",
+      "sort_index": 4005,
+      "properties": {
+        "height": 23,
+        "h": 7450
+      },
+      "file_offset": 1880
+    },
+    {
+      "layer_id": "autospeed_slider",
+      "sort_index": 4024,
+      "properties": {
+        "height": 223,
+        "ch": 29
+      },
+      "file_offset": 1732
+    },
+    {
+      "layer_id": "textspeed_numbase",
+      "sort_index": 4169,
+      "properties": {
+        "height": 41,
+        "ch": 41
+      },
+      "file_offset": 1692
+    },
+    {
+      "layer_id": "skipspeed_slider",
+      "sort_index": 4206,
+      "properties": {
+        "height": 41
+      },
+      "file_offset": 2136
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 4341,
+      "properties": {
+        "height": 73,
+        "storagex": 744,
+        "h": 66641
+      },
+      "file_offset": 46
+    },
+    {
+      "layer_id": "autospeed_value",
+      "sort_index": 4432,
+      "properties": {
+        "height": 105,
+        "h": 7571
+      },
+      "file_offset": 1770
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 4489,
+      "properties": {},
+      "file_offset": 2628
+    },
+    {
+      "layer_id": "textspeed_value",
+      "sort_index": 4520,
+      "properties": {
+        "height": 123,
+        "h": 7511
+      },
+      "file_offset": 1656
+    },
+    {
+      "layer_id": "config_text_skip_all",
+      "sort_index": 6032,
+      "properties": {},
+      "file_offset": 1424
+    },
+    {
+      "layer_id": "config_text_skip_readed",
+      "sort_index": 6189,
+      "properties": {},
+      "file_offset": 1210
+    },
+    {
+      "layer_id": "config_label_allskip",
+      "sort_index": 6783,
+      "properties": {},
+      "file_offset": 474
+    },
+    {
+      "layer_id": "config_label_textspeed",
+      "sort_index": 6790,
+      "properties": {},
+      "file_offset": 690
+    },
+    {
+      "layer_id": "config_label_winopac",
+      "sort_index": 6797,
+      "properties": {},
+      "file_offset": 910
+    },
+    {
+      "layer_id": "config_label_autospeed",
+      "sort_index": 6854,
+      "properties": {},
+      "file_offset": 254
+    },
+    {
+      "layer_id": "onchangefunc",
+      "sort_index": 8960,
+      "properties": {},
+      "file_offset": 3128
+    },
+    {
+      "layer_id": "exp",
+      "sort_index": 12567,
+      "properties": {},
+      "file_offset": 8056
+    },
+    {
+      "layer_id": "a",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 7083
+    },
+    {
+      "layer_id": "b",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 6649
+    },
+    {
+      "layer_id": "color",
+      "sort_index": null,
+      "properties": {
+        "cw": 255
+      },
+      "file_offset": 3418
+    },
+    {
+      "layer_id": "disable",
+      "sort_index": null,
+      "properties": {
+        "ch": 29
+      },
+      "file_offset": 3376
+    },
+    {
+      "layer_id": "dsbase",
+      "sort_index": null,
+      "properties": {
+        "ch": 3460
+      },
+      "file_offset": 3610
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 26
+    },
+    {
+      "layer_id": "fillmode",
+      "sort_index": null,
+      "properties": {
+        "h": 13290
+      },
+      "file_offset": 4384
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "properties": {
+        "height": 237
+      },
+      "file_offset": 2310
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {
+        "height": 237
+      },
+      "file_offset": 1520
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "properties": {
+        "height": 237
+      },
+      "file_offset": 1576
+    },
+    {
+      "layer_id": "k",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 2361
+    },
+    {
+      "layer_id": "knob",
+      "sort_index": null,
+      "properties": {
+        "h": 13957
+      },
+      "file_offset": 3842
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 13129
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {
+        "height": 237
+      },
+      "file_offset": 1012
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "properties": {
+        "ch": 68
+      },
+      "file_offset": 3952
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 181
+      },
+      "file_offset": 8630
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 138
+      },
+      "file_offset": 8846
+    },
+    {
+      "layer_id": "o",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 11503
+    },
+    {
+      "layer_id": "option",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 1082
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 201
+      },
+      "file_offset": 9174
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 5
+      },
+      "file_offset": 9386
+    },
+    {
+      "layer_id": "qconf__pack",
+      "sort_index": null,
+      "properties": {
+        "height": 237,
+        "w": 22
+      },
+      "file_offset": 1550
+    },
+    {
+      "layer_id": "qconf_text__bg0",
+      "sort_index": null,
+      "properties": {
+        "storagex": 744
+      },
+      "file_offset": 5588
+    },
+    {
+      "layer_id": "rail",
+      "sort_index": null,
+      "properties": {
+        "ch": 3435
+      },
+      "file_offset": 4786
+    },
+    {
+      "layer_id": "skipall",
+      "sort_index": null,
+      "properties": {
+        "height": 114
+      },
+      "file_offset": 8476
+    },
+    {
+      "layer_id": "skipall_rev",
+      "sort_index": null,
+      "properties": {
+        "height": 237
+      },
+      "file_offset": 2240
+    },
+    {
+      "layer_id": "slider",
+      "sort_index": null,
+      "properties": {
+        "height": 223
+      },
+      "file_offset": 3036
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 747
+      },
+      "file_offset": 5622
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "h": 66641
+      },
+      "file_offset": 5652
+    },
+    {
+      "layer_id": "text",
+      "sort_index": null,
+      "properties": {
+        "h": 7741
+      },
+      "file_offset": 9596
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "properties": {
+        "height": 114
+      },
+      "file_offset": 8328
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 204
+      },
+      "file_offset": 2922
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 238
+      },
+      "file_offset": 2946
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 223
+      },
+      "file_offset": 2962
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "source": "gesture_help.pbd",
+  "hotspots": [
+    {
+      "layer_id": "right",
+      "sort_index": 1063,
+      "width": 210,
+      "height": 193
+    },
+    {
+      "layer_id": "down",
+      "sort_index": 1099,
+      "width": 234,
+      "height": 126
+    },
+    {
+      "layer_id": "b_down",
+      "sort_index": 1230,
+      "width": 223,
+      "height": 204
+    },
+    {
+      "layer_id": "up",
+      "sort_index": 1241,
+      "width": 54,
+      "height": 234
+    },
+    {
+      "layer_id": "left",
+      "sort_index": 1450,
+      "width": 130,
+      "height": 15
+    },
+    {
+      "layer_id": "b_right",
+      "sort_index": 1541,
+      "width": 110,
+      "height": 52
+    },
+    {
+      "layer_id": "b_up",
+      "sort_index": 1723,
+      "width": 50,
+      "height": 203
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1985,
+      "height": 204
+    },
+    {
+      "layer_id": "b_left",
+      "sort_index": 1990,
+      "width": 198,
+      "height": 241
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2289,
+      "height": 127
+    },
+    {
+      "layer_id": "auto",
+      "sort_index": null,
+      "ch": 166
+    },
+    {
+      "layer_id": "backone",
+      "sort_index": null,
+      "ch": 163
+    },
+    {
+      "layer_id": "backskip",
+      "sort_index": null,
+      "ch": 105
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "height": 117,
+      "ch": 16,
+      "storagex": 57
+    },
+    {
+      "layer_id": "base_off",
+      "sort_index": null,
+      "ch": 235
+    },
+    {
+      "layer_id": "base_on",
+      "sort_index": null,
+      "ch": 156
+    },
+    {
+      "layer_id": "base_over",
+      "sort_index": null,
+      "ch": 7
+    },
+    {
+      "layer_id": "click",
+      "sort_index": null,
+      "ch": 102
+    },
+    {
+      "layer_id": "custom",
+      "sort_index": null,
+      "ch": 202
+    },
+    {
+      "layer_id": "dsave",
+      "sort_index": null,
+      "ch": 207
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 127
+    },
+    {
+      "layer_id": "failed",
+      "sort_index": null,
+      "ch": 160
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "height": 153
+    },
+    {
+      "layer_id": "hide",
+      "sort_index": null,
+      "ch": 6
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 127
+    },
+    {
+      "layer_id": "item",
+      "sort_index": null,
+      "height": 126,
+      "ch": 166
+    },
+    {
+      "layer_id": "load",
+      "sort_index": null,
+      "ch": 189
+    },
+    {
+      "layer_id": "log",
+      "sort_index": null,
+      "ch": 249
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 127
+    },
+    {
+      "layer_id": "next",
+      "sort_index": null,
+      "ch": 25
+    },
+    {
+      "layer_id": "nextscn",
+      "sort_index": null,
+      "ch": 238
+    },
+    {
+      "layer_id": "none",
+      "sort_index": null,
+      "ch": 212
+    },
+    {
+      "layer_id": "o",
+      "sort_index": null,
+      "height": 40
+    },
+    {
+      "layer_id": "option",
+      "sort_index": null,
+      "ch": 48
+    },
+    {
+      "layer_id": "panic",
+      "sort_index": null,
+      "ch": 207
+    },
+    {
+      "layer_id": "prev",
+      "sort_index": null,
+      "ch": 108
+    },
+    {
+      "layer_id": "prevscn",
+      "sort_index": null,
+      "ch": 6
+    },
+    {
+      "layer_id": "qload",
+      "sort_index": null,
+      "ch": 33
+    },
+    {
+      "layer_id": "qsave",
+      "sort_index": null,
+      "ch": 65
+    },
+    {
+      "layer_id": "qvsave",
+      "sort_index": null,
+      "ch": 58
+    },
+    {
+      "layer_id": "save",
+      "sort_index": null,
+      "ch": 166
+    },
+    {
+      "layer_id": "scnchart",
+      "sort_index": null,
+      "ch": 47
+    },
+    {
+      "layer_id": "screen",
+      "sort_index": null,
+      "ch": 34
+    },
+    {
+      "layer_id": "skip",
+      "sort_index": null,
+      "ch": 85
+    },
+    {
+      "layer_id": "snapshot",
+      "sort_index": null,
+      "ch": 187
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 244
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "height": 117
+    },
+    {
+      "layer_id": "title",
+      "sort_index": null,
+      "ch": 230
+    },
+    {
+      "layer_id": "touchuibar__pack",
+      "sort_index": null,
+      "height": 127,
+      "width": 19
+    },
+    {
+      "layer_id": "volume",
+      "sort_index": null,
+      "ch": 177
+    },
+    {
+      "layer_id": "vreplay",
+      "sort_index": null,
+      "ch": 145
+    },
+    {
+      "layer_id": "vsave",
+      "sort_index": null,
+      "ch": 21
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 228
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 204,
+      "cx": 110,
+      "cy": 245,
+      "cw": 217,
+      "ch": 6,
+      "ox": 1364
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 40
+    }
+  ],
+  "bindings": []
+}

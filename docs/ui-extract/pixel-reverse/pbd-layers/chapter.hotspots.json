@@ -1,0 +1,62 @@
+{
+  "source": "chapter.pbd",
+  "hotspots": [
+    {
+      "layer_id": "layer",
+      "sort_index": 1648,
+      "height": 87
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "storagex": 56
+    },
+    {
+      "layer_id": "chapter__bg0",
+      "sort_index": null,
+      "storagex": 56
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 127
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 127
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 127
+    },
+    {
+      "layer_id": "i",
+      "sort_index": null,
+      "ox": 26,
+      "storagex": 56
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 127
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 19
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 130
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 87
+    }
+  ],
+  "bindings": []
+}

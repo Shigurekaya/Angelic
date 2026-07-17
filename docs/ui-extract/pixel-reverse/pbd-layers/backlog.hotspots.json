@@ -1,0 +1,249 @@
+{
+  "source": "backlog.pbd",
+  "hotspots": [
+    {
+      "layer_id": "chapter",
+      "sort_index": 805,
+      "height": 80,
+      "ch": 139
+    },
+    {
+      "layer_id": "title",
+      "sort_index": 1051,
+      "width": 83,
+      "height": 92
+    },
+    {
+      "layer_id": "vreplay",
+      "sort_index": 1205,
+      "height": 41,
+      "ch": 92
+    },
+    {
+      "layer_id": "flowchart",
+      "sort_index": 1284,
+      "width": 32,
+      "height": 34
+    },
+    {
+      "layer_id": "vsave",
+      "sort_index": 1320,
+      "height": 44,
+      "ch": 202
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1405,
+      "height": 163
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 1629,
+      "height": 74
+    },
+    {
+      "layer_id": "back",
+      "sort_index": 1711,
+      "width": 111,
+      "height": 163
+    },
+    {
+      "layer_id": "hitarea",
+      "sort_index": 1895,
+      "ch": 92
+    },
+    {
+      "layer_id": "slider",
+      "sort_index": 2175,
+      "height": 135,
+      "ch": 244
+    },
+    {
+      "layer_id": "search",
+      "sort_index": 2230,
+      "height": 237,
+      "ch": 89
+    },
+    {
+      "layer_id": "navi2",
+      "sort_index": 2414,
+      "width": 53,
+      "height": 180
+    },
+    {
+      "layer_id": "rm_backlog",
+      "sort_index": 2434,
+      "height": 237
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 2621,
+      "width": 188,
+      "height": 230,
+      "ch": 139,
+      "storagex": 1
+    },
+    {
+      "layer_id": "caption_backlog",
+      "sort_index": 3691,
+      "height": 19,
+      "ch": 82
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 34
+    },
+    {
+      "layer_id": "backlog__bg0",
+      "sort_index": null,
+      "storagex": 1
+    },
+    {
+      "layer_id": "backlog__pack",
+      "sort_index": null,
+      "width": 59
+    },
+    {
+      "layer_id": "cr",
+      "sort_index": null,
+      "cw": 252
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "width": 62
+    },
+    {
+      "layer_id": "frame",
+      "sort_index": null,
+      "height": 1052,
+      "ch": 1068
+    },
+    {
+      "layer_id": "g",
+      "sort_index": null,
+      "height": 59,
+      "cx": 238,
+      "ox": 808
+    },
+    {
+      "layer_id": "icon",
+      "sort_index": null,
+      "ch": 89
+    },
+    {
+      "layer_id": "line",
+      "sort_index": null,
+      "ch": 1068
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "ch": 244
+    },
+    {
+      "layer_id": "part",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "rm_search",
+      "sort_index": null,
+      "height": 237
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 98
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "width": 188
+    },
+    {
+      "layer_id": "sysbutton",
+      "sort_index": null,
+      "height": 222
+    },
+    {
+      "layer_id": "syslayer",
+      "sort_index": null,
+      "height": 1052
+    },
+    {
+      "layer_id": "systoggle",
+      "sort_index": null,
+      "height": 44
+    },
+    {
+      "layer_id": "true",
+      "sort_index": null,
+      "width": 217,
+      "ch": 244
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 63
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 215
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 163
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "inputSearchText",
+      "bindings": [
+        "inputSearchText"
+      ],
+      "geometry": {
+        "w": 241
+      }
+    },
+    {
+      "layer_id": "nextPage",
+      "bindings": [
+        "nextPage"
+      ],
+      "geometry": {
+        "height": 59
+      }
+    },
+    {
+      "layer_id": "nextStop",
+      "bindings": [
+        "nextStop"
+      ],
+      "geometry": {
+        "height": 59
+      }
+    },
+    {
+      "layer_id": "prevPage",
+      "bindings": [
+        "prevPage"
+      ],
+      "geometry": {
+        "x": 63
+      }
+    },
+    {
+      "layer_id": "prevStop",
+      "bindings": [
+        "prevStop"
+      ],
+      "geometry": {
+        "height": 34
+      }
+    }
+  ]
+}

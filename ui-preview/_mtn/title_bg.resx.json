@@ -1,0 +1,24 @@
+{
+  "PsbVersion": 4,
+  "PsbType": "Motion",
+  "Platform": "krkr",
+  "CryptKey": null,
+  "ExternalTextures": false,
+  "Context": {},
+  "Resources": {
+    "0": "title_bg/normal-lower_gradient.png",
+    "1": "title_bg/normal-背景.png",
+    "2": "title_bg/normal-frame.png",
+    "3": "title_bg/normal-通常_キャラ_通常来海 (結合).png",
+    "4": "title_bg/normal-通常_通常羽.png",
+    "5": "title_bg/normal-天使☆騒々RE-BOOT！ロゴ[RGB-4c].png",
+    "6": "title_bg/logo_tw-logo_tw.png",
+    "7": "title_bg/logo_cn-logo_cn.png",
+    "8": "title_bg/logo_en-logo_en.png",
+    "9": "title_bg/normal-通常_キャラ_通常天音 (結合).png",
+    "10": "title_bg/normal-通常_キャラ_通常かぐ耶 (結合).png",
+    "11": "title_bg/normal-通常_キャラ_通常乃愛 (結合) .png",
+    "12": "title_bg/normal-通常_通常セット.png",
+    "13": "title_bg/normal-通常_通常bg.png"
+  }
+}

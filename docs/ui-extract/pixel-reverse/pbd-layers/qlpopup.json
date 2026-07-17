@@ -1,0 +1,353 @@
+{
+  "source": "qlpopup.pbd",
+  "layer_count": 31,
+  "hotspot_count": 18,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "route",
+      "sort_index": 1063,
+      "height": 23
+    },
+    {
+      "layer_id": "save",
+      "sort_index": 1099,
+      "height": 189,
+      "ch": 192
+    },
+    {
+      "layer_id": "thumb",
+      "sort_index": 1241,
+      "height": 235
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1450,
+      "storagex": 20
+    },
+    {
+      "layer_id": "load",
+      "sort_index": 1467,
+      "height": 97,
+      "ch": 225
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2119,
+      "height": 97
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 178
+    },
+    {
+      "layer_id": "file_data",
+      "sort_index": null,
+      "height": 178
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 178
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 178
+    },
+    {
+      "layer_id": "qlpopup__bg0",
+      "sort_index": null,
+      "storagex": 20
+    },
+    {
+      "layer_id": "qlpopup__pack",
+      "sort_index": null,
+      "height": 178,
+      "width": 24
+    },
+    {
+      "layer_id": "quick",
+      "sort_index": null,
+      "height": 178,
+      "ch": 77
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 0
+    },
+    {
+      "layer_id": "voice",
+      "sort_index": null,
+      "height": 10,
+      "ch": 77
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 173
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 142
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 97
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "route",
+      "sort_index": 1063,
+      "properties": {
+        "height": 51,
+        "h": 23
+      },
+      "file_offset": 158
+    },
+    {
+      "layer_id": "save",
+      "sort_index": 1099,
+      "properties": {
+        "height": 189,
+        "ch": 192
+      },
+      "file_offset": 174
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 1122,
+      "properties": {},
+      "file_offset": 1322
+    },
+    {
+      "layer_id": "thumb",
+      "sort_index": 1241,
+      "properties": {
+        "height": 25,
+        "h": 235
+      },
+      "file_offset": 128
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1450,
+      "properties": {
+        "height": 178,
+        "storagex": 20,
+        "h": 46833
+      },
+      "file_offset": 144
+    },
+    {
+      "layer_id": "load",
+      "sort_index": 1467,
+      "properties": {
+        "height": 97,
+        "ch": 225
+      },
+      "file_offset": 188
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2119,
+      "properties": {
+        "height": 97
+      },
+      "file_offset": 2386
+    },
+    {
+      "layer_id": "bigcomment",
+      "sort_index": null,
+      "properties": {
+        "h": 46833
+      },
+      "file_offset": 1378
+    },
+    {
+      "layer_id": "bigtext",
+      "sort_index": null,
+      "properties": {
+        "h": 46800
+      },
+      "file_offset": 1500
+    },
+    {
+      "layer_id": "chapter",
+      "sort_index": null,
+      "properties": {
+        "h": 6532
+      },
+      "file_offset": 1616
+    },
+    {
+      "layer_id": "comment",
+      "sort_index": null,
+      "properties": {
+        "h": 14901
+      },
+      "file_offset": 1732
+    },
+    {
+      "layer_id": "date",
+      "sort_index": null,
+      "properties": {
+        "h": 5888
+      },
+      "file_offset": 1848
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {
+        "height": 178
+      },
+      "file_offset": 26
+    },
+    {
+      "layer_id": "file_data",
+      "sort_index": null,
+      "properties": {
+        "height": 178
+      },
+      "file_offset": 260
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {
+        "height": 178
+      },
+      "file_offset": 46
+    },
+    {
+      "layer_id": "i",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 3133
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 37
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {
+        "height": 178
+      },
+      "file_offset": 106
+    },
+    {
+      "layer_id": "number",
+      "sort_index": null,
+      "properties": {
+        "h": 6517
+      },
+      "file_offset": 2072
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 509
+    },
+    {
+      "layer_id": "qlpopup__bg0",
+      "sort_index": null,
+      "properties": {
+        "storagex": 20
+      },
+      "file_offset": 1234
+    },
+    {
+      "layer_id": "qlpopup__pack",
+      "sort_index": null,
+      "properties": {
+        "height": 178,
+        "w": 24
+      },
+      "file_offset": 76
+    },
+    {
+      "layer_id": "quick",
+      "sort_index": null,
+      "properties": {
+        "height": 178,
+        "ch": 77
+      },
+      "file_offset": 202
+    },
+    {
+      "layer_id": "s",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 2629
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 0
+      },
+      "file_offset": 1262
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "h": 46833
+      },
+      "file_offset": 1292
+    },
+    {
+      "layer_id": "text",
+      "sort_index": null,
+      "properties": {
+        "h": 14879
+      },
+      "file_offset": 2186
+    },
+    {
+      "layer_id": "voice",
+      "sort_index": null,
+      "properties": {
+        "height": 10,
+        "ch": 77
+      },
+      "file_offset": 6034
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 173
+      },
+      "file_offset": 2296
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 142
+      },
+      "file_offset": 2320
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 97
+      },
+      "file_offset": 2336
+    }
+  ]
+}

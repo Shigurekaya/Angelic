@@ -1,0 +1,183 @@
+{
+  "source": "bgmtitle.pbd",
+  "layer_count": 16,
+  "hotspot_count": 10,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "storagex": 168
+    },
+    {
+      "layer_id": "bgmtitle__bg0",
+      "sort_index": null,
+      "storagex": 168
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 195
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 195
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 195
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "height": 195
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 195
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 56
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 112
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 40
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "uiname",
+      "sort_index": 1068,
+      "properties": {},
+      "file_offset": 506
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "properties": {
+        "height": 195,
+        "storagex": 168,
+        "h": 7137
+      },
+      "file_offset": 112
+    },
+    {
+      "layer_id": "bgmtitle__bg0",
+      "sort_index": null,
+      "properties": {
+        "storagex": 168
+      },
+      "file_offset": 416
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {
+        "height": 195
+      },
+      "file_offset": 26
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "properties": {
+        "height": 195
+      },
+      "file_offset": 168
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {
+        "height": 195
+      },
+      "file_offset": 46
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "properties": {
+        "height": 195
+      },
+      "file_offset": 70
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 37
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {
+        "height": 195
+      },
+      "file_offset": 90
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 813
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 56
+      },
+      "file_offset": 446
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "h": 7137
+      },
+      "file_offset": 476
+    },
+    {
+      "layer_id": "text",
+      "sort_index": null,
+      "properties": {
+        "h": 7123
+      },
+      "file_offset": 676
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 112
+      },
+      "file_offset": 786
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 40
+      },
+      "file_offset": 810
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 826
+    }
+  ]
+}

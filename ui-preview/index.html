@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Angelic UI 预览</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-game="angelic" class="is-pixel">
+  <div id="shell">
+    <div id="viewport">
+      <div id="app">
+        <section id="screen-title" class="screen active">
+          <div class="bg" id="title-bg"></div>
+          <img class="title-logo" id="title-logo" alt="" />
+          <div class="title-veil"></div>
+          <header class="title-top">
+            <span class="game-name" id="game-name"></span>
+            <div class="bg-switch" id="bg-switch"></div>
+          </header>
+          <div class="flex-grow"></div>
+          <nav class="title-menu bottom-bar" id="title-menu"></nav>
+        </section>
+
+        <section id="screen-settings" class="screen settings-pixel">
+          <div class="bg" id="settings-bg"></div>
+          <img class="chassis" id="settings-chassis" alt="" />
+          <div class="top-tools">
+            <label><input type="checkbox" id="chk-pixel" checked /> 像素UI</label>
+            <button type="button" data-nav="title">标题</button>
+          </div>
+          <nav class="opt-tabs" id="tab-bar"></nav>
+          <div class="pixel-hits" id="settings-hits"></div>
+          <div class="panel-fallback" id="settings-fallback" hidden>
+            <div id="tab-content"></div>
+            <aside id="help"></aside>
+          </div>
+          <footer class="opt-footer">
+            <button type="button" data-nav="title" id="btn-back-title">返回标题</button>
+            <button type="button" class="primary" data-nav="title">返回游戏</button>
+          </footer>
+        </section>
+
+        <section id="screen-load" class="screen">
+          <div class="bg" id="load-bg"></div>
+          <img class="pack-overlay" id="load-pack" alt="" />
+          <div class="float-dock">
+            <h2 id="load-title">载入进度</h2>
+            <div class="slot-grid" id="slot-grid"></div>
+            <footer class="bar-footer"><button type="button" data-nav="title">返回标题</button></footer>
+          </div>
+        </section>
+
+        <section id="screen-flowchart" class="screen">
+          <div class="bg" id="flowchart-bg"></div>
+          <img class="pack-overlay" id="flowchart-pack" alt="" />
+          <div class="float-dock glass">
+            <h2 id="flow-title">流程图</h2>
+            <div class="flow-nodes" id="flow-nodes"></div>
+            <footer class="bar-footer"><button type="button" data-nav="title">返回标题</button></footer>
+          </div>
+        </section>
+
+        <section id="screen-cg" class="screen">
+          <div class="bg" id="cg-bg"></div>
+          <img class="pack-overlay" id="cg-pack" alt="" />
+          <div class="float-dock">
+            <h2 id="cg-title">鉴赏模式</h2>
+            <div class="cg-grid" id="cg-grid"></div>
+            <footer class="bar-footer"><button type="button" data-nav="title">返回标题</button></footer>
+          </div>
+        </section>
+      </div>
+      <div id="toast" hidden></div>
+      <div id="badge"></div>
+    </div>
+    <p class="cap">Angelic · 设置=像素底图+热区 · 标题=底栏菜单</p>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

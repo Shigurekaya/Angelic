@@ -1,0 +1,42 @@
+{
+  "source": "autoskipmark_pos.pbd",
+  "hotspots": [
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "markpos",
+      "sort_index": null,
+      "width": 198,
+      "height": 170
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 5
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 206
+    }
+  ],
+  "bindings": []
+}

@@ -1,0 +1,457 @@
+{
+  "source": "phonechat.pbd",
+  "layer_count": 45,
+  "hotspot_count": 19,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "self",
+      "sort_index": 963,
+      "ch": 91
+    },
+    {
+      "layer_id": "talk",
+      "sort_index": 1029,
+      "ch": 95
+    },
+    {
+      "layer_id": "self_arrow",
+      "sort_index": 1155,
+      "height": 18,
+      "ch": 123
+    },
+    {
+      "layer_id": "talk_arrow",
+      "sort_index": 1222,
+      "height": 21,
+      "ch": 111
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1742,
+      "storagex": 75
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2255,
+      "height": 82
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 81
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 252
+    },
+    {
+      "layer_id": "g",
+      "sort_index": null,
+      "cw": 16,
+      "ox": 948
+    },
+    {
+      "layer_id": "k",
+      "sort_index": null,
+      "height": 18
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "ch": 205
+    },
+    {
+      "layer_id": "phonechat__bg0",
+      "sort_index": null,
+      "storagex": 75
+    },
+    {
+      "layer_id": "phonechat__pack",
+      "sort_index": null,
+      "width": 54
+    },
+    {
+      "layer_id": "rail",
+      "sort_index": null,
+      "ch": 55
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 107
+    },
+    {
+      "layer_id": "true",
+      "sort_index": null,
+      "width": 74
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 168
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 3
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 28
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "pagedown",
+      "sort_index": 824,
+      "properties": {
+        "height": 51,
+        "h": 9445
+      },
+      "file_offset": 384
+    },
+    {
+      "layer_id": "self",
+      "sort_index": 963,
+      "properties": {
+        "h": 41164,
+        "height": 82,
+        "ch": 91
+      },
+      "file_offset": 322
+    },
+    {
+      "layer_id": "talk",
+      "sort_index": 1029,
+      "properties": {
+        "h": 41002,
+        "height": 245,
+        "ch": 95
+      },
+      "file_offset": 250
+    },
+    {
+      "layer_id": "jumpmode",
+      "sort_index": 1058,
+      "properties": {},
+      "file_offset": 7252
+    },
+    {
+      "layer_id": "self_arrow",
+      "sort_index": 1155,
+      "properties": {
+        "height": 18,
+        "ch": 123
+      },
+      "file_offset": 296
+    },
+    {
+      "layer_id": "vertical",
+      "sort_index": 1171,
+      "properties": {},
+      "file_offset": 8568
+    },
+    {
+      "layer_id": "talk_arrow",
+      "sort_index": 1222,
+      "properties": {
+        "height": 21,
+        "ch": 111
+      },
+      "file_offset": 224
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 1253,
+      "properties": {},
+      "file_offset": 2122
+    },
+    {
+      "layer_id": "visible",
+      "sort_index": 1286,
+      "properties": {},
+      "file_offset": 6544
+    },
+    {
+      "layer_id": "top",
+      "sort_index": 1663,
+      "properties": {
+        "height": 3,
+        "h": 9236
+      },
+      "file_offset": 336
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1742,
+      "properties": {
+        "height": 232,
+        "storagex": 75,
+        "h": 43427
+      },
+      "file_offset": 264
+    },
+    {
+      "layer_id": "pageup",
+      "sort_index": 1777,
+      "properties": {
+        "height": 216,
+        "h": 9347
+      },
+      "file_offset": 348
+    },
+    {
+      "layer_id": "slider",
+      "sort_index": 2216,
+      "properties": {
+        "height": 30,
+        "h": 26839
+      },
+      "file_offset": 366
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2255,
+      "properties": {
+        "height": 82
+      },
+      "file_offset": 6058
+    },
+    {
+      "layer_id": "scroll",
+      "sort_index": 2719,
+      "properties": {
+        "height": 81,
+        "h": 41164
+      },
+      "file_offset": 278
+    },
+    {
+      "layer_id": "onchangefunc",
+      "sort_index": 3898,
+      "properties": {},
+      "file_offset": 7316
+    },
+    {
+      "layer_id": "exp",
+      "sort_index": 6291,
+      "properties": {},
+      "file_offset": 2518
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "properties": {
+        "height": 81
+      },
+      "file_offset": 5620
+    },
+    {
+      "layer_id": "b",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 3785
+    },
+    {
+      "layer_id": "box",
+      "sort_index": null,
+      "properties": {
+        "h": 8405
+      },
+      "file_offset": 6436
+    },
+    {
+      "layer_id": "chatscreen",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 460
+    },
+    {
+      "layer_id": "end",
+      "sort_index": null,
+      "properties": {
+        "height": 28,
+        "h": 9447
+      },
+      "file_offset": 406
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 26
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "properties": {
+        "width": 252
+      },
+      "file_offset": 6564
+    },
+    {
+      "layer_id": "g",
+      "sort_index": null,
+      "properties": {
+        "height": 232,
+        "cw": 16,
+        "ox": 948,
+        "h": 26534
+      },
+      "file_offset": 1270
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 138
+    },
+    {
+      "layer_id": "k",
+      "sort_index": null,
+      "properties": {
+        "height": 18
+      },
+      "file_offset": 2109
+    },
+    {
+      "layer_id": "knob",
+      "sort_index": null,
+      "properties": {
+        "h": 26839
+      },
+      "file_offset": 7440
+    },
+    {
+      "layer_id": "l",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 6335
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 46
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "properties": {
+        "ch": 205
+      },
+      "file_offset": 7578
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 619
+    },
+    {
+      "layer_id": "phonechat",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 116
+    },
+    {
+      "layer_id": "phonechat__bg0",
+      "sort_index": null,
+      "properties": {
+        "storagex": 75
+      },
+      "file_offset": 2030
+    },
+    {
+      "layer_id": "phonechat__pack",
+      "sort_index": null,
+      "properties": {
+        "w": 54
+      },
+      "file_offset": 168
+    },
+    {
+      "layer_id": "rail",
+      "sort_index": null,
+      "properties": {
+        "ch": 55
+      },
+      "file_offset": 8356
+    },
+    {
+      "layer_id": "s",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 1877
+    },
+    {
+      "layer_id": "self_max",
+      "sort_index": null,
+      "properties": {
+        "h": 43427
+      },
+      "file_offset": 2178
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 107
+      },
+      "file_offset": 2062
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "h": 43427
+      },
+      "file_offset": 2092
+    },
+    {
+      "layer_id": "talk_max",
+      "sort_index": null,
+      "properties": {
+        "h": 43456
+      },
+      "file_offset": 2296
+    },
+    {
+      "layer_id": "true",
+      "sort_index": null,
+      "properties": {
+        "h": 26839,
+        "width": 74
+      },
+      "file_offset": 7274
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 168
+      },
+      "file_offset": 2414
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 3
+      },
+      "file_offset": 2438
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 28
+      },
+      "file_offset": 2454
+    }
+  ]
+}

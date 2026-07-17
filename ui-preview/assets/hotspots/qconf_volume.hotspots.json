@@ -1,0 +1,514 @@
+{
+  "source": "qconf_volume.pbd",
+  "hotspots": [
+    {
+      "layer_id": "bgm_test",
+      "sort_index": 1390,
+      "height": 42
+    },
+    {
+      "layer_id": "se_on",
+      "sort_index": 1540,
+      "height": 88
+    },
+    {
+      "layer_id": "wave_test",
+      "sort_index": 1553,
+      "height": 238
+    },
+    {
+      "layer_id": "bgv_slider",
+      "sort_index": 1578,
+      "height": 234
+    },
+    {
+      "layer_id": "se_off",
+      "sort_index": 1819,
+      "height": 88
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1852,
+      "storagex": 644
+    },
+    {
+      "layer_id": "voice_numbase",
+      "sort_index": 1873,
+      "height": 58,
+      "ch": 67
+    },
+    {
+      "layer_id": "bgm_on",
+      "sort_index": 1919,
+      "height": 202
+    },
+    {
+      "layer_id": "se_play",
+      "sort_index": 1967,
+      "height": 88
+    },
+    {
+      "layer_id": "bgv_on",
+      "sort_index": 2014,
+      "height": 234
+    },
+    {
+      "layer_id": "bgv_off",
+      "sort_index": 2081,
+      "height": 234
+    },
+    {
+      "layer_id": "bgv_play",
+      "sort_index": 2098,
+      "height": 234
+    },
+    {
+      "layer_id": "sysse_test",
+      "sort_index": 2138,
+      "height": 12
+    },
+    {
+      "layer_id": "sysse_slider",
+      "sort_index": 2188,
+      "height": 12
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2209,
+      "height": 235
+    },
+    {
+      "layer_id": "se_slider",
+      "sort_index": 2216,
+      "height": 88,
+      "ch": 165
+    },
+    {
+      "layer_id": "movie_slider",
+      "sort_index": 2226,
+      "height": 62
+    },
+    {
+      "layer_id": "wave_numbase",
+      "sort_index": 2229,
+      "height": 109,
+      "ch": 250
+    },
+    {
+      "layer_id": "wave_on",
+      "sort_index": 2263,
+      "height": 69
+    },
+    {
+      "layer_id": "bgm_off",
+      "sort_index": 2268,
+      "height": 202
+    },
+    {
+      "layer_id": "bgm_play",
+      "sort_index": 2293,
+      "height": 202
+    },
+    {
+      "layer_id": "voice_on",
+      "sort_index": 2324,
+      "height": 206
+    },
+    {
+      "layer_id": "wave_off",
+      "sort_index": 2341,
+      "height": 69
+    },
+    {
+      "layer_id": "bgm_slider",
+      "sort_index": 2344,
+      "height": 202,
+      "ch": 220
+    },
+    {
+      "layer_id": "se_mute",
+      "sort_index": 2389,
+      "height": 62,
+      "ch": 3
+    },
+    {
+      "layer_id": "wave_play",
+      "sort_index": 2407,
+      "height": 69
+    },
+    {
+      "layer_id": "sysse_on",
+      "sort_index": 2411,
+      "height": 12
+    },
+    {
+      "layer_id": "se_numbase",
+      "sort_index": 2488,
+      "height": 183,
+      "ch": 117
+    },
+    {
+      "layer_id": "movie_on",
+      "sort_index": 2546,
+      "height": 62
+    },
+    {
+      "layer_id": "movie_play",
+      "sort_index": 2560,
+      "height": 62
+    },
+    {
+      "layer_id": "wave_slider",
+      "sort_index": 2605,
+      "height": 69,
+      "ch": 162
+    },
+    {
+      "layer_id": "voice_play",
+      "sort_index": 2671,
+      "height": 206
+    },
+    {
+      "layer_id": "sysse_play",
+      "sort_index": 2690,
+      "height": 12
+    },
+    {
+      "layer_id": "bgm_numbase",
+      "sort_index": 2704,
+      "height": 235,
+      "ch": 54
+    },
+    {
+      "layer_id": "voice_off",
+      "sort_index": 2708,
+      "height": 206
+    },
+    {
+      "layer_id": "bgm_mute",
+      "sort_index": 2775,
+      "height": 14,
+      "ch": 155
+    },
+    {
+      "layer_id": "bgv_test",
+      "sort_index": 2900,
+      "height": 234
+    },
+    {
+      "layer_id": "wave_mute",
+      "sort_index": 2909,
+      "height": 224,
+      "ch": 16
+    },
+    {
+      "layer_id": "voice_test",
+      "sort_index": 2911,
+      "height": 33
+    },
+    {
+      "layer_id": "voice_slider",
+      "sort_index": 3066,
+      "height": 206,
+      "ch": 151
+    },
+    {
+      "layer_id": "se_test",
+      "sort_index": 3254,
+      "height": 33
+    },
+    {
+      "layer_id": "voice_mute",
+      "sort_index": 3321,
+      "height": 12,
+      "ch": 82
+    },
+    {
+      "layer_id": "bgm",
+      "sort_index": null,
+      "height": 202
+    },
+    {
+      "layer_id": "bgv",
+      "sort_index": null,
+      "height": 234
+    },
+    {
+      "layer_id": "color",
+      "sort_index": null,
+      "cw": 191
+    },
+    {
+      "layer_id": "disable",
+      "sort_index": null,
+      "ch": 220
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 162
+    },
+    {
+      "layer_id": "movie",
+      "sort_index": null,
+      "height": 62
+    },
+    {
+      "layer_id": "movie_test",
+      "sort_index": null,
+      "height": 162
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "ch": 151
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 155
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 197
+    },
+    {
+      "layer_id": "on_off",
+      "sort_index": null,
+      "ch": 233
+    },
+    {
+      "layer_id": "on_on",
+      "sort_index": null,
+      "ch": 107
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 192
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 147
+    },
+    {
+      "layer_id": "qconf__pack",
+      "sort_index": null,
+      "width": 55
+    },
+    {
+      "layer_id": "qconf_volume__bg0",
+      "sort_index": null,
+      "storagex": 644
+    },
+    {
+      "layer_id": "se",
+      "sort_index": null,
+      "height": 88
+    },
+    {
+      "layer_id": "slider",
+      "sort_index": null,
+      "height": 202
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 970
+    },
+    {
+      "layer_id": "sysse",
+      "sort_index": null,
+      "height": 12
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 14
+    },
+    {
+      "layer_id": "voice",
+      "sort_index": null,
+      "height": 206
+    },
+    {
+      "layer_id": "wave",
+      "sort_index": null,
+      "height": 69
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 133
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 0
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 14
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "bgm",
+      "bindings": [
+        "setAudioOnOff/bgm/toggle",
+        "setAudioOnOff/bgm/0",
+        "setAudioOnOff/bgm/1",
+        "setAudioOnOff/bgm/toggle"
+      ],
+      "geometry": {
+        "height": 162
+      }
+    },
+    {
+      "layer_id": "bgv",
+      "bindings": [
+        "setAudioOnOff/bgv/toggle",
+        "setAudioOnOff/bgv/0",
+        "setAudioOnOff/bgv/1",
+        "setAudioOnOff/bgv/toggle"
+      ],
+      "geometry": {
+        "height": 162,
+        "storagex": 644,
+        "x": 133
+      }
+    },
+    {
+      "layer_id": "bgv2",
+      "bindings": [
+        "setAudioOnOff/bgv2/toggle",
+        "setAudioOnOff/bgv2/0",
+        "setAudioOnOff/bgv2/1",
+        "setAudioOnOff/bgv2/toggle"
+      ],
+      "geometry": {
+        "height": 162
+      }
+    },
+    {
+      "layer_id": "down",
+      "bindings": [
+        "setAudioOnOff/down/toggle",
+        "setAudioOnOff/down/0",
+        "setAudioOnOff/down/1",
+        "setAudioOnOff/down/toggle"
+      ],
+      "geometry": {
+        "height": 202,
+        "ch": 220
+      }
+    },
+    {
+      "layer_id": "movie",
+      "bindings": [
+        "setAudioOnOff/movie/toggle",
+        "setAudioOnOff/movie/0",
+        "setAudioOnOff/movie/1",
+        "setAudioOnOff/movie/toggle"
+      ],
+      "geometry": {
+        "y": 146,
+        "ch": 3,
+        "cw": 123,
+        "cx": 110
+      }
+    },
+    {
+      "layer_id": "onAudioVolumeChange",
+      "bindings": [
+        "onAudioVolumeChange",
+        "onAudioVolumeChange",
+        "onAudioVolumeChange",
+        "onAudioVolumeChange",
+        "onAudioVolumeChange",
+        "onAudioVolumeChange",
+        "onAudioVolumeChange",
+        "onAudioVolumeChange",
+        "onAudioVolumeChange"
+      ],
+      "geometry": {
+        "height": 162,
+        "ch": 155,
+        "w": 97
+      }
+    },
+    {
+      "layer_id": "se",
+      "bindings": [
+        "setAudioOnOff/se/toggle",
+        "setAudioOnOff/se/0",
+        "setAudioOnOff/se/1",
+        "setAudioOnOff/se/toggle"
+      ],
+      "geometry": {
+        "height": 234
+      }
+    },
+    {
+      "layer_id": "sysse",
+      "bindings": [
+        "setAudioOnOff/sysse/toggle",
+        "setAudioOnOff/sysse/0",
+        "setAudioOnOff/sysse/1",
+        "setAudioOnOff/sysse/toggle"
+      ],
+      "geometry": {
+        "height": 62
+      }
+    },
+    {
+      "layer_id": "testAudioPlay",
+      "bindings": [
+        "testAudioPlay/bgm",
+        "testAudioPlay/bgv2",
+        "testAudioPlay/bgv",
+        "testAudioPlay/down",
+        "testAudioPlay/movie",
+        "testAudioPlay/se",
+        "testAudioPlay/sysse",
+        "testAudioPlay/voice",
+        "testAudioPlay/wave"
+      ],
+      "geometry": {
+        "height": 162,
+        "ch": 197,
+        "w": 200
+      }
+    },
+    {
+      "layer_id": "voice",
+      "bindings": [
+        "setAudioOnOff/voice/toggle",
+        "setAudioOnOff/voice/0",
+        "setAudioOnOff/voice/1",
+        "setAudioOnOff/voice/toggle"
+      ],
+      "geometry": {
+        "height": 62,
+        "ch": 222,
+        "cy": 27
+      }
+    },
+    {
+      "layer_id": "wave",
+      "bindings": [
+        "setAudioOnOff/wave/toggle",
+        "setAudioOnOff/wave/0",
+        "setAudioOnOff/wave/1",
+        "setAudioOnOff/wave/toggle"
+      ],
+      "geometry": {
+        "height": 33,
+        "ch": 82
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "source": "phonechat.pbd",
+  "hotspots": [
+    {
+      "layer_id": "self",
+      "sort_index": 963,
+      "ch": 91
+    },
+    {
+      "layer_id": "talk",
+      "sort_index": 1029,
+      "ch": 95
+    },
+    {
+      "layer_id": "self_arrow",
+      "sort_index": 1155,
+      "height": 18,
+      "ch": 123
+    },
+    {
+      "layer_id": "talk_arrow",
+      "sort_index": 1222,
+      "height": 21,
+      "ch": 111
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 1742,
+      "storagex": 75
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2255,
+      "height": 82
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 81
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 252
+    },
+    {
+      "layer_id": "g",
+      "sort_index": null,
+      "cw": 16,
+      "ox": 948
+    },
+    {
+      "layer_id": "k",
+      "sort_index": null,
+      "height": 18
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "ch": 205
+    },
+    {
+      "layer_id": "phonechat__bg0",
+      "sort_index": null,
+      "storagex": 75
+    },
+    {
+      "layer_id": "phonechat__pack",
+      "sort_index": null,
+      "width": 54
+    },
+    {
+      "layer_id": "rail",
+      "sort_index": null,
+      "ch": 55
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 107
+    },
+    {
+      "layer_id": "true",
+      "sort_index": null,
+      "width": 74
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 168
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 3
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 28
+    }
+  ],
+  "bindings": []
+}

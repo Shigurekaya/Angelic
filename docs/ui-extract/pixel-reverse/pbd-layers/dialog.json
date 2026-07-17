@@ -1,0 +1,963 @@
+{
+  "source": "dialog.pbd",
+  "layer_count": 107,
+  "hotspot_count": 37,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "yes",
+      "sort_index": 572,
+      "width": 99,
+      "height": 222
+    },
+    {
+      "layer_id": "frame",
+      "sort_index": 768,
+      "ch": 63
+    },
+    {
+      "layer_id": "no",
+      "sort_index": 983,
+      "width": 33,
+      "height": 18
+    },
+    {
+      "layer_id": "text",
+      "sort_index": 1028,
+      "width": 10
+    },
+    {
+      "layer_id": "readjumpoff",
+      "sort_index": 1134,
+      "height": 35,
+      "ch": 63
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 1310,
+      "height": 235
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1544,
+      "height": 18
+    },
+    {
+      "layer_id": "readskip_off",
+      "sort_index": 1718,
+      "width": 188,
+      "height": 18
+    },
+    {
+      "layer_id": "suspend_off",
+      "sort_index": 2012,
+      "width": 9,
+      "height": 18
+    },
+    {
+      "layer_id": "grp_askresume",
+      "sort_index": 2155,
+      "height": 18
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 2843,
+      "width": 123,
+      "height": 252,
+      "storagex": 200
+    },
+    {
+      "layer_id": "suspend_on",
+      "sort_index": 2943,
+      "width": 47,
+      "height": 146
+    },
+    {
+      "layer_id": "readjump_mes",
+      "sort_index": 2987,
+      "height": 35
+    },
+    {
+      "layer_id": "grp_readjump",
+      "sort_index": 3133,
+      "height": 18
+    },
+    {
+      "layer_id": "readskip_on",
+      "sort_index": 3247,
+      "width": 237,
+      "height": 146
+    },
+    {
+      "layer_id": "readjump",
+      "sort_index": 3258,
+      "height": 235
+    },
+    {
+      "layer_id": "common",
+      "sort_index": 3468,
+      "height": 18
+    },
+    {
+      "layer_id": "dialog",
+      "sort_index": 1845493760,
+      "height": 35
+    },
+    {
+      "layer_id": "dialog__bg0",
+      "sort_index": null,
+      "storagex": 200
+    },
+    {
+      "layer_id": "dialog__pack",
+      "sort_index": null,
+      "width": 229
+    },
+    {
+      "layer_id": "dialog_suspend_comment",
+      "sort_index": null,
+      "width": 10
+    },
+    {
+      "layer_id": "dialog_suspend_label",
+      "sort_index": null,
+      "width": 83
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "height": 43
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "width": 83
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 113
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 59
+    },
+    {
+      "layer_id": "option",
+      "sort_index": null,
+      "width": 188
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 181
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 138
+    },
+    {
+      "layer_id": "part",
+      "sort_index": null,
+      "height": 18
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "height": 35
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 42
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "width": 123
+    },
+    {
+      "layer_id": "suspend_rad",
+      "sort_index": null,
+      "height": 80
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 73
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 10
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 235
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "yes",
+      "sort_index": 572,
+      "properties": {
+        "height": 222,
+        "width": 99
+      },
+      "file_offset": 1314
+    },
+    {
+      "layer_id": "frame",
+      "sort_index": 768,
+      "properties": {
+        "ch": 63,
+        "h": 22839
+      },
+      "file_offset": 7002
+    },
+    {
+      "layer_id": "no",
+      "sort_index": 983,
+      "properties": {
+        "height": 18,
+        "width": 33
+      },
+      "file_offset": 394
+    },
+    {
+      "layer_id": "text",
+      "sort_index": 1028,
+      "properties": {
+        "h": 7923,
+        "height": 18,
+        "w": 10
+      },
+      "file_offset": 1756
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 1048,
+      "properties": {},
+      "file_offset": 3102
+    },
+    {
+      "layer_id": "readjumpoff",
+      "sort_index": 1134,
+      "properties": {
+        "height": 35,
+        "ch": 63
+      },
+      "file_offset": 1728
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 1310,
+      "properties": {
+        "height": 235
+      },
+      "file_offset": 8342
+    },
+    {
+      "layer_id": "enabled",
+      "sort_index": 1334,
+      "properties": {},
+      "file_offset": 5554
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1544,
+      "properties": {
+        "height": 18
+      },
+      "file_offset": 7738
+    },
+    {
+      "layer_id": "sename",
+      "sort_index": 1634,
+      "properties": {},
+      "file_offset": 9118
+    },
+    {
+      "layer_id": "readskip_off",
+      "sort_index": 1718,
+      "properties": {
+        "height": 18,
+        "width": 188
+      },
+      "file_offset": 1812
+    },
+    {
+      "layer_id": "suspend_off",
+      "sort_index": 2012,
+      "properties": {
+        "height": 18,
+        "width": 9
+      },
+      "file_offset": 718
+    },
+    {
+      "layer_id": "grp_askresume",
+      "sort_index": 2155,
+      "properties": {
+        "height": 18
+      },
+      "file_offset": 1860
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 2843,
+      "properties": {
+        "height": 252,
+        "storagex": 200,
+        "width": 123
+      },
+      "file_offset": 46
+    },
+    {
+      "layer_id": "suspend_on",
+      "sort_index": 2943,
+      "properties": {
+        "height": 146,
+        "width": 47
+      },
+      "file_offset": 1020
+    },
+    {
+      "layer_id": "readjump_mes",
+      "sort_index": 2987,
+      "properties": {
+        "height": 35
+      },
+      "file_offset": 1944
+    },
+    {
+      "layer_id": "suspend",
+      "sort_index": 3061,
+      "properties": {
+        "height": 35,
+        "h": 22839
+      },
+      "file_offset": 1708
+    },
+    {
+      "layer_id": "grp_readjump",
+      "sort_index": 3133,
+      "properties": {
+        "height": 18
+      },
+      "file_offset": 1914
+    },
+    {
+      "layer_id": "readskip_on",
+      "sort_index": 3247,
+      "properties": {
+        "height": 146,
+        "width": 237
+      },
+      "file_offset": 642
+    },
+    {
+      "layer_id": "readjump",
+      "sort_index": 3258,
+      "properties": {
+        "height": 235
+      },
+      "file_offset": 1892
+    },
+    {
+      "layer_id": "common",
+      "sort_index": 3468,
+      "properties": {
+        "height": 18
+      },
+      "file_offset": 1842
+    },
+    {
+      "layer_id": "dialog_btn_no",
+      "sort_index": 3542,
+      "properties": {},
+      "file_offset": 488
+    },
+    {
+      "layer_id": "overlay",
+      "sort_index": 3610,
+      "properties": {},
+      "file_offset": 8452
+    },
+    {
+      "layer_id": "dialog_btn_yes",
+      "sort_index": 3657,
+      "properties": {},
+      "file_offset": 1410
+    },
+    {
+      "layer_id": "dialog_btn_check",
+      "sort_index": 4038,
+      "properties": {},
+      "file_offset": 236
+    },
+    {
+      "layer_id": "common_on",
+      "sort_index": 5881,
+      "properties": {},
+      "file_offset": 1242
+    },
+    {
+      "layer_id": "common_off",
+      "sort_index": 6099,
+      "properties": {},
+      "file_offset": 944
+    },
+    {
+      "layer_id": "textparam",
+      "sort_index": 7611,
+      "properties": {},
+      "file_offset": 10120
+    },
+    {
+      "layer_id": "exp",
+      "sort_index": 11748,
+      "properties": {},
+      "file_offset": 758
+    },
+    {
+      "layer_id": "dialog",
+      "sort_index": 1845493760,
+      "properties": {
+        "height": 35
+      },
+      "file_offset": 378
+    },
+    {
+      "layer_id": "a",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 5057
+    },
+    {
+      "layer_id": "askbackto",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 11956
+    },
+    {
+      "layer_id": "askcopy",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 12186
+    },
+    {
+      "layer_id": "askdelete",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 12402
+    },
+    {
+      "layer_id": "askdsave",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 12630
+    },
+    {
+      "layer_id": "askexit",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 12852
+    },
+    {
+      "layer_id": "askflow",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 13068
+    },
+    {
+      "layer_id": "askinit",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 13284
+    },
+    {
+      "layer_id": "askinitall",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 13500
+    },
+    {
+      "layer_id": "askinitstand",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 13734
+    },
+    {
+      "layer_id": "askjump",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 13980
+    },
+    {
+      "layer_id": "askload",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 14196
+    },
+    {
+      "layer_id": "asknext",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 14412
+    },
+    {
+      "layer_id": "asknextscn",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 14634
+    },
+    {
+      "layer_id": "askoverwrite",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 14868
+    },
+    {
+      "layer_id": "askprevscn",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 15114
+    },
+    {
+      "layer_id": "askqload",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 15348
+    },
+    {
+      "layer_id": "askqsave",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 15570
+    },
+    {
+      "layer_id": "askquitreplay",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 15792
+    },
+    {
+      "layer_id": "askresume",
+      "sort_index": null,
+      "properties": {
+        "h": 38548
+      },
+      "file_offset": 16032
+    },
+    {
+      "layer_id": "asksave",
+      "sort_index": null,
+      "properties": {
+        "h": 38548
+      },
+      "file_offset": 16260
+    },
+    {
+      "layer_id": "askswap",
+      "sort_index": null,
+      "properties": {
+        "h": 38548
+      },
+      "file_offset": 16476
+    },
+    {
+      "layer_id": "asktitle",
+      "sort_index": null,
+      "properties": {
+        "h": 38548
+      },
+      "file_offset": 16692
+    },
+    {
+      "layer_id": "askvsave",
+      "sort_index": null,
+      "properties": {
+        "h": 38548
+      },
+      "file_offset": 16914
+    },
+    {
+      "layer_id": "b",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 2369
+    },
+    {
+      "layer_id": "comment",
+      "sort_index": null,
+      "properties": {
+        "h": 22839
+      },
+      "file_offset": 9896
+    },
+    {
+      "layer_id": "dialog__bg0",
+      "sort_index": null,
+      "properties": {
+        "storagex": 200
+      },
+      "file_offset": 5308
+    },
+    {
+      "layer_id": "dialog__pack",
+      "sort_index": null,
+      "properties": {
+        "w": 229
+      },
+      "file_offset": 1506
+    },
+    {
+      "layer_id": "dialog_mes_copy",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 12286
+    },
+    {
+      "layer_id": "dialog_mes_delete",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 12506
+    },
+    {
+      "layer_id": "dialog_mes_dsave",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 12732
+    },
+    {
+      "layer_id": "dialog_mes_exit",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 12952
+    },
+    {
+      "layer_id": "dialog_mes_init",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 13384
+    },
+    {
+      "layer_id": "dialog_mes_initall",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 13606
+    },
+    {
+      "layer_id": "dialog_mes_jump",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 13168
+    },
+    {
+      "layer_id": "dialog_mes_load",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 14296
+    },
+    {
+      "layer_id": "dialog_mes_nextscn",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 14740
+    },
+    {
+      "layer_id": "dialog_mes_nextsel",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 14512
+    },
+    {
+      "layer_id": "dialog_mes_overwrite",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 14978
+    },
+    {
+      "layer_id": "dialog_mes_prevscn",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 15220
+    },
+    {
+      "layer_id": "dialog_mes_prevsel",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 12060
+    },
+    {
+      "layer_id": "dialog_mes_qload",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 15450
+    },
+    {
+      "layer_id": "dialog_mes_qsave",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 15672
+    },
+    {
+      "layer_id": "dialog_mes_quit",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 15904
+    },
+    {
+      "layer_id": "dialog_mes_resume",
+      "sort_index": null,
+      "properties": {
+        "h": 38548
+      },
+      "file_offset": 16136
+    },
+    {
+      "layer_id": "dialog_mes_save",
+      "sort_index": null,
+      "properties": {
+        "h": 38548
+      },
+      "file_offset": 16360
+    },
+    {
+      "layer_id": "dialog_mes_standinit",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 13844
+    },
+    {
+      "layer_id": "dialog_mes_swap",
+      "sort_index": null,
+      "properties": {
+        "h": 38548
+      },
+      "file_offset": 16576
+    },
+    {
+      "layer_id": "dialog_mes_title",
+      "sort_index": null,
+      "properties": {
+        "h": 38548
+      },
+      "file_offset": 16794
+    },
+    {
+      "layer_id": "dialog_mes_vsave",
+      "sort_index": null,
+      "properties": {
+        "h": 38548
+      },
+      "file_offset": 17016
+    },
+    {
+      "layer_id": "dialog_suspend_comment",
+      "sort_index": null,
+      "properties": {
+        "w": 10
+      },
+      "file_offset": 10072
+    },
+    {
+      "layer_id": "dialog_suspend_label",
+      "sort_index": null,
+      "properties": {
+        "w": 83
+      },
+      "file_offset": 10632
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 26
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "properties": {
+        "height": 43
+      },
+      "file_offset": 5574
+    },
+    {
+      "layer_id": "header",
+      "sort_index": null,
+      "properties": {
+        "h": 21855
+      },
+      "file_offset": 10458
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 1476
+    },
+    {
+      "layer_id": "i",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 7115
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 1534
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {
+        "w": 83
+      },
+      "file_offset": 10520
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 308
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 113
+      },
+      "file_offset": 5692
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 59
+      },
+      "file_offset": 5910
+    },
+    {
+      "layer_id": "o",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 3285
+    },
+    {
+      "layer_id": "option",
+      "sort_index": null,
+      "properties": {
+        "width": 188
+      },
+      "file_offset": 9136
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "properties": {
+        "ch": 181
+      },
+      "file_offset": 6126
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "properties": {
+        "ch": 138
+      },
+      "file_offset": 6340
+    },
+    {
+      "layer_id": "part",
+      "sort_index": null,
+      "properties": {
+        "height": 18
+      },
+      "file_offset": 6926
+    },
+    {
+      "layer_id": "pre",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 550
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "properties": {
+        "height": 35
+      },
+      "file_offset": 3036
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 42
+      },
+      "file_offset": 5334
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "width": 123
+      },
+      "file_offset": 5364
+    },
+    {
+      "layer_id": "suspend_rad",
+      "sort_index": null,
+      "properties": {
+        "height": 80
+      },
+      "file_offset": 11034
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "properties": {
+        "height": 43,
+        "h": 9420
+      },
+      "file_offset": 5538
+    },
+    {
+      "layer_id": "u",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 4649
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 73
+      },
+      "file_offset": 3770
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 10
+      },
+      "file_offset": 3794
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 235
+      },
+      "file_offset": 3810
+    }
+  ]
+}

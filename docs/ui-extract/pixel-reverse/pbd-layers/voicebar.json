@@ -1,0 +1,399 @@
+{
+  "source": "voicebar.pbd",
+  "layer_count": 28,
+  "hotspot_count": 25,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "text",
+      "sort_index": 773,
+      "height": 73,
+      "ch": 140
+    },
+    {
+      "layer_id": "wait_voice",
+      "sort_index": 1099,
+      "height": 97,
+      "ch": 110
+    },
+    {
+      "layer_id": "frame",
+      "sort_index": 1183,
+      "height": 192,
+      "ch": 168
+    },
+    {
+      "layer_id": "auto_voice",
+      "sort_index": 1194,
+      "height": 26,
+      "ch": 242
+    },
+    {
+      "layer_id": "voice",
+      "sort_index": 1222,
+      "height": 17,
+      "ch": 83
+    },
+    {
+      "layer_id": "wait",
+      "sort_index": 1467,
+      "height": 117,
+      "ch": 65
+    },
+    {
+      "layer_id": "bar",
+      "sort_index": 1486,
+      "height": 1909,
+      "ch": 1823
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2185,
+      "height": 170
+    },
+    {
+      "layer_id": "auto",
+      "sort_index": 2599,
+      "height": 170,
+      "ch": 33
+    },
+    {
+      "layer_id": "auto_wait",
+      "sort_index": 2777,
+      "height": 170,
+      "ch": 194
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "storagex": 35
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 137
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "l",
+      "sort_index": null,
+      "x": 244,
+      "width": 57,
+      "height": 170,
+      "cx": 0
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "x": 146,
+      "width": 137,
+      "height": 170,
+      "cx": 252
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 170
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "height": 1889,
+      "cx": 134
+    },
+    {
+      "layer_id": "r",
+      "sort_index": null,
+      "x": 132,
+      "width": 104,
+      "height": 170,
+      "cx": 198
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 232
+    },
+    {
+      "layer_id": "voicebar__pack",
+      "sort_index": null,
+      "height": 170,
+      "width": 204
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 178
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 242
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 26
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "text",
+      "sort_index": 773,
+      "properties": {
+        "height": 73,
+        "ch": 140
+      },
+      "file_offset": 250
+    },
+    {
+      "layer_id": "wait_voice",
+      "sort_index": 1099,
+      "properties": {
+        "height": 97,
+        "ch": 110
+      },
+      "file_offset": 194
+    },
+    {
+      "layer_id": "frame",
+      "sort_index": 1183,
+      "properties": {
+        "height": 192,
+        "ch": 168
+      },
+      "file_offset": 276
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 1185,
+      "properties": {},
+      "file_offset": 1148
+    },
+    {
+      "layer_id": "auto_voice",
+      "sort_index": 1194,
+      "properties": {
+        "height": 26,
+        "ch": 242
+      },
+      "file_offset": 154
+    },
+    {
+      "layer_id": "voice",
+      "sort_index": 1222,
+      "properties": {
+        "height": 17,
+        "ch": 83
+      },
+      "file_offset": 234
+    },
+    {
+      "layer_id": "visible",
+      "sort_index": 1403,
+      "properties": {},
+      "file_offset": 5756
+    },
+    {
+      "layer_id": "wait",
+      "sort_index": 1467,
+      "properties": {
+        "height": 117,
+        "ch": 65
+      },
+      "file_offset": 220
+    },
+    {
+      "layer_id": "bar",
+      "sort_index": 1486,
+      "properties": {
+        "height": 1909,
+        "ch": 1823
+      },
+      "file_offset": 264
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2185,
+      "properties": {
+        "height": 170
+      },
+      "file_offset": 1046
+    },
+    {
+      "layer_id": "auto",
+      "sort_index": 2599,
+      "properties": {
+        "height": 170,
+        "ch": 33
+      },
+      "file_offset": 180
+    },
+    {
+      "layer_id": "auto_wait",
+      "sort_index": 2777,
+      "properties": {
+        "height": 170,
+        "ch": 194
+      },
+      "file_offset": 130
+    },
+    {
+      "layer_id": "base",
+      "sort_index": null,
+      "properties": {
+        "height": 170,
+        "storagex": 35,
+        "h": 11371
+      },
+      "file_offset": 292
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {
+        "height": 170
+      },
+      "file_offset": 26
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "properties": {
+        "width": 137
+      },
+      "file_offset": 5776
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "properties": {
+        "height": 170
+      },
+      "file_offset": 348
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {
+        "height": 170
+      },
+      "file_offset": 46
+    },
+    {
+      "layer_id": "l",
+      "sort_index": null,
+      "properties": {
+        "height": 170,
+        "cx": 0,
+        "width": 57,
+        "x": 244
+      },
+      "file_offset": 552
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "properties": {
+        "height": 170,
+        "cx": 252,
+        "width": 137,
+        "x": 146
+      },
+      "file_offset": 37
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {
+        "height": 170
+      },
+      "file_offset": 108
+    },
+    {
+      "layer_id": "p",
+      "sort_index": null,
+      "properties": {
+        "height": 170,
+        "cx": 134,
+        "h": 1889
+      },
+      "file_offset": 618
+    },
+    {
+      "layer_id": "r",
+      "sort_index": null,
+      "properties": {
+        "height": 170,
+        "cx": 198,
+        "width": 104,
+        "x": 132
+      },
+      "file_offset": 486
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 232
+      },
+      "file_offset": 3148
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "h": 11371
+      },
+      "file_offset": 3178
+    },
+    {
+      "layer_id": "voicebar__pack",
+      "sort_index": null,
+      "properties": {
+        "height": 170,
+        "w": 204
+      },
+      "file_offset": 76
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 178
+      },
+      "file_offset": 1422
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 242
+      },
+      "file_offset": 1446
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 26
+      },
+      "file_offset": 1462
+    }
+  ]
+}

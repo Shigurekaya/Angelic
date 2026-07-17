@@ -1,0 +1,394 @@
+{
+  "source": "window_h.pbd",
+  "layer_count": 35,
+  "hotspot_count": 22,
+  "binding_count": 0,
+  "hotspots": [
+    {
+      "layer_id": "nametext",
+      "sort_index": 1165,
+      "width": 112,
+      "height": 215
+    },
+    {
+      "layer_id": "colorframe",
+      "sort_index": 1252,
+      "height": 235
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2241,
+      "height": 22
+    },
+    {
+      "layer_id": "colorover",
+      "sort_index": 2323,
+      "height": 30,
+      "ch": 46
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 2515,
+      "storagex": 17
+    },
+    {
+      "layer_id": "colorbase",
+      "sort_index": 2690,
+      "height": 22,
+      "ch": 223
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 25
+    },
+    {
+      "layer_id": "elm",
+      "sort_index": null,
+      "height": 215
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "height": 215
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "ox": 161
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 198,
+      "height": 25
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 215
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "height": 215
+    },
+    {
+      "layer_id": "logo",
+      "sort_index": null,
+      "height": 215
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 215
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 127
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 50
+    },
+    {
+      "layer_id": "window_h",
+      "sort_index": null,
+      "height": 215
+    },
+    {
+      "layer_id": "window_h__bg0",
+      "sort_index": null,
+      "storagex": 17
+    },
+    {
+      "layer_id": "window_h__pack",
+      "sort_index": null,
+      "height": 215,
+      "width": 242
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 84
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 22
+    }
+  ],
+  "bindings": [],
+  "layers": [
+    {
+      "layer_id": "namealign",
+      "sort_index": 312,
+      "properties": {},
+      "file_offset": 320
+    },
+    {
+      "layer_id": "namevalign",
+      "sort_index": 726,
+      "properties": {},
+      "file_offset": 352
+    },
+    {
+      "layer_id": "nameoy",
+      "sort_index": 737,
+      "properties": {},
+      "file_offset": 388
+    },
+    {
+      "layer_id": "nametext",
+      "sort_index": 1165,
+      "properties": {
+        "height": 215,
+        "width": 112
+      },
+      "file_offset": 274
+    },
+    {
+      "layer_id": "uiname",
+      "sort_index": 1244,
+      "properties": {},
+      "file_offset": 1152
+    },
+    {
+      "layer_id": "colorframe",
+      "sort_index": 1252,
+      "properties": {
+        "height": 162,
+        "h": 235
+      },
+      "file_offset": 602
+    },
+    {
+      "layer_id": "visible",
+      "sort_index": 1535,
+      "properties": {},
+      "file_offset": 2150
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2241,
+      "properties": {
+        "height": 22
+      },
+      "file_offset": 1754
+    },
+    {
+      "layer_id": "margin",
+      "sort_index": 2309,
+      "properties": {},
+      "file_offset": 180
+    },
+    {
+      "layer_id": "colorover",
+      "sort_index": 2323,
+      "properties": {
+        "height": 30,
+        "ch": 46
+      },
+      "file_offset": 554
+    },
+    {
+      "layer_id": "namebase",
+      "sort_index": 2435,
+      "properties": {},
+      "file_offset": 228
+    },
+    {
+      "layer_id": "setint",
+      "sort_index": 2472,
+      "properties": {},
+      "file_offset": 302
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 2515,
+      "properties": {
+        "height": 215,
+        "storagex": 17,
+        "h": 14340
+      },
+      "file_offset": 46
+    },
+    {
+      "layer_id": "glyph",
+      "sort_index": 2676,
+      "properties": {},
+      "file_offset": 72
+    },
+    {
+      "layer_id": "colorbase",
+      "sort_index": 2690,
+      "properties": {
+        "height": 22,
+        "ch": 223
+      },
+      "file_offset": 578
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "properties": {
+        "height": 25
+      },
+      "file_offset": 3344
+    },
+    {
+      "layer_id": "click",
+      "sort_index": null,
+      "properties": {
+        "h": 14340
+      },
+      "file_offset": 1208
+    },
+    {
+      "layer_id": "elm",
+      "sort_index": null,
+      "properties": {
+        "height": 215
+      },
+      "file_offset": 112
+    },
+    {
+      "layer_id": "evals",
+      "sort_index": null,
+      "properties": {
+        "height": 215
+      },
+      "file_offset": 26
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "properties": {
+        "ox": 161
+      },
+      "file_offset": 1566
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "properties": {
+        "width": 198,
+        "height": 25
+      },
+      "file_offset": 2170
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "properties": {
+        "height": 215
+      },
+      "file_offset": 414
+    },
+    {
+      "layer_id": "imports",
+      "sort_index": null,
+      "properties": {
+        "height": 215
+      },
+      "file_offset": 476
+    },
+    {
+      "layer_id": "logo",
+      "sort_index": null,
+      "properties": {
+        "height": 215
+      },
+      "file_offset": 628
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "properties": {
+        "height": 215
+      },
+      "file_offset": 496
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "properties": {
+        "storagey": 127
+      },
+      "file_offset": 1092
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "properties": {
+        "h": 14340
+      },
+      "file_offset": 1122
+    },
+    {
+      "layer_id": "text",
+      "sort_index": null,
+      "properties": {
+        "h": 26194
+      },
+      "file_offset": 1544
+    },
+    {
+      "layer_id": "u",
+      "sort_index": null,
+      "properties": {},
+      "file_offset": 2997
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "properties": {
+        "x": 50
+      },
+      "file_offset": 1654
+    },
+    {
+      "layer_id": "window_h",
+      "sort_index": null,
+      "properties": {
+        "height": 215
+      },
+      "file_offset": 684
+    },
+    {
+      "layer_id": "window_h__bg0",
+      "sort_index": null,
+      "properties": {
+        "storagex": 17
+      },
+      "file_offset": 1062
+    },
+    {
+      "layer_id": "window_h__pack",
+      "sort_index": null,
+      "properties": {
+        "height": 215,
+        "w": 242
+      },
+      "file_offset": 444
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "properties": {
+        "y": 84
+      },
+      "file_offset": 1678
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "properties": {
+        "height": 22
+      },
+      "file_offset": 1694
+    }
+  ]
+}
