@@ -1,0 +1,17 @@
+{
+  "family": "touch",
+  "used": [
+    "touchuibar__bg0",
+    "touchuibar__pack",
+    "touchvolume__bg0",
+    "touchvolume__pack"
+  ],
+  "back": {
+    "x": 1680,
+    "y": 1000,
+    "w": 200,
+    "h": 48,
+    "label": "返回标题"
+  },
+  "exclude_story": true
+}

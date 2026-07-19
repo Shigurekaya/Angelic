@@ -1,0 +1,404 @@
+{
+  "source": "qconf_save.pbd",
+  "hotspots": [
+    {
+      "layer_id": "base",
+      "sort_index": 996,
+      "storagex": 21
+    },
+    {
+      "layer_id": "dsave",
+      "sort_index": 1165,
+      "height": 123,
+      "ch": 125
+    },
+    {
+      "layer_id": "switch_dsave",
+      "sort_index": 1460,
+      "height": 135
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1618,
+      "height": 15
+    },
+    {
+      "layer_id": "item_pos11",
+      "sort_index": 1742,
+      "width": 249,
+      "height": 95
+    },
+    {
+      "layer_id": "page_up1",
+      "sort_index": 2141,
+      "width": 169,
+      "height": 121
+    },
+    {
+      "layer_id": "layer",
+      "sort_index": 2227,
+      "height": 22
+    },
+    {
+      "layer_id": "page_dw100",
+      "sort_index": 2229,
+      "width": 176,
+      "height": 84
+    },
+    {
+      "layer_id": "hit",
+      "sort_index": 2252,
+      "height": 59
+    },
+    {
+      "layer_id": "page_up10",
+      "sort_index": 2259,
+      "width": 3,
+      "height": 13
+    },
+    {
+      "layer_id": "page_add",
+      "sort_index": 2263,
+      "height": 77
+    },
+    {
+      "layer_id": "page_up100",
+      "sort_index": 2344,
+      "width": 227,
+      "height": 49
+    },
+    {
+      "layer_id": "page_dw1",
+      "sort_index": 2349,
+      "width": 147,
+      "height": 15
+    },
+    {
+      "layer_id": "item_pos00",
+      "sort_index": 2579,
+      "width": 142,
+      "height": 230
+    },
+    {
+      "layer_id": "page_dw10",
+      "sort_index": 2654,
+      "width": 65,
+      "height": 87
+    },
+    {
+      "layer_id": "page_base",
+      "sort_index": 2672,
+      "height": 77,
+      "ch": 252
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 230
+    },
+    {
+      "layer_id": "color",
+      "sort_index": null,
+      "cw": 69
+    },
+    {
+      "layer_id": "ds_off",
+      "sort_index": null,
+      "ch": 125
+    },
+    {
+      "layer_id": "ds_on",
+      "sort_index": null,
+      "ch": 125
+    },
+    {
+      "layer_id": "ds_ovr",
+      "sort_index": null,
+      "ch": 125
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 63
+    },
+    {
+      "layer_id": "gameparts",
+      "sort_index": null,
+      "height": 135
+    },
+    {
+      "layer_id": "holdimage",
+      "sort_index": null,
+      "height": 135
+    },
+    {
+      "layer_id": "names",
+      "sort_index": null,
+      "height": 135
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 125
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 123
+    },
+    {
+      "layer_id": "nose",
+      "sort_index": null,
+      "ch": 125
+    },
+    {
+      "layer_id": "of_btm",
+      "sort_index": null,
+      "ch": 110
+    },
+    {
+      "layer_id": "of_dw",
+      "sort_index": null,
+      "ch": 90
+    },
+    {
+      "layer_id": "of_dw10",
+      "sort_index": null,
+      "ch": 161
+    },
+    {
+      "layer_id": "of_top",
+      "sort_index": null,
+      "ch": 193
+    },
+    {
+      "layer_id": "of_up",
+      "sort_index": null,
+      "ch": 89
+    },
+    {
+      "layer_id": "of_up10",
+      "sort_index": null,
+      "ch": 162
+    },
+    {
+      "layer_id": "on_btm",
+      "sort_index": null,
+      "ch": 202
+    },
+    {
+      "layer_id": "on_dw",
+      "sort_index": null,
+      "ch": 68
+    },
+    {
+      "layer_id": "on_dw10",
+      "sort_index": null,
+      "ch": 229
+    },
+    {
+      "layer_id": "on_off",
+      "sort_index": null,
+      "ch": 77
+    },
+    {
+      "layer_id": "on_on",
+      "sort_index": null,
+      "ch": 177
+    },
+    {
+      "layer_id": "on_top",
+      "sort_index": null,
+      "ch": 142
+    },
+    {
+      "layer_id": "on_up",
+      "sort_index": null,
+      "ch": 233
+    },
+    {
+      "layer_id": "on_up10",
+      "sort_index": null,
+      "ch": 107
+    },
+    {
+      "layer_id": "ov_btm",
+      "sort_index": null,
+      "ch": 192
+    },
+    {
+      "layer_id": "ov_dw",
+      "sort_index": null,
+      "ch": 147
+    },
+    {
+      "layer_id": "ov_dw10",
+      "sort_index": null,
+      "ch": 73
+    },
+    {
+      "layer_id": "ov_top",
+      "sort_index": null,
+      "ch": 54
+    },
+    {
+      "layer_id": "ov_up",
+      "sort_index": null,
+      "ch": 17
+    },
+    {
+      "layer_id": "ov_up10",
+      "sort_index": null,
+      "ch": 194
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 212
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 91
+    },
+    {
+      "layer_id": "page_sub",
+      "sort_index": null,
+      "height": 135
+    },
+    {
+      "layer_id": "qconf__pack",
+      "sort_index": null,
+      "height": 135,
+      "width": 61
+    },
+    {
+      "layer_id": "qconf_file_dsave",
+      "sort_index": null,
+      "ch": 125
+    },
+    {
+      "layer_id": "qconf_file_save",
+      "sort_index": null,
+      "width": 40
+    },
+    {
+      "layer_id": "qconf_save__bg0",
+      "sort_index": null,
+      "storagex": 21
+    },
+    {
+      "layer_id": "saveload",
+      "sort_index": null,
+      "height": 135
+    },
+    {
+      "layer_id": "scroll",
+      "sort_index": null,
+      "height": 135
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 528
+    },
+    {
+      "layer_id": "sv_off",
+      "sort_index": null,
+      "width": 40
+    },
+    {
+      "layer_id": "sv_on",
+      "sort_index": null,
+      "width": 40
+    },
+    {
+      "layer_id": "sv_ovr",
+      "sort_index": null,
+      "width": 40
+    },
+    {
+      "layer_id": "text",
+      "sort_index": null,
+      "width": 40,
+      "ch": 125
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 123
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 117
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 159
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 202
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "hideHelp",
+      "bindings": [
+        "hideHelp/dsave",
+        "hideHelp/swap"
+      ],
+      "geometry": {
+        "height": 135,
+        "w": 204
+      }
+    },
+    {
+      "layer_id": "invokeDSave",
+      "bindings": [
+        "invokeDSave"
+      ],
+      "geometry": {
+        "height": 135
+      }
+    },
+    {
+      "layer_id": "pageMove",
+      "bindings": [
+        "pageMove/1",
+        "pageMove/10",
+        "pageMove/100",
+        "pageMove/-1",
+        "pageMove/-10",
+        "pageMove/-100"
+      ],
+      "geometry": {
+        "ch": 147,
+        "w": 196,
+        "ox": 624
+      }
+    },
+    {
+      "layer_id": "showHelp",
+      "bindings": [
+        "showHelp/dsave",
+        "showHelp/swap"
+      ],
+      "geometry": {
+        "height": 135
+      }
+    },
+    {
+      "layer_id": "toggleDSave",
+      "bindings": [
+        "toggleDSave"
+      ],
+      "geometry": {
+        "oy": 110
+      }
+    }
+  ]
+}

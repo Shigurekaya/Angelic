@@ -1,0 +1,433 @@
+{
+  "exclude": [
+    "scenario",
+    "story_voice_assets"
+  ],
+  "families": {
+    "settings": {
+      "family": "settings",
+      "tabs": [
+        {
+          "id": "0",
+          "label": "基本设置",
+          "plate": "plates/tab_0.png"
+        },
+        {
+          "id": "1",
+          "label": "画面设置",
+          "plate": "plates/tab_0.png"
+        },
+        {
+          "id": "2",
+          "label": "游戏设置1",
+          "plate": "plates/tab_0.png"
+        },
+        {
+          "id": "3",
+          "label": "游戏设置2",
+          "plate": "plates/tab_0.png"
+        },
+        {
+          "id": "4",
+          "label": "文本设置",
+          "plate": "plates/tab_4.png"
+        },
+        {
+          "id": "5a",
+          "label": "音频1",
+          "plate": "plates/tab_5a.png"
+        },
+        {
+          "id": "5b",
+          "label": "音频2",
+          "plate": "plates/tab_5b.png"
+        },
+        {
+          "id": "6",
+          "label": "确认信息",
+          "plate": "plates/tab_6.png"
+        },
+        {
+          "id": "7",
+          "label": "鼠标",
+          "plate": "plates/tab_7.png"
+        },
+        {
+          "id": "8",
+          "label": "键盘",
+          "plate": "plates/tab_8.png"
+        },
+        {
+          "id": "9",
+          "label": "手柄",
+          "plate": "plates/tab_9.png"
+        }
+      ],
+      "used": [
+        "option__bg0",
+        "option__pack",
+        "option_4text__pack",
+        "option_5sound1__pack",
+        "option_5sound2__pack",
+        "option_6dialog__pack",
+        "option_7mouse__pack",
+        "option_8keyboard1__pack",
+        "option_9gamepad__pack",
+        "option_cmds__pack",
+        "option_keyinput__pack",
+        "option_9gamepad2_assign__pack"
+      ],
+      "back": {
+        "x": 1680,
+        "y": 1000,
+        "w": 200,
+        "h": 48,
+        "label": "返回标题"
+      }
+    },
+    "file": {
+      "family": "file",
+      "modes": [
+        {
+          "id": "load",
+          "label": "读档",
+          "composite": "composite_load.png",
+          "bg": "bg_load.png"
+        },
+        {
+          "id": "save",
+          "label": "存档",
+          "composite": "composite_save.png",
+          "bg": "bg_save.png"
+        },
+        {
+          "id": "quick",
+          "label": "快速",
+          "composite": "composite_quick.png",
+          "bg": "bg_quick.png"
+        }
+      ],
+      "mode_tabs": [
+        {
+          "id": "save",
+          "x": 80,
+          "y": 40,
+          "w": 160,
+          "h": 48
+        },
+        {
+          "id": "load",
+          "x": 260,
+          "y": 40,
+          "w": 160,
+          "h": 48
+        },
+        {
+          "id": "quick",
+          "x": 440,
+          "y": 40,
+          "w": 160,
+          "h": 48
+        }
+      ],
+      "slots": [
+        {
+          "index": 0,
+          "x": 120,
+          "y": 180,
+          "w": 280,
+          "h": 200
+        },
+        {
+          "index": 1,
+          "x": 420,
+          "y": 180,
+          "w": 280,
+          "h": 200
+        },
+        {
+          "index": 2,
+          "x": 720,
+          "y": 180,
+          "w": 280,
+          "h": 200
+        },
+        {
+          "index": 3,
+          "x": 1020,
+          "y": 180,
+          "w": 280,
+          "h": 200
+        },
+        {
+          "index": 4,
+          "x": 120,
+          "y": 400,
+          "w": 280,
+          "h": 200
+        },
+        {
+          "index": 5,
+          "x": 420,
+          "y": 400,
+          "w": 280,
+          "h": 200
+        },
+        {
+          "index": 6,
+          "x": 720,
+          "y": 400,
+          "w": 280,
+          "h": 200
+        },
+        {
+          "index": 7,
+          "x": 1020,
+          "y": 400,
+          "w": 280,
+          "h": 200
+        },
+        {
+          "index": 8,
+          "x": 120,
+          "y": 620,
+          "w": 280,
+          "h": 200
+        },
+        {
+          "index": 9,
+          "x": 420,
+          "y": 620,
+          "w": 280,
+          "h": 200
+        },
+        {
+          "index": 10,
+          "x": 720,
+          "y": 620,
+          "w": 280,
+          "h": 200
+        },
+        {
+          "index": 11,
+          "x": 1020,
+          "y": 620,
+          "w": 280,
+          "h": 200
+        }
+      ],
+      "page_size": 12,
+      "used": [
+        "file__pack",
+        "file_load__bg0",
+        "file_load__pack",
+        "file_save__bg0",
+        "file_save__pack",
+        "file_quick__bg0",
+        "file_quick__pack"
+      ],
+      "back": {
+        "x": 1680,
+        "y": 1000,
+        "w": 200,
+        "h": 48,
+        "label": "返回标题"
+      },
+      "layout_note": "Slot grid estimated for Angelic; refine from PBD/runtime dump later"
+    },
+    "flowchart": {
+      "family": "flowchart",
+      "used": [
+        "scnchart__bg0",
+        "scnchart__pack"
+      ],
+      "back": {
+        "x": 1680,
+        "y": 1000,
+        "w": 200,
+        "h": 48,
+        "label": "返回标题"
+      },
+      "exclude_story": true
+    },
+    "cg": {
+      "family": "cg",
+      "used": [
+        "extra__bg0",
+        "extra__pack",
+        "extra_locale_cn__pack",
+        "extra_cg__pack",
+        "extra_cgscene__pack",
+        "extra_cgview__pack",
+        "extra_scene__pack",
+        "extra_stand__bg0",
+        "extra_stand__pack",
+        "extra_stand_dialog__bg0",
+        "extra_stand_dialog__pack",
+        "extra_voice__pack"
+      ],
+      "back": {
+        "x": 1680,
+        "y": 1000,
+        "w": 200,
+        "h": 48,
+        "label": "返回标题"
+      },
+      "exclude_story": true
+    },
+    "qconf": {
+      "family": "qconf",
+      "dialogs": [
+        {
+          "id": "save",
+          "image": "qconf_save__bg0.png"
+        },
+        {
+          "id": "load",
+          "image": "qconf_load__bg0.png"
+        },
+        {
+          "id": "qload",
+          "image": "qconf_qload__bg0.png"
+        },
+        {
+          "id": "qvsave",
+          "image": "qconf_qvsave__bg0.png"
+        },
+        {
+          "id": "text",
+          "image": "qconf_text__bg0.png"
+        },
+        {
+          "id": "volume",
+          "image": "qconf_volume__bg0.png"
+        },
+        {
+          "id": "pack",
+          "image": "qconf__pack.png"
+        }
+      ],
+      "used": [
+        "qconf__pack",
+        "qconf_load__bg0",
+        "qconf_qload__bg0",
+        "qconf_qvsave__bg0",
+        "qconf_save__bg0",
+        "qconf_text__bg0",
+        "qconf_volume__bg0"
+      ]
+    },
+    "hud": {
+      "family": "hud",
+      "used": [
+        "window__pack",
+        "window_h__pack",
+        "window__bg0",
+        "window_h__bg0",
+        "quickmenu__bg0",
+        "quickmenu__pack",
+        "qlpopup__bg0",
+        "qlpopup__pack",
+        "qvpopup__pack",
+        "backlog__bg0",
+        "backlog__pack",
+        "select__pack",
+        "dialog__bg0",
+        "dialog__pack",
+        "clickglyph_img__pack",
+        "autoskipmark_img__pack",
+        "voicebar__pack",
+        "btncustom__pack",
+        "chapter__bg0",
+        "bgmtitle__bg0"
+      ],
+      "back": {
+        "x": 1680,
+        "y": 1000,
+        "w": 200,
+        "h": 48,
+        "label": "返回标题"
+      },
+      "exclude_story": true
+    },
+    "touch": {
+      "family": "touch",
+      "used": [
+        "touchuibar__bg0",
+        "touchuibar__pack",
+        "touchvolume__bg0",
+        "touchvolume__pack"
+      ],
+      "back": {
+        "x": 1680,
+        "y": 1000,
+        "w": 200,
+        "h": 48,
+        "label": "返回标题"
+      },
+      "exclude_story": true
+    },
+    "phonechat": {
+      "family": "phonechat",
+      "used": [
+        "phonechat__bg0",
+        "phonechat__pack"
+      ],
+      "back": {
+        "x": 1680,
+        "y": 1000,
+        "w": 200,
+        "h": 48,
+        "label": "返回标题"
+      },
+      "exclude_story": true
+    },
+    "afterstory": {
+      "family": "afterstory",
+      "used": [
+        "afterstory__bg0",
+        "afterstory__pack"
+      ],
+      "back": {
+        "x": 1680,
+        "y": 1000,
+        "w": 200,
+        "h": 48,
+        "label": "返回标题"
+      },
+      "exclude_story": true
+    },
+    "langselect": {
+      "family": "langselect",
+      "used": [
+        "langselect__pack"
+      ],
+      "back": {
+        "x": 1680,
+        "y": 1000,
+        "w": 200,
+        "h": 48,
+        "label": "返回标题"
+      },
+      "exclude_story": true
+    }
+  },
+  "synced": [
+    "settings",
+    "file",
+    "load",
+    "flowchart",
+    "cg",
+    "qconf",
+    "hud",
+    "touch",
+    "phonechat",
+    "afterstory",
+    "langselect",
+    "title",
+    "packs",
+    "hotspots",
+    "locale"
+  ],
+  "tlg_pack_count": 71
+}

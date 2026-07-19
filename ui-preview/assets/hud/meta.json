@@ -1,0 +1,33 @@
+{
+  "family": "hud",
+  "used": [
+    "window__pack",
+    "window_h__pack",
+    "window__bg0",
+    "window_h__bg0",
+    "quickmenu__bg0",
+    "quickmenu__pack",
+    "qlpopup__bg0",
+    "qlpopup__pack",
+    "qvpopup__pack",
+    "backlog__bg0",
+    "backlog__pack",
+    "select__pack",
+    "dialog__bg0",
+    "dialog__pack",
+    "clickglyph_img__pack",
+    "autoskipmark_img__pack",
+    "voicebar__pack",
+    "btncustom__pack",
+    "chapter__bg0",
+    "bgmtitle__bg0"
+  ],
+  "back": {
+    "x": 1680,
+    "y": 1000,
+    "w": 200,
+    "h": 48,
+    "label": "返回标题"
+  },
+  "exclude_story": true
+}

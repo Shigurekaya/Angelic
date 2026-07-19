@@ -1,0 +1,42 @@
+{
+  "family": "qconf",
+  "dialogs": [
+    {
+      "id": "save",
+      "image": "qconf_save__bg0.png"
+    },
+    {
+      "id": "load",
+      "image": "qconf_load__bg0.png"
+    },
+    {
+      "id": "qload",
+      "image": "qconf_qload__bg0.png"
+    },
+    {
+      "id": "qvsave",
+      "image": "qconf_qvsave__bg0.png"
+    },
+    {
+      "id": "text",
+      "image": "qconf_text__bg0.png"
+    },
+    {
+      "id": "volume",
+      "image": "qconf_volume__bg0.png"
+    },
+    {
+      "id": "pack",
+      "image": "qconf__pack.png"
+    }
+  ],
+  "used": [
+    "qconf__pack",
+    "qconf_load__bg0",
+    "qconf_qload__bg0",
+    "qconf_qvsave__bg0",
+    "qconf_save__bg0",
+    "qconf_text__bg0",
+    "qconf_volume__bg0"
+  ]
+}

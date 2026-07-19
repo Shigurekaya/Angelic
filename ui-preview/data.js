@@ -1,7 +1,7 @@
 window.UI_DATA = {
   "game": "天使☆嚣嚣 RE-BOOT!",
   "engine": "Angelic",
-  "layout": "angelic-bottom-menu+pixel-settings",
+  "layout": "angelic-bottom-menu",
   "resolution": {
     "width": 1920,
     "height": 1080
@@ -107,144 +107,180 @@ window.UI_DATA = {
     ]
   },
   "settings": {
-    "style": "pixel-stack",
+    "style": "option-shell",
     "bg": "assets/settings/bg.png",
     "chassis": "assets/settings/option__pack.png",
     "tabs": [
       {
         "id": "0",
         "label": "基本设置",
-        "mode": "pixel",
-        "hotspots": [
-          {
-            "key": "fullscreen",
-            "label": "画面尺寸",
-            "type": "toggle",
-            "options": [
-              "窗口",
-              "全屏"
-            ],
-            "col": 0,
-            "row": 0,
-            "x": 129,
-            "y": 148,
-            "w": 822,
-            "h": 150
-          },
-          {
-            "key": "sqscr",
-            "label": "画面比例",
-            "type": "toggle",
-            "options": [
-              "16:9",
-              "4:3"
-            ],
-            "col": 0,
-            "row": 1,
-            "x": 129,
-            "y": 306,
-            "w": 822,
-            "h": 150
-          },
-          {
-            "key": "textspeed",
-            "label": "文本速度",
-            "type": "slider",
-            "col": 0,
-            "row": 2,
-            "x": 129,
-            "y": 464,
-            "w": 822,
-            "h": 150
-          },
-          {
-            "key": "autospeed",
-            "label": "自动速度",
-            "type": "slider",
-            "col": 0,
-            "row": 3,
-            "x": 129,
-            "y": 622,
-            "w": 822,
-            "h": 150
-          },
-          {
-            "key": "skipall",
-            "label": "未读跳过",
-            "type": "toggle",
-            "options": [
-              "仅已读",
-              "全部"
-            ],
-            "col": 0,
-            "row": 4,
-            "x": 129,
-            "y": 780,
-            "w": 822,
-            "h": 150
-          },
-          {
-            "key": "wave",
-            "label": "主音量",
-            "type": "slider",
-            "col": 1,
-            "row": 0,
-            "x": 967,
-            "y": 148,
-            "w": 822,
-            "h": 150
-          },
+        "rows": [
           {
             "key": "bgm",
             "label": "BGM",
             "type": "slider",
-            "col": 1,
-            "row": 1,
-            "x": 967,
-            "y": 306,
-            "w": 822,
-            "h": 150
+            "bindings": [
+              "setAudioOnOff/bgm/toggle",
+              "setAudioOnOff/bgm/0",
+              "setAudioOnOff/bgm/1",
+              "setAudioOnOff/bgm/toggle"
+            ]
           },
           {
-            "key": "se",
-            "label": "音效",
-            "type": "slider",
-            "col": 1,
-            "row": 2,
-            "x": 967,
-            "y": 464,
-            "w": 822,
-            "h": 150
+            "key": "bgv",
+            "label": "ＢＧＶ（通常场景）",
+            "type": "toggle",
+            "bindings": [
+              "setAudioOnOff/bgv/toggle",
+              "setAudioOnOff/bgv/0",
+              "setAudioOnOff/bgv/1",
+              "setAudioOnOff/bgv/toggle"
+            ]
           },
           {
-            "key": "voice",
-            "label": "语音",
-            "type": "slider",
-            "col": 1,
-            "row": 3,
-            "x": 967,
-            "y": 622,
-            "w": 822,
-            "h": 150
+            "key": "bgv2",
+            "label": "bgv2",
+            "type": "toggle",
+            "bindings": [
+              "setAudioOnOff/bgv2/toggle",
+              "setAudioOnOff/bgv2/0",
+              "setAudioOnOff/bgv2/1",
+              "setAudioOnOff/bgv2/toggle"
+            ]
+          },
+          {
+            "key": "changeSysArg",
+            "label": "changeSysArg",
+            "type": "toggle",
+            "bindings": [
+              "changeSysArg/toggle/curmove",
+              "changeSysArg/false/curmove",
+              "changeSysArg/true/curmove",
+              "changeSysArg/toggle/curmove",
+              "changeSysArg/toggle/scanim",
+              "changeSysArg/false/scanim",
+              "changeSysArg/true/scanim",
+              "changeSysArg/toggle/scanim",
+              "changeSysArg/toggle/sqscr",
+              "changeSysArg/false/sqscr",
+              "changeSysArg/true/sqscr",
+              "changeSysArg/toggle/sqscr",
+              "changeSysArg/toggle/stayontop",
+              "changeSysArg/false/stayontop",
+              "changeSysArg/true/stayontop",
+              "changeSysArg/toggle/stayontop",
+              "changeSysArg/toggle/stopdeactive",
+              "changeSysArg/false/stopdeactive",
+              "changeSysArg/true/stopdeactive",
+              "changeSysArg/toggle/stopdeactive"
+            ]
+          },
+          {
+            "key": "down",
+            "label": "down",
+            "type": "toggle",
+            "bindings": [
+              "setAudioOnOff/down/toggle",
+              "setAudioOnOff/down/0",
+              "setAudioOnOff/down/1",
+              "setAudioOnOff/down/toggle"
+            ]
           },
           {
             "key": "movie",
             "label": "影片",
             "type": "slider",
-            "col": 1,
-            "row": 4,
-            "x": 967,
-            "y": 780,
-            "w": 822,
-            "h": 150
+            "bindings": [
+              "setAudioOnOff/movie/toggle",
+              "setAudioOnOff/movie/0",
+              "setAudioOnOff/movie/1",
+              "setAudioOnOff/movie/toggle"
+            ]
+          },
+          {
+            "key": "off_fullscreen",
+            "label": "off_fullscreen",
+            "type": "button",
+            "bindings": [
+              "setBasicOptionValue/fullscreen/off"
+            ]
+          },
+          {
+            "key": "off_mvaudiosample",
+            "label": "off_mvaudiosample",
+            "type": "button",
+            "bindings": [
+              "setBasicOptionValue/mvaudiosample/off"
+            ]
+          },
+          {
+            "key": "off_skipall",
+            "label": "off_skipall",
+            "type": "button",
+            "bindings": [
+              "setBasicOptionValue/skipall/off"
+            ]
+          },
+          {
+            "key": "onAudioVolumeChange",
+            "label": "onAudioVolumeChange",
+            "type": "slider",
+            "bindings": [
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange",
+              "onAudioVolumeChange"
+            ]
+          },
+          {
+            "key": "onSpeedSliderChange",
+            "label": "onSpeedSliderChange",
+            "type": "slider",
+            "bindings": [
+              "onSpeedSliderChange",
+              "onSpeedSliderChange",
+              "onSpeedSliderChange",
+              "onSpeedSliderChange",
+              "onSpeedSliderChange"
+            ]
+          },
+          {
+            "key": "on_fullscreen",
+            "label": "on_fullscreen",
+            "type": "button",
+            "bindings": [
+              "setBasicOptionValue/fullscreen/on"
+            ]
+          },
+          {
+            "key": "on_mvaudiosample",
+            "label": "on_mvaudiosample",
+            "type": "button",
+            "bindings": [
+              "setBasicOptionValue/mvaudiosample/on"
+            ]
+          },
+          {
+            "key": "on_skipall",
+            "label": "on_skipall",
+            "type": "button",
+            "bindings": [
+              "setBasicOptionValue/skipall/on"
+            ]
           }
         ],
-        "pack": null
+        "pack": null,
+        "hotspots_file": "assets/hotspots/option_0simple.hotspots.json"
       },
       {
         "id": "1",
         "label": "画面设置",
-        "mode": "panel",
         "rows": [
           {
             "key": "0_panictype",
@@ -379,12 +415,12 @@ window.UI_DATA = {
             ]
           }
         ],
-        "pack": null
+        "pack": null,
+        "hotspots_file": "assets/hotspots/option_1display.hotspots.json"
       },
       {
         "id": "2",
         "label": "游戏设置1",
-        "mode": "panel",
         "rows": [
           {
             "key": "changeSysArg",
@@ -518,12 +554,12 @@ window.UI_DATA = {
             ]
           }
         ],
-        "pack": null
+        "pack": null,
+        "hotspots_file": "assets/hotspots/option_2game1.hotspots.json"
       },
       {
         "id": "3",
         "label": "游戏设置2",
-        "mode": "panel",
         "rows": [
           {
             "key": "0_skipst",
@@ -638,12 +674,12 @@ window.UI_DATA = {
             ]
           }
         ],
-        "pack": null
+        "pack": null,
+        "hotspots_file": "assets/hotspots/option_3game2.hotspots.json"
       },
       {
         "id": "4",
         "label": "文本设置",
-        "mode": "panel",
         "rows": [
           {
             "key": "0_autovwait",
@@ -762,12 +798,12 @@ window.UI_DATA = {
             ]
           }
         ],
-        "pack": "assets/settings/option_4text__pack.png"
+        "pack": "assets/settings/option_4text__pack.png",
+        "hotspots_file": "assets/hotspots/option_4text.hotspots.json"
       },
       {
         "id": "5",
         "label": "音频设置",
-        "mode": "panel",
         "rows": [
           {
             "key": "bgm",
@@ -920,12 +956,12 @@ window.UI_DATA = {
             ]
           }
         ],
-        "pack": "assets/settings/option_5sound1__pack.png"
+        "pack": "assets/settings/option_5sound1__pack.png",
+        "hotspots_file": "assets/hotspots/option_5sound1.hotspots.json"
       },
       {
         "id": "6",
         "label": "确认信息",
-        "mode": "panel",
         "rows": [
           {
             "key": "changeOnOffProp",
@@ -1040,12 +1076,12 @@ window.UI_DATA = {
             ]
           }
         ],
-        "pack": "assets/settings/option_6dialog__pack.png"
+        "pack": "assets/settings/option_6dialog__pack.png",
+        "hotspots_file": "assets/hotspots/option_6dialog.hotspots.json"
       },
       {
         "id": "7",
         "label": "鼠标",
-        "mode": "panel",
         "rows": [
           {
             "key": "off_gsenable",
@@ -1131,12 +1167,12 @@ window.UI_DATA = {
             ]
           }
         ],
-        "pack": "assets/settings/option_7mouse__pack.png"
+        "pack": "assets/settings/option_7mouse__pack.png",
+        "hotspots_file": "assets/hotspots/option_7mouse.hotspots.json"
       },
       {
         "id": "8",
         "label": "键盘",
-        "mode": "panel",
         "rows": [
           {
             "key": "reset",
@@ -1220,12 +1256,12 @@ window.UI_DATA = {
             ]
           }
         ],
-        "pack": "assets/settings/option_8keyboard1__pack.png"
+        "pack": "assets/settings/option_8keyboard1__pack.png",
+        "hotspots_file": "assets/hotspots/option_8keyboard1.hotspots.json"
       },
       {
         "id": "9",
         "label": "游戏手柄",
-        "mode": "panel",
         "rows": [
           {
             "key": "off_engamepad",
@@ -1344,7 +1380,8 @@ window.UI_DATA = {
             ]
           }
         ],
-        "pack": "assets/settings/option_9gamepad__pack.png"
+        "pack": "assets/settings/option_9gamepad__pack.png",
+        "hotspots_file": "assets/hotspots/option_9gamepad.hotspots.json"
       }
     ],
     "help": "assets/locale/help_opt_cn.txt",
@@ -1353,17 +1390,11 @@ window.UI_DATA = {
       "back_game": "游戏画面"
     },
     "sources": [
-      "uipsd/option__bg0 + option__pack",
-      "option_0simple 2×5 热区",
-      "locale/cn/help_opt_cn.txt"
-    ],
-    "frame": {
-      "x": 109,
-      "y": 120,
-      "w": 1701,
-      "h": 839
-    },
-    "pixel_ui_default": true
+      "option.ks",
+      "uipsd/option*.pbd",
+      "locale/cn/help_opt_cn.txt",
+      "uitexts_cn.toml"
+    ]
   },
   "load": {
     "style": "file-load",

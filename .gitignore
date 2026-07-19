@@ -17,3 +17,12 @@ docs/ui-extract/static-force/
 # UI images + design logic live in image/ and filtered-cn-jp/.
 docs/ui-extract/ui-cn-jp-static/data/
 docs/ui-extract/ui-cn-jp-static/renamed/
+
+# Temporary probe / compose scratch
+tools/_tmp_*/
+tools/_title_fm_compose/
+tools/_title_mtn_dump.txt
+docs/ui-extract/pixel-reverse/_orig_capture/
+docs/ui-extract/pixel-reverse/_pack_slices/
+docs/ui-extract/pixel-reverse/_text_preview/
+docs/ui-extract/pixel-reverse/_view_ref/

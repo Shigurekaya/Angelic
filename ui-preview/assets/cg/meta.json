@@ -1,0 +1,25 @@
+{
+  "family": "cg",
+  "used": [
+    "extra__bg0",
+    "extra__pack",
+    "extra_locale_cn__pack",
+    "extra_cg__pack",
+    "extra_cgscene__pack",
+    "extra_cgview__pack",
+    "extra_scene__pack",
+    "extra_stand__bg0",
+    "extra_stand__pack",
+    "extra_stand_dialog__bg0",
+    "extra_stand_dialog__pack",
+    "extra_voice__pack"
+  ],
+  "back": {
+    "x": 1680,
+    "y": 1000,
+    "w": 200,
+    "h": 48,
+    "label": "返回标题"
+  },
+  "exclude_story": true
+}

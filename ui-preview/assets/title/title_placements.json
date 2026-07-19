@@ -1,0 +1,22 @@
+{
+  "base": {
+    "file": "title/bg0.png",
+    "x": 0,
+    "y": 0
+  },
+  "logo": {
+    "file": "title/logo_cn.png",
+    "x": 0,
+    "y": 0
+  },
+  "lang": {
+    "file": "title/icon_lang.png",
+    "x": 1812,
+    "y": 40
+  },
+  "reload": {
+    "file": "title/icon_reload.png",
+    "x": 1812,
+    "y": 972
+  }
+}

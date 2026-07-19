@@ -1,0 +1,15 @@
+{
+  "family": "phonechat",
+  "used": [
+    "phonechat__bg0",
+    "phonechat__pack"
+  ],
+  "back": {
+    "x": 1680,
+    "y": 1000,
+    "w": 200,
+    "h": 48,
+    "label": "返回标题"
+  },
+  "exclude_story": true
+}

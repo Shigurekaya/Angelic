@@ -11,7 +11,7 @@ import shutil
 from pathlib import Path
 from PIL import Image
 
-ROOT = Path(r"E:\网站\测试框架\Angelic")
+ROOT = Path(r"D:\gamedev\Angelic")
 SRC = ROOT / "docs" / "ui-extract"
 FILT = SRC / "ui-cn-jp-static" / "filtered-cn-jp"
 TLG = SRC / "pixel-reverse" / "tlg-png"
@@ -37,17 +37,23 @@ def ensure(p: Path) -> Path:
 
 
 def read_uitexts() -> dict:
-    p = FILT / "locale" / "cn" / "uitexts_cn.toml"
-    raw = p.read_bytes()
-    enc = "utf-16-le" if raw[:2] == b"\xff\xfe" else ("utf-16-be" if raw[:2] == b"\xfe\xff" else "utf-8")
-    out = {}
-    for line in raw.decode(enc, errors="replace").splitlines():
-        line = line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        k, v = line.split("=", 1)
-        out[k.strip()] = v.strip().strip('"')
-    return out
+    candidates = [
+        FILT / "locale" / "cn" / "uitexts_cn.toml",
+        SRC / "locale" / "cn" / "uitexts_cn.toml",
+    ]
+    for p in candidates:
+        if p.exists():
+            raw = p.read_bytes()
+            enc = "utf-16-le" if raw[:2] == b"\xff\xfe" else ("utf-16-be" if raw[:2] == b"\xfe\xff" else "utf-8")
+            out = {}
+            for line in raw.decode(enc, errors="replace").splitlines():
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                k, v = line.split("=", 1)
+                out[k.strip()] = v.strip().strip('"')
+            return out
+    return {}
 
 
 def stage_assets():
@@ -77,9 +83,13 @@ def stage_assets():
         shutil.copy2(f, A / "packs" / f.name)
 
     # locale
-    for f in (FILT / "locale" / "cn").iterdir():
-        if f.is_file():
-            shutil.copy2(f, A / "locale" / f.name)
+    locale_dirs = [FILT / "locale" / "cn", SRC / "locale" / "cn"]
+    for locdir in locale_dirs:
+        if not locdir.exists():
+            continue
+        for f in locdir.iterdir():
+            if f.is_file():
+                shutil.copy2(f, A / "locale" / f.name)
 
     # hotspots
     for f in PBD.glob("*.hotspots.json"):

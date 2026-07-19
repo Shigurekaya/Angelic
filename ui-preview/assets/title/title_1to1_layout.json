@@ -1,0 +1,141 @@
+{
+  "source": "title_bg* + title_logo_cn + title_locale_cn__pack + title__pack + langselect__pack",
+  "locale": "cn",
+  "logo": {
+    "x": 0,
+    "y": 0
+  },
+  "btn_xy": {
+    "start": [
+      137,
+      1003
+    ],
+    "load": [
+      354,
+      1003
+    ],
+    "continue": [
+      570,
+      1003
+    ],
+    "flowchart": [
+      804,
+      1001
+    ],
+    "extra": [
+      1010,
+      1003
+    ],
+    "after": [
+      1228,
+      1003
+    ],
+    "system": [
+      1449,
+      1003
+    ],
+    "exit": [
+      1665,
+      1001
+    ]
+  },
+  "language": {
+    "x": 1798,
+    "y": 59
+  },
+  "reload_title": {
+    "x": 1798,
+    "y": 1005
+  },
+  "buttons": [
+    {
+      "id": "start",
+      "label": "从头开始",
+      "action": "toast",
+      "w": 118,
+      "h": 37,
+      "idle": "buttons/start_idle.png",
+      "hover": "buttons/start_hover.png",
+      "x": 137,
+      "y": 1003
+    },
+    {
+      "id": "load",
+      "label": "载入进度",
+      "action": "load",
+      "w": 119,
+      "h": 37,
+      "idle": "buttons/load_idle.png",
+      "hover": "buttons/load_hover.png",
+      "x": 354,
+      "y": 1003
+    },
+    {
+      "id": "continue",
+      "label": "继续游戏",
+      "action": "toast",
+      "w": 122,
+      "h": 41,
+      "idle": "buttons/continue_idle.png",
+      "hover": "buttons/continue_hover.png",
+      "x": 570,
+      "y": 1003
+    },
+    {
+      "id": "flowchart",
+      "label": "流程图",
+      "action": "flowchart",
+      "w": 95,
+      "h": 41,
+      "idle": "buttons/flowchart_idle.png",
+      "hover": "buttons/flowchart_hover.png",
+      "x": 804,
+      "y": 1001
+    },
+    {
+      "id": "extra",
+      "label": "鉴赏模式",
+      "action": "cg",
+      "w": 119,
+      "h": 38,
+      "idle": "buttons/extra_idle.png",
+      "hover": "buttons/extra_hover.png",
+      "x": 1010,
+      "y": 1003
+    },
+    {
+      "id": "after",
+      "label": "追加剧情",
+      "action": "afterstory",
+      "w": 119,
+      "h": 38,
+      "idle": "buttons/after_idle.png",
+      "hover": "buttons/after_hover.png",
+      "x": 1228,
+      "y": 1003
+    },
+    {
+      "id": "system",
+      "label": "系统设定",
+      "action": "settings",
+      "w": 117,
+      "h": 38,
+      "idle": "buttons/system_idle.png",
+      "hover": "buttons/system_hover.png",
+      "x": 1449,
+      "y": 1003
+    },
+    {
+      "id": "exit",
+      "label": "退出游戏",
+      "action": "quit",
+      "w": 121,
+      "h": 41,
+      "idle": "buttons/exit_idle.png",
+      "hover": "buttons/exit_hover.png",
+      "x": 1665,
+      "y": 1001
+    }
+  ],
+  "layered": true
+}

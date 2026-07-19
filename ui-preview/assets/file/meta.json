@@ -1,0 +1,150 @@
+{
+  "family": "file",
+  "modes": [
+    {
+      "id": "load",
+      "label": "读档",
+      "composite": "composite_load.png",
+      "bg": "bg_load.png"
+    },
+    {
+      "id": "save",
+      "label": "存档",
+      "composite": "composite_save.png",
+      "bg": "bg_save.png"
+    },
+    {
+      "id": "quick",
+      "label": "快速",
+      "composite": "composite_quick.png",
+      "bg": "bg_quick.png"
+    }
+  ],
+  "mode_tabs": [
+    {
+      "id": "save",
+      "x": 80,
+      "y": 40,
+      "w": 160,
+      "h": 48
+    },
+    {
+      "id": "load",
+      "x": 260,
+      "y": 40,
+      "w": 160,
+      "h": 48
+    },
+    {
+      "id": "quick",
+      "x": 440,
+      "y": 40,
+      "w": 160,
+      "h": 48
+    }
+  ],
+  "slots": [
+    {
+      "index": 0,
+      "x": 120,
+      "y": 180,
+      "w": 280,
+      "h": 200
+    },
+    {
+      "index": 1,
+      "x": 420,
+      "y": 180,
+      "w": 280,
+      "h": 200
+    },
+    {
+      "index": 2,
+      "x": 720,
+      "y": 180,
+      "w": 280,
+      "h": 200
+    },
+    {
+      "index": 3,
+      "x": 1020,
+      "y": 180,
+      "w": 280,
+      "h": 200
+    },
+    {
+      "index": 4,
+      "x": 120,
+      "y": 400,
+      "w": 280,
+      "h": 200
+    },
+    {
+      "index": 5,
+      "x": 420,
+      "y": 400,
+      "w": 280,
+      "h": 200
+    },
+    {
+      "index": 6,
+      "x": 720,
+      "y": 400,
+      "w": 280,
+      "h": 200
+    },
+    {
+      "index": 7,
+      "x": 1020,
+      "y": 400,
+      "w": 280,
+      "h": 200
+    },
+    {
+      "index": 8,
+      "x": 120,
+      "y": 620,
+      "w": 280,
+      "h": 200
+    },
+    {
+      "index": 9,
+      "x": 420,
+      "y": 620,
+      "w": 280,
+      "h": 200
+    },
+    {
+      "index": 10,
+      "x": 720,
+      "y": 620,
+      "w": 280,
+      "h": 200
+    },
+    {
+      "index": 11,
+      "x": 1020,
+      "y": 620,
+      "w": 280,
+      "h": 200
+    }
+  ],
+  "page_size": 12,
+  "used": [
+    "file__pack",
+    "file_load__bg0",
+    "file_load__pack",
+    "file_save__bg0",
+    "file_save__pack",
+    "file_quick__bg0",
+    "file_quick__pack"
+  ],
+  "back": {
+    "x": 1680,
+    "y": 1000,
+    "w": 200,
+    "h": 48,
+    "label": "返回标题"
+  },
+  "layout_note": "Slot grid estimated for Angelic; refine from PBD/runtime dump later"
+}

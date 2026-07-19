@@ -1,0 +1,96 @@
+{
+  "source": "extra_locale_cn.pbd",
+  "hotspots": [
+    {
+      "layer_id": "to_scene",
+      "sort_index": 2087,
+      "height": 131,
+      "ch": 23
+    },
+    {
+      "layer_id": "to_stand",
+      "sort_index": 2123,
+      "height": 238,
+      "ch": 13
+    },
+    {
+      "layer_id": "to_cg",
+      "sort_index": 2218,
+      "height": 17,
+      "ch": 124
+    },
+    {
+      "layer_id": "c",
+      "sort_index": null,
+      "height": 28,
+      "cx": 201,
+      "cy": 218
+    },
+    {
+      "layer_id": "cref",
+      "sort_index": null,
+      "height": 28
+    },
+    {
+      "layer_id": "dot_on",
+      "sort_index": null,
+      "ch": 124
+    },
+    {
+      "layer_id": "dot_ov",
+      "sort_index": null,
+      "ch": 112
+    },
+    {
+      "layer_id": "extra_locale_cn__pack",
+      "sort_index": null,
+      "width": 172
+    },
+    {
+      "layer_id": "k",
+      "sort_index": null,
+      "height": 28
+    },
+    {
+      "layer_id": "l",
+      "sort_index": null,
+      "height": 28,
+      "cx": 74,
+      "cy": 23
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "height": 17
+    },
+    {
+      "layer_id": "to_voice",
+      "sort_index": null,
+      "height": 28,
+      "ch": 244
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 156
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 14
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 17
+    },
+    {
+      "layer_id": "z",
+      "sort_index": null,
+      "height": 28,
+      "cx": 47,
+      "cy": 217
+    }
+  ],
+  "bindings": []
+}

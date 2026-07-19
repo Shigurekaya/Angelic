@@ -1,0 +1,239 @@
+{
+  "source": "option.pbd",
+  "hotspots": [
+    {
+      "layer_id": "layer",
+      "sort_index": 355,
+      "height": 3
+    },
+    {
+      "layer_id": "caption",
+      "sort_index": 1041,
+      "height": 205,
+      "ch": 144
+    },
+    {
+      "layer_id": "title",
+      "sort_index": 1104,
+      "width": 85,
+      "height": 3
+    },
+    {
+      "layer_id": "helpbase",
+      "sort_index": 1448,
+      "height": 15,
+      "ch": 62
+    },
+    {
+      "layer_id": "reset",
+      "sort_index": 1530,
+      "width": 140,
+      "height": 171
+    },
+    {
+      "layer_id": "copy",
+      "sort_index": 1901,
+      "height": 98
+    },
+    {
+      "layer_id": "back",
+      "sort_index": 2129,
+      "width": 98,
+      "height": 98
+    },
+    {
+      "layer_id": "base",
+      "sort_index": 2175,
+      "width": 209,
+      "height": 193,
+      "storagex": 58
+    },
+    {
+      "layer_id": "a",
+      "sort_index": null,
+      "ch": 1879
+    },
+    {
+      "layer_id": "area",
+      "sort_index": null,
+      "height": 5
+    },
+    {
+      "layer_id": "b",
+      "sort_index": null,
+      "ch": 54
+    },
+    {
+      "layer_id": "c",
+      "sort_index": null,
+      "ch": 139
+    },
+    {
+      "layer_id": "cr",
+      "sort_index": null,
+      "cw": 245
+    },
+    {
+      "layer_id": "d",
+      "sort_index": null,
+      "ch": 1879
+    },
+    {
+      "layer_id": "dot_on",
+      "sort_index": null,
+      "ch": 131
+    },
+    {
+      "layer_id": "dot_ov",
+      "sort_index": null,
+      "ch": 13
+    },
+    {
+      "layer_id": "f",
+      "sort_index": null,
+      "x": 38,
+      "width": 139,
+      "cy": 26
+    },
+    {
+      "layer_id": "false",
+      "sort_index": null,
+      "width": 16
+    },
+    {
+      "layer_id": "initialize",
+      "sort_index": null,
+      "width": 140
+    },
+    {
+      "layer_id": "j",
+      "sort_index": null,
+      "height": 3,
+      "cy": 181
+    },
+    {
+      "layer_id": "mute_mute",
+      "sort_index": null,
+      "height": 186,
+      "ch": 95
+    },
+    {
+      "layer_id": "n",
+      "sort_index": null,
+      "y": 201
+    },
+    {
+      "layer_id": "normal",
+      "sort_index": null,
+      "ch": 4
+    },
+    {
+      "layer_id": "normal_off",
+      "sort_index": null,
+      "ch": 237
+    },
+    {
+      "layer_id": "normal_on",
+      "sort_index": null,
+      "ch": 168
+    },
+    {
+      "layer_id": "num_l_numbase",
+      "sort_index": null,
+      "height": 80,
+      "ch": 49
+    },
+    {
+      "layer_id": "num_s_numbase",
+      "sort_index": null,
+      "height": 216,
+      "ch": 230
+    },
+    {
+      "layer_id": "on_on",
+      "sort_index": null,
+      "ch": 146
+    },
+    {
+      "layer_id": "option__bg0",
+      "sort_index": null,
+      "storagex": 58
+    },
+    {
+      "layer_id": "over_off",
+      "sort_index": null,
+      "ch": 52
+    },
+    {
+      "layer_id": "over_on",
+      "sort_index": null,
+      "ch": 69
+    },
+    {
+      "layer_id": "pgdot",
+      "sort_index": null,
+      "height": 21,
+      "ch": 131
+    },
+    {
+      "layer_id": "radio",
+      "sort_index": null,
+      "height": 154
+    },
+    {
+      "layer_id": "rail",
+      "sort_index": null,
+      "ch": 69
+    },
+    {
+      "layer_id": "storagex",
+      "sort_index": null,
+      "storagey": 141
+    },
+    {
+      "layer_id": "storagey",
+      "sort_index": null,
+      "width": 209
+    },
+    {
+      "layer_id": "toggle",
+      "sort_index": null,
+      "height": 33
+    },
+    {
+      "layer_id": "vbar",
+      "sort_index": null,
+      "height": 101,
+      "ch": 135
+    },
+    {
+      "layer_id": "width",
+      "sort_index": null,
+      "x": 14
+    },
+    {
+      "layer_id": "x",
+      "sort_index": null,
+      "y": 3
+    },
+    {
+      "layer_id": "y",
+      "sort_index": null,
+      "height": 79
+    },
+    {
+      "layer_id": "z",
+      "sort_index": null,
+      "y": 56
+    }
+  ],
+  "bindings": [
+    {
+      "layer_id": "reset",
+      "bindings": [
+        "reset"
+      ],
+      "geometry": null
+    }
+  ]
+}

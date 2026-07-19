@@ -14,7 +14,7 @@ UIPSD = REPO / "docs" / "ui-extract" / "ui-cn-jp-static" / "filtered-cn-jp" / "u
 OUT = REPO / "docs" / "ui-extract" / "pixel-reverse"
 PBD_OUT = OUT / "pbd-layers"
 TLG_OUT = OUT / "tlg-png"
-LIMELIGHT_TOOLS = Path(r"E:\网站\测试框架\LimeLight\tools\lllj-extract")
+LIMELIGHT_TOOLS = Path(r"D:\gamedev\LimeLight\tools\lllj-extract")
 
 SCREEN_GROUPS = {
     "title": ("title.pbd", "title_locale_cn.pbd"),
