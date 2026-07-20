@@ -1,0 +1,562 @@
+{
+  "stem": "option_8keyboard1",
+  "stats": {
+    "stem": "option_8keyboard1",
+    "pbd_bytes": 68968,
+    "layers": 214,
+    "bindings": 3,
+    "clusters": 212,
+    "placeable": 7,
+    "storage_hits": 8,
+    "bind_cmds_sample": [
+      "reset",
+      "setKeyBind/0/auto",
+      "setKeyBind/1/auto",
+      "setKeyBind/0/backone",
+      "setKeyBind/1/backone",
+      "setKeyBind/0/backskip",
+      "setKeyBind/1/backskip",
+      "setKeyBind/0/click",
+      "setKeyBind/1/click",
+      "setKeyBind/0/ctrl",
+      "setKeyBind/1/ctrl",
+      "setKeyBind/0/dsave",
+      "setKeyBind/1/dsave",
+      "setKeyBind/0/hide",
+      "setKeyBind/1/hide",
+      "setKeyBind/0/load",
+      "setKeyBind/1/load",
+      "setKeyBind/0/log",
+      "setKeyBind/1/log",
+      "setKeyBind/0/next",
+      "setKeyBind/1/next",
+      "setKeyBind/0/nextscn",
+      "setKeyBind/1/nextscn",
+      "setKeyBind/0/option",
+      "setKeyBind/1/option",
+      "setKeyBind/0/pagedown",
+      "setKeyBind/1/pagedown",
+      "setKeyBind/0/pageup",
+      "setKeyBind/1/pageup",
+      "setKeyBind/0/panic",
+      "setKeyBind/1/panic",
+      "setKeyBind/0/prev",
+      "setKeyBind/1/prev",
+      "setKeyBind/0/prevscn",
+      "setKeyBind/1/prevscn",
+      "setKeyBind/0/qload",
+      "setKeyBind/1/qload",
+      "setKeyBind/0/qsave",
+      "setKeyBind/1/qsave",
+      "setKeyBind/0/qvsave"
+    ],
+    "bind_cmd_count": 60,
+    "id_prefixes": [
+      [
+        "key",
+        87
+      ],
+      [
+        "label",
+        30
+      ],
+      [
+        "config",
+        30
+      ],
+      [
+        "option",
+        5
+      ],
+      [
+        "sep",
+        3
+      ],
+      [
+        "common",
+        3
+      ],
+      [
+        "title",
+        1
+      ],
+      [
+        "sename",
+        1
+      ],
+      [
+        "caption",
+        1
+      ],
+      [
+        "page1",
+        1
+      ],
+      [
+        "page0",
+        1
+      ],
+      [
+        "target",
+        1
+      ],
+      [
+        "helpbase",
+        1
+      ],
+      [
+        "page6",
+        1
+      ],
+      [
+        "keyboard",
+        1
+      ],
+      [
+        "page4",
+        1
+      ],
+      [
+        "page3",
+        1
+      ],
+      [
+        "visible",
+        1
+      ],
+      [
+        "page2",
+        1
+      ],
+      [
+        "page8",
+        1
+      ]
+    ],
+    "layer_ids_sample": [
+      "title",
+      "sename",
+      "caption",
+      "page1",
+      "sep_b",
+      "page0",
+      "target",
+      "helpbase",
+      "page6",
+      "keyboard",
+      "page4",
+      "page3",
+      "sep_a",
+      "visible",
+      "page2",
+      "page8",
+      "uiname",
+      "page7",
+      "page5",
+      "reset",
+      "key_log_right",
+      "copy",
+      "page9",
+      "key_ctrl_right",
+      "key_auto_right",
+      "helptext",
+      "back",
+      "key_skip_right",
+      "key_next_right",
+      "key_prev_right",
+      "layer",
+      "label_l3h",
+      "key_save_right",
+      "key_hide_right",
+      "key_load_right",
+      "key_qsave_right",
+      "label_l2c",
+      "label_l2b",
+      "label_l2j",
+      "label_l1e",
+      "label_l1c",
+      "label_l2a",
+      "key_title_right",
+      "key_panic_right",
+      "key_vsave_right",
+      "label_l3d",
+      "label_l1i",
+      "base",
+      "label_l1a",
+      "key_click_right",
+      "label_l1f",
+      "label_l1b",
+      "key_qload_right",
+      "label_l3a",
+      "label_l1g",
+      "label_l1d",
+      "label_l3b",
+      "label_l3e",
+      "label_l2g",
+      "label_l2h"
+    ],
+    "placeable_with_formula": [],
+    "storage_with_formula": [
+      {
+        "geo": {
+          "ch": 34128,
+          "cw": 112527,
+          "cx": 227,
+          "cy": 8,
+          "h": 34204,
+          "ox": 171,
+          "oy": 166,
+          "storage": "option_8keyboard1__pack",
+          "w": 112619,
+          "width": 112563,
+          "x": 355618,
+          "y": 186170,
+          "height": 14792
+        },
+        "formula": {
+          "x": 1016,
+          "y": 382
+        }
+      }
+    ]
+  },
+  "placeable": [
+    {
+      "id": "base",
+      "geo": {
+        "width": 64,
+        "height": 217,
+        "storagex": 28
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "f",
+      "geo": {
+        "x": 122,
+        "width": 177
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "holdalpha",
+      "geo": {
+        "ox": 198
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "m",
+      "geo": {
+        "x": 152
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "n",
+      "geo": {
+        "x": 82,
+        "width": 28,
+        "height": 12894,
+        "cx": 74,
+        "cy": 228,
+        "ch": 249
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "option__bg0",
+      "geo": {
+        "storagex": 28
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "width",
+      "geo": {
+        "x": 82
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "storage": [
+    {
+      "geo": {
+        "ch": 12987,
+        "cw": 28307,
+        "cx": 74,
+        "cy": 102237,
+        "h": 13030,
+        "ox": 198,
+        "oy": 245,
+        "storage": "option_8keyboard1__pack",
+        "w": 28375,
+        "width": 28188,
+        "x": 100946,
+        "y": 35375,
+        "height": 12946
+      },
+      "formula": {
+        "x": 836,
+        "y": 102532
+      }
+    },
+    {
+      "geo": {
+        "ch": 12803,
+        "cw": 28259,
+        "cx": 223,
+        "cy": 102337,
+        "h": 12921,
+        "ox": 20,
+        "oy": 87,
+        "storage": "option_8keyboard1__pack",
+        "w": 28405,
+        "width": 28181,
+        "x": 100868,
+        "y": 35382,
+        "height": 15451
+      },
+      "formula": {
+        "x": 1163,
+        "y": 102790
+      }
+    },
+    {
+      "geo": {
+        "h": 15009,
+        "ox": 70,
+        "oy": 193,
+        "w": 80886,
+        "ch": 15097,
+        "cw": 80892,
+        "cx": 27167,
+        "cy": 98327,
+        "storage": "option__pack",
+        "width": 80699,
+        "x": 404774,
+        "y": 253300,
+        "height": 14989
+      },
+      "formula": {
+        "x": 28057,
+        "y": 98674
+      }
+    },
+    {
+      "geo": {
+        "width": 80730,
+        "x": 404872,
+        "y": 253395,
+        "height": 276697,
+        "storage": "option__bg0",
+        "storagex": 28,
+        "storagey": 251
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "geo": {
+        "ch": 11066,
+        "cw": 75586,
+        "cx": 27174,
+        "cy": 128110,
+        "h": 11171,
+        "ox": 222,
+        "oy": 114,
+        "storage": "option__pack",
+        "w": 75756,
+        "width": 75619,
+        "x": 22472,
+        "y": 5092,
+        "height": 19749
+      },
+      "formula": {
+        "x": 27912,
+        "y": 128536
+      }
+    },
+    {
+      "geo": {
+        "ch": 187244,
+        "cw": 19888,
+        "cx": 2071,
+        "cy": 181,
+        "h": 19829,
+        "ox": 67,
+        "oy": 146,
+        "storage": "option__pack",
+        "w": 187355,
+        "width": 187217,
+        "x": 6965,
+        "y": 250786,
+        "height": 19956
+      },
+      "formula": {
+        "x": 2964,
+        "y": 575
+      }
+    },
+    {
+      "geo": {
+        "ch": 34128,
+        "cw": 112527,
+        "cx": 227,
+        "cy": 8,
+        "h": 34204,
+        "ox": 171,
+        "oy": 166,
+        "storage": "option_8keyboard1__pack",
+        "w": 112619,
+        "width": 112563,
+        "x": 355618,
+        "y": 186170,
+        "height": 14792
+      },
+      "formula": {
+        "x": 1016,
+        "y": 382
+      }
+    },
+    {
+      "geo": {
+        "ch": 212538,
+        "cw": 1267,
+        "cx": 1275,
+        "cy": 168,
+        "h": 212648,
+        "ox": 176,
+        "oy": 89,
+        "storage": "option__pack",
+        "w": 1134,
+        "width": 1167,
+        "x": 22894,
+        "y": 32212,
+        "height": 212606
+      },
+      "formula": {
+        "x": 2059,
+        "y": 619
+      }
+    }
+  ],
+  "binds": [
+    {
+      "layer_id": "reset",
+      "bindings": [
+        "reset"
+      ],
+      "properties": {
+        "width": 100
+      }
+    },
+    {
+      "layer_id": "setKeyBind",
+      "bindings": [
+        "setKeyBind/0/auto",
+        "setKeyBind/1/auto",
+        "setKeyBind/0/backone",
+        "setKeyBind/1/backone",
+        "setKeyBind/0/backskip",
+        "setKeyBind/1/backskip",
+        "setKeyBind/0/click",
+        "setKeyBind/1/click",
+        "setKeyBind/0/ctrl",
+        "setKeyBind/1/ctrl",
+        "setKeyBind/0/dsave",
+        "setKeyBind/1/dsave",
+        "setKeyBind/0/hide",
+        "setKeyBind/1/hide",
+        "setKeyBind/0/load",
+        "setKeyBind/1/load",
+        "setKeyBind/0/log",
+        "setKeyBind/1/log",
+        "setKeyBind/0/next",
+        "setKeyBind/1/next",
+        "setKeyBind/0/nextscn",
+        "setKeyBind/1/nextscn",
+        "setKeyBind/0/option",
+        "setKeyBind/1/option",
+        "setKeyBind/0/pagedown",
+        "setKeyBind/1/pagedown",
+        "setKeyBind/0/pageup",
+        "setKeyBind/1/pageup",
+        "setKeyBind/0/panic",
+        "setKeyBind/1/panic",
+        "setKeyBind/0/prev",
+        "setKeyBind/1/prev",
+        "setKeyBind/0/prevscn",
+        "setKeyBind/1/prevscn",
+        "setKeyBind/0/qload",
+        "setKeyBind/1/qload",
+        "setKeyBind/0/qsave",
+        "setKeyBind/1/qsave",
+        "setKeyBind/0/qvsave",
+        "setKeyBind/1/qvsave",
+        "setKeyBind/0/save",
+        "setKeyBind/1/save",
+        "setKeyBind/0/scnchart",
+        "setKeyBind/1/scnchart",
+        "setKeyBind/0/screen",
+        "setKeyBind/1/screen",
+        "setKeyBind/0/skip",
+        "setKeyBind/1/skip",
+        "setKeyBind/0/snapshot",
+        "setKeyBind/1/snapshot",
+        "setKeyBind/0/title",
+        "setKeyBind/1/title",
+        "setKeyBind/0/volume",
+        "setKeyBind/1/volume",
+        "setKeyBind/0/vreplay",
+        "setKeyBind/1/vreplay",
+        "setKeyBind/0/vsave",
+        "setKeyBind/1/vsave"
+      ],
+      "properties": {
+        "height": 187,
+        "h": 12894,
+        "ox": 82,
+        "cx": 223,
+        "oy": 139,
+        "w": 34,
+        "ch": 58,
+        "width": 53,
+        "x": 139,
+        "y": 73
+      }
+    },
+    {
+      "layer_id": "showKeyBind",
+      "bindings": [
+        "showKeyBind"
+      ],
+      "properties": {
+        "width": 252
+      }
+    }
+  ]
+}

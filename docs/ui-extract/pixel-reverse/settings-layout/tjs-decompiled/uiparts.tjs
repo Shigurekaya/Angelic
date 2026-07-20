@@ -1,0 +1,959 @@
+function ButtonLayer_AddDisableButtonState(arg0, arg1) {
+
+    function get(arg0, arg1) {
+        return arg0 >> arg1 * 4 & 15;
+    }
+
+    function replace(arg0, arg1, arg2) {
+        arg2 *= 4;
+        arg0 &= ~(15 << arg2);
+        arg0 |= (15 & arg1) << arg2;
+        return arg0;
+    }
+
+    var local0 = get;
+    var local1 = replace;
+    var local2 = local0(arg0, 15);
+    var local3 = local2 + (arg1 ? 2 : 1);
+    if (local3 >= 15) {
+        throw new Exception("button state overflow");
+    }
+    arg0 = local1(arg0, local3, 15);
+    arg0 = local1(arg0, local2, 4);
+    if (arg1) {
+        arg0 = local1(arg0, local2 + 1, 12);
+    }
+    return arg0;
+}
+this.ButtonLayer_AddDisableButtonState = ButtonLayer_AddDisableButtonState incontextof this;
+
+function UILayer_ApplyDisableEffect(arg0, arg1, arg2 = 0) {
+    var local0 = SystemConfig.buttonDisabledEffect;
+    if (local0) {
+        var local1 = kag.temporaryLayer;
+        if (local1 === arg0) {
+            ButtonLayer._effectButtonImage(local0, local1, 0);
+        } else {
+            local1.setSize(arg0.width, arg0.height);
+            local1.copyRect(0, 0, arg0, arg2 * arg0.width, 0, arg0.width, arg0.height);
+            arg0._effectButtonImage(local0, local1, 0);
+            arg0.copyRect(arg2 * arg0.width, 0, local1, 0, 0, arg0.width, arg0.height);
+        }
+    }
+}
+this.UILayer_ApplyDisableEffect = UILayer_ApplyDisableEffect incontextof this;
+
+function UIButton_ApplyDisableEffect(arg0) {
+
+    function _(arg0) {
+        var local0 = (typeof window.temporaryLayer == "Object") ? window.temporaryLayer : null;
+        if (local0 && (arg0 && !Butt_showDisableImage)) {
+            var local1 = this.width;
+            var local2 = this.height;
+            var local3 = this.getImageButtonIndex;
+            var local4 = this.toggleButton;
+            Butt_showDisableImage = 1;
+            Butt_stateOffsetMap = ButtonLayer_AddDisableButtonState(Butt_stateOffsetMap, local4);
+            this.imageWidth = local1 * local3(-1);
+            local0.setSize(local1, local2);
+            var local5 = function(arg0, arg1, arg2, arg3, arg4, arg5) {
+                arg1.copyRect(0, 0, this, arg4 * arg2, 0, arg4, arg5);
+                this._effectButtonImage(arg0, arg1, 0);
+                this.copyRect(arg4 * arg3, 0, arg1, 0, 0, arg4, arg5);
+            } incontextof this;
+            local5(arg0, local0, local3(0), local3(4), local1, local2);
+            if (local4) {
+                local5(arg0, local0, local3(8), local3(12), local1, local2);
+            }
+        }
+    }
+
+    var local0 = _;
+    return (local0 incontextof arg0)(SystemConfig.buttonDisabledEffect);
+}
+this.UIButton_ApplyDisableEffect = UIButton_ApplyDisableEffect incontextof this;
+
+function UIFunc_ApplyDisableEffect(arg0, arg1) {
+    arg0.add(["eval", arg1, "call", ".UIButton_ApplyDisableEffect"]);
+}
+this.UIFunc_ApplyDisableEffect = UIFunc_ApplyDisableEffect incontextof this;
+
+class CustomBgmTitleIndicator extends BgmTitleIndicatorBase {
+    function CustomBgmTitleIndicator() {
+        super.BgmTitleIndicatorBase(...);
+    }
+
+    function finalize() {
+        if (typeof this.termBlackLayer == "Object") {
+            this.termBlackLayer();
+        }
+        super.finalize(...);
+    }
+
+    function mergeTitleList(arg0, arg1 = "*", arg2 = titleFile) {
+        if (!Storages.isExistentStorage(arg2)) {
+            return;
+        }
+        var local0 = new CSVParser();
+        var local1;
+        local0.initStorage(arg2);
+        while ((local1 = local0.getNextLine()) !== void) {
+            if (!local1.count || local1[0] == "") {
+                continue;
+            } else {
+                var local2;
+                if (local1[0].charAt(0) == "#") {
+                    if (local1[0] != "#+") {
+                        continue;
+                    } else {
+                        local1.shift();
+                        if (local1[1] != "") {
+                            local2 = local1[0].toLowerCase();
+                            if (arg0[local2] === void) {
+                                arg0[local2] = %[];
+                            }
+                            arg0[local2][arg1] = local1[1].trim();
+                            continue;
+                        }
+                        continue;
+                    }
+                } else {
+                    if (local1[1] != "") {
+                        local2 = local1[0].toLowerCase();
+                        if (arg0[local2] === void) {
+                            arg0[local2] = %[];
+                        }
+                        arg0[local2][arg1] = local1[1].trim();
+                        continue;
+                    }
+                    continue;
+                }
+            }
+        }
+    }
+
+    function getTitle(arg0) {
+        var local0;
+        var local1;
+        var local2;
+        var local3;
+        if (titleMap === void) {
+            local0 = titleMap = %["???" => %["*" => SystemConfig.soundModeUnknownText]];
+            mergeTitleList(local0);
+            local1 = LanguageTags;
+            local2 = 0;
+            while (local2 < local1.count) {
+                local3 = local1[local2];
+                var local4 = "musictitle_%s.txt".sprintf(local3);
+                var local5 = loadConfigFile(local4);
+                while (local5.count > 0) {
+                    var local6 = local5.pop();
+                    if (!(local6 instanceof "Array")) {
+                        continue;
+                    } else {
+                        var local7 = (string(local6[0])).trim().toLowerCase();
+                        var local8 = (string(local6[1])).trim();
+                        if (local7 == "" || local8 == "") {
+                            continue;
+                        } else if (local0[local7]) {
+                            local0[local7][local3] = local8;
+                            continue;
+                        } else {
+                            kag.errorSound("soundlistに定義がありません:" + local7, %[file: local4]);
+                            continue;
+                        }
+                    }
+                }
+                ++local2;
+            }
+        }
+        local0 = void;
+        local0 = (string(Storages.chopStorageExt(Storages.extractStorageName(arg0)))).toLowerCase();
+        local1 = (local0 != "") ? titleMap[local0] : void;
+        if (!local1) {
+            return;
+        }
+        local2 = CurrentLanguageUITag;
+        local3 = (local2 != "") ? local1[local2] : void;
+        return (local3 != "") ? local3 : local1["*"];
+    }
+}
+this.CustomBgmTitleIndicator = CustomBgmTitleIndicator;
+
+class CustomShowDateLayer extends SimpleIndicatorLayer {
+    var zpos = 64;
+    var comp;
+    var owner;
+
+    function CustomShowDateLayer(arg0, arg1) {
+        this.owner = arg0;
+        comp = new PassiveCompLayer(arg1.window, arg1.comp.parent, this, compOnPaint);
+        super.SimpleIndicatorLayer(arg1.window, arg1.parent);
+    }
+
+    function finalize() {
+        super.finalize(...);
+    }
+
+    function setup() {
+        super.setup(...);
+        name = "ShowDateLayer";
+        comp.name = name + comp.name;
+        var local0 = function() {
+
+        };
+        comp.show = local0;
+        comp.restore = local0;
+        comp.store = local0;
+        comp.load = this.load;
+        comp.clear = this.clear incontextof comp;
+        world_object.addAbsoluteAdapter(this, zpos);
+        world_object.addAbsoluteAdapter(comp, zpos);
+    }
+
+    function term() {
+        super.term(...);
+        if (isvalid this) {
+            if (isvalid world_object) {
+                world_object.removeAbsoluteAdapter(this);
+                world_object.removeAbsoluteAdapter(comp);
+            }
+            if (comp) {
+                invalidate(comp);
+            }
+        }
+    }
+
+    function load(arg0) {
+        assignImages(arg0);
+        setPos(arg0.left, arg0.top, arg0.width, arg0.height);
+        comp.update();
+    }
+
+    function store() { }
+
+    function restore() { }
+
+    function clear() {
+        hasImage = 0;
+        hasImage = 1;
+        update();
+    }
+
+    function show(arg0) {
+        if (arg0) {
+            super.show();
+        } else {
+            super.hide();
+        }
+    }
+
+    function compOnPaint(arg0, arg1, arg2, arg3) {
+        arg0.assignImages(arg1);
+    }
+
+    property left {
+        getter() {
+            return super.left;
+        }
+        setter(arg0) {
+            comp.left = arg0;
+            super.left = arg0;
+        }
+    }
+
+    property top {
+        getter() {
+            return super.top;
+        }
+        setter(arg0) {
+            comp.top = arg0;
+            super.top = arg0;
+        }
+    }
+
+    property visible {
+        getter() {
+            return super.visible;
+        }
+        setter(arg0) {
+            comp.visible = arg0;
+            super.visible = arg0;
+        }
+    }
+
+    property opacity {
+        getter() {
+            return super.opacity;
+        }
+        setter(arg0) {
+            comp.opacity = arg0;
+            super.opacity = arg0;
+        }
+    }
+
+    property fadeTime {
+        getter() {
+            return owner.fadeTime;
+        }
+        setter(arg0) { }
+    }
+
+    function getAutoHide() {
+        return SystemConfig.ChapterAutoHideTime;
+    }
+
+    function getCurrentShowing() {
+        return super.getCurrentShowing(...) && owner.nowShow;
+    }
+}
+this.CustomShowDateLayer = CustomShowDateLayer;
+
+class CustomShowDatePlugin extends ShowDatePluginBase {
+    var storage = "chapter";
+    var tagHandlerName = "chapter";
+    var layerClass = global.CustomShowDateLayer;
+    var dlg;
+    var piled;
+    var curstate;
+    var _captureVis;
+    var _captureVisBack;
+
+    function CustomShowDatePlugin() {
+        super.ShowDatePluginBase(...);
+    }
+
+    function finalize() {
+        if (dlg) {
+            invalidate(dlg);
+        }
+        if (piled) {
+            invalidate(piled);
+        }
+        super.finalize(...);
+    }
+
+    function initUI() {
+        dm("日付表示呼び出し");
+        if (!dlg) {
+            dlg = new DialogLayer(kag, kag.primaryLayer, "showDateDialog");
+            dlg.visible = 0;
+            dlg.coverParent = 0;
+        }
+        ui = dlg.uiload(%[storage: storage]);
+        dlg.visible = 0;
+        curstate = void;
+        if (!piled) {
+            piled = new Layer(kag, kag.primaryLayer);
+            piled.name = "showDateAssign";
+        }
+        piled.setPos(dlg.left, dlg.top, dlg.width, dlg.height);
+    }
+
+    function getUiStates(arg0) {
+        if (!dlg) {
+            return;
+        }
+        var local0 = dlg.names;
+        arg0 = string(arg0);
+        if (curstate !== arg0) {
+            _updateChapterText(arg0, local0);
+            curstate = arg0;
+            piled.fillRect(0, 0, piled.width, piled.height, 0);
+            piled.piledCopy(0, 0, dlg, 0, 0, piled.width, piled.height);
+        }
+        return piled;
+    }
+
+    function drawChapterImage(arg0, arg1, arg2 = "frame") {
+        var local1;
+        var local2;
+        if (!dlg) {
+            return 0;
+        }
+        var local0 = dlg.names;
+        _updateChapterText(arg1, local0);
+        if (arg2 != "" && local0[arg2]) {
+            local1 = local0[arg2].width;
+            local2 = local0[arg2].height;
+            var local3 = dlg.opacity;
+            var local4 = local0.deco;
+            if (local4) {
+                local4.visible = 0;
+            }
+            arg0.setImageSize(local1, local2);
+            arg0.piledCopy(0, 0, dlg, local0[arg2].left, local0[arg2].top, local1, local2);
+            if (local4) {
+                local4.visible = 1;
+            }
+        } else {
+            local1 = dlg.width;
+            local2 = dlg.height;
+            arg0.setImageSize(local1, local2);
+            arg0.piledCopy(0, 0, dlg, 0, 0, local1, local2);
+        }
+        return 1;
+    }
+
+    function _updateChapterText(arg0, arg1) {
+        var local1;
+        var local2;
+        var local3;
+        var local4;
+        var local5;
+        var local0 = arg1.text;
+        if (local0) {
+            local1 = /(^.*?)([0-9\-]+)/.match(arg0);
+            local2 = (local1 && local1.count > 0) ? local1[1] : arg0;
+            local3 = (local1 && local1.count > 0) ? local1[2] : "";
+            if (local3 != "" && local2 == "") {
+                local2 = "CHAPTER";
+            } else if (local2 == "after") {
+                local2 = arg0;
+                local3 = "";
+            }
+            local0.fillRect(0, 0, local0.width, local0.height, 0);
+            local4 = ui.text.uistates.small;
+            local5 = ui.text.uistates.nums;
+            if (local4 && local5) {
+                if (local2 != "") {
+                    CustomDrawLayerText(local0, local2.toUpperCase(), "chapter.text", local4);
+                }
+                if (local3 != "") {
+                    CustomDrawLayerText(local0, local3, "chapter.nums", local5);
+                }
+            } else {
+                if (local2 != "" && local3 != "") {
+                    local2 += " ";
+                }
+                if (local2 != "" || local3 != "") {
+                    CustomDrawLayerText(local0, local2.toUpperCase() + local3, "chapter.text");
+                }
+            }
+        } else {
+            local1 = 4;
+            if (arg0 == "after" || arg0 == "prologue" || arg0 == "epilogue") {
+                setUiVisible(arg1, "chapter", 0);
+                setUiVisible(arg1, "prologue", arg0 == "prologue");
+                setUiVisible(arg1, "after", arg0 == "after");
+                setUiVisible(arg1, "epilogue", arg0 == "epilogue");
+                local2 = 0;
+                while (local2 < local1) {
+                    setUiVisible(arg1, "num" + local2, 0);
+                    ++local2;
+                }
+            } else {
+                local2 = arg0.length;
+                setUiVisible(arg1, "chapter", 1);
+                setUiVisible(arg1, "after", 0);
+                setUiVisible(arg1, "prologue", 0);
+                setUiVisible(arg1, "epilogue", 0);
+                local3 = 0;
+                while (local3 < local1) {
+                    local4 = arg0.charAt(local3);
+                    local5 = arg1["num" + local3];
+                    if (local5) {
+                        local5.fillRect(0, 0, local5.width, local5.height, 0);
+                        local5.visible = local4 != "";
+                        if (local5.visible != 0) {
+                            local5._copyButtonUIStates(0, ui.num, , local4);
+                        }
+                    }
+                    ++local3;
+                }
+            }
+        }
+    }
+
+    function setUiVisible(arg0, arg1, arg2) {
+        if (arg1 != "" && arg0[arg1] !== void) {
+            arg0[arg1].visible = arg2;
+        }
+    }
+
+    function reset() {
+        curstate = void;
+        return super.reset(...);
+    }
+
+    function onConfigUpdate() {
+        fore.onAutoHideChanged();
+    }
+
+    function update(arg0, arg1) {
+        super.update(0, arg1);
+    }
+
+    function getTransMode() {
+        return 0;
+    }
+
+    function createLayer(arg0, arg1, arg2) {
+        if (fore === void) {
+            var local0 = new layerClass(this, arg0);
+            if (arg1 !== void) {
+                local0.name = arg1;
+            }
+            if (arg2 !== void) {
+                local0.absolute = arg2;
+            }
+            return local0;
+        }
+    }
+
+    function removeLayer(arg0) {
+        invalidate(arg0);
+    }
+
+    property visible {
+        getter() {
+            return 1;
+        }
+    }
+
+    function getFore() {
+        return fore;
+    }
+
+    function getBack() {
+        return fore.comp;
+    }
+
+    function stopAction() { }
+
+    function beginAction() { }
+
+    function onMessageHiddenStateChanged(arg0, arg1) {
+        if (!kag._inCaptureSnapshot || arg1) {
+            return;
+        }
+        function setVisible(arg0, arg1) {
+            *(&global.Layer.visible incontextof arg0) = arg1;
+            arg1 = *(&global.Layer.visible incontextof arg0);
+            return arg1;
+        }
+        if (arg0) {
+            _captureVis = setVisible(getFore(), 0);
+            _captureVisBack = setVisible(getBack(), 0);
+        } else {
+            setVisible(getFore(), _captureVis);
+            setVisible(getBack(), _captureVisBack);
+            _captureVisBack = void;
+            _captureVis = void;
+        }
+    }
+}
+this.CustomShowDatePlugin = CustomShowDatePlugin;
+
+function PiledChapterImage() {
+    try {
+        return global.ShowDate.drawChapterImage(...);
+    } catch (e) { }
+}
+this.PiledChapterImage = PiledChapterImage incontextof this;
+
+class CrossScrollUtil extends MultiDragScrollUtil {
+    var _crossH = "_ch_";
+    var _crossV = "_cv_";
+    var _lastCrossCalled = %[];
+    var crossInfo = %[];
+
+    function CrossScrollUtil() {
+        super.MultiDragScrollUtil(...);
+    }
+
+    function finalize() {
+        if (isvalid this) {
+            clearCrossLayer();
+        }
+        super.finalize(...);
+    }
+
+    function createNameRegExp(arg0) {
+        return new RegExp("^(_c[hv]_" + string(arg0) + ")_(.+)$");
+    }
+
+    function checkLayerName(arg0, arg1) {
+        var local0 = arg1 ? arg1.match(string(arg0)) : void;
+        if (local0 && local0.count > 0) {
+            var local1 = local0[1].substr(0, _crossV.length) == _crossV;
+            return [local0[2], local1];
+        }
+    }
+
+    function getHorzScutil(arg0, *) {
+        return getRawScutil(_crossH + arg0, *);
+    }
+
+    function getVertScutil(arg0, *) {
+        return getRawScutil(_crossV + arg0, *);
+    }
+
+    function getDragLayer(arg0) {
+        var local0 = (arg0 != "") ? crossInfo[arg0] : void;
+        return local0 ? local0.drag : void;
+    }
+
+    function onCrossCallbacked(arg0, arg1) {
+        if (arg0 != "") {
+            _lastCrossCalled[arg0] |= arg1;
+        }
+    }
+
+    function clearCrossCalled(arg0) {
+        if (arg0 != "") {
+            delete _lastCrossCalled[arg0];
+        }
+    }
+
+    function getCrossCalled(arg0) {
+        return (arg0 != "") ? _lastCrossCalled[arg0] : void;
+    }
+
+    function foreachCrossInfo(arg0, *) {
+        var local0;
+        var local1 = Scripts.getObjectKeys(crossInfo);
+        var local2 = local1.count - 1;
+        while (local2 >= 0) {
+            var local3 = local1[local2];
+            local0 |= arg0(local3, crossInfo[local3], *);
+            --local2;
+        }
+        return local0;
+    }
+
+    function clearCrossLayer(arg0, arg1) {
+        if (arg0 == "") {
+            return foreachCrossInfo(clearCrossLayer);
+        }
+        if (arg1 === void) {
+            arg1 = crossInfo[arg0];
+        }
+        if (arg1.drag) {
+            invalidate(arg1.drag);
+            delete arg1.drag;
+        }
+        delete crossInfo[arg0];
+    }
+
+    function addCross(arg0, arg1, arg2, arg3) {
+        var local0 = crossInfo[arg0] = Scripts.clone(arg1);
+        function fixParam(arg0, arg1) {
+            var local0 = [];
+            local0.assign(arg1);
+            var local1 = 0;
+            var local2 = local0.count;
+            while (local1 < local2) {
+                var local3 = local0[local1];
+                var local4 = local0[local1 + 1];
+                if (local3 != "" && (local4 !== void && arg0[local3] === void)) {
+                    arg0[local3] = local4;
+                }
+                local1 += 2;
+            }
+        }
+        fixParam(arg2, %[
+            itemname: arg1.itemname,
+            rows: arg1.hcnt,
+            columns: 1,
+            autoitemplace: 1,
+            horzmode: 1
+        ]);
+        fixParam(arg3, %[
+            itemname: arg1.itemname,
+            rows: arg1.vcnt,
+            columns: 1,
+            autoitemplace: 1,
+            horzmode: 0
+        ]);
+        addGroup(_crossH + arg0, checkCrossValid(arg2, 0), []);
+        addGroup(_crossV + arg0, checkCrossValid(arg3, 1), []);
+        var local1 = getHorzScutil(arg0);
+        var local2 = getVertScutil(arg0);
+        var local3 = local0.drag = new CrossRectLayer(this, arg0, arg1);
+        function hook(arg0, arg1, arg2, arg3) {
+            var local0 = [this, arg0, arg3, arg1[arg2]];
+            function _(arg0, *) {
+                if (arg0 == "onScroll") {
+                    var local0 = this[0];
+                    if (isvalid local0) {
+                        local0.onCrossCallbacked(this[1], this[2]);
+                    }
+                }
+                return this[3](arg0, *);
+            }
+            arg1[arg2] = _ incontextof local0;
+        }
+        hook(arg0, local1, "ownerCallback", 1);
+        hook(arg0, local2, "ownerCallback", 2);
+    }
+
+    function checkCrossValid(arg0, arg1) {
+
+        function assert(arg0, arg1) {
+            if (!arg1) {
+                kag.errorCmd("CrossScroll: 初期パラメータに問題があります:" + arg0);
+            }
+        }
+        var local0 = assert;
+        local0("autoitemplace", !!arg0.autoitemplace);
+        local0("horzmode", arg1 ? !arg0.horzmode : !!arg0.horzmode);
+        local0("columns", arg0.columns == 1);
+        return arg0;
+    }
+
+    function setup() {
+        var local0 = super.setup(...);
+        makeCrossLayer(...);
+        return local0;
+    }
+
+    function makeCrossLayer() {
+
+        function _(arg0, arg1, arg2, arg3) {
+        
+            function getrect(arg0, arg1, arg2) {
+                arg0.scroll = 0;
+                var local0 = arg0.scrollBaseLayer;
+                var local1 = arg0.getItemButton(arg1);
+                if (local1 && local0) {
+                    return [local0.left + local1.left, local0.top + local1.top, local1.width, local1.height];
+                }
+            }
+        
+            function compare(arg0, arg1) {
+                if (!arg0 || !arg1) {
+                    return 0;
+                }
+                return arg0[0] == arg1[0] && (arg0[1] == arg1[1] && (arg0[2] == arg1[2] && arg0[3] == arg1[3]));
+            }
+        
+            var local0 = getrect;
+            var local1 = compare;
+            var local2 = getHorzScutil(arg0);
+            var local3 = getVertScutil(arg0);
+            var local4;
+            var local5 = arg1.h;
+            var local6 = arg1.v;
+            if (local5 !== void) {
+                local4 = local0(local2, +local5, 0);
+                if (local6 !== void && !local1(local4, local0(local3, +local6, 1))) {
+                    kag.errorCmd("CrossScroll: 交差位置指定が重なりません:" + arg0);
+                }
+            } else if (local6 !== void) {
+                local4 = local0(horv, +local6, 1);
+            } else {
+                kag.errorCmd("CrossScroll: 交差位置指定がありません:" + arg0);
+            }
+            if (!local4) {
+                kag.errorCmd("CrossScroll: 交差座標の取得に失敗しました:" + arg0);
+                return;
+            }
+            arg1.drag.selfDrag = 1;
+            arg1.drag.visible = 0;
+            arg1.drag.parent = local2.currentObject;
+            arg1.drag.setPos(local4*);
+            arg1.drag.bringToFront();
+        }
+        var local0 = _;
+        foreachCrossInfo(local0 incontextof this, *);
+    }
+
+    function replaceScrollItemButtons(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = getHorzScutil(arg0);
+        var local1 = getVertScutil(arg0);
+        if (local0) {
+            local0.replaceScrollItemButtons(arg1, arg2, arg3*);
+        }
+        if (local1) {
+            local1.replaceScrollItemButtons(arg1, arg2, arg4*);
+        }
+    }
+
+    function invokeHorz(arg0, *) {
+        return invoke(_crossH + arg0, *);
+    }
+
+    function invokeVert(arg0, *) {
+        return invoke(_crossV + arg0, *);
+    }
+
+    function getHorzGroup(arg0, arg1) {
+        return (arg1 == "" || arg1 == _crossH + arg0) ? group(_crossH + arg0) : void;
+    }
+
+    function getVertGroup(arg0, arg1) {
+        return (arg1 == "" || arg1 == _crossV + arg0) ? group(_crossV + arg0) : void;
+    }
+
+    function invokeGroupEvent(arg0, arg1, arg2, *) {
+        var local0 = getVertGroup(arg0, arg1);
+        if (local0) {
+            return ownerCallback("onVert" + arg2, local0, *);
+        }
+        local0 = getHorzGroup(arg0, arg1);
+        if (local0) {
+            return ownerCallback("onHorz" + arg2, local0, *);
+        }
+    }
+
+    class CrossRectLayer extends DragAndDropUtilLayer {
+        var target;
+        var key;
+
+        function CrossRectLayer(arg0, arg1, arg2) {
+            super.DragAndDropUtilLayer(kag, kag.uibase, this, arg2);
+            this.target = arg0;
+            this.key = arg1;
+            this.name = "CrossRect";
+            this.hitType = htMask;
+            this.hitThreshold = 0;
+            this.visible = 0;
+            this.cursor = crSizeAll;
+        }
+
+        function finalize() {
+            super.finalize(...);
+        }
+
+        function _internalDragMove(arg0, arg1) { }
+
+        function onDragHitCheck(arg0, arg1, arg2) {
+            arg0.mx = arg1;
+            arg0.my = arg2;
+            return this;
+        }
+
+        function onDragPrepare(arg0, arg1, arg2, arg3) {
+            arg0.x = arg1.left + arg2;
+            arg0.y = arg1.top + arg3;
+        }
+
+        function onDragStart() {
+            return target.onCrossDragStart(key, *);
+        }
+
+        function onDragMove() {
+            return target.onCrossDragMove(key, *);
+        }
+
+        function onDragEnd() {
+            return target.onCrossDragEnd(key, *);
+        }
+    }
+
+    function onCrossDragStart(arg0, arg1, arg2) {
+        arg1.dir = 0;
+        arg1.key = arg0;
+        arg1.horz = getHorzScutil(arg0);
+        arg1.vert = getVertScutil(arg0);
+        arg1.hpos = arg1.horz.scroll;
+        arg1.vpos = arg1.vert.scroll;
+        _scMouseDown(arg1.horz, 0, 0);
+        _scMouseDown(arg1.vert, 0, 0);
+        if (arg2) {
+            arg2.cursor = crSizeAll;
+        }
+    }
+
+    function onCrossDragMove(arg0, arg1) {
+        if (!arg1.dir) {
+            var local0 = Math.abs(arg1.mx);
+            var local1 = Math.abs(arg1.my);
+            var local2 = Math.max(local0, local1);
+            if (local2 >= 8) {
+                var local3 = local0 > local1;
+                arg1.dir = local3 ? 1 : 2;
+                arg1.target.cursor = local3 ? crSizeWE : crSizeNS;
+                fixCrossDrag(arg0, arg1, local3);
+            } else {
+                _scMouseMove(arg1.horz, arg1.mx, arg1.my);
+                _scMouseMove(arg1.vert, arg1.mx, arg1.my);
+                return;
+            }
+        }
+        _scMouseMove((arg1.dir == 1) ? arg1.horz : arg1.vert, arg1.mx, arg1.my);
+    }
+
+    function onCrossDragEnd(arg0, arg1, arg2, arg3) {
+        if (arg3 == "cancel") {
+            arg1.dir = 0;
+        }
+        if (arg2) {
+            arg2.cursor = crSizeAll;
+        }
+        cancelCrossDrag(arg0, arg1);
+        if (arg1.dir != 0) {
+            _scMouseUp((arg1.dir == 1) ? arg1.horz : arg1.vert, arg1.mx, arg1.my);
+        }
+    }
+
+    function fixCrossDrag(arg0, arg1, arg2) {
+        var local0 = arg2 ? arg1.vert : arg1.horz;
+        var local1 = arg2 ? arg1.vpos : arg1.hpos;
+        local0.scroll = local1;
+        ownerCallback("onCrossDragFixDir", arg0, arg2, arg1);
+    }
+
+    function cancelCrossDrag(arg0, arg1) {
+
+        function cancel(arg0, arg1, arg2) {
+            arg0.inDrag = 0;
+            _scMouseUp(arg1, 0, 0);
+            arg0.stopDragScroll();
+            arg1.scroll = arg2;
+            arg0.fixDragScroll();
+        }
+        var local0 = cancel;
+        if (arg1.dir != 1) {
+            local0(getHorzGroup(arg0), arg1.horz, arg1.hpos);
+        }
+        if (arg1.dir != 2) {
+            local0(getVertGroup(arg0), arg1.vert, arg1.vpos);
+        }
+    }
+
+    function _scMouseDown(arg0, arg1, arg2) {
+        _scMouseEvent(arg0.scrollBaseLayer, "onMouseDown", arg1, arg2, mbLeft, 0);
+    }
+
+    function _scMouseUp(arg0, arg1, arg2) {
+        _scMouseEvent(arg0.scrollBaseLayer, "onMouseUp", arg1, arg2, mbLeft, 0);
+    }
+
+    function _scMouseMove(arg0, arg1, arg2) {
+        _scMouseEvent(arg0.scrollBaseLayer, "onMouseMove", arg1, arg2, ssLeft);
+    }
+
+    function _scMouseEvent(arg0, arg1, *) {
+        if (arg0) {
+            return arg0[arg1](*);
+        }
+    }
+}
+this.CrossScrollUtil = CrossScrollUtil;
+SystemConfig.checkDisabledEffectColor = 2147494758;
+SystemConfig.buttonDisabledEffect = %[color: 2147626343];
+
+&ButtonLayer.makeAdditionalUIStateProp = function(arg0, arg1, arg2) {
+    if (arg2.noautods) {
+        Butt_imageLoaded = -1;
+    }
+
+} incontextof null;
+
+&LinkButtonLayerBase._setEnabled = function(arg0) {
+    if (!_enabled && (!Butt_showDisableImage && (_imageButtonBinds > 0 && Butt_imageLoaded > 0))) {
+        UIButton_ApplyDisableEffect(this);
+    }
+    *(&global.SystemButtonLayerBase.enabled incontextof this) = arg0;
+} incontextof null;
+
+SystemConfig.bgmindiTextPrefix = "";
+SystemConfig.bgmindiTextArea = "text";
+SystemConfig.bgmindiDrawTextParam = FilterDrawTextParam("bgmtitle.text");
+global.BgmTitleIndicator = CustomBgmTitleIndicator;
+KAGLoadScript("passivecomp.tjs");
+ShowDatePlugin = CustomShowDatePlugin;
+SystemConfig.useShowDate = %[fade: 300];
+SystemConfig.ChapterAutoHideTime = createPropertyProxy("ChapterAutoHideTime", 0);

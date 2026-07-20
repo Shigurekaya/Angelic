@@ -1,0 +1,107 @@
+[
+  {
+    "stem": "option",
+    "layers": 148,
+    "with_abs": 18,
+    "with_geo_props": 78,
+    "file": "option.json"
+  },
+  {
+    "stem": "option_0simple",
+    "layers": 312,
+    "with_abs": 20,
+    "with_geo_props": 149,
+    "file": "option_0simple.json"
+  },
+  {
+    "stem": "option_1display",
+    "layers": 246,
+    "with_abs": 30,
+    "with_geo_props": 121,
+    "file": "option_1display.json"
+  },
+  {
+    "stem": "option_2game1",
+    "layers": 233,
+    "with_abs": 38,
+    "with_geo_props": 114,
+    "file": "option_2game1.json"
+  },
+  {
+    "stem": "option_3game2",
+    "layers": 245,
+    "with_abs": 18,
+    "with_geo_props": 132,
+    "file": "option_3game2.json"
+  },
+  {
+    "stem": "option_4text",
+    "layers": 270,
+    "with_abs": 28,
+    "with_geo_props": 144,
+    "file": "option_4text.json"
+  },
+  {
+    "stem": "option_5sound1",
+    "layers": 562,
+    "with_abs": 21,
+    "with_geo_props": 332,
+    "file": "option_5sound1.json"
+  },
+  {
+    "stem": "option_5sound2",
+    "layers": 284,
+    "with_abs": 23,
+    "with_geo_props": 137,
+    "file": "option_5sound2.json"
+  },
+  {
+    "stem": "option_6dialog",
+    "layers": 260,
+    "with_abs": 18,
+    "with_geo_props": 48,
+    "file": "option_6dialog.json"
+  },
+  {
+    "stem": "option_7mouse",
+    "layers": 251,
+    "with_abs": 33,
+    "with_geo_props": 119,
+    "file": "option_7mouse.json"
+  },
+  {
+    "stem": "option_8keyboard1",
+    "layers": 353,
+    "with_abs": 18,
+    "with_geo_props": 59,
+    "file": "option_8keyboard1.json"
+  },
+  {
+    "stem": "option_9gamepad",
+    "layers": 320,
+    "with_abs": 39,
+    "with_geo_props": 144,
+    "file": "option_9gamepad.json"
+  },
+  {
+    "stem": "option_9gamepad2_assign",
+    "layers": 91,
+    "with_abs": 13,
+    "with_geo_props": 41,
+    "file": "option_9gamepad2_assign.json"
+  },
+  {
+    "stem": "option_cmds",
+    "layers": 45,
+    "with_abs": 7,
+    "with_geo_props": 39,
+    "file": "option_cmds.json"
+  },
+  {
+    "stem": "option_keyinput",
+    "layers": 289,
+    "with_abs": 18,
+    "with_geo_props": 93,
+    "file": "option_keyinput.json"
+  }
+]

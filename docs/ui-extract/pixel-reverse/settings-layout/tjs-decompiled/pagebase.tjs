@@ -1,0 +1,519 @@
+class PageBase {
+    var _per = 0;
+    var _page = 0;
+    var _max = 0;
+    var _ring = 0;
+    var _itemList = [];
+
+    function finalize() { }
+
+    function PageBase() { }
+
+    function withOffset(arg0) {
+        return offset + int(+arg0);
+    }
+
+    function stripOffset(arg0) {
+        return int(+arg0) - offset;
+    }
+
+    function select(arg0) {
+        return onSelect(withOffset(arg0));
+    }
+
+    function getItemPosition(arg0) {
+        var local0 = stripOffset(arg0);
+        return (local0 >= 0 && local0 < _per) ? local0 : -1;
+    }
+
+    property ring {
+        getter() {
+            return _ring;
+        }
+        setter(arg0) {
+            _ring = arg0;
+        }
+    }
+
+    property items {
+        getter() {
+            return _itemList;
+        }
+    }
+
+    property count {
+        getter() {
+            return _itemList.count;
+        }
+    }
+
+    property offset {
+        getter() {
+            return _per * _page;
+        }
+    }
+
+    property divcnt {
+        getter() {
+            return _per;
+        }
+        setter(arg0) {
+            _per = (arg0 > 0) ? arg0 : 1;
+            _max = int(Math.ceil(count / _per));
+            _page = (_page >= _max) ? _max - 1 : (_page < 0) ? 0 : _page;
+        }
+    }
+
+    property page {
+        getter() {
+            return _page;
+        }
+        setter(arg0) {
+            if (arg0 < 0) {
+                arg0 = _ring ? _max - 1 : 0;
+            } else if (arg0 >= _max) {
+                arg0 = _ring ? 0 : _max - 1;
+            }
+            if (_page !== arg0) {
+                onPageChange(_page, arg0);
+                this._page <-> arg0;
+                onPageChanged(arg0, _page);
+            }
+        }
+    }
+
+    function onPageChange(arg0, arg1) { }
+
+    function onPageChanged(arg0, arg1) { }
+
+    function onSelect(arg0) { }
+}
+this.PageBase = PageBase;
+
+class PageSheet extends PageBase {
+    var _lastItem;
+
+    function PageSheet() {
+        super.PageBase();
+        kag.keyDownHook.add(onKeyDown);
+    }
+
+    function finalize() {
+        kag.keyDownHook.remove(onKeyDown, 1);
+        super.finalize(...);
+    }
+
+    function _selPageBtn(arg0, arg1) {
+        if (arg0 !== void) {
+            return arg0;
+        }
+        var local0 = _page + arg1;
+        if (local0 < 0) {
+            local0 = _ring ? _max - 1 : 0;
+        } else if (local0 >= _max) {
+            local0 = _ring ? 0 : _max - 1;
+        }
+        return kag.current.names["page" + local0];
+    }
+
+    function _filterPageChg(arg0) {
+        return arg0;
+    }
+
+    function onKeyDown(arg0, arg1) {
+        if (!isvalid this) {
+            return;
+        }
+        var local0;
+        var local1 = ssRepeat;
+        var local2;
+        var local3 = kag.current.names;
+        if ((arg1 & ssShiftCtrlAlt) == 0) {
+            switch (arg0) {
+                case VK_PRIOR:
+                    local0 = _selPageBtn(local3.prev, -1);
+                    local1 = 0;
+                    break;
+                case VK_NEXT:
+                    local0 = _selPageBtn(local3.next, 1);
+                    local1 = 0;
+                    break;
+                case VK_0:
+                case VK_NUMPAD0:
+                    local2 = _filterPageChg(9);
+                    break;
+                case VK_1:
+                case VK_2:
+                case VK_3:
+                case VK_4:
+                case VK_5:
+                case VK_6:
+                case VK_7:
+                case VK_8:
+                case VK_9:
+                    local2 = _filterPageChg(arg0 - VK_1);
+                    break;
+                case VK_NUMPAD1:
+                case VK_NUMPAD2:
+                case VK_NUMPAD3:
+                case VK_NUMPAD4:
+                case VK_NUMPAD5:
+                case VK_NUMPAD6:
+                case VK_NUMPAD7:
+                case VK_NUMPAD8:
+                case VK_NUMPAD9:
+                    local2 = _filterPageChg(arg0 - VK_NUMPAD1);
+                    break;
+            }
+        }
+        if (local2 !== void && (_page != local2 && global.PageSheet.enableDirectShortcutKey)) {
+            local0 = local3["page" + local2];
+        }
+        if (local0 !== void && (arg1 & local1) == 0) {
+            execButton(local0, arg1);
+            return 1;
+        }
+        return 0;
+    }
+
+    function execButton(arg0, arg1) {
+        if (!kag.inStable || kag.currentDialog || kag.panelShowing) {
+            return;
+        }
+        if (arg0 !== void && (arg0.enabled && arg0.visible)) {
+            arg0.onExecute(arg0.left + arg0.width \ 2, arg0.top + arg0.height \ 2, mbLeft, arg1);
+        }
+    }
+
+    function updatePageView() {
+        var local0 = kag.current.names;
+        if (local0.next !== void) {
+            local0.next.visible = _max > 1;
+        }
+        if (local0.prev !== void) {
+            local0.prev.visible = _max > 1;
+        }
+        if (local0.page !== void) {
+            drawPageView(local0.page);
+        }
+        if (!_ring && _max > 1) {
+            updatePageMoveEnabled();
+        }
+        var local1 = local0["page" + this.page];
+        if (local1 !== void) {
+            updatePageShortcut(local1);
+        }
+    }
+
+    function updatePageMoveEnabled(arg0 = _page) {
+        if (kag.current.names.prev !== void) {
+            kag.current.names.prev.enabled = arg0 > 0;
+        }
+        if (kag.current.names.next !== void) {
+            kag.current.names.next.enabled = arg0 < _max - 1;
+        }
+    }
+
+    function updateItemProperty(arg0, arg1) {
+        switch (arg1) {
+            case 1:
+                arg0.visible = 1;
+                arg0.enabled = 1;
+                break;
+            case 0:
+                arg0.visible = 1;
+                arg0.enabled = 0;
+                break;
+            default:
+                arg0.visible = 0;
+                arg0.enabled = 0;
+                break;
+        }
+    }
+
+    function getItemButton(arg0) {
+        return kag.current.names["item" + arg0];
+    }
+
+    function updateItemView(arg0, arg1) {
+        var local0 = withOffset(arg0);
+        var local1 = getItemButton(arg0);
+        if (local1 === void) {
+            return;
+        }
+        updateItemProperty(local1, drawItemView(local1, local0, , arg1));
+    }
+
+    function getItemTarget(arg0, arg1 = 0) {
+        var local0 = arg1 ? arg0 : getItemPosition(arg0);
+        return (local0 >= 0) ? getItemButton(local0) : void;
+    }
+
+    function select(arg0) {
+        _lastItem = "item" + arg0;
+        super.select(arg0);
+    }
+
+    function nextPage() {
+        ++page;
+        _lastItem = "next";
+    }
+
+    function prevPage() {
+        --page;
+        _lastItem = "prev";
+    }
+
+    function onPageChange() {
+        _lastItem = void;
+        super.onPageChange(...);
+    }
+
+    function focusLastItem(arg0 = 0) {
+        if (_lastItem === void || !global.PageSheet.enableFocusLastItem) {
+            return;
+        }
+        var local0 = kag.current.names[_lastItem];
+        if (local0 !== void) {
+            var local1 = local0.linkNum;
+            if (!arg0) {
+                local1 = kag.current.checkFocus(local1, 1);
+            }
+            kag.current.setFocusToLink(local1, 1);
+        }
+    }
+
+    property lastItem {
+        getter() {
+            return _lastItem;
+        }
+        setter(arg0) {
+            if (typeof arg0 === "String") {
+                _lastItem = arg0;
+            }
+        }
+    }
+
+    function update(arg0) {
+        updatePageView();
+        var local0 = itemCountPerPage - 1;
+        while (local0 >= 0) {
+            updateItemView(local0, arg0);
+            --local0;
+        }
+    }
+
+    property itemCountPerPage {
+        getter() {
+            return divcnt;
+        }
+    }
+
+    function drawPageView(arg0) { }
+
+    function drawItemView(arg0, arg1) { }
+
+    function updatePageShortcut(arg0) { }
+}
+this.PageSheet = PageSheet;
+
+class UiBasedPageSheet extends PageSheet {
+    var _view;
+    var _cvflag;
+    var _pagename;
+    var _pageui;
+    var _itemname;
+    var _itemui;
+    var _format;
+    var _rowcol;
+
+    function UiBasedPageSheet(arg0, arg1) {
+        super.PageSheet();
+        if (arg1 === void) {
+            throw new Exception("UiBasedPageSheet: 引数がありません");
+        }
+        var local0 = (arg1.name !== void) ? arg1.name : "unknown";
+        _itemname = (arg1.itemname !== void) ? arg1.itemname : "item";
+        _pagename = (arg1.pagename !== void) ? arg1.pagename : "page";
+        _format = (arg1.format !== void) ? arg1.format : "%d";
+        _cvflag = arg0 instanceof "Class";
+        _view = _cvflag ? new arg0(this, arg1) : arg0;
+        this.ring = (arg1.ringpage !== void) ? +arg1.ringpage : 0;
+        var local1 = (arg1.rows !== void) ? +arg1.rows : 1;
+        var local2 = (arg1.columns !== void) ? +arg1.columns : 1;
+        _rowcol = local1 * local2;
+    }
+
+    function finalize() {
+        if (_cvflag && isvalid _view) {
+            invalidate(_view);
+        }
+        super.finalize(...);
+    }
+
+    function onUiload(arg0) { }
+
+    function onUiloaded(arg0, arg1) {
+        if (_pagename != "") {
+            _pageui = arg1[_pagename];
+        }
+        if (_itemname != "") {
+            _itemui = arg1[_itemname];
+            _view.setItemUi(_itemui, _itemname);
+        }
+    }
+
+    function init(arg0 = void) {
+        if (arg0 !== void) {
+            _page = arg0;
+        }
+        divcnt = _rowcol;
+    }
+
+    function drawItemView(arg0, arg1, arg2 = _view, arg3) {
+        var local0;
+        var local1 = isEnabled(arg1);
+        switch (local1) {
+            case 1:
+                local0 = arg2.drawNormalItem(arg0, arg1, arg3);
+                break;
+            case 0:
+                local0 = arg2.drawDisabledItem(arg0, arg1, arg3);
+                break;
+        }
+        return (local0 === void) ? local1 : local0;
+    }
+
+    function drawPageView(arg0) {
+        if (_pageui === void || _pageui.uistates === void) {
+            return;
+        }
+        _pageui.uistates.normal = _pageui.uistates[_format.sprintf(page + 1)];
+        arg0.loadUIInfo(_pageui);
+    }
+
+    function updatePageShortcut(arg0) {
+        arg0.toggle = 1;
+    }
+
+    function readCsvDoLine(arg0) {
+        if (arg0 === void || arg0.count === 0 || arg0[0].charAt(0) === "#") {
+            return;
+        }
+        this.doLine(...);
+    }
+
+    function readCsv() {
+        var local0 = new CSVParser();
+        local0.doLine = this.readCsvDoLine;
+        local0.parseStorage(...);
+        invalidate(local0);
+    }
+}
+this.UiBasedPageSheet = UiBasedPageSheet;
+
+class DecorationButton {
+    var _owner;
+    var _mask;
+    var _masksrc;
+    var _mx;
+    var _my;
+    var _mw;
+    var _mh;
+    var _uiNormal;
+    var _uiDisable;
+    var _stateMask;
+    var _stateDisable;
+
+    function DecorationButton(arg0, arg1) {
+        _owner = (arg0 !== void) ? arg0 : this;
+        _stateMask = (arg1.mask != "") ? arg1.mask : "mask";
+        _stateDisable = (arg1.disabled !== void) ? arg1.disabled : "disable";
+    }
+
+    function finalize() {
+        if (_masksrc !== void) {
+            invalidate(_masksrc);
+        }
+        if (_mask !== void) {
+            invalidate(_mask);
+        }
+    }
+
+    function setMaskUi(arg0, arg1) {
+        _mask = new global.Layer(kag, kag.poolLayer);
+        _mask.name = "DecorationButton:mask";
+        if (arg1 !== void) {
+            _mx = arg1.ox;
+            _my = arg1.oy;
+            var local0 = arg1.storage;
+            if (local0 != "" && getExistImageNameForLayer(local0) != "") {
+                _masksrc = new global.Layer(kag, kag.poolLayer);
+                _masksrc.name = "DecorationButton:masksrc";
+                uiloadPartsImage(arg1, _masksrc);
+                _mask.maskSource = _masksrc;
+                _mask.loadMask = function() {
+                    assignImages(maskSource);
+                    holdAlpha = 1;
+                    face = dfOpaque;
+                } incontextof _mask;
+                _mask.loadMask();
+                _mw = _mask.imageWidth;
+                _mh = _mask.imageHeight;
+            } else {
+                _mw = arg1.w;
+                _mh = arg1.h;
+                _mask.loadMask = function() {
+                    _mask.setImageSize(_mw, _mh);
+                    _mask.fillRect(0, 0, _mw, _mh, 4294967295);
+                    _mask.holdAlpha = 0;
+                } incontextof this;
+                _mask.loadMask();
+            }
+        } else {
+            _mask.loadMask = function() {
+                holdAlpha = 0;
+            } incontextof _mask;
+            _my = 0;
+            _mx = _my;
+            _mw = _uiNormal.width;
+            _mh = _uiNormal.height;
+            _mask.setImageSize(_mw, _mh);
+        }
+    }
+
+    function setDisabledUi(arg0, arg1) {
+        (Dictionary.assign incontextof (_uiDisable = %[]))(arg0);
+        _uiDisable.uistates = %[normal: (arg1 !== void) ? arg1 : arg0.uistates.normal];
+    }
+
+    function setItemUi(arg0, arg1) {
+        if (arg0 === void || arg0.uistates === void) {
+            throw new Exception("ui定義されていません: " + arg1);
+        }
+        _uiNormal = arg0;
+        if (_stateDisable == "") {
+            _uiDisable = arg0;
+        } else {
+            setDisabledUi(arg0, arg0.uistates[_stateDisable]);
+        }
+        setMaskUi(arg0, arg0.uistates[_stateMask]);
+    }
+
+    function clearNormalItem(arg0, arg1) {
+        if (arg0 !== void && _uiNormal !== void) {
+            arg0.loadUIInfo(_uiNormal);
+        }
+    }
+
+    function drawDisabledItem(arg0, arg1) {
+        if (arg0 !== void && _uiDisable !== void) {
+            arg0.loadUIInfo(_uiDisable);
+        }
+    }
+
+    function drawNormalItem(arg0, arg1, arg2 = 0) { }
+}
+this.DecorationButton = DecorationButton;
+PageSheet.enableDirectShortcutKey = 1;
+PageSheet.enableFocusLastItem = 0;

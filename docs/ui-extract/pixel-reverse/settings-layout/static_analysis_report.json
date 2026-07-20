@@ -1,0 +1,1824 @@
+{
+  "pages": {
+    "option": {
+      "layers": 104,
+      "bindings": 1,
+      "placeable": 4,
+      "storage_hits": 26,
+      "bind_cmds": 1,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "slider",
+          9
+        ],
+        [
+          "option",
+          8
+        ],
+        [
+          "num",
+          7
+        ],
+        [
+          "common",
+          3
+        ],
+        [
+          "normal",
+          3
+        ],
+        [
+          "dot",
+          2
+        ],
+        [
+          "mute",
+          2
+        ],
+        [
+          "over",
+          2
+        ],
+        [
+          "layer",
+          1
+        ],
+        [
+          "caption",
+          1
+        ]
+      ],
+      "bind_sample": [
+        "reset"
+      ],
+      "formula_sample": []
+    },
+    "option_0simple": {
+      "layers": 253,
+      "bindings": 24,
+      "placeable": 4,
+      "storage_hits": 33,
+      "bind_cmds": 98,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "label",
+          20
+        ],
+        [
+          "config",
+          17
+        ],
+        [
+          "se",
+          9
+        ],
+        [
+          "bgm",
+          9
+        ],
+        [
+          "wave",
+          9
+        ],
+        [
+          "voice",
+          9
+        ],
+        [
+          "movie",
+          9
+        ],
+        [
+          "bgv",
+          7
+        ],
+        [
+          "bgv2",
+          7
+        ],
+        [
+          "down",
+          7
+        ]
+      ],
+      "bind_sample": [
+        "setAudioOnOff/bgm/toggle",
+        "setAudioOnOff/bgm/0",
+        "setAudioOnOff/bgm/1",
+        "setAudioOnOff/bgm/toggle",
+        "setAudioOnOff/bgv/toggle",
+        "setAudioOnOff/bgv/0",
+        "setAudioOnOff/bgv/1",
+        "setAudioOnOff/bgv/toggle",
+        "setAudioOnOff/bgv2/toggle",
+        "setAudioOnOff/bgv2/0",
+        "setAudioOnOff/bgv2/1",
+        "setAudioOnOff/bgv2/toggle",
+        "changeSysArg/toggle/curmove",
+        "changeSysArg/false/curmove",
+        "changeSysArg/true/curmove"
+      ],
+      "formula_sample": []
+    },
+    "option_1display": {
+      "layers": 204,
+      "bindings": 34,
+      "placeable": 4,
+      "storage_hits": 34,
+      "bind_cmds": 63,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "config",
+          27
+        ],
+        [
+          "item",
+          20
+        ],
+        [
+          "label",
+          12
+        ],
+        [
+          "qcpopover",
+          5
+        ],
+        [
+          "sqscr",
+          5
+        ],
+        [
+          "scanim",
+          5
+        ],
+        [
+          "panictype",
+          5
+        ],
+        [
+          "esccancel",
+          5
+        ],
+        [
+          "noeffect",
+          5
+        ],
+        [
+          "fullscreen",
+          5
+        ]
+      ],
+      "bind_sample": [
+        "setBasicOptionValue/panictype/0",
+        "setBasicOptionValue/panictype/1",
+        "setBasicOptionValue/panictype/2",
+        "setBasicOptionValue/panictype/3",
+        "changeBasicSlider",
+        "changeBasicSlider",
+        "changeSysArg/toggle/curmove",
+        "changeSysArg/false/curmove",
+        "changeSysArg/true/curmove",
+        "changeSysArg/toggle/curmove",
+        "changeSysArg/toggle/scanim",
+        "changeSysArg/false/scanim",
+        "changeSysArg/true/scanim",
+        "changeSysArg/toggle/scanim",
+        "changeSysArg/toggle/sqscr"
+      ],
+      "formula_sample": []
+    },
+    "option_2game1": {
+      "layers": 187,
+      "bindings": 33,
+      "placeable": 4,
+      "storage_hits": 34,
+      "bind_cmds": 65,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "config",
+          25
+        ],
+        [
+          "label",
+          11
+        ],
+        [
+          "hsel",
+          6
+        ],
+        [
+          "suspend",
+          5
+        ],
+        [
+          "readjump",
+          5
+        ],
+        [
+          "curmove",
+          5
+        ],
+        [
+          "flowshow",
+          5
+        ],
+        [
+          "stopdeactive",
+          5
+        ],
+        [
+          "readskip",
+          5
+        ],
+        [
+          "curhidestep",
+          5
+        ]
+      ],
+      "bind_sample": [
+        "changeSysArg/toggle/curmove",
+        "changeSysArg/false/curmove",
+        "changeSysArg/true/curmove",
+        "changeSysArg/toggle/curmove",
+        "changeSysArg/toggle/scanim",
+        "changeSysArg/false/scanim",
+        "changeSysArg/true/scanim",
+        "changeSysArg/toggle/scanim",
+        "changeSysArg/toggle/sqscr",
+        "changeSysArg/false/sqscr",
+        "changeSysArg/true/sqscr",
+        "changeSysArg/toggle/sqscr",
+        "changeSysArg/toggle/stayontop",
+        "changeSysArg/false/stayontop",
+        "changeSysArg/true/stayontop"
+      ],
+      "formula_sample": []
+    },
+    "option_3game2": {
+      "layers": 175,
+      "bindings": 30,
+      "placeable": 4,
+      "storage_hits": 37,
+      "bind_cmds": 39,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "config",
+          22
+        ],
+        [
+          "txv",
+          12
+        ],
+        [
+          "label",
+          11
+        ],
+        [
+          "common",
+          6
+        ],
+        [
+          "dramatic",
+          5
+        ],
+        [
+          "movieskip",
+          5
+        ],
+        [
+          "movierclick",
+          5
+        ],
+        [
+          "vspeedsync",
+          5
+        ],
+        [
+          "skipst",
+          4
+        ],
+        [
+          "vspeed",
+          4
+        ]
+      ],
+      "bind_sample": [
+        "setBasicOptionValue/skipst/0",
+        "setBasicOptionValue/txv_novo/0",
+        "setBasicOptionValue/txv_other/0",
+        "setBasicOptionValue/txv_voice/0",
+        "setBasicOptionValue/skipst/1",
+        "setBasicOptionValue/txv_novo/1",
+        "setBasicOptionValue/txv_other/1",
+        "setBasicOptionValue/txv_voice/1",
+        "setBasicOptionValue/skipst/2",
+        "setBasicOptionValue/txv_novo/2",
+        "setBasicOptionValue/txv_other/2",
+        "setBasicOptionValue/txv_voice/2",
+        "changeBasicSlider",
+        "setBasicOptionValue/dramatic/off",
+        "setBasicOptionValue/movierclick/off"
+      ],
+      "formula_sample": []
+    },
+    "option_4text": {
+      "layers": 197,
+      "bindings": 26,
+      "placeable": 5,
+      "storage_hits": 42,
+      "bind_cmds": 39,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "config",
+          26
+        ],
+        [
+          "label",
+          12
+        ],
+        [
+          "color",
+          6
+        ],
+        [
+          "skipall",
+          5
+        ],
+        [
+          "ctrlskip",
+          5
+        ],
+        [
+          "afterauto",
+          5
+        ],
+        [
+          "afterskip",
+          5
+        ],
+        [
+          "nohwindow",
+          5
+        ],
+        [
+          "winsample",
+          5
+        ],
+        [
+          "option",
+          5
+        ]
+      ],
+      "bind_sample": [
+        "setBasicOptionValue/autovwait/0",
+        "setBasicOptionValue/autovwait/1",
+        "setBasicOptionValue/autovwait/2",
+        "changeBasicSlider",
+        "setBasicOptionValue/afterauto/off",
+        "setBasicOptionValue/afterskip/off",
+        "setBasicOptionValue/ctrlskip/off",
+        "setBasicOptionValue/nohwindow/off",
+        "setBasicOptionValue/skipall/off",
+        "onSpeedSliderChange",
+        "onSpeedSliderChange",
+        "onSpeedSliderChange",
+        "onSpeedSliderChange",
+        "onSpeedSliderChange",
+        "setBasicOptionValue/afterauto/on"
+      ],
+      "formula_sample": []
+    },
+    "option_5sound1": {
+      "layers": 385,
+      "bindings": 30,
+      "placeable": 6,
+      "storage_hits": 69,
+      "bind_cmds": 182,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "config",
+          23
+        ],
+        [
+          "common",
+          16
+        ],
+        [
+          "label",
+          14
+        ],
+        [
+          "se",
+          9
+        ],
+        [
+          "chv",
+          9
+        ],
+        [
+          "bgv",
+          9
+        ],
+        [
+          "bgm",
+          9
+        ],
+        [
+          "wave",
+          9
+        ],
+        [
+          "down",
+          9
+        ],
+        [
+          "bgv2",
+          9
+        ]
+      ],
+      "bind_sample": [
+        "setAudioOnOff/bgm/toggle",
+        "setAudioOnOff/bgm/0",
+        "setAudioOnOff/bgm/1",
+        "setAudioOnOff/bgm/toggle",
+        "setAudioOnOff/bgv/toggle",
+        "setAudioOnOff/bgv/0",
+        "setAudioOnOff/bgv/1",
+        "setAudioOnOff/bgv/toggle",
+        "setAudioOnOff/bgv2/toggle",
+        "setAudioOnOff/bgv2/0",
+        "setAudioOnOff/bgv2/1",
+        "setAudioOnOff/bgv2/toggle",
+        "setAudioOnOff/down/toggle",
+        "setAudioOnOff/down/0",
+        "setAudioOnOff/down/1"
+      ],
+      "formula_sample": []
+    },
+    "option_5sound2": {
+      "layers": 273,
+      "bindings": 38,
+      "placeable": 10,
+      "storage_hits": 26,
+      "bind_cmds": 113,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "config",
+          20
+        ],
+        [
+          "common",
+          11
+        ],
+        [
+          "sysvoplay15",
+          5
+        ],
+        [
+          "sysvo5",
+          5
+        ],
+        [
+          "sysvo7",
+          5
+        ],
+        [
+          "sysvo6",
+          5
+        ],
+        [
+          "sysvo4",
+          5
+        ],
+        [
+          "sysvo0",
+          5
+        ],
+        [
+          "sysvo8",
+          5
+        ],
+        [
+          "sysvo2",
+          5
+        ]
+      ],
+      "bind_sample": [
+        "changeSysvoPlay/attention/0/tgl",
+        "changeSysvoPlay/attention/0/off",
+        "changeSysvoPlay/attention/0/on",
+        "changeSysvoPlay/attention/0/tgl",
+        "changeSysvoPlay/option/10/tgl",
+        "changeSysvoPlay/option/10/off",
+        "changeSysvoPlay/option/10/on",
+        "changeSysvoPlay/option/10/tgl",
+        "changeSysvoPlay/optpage/11/tgl",
+        "changeSysvoPlay/optpage/11/off",
+        "changeSysvoPlay/optpage/11/on",
+        "changeSysvoPlay/optpage/11/tgl",
+        "changeSysvoPlay/extra/12/tgl",
+        "changeSysvoPlay/extra/12/off",
+        "changeSysvoPlay/extra/12/on"
+      ],
+      "formula_sample": []
+    },
+    "option_6dialog": {
+      "layers": 228,
+      "bindings": 3,
+      "placeable": 4,
+      "storage_hits": 8,
+      "bind_cmds": 91,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "cf",
+          110
+        ],
+        [
+          "config",
+          23
+        ],
+        [
+          "label",
+          21
+        ],
+        [
+          "option",
+          5
+        ],
+        [
+          "common",
+          5
+        ],
+        [
+          "cfall",
+          3
+        ],
+        [
+          "sep",
+          3
+        ],
+        [
+          "uiname",
+          1
+        ],
+        [
+          "caption",
+          1
+        ],
+        [
+          "sename",
+          1
+        ]
+      ],
+      "bind_sample": [
+        "changeOnOffProp/cf_backto/SystemConfig.askBackTo/toggle",
+        "changeOnOffProp/cf_backto/SystemConfig.askBackTo/false",
+        "changeOnOffProp/cf_backto/SystemConfig.askBackTo/true",
+        "changeOnOffProp/cf_backto/SystemConfig.askBackTo/toggle",
+        "changeOnOffProp/cf_copy/SystemConfig.askCopy/toggle",
+        "changeOnOffProp/cf_copy/SystemConfig.askCopy/false",
+        "changeOnOffProp/cf_copy/SystemConfig.askCopy/true",
+        "changeOnOffProp/cf_copy/SystemConfig.askCopy/toggle",
+        "changeOnOffProp/cf_delete/SystemConfig.askDelete/toggle",
+        "changeOnOffProp/cf_delete/SystemConfig.askDelete/false",
+        "changeOnOffProp/cf_delete/SystemConfig.askDelete/true",
+        "changeOnOffProp/cf_delete/SystemConfig.askDelete/toggle",
+        "changeOnOffProp/cf_dsave/SystemConfig.askDSave/toggle",
+        "changeOnOffProp/cf_dsave/SystemConfig.askDSave/false",
+        "changeOnOffProp/cf_dsave/SystemConfig.askDSave/true"
+      ],
+      "formula_sample": []
+    },
+    "option_7mouse": {
+      "layers": 240,
+      "bindings": 10,
+      "placeable": 4,
+      "storage_hits": 20,
+      "bind_cmds": 13,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "config",
+          36
+        ],
+        [
+          "gsfunc",
+          30
+        ],
+        [
+          "holder",
+          7
+        ],
+        [
+          "gsbind",
+          7
+        ],
+        [
+          "option",
+          6
+        ],
+        [
+          "label",
+          5
+        ],
+        [
+          "gsenable",
+          5
+        ],
+        [
+          "gsflick",
+          5
+        ],
+        [
+          "gsmouse",
+          5
+        ],
+        [
+          "common",
+          3
+        ]
+      ],
+      "bind_sample": [
+        "setBasicOptionValue/gsenable/off",
+        "setBasicOptionValue/gsflick/off",
+        "setBasicOptionValue/gsmouse/off",
+        "setBasicOptionValue/gsenable/on",
+        "setBasicOptionValue/gsflick/on",
+        "setBasicOptionValue/gsmouse/on",
+        "reset",
+        "setBasicOptionValue/gsenable/toggle",
+        "setBasicOptionValue/gsenable/toggle",
+        "setBasicOptionValue/gsflick/toggle",
+        "setBasicOptionValue/gsflick/toggle",
+        "setBasicOptionValue/gsmouse/toggle",
+        "setBasicOptionValue/gsmouse/toggle"
+      ],
+      "formula_sample": []
+    },
+    "option_8keyboard1": {
+      "layers": 214,
+      "bindings": 3,
+      "placeable": 7,
+      "storage_hits": 8,
+      "bind_cmds": 60,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "key",
+          87
+        ],
+        [
+          "label",
+          30
+        ],
+        [
+          "config",
+          30
+        ],
+        [
+          "option",
+          5
+        ],
+        [
+          "sep",
+          3
+        ],
+        [
+          "common",
+          3
+        ],
+        [
+          "title",
+          1
+        ],
+        [
+          "sename",
+          1
+        ],
+        [
+          "caption",
+          1
+        ],
+        [
+          "page1",
+          1
+        ]
+      ],
+      "bind_sample": [
+        "reset",
+        "setKeyBind/0/auto",
+        "setKeyBind/1/auto",
+        "setKeyBind/0/backone",
+        "setKeyBind/1/backone",
+        "setKeyBind/0/backskip",
+        "setKeyBind/1/backskip",
+        "setKeyBind/0/click",
+        "setKeyBind/1/click",
+        "setKeyBind/0/ctrl",
+        "setKeyBind/1/ctrl",
+        "setKeyBind/0/dsave",
+        "setKeyBind/1/dsave",
+        "setKeyBind/0/hide",
+        "setKeyBind/1/hide"
+      ],
+      "formula_sample": []
+    },
+    "option_9gamepad": {
+      "layers": 269,
+      "bindings": 14,
+      "placeable": 4,
+      "storage_hits": 38,
+      "bind_cmds": 18,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "config",
+          34
+        ],
+        [
+          "gsfunc",
+          30
+        ],
+        [
+          "button",
+          12
+        ],
+        [
+          "gsbind",
+          12
+        ],
+        [
+          "option",
+          6
+        ],
+        [
+          "gsenable",
+          5
+        ],
+        [
+          "gsflick",
+          5
+        ],
+        [
+          "gsmouse",
+          5
+        ],
+        [
+          "engamepad",
+          5
+        ],
+        [
+          "gamepad",
+          4
+        ]
+      ],
+      "bind_sample": [
+        "setBasicOptionValue/engamepad/off",
+        "setBasicOptionValue/gsenable/off",
+        "setBasicOptionValue/gsflick/off",
+        "setBasicOptionValue/gsmouse/off",
+        "setBasicOptionValue/engamepad/on",
+        "setBasicOptionValue/gsenable/on",
+        "setBasicOptionValue/gsflick/on",
+        "setBasicOptionValue/gsmouse/on",
+        "reassignGamePadButtons",
+        "reset",
+        "setBasicOptionValue/engamepad/toggle",
+        "setBasicOptionValue/engamepad/toggle",
+        "setBasicOptionValue/gsenable/toggle",
+        "setBasicOptionValue/gsenable/toggle",
+        "setBasicOptionValue/gsflick/toggle"
+      ],
+      "formula_sample": []
+    },
+    "option_cmds": {
+      "layers": 56,
+      "bindings": 0,
+      "placeable": 1,
+      "storage_hits": 3,
+      "bind_cmds": 0,
+      "formula_hits": 0,
+      "prefixes": [
+        [
+          "key",
+          3
+        ],
+        [
+          "option",
+          3
+        ],
+        [
+          "layer",
+          1
+        ],
+        [
+          "uiname",
+          1
+        ],
+        [
+          "arrow",
+          1
+        ],
+        [
+          "auto",
+          1
+        ],
+        [
+          "b",
+          1
+        ],
+        [
+          "backone",
+          1
+        ],
+        [
+          "backskip",
+          1
+        ],
+        [
+          "c",
+          1
+        ]
+      ],
+      "bind_sample": [],
+      "formula_sample": []
+    }
+  },
+  "packs": {
+    "option_4text__pack": {
+      "n": 2,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_800x312.png",
+          "w": 800,
+          "h": 312
+        },
+        {
+          "i": 1,
+          "file": "s001_800x71.png",
+          "w": 800,
+          "h": 71
+        }
+      ]
+    },
+    "option_5sound1__pack": {
+      "n": 9,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_243x122.png",
+          "w": 243,
+          "h": 122
+        },
+        {
+          "i": 1,
+          "file": "s001_148x122.png",
+          "w": 148,
+          "h": 122
+        },
+        {
+          "i": 2,
+          "file": "s002_245x126.png",
+          "w": 245,
+          "h": 126
+        },
+        {
+          "i": 3,
+          "file": "s003_645x488.png",
+          "w": 645,
+          "h": 488
+        },
+        {
+          "i": 4,
+          "file": "s004_183x355.png",
+          "w": 183,
+          "h": 355
+        },
+        {
+          "i": 5,
+          "file": "s005_143x122.png",
+          "w": 143,
+          "h": 122
+        },
+        {
+          "i": 6,
+          "file": "s006_166x125.png",
+          "w": 166,
+          "h": 125
+        },
+        {
+          "i": 7,
+          "file": "s007_122x148.png",
+          "w": 122,
+          "h": 148
+        },
+        {
+          "i": 8,
+          "file": "s008_61x25.png",
+          "w": 61,
+          "h": 25
+        }
+      ]
+    },
+    "option_5sound2__pack": {
+      "n": 15,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_576x667.png",
+          "w": 576,
+          "h": 667
+        },
+        {
+          "i": 1,
+          "file": "s001_225x116.png",
+          "w": 225,
+          "h": 116
+        },
+        {
+          "i": 2,
+          "file": "s002_116x216.png",
+          "w": 116,
+          "h": 216
+        },
+        {
+          "i": 3,
+          "file": "s003_126x235.png",
+          "w": 126,
+          "h": 235
+        },
+        {
+          "i": 4,
+          "file": "s004_126x235.png",
+          "w": 126,
+          "h": 235
+        },
+        {
+          "i": 5,
+          "file": "s005_103x218.png",
+          "w": 103,
+          "h": 218
+        },
+        {
+          "i": 6,
+          "file": "s006_59x96.png",
+          "w": 59,
+          "h": 96
+        },
+        {
+          "i": 7,
+          "file": "s007_31x31.png",
+          "w": 31,
+          "h": 31
+        },
+        {
+          "i": 8,
+          "file": "s008_31x31.png",
+          "w": 31,
+          "h": 31
+        },
+        {
+          "i": 9,
+          "file": "s009_88x25.png",
+          "w": 88,
+          "h": 25
+        },
+        {
+          "i": 10,
+          "file": "s010_74x98.png",
+          "w": 74,
+          "h": 98
+        },
+        {
+          "i": 11,
+          "file": "s011_46x24.png",
+          "w": 46,
+          "h": 24
+        },
+        {
+          "i": 12,
+          "file": "s012_46x24.png",
+          "w": 46,
+          "h": 24
+        },
+        {
+          "i": 13,
+          "file": "s013_31x31.png",
+          "w": 31,
+          "h": 31
+        },
+        {
+          "i": 14,
+          "file": "s014_31x31.png",
+          "w": 31,
+          "h": 31
+        }
+      ]
+    },
+    "option_6dialog__pack": {
+      "n": 1,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_124x150.png",
+          "w": 124,
+          "h": 150
+        }
+      ]
+    },
+    "option_7mouse__pack": {
+      "n": 6,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_47x23.png",
+          "w": 47,
+          "h": 23
+        },
+        {
+          "i": 1,
+          "file": "s001_139x215.png",
+          "w": 139,
+          "h": 215
+        },
+        {
+          "i": 2,
+          "file": "s002_140x215.png",
+          "w": 140,
+          "h": 215
+        },
+        {
+          "i": 3,
+          "file": "s003_22x47.png",
+          "w": 22,
+          "h": 47
+        },
+        {
+          "i": 4,
+          "file": "s004_22x47.png",
+          "w": 22,
+          "h": 47
+        },
+        {
+          "i": 5,
+          "file": "s005_47x23.png",
+          "w": 47,
+          "h": 23
+        }
+      ]
+    },
+    "option_8keyboard1__pack": {
+      "n": 1,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_440x449.png",
+          "w": 440,
+          "h": 449
+        }
+      ]
+    },
+    "option_9gamepad2_assign__pack": {
+      "n": 1,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_731x133.png",
+          "w": 731,
+          "h": 133
+        }
+      ]
+    },
+    "option_9gamepad__pack": {
+      "n": 24,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_56x132.png",
+          "w": 56,
+          "h": 132
+        },
+        {
+          "i": 1,
+          "file": "s001_164x144.png",
+          "w": 164,
+          "h": 144
+        },
+        {
+          "i": 2,
+          "file": "s002_172x110.png",
+          "w": 172,
+          "h": 110
+        },
+        {
+          "i": 3,
+          "file": "s003_78x131.png",
+          "w": 78,
+          "h": 131
+        },
+        {
+          "i": 4,
+          "file": "s004_67x137.png",
+          "w": 67,
+          "h": 137
+        },
+        {
+          "i": 5,
+          "file": "s005_124x136.png",
+          "w": 124,
+          "h": 136
+        },
+        {
+          "i": 6,
+          "file": "s006_98x234.png",
+          "w": 98,
+          "h": 234
+        },
+        {
+          "i": 7,
+          "file": "s007_153x237.png",
+          "w": 153,
+          "h": 237
+        },
+        {
+          "i": 8,
+          "file": "s008_36x213.png",
+          "w": 36,
+          "h": 213
+        },
+        {
+          "i": 9,
+          "file": "s009_96x165.png",
+          "w": 96,
+          "h": 165
+        },
+        {
+          "i": 10,
+          "file": "s010_124x167.png",
+          "w": 124,
+          "h": 167
+        },
+        {
+          "i": 11,
+          "file": "s011_70x159.png",
+          "w": 70,
+          "h": 159
+        },
+        {
+          "i": 12,
+          "file": "s012_56x137.png",
+          "w": 56,
+          "h": 137
+        },
+        {
+          "i": 13,
+          "file": "s013_327x228.png",
+          "w": 327,
+          "h": 228
+        },
+        {
+          "i": 14,
+          "file": "s014_325x148.png",
+          "w": 325,
+          "h": 148
+        },
+        {
+          "i": 15,
+          "file": "s015_63x84.png",
+          "w": 63,
+          "h": 84
+        },
+        {
+          "i": 16,
+          "file": "s016_62x84.png",
+          "w": 62,
+          "h": 84
+        },
+        {
+          "i": 17,
+          "file": "s017_69x69.png",
+          "w": 69,
+          "h": 69
+        },
+        {
+          "i": 18,
+          "file": "s018_26x18.png",
+          "w": 26,
+          "h": 18
+        },
+        {
+          "i": 19,
+          "file": "s019_27x18.png",
+          "w": 27,
+          "h": 18
+        },
+        {
+          "i": 20,
+          "file": "s020_73x73.png",
+          "w": 73,
+          "h": 73
+        },
+        {
+          "i": 21,
+          "file": "s021_73x73.png",
+          "w": 73,
+          "h": 73
+        },
+        {
+          "i": 22,
+          "file": "s022_41x77.png",
+          "w": 41,
+          "h": 77
+        },
+        {
+          "i": 23,
+          "file": "s023_45x67.png",
+          "w": 45,
+          "h": 67
+        }
+      ]
+    },
+    "option__bg0": {
+      "n": 1,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_1920x1080.png",
+          "w": 1920,
+          "h": 1080
+        }
+      ]
+    },
+    "option__pack": {
+      "n": 19,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_80x731.png",
+          "w": 80,
+          "h": 731
+        },
+        {
+          "i": 1,
+          "file": "s001_16x610.png",
+          "w": 16,
+          "h": 610
+        },
+        {
+          "i": 2,
+          "file": "s002_412x383.png",
+          "w": 412,
+          "h": 383
+        },
+        {
+          "i": 3,
+          "file": "s003_56x33.png",
+          "w": 56,
+          "h": 33
+        },
+        {
+          "i": 4,
+          "file": "s004_30x30.png",
+          "w": 30,
+          "h": 30
+        },
+        {
+          "i": 5,
+          "file": "s005_313x57.png",
+          "w": 313,
+          "h": 57
+        },
+        {
+          "i": 6,
+          "file": "s006_30x30.png",
+          "w": 30,
+          "h": 30
+        },
+        {
+          "i": 7,
+          "file": "s007_30x30.png",
+          "w": 30,
+          "h": 30
+        },
+        {
+          "i": 8,
+          "file": "s008_30x30.png",
+          "w": 30,
+          "h": 30
+        },
+        {
+          "i": 9,
+          "file": "s009_313x57.png",
+          "w": 313,
+          "h": 57
+        },
+        {
+          "i": 10,
+          "file": "s010_76x54.png",
+          "w": 76,
+          "h": 54
+        },
+        {
+          "i": 11,
+          "file": "s011_124x32.png",
+          "w": 124,
+          "h": 32
+        },
+        {
+          "i": 12,
+          "file": "s012_138x37.png",
+          "w": 138,
+          "h": 37
+        },
+        {
+          "i": 13,
+          "file": "s013_144x37.png",
+          "w": 144,
+          "h": 37
+        },
+        {
+          "i": 14,
+          "file": "s014_288x13.png",
+          "w": 288,
+          "h": 13
+        },
+        {
+          "i": 15,
+          "file": "s015_421x265.png",
+          "w": 421,
+          "h": 265
+        },
+        {
+          "i": 16,
+          "file": "s016_19x35.png",
+          "w": 19,
+          "h": 35
+        },
+        {
+          "i": 17,
+          "file": "s017_19x35.png",
+          "w": 19,
+          "h": 35
+        },
+        {
+          "i": 18,
+          "file": "s018_47x46.png",
+          "w": 47,
+          "h": 46
+        }
+      ]
+    },
+    "option_cmds__pack": {
+      "n": 37,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_242x60.png",
+          "w": 242,
+          "h": 60
+        },
+        {
+          "i": 1,
+          "file": "s001_157x51.png",
+          "w": 157,
+          "h": 51
+        },
+        {
+          "i": 2,
+          "file": "s002_33x49.png",
+          "w": 33,
+          "h": 49
+        },
+        {
+          "i": 3,
+          "file": "s003_13x16.png",
+          "w": 13,
+          "h": 16
+        },
+        {
+          "i": 4,
+          "file": "s004_53x121.png",
+          "w": 53,
+          "h": 121
+        },
+        {
+          "i": 5,
+          "file": "s005_14x16.png",
+          "w": 14,
+          "h": 16
+        },
+        {
+          "i": 6,
+          "file": "s006_14x16.png",
+          "w": 14,
+          "h": 16
+        },
+        {
+          "i": 7,
+          "file": "s007_70x153.png",
+          "w": 70,
+          "h": 153
+        },
+        {
+          "i": 8,
+          "file": "s008_12x16.png",
+          "w": 12,
+          "h": 16
+        },
+        {
+          "i": 9,
+          "file": "s009_16x16.png",
+          "w": 16,
+          "h": 16
+        },
+        {
+          "i": 10,
+          "file": "s010_124x124.png",
+          "w": 124,
+          "h": 124
+        },
+        {
+          "i": 11,
+          "file": "s011_10x16.png",
+          "w": 10,
+          "h": 16
+        },
+        {
+          "i": 12,
+          "file": "s012_126x126.png",
+          "w": 126,
+          "h": 126
+        },
+        {
+          "i": 13,
+          "file": "s013_13x43.png",
+          "w": 13,
+          "h": 43
+        },
+        {
+          "i": 14,
+          "file": "s014_12x33.png",
+          "w": 12,
+          "h": 33
+        },
+        {
+          "i": 15,
+          "file": "s015_33x49.png",
+          "w": 33,
+          "h": 49
+        },
+        {
+          "i": 16,
+          "file": "s016_294x255.png",
+          "w": 294,
+          "h": 255
+        },
+        {
+          "i": 17,
+          "file": "s017_21x27.png",
+          "w": 21,
+          "h": 27
+        },
+        {
+          "i": 18,
+          "file": "s018_21x27.png",
+          "w": 21,
+          "h": 27
+        },
+        {
+          "i": 19,
+          "file": "s019_21x27.png",
+          "w": 21,
+          "h": 27
+        },
+        {
+          "i": 20,
+          "file": "s020_124x124.png",
+          "w": 124,
+          "h": 124
+        },
+        {
+          "i": 21,
+          "file": "s021_19x19.png",
+          "w": 19,
+          "h": 19
+        },
+        {
+          "i": 22,
+          "file": "s022_13x19.png",
+          "w": 13,
+          "h": 19
+        },
+        {
+          "i": 23,
+          "file": "s023_19x19.png",
+          "w": 19,
+          "h": 19
+        },
+        {
+          "i": 24,
+          "file": "s024_11x19.png",
+          "w": 11,
+          "h": 19
+        },
+        {
+          "i": 25,
+          "file": "s025_15x18.png",
+          "w": 15,
+          "h": 18
+        },
+        {
+          "i": 26,
+          "file": "s026_13x18.png",
+          "w": 13,
+          "h": 18
+        },
+        {
+          "i": 27,
+          "file": "s027_11x18.png",
+          "w": 11,
+          "h": 18
+        },
+        {
+          "i": 28,
+          "file": "s028_60x64.png",
+          "w": 60,
+          "h": 64
+        },
+        {
+          "i": 29,
+          "file": "s029_28x11.png",
+          "w": 28,
+          "h": 11
+        },
+        {
+          "i": 30,
+          "file": "s030_21x7.png",
+          "w": 21,
+          "h": 7
+        },
+        {
+          "i": 31,
+          "file": "s031_13x18.png",
+          "w": 13,
+          "h": 18
+        },
+        {
+          "i": 32,
+          "file": "s032_124x124.png",
+          "w": 124,
+          "h": 124
+        },
+        {
+          "i": 33,
+          "file": "s033_27x11.png",
+          "w": 27,
+          "h": 11
+        },
+        {
+          "i": 34,
+          "file": "s034_179x107.png",
+          "w": 179,
+          "h": 107
+        },
+        {
+          "i": 35,
+          "file": "s035_21x22.png",
+          "w": 21,
+          "h": 22
+        },
+        {
+          "i": 36,
+          "file": "s036_39x29.png",
+          "w": 39,
+          "h": 29
+        }
+      ]
+    },
+    "option_keyinput__pack": {
+      "n": 35,
+      "items": [
+        {
+          "i": 0,
+          "file": "s000_1583x482.png",
+          "w": 1583,
+          "h": 482
+        },
+        {
+          "i": 1,
+          "file": "s001_47x32.png",
+          "w": 47,
+          "h": 32
+        },
+        {
+          "i": 2,
+          "file": "s002_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 3,
+          "file": "s003_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 4,
+          "file": "s004_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 5,
+          "file": "s005_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 6,
+          "file": "s006_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 7,
+          "file": "s007_47x32.png",
+          "w": 47,
+          "h": 32
+        },
+        {
+          "i": 8,
+          "file": "s008_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 9,
+          "file": "s009_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 10,
+          "file": "s010_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 11,
+          "file": "s011_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 12,
+          "file": "s012_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 13,
+          "file": "s013_47x32.png",
+          "w": 47,
+          "h": 32
+        },
+        {
+          "i": 14,
+          "file": "s014_47x32.png",
+          "w": 47,
+          "h": 32
+        },
+        {
+          "i": 15,
+          "file": "s015_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 16,
+          "file": "s016_48x32.png",
+          "w": 48,
+          "h": 32
+        },
+        {
+          "i": 17,
+          "file": "s017_1389x309.png",
+          "w": 1389,
+          "h": 309
+        },
+        {
+          "i": 18,
+          "file": "s018_47x48.png",
+          "w": 47,
+          "h": 48
+        },
+        {
+          "i": 19,
+          "file": "s019_48x48.png",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "i": 20,
+          "file": "s020_48x48.png",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "i": 21,
+          "file": "s021_48x48.png",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "i": 22,
+          "file": "s022_48x48.png",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "i": 23,
+          "file": "s023_48x48.png",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "i": 24,
+          "file": "s024_47x48.png",
+          "w": 47,
+          "h": 48
+        },
+        {
+          "i": 25,
+          "file": "s025_47x112.png",
+          "w": 47,
+          "h": 112
+        },
+        {
+          "i": 26,
+          "file": "s026_48x48.png",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "i": 27,
+          "file": "s027_47x113.png",
+          "w": 47,
+          "h": 113
+        },
+        {
+          "i": 28,
+          "file": "s028_96x48.png",
+          "w": 96,
+          "h": 48
+        },
+        {
+          "i": 29,
+          "file": "s029_47x48.png",
+          "w": 47,
+          "h": 48
+        },
+        {
+          "i": 30,
+          "file": "s030_48x48.png",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "i": 31,
+          "file": "s031_48x48.png",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "i": 32,
+          "file": "s032_113x48.png",
+          "w": 113,
+          "h": 48
+        },
+        {
+          "i": 33,
+          "file": "s033_48x48.png",
+          "w": 48,
+          "h": 48
+        },
+        {
+          "i": 34,
+          "file": "s034_1814x209.png",
+          "w": 1814,
+          "h": 209
+        }
+      ]
+    }
+  }
+}

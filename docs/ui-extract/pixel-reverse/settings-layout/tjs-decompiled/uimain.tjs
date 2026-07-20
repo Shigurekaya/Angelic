@@ -1,0 +1,2708 @@
+function SetUILoadExtraType(arg0) {
+    if (arg0 === void) {
+        arg0 = System._uiloadExtraType;
+    }
+
+    function merge(arg0, arg1, arg2, arg3, arg4) {
+    
+        function innermove(arg0, arg1, arg2) {
+            if (!arg1 && !arg2) {
+                return;
+            }
+            var local0 = [];
+            local0.assign(arg0);
+            var local1 = 0;
+            var local2 = local0.count;
+            while (local1 < local2) {
+                var local3 = local0[local1];
+                var local4 = local0[local1 + 1];
+                if (local3 != "" && local4) {
+                    local4.ox += arg1;
+                    local4.oy += arg2;
+                }
+                local1 += 2;
+            }
+        }
+    
+        function proc(arg0, arg1, arg2, arg3) {
+            var local0 = arg1.x;
+            var local1 = arg1.y;
+            var local2 = arg1.uistates;
+            if (arg3 != "") {
+                local0 = arg0.x;
+                local1 = arg0.y;
+                if (local2[arg3]) {
+                    local0 -= local2[arg3].ox;
+                    local1 -= local2[arg3].oy;
+                }
+            }
+            var local3 = int(Math.min(arg0.x, local0));
+            var local4 = int(Math.min(arg0.y, local1));
+            var local5 = int(Math.max(arg0.x + arg0.width, local0 + arg1.width));
+            var local6 = int(Math.max(arg0.y + arg0.height, local1 + arg1.height));
+            var local7 = %[];
+            (Dictionary.assignStruct incontextof local7)(local2);
+            arg2(arg0.uistates, arg0.x - local3, arg0.y - local4);
+            arg2(local7, local0 - local3, local1 - local4);
+            (Dictionary.assign incontextof arg0.uistates)(local7, 0);
+            arg0.x = local3;
+            arg0.y = local4;
+            arg0.width = local5 - local3;
+            arg0.height = local6 - local4;
+        }
+    
+        function extract(arg0, arg1) {
+            (Dictionary.assign incontextof arg0.uistates)(arg1.uistates);
+            arg0.class = arg1.class;
+        }
+    
+        var local0 = innermove;
+        var local1 = proc;
+        var local2 = extract;
+        var local3 = arg3[1];
+        var local4 = arg3[2];
+        var local5 = arg0.getInfo;
+        var local6 = 0;
+        var local7 = local5(local3, 0);
+        if (local7) {
+            var local8;
+            if (local7.class == "copy") {
+                local8 = local5(local7.copy, 0);
+                if (local8) {
+                    local2(local7, local8);
+                } else {
+                    kag.errorCmd("mergeソースのcopy対象がありません:" + local3 + "<-" + dinco.copy, %[
+                        file: arg0.curfile,
+                        line: arg4
+                    ]);
+                }
+            }
+            if (local4 != "") {
+                local8 = local5(local4, 0);
+                if (local8) {
+                    local1(local7, local8, local0, arg3[3]);
+                } else {
+                    local6 = 1;
+                }
+            }
+        } else {
+            local6 = 1;
+        }
+        if (local6) {
+            kag.errorCmd("merge操作対象がありません:" + local3 + ((local4 != "") ? "<-" + local4 : ""), %[
+                file: arg0.curfile,
+                line: arg4
+            ]);
+        }
+    }
+
+    function rebase(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = arg3[1];
+        var local1 = arg3[2];
+        var local2 = arg0.getInfo;
+        var local3 = local2(local0, 1);
+        var local4 = local2(local1, 0);
+        if (!local4) {
+            kag.errorCmd("rebase対象がありません:" + local1, %[file: arg0.curfile, line: arg4]);
+        } else if (local4.storage == "") {
+            kag.errorCmd("rebase対象のstorageがありません:" + local1, %[file: arg0.curfile, line: arg4]);
+        } else {
+            var local5 = local3.x - local4.x;
+            var local6 = local3.y - local4.y;
+            var local7 = ["x", "y", "width", "height", "storage", "storagex", "storagey"];
+            var local8 = 0;
+            while (local8 < local7.count) {
+                local3[local7[local8]] = local4[local7[local8]];
+                ++local8;
+            }
+            local3.storagex += local5;
+            local3.storagey += local6;
+            local3.class = "base";
+        }
+    }
+
+    function uitext(arg0, arg1, arg2, arg3, arg4) {
+        arg0.addDoneCallback(
+            global.GenericPreferenceLayerText.Instance.setupUITextFromUIFunc, arg0.getInfo, arg0.doEvals, arg3*
+        );
+        if (typeof arg0._text_cleanup == "undefined") {
+            &arg0._text_cleanup = 1;
+            arg0.addDoneCallback(global.GenericPreferenceLayerText.Instance.clearnUpTextCache, arg0.doEvals);
+        }
+    }
+
+    function reborn(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = 1;
+        while (local0 < arg3.count) {
+            var local1 = arg3[local0];
+            if (local1 != "") {
+                arg0.names.remove(local1);
+                delete arg0.result[local1];
+            }
+            ++local0;
+        }
+    }
+    &arg0.merge = merge incontextof global;
+    &arg0.rebase = rebase incontextof global;
+    &arg0.uitext = uitext incontextof global;
+    &arg0.reborn = reborn incontextof global;
+}
+this.SetUILoadExtraType = SetUILoadExtraType incontextof this;
+
+function CheckAllClearFlag() {
+    var local0 = GetClearFlag();
+    tf.allclear = local0.all;
+    var local1 = tf.allclear;
+    tf.anyclear = local0.any;
+    var local2 = tf.anyclear;
+    dm("CheckAllClearFlag", local1, local2);
+    if (tf.allseen || local1 && CheckSearchOpened()) {
+        try {
+            if (typeof kag.searchScenarioMenuItem == "Object") {
+                kag.searchScenarioMenuItem.visible = 1;
+            }
+        } catch (e) { }
+    }
+    return local0;
+}
+this.CheckAllClearFlag = CheckAllClearFlag incontextof this;
+
+class TitleHelpTextManager extends HelpTextManager {
+    function TitleHelpTextManager() {
+        super.HelpTextManager(...);
+        drawOption = FilterDrawTextParam("title.help");
+    }
+
+    function loadHelpTexts(arg0) {
+        return super.loadHelpTexts(arg0, 1);
+    }
+
+    property helpBaseLayer {
+        getter() {
+            return kag.current.names.helpbase;
+        }
+    }
+
+    function startFade(arg0) {
+        var local0 = getHelpTipTargetLayer();
+        if (local0) {
+            local0.visible = 1;
+        }
+        super.startFade(...);
+        var local1 = helpBaseLayer;
+        if (local1) {
+            local1.visible = 1;
+            local1.opacity = arg0 ? 0 : 255;
+            kag.beginAction(local1, %[
+                opacity: %[
+                    handler: "MoveAction",
+                    start: local1.opacity,
+                    value: arg0 ? 255 : 0,
+                    time: _fadeTime
+                ],
+                nowait: 1
+            ]);
+        }
+    }
+
+    function reset(arg0) {
+        var local0 = ignoreStable;
+        ignoreStable = 1;
+        var local1 = super.reset(...);
+        ignoreStable = local0;
+        if (!arg0 && currentHelp != "") {
+            function layvis(arg0) {
+                if (arg0) {
+                    kag.stopAction(arg0, 1);
+                    arg0.visible = 1;
+                    arg0.opacity = 255;
+                }
+            }
+            layvis(getHelpTipTargetLayer());
+            layvis(helpBaseLayer);
+        }
+        return local1;
+    }
+}
+this.TitleHelpTextManager = TitleHelpTextManager;
+
+class CustomTitle {
+    var hasContinue;
+    var contFile;
+    var isLeft;
+    var clearflag;
+    var enlang = typeof this.updateLanguageButton == "Object"
+            &&  (typeof global.LanguageTags != "undefined" && LanguageTags.count > 1);
+    var fixlang = SystemConfig.fixUILanguage;
+    var _bglist = [];
+    var _bgmax;
+    var _bglistshow = !!+tf.titleBgListShow;
+    var help;
+    var _helpFile = "help_lang.txt";
+    var _langui;
+    var _anim;
+    var _animFile = "anim_title.ini";
+
+    function CustomTitle() {
+        clearflag = CheckAllClearFlag();
+        contFile = kag.getBookMarkFileNameBySystem(SystemConfig.gameContSuspendSaveFileTag);
+        hasContinue = SystemAction.hasSuspendSaveData();
+        isLeft = checkTitleBGList();
+        if (typeof this.initHelp == "Object") {
+            initHelp();
+        }
+    }
+
+    function finalize() {
+        try {
+            ShowHideQLoadPopup(0);
+        } catch (e) { }
+        termTitleBGList();
+        if (help) {
+            invalidate(help);
+        }
+        if (_anim) {
+            anim.hide();
+            invalidate(_anim);
+        }
+    }
+
+    function start(arg0, arg1) {
+        sf["game_" + arg0] = 1;
+        tf.afterstory = (arg1 != "") ? arg1 : void;
+    }
+
+    function shownew(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = !sf["game_" + arg2];
+        if (arg3 != "" && (clearflag && !clearflag[arg3])) {
+            local0 = 0;
+        }
+        if (arg4 != "" && !sf[arg4]) {
+            local0 = 0;
+        }
+        arg0.visible = local0;
+    }
+
+    property storage {
+        getter() {
+            var local0 = ["title"];
+            if ((!clearflag || !clearflag.any) && !tf.allseen) {
+                local0.add("title_noclear");
+            } else if (!checkAdult()) {
+                local0.add("title_allage");
+            }
+            if (!enlang) {
+                local0.add("title_nolang.func");
+            } else {
+                local0.add("title_lang_" + (isLeft ? "left" : "right"));
+            }
+            if (fixlang) {
+                local0.add("title_fixui.func");
+            }
+            return (local0.count == 1) ? local0[0] : local0;
+        }
+    }
+
+    function onUiload(arg0) {
+        arg0.partremove = "remove";
+        var local0 = anim;
+    }
+
+    function onUiloaded(arg0, arg1) {
+        setupTitleBGList(arg1);
+        if (enlang) {
+            updateLanguageButton(arg1);
+        }
+        if (help) {
+            if (arg0.keephelp) {
+                help.reset(0);
+            } else {
+                help.setup(arg1);
+            }
+        }
+        anim.show();
+    }
+
+    function onQLoad(arg0) {
+        ShowHideQLoadPopup(0);
+    }
+
+    function contPopup(arg0, arg1) {
+        if (SystemAction.hasSuspendSaveData()) {
+            var local0 = GetFloatQLoadPopupParam(arg0, %[
+                align: 2,
+                dir: "top",
+                move: -16,
+                padding: -16
+            ], arg1);
+            ShowHideQLoadPopup(!!arg0, SystemConfig.gameContSuspendSaveFileTag, local0);
+        }
+    }
+
+    function termTitleBGList() {
+        tf.titleBgListShow = _bglistshow;
+    }
+
+    function toggleBGSel() {
+        var local0 = _bglist.count;
+        if (local0 <= 1) {
+            return;
+        }
+        if (local0 == 2) {
+            changeBG(getAnotherBG());
+            playSysSE("title.change");
+            kag.process("custom.ks", "*title_reload");
+            return;
+        }
+        _bglistshow = !_bglistshow;
+        playSysSE("title.toggle");
+        updateTitleBGList();
+    }
+
+    function getCurrentBG() {
+        var local0 = _bglist.find(int(+GetTitleImageFile(-1)));
+        return (local0 < 0) ? 0 : local0;
+    }
+
+    function getAnotherBG() {
+        return 1 - getCurrentBG();
+    }
+
+    function changeBG(arg0) {
+        popupBG(0, 0);
+        GetTitleImageFile.Change(_bglist[+arg0]);
+    }
+
+    function popupBG(arg0, arg1, arg2 = 150) {
+        var local0;
+        if (arg0 < 0) {
+            if (_bglist.count != 2) {
+                return;
+            }
+            arg0 = getAnotherBG();
+            local0 = "switch";
+        } else {
+            local0 = "bg" + arg0;
+            arg0 = +arg0;
+        }
+        var local1 = kag.current.names;
+        var local2 = local1.popup;
+        if (!local2) {
+            return;
+        }
+        if (arg1) {
+            drawPopBG(local2, _bglist[arg0]);
+            var local3 = local1[local0];
+            if (local3) {
+                var local4 = GetFloatQLoadPopupParam(1, %[align: 3, floatalign: 9, padding: 4], local3);
+                QLoadPopupLayerBase.setPosWithAlign(
+                    local2.setPos, local4.x, local4.y, local2.width, local2.height, local4.align, local4.padding
+                );
+            }
+            kag.stopAction(local2, 1);
+            local2.visible = 1;
+            local2.bringToFront();
+            local2.opacity = 0;
+            kag.beginAction(
+                local2,
+                %[opacity: %[handler: "MoveAction", value: 255, start: local2.opacity, time: arg2]]
+            );
+        } else {
+            kag.stopAction(local2, 1);
+            if (local2.visible) {
+                kag.beginAction(local2, %[opacity: %[handler: "MoveAction", value: 0, time: arg2]]);
+            }
+        }
+    }
+
+    function drawPopBG(arg0, arg1) {
+        if (arg0) {
+            var local0 = GetTitleImageFile.Status();
+            var local1 = local0[arg1 * 2];
+            var local2 = 1 ? uilangimage : getExistImageName;
+            var local3 = local2(local1);
+            if (local3 != "") {
+                var local4 = kag.temporaryLayer;
+                var local5;
+                var local6 = 9;
+                try {
+                    local4.loadImages(local3);
+                } catch (e) {
+                    return;
+                }
+                var local7 = new Layer(kag, local4);
+                try {
+                    local7.shrinkCopyFast(local4, local6);
+                    var local8 = local7.imageWidth;
+                    var local9 = local7.imageHeight;
+                    var local10 = (arg0.width - local8) \ 2;
+                    var local11 = (arg0.height - local9) \ 2;
+                    arg0.copyRect(local10, local11, local7, 0, 0, local8, local9);
+                } catch (e) { }
+                invalidate(local7);
+            }
+        }
+    }
+
+    function checkTitleBGList() {
+        var local3;
+        var local0 = GetTitleImageFile.Status();
+        _bgmax = local0.count \ 2;
+        _bglist.clear();
+        var local1 = 0;
+        var local2 = 0;
+        while (local2 < _bgmax) {
+            local3 = local0[local2 * 2 + 1];
+            if (local3 || tf.allseen) {
+                _bglist.add(local2);
+            }
+            if (local3) {
+                local1 |= 1 << local2;
+            }
+            ++local2;
+        }
+        local2 = int(+SystemConfig.titleBgBits);
+        if (local1 != local2) {
+            SystemConfig.titleBgBits = local1;
+            local3 = local1 & (local1 ^ local2);
+            var local4 = -1;
+            var local5 = 0;
+            while (local5 < _bgmax) {
+                if (local3 & 1 << local5) {
+                    local4 = local5;
+                }
+                ++local5;
+            }
+            if (local4 >= 0) {
+                dm("newbg", local4);
+                GetTitleImageFile.Change(local4);
+            }
+        }
+        return GetTitleImageFile.IsLeft();
+    }
+
+    function setupTitleBGList(arg0) {
+
+        function draw(arg0, arg1, arg2, arg3) {
+            if (arg0[arg1]) {
+                arg0[arg1].toggle = arg3;
+            }
+        }
+        var local0 = draw;
+        var local1 = kag.current.names;
+        var local2 = getCurrentBG();
+        var local3 = 0;
+        while (local3 < _bgmax) {
+            local0(local1, "bg" + local3, local3 + 1, local2 == local3);
+            ++local3;
+        }
+        updateTitleBGList(1);
+    }
+
+    function updateTitleBGList(arg0) {
+
+        function show(arg0, arg1, arg2) {
+            if (arg0[arg1]) {
+                arg0[arg1].visible = arg2;
+            }
+        }
+        var local0 = show;
+        var local1 = kag.current.names;
+        var local2 = _bglist.count;
+        var local3 = local2 > 1;
+        if (local2 == 2) {
+            local2 = 0;
+        }
+        local0(local1, "switch", local3);
+        local3 &&= _bglistshow;
+        var local4 = 0;
+        while (local4 < _bgmax) {
+            local0(local1, "bg" + local4, local3 && local4 < local2);
+            ++local4;
+        }
+    }
+
+    function initHelp() {
+        help = new TitleHelpTextManager(this, kag, _helpFile);
+    }
+
+    function resetHelp() {
+        if (help) {
+            var local0 = uiloadParse(%[storage: this.storage]);
+            help.setup(local0.result);
+        }
+        return 0;
+    }
+
+    function updateLanguageButton(arg0) {
+        _langui = arg0._btn;
+        _updateLanguageButton(0);
+    }
+
+    function onLangChanged() {
+        if (fixlang) {
+            _updateLanguageButton(1);
+        }
+    }
+
+    function _updateLanguageButton(arg0) { }
+
+    function selectLanguage() {
+        var local0 = new LanguageSelectPanel(%[
+            storage: ["langselect_" + (isLeft ? "left" : "right"), "langselect_auto.func"],
+            list: LanguageTags,
+            selected: fixlang ? CurrentLanguageTag : CurrentLanguageUITag
+        ]);
+        local0.open();
+    }
+
+    function toggleLanguage() {
+        var local0 = fixlang ? kag.languageType : SystemConfig.uiLanguageType;
+        changeLanguage(roundLang(local0, 1));
+    }
+
+    function changeLanguage(arg0) {
+        var local0 = Math.min(int(+arg0), LanguageTags.count - 1);
+        if (local0 >= 0) {
+            var local1 = SystemConfig.subLanguageType;
+            if (local1 == local0) {
+                SwapMainSubLang();
+            } else {
+                SystemConfig.subLanguageType = -1;
+            }
+            if (fixlang) {
+                SetLanguageType(local0);
+                _updateLanguageButton(1);
+            } else {
+                setAllLanguage(local0);
+                kag.process("custom.ks", "*title_langchange");
+            }
+        }
+    }
+
+    function setAllLanguage(arg0) {
+        SetUILanguageType(arg0);
+        SetLanguageType(arg0);
+        if (help) {
+            help.helpTexts = help.loadHelpTexts(_helpFile);
+        }
+        DeleteAllQuickConfPanel();
+        if (typeof uiloadParse.CacheData == "Object") {
+            (Dictionary.clear incontextof uiloadParse.CacheData)();
+        }
+        CleanupGenericPreferenceText();
+        try {
+            resetSquareMaskShowing.reload();
+        } catch (e) { }
+    }
+
+    function roundLang(arg0, arg1 = 1) {
+        var local0 = LanguageTags;
+        var local1 = local0.count;
+        var local2 = int(+arg0);
+        arg1 = int(+arg1);
+        do {
+            local2 += arg1;
+            while (local2 < 0) {
+                local2 += local1;
+            }
+            local2 %= local1;
+        } while (local0[local2] == "");
+        return local2;
+    }
+
+    property anim {
+        getter() {
+            if (_anim === void) {
+                _anim = new GUIAnimManager(_animFile, kag.getMessageLayerNumberFromElm(%[layer: Current.layerName]));
+            }
+            return _anim;
+        }
+    }
+}
+this.CustomTitle = CustomTitle;
+
+class LanguageSelectPanel extends ScrollablePulldownBase {
+    var _selfclass = global.LanguageSelectPanel;
+    var _rows;
+    var _padding;
+    var _bordercols;
+    var _overcolor;
+    var _oncolor;
+    var _overopac;
+    var _onopac;
+    var _selected;
+    var _itemList;
+    var _closese = "close";
+    var _dtptag = "langsel";
+    var _setag = _dtptag + ".";
+
+    function LanguageSelectPanel(arg0 = %[], arg1 = kag) {
+        var local0 = getItemList();
+        var local1 = local0.count;
+        var local2 = (arg0.count !== void) ? int(Math.min(+arg0.count, local1)) : local1;
+        if (!local2) {
+            local2 = 1;
+        }
+        if (arg0.rows === void) {
+            arg0.rows = local2;
+        }
+        if (arg0.columns === void) {
+            arg0.columns = 1;
+        }
+        _rows = arg0.rows;
+        arg0.itemformat = "item${n}";
+        _selected = arg0.selected;
+        if (_selected === void) {
+            _selected = getInitialSelected(arg0);
+        }
+        super.ScrollablePulldownBase(null, arg0, local0, arg1);
+        &_selfclass.Instance = this;
+    }
+
+    function finalize() {
+        _selfclass.Instance = void;
+        try {
+            Current.action("onCloseLangSelect");
+        } catch (e) { }
+        super.finalize(...);
+    }
+
+    function getItemList() {
+        if (_itemList === void) {
+            _itemList = internalGetItemList();
+        }
+        return _itemList;
+    }
+
+    function onItemEnter(arg0) {
+        playSE("enter");
+    }
+
+    function playSE(arg0) {
+        return playSysSE(_setag + arg0);
+    }
+
+    function close() {
+        if (isvalid this && window.panelLayer === this) {
+            playSE(_closese);
+        }
+        return super.close(...);
+    }
+
+    function onUiload(arg0) { }
+
+    function onUiloaded(arg0, arg1) {
+        super.onUiloaded(...);
+        if (arg0 && arg0.selected != "") {
+            var local0 = items.find(arg0.selected);
+            if (local0 >= 0) {
+                dragscr.focusItem(local0, 1);
+            }
+        }
+    }
+
+    function setResult(arg0) {
+        var local0 = arg0 >= 0;
+        if (local0) {
+            internalSetResult(items[arg0], arg0);
+            _closese = "click";
+        }
+        super.setResult(...);
+    }
+
+    function drawItemView(arg0, arg1, arg2) {
+        var local0 = items[arg1];
+        if (local0 == "") {
+            return null;
+        }
+        var local1 = local0 === _selected;
+        arg0.toggle = local1;
+        var local2 = GetSysLangText("subLanguageMenuItem_" + local0, local0);
+        var local3 = GetFontFaceMap(local0, SystemDefaultFontFaceMap);
+        CustomDrawLayerText(arg0, local2, _dtptag, , %[fontface: local3]);
+    }
+
+    function getInitialSelected(arg0) {
+        return CurrentLanguageUITag;
+    }
+
+    function internalSetResult(arg0, arg1) {
+        Current.cmd("changeLanguage/" + arg1);
+    }
+
+    function internalGetItemList() {
+        var local0 = [];
+        local0.assign(LanguageTags);
+        local0.remove(, 1);
+        return local0;
+    }
+}
+this.LanguageSelectPanel = LanguageSelectPanel;
+
+function DrawOnDemandGlyphImage(arg0, arg1) {
+    var local0 = (typeof arg0 == "Object" && arg0) ? arg0.demandimage : arg0;
+    var local1 = "autoskipimage_" + local0;
+    var local2 = arg1.window;
+
+    function create(arg0, arg1) {
+        var local0 = new PanelLayer(arg0, arg1);
+        var local1 = new global.Layer(arg0, arg0.poolLayer);
+        local1.name = arg1;
+        local0.uiload(%[storage: arg1]);
+        var local2 = 0;
+        var local3 = local0.names;
+        var local4;
+        while ((local4 = local3["anim" + local2]) !== void) {
+            ++local2;
+        }
+        local4 = 0;
+        while (local4 < local2) {
+            var local5 = local3["anim" + local4];
+            if (!local4) {
+                local1.setImageSize(local5.width, local5.height * local2);
+                local1.setSize(local5.width, local5.height);
+            }
+            local1.copyRect(0, local4 * local1.height, local5, 0, 0, local5.width, local5.height);
+            ++local4;
+        }
+        invalidate(local0);
+        return local1;
+    }
+    if (arg0.volatile) {
+        var local3 = create(local2, local0);
+        arg1.assignImages(local3);
+        invalidate(local3);
+    } else {
+        if (typeof local2[local1] == "undefined") {
+            local2.add((local2[local1] = create(local2, local0)));
+        }
+        arg1.assignImages(local2[local1]);
+    }
+}
+this.DrawOnDemandGlyphImage = DrawOnDemandGlyphImage incontextof this;
+
+class CustomQuickMenu extends QuickMenuLayerBase {
+    var _curFrameColor;
+    var notifyReadJump;
+    var notifyReadSkip;
+    var readJumpPopup;
+    var forceShowInAutoSkip = 0;
+    var _volumeShowing = 0;
+    var attention;
+    var alignRight;
+    var customOffset;
+    var alignCenter;
+    var centerWidth;
+    var _sqscrOffset = SizeCoef(240);
+    var _isSq;
+    var _lastQSaveNotify;
+    var qsaveNotifyTotalTime = 2000;
+    var qconfTable = SystemConfig.quickConfClassTable;
+    var tipFadeTime = 100;
+    var _helpTipOffset;
+
+    function CustomQuickMenu() {
+        super.QuickMenuLayerBase(...);
+        global.qsaveNotify = %[show: this.onQuickSaveLoadNotify];
+    }
+
+    function finalize() {
+        if (readJumpPopup) {
+            invalidate(readJumpPopup);
+        }
+        delete global.qsaveNotify;
+        super.finalize(...);
+    }
+
+    function getForceOffState() {
+        var local0 = super.getForceOffState(...);
+        local0.forceoff |= kag.mapSelectShowing;
+        return local0;
+    }
+
+    function onResetAllMenuLangText() {
+        stopAction(this);
+        hideAllTips();
+        if (tip) {
+            invalidate(tip);
+        }
+        if (offtimer) {
+            invalidate(offtimer);
+        }
+        offtimer = void;
+        tip = void;
+        var local0 = 0;
+        while (local0 < proxyLays.count) {
+            var local1 = proxyLays[local0];
+            if (local1 && isvalid local1) {
+                invalidate(local1);
+            }
+            ++local0;
+        }
+        proxyLays.clear();
+        super.setup();
+        reloadButtonList();
+    }
+
+    function uiload(arg0) {
+        arg0.partremove = "remove";
+        return super.uiload(...);
+    }
+
+    function addSystemHooks(arg0) {
+        super.addSystemHooks(...);
+        arg0("onWindowPxHeightChanged", onWindowPxHeightChanged);
+        arg0("onSnapShotPiledHook", onSnapShotPiledHook);
+        arg0("onSnapShotImageSaved", onSnapShotImageSaved);
+        arg0("onResetAllMenuLangText", onResetAllMenuLangText);
+        arg0("enterSkipOnReadedLabel", onEnterSkipOnReadedLabel);
+        arg0("onApplyMessageFrame2ndColor", onApplyMessageFrame2ndColor);
+    }
+
+    function onApplyMessageFrame2ndColor(arg0) {
+        if (_curFrameColor === arg0) {
+            return;
+        }
+        _curFrameColor = arg0;
+        var local0 = 1;
+        var local1 = dfMain;
+        this.holdAlpha <-> local0;
+        this.face <-> local1;
+        try {
+            this.fillRect(0, 0, this.width, this.height, arg0 & 16777215);
+        } catch (e) { }
+        this.holdAlpha <-> local0;
+        this.face <-> local1;
+    }
+
+    function initState() {
+        var local0 = super.initState(...);
+        quickSettingShowing = 0;
+        return local0;
+    }
+
+    function onMessageHiddenStateChanged(arg0, arg1) {
+        if (kag._inCaptureSnapshot) {
+            return;
+        }
+        return super.onMessageHiddenStateChanged(...);
+    }
+
+    function onEnterSkipOnReadedLabel(arg0) {
+        if (kag.enterSkipOnReadedLabel < 0) {
+            return;
+        }
+        if (kag.enterSkipNoDisp) {
+            notifyReadJump = 1;
+        } else if (!SystemAction._inProcNextSelOrScn) {
+            notifyReadSkip = 1;
+            notifyReadedSkipJump(arg0 ? "skip" : "contskip");
+        }
+    }
+
+    function onPlayModeChange(arg0, arg1) {
+        if (!inGameState(kag)) {
+            notifyReadSkip = void;
+            notifyReadJump = void;
+            if (readJumpPopup) {
+                stopAction(readJumpPopup);
+            }
+            return;
+        }
+        if (arg0 == 3) {
+            notifyReadedSkipJump("paused");
+        } else if (!arg0) {
+            if (notifyReadJump) {
+                notifyReadJump = void;
+                notifyReadedSkipJump("jumped");
+            } else if (notifyReadSkip && !SystemAction._inProcBackskip) {
+                notifyReadSkip = void;
+                var local0 = !kag.getCurrentRead() || !world_object.playerWorking;
+                notifyReadedSkipJump(local0 ? "doneskip" : "endskip");
+            }
+        }
+    }
+
+    function notifyReadedSkipJump(arg0) {
+        if (readJumpPopup === void) {
+            readJumpPopup = createHelpTipLayer();
+        }
+        drawTipText(readJumpPopup, "read_" + arg0, "AutoSkipJump_");
+        stopAction(readJumpPopup);
+        readJumpPopup.visible = 1;
+        readJumpPopup.opacity = 255;
+        var local0 = 300;
+        var local1 = 2000;
+        var local2 = %[opacity: %[handler: MoveAction, start: 255, value: 0, nofast: 1, time: local0, delay: local1]];
+        var local3 = 8;
+        readJumpPopup.setPos(window.scWidth - readJumpPopup.width - local3, local3);
+        beginAction(readJumpPopup, local2, function() {
+            if (isvalid this) {
+                visible = 0;
+            }
+        } incontextof readJumpPopup, 1);
+    }
+
+    function onSnapShotPiledHook(arg0, arg1) {
+        var local0 = names.snapshot;
+        if (local0) {
+            var local1 = local0.cursorX;
+            var local2 = local0.cursorY;
+            var local3 = local1 >= 0 && (local2 >= 0 && (local1 < local0.width && local2 < local0.height));
+            if (!arg0) {
+                if (local3) {
+                    local0.drawState(0);
+                }
+            } else {
+                local0.update();
+            }
+        }
+        arg1("qmtip", tip);
+        arg1("qconf", GetCurrentQuickConfPanel.object());
+        if (typeof kag.TouchUI == "Object") {
+            arg1("touch", kag.TouchUI);
+        }
+        if (typeof kag.mouseGesture == "Object") {
+            arg1("gspop", kag.mouseGesture.tipsPopup);
+            arg1("gshlp", kag.mouseGesture.tipsHelp);
+        }
+    }
+
+    function onSnapShotImageSaved(arg0, arg1) {
+        var local0 = %[autohide: qsaveNotifyTotalTime, qsave: 1];
+        if (inGameState(kag)) {
+            popupQLoad(1, "snapshot", local0, arg1);
+            ShowHideQuickConfPanel(0);
+        } else {
+            local0.x = kag.scWidth;
+            local0.y = 0;
+            local0.dir = "left";
+            local0.align = 9;
+            local0.padding = 16;
+            ShowHideQLoadPopup(1, arg1, local0);
+        }
+    }
+
+    function onModeChanged(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) {
+        var local0 = super.onModeChanged(...);
+        var local1 = modeChangeCheckHash;
+        UpdateVoiceFavoriteEnabled(...);
+        var local2 = canConfig(arg1, arg7);
+        arg0.checkToggleChanged("volchg", "mute", !arg1.waveenable);
+        arg0.checkEnableChanged("custom", "canCustom", local2);
+        arg0.checkEnableChanged("vsave", "canVSave", local2);
+        arg0.checkEnableChanged("endreplay", "canEndRepl", local2);
+        arg0.checkEnableChanged("title", "canTitle", local2);
+        var local3 = arg1.isRecollection;
+        if (isModeChanged("inRecollection", local3)) {
+            resetButtonPlace(local3);
+        }
+        return local0;
+    }
+
+    property canDropDown {
+        getter() {
+            return !(locked || quickSettingShowing);
+        }
+    }
+
+    property quickSettingShowing {
+        getter() {
+            return _volumeShowing || GetCurrentQuickConfPanel() != "";
+        }
+        setter(arg0) {
+            if (!arg0) {
+                volumeShowing = 0;
+                ShowHideQuickConfPanel(0);
+            } else {
+                Debug.notice("cannot set QuickMenu.quickSettingShowing = true");
+            }
+        }
+    }
+
+    property volumeShowing {
+        getter() {
+            return _volumeShowing;
+        }
+        setter(arg0) {
+            _volumeShowing = !!arg0;
+            updateVolumeState(_volumeShowing);
+            if (arg0) {
+                ShowHideQuickConfPanel(0);
+            }
+            kag.setMenuAccessibleAll();
+        }
+    }
+
+    function updateVolumeState(arg0 = volumeShowing) {
+        if (names.volbase !== void) {
+            names.volbase.visible = arg0;
+        }
+        if (names.volslider !== void) {
+            names.volslider.focusable = 0;
+            names.volslider.visible = arg0;
+            names.volslider.position = QuickMenuVolume;
+        }
+        if (arg0 && (!locked && !_dropdown)) {
+            updown(1);
+        }
+    }
+
+    function resetPosition() {
+        if (!_dropdown && quickSettingShowing) {
+            _dropdown = 1;
+        }
+        return super.resetPosition(...);
+    }
+
+    function canShowHelpTip(arg0) {
+        return 1;
+    }
+
+    function onUiloaded(arg0, arg1) {
+        attention = uiloadGetRect("base.att", arg1);
+        customOffset = _getuiLeft(arg1, "custom");
+        try {
+            alignRight = uiloadGetRect("base.margin", arg1).ox;
+        } catch (e) {
+            alignRight = _getuiLeft(arg1, "base.margin", 1);
+        }
+        if (!alignRight) {
+            alignRight = width;
+        }
+    }
+
+    function _getuiLeft(arg0, arg1, arg2) {
+        var local0 = uiloadGetRect(arg1, arg0);
+        if (!local0) {
+            kag.errorCmd("quickMenu:setup:ボタンがありません:" + arg1);
+        }
+        return local0 ? local0.x + (arg2 ? local0.w : 0) : 0;
+    }
+
+    function internalHitCheck(arg0, arg1) {
+        if (_isSq) {
+            arg1 -= _sqscrOffset;
+        }
+        return arg0 >= attention.ox && (arg1 >= attention.oy && (arg0 < attention.ox + attention.w && arg1 < height));
+    }
+
+    function getPosition(arg0) {
+        return %[left: _initialLeft, top: initialTop + (arg0 ? 0 : attention.h)];
+    }
+
+    property initialTop {
+        getter() {
+            return _initialTop + (_isSq ? _sqscrOffset : 0);
+        }
+    }
+
+    function createHelpTipLayer() {
+        return super.createHelpTipLayer(global.KAGLayer);
+    }
+
+    function drawTipText(arg0, arg1, arg2 = "QuickMenuHelp_") {
+        var local0 = SystemConfig.windowHelpTexts;
+        var local1 = names["help_base"];
+        if (local1 && local0) {
+            arg0.assignImages(local1);
+            arg0.setSizeToImageSize();
+            setHelpTipLayerPos(arg0, _initialLeft + local1.left, initialTop + local1.top);
+            switch (arg1) {
+                case "sav":
+                case "vsav":
+                    arg1 += "e";
+                    break;
+            }
+            var local2 = GetSystemLangMessage(arg2 + arg1, local0[arg1]);
+            CustomDrawLayerText(arg0, local2, "quickmenu.help");
+        } else {
+            arg0.setSize(1, 1);
+            arg0.fillRect(0, 0, 1, 1, 0);
+        }
+    }
+
+    function onSquareScreenModeChanged(arg0) {
+        if (arg0 === void) {
+            arg0 = window.getWindowVirtualPixelHeight() > window.scHeight;
+        }
+        _isSq = arg0;
+        if (_moving) {
+            stopAction(this);
+        }
+        top = getPosition(locked || _dropdown).top;
+        ShowHideQuickConfPanel(0);
+    }
+
+    function onSelectStart() {
+        setVisible(%[hidden: 0]);
+    }
+
+    property _allHiddenMode {
+        getter() {
+            return kag.dramaticMode == 42;
+        }
+    }
+
+    function setVisible(arg0) {
+        var local0;
+        if (arg0.hidden && _allHiddenMode) {
+            local0 = 0;
+            local0 <-> arg0.hidden;
+        }
+        var local1 = super.setVisible(...);
+        if (local0 !== void) {
+            local0 <-> arg0.hidden;
+        }
+        return local1;
+    }
+
+    function onCurrentMessageVisibleChanged(arg0, arg1, arg2) {
+        if (_allHiddenMode) {
+            arg0 = 0;
+        }
+        if (_hidden && !arg0) {
+            setVisible(%[hidden: arg0]);
+        }
+    }
+
+    function onEnvInit(arg0) {
+        if (!_allHiddenMode) {
+            setVisible(%[hidden: 1]);
+        }
+        onSquareScreenModeChanged();
+    }
+
+    function onWindowPxHeightChanged(arg0, arg1, arg2) {
+        onSquareScreenModeChanged(arg0 > window.scHeight);
+    }
+
+    function onLoadInitDone() {
+        if (kag.isRecollection && tf.noqmnotify) {
+            delete tf.noqmnotify;
+            return;
+        }
+        return super.onLoadInitDone(...);
+    }
+
+    function addButton(arg0) {
+        super.addButton(...);
+        if (arg0.visible !== void && !arg0.visible) {
+            names[arg0.name].visible = 0;
+        }
+    }
+
+    function addSlider(arg0) {
+        super.addSlider(...);
+        if (arg0.visible !== void && !arg0.visible) {
+            names[arg0.name].visible = 0;
+        }
+    }
+
+    function updateLockState(arg0 = locked) {
+        if (names.hold !== void) {
+            names.hold.toggle = !!arg0;
+        }
+    }
+
+    function onQuickSaveLoadNotify(arg0) {
+        if (arg0 == "q_saved") {
+            _lastQSaveNotify = System.getTickCount();
+            popupQLoad(1, "qsave", %[autohide: qsaveNotifyTotalTime, qsave: 1]);
+            ShowHideQuickConfPanel(0);
+        }
+    }
+
+    function onDirectSaveNotify(arg0) {
+        _lastQSaveNotify = System.getTickCount();
+        popupQLoad(1, "save", %[autohide: qsaveNotifyTotalTime, qsave: -1], arg0);
+        ShowHideQuickConfPanel(0);
+    }
+
+    function showHideHelpTip(arg0, arg1) {
+        if (arg0 != "qsaved" && _lastQSaveNotify !== void) {
+            var local0 = System.getTickCount();
+            if (local0 - _lastQSaveNotify < qsaveNotifyTotalTime) {
+                return super.showHideHelpTip(...);
+            }
+            _lastQSaveNotify = void;
+        }
+        if (arg1 && (SystemConfig.quickConfAutoOpen && (qconfTable && (arg0 != "" && qconfTable[arg0] != "")))) {
+            ShowHideQuickConfPanel(1, arg0);
+            volumeShowing = 0;
+        }
+        if (arg0 == "qload") {
+            showHideQLoadPopup(arg1);
+        }
+        return super.showHideHelpTip(...);
+    }
+
+    function onButtonRightClick(arg0) {
+        if (!SystemConfig.quickConfAutoOpen && (qconfTable && (arg0 != "" && qconfTable[arg0] != ""))) {
+            var local0 = GetCurrentQuickConfPanel();
+            var local1 = local0 != arg0;
+            ShowHideQuickConfPanel(local1, arg0);
+            volumeShowing = 0;
+            if (arg0 == "qload") {
+                showHideQLoadPopup(1);
+            }
+            return;
+        }
+        return super.onButtonRightClick(...);
+    }
+
+    function getTipAction(arg0, arg1) {
+        if (arg1 == "qsaved" && arg0) {
+            return [%[opacity: %[handler: MoveAction, start: 0, value: 255, time: tipFadeTime]], %[opacity: %[handler: MoveAction, start: 255, value: 0, time: tipFadeTime, delay: qsaveNotifyTotalTime - tipFadeTime]]];
+        }
+        return arg0 ? %[opacity: %[handler: MoveAction, start: 0, value: 255, time: tipFadeTime]]
+            : %[opacity: %[handler: MoveAction, start: 255, value: 0, time: tipFadeTime]];
+    }
+
+    function showHideQLoadPopup(arg0) {
+        if (GetCurrentQuickConfPanel() == "qload") {
+            var local0 = GetCurrentQuickConfPanel.object();
+            if (local0) {
+                var local1 = %[];
+                local0.getPopupPos(local1);
+                ShowHideQLoadPopup(arg0, SystemAction.qsaveBookmarkNumber, local1);
+                return;
+            }
+        } else {
+            ShowHideQuickConfPanel(0);
+        }
+        popupQLoad(arg0, "qload");
+    }
+
+    function popupQLoad(arg0, arg1, arg2 = %[], arg3) {
+        if (arg3 === void) {
+            arg3 = SystemAction.qsaveBookmarkNumber;
+        }
+        var local0 = names[arg1];
+        if (local0) {
+            arg2.x = _initialLeft + local0.left + local0.width \ 2;
+            arg2.y = initialTop + local0.top;
+            arg2.align = 2;
+            arg2.padding = SizeCoef(8);
+        }
+        ShowHideQLoadPopup(arg0, arg3, arg2);
+    }
+
+    function callDefaultModeChangeProc(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) {
+        if (arg1.inStable
+                &&  (!arg1.isRecollection && (arg1.usingExtraConductor && SystemHook.currentState == "scnchart"))) {
+            arg1.showHistoryMenuItem.enabled = 1;
+        }
+        var local0 = super.callDefaultModeChangeProc(...);
+        var local1 = inGameState(arg1) && arg1.inStable;
+        var local2 = SystemAction.playerWorking;
+        arg1.backOneMenuItem.enabled = local1 && SystemAction.canBackOne;
+        arg0.checkEnableChanged("backone", "canBackOne", arg1.backOneMenuItem.enabled);
+        arg1.skipToPrevStopMenuItem.enabled = local1 && local2 || arg1.skipToPrevStopMenuItem.checked;
+        arg0.checkEnableChanged("prev", "canPrev", local1 && SystemAction.canPrev);
+        arg0.checkEnableChanged("prevscn", "canPrevScn", local1 && SystemAction.canPrevScn);
+        arg1.goPrevScnMenuItem.enabled = local1 && SystemAction.canPrevScn;
+        arg1.goNextScnMenuItem.enabled = arg1.goNextMenuItem.enabled && local2;
+        var local3 = arg1.goNextScnMenuItem.enabled;
+        arg0.checkEnableChanged("nextscn", "canNextScn", local1 && local3);
+        return local0;
+    }
+
+    function onVisibleChanged(arg0) {
+        if (!arg0) {
+            ShowHideQLoadPopup(0);
+            ShowHideQuickConfPanel(0);
+        }
+        return super.onVisibleChanged(...);
+    }
+
+    function getButtonList() {
+        return SystemConfig.quickMenuButtonList;
+    }
+
+    function setButtonList(arg0) {
+        SystemConfig.quickMenuButtonList = arg0;
+        resetButtonPlace(kag.isRecollection, arg0);
+    }
+
+    function reloadButtonList() {
+        resetButtonPlace(kag.isRecollection);
+    }
+
+    function pileButtons(arg0, arg1) {
+        var local6;
+        var local7;
+        var local8;
+        var local9;
+        var local0 = [];
+        var local1;
+        var local2;
+        var local3;
+        var local4;
+        var local5 = btns.count - 1;
+        while (local5 >= 0) {
+            local6 = btns[local5];
+            local7 = names[local6];
+            if (local7.visible) {
+                local0.add(local6);
+                local8 = local7.left + local7.width;
+                local9 = local7.top + local7.height;
+                if (local1 === void || local1 > local7.left) {
+                    local1 = local7.left;
+                }
+                if (local2 === void || local2 < local8) {
+                    local2 = local8;
+                }
+                if (local3 === void || local3 > local7.top) {
+                    local3 = local7.top;
+                }
+                if (local4 === void || local4 < local9) {
+                    local4 = local9;
+                }
+            }
+            --local5;
+        }
+        if (!local0.count) {
+            return;
+        }
+        local5 = local2 - local1;
+        local6 = void;
+        if (arg1 >= 0) {
+            local6 = arg0.width - local5;
+            if (!arg1) {
+                local6 \= 2;
+            }
+        }
+        local6 -= local1;
+        local7 = (arg0.height - (local4 - local3)) \ 2 - local3;
+        local8 = 0;
+        while (local8 < local0.count) {
+            local9 = names[local0[local8]];
+            if (local9) {
+                arg0.operateRect(local6 + local9.left, local7 + local9.top, local9, 0, 0, local9.width, local9.height);
+            }
+            ++local8;
+        }
+    }
+
+    function resetButtonPlace(arg0, arg1) {
+        if (arg1 === void) {
+            arg1 = getButtonList();
+        }
+        var local0;
+        var local8;
+        if (arg0) {
+            arg1 = arg1.replace(/vsave/, "vfav");
+            arg1 = arg1.replace(/q?(save|load)[:\/]?/g, "");
+            local0 = "custom";
+            if (arg1.substr(0, local0.length) == local0) {
+                arg1 = local0 + "/endreplay/" + arg1.substr(local0.length + 1);
+            } else {
+                arg1 = "endreplay/" + arg1;
+            }
+        }
+        local0 = 1;
+        var local1 = 8;
+        var local2 = 36;
+        var local3 = ["hold"];
+        if (local0 != 0) {
+            local3.add(local0);
+        }
+        local3.add(arg1.replace(/([^:\/]*)([:\/])/g, function(arg0) {
+            add((arg0[1] != "") ? arg0[1] : empty);
+            if (arg0[2] == "/") {
+                add(spc);
+            } else if (pad != 0 && arg0[1] != "") {
+                add(pad);
+            }
+            return "";
+        } incontextof %[add: local3.add, empty: local2, spc: local1, pad: local0]));
+        var local4 = btns.count - 1;
+        while (local4 >= 0) {
+            proxy[btns[local4]].visible = 0;
+            --local4;
+        }
+        local4 = alignRight;
+        var local5 = SystemConfig.useQuickVoiceSaveMenu;
+        var local6 = SystemConfig.useDirectSaveMenu;
+        var local7;
+        for (local7 = local3.count - 1; local7 >= 0; --local7) {
+            if (typeof (local8 = local3[local7]) == "Integer") {
+                local4 -= local8;
+                continue;
+            } else {
+                if (local8 != "") {
+                    var local9 = local8 == "volume";
+                    if (local9) {
+                        local8 = "volchg";
+                    }
+                    if (local8 == "vfav" || local8 == "vsave") {
+                        local8 = local5 ? "qvsave" : "vsave";
+                    } else if (local8 == "save" && local6) {
+                        local8 = "dsave";
+                    }
+                    var local10 = names[local8];
+                    if (local10) {
+                        local4 -= local10.width;
+                        if (proxy[local8]) {
+                            local10 = proxy[local8];
+                        } else {
+                            dm("no-proxy", local8);
+                        }
+                        local10.left = local4;
+                        local10.visible = 1;
+                    } else {
+                        dm("invalid item", local8);
+                    }
+                    if (local9 && names.volslider) {
+                        names.volslider.left = local4;
+                    }
+                    continue;
+                }
+                continue;
+            }
+        }
+        if (names.line) {
+            if (typeof names.line.origWidth == "undefined") {
+                names.line.origWidth = names.line.width;
+                names.line.origLeft = names.line.left;
+            }
+            local7 = names.line.origWidth - ((_helpTipOffset > 0) ? _helpTipOffset : 0);
+            names.line.visible = local7 > 0;
+            local8 = names.line.visible;
+            if (local8) {
+                names.line.left = names.line.origLeft + (names.line.origWidth - local7);
+                *(&global.Layer.width incontextof names.line) = local7;
+            }
+        }
+    }
+
+    function setHelpTipLayerPos(arg0, arg1, arg2) {
+        arg0.setPos(arg1, arg2);
+    }
+}
+this.CustomQuickMenu = CustomQuickMenu;
+this.QuickMenuToggle = QuickMenuToggle incontextof this;
+this.CustomBacklog = CustomBacklog;
+this.SearchLog = SearchLog;
+this.setCustomConfirmDialogSE = setCustomConfirmDialogSE incontextof this;
+SetUILoadExtraType();
+Dialog.add(%[name: "title", layer: "message0", start: CustomTitle]);
+createPropertyProxy("titleBgBits", "0", , "(int)+", SystemConfig);
+global.LanguageSelectPanel.Instance = void;
+
+SystemConfig.QuickMenuButtonList = [
+    "custom", "hold", "save", "load", "dsave", "qsave", "qload", "option", "endreplay", "prev", "prevscn", "backskip",
+    "backone", "log", "auto", "skip", "nextscn", "next", "scnchart", "volchg", "vreplay", "vsave", "qvsave", "title",
+    "hide", "snapshot"
+];
+
+SystemConfig.QuickMenuInitialLockState = 1;
+createPropertyProxy("quickMenuButtonList", "'" + SystemConfig.quickMenuDefaultList.escape() + "'", , "", SystemConfig);
+global.QuickMenuClass = CustomQuickMenu;
+
+SystemHook.add("loadinit.start", function() {
+    try {
+        kag.QuickMenu.setVisible(%[fadeout: 1]);
+    } catch (e) { }
+} incontextof global);
+
+Dialog.add(%[name: "backlog", start: CustomBacklog, storage: "backlog"]);
+
+{
+    SystemActionBase._backlog = function(arg0, arg1, arg2) {
+        if (kag.inStable) {
+            switch (SystemHook.currentState) {
+                case "scnchart":
+                    var local0 = kag.current.names.backlog;
+                    if (local0 && (local0.visible && local0.enabled)) {
+                        local0.onExecute(local0.width \ 2, local0.height \ 2, mbLeft, 0);
+                    }
+                    break;
+                case "backlog":
+                    kag.onPrimaryRightClick();
+                    break;
+                case "game":
+                    startSubSystem(1, "backlog.sysfrom.game");
+                    break;
+            }
+        }
+
+    } incontextof null;
+
+    setSystemMenuStorage("search.ks");
+    SystemScript.script("search");
+    SystemScript.add("search.from.title", "*start_title");
+    SystemScript.add("search.from.game", "*start_game");
+    SystemScript.add("search.from.voicemode", "*start_voice");
+    SystemScript.add("search.sysfrom.title", "*sysfrom_title");
+    SystemHook.add("search.leave", "dialog.done");
+
+    addKagHookCallback("onKAGSetupMenu", function(arg0) {
+        createMenuFromList(
+            arg0, arg0.helpMenu,
+            [%[name: "searchScenarioMenuItem", caption: "シナリオ検索(&S)", exp: "SystemAction._search()", prop: %[visible: 0, index: 2]]]
+        );
+    }, 0);
+
+    addKagHookCallback("onModeChangeHookEx", function(arg0, arg1) {
+        var local0 = inTitleMenu(arg1) && arg1.inStable;
+        if (isModeChanged("search", local0)) {
+            try {
+                arg1.searchScenarioMenuItem.enabled = local0;
+            } catch (e) { }
+        }
+
+    }, 0);
+
+    SystemActionBase.search = function() { return do_(_search, "searchScenarioMenuItem", *); } incontextof null;
+
+    SystemActionBase._search = function() {
+        if (inTitleMenu(kag) && kag.inStable) {
+            startSubSystem(0, "search.sysfrom.title");
+        }
+
+    } incontextof null;
+
+    Dialog.add(%[name: "search", start: SearchLog, storage: "search"]);
+
+    &CustomYesNoDialog.onShowDialog = function(arg0) {
+        SystemHook.exec("yndialog.open", arg0);
+    } incontextof null;
+
+    SystemConfig.ConfirmDialogTextArea = "text";
+    SystemConfig.ConfirmDialogCheckHide = 1;
+    SystemConfig.ConfirmDialogUiPart = %[ask: "common", notify: "common"];
+    SystemConfig.ConfirmDialogTextParam = FilterDrawTextParam("dialog.text");
+    SystemConfig.ConfirmDialogTextLayers = "text";
+    SystemConfig.ConfirmDialogMessages.AskInitVoice = "音声設定を初期化します";
+    SystemConfig.ConfirmDialogMessages.DoneQSave = "クイックセーブしました。";
+    SystemConfig.ConfirmDialogMessages.AskTryFirst = "データに問題があります\n冒頭から再開しますか？";
+    SystemConfig.ConfirmDialogMessages.AskJumpFirst = "ジャンプできません\n冒頭から開始しますか？";
+    SystemConfig.ConfirmDialogTagMap.askquitreplay = "askTitle";
+    MyYesNoDialog.fadeTime = 200;
+    MyYesNoDialog.bgOpacity = 51;
+    SystemConfig.stopDeactOpacity = 76;
+    MyYesNoDialog.bgColor = 0;
+    SystemConfig.stopDeactColor = MyYesNoDialog.bgColor;
+    var local0 = MyYesNoDialog.instance;
+    local0.defaultFocusItem.AskNextScn = "yes";
+    local0.defaultFocusItem.AskPrevScn = local0.defaultFocusItem.AskNextScn;
+    local0.defaultFocusItem.AskBackTo = local0.defaultFocusItem.AskPrevScn;
+    local0.defaultFocusItem.AskNext = local0.defaultFocusItem.AskBackTo;
+    local0.defaultFocusItem.AskJump = local0.defaultFocusItem.AskNext;
+    local0.defaultFocusItem.AskReadJump = local0.defaultFocusItem.AskJump;
+    local0.defaultFocusItem.AskQSave = "yes";
+    local0.defaultFocusItem.AskQLoad = local0.defaultFocusItem.AskQSave;
+    local0.defaultFocusItem.AskSave = local0.defaultFocusItem.AskQLoad;
+    local0.defaultFocusItem.AskLoad = local0.defaultFocusItem.AskSave;
+
+    local0.forceYesMap.AskExit = function() {
+        var local0 = SystemConfig.askExit;
+        if (!local0) {
+            playSysSE("dialogex.click");
+        }
+        return !local0;
+    } incontextof global;
+
+    local0.forceYesMap.AskTitle = function() {
+        var local0 = SystemConfig.askTitle;
+        if (!local0) {
+            playSysSE("dialogex.click");
+        }
+        return !local0;
+    } incontextof global;
+
+    local0.yesnoMap["ダイレクトセーブしますか？"] = "AskDSave";
+    local0.yesnoMap["ボイス登録しますか？"] = "AskVSave";
+    local0.yesnoMap["AskResume"] = "AskResume";
+
+    property QuickMenuVolume {
+        getter() {
+            return 100 - kag.wavevolume;
+        }
+        setter(arg0) {
+            kag.wavevolume = 100 - arg0;
+        }
+    }
+
+    function QuickMenuToggle(arg0) {
+        try {
+            var local0 = kag.QuickMenu;
+            local0[arg0] = !local0[arg0];
+        } catch (e) { }
+    }
+
+    property QuickMenuLocked {
+        getter() {
+            try {
+                return kag.QuickMenu.locked;
+            } catch (e) { }
+        }
+        setter(arg0) {
+            try {
+                kag.QuickMenu.locked = arg0;
+                kag.QuickMenu.updown(arg0);
+            } catch (e) { }
+        }
+    }
+
+    class CustomBacklog extends DragScrollableBacklog {
+        var _maxGraphHeight = 160;
+        var fromTitle = 0;
+        var _defaultFontSize;
+        var _defaultRubySize;
+        var _defaultLineSpace;
+        var _wordBreaks = (typeof global.LanguageWordBreaks == "Object") ? LanguageWordBreaks : null;
+        var _timeScales = (typeof global.LanguageWidthTimeScales == "Object") ? LanguageWidthTimeScales : null;
+        var _main_ww;
+        var subLang;
+        var subLangFontScale = SystemConfig.multiLangTextFontScale;
+        var subLangLineSpaceScale = SystemConfig.multiLangLineSpaceScale;
+        var singleLangFontScale = SystemConfig.multiLangSingleFontScaleMap;
+        var _modetag = "backlog";
+        var _curEnterTextBlock;
+        var renderAutoIndent;
+        var fontColor;
+        var overColor;
+        var textTop;
+        var textLeft;
+        var textWidth;
+        var textHeight;
+        var blockTextWidth;
+        var blockNameWidth;
+        var _renderEscapeMatch = /[\[\]\\&%#$]/g;
+        var _cutLF = /(\\n|\n)/g;
+        var _choiceTextFormat = (SystemConfig.BacklogChoiceTextFormat == "")
+            ? "選択肢：${text}" : SystemConfig.BacklogChoiceTextFormat;
+        var autoIndentBeginCharacters = "「『（‘“〔［｛〈《";
+        var autoIndentEndCharacters = "」』）’”〕］｝〉》";
+        var autoShrinkFontTable = SystemConfig.AutoScaleFontSizeTable;
+        var _forceCaption;
+        var captionLayerName = "caption";
+        var captionUi;
+        var _sceneListMode = 0;
+        var _lastScrollPos = [];
+        var _vreplayFocusX;
+        var vsave_from = "backlog";
+        var _curmesFadeTime = 300;
+
+        function CustomBacklog() {
+            super.DragScrollableBacklog(...);
+            fadeMessageLayer(0);
+            _render.defaultChColor = kag.getCurrentMessageColor(0);
+            fontColor = _render.defaultChColor;
+            overColor = kag.getCurrentMessageColor(1);
+            _defaultFontSize = SystemConfig.defaultMessageFontSize;
+            _defaultRubySize = SystemConfig.defaultMessageRubySize;
+            _defaultLineSpace = SystemConfig.defaultMessageLineSpacing;
+            _render.getGraphLayer = this.getGraphLayer;
+            _render.onGetGraphSize = this.getGraphSize;
+            updateSubLang();
+            updateRenderOption();
+            var local0 = 100;
+            _sysbtnInfo.frame = %[
+                visible: function() { return 1; },
+                enabled: function() { return 0; },
+                absolute: -local0
+            ];
+            _sysbtnInfo.vsave = %[visible: _sysbtnInfo.vreplay.visible, absolute: local0];
+            --local0;
+            _sysbtnInfo.vreplay.absolute = local0;
+            --local0;
+            _sysbtnInfo.jump.absolute = local0;
+        }
+
+        function finalize() {
+            super.finalize(...);
+        }
+
+        function getGraphLayer(arg0) {
+            arg0 = filterGraphFile(arg0);
+            var local0 = getGraphSize(arg0);
+            if (!local0) {
+                return;
+            }
+            var local1;
+            try {
+                if (!local0.shrink) {
+                    local1 = new global.Layer(kag, kag.poolLayer);
+                    if (!local0.empty) {
+                        local1.loadImages(arg0);
+                    } else {
+                        local1.setImageSize(local0.width, local0.height);
+                        local1.fillRect(0, 0, local1.imageWidth, local1.imageHeight, 0);
+                    }
+                } else {
+                    var local2 = kag.temporaryLayer;
+                    local2.loadImages(arg0);
+                    local1 = SaveSnapshotLayer.createShrinkImage(local2, local0.width, local0.height);
+                }
+            } catch (e) {
+                if (local1) {
+                    invalidate(local1);
+                }
+                return;
+            }
+            return local1;
+        }
+
+        function getGraphSize(arg0) {
+            arg0 = filterGraphFile(arg0);
+            var local0 = _render.getEmptyGraphSize(arg0);
+            if (local0) {
+                return %[width: local0[0], height: local0[1], empty: 1];
+            }
+            var local1 = System.fetchImageSize(arg0);
+            if (!local1) {
+                return %[width: 0, height: 0];
+            }
+            if (local1[1] > _maxGraphHeight) {
+                return %[
+                    width: int(Math.round(local1[0] * _maxGraphHeight / local1[1])),
+                    height: _maxGraphHeight,
+                    shrink: 1
+                ];
+            }
+            return %[width: local1[0], height: local1[1]];
+        }
+
+        function filterGraphFile(arg0) {
+            var local0 = world_object.getImageData(arg0);
+            return (local0 && local0.storage != "") ? local0.storage : arg0;
+        }
+
+        function getLangInfo() {
+            return string(kag.getLangInfo(...));
+        }
+
+        function getLangTitle(arg0, arg1) {
+            if (arg1 === void) {
+                arg1 = kag.languageType;
+            }
+            var local0;
+            if (typeof (local0 = arg0.title) == "Object") {
+                local0 = local0[+arg1];
+            }
+            return string(local0);
+        }
+
+        function updateRenderOption(arg0) {
+            if (arg0 === void) {
+                arg0 = kag.languageType;
+            }
+            if (_wordBreaks || _timeScales) {
+                var local0 = %[];
+                if (_wordBreaks) {
+                    local0.word_break = _wordBreaks[arg0];
+                }
+                if (_timeScales) {
+                    local0.width_time_scale = _timeScales[arg0];
+                }
+                _render.setOption(local0);
+            }
+            _render.defaultFace = kag.getLanguageFont(arg0);
+            _render.resetFont();
+        }
+
+        function updateSubLang() {
+
+            function _getScale(arg0, arg1) {
+                return (arg0 !== void && arg1 !== void) ? arg1 : 1;
+            }
+
+            function _getSingle(arg0, arg1) {
+                var local0 = (arg0 === void && arg1) ? arg1[CurrentLanguageTag] : void;
+                return (local0 !== void) ? local0 : 1;
+            }
+            var local0 = _getScale;
+            var local1 = _getSingle;
+            var local2 = kag.subLanguageType;
+            subLang = (local2 !== void && local2 != kag.languageType) ? local2 : void;
+            _main_ww = _wordBreaks && !_wordBreaks[kag.languageType];
+            local2 = local0(subLang, subLangFontScale) * local1(subLang, singleLangFontScale);
+            _render.defaultFontSize = int(_defaultFontSize * local2);
+            _render.defaultRubySize = int(_defaultRubySize * local2);
+            _render.defaultLineSpacing = int(_defaultLineSpace * local0(subLang, subLangLineSpaceScale));
+            _render.resetStyle();
+        }
+
+        function onLangChanged() {
+            updateSubLang();
+            updateRenderOption();
+            clearAllTextBlocks();
+            updateTextBlock(scroll);
+        }
+
+        function onUiload(arg0) {
+            var local0 = "rm_" + _modetag;
+            if (kag.isRecollection) {
+                local0 += ",flowchart";
+            }
+            arg0.partremove = local0;
+        }
+
+        function onUiloaded(arg0, arg1) {
+            setupCaptionImage(arg1);
+            var local0 = super.onUiloaded(...);
+            return local0;
+        }
+
+        function onSetupSysSE(arg0, arg1) {
+            uiloadSysSE(arg0, arg1, _modetag);
+        }
+
+        function playEnterSe() {
+            if (!isvalid this || _scrollTargetPos !== void || inDrag) {
+                return;
+            }
+            playSysSE("backlog.item.enter");
+        }
+
+        function showJumpView(arg0, arg1) {
+            if (!isvalid this || _scrollTargetPos !== void || inDrag) {
+                return;
+            }
+            playEnterSe();
+            return super.showJumpView(...);
+        }
+
+        function onSetupSysButtonOne(arg0, arg1, arg2) {
+            arg2.visible = 0;
+            super.onSetupSysButtonOne(...);
+            switch (arg0) {
+                case "frame":
+                    arg2.exp = void;
+                    break;
+                case "vsave":
+                    arg2.sename = "sysbtn";
+                    arg2.onenter = "Current.cmd(\"playEnterSe\")";
+                    delete arg2.onleave;
+                    break;
+                case "vreplay":
+                    arg2.onenter = "Current.cmd(\"onEnterTextBlock/" + string(arg1) + "\")";
+                    arg2.onleave = "Current.cmd(\"onLeaveTextBlock/" + string(arg1) + "\")";
+                    break;
+            }
+        }
+
+        function createBlockLayer(arg0) {
+            var local0 = super.createBlockLayer(...);
+            if (local0) {
+                local0.imageWidth *= 2;
+            }
+            return local0;
+        }
+
+        function onEnterTextBlock(arg0) {
+            if (!isvalid this || _scrollTargetPos !== void || inDrag) {
+                return;
+            }
+            var local0 = _blockButtonInfoList[+arg0];
+            if (_curEnterTextBlock !== local0) {
+                _curEnterTextBlock = local0;
+                updateTextBlock(scroll);
+                playEnterSe();
+            }
+        }
+
+        function onLeaveTextBlock(arg0) {
+            if (!isvalid this || _scrollTargetPos !== void || inDrag) {
+                return;
+            }
+            var local0 = _blockButtonInfoList[+arg0];
+            if (_curEnterTextBlock === local0) {
+                _curEnterTextBlock = void;
+                updateTextBlock(scroll);
+            }
+        }
+
+        function setTextBlockPos(arg0, arg1, arg2, arg3) {
+            arg1.imageLeft = (_curEnterTextBlock === arg0) ? -arg1.width : 0;
+            super.setTextBlockPos(...);
+        }
+
+        function onDragStart() {
+            var local0 = _curEnterTextBlock !== void;
+            _curEnterTextBlock = void;
+            if (local0) {
+                updateTextBlock(scroll);
+            }
+            return super.onDragStart(...);
+        }
+
+        function startScrollAction(arg0, arg1) {
+            if (arg0 != arg1) {
+                _curEnterTextBlock = void;
+            }
+            return super.startScrollAction(...);
+        }
+
+        function _recheckEnterItem() {
+            var local0 = kag.primaryLayer.getLayerAt(kag.primaryLayer.cursorX, kag.primaryLayer.cursorY);
+            if (local0 && local0.enabled) {
+                local0.onMouseEnter();
+            }
+        }
+
+        function refixSliderScroll() {
+            var local0 = super.refixSliderScroll(...);
+            if (_scrollTargetPos === void) {
+                _recheckEnterItem();
+            }
+            return local0;
+        }
+
+        function onScrollActionStop() {
+            if (!isvalid this) {
+                return;
+            }
+            var local0 = super.onScrollActionStop(...);
+            _recheckEnterItem();
+            return local0;
+        }
+
+        function setup(arg0, arg1) {
+            var local0 = "block";
+            var local1 = _defaultFontSize;
+            var _temp1 = uiloadGetRect(local0 + ".text", arg1);
+            blockLeftMargin = _temp1.ox;
+            blockTextWidth = _temp1.w;
+            textTop = _temp1.oy + _render.defaultRubySize;
+            blockHeight = uiloadGetRect(local0, arg1).h;
+            var local2 = uiloadGetRect(local0 + ".name", arg1);
+            if (local2) {
+                textLeft = blockLeftMargin;
+                textWidth = blockTextWidth - int(local1 * 1.5);
+                blockTextWidth += blockLeftMargin - local2.ox;
+                blockLeftMargin = local2.ox;
+                blockNameWidth = local2.w;
+            } else {
+                blockNameWidth = local1 * 8;
+                textLeft = blockLeftMargin + blockNameWidth + local1;
+                textWidth = blockTextWidth - (blockNameWidth + local1) - local1;
+            }
+            textHeight = blockHeight - textTop;
+            _curEnterTextBlock = void;
+            updateMode();
+            return super.setup(...);
+        }
+
+        function dispNameFilter() {
+            var local0 = global.dispNameFilter(...);
+            if (local0 != "") {
+                var local1 = local0.length;
+                if (local0.charAt(local1 - 1) == " ") {
+                    local0 = local0.substr(0, local1 - 1).trim();
+                }
+            }
+            return local0;
+        }
+
+        function getTextBlockName(arg0) {
+            return _sceneListMode ? getLangTitle(arg0) : internalGetTextBlockName(...);
+        }
+
+        function escapeRenderText(arg0) {
+            return (string(arg0)).replace(_renderEscapeMatch, function(arg0) { return "\\" + arg0[0]; });
+        }
+
+        function internalGetTextBlockName(arg0, arg1) {
+            var local0 = getLangInfo(arg0, "name", arg1);
+            var local1 = getLangInfo(arg0, "disp", arg1);
+            if (local0 != "") {
+                var local2 = (local1 != "") ? local1 : local0;
+                return escapeRenderText(dispNameFilter(local2, 0));
+            }
+        }
+
+        function getTextBlockText(arg0, arg1 = 0, arg2) {
+            var local0 = getLangInfo(arg0, "text", arg2);
+            var local1;
+            if (arg0.seltext) {
+                var local2;
+                var local3 = (arg2 !== void) ? LanguageTags[+arg2] : CurrentLanguageTag;
+                local2 = GetSysLangText("BacklogChoiceTextFormat", local3);
+                if (local2 == "") {
+                    local2 = _choiceTextFormat;
+                }
+                local0 = applyInlineStringVariableExtract(local2, %[text: local0]);
+            }
+            if (arg1 || _sceneListMode) {
+                if (!checkIndent(local0)) {
+                    local0 = "\\i" + local0;
+                } else {
+                    local0 = local0.substr(0, 1) + "\\i" + local0.substr(1);
+                }
+            }
+            if (_sceneListMode) {
+                local0 = internalGetTextBlockName(arg0, arg2) + local0;
+            }
+            if (subLang !== void) {
+                local0 = local0.replace(_cutLF, "");
+            }
+            return local0;
+        }
+
+        function checkIndent(arg0) {
+            var local0 = (string(arg0)).charAt(0);
+            var local1;
+            if (local0 != "" &&  ((local1 = autoIndentBeginCharacters.indexOf(local0)) >= 0
+                &&  arg0.charAt(arg0.length - 1) == autoIndentEndCharacters.charAt(local1))) {
+                return (arg0.substr(1).indexOf(local0) < 0) ? 1 : -1;
+            }
+            return 0;
+        }
+
+        function drawTextBlock(arg0, arg1) {
+            var local0;
+            arg0.drawTextOwner = this;
+            arg0.drawTextOrig = internalDrawBlockText incontextof arg0;
+            arg0.drawText <-> arg0.drawTextOrig;
+            try {
+                var local3;
+                var local4;
+                if (subLang !== void) {
+                    updateRenderOption();
+                }
+                arg0.font.face = _render.defaultFace;
+                var local1 = getTextBlockName(arg1);
+                var local2 = getTextBlockText(arg1);
+                if (_main_ww) {
+                    if (local1 != "") {
+                        _render.draw(arg0, blockLeftMargin, textTop, blockNameWidth, textHeight, "%R" + local1, 0);
+                    }
+                    _tryRenderText(arg0, 0, local2);
+                } else {
+                    var local7;
+                    local3 = textLeft;
+                    local4 = textWidth;
+                    var local5 = checkIndent(local2);
+                    var local6 = -1;
+                    if (local5 == 0) {
+                        local4 += _defaultFontSize;
+                        local6 = 0;
+                    } else if (local5 < 0) {
+                        local7 = _render.defaultFontSize;
+                        local3 -= local7;
+                        local4 += local7;
+                        local6 = 1;
+                    }
+                    if (local1 != "") {
+                        _render.render(blockTextWidth, arg0.height, arg0.font, local1, 0);
+                        local0 = _render.getRect();
+                    }
+                    local7 = local0 ? local0.width : 0;
+                    if (local7 <= blockNameWidth) {
+                        if (local1 != "") {
+                            _render.redraw(arg0, blockLeftMargin + blockNameWidth - local7, textTop);
+                        }
+                        _render.draw(arg0, local3, textTop, local4, textHeight, local2, local6);
+                    } else {
+                        if (local1 != "") {
+                            _render.redraw(arg0, blockLeftMargin, textTop);
+                        }
+                        if (local7 < textWidth) {
+                            var local8 = "&<" + string(local7 - blockNameWidth) + ",1>;";
+                            _render.draw(arg0, textLeft, textTop, textWidth, textHeight, local8 + local2, 0);
+                        } else {
+                            _render.draw(arg0, local3, textTop, local4, textHeight, "　\n" + local2, 0);
+                        }
+                    }
+                }
+                local3 = (subLang !== void) ? getTextBlockText(arg1, , subLang) : void;
+                if (local3 != "") {
+                    local4 = _render.getRect().height + _render.defaultLineSpacing;
+                    updateRenderOption(subLang);
+                    _tryRenderText(arg0, local4, local3);
+                }
+            } catch (e) {
+                arg0.drawText <-> arg0.drawTextOrig;
+                throw e;
+            }
+            arg0.drawText <-> arg0.drawTextOrig;
+        }
+
+        function _tryRenderText(arg0, arg1, arg2) {
+            var local0 = checkIndent(arg2) ? 0 : _defaultFontSize;
+            _render.setBase(void);
+            _render.setFont(arg0.font);
+            _render.setRenderSize(textWidth + local0, textHeight - arg1);
+            var local1 = TextRenderBase.render incontextof _render;
+            var local2 = _render.defaultFontSize;
+            var local3 = local2;
+            while (local3 > 0) {
+                _render.fontScale = local3 / local2;
+                _render.clear();
+                local1(arg2, -1, 0, 0, 0, 0);
+                _render.done();
+                if (!_render.renderOver) {
+                    break;
+                } else {
+                    local3 = _shrinkFontSize(local3);
+                    continue;
+                }
+            }
+            _render.fontScale = 1;
+            _render.redraw(arg0, textLeft, textTop + arg1);
+            _render.setFont(void);
+        }
+
+        function _shrinkFontSize(arg0) {
+            var local0 = autoShrinkFontTable;
+            if (local0) {
+                var local1 = 0;
+                var local2 = local0.count;
+                while (local1 < local2) {
+                    if (arg0 > local0[local1]) {
+                        return local0[local1];
+                    }
+                    ++local1;
+                }
+            }
+            return -1;
+        }
+
+        function internalDrawText(arg0, arg1, arg2, arg3, arg4, arg5) {
+            EdgeShadowDrawText(
+                arg1, arg0, arg2, arg3, arg4, arg5, 255, kag.fore.messages[0].antialiased,
+                kag.fore.messages[0].defaultShadow, kag.fore.messages[0].shadowColor, kag.fore.messages[0].shadowWidth,
+                kag.fore.messages[0].shadowOffsetX, kag.fore.messages[0].shadowOffsetY, kag.fore.messages[0].defaultEdge,
+                kag.fore.messages[0].defaultEdgeColor, kag.fore.messages[0].edgeEmphasis, kag.fore.messages[0].edgeExtent
+            );
+        }
+
+        function internalDrawCaptionText(arg0, arg1, arg2, arg3, arg4) {
+            internalDrawText(arg0, arg0.drawText, arg1, arg2, arg3, arg4);
+        }
+
+        function internalDrawBlockText(arg0, arg1, arg2, arg3) {
+            drawTextOwner.internalDrawText(this, drawTextOrig, arg0, arg1, arg2, arg3);
+            drawTextOwner.internalDrawText(this, drawTextOrig, arg0 + width, arg1, arg2, drawTextOwner.overColor);
+        }
+
+        function updateTopCaption(arg0) {
+            if (_forceCaption != "") {
+                return;
+            }
+            if (_sceneListMode) {
+                if (_topCaption != "") {
+                    updateCaption();
+                }
+                _topCaption = void;
+                return;
+            }
+            if (arg0 !== void) {
+                var local0 = getLangTitle(arg0);
+                if (_topCaption != local0) {
+                    _topCaption = string(local0);
+                    updateCaption(_topCaption);
+                }
+            }
+        }
+
+        function setupCaptionImage(arg0) {
+            captionUi = arg0[captionLayerName];
+        }
+
+        function updateCaption(arg0) {
+            var local0 = kag.current.names;
+            var local1 = local0[captionLayerName];
+            if (local1) {
+                if ((arg0 = (string(arg0)).toLowerCase()) == "") {
+                    local1.visible = 0;
+                } else {
+                    local1.visible = 1;
+                    internalUpdateCaption(local1, arg0);
+                }
+                if (local0.chapter) {
+                    local0.chapter.visible = local1.visible;
+                }
+            }
+        }
+
+        function internalUpdateCaption(arg0, arg1) {
+            drawCaption((string(arg1)).toUpperCase());
+        }
+
+        function drawCaption(arg0, arg1, arg2) {
+            if (arg1 === void) {
+                arg1 = _modetag + ".caption";
+            }
+            if (arg2 === void) {
+                arg2 = kag.current.names;
+            }
+            var local0 = arg2[captionLayerName];
+            if (local0) {
+                local0.fillRect(0, 0, local0.width, local0.height, 0);
+                var local1 = FilterDrawTextParam(arg1, %[x: 0, y: 0, w: local0.width, h: local0.height]);
+                if (arg0 != "") {
+                    drawTextKinsokuRect(local0, arg0, local1);
+                }
+            }
+        }
+
+        function drawForceCaption(arg0) {
+            _forceCaption = arg0;
+            updateCaption((arg0 != "") ? arg0 : _topCaption);
+        }
+
+        function internalShowJumpView(arg0) {
+            super.internalShowJumpView(...);
+            var local0 = getBlockInfo(arg0);
+            if (local0) {
+                drawForceCaption(getLangTitle(local0));
+            }
+        }
+
+        function internalHideJumpView() {
+            super.internalHideJumpView(...);
+            drawForceCaption();
+        }
+
+        function getJumpTarget() {
+            return %[storage: "custom.ks", target: "*backlog_jump"];
+        }
+
+        function invalidateAllBlockButtons() {
+            if (!blockBaseLayer) {
+                return;
+            }
+            var local0 = kag.current.names.framebase;
+            if (local0) {
+                kag.current.operateRect(
+                    local0.left, local0.top, local0, 0, 0, local0.width, local0.height, omAuto, local0.opacity
+                );
+                local0.visible = 0;
+            }
+            return super.invalidateAllBlockButtons(...);
+        }
+
+        function updateMode() {
+            if (kag.current.names.caption_scene) {
+                kag.current.names.caption_scene.visible = !!_sceneListMode;
+            }
+            if (kag.current.names.caption_backlog) {
+                kag.current.names.caption_backlog.visible = !_sceneListMode;
+            }
+            if (kag.current.names.modechg) {
+                kag.current.names.modechg.visible = _jumpEnabled;
+                kag.current.names.modechg.toggle = !!_sceneListMode;
+            }
+        }
+
+        function toggleMode() {
+            stopSliderAction();
+            _lastScrollPos[_sceneListMode] = %[scroll: scroll, min: scrollMin];
+            _sceneListMode = !_sceneListMode;
+            var local0 = _lastScrollPos[_sceneListMode];
+            blockCount = getBlockCount();
+            _scrollMax = getScrollMax();
+            _topCaption = void;
+            _scroll = void;
+            clearAllTextBlocks();
+            clearSnapshotSceneID();
+            updateCaption();
+            if (local0 === void) {
+                scrollMin = (longStep > 0) ? scrollMax - longStep : 0;
+                scroll = _scrollMax;
+            } else {
+                scrollMin = local0.min;
+                scroll = local0.scroll;
+            }
+            updateMode();
+        }
+
+        function getBlockCount() {
+            try {
+                return _sceneListMode
+                    ? playerObject.getSceneHistoryCount(...) : super.getBlockCount(...);
+            } catch (e) { }
+        }
+
+        function getBlockInfo() {
+            try {
+                return _sceneListMode
+                    ? playerObject.getSceneHistoryData(...) : super.getBlockInfo(...);
+            } catch (e) { }
+        }
+
+        function internalInvokeJump() {
+            if (_sceneListMode) {
+                playerObject.goToSceneHistory(_jumpTarget);
+            } else {
+                super.internalInvokeJump();
+            }
+        }
+
+        function clearSnapshotSceneID() {
+            try {
+                if (_snapshot) {
+                    _snapshot.sceneID = -1;
+                }
+            } catch (e) { }
+        }
+
+        function onKeyDown(arg0, arg1) {
+            try {
+                if (!isvalid this || kag.inPanicMode) {
+                    return;
+                }
+            } catch (e) { }
+            var local0 = super.onKeyDown(...);
+            if (!local0 && kag.currentDialog === void) {
+                switch (arg0) {
+                    case 243:
+                    case 244:
+                        close();
+                        local0 = 1;
+                        break;
+                }
+            }
+            return local0;
+        }
+
+        function setupVirtualKeyFocus(arg0) {
+            super.setupVirtualKeyFocus(arg0, 0);
+            keyfocusItemChain.remove("vreplay");
+            keyfocusItemChain.add("vreplay");
+            keyfocusDefaultSysBtn = keyfocusItemChain.count - 1;
+            _vreplayFocusX = blockBaseLayer.left + blockLeftMargin + blockNameWidth;
+        }
+
+        function internalCheckFocusButtonEnabled(arg0, arg1) {
+            return arg0 == "vreplay" || super.internalCheckFocusButtonEnabled(...);
+        }
+
+        function internalGetKeyFocusHotSpot(arg0, arg1, arg2, arg3, arg4, arg5) {
+            if (arg0 == "vreplay") {
+                arg1.x = _vreplayFocusX;
+                arg1.y = arg3 + arg5 \ 2;
+                return;
+            }
+            return super.internalGetKeyFocusHotSpot(...);
+        }
+
+        function vsave(arg0) {
+            var local0 = getVoiceSaveInfo(arg0);
+            if (!local0) {
+                return;
+            }
+            if (CheckExistVoiceFileTag(local0.voice, 1) >= 0 || qvsave(arg0, local0) < 0) {
+                tf.VoiceSave = local0;
+                hideJumpView(, 0);
+                fadeMessageLayer(1);
+                startSubSystem(0, "voicemode.sysfrom." + vsave_from);
+            }
+        }
+
+        function qvsave(arg0, arg1) {
+            var local0 = kag.current.buttons["vsave" + arg0];
+            var local1 = %[
+                autohide: 1000,
+                align: 2,
+                dir: "top",
+                x: blockBaseLayer.left,
+                y: blockBaseLayer.top
+            ];
+            var local2 = SystemAction.quickVoiceSaveWithAsk(arg1, local0, local1);
+            if (local2 >= 0 && local0) {
+                local0.toggle = 1;
+            }
+            return local2;
+        }
+
+        function onQuickVoiceSaveCancel(arg0) {
+            updateTextBlock(scroll);
+        }
+
+        function getVoiceSaveInfo(arg0) {
+            var local0 = Scripts.clone(getBlockInfo(_blockButtonInfoList[arg0]));
+            if (!_jumpEnabled) {
+                kag.errorSound("非コンバートモードにおけるお気に入りボイス保存は現在対応していません");
+                return;
+            } else {
+                try {
+                    return SystemAction.extractVoiceInfo(local0, local0.scene, local0.idx, local0.point, local0.hflags);
+                } catch (e) { }
+                return;
+            }
+        }
+
+        function internalShowBlockButton(arg0, arg1, arg2, arg3, arg4, arg5) {
+            super.internalShowBlockButton(...);
+            var local0 = GetVoiceFileTag(arg5.voice);
+            arg1("vsave" + arg2, "toggle", local0 != "" && VoiceClip[local0], arg3);
+        }
+
+        function setMessageLayerVisible(arg0) {
+            if (arg0) {
+                kag.forEachEventHook("onMessageHiddenStateChanged", , arg0, 0);
+                kag.current.visible = 1;
+            } else {
+                kag.current.clearWheel();
+                fadeMessageLayer(1);
+                kag.forEachEventHook("onMessageHiddenStateChanged", , arg0, 0);
+            }
+        }
+
+        function fadeMessageLayer(arg0) {
+            if (_curmesvis && _curmes) {
+                try {
+                    _curmes.setVisibleTime(arg0, _curmesFadeTime);
+                    _curmes.comp.setVisibleTime(arg0, _curmesFadeTime);
+                } catch (e) { }
+            }
+        }
+    }
+
+    class SearchLog extends CustomBacklog {
+        var fromTitle = 1;
+        var _modetag = "search";
+        var reSearch;
+        var resultText;
+        var cutTextLen = 10;
+        var cutTextCont = "…";
+        var vsave_from = "search";
+
+        function SearchLog(arg0) {
+            try {
+                world_object.initPlayer();
+            } catch (e) { }
+            super.CustomBacklog(arg0);
+            _playerObject = world_object.player;
+            _jumpEnabled = typeof _playerObject.goToHistory == "Object";
+            _snapshotEnabled = typeof _playerObject.getSnapshot == "Object";
+            reSearch = !!arg0.research;
+            try {
+                playerObject.initSearch();
+            } catch (e) { }
+        }
+
+        function finalize() {
+            try {
+                playerObject.clearSearch();
+            } catch (e) { }
+            super.finalize(...);
+        }
+
+        function onUiloaded(arg0, arg1) {
+            setup(...);
+            setupDragScroll();
+        }
+
+        function getJumpTarget() {
+            return %[storage: "search.ks", target: "*jump"];
+        }
+
+        function setup() {
+            super.setup(...);
+            resultText = GetSystemLangMessage("SearchTextUnsupported", "※この機能はサポート対象外です　");
+            drawResultCaption();
+            if (reSearch) {
+                searchText(tf.lastSearchText, tf.lastSearchScroll, tf.lastSearchLang);
+            }
+            tf.lastSearchScroll = void;
+        }
+
+        function inputSearchText() {
+            var local0 = GetSystemLangMessage("SearchTextInput", "検索文字列を入力");
+            var local1 = string(tf.lastSearchText);
+            if (tf.lastSearchLang !== kag.languageType) {
+                local1 = "";
+            }
+            var local2 = System.inputString(System.title, local0, local1);
+            if (local2 == "") {
+                return;
+            }
+            tf.lastSearchLang = kag.languageType;
+            var local3 = tf.lastSearchLang;
+            tf.lastSearchText = local2;
+            searchText(local2, , local3);
+        }
+
+        function searchText(arg0, arg1, arg2) {
+            if (arg2 === void) {
+                arg2 = kag.languageType;
+            }
+            var local3;
+            var local0 = arg0;
+            var local1;
+            var local2;
+            if (typeof global.LanguageWordBreaks == "Object" && !LanguageWordBreaks[+arg2]) {
+                local3 = arg0.split(/\s+/g, , 1);
+                var local4 = 0;
+                while (local4 < local3.count) {
+                    local3[local4] = local3[local4].replace(
+                        /[\*\+\.\?\{\}\(\)\[\]\^\$\|\/\\]/g, function(arg0) { return "\\" + arg0[0]; }
+                    );
+                    ++local4;
+                }
+                local0 = "\\b" + local3.join("\\b\\s+\\b") + "\\b";
+                dm("searchRegExp: " + local0);
+                local1 = 1;
+            }
+            try {
+                playerObject.doSearch(local0, , arg2, local1);
+            } catch (e) {
+                local2 = e.message;
+            }
+            clearSnapshotSceneID();
+            if (local2 === void) {
+                return showResult(arg0, arg1, arg2);
+            } else {
+                showError(local2);
+                return;
+            }
+        }
+
+        function showError(arg0) {
+            Debug.notice("searchText:internalError", arg0);
+            try {
+                playerObject.clearSearch();
+            } catch (e) { }
+            clearAllTextBlocks();
+            blockCount = getBlockCount();
+            _scrollMax = getScrollMax();
+            _scroll = void;
+            scroll = 0;
+            resultText = "InternalError: Search failed";
+            drawResultCaption();
+        }
+
+        function showResult(arg0, arg1, arg2) {
+            if (arg2 === void) {
+                arg2 = kag.languageType;
+            }
+            clearAllTextBlocks();
+            blockCount = getBlockCount();
+            _scrollMax = getScrollMax();
+            _scroll = void;
+            scroll = (arg1 !== void) ? int(arg1) : 0;
+            var local0 = string(arg0);
+            if (local0.length > cutTextLen) {
+                local0 = local0.substr(0, cutTextLen) + cutTextCont;
+            }
+            var local1 = GetSystemLangMessage("SearchTextResultFormat", "「${cuttext}」の検索結果(${language}${blockCount}件)");
+            var local2 = (LanguageTags.count > 1) ? GetSysLangText("subLanguageMenuItem_" + LanguageTags[+arg2]) : void;
+            if (local2 != "") {
+                local2 += ":";
+            }
+            resultText = applyInlineStringVariableExtract(local1, %[
+                cuttext: local0,
+                language: local2,
+                blockCount: blockCount
+            ]);
+            drawResultCaption();
+        }
+
+        function setupCaptionImage(arg0) { }
+
+        function updateCaption() { }
+
+        function drawResultCaption() {
+            var local0 = kag.current.names.caption2;
+            if (local0) {
+                local0.fillRect(0, 0, local0.width, local0.height, 0);
+                CustomDrawLayerText(local0, resultText, "search.result");
+            }
+            drawCaption("");
+        }
+
+        function drawCaption(arg0) {
+            var local0 = kag.current.names.chapter;
+            if (local0) {
+                local0.visible = arg0 != "";
+            }
+            return super.drawCaption(...);
+        }
+
+        function drawJumpViewCaption(arg0) {
+            var local0 = getBlockInfo(arg0);
+            drawCaption((local0 !== void) ? (string(getLangTitle(local0))).toUpperCase() : "", "search.chapter");
+        }
+
+        function internalConvertCaption() { }
+
+        function hideJumpView(arg0, arg1) {
+            super.hideJumpView(...);
+        }
+
+        function showJumpView(arg0, arg1) {
+            super.showJumpView(...);
+            if (_snapshot && _snapshot.visible) {
+                drawJumpViewCaption(_snapshot.sceneID);
+            }
+        }
+
+        function onJump() {
+            tf.lastSearchScroll = scroll;
+            return super.onJump(...);
+        }
+
+        function vsave(arg0) {
+            tf.lastSearchScroll = scroll;
+            return super.vsave(...);
+        }
+
+        property scrollMin {
+            getter() {
+                return 0;
+            }
+            setter(arg0) { }
+        }
+
+        function doScrollToStop() { }
+
+        function setHistoryMenuChecked(arg0) { }
+
+        function setMessageLayerVisible(arg0) { }
+
+        function getBlockCount() {
+            try {
+                return playerObject.getSearchCount(...);
+            } catch (e) { }
+        }
+
+        function getBlockInfo() {
+            try {
+                return playerObject.getSearchData(...);
+            } catch (e) { }
+        }
+
+        function onWheel(arg0, arg1, arg2, arg3) {
+            doWheelScroll(arg1);
+        }
+
+        function internalInvokeJump() {
+            playerObject.goToSearch(_jumpTarget);
+            playerObject.clearSearch();
+        }
+
+        function prevStop() {
+            topPage(...);
+        }
+
+        function nextStop() {
+            endPage(...);
+        }
+    }
+
+    function setCustomConfirmDialogSE(arg0, arg1) {
+        var local0 = arg1.yes;
+        switch (arg0.dialogtype) {
+            case "AskTitle":
+            case "AskExit":
+            case "AskBackTo":
+            case "AskNext":
+                elementSysSE(local0, "dialogex", ["click"]);
+                break;
+            case "AskOverwrite":
+            case "AskLoad":
+            case "AskQLoad":
+                local0.clickse = "";
+                break;
+        }
+    }
+}

@@ -1,0 +1,3358 @@
+class DelayedInvoker {
+    var _list = [];
+
+    function DelayedInvoker() { }
+
+    function finalize() { }
+
+    function clear() {
+        _list.clear();
+    }
+
+    function add(arg0) {
+        _list.add(arg0);
+    }
+
+    function remove(arg0) {
+        _list.remove(arg0, 1);
+    }
+
+    function invoke() {
+        var local0 = [];
+        local0.assign(_list);
+        var local1 = local0.count - 1;
+        while (local1 >= 0) {
+            local0[local1]();
+            --local1;
+        }
+        this.clear();
+    }
+}
+this.DelayedInvoker = DelayedInvoker;
+
+class DelayedTimer extends Timer {
+    var _owner;
+    var _action;
+
+    function finalize() {
+        super.finalize(...);
+    }
+
+    function DelayedTimer(arg0, arg1, arg2) {
+        _owner = arg0;
+        _action = _action;
+        super.Timer(this, "onAction");
+        this.capacity = 1;
+        this.interval = arg2;
+        this.enabled = 0;
+    }
+
+    function cancel() {
+        this.enabled = 0;
+    }
+
+    function trigger() {
+        this.enabled = 1;
+    }
+
+    function onAction() {
+        cancel();
+        if (_action == "") {
+            _owner();
+        } else {
+            _owner[_action]();
+        }
+    }
+}
+this.DelayedTimer = DelayedTimer;
+
+class DelayedTrigger extends AsyncTrigger {
+    function finalize() {
+        super.finalize(...);
+    }
+
+    function DelayedTrigger(arg0, arg1, arg2) {
+        super.AsyncTrigger(arg0, arg1);
+        this.cached = 1;
+        this.mode = arg2;
+    }
+}
+this.DelayedTrigger = DelayedTrigger;
+
+function setDelayedTrigger(arg0, arg1, arg2, arg3 = atmAtIdle) {
+    if (arg2 < 0 || arg0 == "" || arg1 == "") {
+        return;
+    }
+    if (typeof arg1 == "String") {
+        arg1 = Scripts.eval("function() { Scripts.eval('" + string(arg1) + "'); }");
+    }
+
+    var local0;
+    if (arg2 == 0) {
+        local0 = new DelayedTrigger(arg1, "", arg3);
+    } else {
+        local0 = new DelayedTimer(arg1, "", arg2);
+    }
+    DelayedTrigger.instances[arg0] = local0;
+}
+this.setDelayedTrigger = setDelayedTrigger incontextof this;
+
+function invokeDelayedTrigger(arg0) {
+    var local0 = (arg0 != "") ? DelayedTrigger.instances[arg0] : void;
+    if (local0 !== void) {
+        local0.cancel();
+        local0.trigger();
+    }
+}
+this.invokeDelayedTrigger = invokeDelayedTrigger incontextof this;
+
+function cancelDelayedTrigger(arg0) {
+    var local0 = (arg0 != "") ? DelayedTrigger.instances[arg0] : void;
+    if (local0 !== void) {
+        local0.cancel();
+    }
+}
+this.cancelDelayedTrigger = cancelDelayedTrigger incontextof this;
+
+class OnceDelayedTrigger extends DelayedTrigger {
+    var _func;
+
+    function finalize() {
+        delete super.instances[this];
+        super.finalize(...);
+    }
+
+    function OnceDelayedTrigger(arg0, arg1) {
+        super.instances[this] = this;
+        super.DelayedTrigger(this, "onTrigger", arg1);
+        _func = arg0;
+    }
+
+    function onTrigger() {
+        if (!isvalid this) {
+            return;
+        }
+        _func();
+        invalidate(this);
+    }
+}
+this.OnceDelayedTrigger = OnceDelayedTrigger;
+
+function runOnceDelayedTrigger(arg0, arg1 = 1, arg2 = atmAtIdle) {
+    if (typeof arg0 == "String") {
+        arg0 = Scripts.eval("function() { Scripts.eval('" + string(arg0) + "'); }");
+    }
+
+    var local0 = new OnceDelayedTrigger(arg0, arg2);
+    if (arg1) {
+        local0.trigger();
+    }
+    return local0;
+}
+this.runOnceDelayedTrigger = runOnceDelayedTrigger incontextof this;
+
+class DialogModeManager {
+    var _entries = %[];
+    var _now = "";
+    var _object;
+    var defaultLayerName = "message1";
+
+    function get(arg0) {
+        var local0 = (typeof arg0 === "String") ? arg0 : (arg0 !== void) ? arg0.name : void;
+        if (local0 == "") {
+            throw new Exception("DialogModeManager: 名前がありません");
+        }
+        _now = local0.toLowerCase();
+        var local1 = _entries[_now];
+        return local1;
+    }
+
+    function run(arg0, *) {
+        switch (typeof arg0) {
+            case "void":
+                return;
+            case "String":
+                return run(Scripts.eval(arg0), *);
+            case "Object":
+                if (arg0 instanceof "Function") {
+                    return arg0(*);
+                } else if (arg0 instanceof "Class") {
+                    return new arg0(*);
+                }
+                break;
+            default:
+                throw new Exception("DialogModeManager: start値が不明な形式です: " + _now);
+        }
+    }
+
+    function start(arg0) {
+        done();
+        var local0 = get(arg0);
+        if (local0 === void) {
+            System.inform(string(_now.toUpperCase()) + " 画面は実装されていません");
+            return kag.goToStart();
+        }
+        try {
+            _object = run(local0.start, arg0);
+        } catch (e) {
+            throw new Exception("DialogModeManager: 初期化に失敗しました(" + e.message + "): " + _now);
+        }
+        terminator.add(this.done);
+    }
+
+    function done() {
+        if (_now != "") {
+            var local0 = get(_now);
+            if (local0 !== void) {
+                run(local0.done);
+            }
+        }
+        if (valid) {
+            invalidate(_object);
+        }
+        _object = void;
+        _now = "";
+        terminator.remove(this.done);
+    }
+
+    function add(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = %[];
+        var local1;
+        switch (typeof arg0) {
+            case "String":
+                local1 = arg0;
+                local0.start = arg1;
+                local0.done = arg2;
+                local0.layer = arg3;
+                local0.storage = arg4;
+                break;
+            case "Object":
+                local1 = arg0.name;
+                (global.Dictionary.assign incontextof local0)(arg0, 1);
+                if (local0.name !== void) {
+                    delete local0.name;
+                }
+                break;
+            default:
+                throw new Exception("DialogModeManager: 追加パラメータが不正です");
+        }
+        if (typeof local1 !== "String" || local1 == "") {
+            throw new Exception("DialogModeManager: 追加名が不明です");
+        }
+        _entries[local1.toLowerCase()] = local0;
+    }
+
+    function addClass() {
+        add(...);
+    }
+
+    property dummyProp {
+        getter() { }
+        setter(arg0) { }
+    }
+
+    function dummyFunc() { }
+
+    function hasDefined(arg0) {
+        return valid && typeof _object[arg0] != "undefined";
+    }
+
+    function propget(arg0) {
+        return hasDefined(arg0) ? _object[arg0] : void;
+    }
+
+    function prop(arg0) {
+        return hasDefined(arg0) ? &_object[arg0] : &dummyProp;
+    }
+
+    function func(arg0) {
+        return hasDefined(arg0) ? _object[arg0] : dummyFunc;
+    }
+
+    function action(arg0, *) {
+        return hasDefined(arg0) ? _object[arg0](*) : void;
+    }
+
+    function select() {
+        return action("select", *);
+    }
+
+    function enter() {
+        return action("enter", *);
+    }
+
+    function leave() {
+        return action("leave", *);
+    }
+
+    property page {
+        getter() {
+            return valid ? _object.page : 0;
+        }
+        setter(arg0) {
+            if (valid) {
+                _object.page = arg0;
+            }
+        }
+    }
+
+    function uiEval(arg0, arg1, arg2, *) {
+        return action(arg2, arg0, arg1, *);
+    }
+
+    function uiSort(arg0, arg1, args*) {
+        for (var local0 = args.count - 1; local0 >= 0; --local0) {
+            var local1 = args[local0];
+            if (local1 == "" || arg1[local1] === void) {
+                continue;
+            } else {
+                arg0.remove(local1, 1);
+                arg0.insert(0, local1);
+            }
+        }
+    }
+
+    function cmd(arg0) {
+        if (!valid) {
+            return;
+        }
+        var local0;
+        if ((local0 = arg0.indexOf("/")) >= 0) {
+            return cmd_func(arg0, local0);
+        } else if ((local0 = arg0.indexOf("+")) >= 0) {
+            return cmd_up(arg0, local0);
+        } else if ((local0 = arg0.indexOf("-")) >= 0) {
+            return cmd_down(arg0, local0);
+        } else if ((local0 = arg0.indexOf("=")) >= 0) {
+            return cmd_prop(arg0, local0);
+        } else {
+            return _object[arg0]();
+        }
+    }
+
+    function cmd_func(arg0) {
+        var local0 = arg0.split("/");
+        var local1 = local0[0];
+        local0.erase(0);
+        return _object[local1](local0*);
+    }
+
+    function cmd_up(arg0, arg1) {
+        switch (arg0.charAt(arg1 + 1)) {
+            case "+":
+                var _temp4 = arg0.substr(0, arg1);
+                return _object[_temp4]++;
+            case "=":
+                _object[arg0.substr(0, arg1)] += +arg0.substr(arg1 + 2);
+                return _object[arg0.substr(0, arg1)];
+        }
+    }
+
+    function cmd_down(arg0, arg1) {
+        switch (arg0.charAt(arg1 + 1)) {
+            case "-":
+                var _temp4 = arg0.substr(0, arg1);
+                return _object[_temp4]--;
+            case "=":
+                _object[arg0.substr(0, arg1)] += +arg0.substr(arg1 + 2);
+                return _object[arg0.substr(0, arg1)];
+        }
+    }
+
+    function cmd_prop(arg0, arg1) {
+        var local0 = arg0.substr(0, arg1);
+        var local1 = arg0.substr(arg1 + 1);
+        _object[local0] = (local1 == "0" || local1.toLowerCase() == "false" || +local1 != 0) ? +local1 : local1;
+    }
+
+    property valid {
+        getter() {
+            return _object !== void && isvalid _object;
+        }
+    }
+
+    property nowent {
+        getter() {
+            return (_now != "") ? _entries[_now] : void;
+        }
+    }
+
+    function uiload(arg0) {
+        var local0 = %[];
+        (global.Dictionary.assign incontextof local0)(arg0, 1);
+        if (local0.storage == "") {
+            local0.storage = storage;
+            if (local0.storage == "") {
+                return new Exception("uiload の storage が指定されていません");
+            }
+        }
+        if (local0.uipacked === void) {
+            local0.uipacked = this.uipacked;
+        }
+        _callDialogFunction("onUiload", "uiload", local0);
+        var local1 = global.uiload(kag.getMessageLayerObjectFromElm(local0), local0);
+        kag.tagHandlers.current(%[page: local0.page, layer: local0.layer]);
+        _callDialogFunction("onUiloaded", "uiloaded", local0, local1);
+    }
+
+    function _getDialogPropertyString(arg0, arg1, arg2) {
+        if (hasDefined(arg0) && _object[arg0] != "") {
+            return _object[arg0];
+        }
+        var local0 = nowent;
+        if (local0 !== void && local0[arg1] != "") {
+            return local0[arg1];
+        }
+        return arg2;
+    }
+
+    function _callDialogFunction(arg0, arg1, *) {
+        if (hasDefined(arg0)) {
+            return _object[arg0](*);
+        }
+        var local0 = nowent;
+        if (local0 !== void && local0[arg1] != "") {
+            return local0[arg1](*);
+        }
+    }
+
+    property layerName {
+        getter() {
+            return _getDialogPropertyString("layerName", "layer", defaultLayerName);
+        }
+    }
+
+    property storage {
+        getter() {
+            return _getDialogPropertyString("storage", "storage", "");
+        }
+    }
+
+    property uipacked {
+        getter() {
+            var local0;
+            return ((local0 = propget("uipacked")) !== void)
+                ? local0 : (nowent && (local0 = nowent["uipacked"]) !== void) ? local0 : void;
+        }
+    }
+}
+this.DialogModeManager = DialogModeManager;
+
+class SystemRegistory {
+    var _map = %[];
+    var _cached = %[];
+
+    function SystemRegistory() { }
+
+    class _AliasItem_ {
+        var alias;
+
+        function _AliasItem_(arg0) {
+            alias = arg0;
+        }
+    }
+
+    function tagNormalize(arg0) {
+        if (typeof arg0 === "String") {
+            arg0 = arg0.toLowerCase().trim();
+            if (arg0.length > 0) {
+                return arg0;
+            }
+        }
+        return "(object 0x00000000:0x00000000)";
+    }
+
+    function tagApply(arg0) {
+        arg0 = tagNormalize(arg0);
+        while (_map[arg0] instanceof "_AliasItem_") {
+            arg0 = _map[arg0].alias;
+        }
+        return arg0;
+    }
+
+    function set(arg0, arg1) {
+        _map[tagNormalize(arg0)] = arg1;
+    }
+
+    function alias(arg0, arg1) {
+        _map[tagNormalize(arg0)] = new _AliasItem_(tagNormalize(arg1));
+    }
+
+    function get(arg0) {
+        return _map[tagApply(arg0)];
+    }
+
+    function isDefined(arg0) {
+        return typeof _map[tagApply(arg0)] !== "undefined";
+    }
+
+    function search(arg0, arg1 = _searchParent) {
+        if (typeof arg0 !== "String" || arg0.length === 0) {
+            return;
+        }
+        if (typeof _cached[arg0] !== "undefined") {
+            return _cached[arg0];
+        }
+        var local0 = arg1(arg0);
+        var local1 = 0;
+        while (local1 < local0.count) {
+            var local2 = tagApply(local0[local1]);
+            if (typeof _map[local2] !== "undefined") {
+                return setCache(arg0, _map[local2]);
+            }
+            ++local1;
+        }
+        return setCache(arg0, void);
+    }
+
+    function _searchParent(arg0) {
+        var local0 = [arg0];
+        var local1 = arg0.split(".");
+        while (local1.count > 1) {
+            local1.erase(local1.count - 1);
+            local0.add(local1.join(".") + ".*");
+        }
+        local0.add("*");
+        return local0;
+    }
+
+    function setCache(arg0, arg1) {
+        _cached[arg0] = arg1;
+        return arg1;
+    }
+
+    function clearCache(arg0) {
+        if (arg0 == "") {
+            (global.Dictionary.clear incontextof _cached)();
+        } else {
+            delete _cached[arg0];
+        }
+    }
+
+    function clear() {
+        clearCache();
+        (global.Dictionary.clear incontextof _map)();
+    }
+
+    function getValue(arg0) {
+        return arg0;
+    }
+
+    function getAlias(arg0) { }
+
+    function load(arg0) {
+        var local0;
+        if ((string(arg0)).indexOf(":") < 0) {
+            local0 = _internalLoad(arg0);
+        } else {
+            var local1 = arg0.split(":", , 1);
+            var local2 = 0;
+            while (local2 < local1.count) {
+                local0 = _internalLoad(local1[local2], local0);
+                ++local2;
+            }
+        }
+        if (local0 !== void) {
+            _applyEntries(local0, arg0);
+        }
+    }
+
+    function _internalLoad(arg0, arg1) {
+        if (!Storages.isExistentStorage(arg0)) {
+            return;
+        }
+        var local0 = arg1 === void;
+        function proc(arg0, arg1) {
+            if (arg1 === void) {
+                arg1 = [];
+                arg1.load(arg0);
+            } else {
+                var local0 = [];
+                local0.load(arg0);
+                arg1.push(local0*);
+            }
+            return arg1;
+        }
+        if (typeof global.findConfigFiles == "Object") {
+            var local1 = findConfigFiles(arg0);
+            var local2 = 0;
+            while (local2 < local1.count) {
+                arg1 = proc(local1[local2], arg1);
+                ++local2;
+            }
+        } else {
+            arg1 = proc(arg0);
+        }
+        return arg1;
+    }
+
+    function _applyEntries(arg0, arg1) {
+        for (var local0 = 0; local0 < arg0.count; ++local0) {
+            var local1 = arg0[local0].trim();
+            if (local1[0] === "#" || local1.length === 0) {
+                continue;
+            } else {
+                var local2 = local1.split("=");
+                var local3 = local2.count;
+                if (local3 === 1 || local3 === 2) {
+                    var local4 = local2[0];
+                    var local5 = getValue(local2[1]);
+                    var local6 = getAlias(local5);
+                    if (local6 === void) {
+                        set(local4, local5);
+                        continue;
+                    } else {
+                        alias(local4, local6);
+                        continue;
+                    }
+                } else {
+                    dm(arg1 + ": エントリが不正です(" + local1 + ")");
+                }
+            }
+        }
+    }
+}
+this.SystemRegistory = SystemRegistory;
+
+class SystemScriptMap extends SystemRegistory {
+    function SystemScriptMap() {
+        super.SystemRegistory(...);
+    }
+
+    function getValue(arg0) {
+        if (arg0 === void) {
+            return %[];
+        }
+        arg0 = arg0.trim();
+        if (arg0.length === 0) {
+            return %[];
+        }
+        if (arg0.indexOf("*") >= 0) {
+            var local0 = arg0.split("*");
+            var local1 = local0[0].trim();
+            if (local1.length == 0) {
+                local1 = void;
+            } else if (local1.indexOf(".ks") < 0) {
+                local1 += ".ks";
+            }
+            return %[storage: local1, target: "*" + local0[1].trim()];
+        }
+        return %[storage: (arg0.indexOf(".ks") < 0) ? arg0 + ".ks" : arg0];
+    }
+
+    function get(arg0) {
+        var local0 = %[];
+        if (typeof arg0 !== "String") {
+            return local0;
+        }
+        var local1 = search(arg0);
+        if (local1 !== void) {
+            (global.Dictionary.assign incontextof local0)(local1, 1);
+        }
+        if (local0.storage === void && arg0.indexOf(".") >= 0) {
+            local0.storage = get(arg0.split(".")[0]).storage;
+        }
+        return local0;
+    }
+
+    function add(arg0, arg1) {
+        set(arg0, getValue(arg1));
+    }
+
+    function script(arg0) {
+        add(arg0, arg0);
+    }
+
+    function kagAddScript(arg0) {
+        add(arg0.name, arg0.storage + arg0.target);
+        return 0;
+    }
+}
+this.SystemScriptMap = SystemScriptMap;
+
+class SystemManager extends SystemRegistory {
+    var sorted = %[];
+    var _pending;
+    var cobjs = [];
+    var currentState;
+    var lastState;
+
+    function SystemManager() {
+        super.SystemRegistory(...);
+    }
+
+    function add(arg0, arg1, arg2 = 0) {
+        if (!isDefined(arg0)) {
+            set(arg0, []);
+        }
+        var local0 = get(arg0);
+        local0.add([arg2, arg1]);
+    }
+
+    function erase(arg0) {
+        if (!isDefined(arg0)) {
+            return;
+        }
+        var local0 = get(arg0);
+        local0.clear();
+    }
+
+    function getArgs(args*) {
+        var local0 = [];
+        local0.assign(args);
+        return local0;
+    }
+
+    function store(arg0, arg1) {
+        if (_pending === void) {
+            return kag.tagHandlers[arg0](arg1);
+        }
+        arg1.tagname = arg0;
+        _pending.add(arg1);
+    }
+
+    function pending(arg0, *) {
+        _pending = [];
+        this[arg0](*);
+        var local0 = _pending.count - 1;
+        while (local0 >= 0) {
+            var local1 = _pending[local0];
+            var local2 = local1.tagname;
+            removeTagParam(local1, "tagname");
+            kag.insertTag(local2, local1);
+            --local0;
+        }
+        _pending = void;
+    }
+
+    function execDelay(arg0) {
+        arg0.target(arg0.args*);
+        return 0;
+    }
+
+    function _exec(arg0, *) {
+        if (!isDefined(arg0)) {
+            return;
+        }
+        var local0 = get(arg0);
+        var local1 = tagNormalize(arg0);
+        if (!sorted[local1]) {
+            local0.sort(function(arg0, arg1) { return arg0[0] < arg1[0]; }, 1);
+            sorted[local1] = 1;
+        }
+        for (var local2 = local0.count - 1; local2 >= 0; --local2) {
+            var local3 = local0[local2][1];
+            if (typeof local3 == "String") {
+                _exec(local3, *);
+                continue;
+            } else {
+                if (typeof local3 == "Object" && local3 instanceof "Function") {
+                    store("sysexec", %[name: arg0, target: local3, args: getArgs(*)]);
+                    continue;
+                }
+                continue;
+            }
+        }
+    }
+
+    function exec() {
+        _pending = void;
+        _exec(...);
+    }
+
+    function jump() {
+        _pending = void;
+        _jump(...);
+    }
+
+    function _jump(arg0, arg1, arg2) {
+        var local0;
+        var local1;
+        var local2 = 0;
+        if (arg1 != "") {
+            var local3 = SystemScript.get(arg1 + ((arg0 != "") ? ".from." + arg0 : ""));
+            if (local3 !== void) {
+                local0 = local3.storage;
+                local1 = local3.target;
+                local2 = local0 != "" || local1 != "";
+            }
+        }
+        if (kag.debugLevel >= tkdlSimple) {
+            dm("sysjump", arg0, arg1, arg2, local0, local1);
+        }
+        if (local2) {
+            kag.process(local0, local1);
+        }
+        if (arg0 != "") {
+            _exec(arg0 + ".leave", arg1);
+        }
+        if (arg2) {
+            _exec("back", arg0, arg1);
+        }
+        _exec("change", arg0, arg1);
+        if (arg0 != "" && arg1 != "") {
+            _exec("change." + arg0 + "." + arg1);
+        }
+        if (arg1 != "") {
+            store("syscurrent", %[name: arg1]);
+            _exec(arg1 + ".enter", arg0);
+        }
+        if (!local2) {
+            System.inform("sysjump: \"" + string(arg0) + "\" から \"" + string(arg1) + "\" への登録がありません");
+            _jump(, "title");
+        }
+    }
+
+    class _JumpOrCall {
+        var storage;
+        var target;
+        var iscall;
+
+        function _JumpOrCall(arg0, arg1) {
+            iscall = arg1;
+            if (arg0.call !== void) {
+                iscall = +arg0.call;
+            }
+            if (arg0.jump !== void) {
+                iscall = !+arg0.jump;
+            }
+            storage = arg0.storage;
+            if (typeof storage == "String" && (storage.length > 0 && storage.indexOf(".ks") < 0)) {
+                storage += ".ks";
+            }
+            target = arg0.target;
+        }
+
+        function invoke() {
+            if (iscall) {
+                kag.conductor.callLabel("");
+            }
+            if (storage !== void) {
+                kag.conductor.loadScenario(storage);
+            }
+            kag.conductor.goToLabel(target);
+        }
+    }
+
+    function getJumpOrCall(arg0) {
+        var local0 = new _JumpOrCall(arg0);
+        cobjs.add(local0);
+        return local0.invoke;
+    }
+
+    function addJumpOrCall(arg0, arg1, arg2, arg3, arg4) {
+        add(arg0, getJumpOrCall(%[storage: arg1, target: arg2, call: arg3]), arg4);
+    }
+
+    function addJump(arg0, arg1, arg2, arg3) {
+        addJumpOrCall(arg0, arg1, arg2, 0, arg3);
+    }
+
+    function addCall(arg0, arg1, arg2, arg3) {
+        addJumpOrCall(arg0, arg1, arg2, 1, arg3);
+    }
+
+    function kagAdd(arg0) {
+        add(arg0.name, getJumpOrCall(arg0, 1), arg0.priority);
+        return 0;
+    }
+
+    function kagExec(arg0) {
+        pending("_exec", arg0.name, arg0);
+        return 0;
+    }
+
+    function kagCurrent(arg0) {
+        lastState = currentState;
+        currentState = tagNormalize(arg0.name);
+        kag.callHook("onSystemHookStateChanged", currentState);
+        return 0;
+    }
+
+    function kagJump(arg0) {
+        pending("_jump", arg0.from, arg0.to, arg0.back);
+        return 0;
+    }
+
+    function disableClickable() {
+        global.unsetFocusedLayer(kag);
+        kag.tagHandlers.locklink();
+        kag.tagHandlers.rclick(%[enabled: 0]);
+    }
+}
+this.SystemManager = SystemManager;
+
+function unsetFocusedLayer(arg0) {
+    arg0.focusedLayer = null;
+}
+this.unsetFocusedLayer = unsetFocusedLayer incontextof this;
+
+function inTitleMenu(arg0) {
+    return SystemHook.currentState == "title";
+}
+this.inTitleMenu = inTitleMenu incontextof this;
+
+function inGameState(arg0) {
+    return SystemHook.currentState == "game";
+}
+this.inGameState = inGameState incontextof this;
+
+function startSubSystem(arg0, arg1, arg2 = 0) {
+    var local0 = SystemScript.get(arg1);
+    if (kag.historyShowing) {
+        kag.hideHistory();
+    }
+    if (!arg0) {
+        kag.process(local0.storage, local0.target, , arg2);
+    } else {
+        kag.callExtraConductor(local0.storage, local0.target);
+    }
+}
+this.startSubSystem = startSubSystem incontextof this;
+
+class SystemDefFileManBase extends SystemRegistory {
+    function SystemDefFileManBase(arg0) {
+        super.SystemRegistory();
+        load(arg0);
+    }
+
+    function getAlias(arg0) {
+        return (typeof arg0 === "String") ? arg0 : void;
+    }
+
+    function getValue(arg0) {
+        if (arg0 === void) {
+            return %[];
+        }
+        arg0 = arg0.trim();
+        if (arg0[0] === "@") {
+            return arg0.substr(1);
+        }
+        if (arg0.length === 0) {
+            return %[];
+        }
+        return makeValue(arg0.split(":"));
+    }
+
+    function makeValue(arg0) { }
+
+    function _searchList(arg0) {
+        var local0 = [arg0];
+        var local1 = [0];
+        var local2 = arg0.split(".");
+        var local3 = 0;
+        var local4 = 0;
+        while (local4 < local2.count) {
+            local3 += local2[local4].length;
+            ++local4;
+            local1[local4] = local3++;
+        }
+        local3 = 1;
+        while (local3 < local2.count) {
+            local4 = local2.count - local3;
+            while (local4 >= 0) {
+                local0.add(arg0.substr(0, local1[local4]) + ((local4 > 0) ? ".*" : "*")
+                    + arg0.substr(local1[local4 + local3]));
+                --local4;
+            }
+            ++local3;
+        }
+        local0.add("*");
+        return local0;
+    }
+
+    function get(arg0) {
+        var local0;
+        if (typeof arg0 === "String") {
+            local0 = super.search(arg0, _searchList);
+        }
+        return (local0 !== void) ? local0 : %[];
+    }
+}
+this.SystemDefFileManBase = SystemDefFileManBase;
+
+class SystemTransManager extends SystemDefFileManBase {
+    var defaulttrans = "crossfade";
+
+    function SystemTransManager(arg0) {
+        super.SystemDefFileManBase(...);
+    }
+
+    function makeValue(arg0) {
+        var local0 = %[method: (arg0[1] != "") ? arg0[1].trim() : defaulttrans];
+        var local1 = arg0[0];
+        if (local1 != "") {
+            local1 = local1.trim();
+        }
+        if (local1 != "") {
+            local0.time = +local1;
+        }
+        if (arg0[2] != "") {
+            local0.layer = arg0[2].trim();
+            local0.wait = 1;
+        }
+        return local0;
+    }
+
+    function trans(arg0, arg1) {
+        var local3;
+        var local4;
+        var local5;
+        var local0 = arg0.name;
+        var local1 = arg0.env;
+        removeTagParam(arg0, "name");
+        removeTagParam(arg0, "env");
+        var local2;
+        if (typeof (local2 = get(local0)) == "Object") {
+            if (local2.method != "" && local2.method.charAt(0) == "&") {
+                local3 = Scripts.eval(local2.method.substr(1), , , this);
+                if (typeof (local4 = get(local3)) == "Object") {
+                    local2 = local4;
+                } else {
+                    delete local2.method;
+                }
+            }
+            if (local2.method != "" && typeof global.world_object == "Object") {
+                try {
+                    local3 = global.world_object.env.getTransObject(local2.method);
+                    if (local3 !== void) {
+                        local4 = %[];
+                        (Dictionary.assignStruct incontextof local4)(local2);
+                        local5 = local2.time;
+                        delete local4.method;
+                        (Dictionary.assign incontextof local4)(local3, 0);
+                        if (local4.method == "") {
+                            local4.method = defaulttrans;
+                        }
+                        local4.time = local5;
+                        local2 = local4;
+                    }
+                } catch (e) { }
+            }
+            (Dictionary.assign incontextof arg0)(local2, 0);
+        }
+        local3 = void;
+        local4 = void;
+        local5 = void;
+        if (arg0.forcelayer !== void) {
+            arg0.layer = arg0.forcelayer;
+        }
+        if (typeof arg0.layer == "Object" && arg0.layer instanceof "LocalTransLayer") {
+            local4 = arg0.layer;
+            delete arg0.layer;
+            local5 = local4.comp;
+            local3 = local5 instanceof "LocalTransLayer"
+                    &&  (local4.left == local5.left &&  (local4.top == local5.top &&  (local4.width == local5.width
+                        &&  local4.height == local5.height)));
+            dm("localtrans", local3);
+        } else if (arg0.layer != "") {
+            local4 = kag.getLayerPageFromElm(arg0, 0);
+            local5 = kag.getLayerPageFromElm(arg0, 1);
+            if (!local4.visible) {
+                local4.setPos(local5.left, local5.top);
+                if (local4 instanceof "MessageLayer") {
+                    local4.setPosition(%[
+                        frame: "",
+                        color: 0,
+                        opacity: 0,
+                        width: local5.width,
+                        height: local5.height,
+                        visible: 1
+                    ]);
+                    kag.callHook("onSysLocalTransPrepare", local4, 1);
+                    local3 = 1;
+                } else {
+                    dm("*** systrans unsupported non-message layer");
+                    local4.setSize(local4.width, local4.height);
+                    local4.fillRect(0, 0, local4.width, local4.height, local4.neutralColor);
+                    local4.visible = 1;
+                }
+            } else if (!local5.visible) {
+                local5.setPos(local4.left, local4.top);
+                if (local5 instanceof "MessageLayer") {
+                    local5.setPosition(%[
+                        frame: "",
+                        color: 0,
+                        opacity: 0,
+                        width: local4.width,
+                        height: local4.height,
+                        visible: 1
+                    ]);
+                    kag.callHook("onSysLocalTransPrepare", local5, 0);
+                    kag.insertTag("position", %[layer: arg0.layer, page: "fore", visible: 0]);
+                    local3 = 1;
+                } else {
+                    dm("*** systrans unsupported non-message layer");
+                    local5.setSize(local5.width, local5.height);
+                    local5.fillRect(0, 0, local5.width, local5.height, local5.neutralColor);
+                    local5.visible = 1;
+                }
+            } else if (local4.left != local5.left
+                    ||  local4.top != local5.top
+                    ||  local4.width != local5.width
+                    ||  local4.height != local5.height) {
+                dm("*** systrans unmached layersize");
+                delete arg0.layer;
+            } else {
+                local3 = 1;
+            }
+        }
+        SystemHook.exec("systrans." + local0);
+        if (local1 && typeof kag.addNextTag == "Object") {
+            addTagParam(arg0, arg0.method, 1);
+            removeTagParam(arg0, "method");
+            addTagParam(arg0, "sync", 1);
+            arg0.tagname = "endtrans";
+            kag.addNextTag(arg0.tagname, arg0);
+            return 0;
+        }
+        if (local3 && (typeof kag.normalizeTransitionParams == "Object" && !kag.isD3D)) {
+            var local6 = kag.normalizeTransitionParams(arg0);
+            local5.stopTransition();
+            kag.forEachEventHook("onPreTransition");
+            local4.stopTransition();
+            local4.transWithChildren = arg0.children === void || +arg0.children;
+            local4.transExchange = +arg0.exchange;
+            kag.callHook("onStartLocalSysTrans", arg0, local4, local5, local0);
+            local4.beginTransition(local6, local4.transWithChildren, local5, arg0);
+            local4.onTransitionCompletedHook = this.onTransitionCompleted;
+            return (myTransWait incontextof kag)(local4, arg0.canskip, +arg0.wait);
+        }
+        if (kag.sysnoeffect) {
+            arg0.time = 0;
+        }
+        return arg1.trans(arg0);
+    }
+
+    class LocalTransLayer extends Layer {
+        var comp;
+        var onTransitionCompletedHook;
+        var transWithChildren;
+        var transExchange;
+
+        function LocalTransLayer() {
+            super.Layer(...);
+        }
+
+        function finalize() {
+            super.finalize(...);
+        }
+
+        function onTransitionCompleted(arg0, arg1) {
+            var local0 = super.onTransitionCompleted(...);
+            if (onTransitionCompletedHook) {
+                onTransitionCompletedHook(this, arg0, arg1);
+            }
+            return local0;
+        }
+    }
+
+    function myTransWait(arg0, arg1, arg2 = 0) {
+        var local0 = "trans_" + string(arg0);
+        if ((arg1 === void || +arg1) && clickSkipEnabled) {
+            if (skipMode && effectspeed == 0) {
+                arg0.stopTransition(1);
+                return 0;
+            }
+            conductor.wait(%[click: function(arg0) {
+                updateBeforeCh = 1;
+                if (isvalid arg0) {
+                    arg0.stopTransition(1);
+                }
+            } incontextof this, click_arg: arg0, local0 => function(arg0) {
+                updateBeforeCh = 1;
+                return arg0;
+            } incontextof this, local0 + "_arg" => arg2]);
+        } else {
+            conductor.wait(%[local0 => function(arg0) {
+                updateBeforeCh = 1;
+                return arg0;
+            } incontextof this, local0 + "_arg" => arg2]);
+        }
+        return -2;
+    }
+
+    function onTransitionCompleted(arg0, arg1, arg2) {
+        kag.callHook("onEndLocalSysTrans", arg0, arg1, arg2);
+        if (arg0 instanceof "MessageLayer" && arg2) {
+            arg0.assign(arg2, 0);
+            arg0.exchangeInfo();
+            var local0 = arg0.id;
+            arg0.window.fore.messages[local0] = arg0.window.back.messages[local0];
+            arg0.window.back.messages[local0] = arg0.window.fore.messages[local0];
+            arg0.window.current = (arg0.window.currentPage ? arg0.window.back : arg0.window.fore).messages[arg0.window.currentNum];
+            arg0.subLayersReAbsolute();
+            arg0.comp.subLayersReAbsolute();
+        }
+        arg0.window.conductor.trigger("trans_" + string(arg0));
+        arg0.window.forEachEventHook("onExchangeForeBack");
+    }
+}
+this.SystemTransManager = SystemTransManager;
+
+class SystemSeManager extends SystemDefFileManBase {
+    var defaultbuf;
+
+    function SystemSeManager(arg0, arg1 = -1) {
+        defaultbuf = arg1;
+        super.SystemDefFileManBase(arg0);
+    }
+
+    function makeValue(arg0) {
+        return %[storage: arg0[0].trim(), buf: (arg0[1] != "") ? +arg0[1].trim() : defaultbuf];
+    }
+
+    function play(arg0) {
+        if (typeof arg0 == "String") {
+            arg0 = get(arg0);
+        }
+        if (arg0.storage == "") {
+            return;
+        }
+        var local0 = kag.se[+arg0.buf];
+        if (local0 === void) {
+            return;
+        }
+        if (arg0.volume !== void) {
+            local0.setOptions(%[gvolume: arg0.volume]);
+        }
+        local0.play(%[storage: arg0.storage]);
+    }
+
+    function state(arg0) {
+        if (typeof arg0 == "String") {
+            arg0 = get(arg0);
+        }
+        return (arg0.storage !== void) ? kag.se[+arg0.buf].status : "";
+    }
+
+    function add(arg0, arg1, arg2) {
+        var local0 = arg1;
+        if (arg2 !== void) {
+            local0 += ":" + arg2;
+        }
+        set(arg0, getValue(local0));
+    }
+
+    function setTargetSE(arg0, arg1, arg2) {
+        var local0 = string(arg1) + "." + string(arg2);
+        var local1 = get(local0);
+        if (local1 === void || local1.storage == "" || arg0[arg2 + "se"] !== void) {
+            return;
+        }
+        arg0[arg2 + "se"] = local1.storage;
+        arg0[arg2 + "sebuf"] = local1.buf;
+    }
+
+    function setUiloadSE(arg0, arg1, arg2) {
+        for (var local0 = 0; local0 < arg0.count; ++local0) {
+            var local1 = arg0[local0];
+            var local2 = arg1[local1];
+            if (local2 === void) {
+                continue;
+            } else {
+                if (local2.name != "") {
+                    local1 = local2.name;
+                }
+                if (local2.copy != "" && (arg1[local2.copy] !== void && arg1[local2.copy].sename != "")) {
+                    local1 = arg1[local2.copy].sename;
+                }
+                if (local2.sename != "") {
+                    local1 = local2.sename;
+                }
+                switch (local2.class) {
+                    case "part":
+                        continue;
+                    case "base":
+                        continue;
+                    case "layer":
+                        continue;
+                }
+                var local3 = arg2 + "." + local1;
+                setTargetSE(local2, local3, "click");
+                setTargetSE(local2, local3, "enter");
+                setTargetSE(local2, local3, "leave");
+            }
+        }
+    }
+
+    function setElementSE(arg0, arg1, arg2) {
+        if (arg0 === void || arg2 === void) {
+            return;
+        }
+        var local0 = (arg0.sename != "") ? arg0.sename : arg1;
+        var local1 = 0;
+        while (local1 < arg2.count) {
+            if (arg2[local1] != "") {
+                setTargetSE(arg0, local0, arg2[local1]);
+            }
+            ++local1;
+        }
+    }
+}
+this.SystemSeManager = SystemSeManager;
+
+function checkVideoMixerFailed(arg0, arg1) {
+    var local0;
+    var local1 = 0;
+    if (System.getArgument("-vomstyle") != "") {
+        return local1;
+    }
+    if (!Storages.isExistentStorage(arg1)) {
+        var local2;
+        if (Storages.isExistentStorage(arg1 + (local2 = ".mpg"))) {
+            arg1 += local2;
+        } else if (Storages.isExistentStorage(arg1 + (local2 = ".wmv"))) {
+            arg1 += local2;
+        }
+    }
+    if (!Storages.isExistentStorage(arg1)) {
+        throw new Exception(string(arg1) + "が見つかりません");
+    }
+    try {
+        local0 = new VideoOverlay(this);
+        local0.mode = vomMixer;
+        local0.visible = 0;
+        local0.open(arg1);
+        local0.play();
+        local0.stop();
+        local0.close();
+    } catch (e) {
+        if (local0 !== void) {
+            local0.close();
+        }
+        local1 = 1;
+    }
+    if (local0 !== void) {
+        invalidate(local0);
+    }
+    return local1;
+}
+this.checkVideoMixerFailed = checkVideoMixerFailed incontextof this;
+
+class SystemActionBase {
+    var _kag;
+    var _kagHooks = [];
+    var _qsvExists;
+
+    property kag {
+        getter() {
+            return _kag;
+        }
+    }
+
+    function SystemActionBase(arg0) {
+        _kag = arg0;
+        global.automodeAction = auto;
+        global.skipmodeAction = skip;
+        global.hidewindowAction = hide;
+        global.startSave = save;
+        global.startLoad = load;
+        global.startOption = option;
+        global.startTitle = title;
+        global.moveToNextSelection = next;
+        global.moveToPrevSelection = prev;
+        global.canQuickLoad = function() { return this.canQuickLoad; } incontextof this;
+        updateQuickSaveDataExists();
+        SystemHook.add("change", updateQuickSaveDataExists);
+        entryKagHooks(arg0.addHook);
+    }
+
+    function finalize() {
+        try {
+            entryKagHooks(kag.removeHook);
+        } catch (e) { }
+    }
+
+    function entryKagHooks(arg0) {
+        var local0 = 0;
+        var local1 = _kagHooks.count;
+        while (local0 < local1) {
+            var local2 = _kagHooks[local0];
+            var local3 = local2;
+            if (typeof local2 == "Object") {
+                local3 = local2[1];
+                local2 = local2[0];
+            }
+            if (typeof this[local3] == "Object") {
+                arg0(local2, this[local3]);
+            }
+            ++local0;
+        }
+    }
+
+    function checkByKey_(arg0) {
+        return (typeof arg0 == "Object" && arg0 instanceof "Array") ? arg0 : void;
+    }
+
+    function do_(arg0, arg1, arg2, *) {
+        var local0 = checkByKey_(arg2);
+        if (local0) {
+            kag.releaseCapture();
+        }
+        if (arg1 != "") {
+            clickMenuItem(arg1, arg0, local0);
+        } else {
+            arg0(local0, *);
+        }
+        return 1;
+    }
+
+    function _tglSubMode(arg0, arg1, arg2, arg3, *) {
+        if (!kag.inStable) {
+            return;
+        }
+        if (_chkReturn(arg0, arg1)) {
+            arg2 = function() {
+
+            };
+            arg3 = "";
+        }
+        return do_(arg2, arg3, *);
+    }
+
+    function _chkReturn(arg0, arg1) {
+        var local0 = kag.inStable
+                &&  (SystemConfig[arg1] && (SystemHook.currentState == arg0 && kag.currentDialog === void));
+        if (local0) {
+            kag.onPrimaryRightClick();
+        }
+        return local0;
+    }
+
+    function _chkEnable(arg0) {
+        var local2;
+        var local0 = kag.historyShowing || (kag.currentDialog || kag.panelModal);
+        var local1 = kag.selectShowing || (kag.mapSelectShowing || (kag.transShowing || kag.panelShowing));
+        switch (arg0) {
+            case "vreplay":
+                return inGameState(kag) && !local0;
+            case "hide":
+                return inGameState(kag) && (!inSystemMenu(kag) && !local0);
+            case "auto":
+                return inGameState(kag)
+                        &&  (!inSystemMenu(kag) && (!local0 && (!local1 && (!kag.inSleep && !kag.skipMode))));
+            case "skip":
+                local2 = !local0 && (!local1 && !kag.inSleep);
+                if (local2 && kag.messageLayerHiding) {
+                    kag.showMessageLayerByUser();
+                }
+                return local2;
+            case "backskip":
+                local2 = inGameState(kag) && (!local0 && (!kag.transShowing && !kag.panelShowing));
+                if (local2) {
+                    if (kag.messageLayerHiding) {
+                        kag.showMessageLayerByUser();
+                    }
+                    if (kag.selectShowing) {
+                        kag.hideSelect();
+                    }
+                    if (kag.mapSelectShowing) {
+                        kag.hideMapSelect();
+                    }
+                    if (kag.inSleep) {
+                        kag.processGo();
+                    }
+                }
+                return local2;
+        }
+        return 1;
+    }
+
+    function screen() {
+        if (SystemConfig.disableDisplayMenuInMoviePlaying && kag.isMoviePlaying()) {
+            return 1;
+        }
+        return do_(_screen, "toggleScreenMenuItem", *);
+    }
+
+    function _window() {
+        if (typeof kag.winResMenu != "undefined") {
+            kag.winResMenu.enabled = 1;
+        }
+        kag.onWindowedMenuItemClick();
+    }
+
+    function _fullscreen() {
+        if (typeof kag.winResMenu != "undefined") {
+            kag.winResMenu.enabled = 0;
+        }
+        kag.onFullScreenMenuItemClick();
+    }
+
+    function _screen() {
+        if (kag.fullScreened) {
+            _window();
+        } else {
+            _fullscreen();
+        }
+    }
+
+    function about() {
+        return do_(_about, "helpAboutMenuItem", *);
+    }
+
+    function _about() {
+        kag.onHelpAboutMenuItemClick();
+    }
+
+    function exit() {
+        return do_(_exit, "exitMenuItem", *);
+    }
+
+    function _exit() {
+        kag.onExitMenuItemClick();
+    }
+
+    function quit() {
+        return exit(...);
+    }
+
+    function _quit() {
+        return _exit(...);
+    }
+
+    function title() {
+        return do_(_title, "goToStartMenuItem", *);
+    }
+
+    function _title() {
+        if (!kag.startAnchorEnabled) {
+            return;
+        }
+        if (SystemConfig.askTitle) {
+            askYesNo("最初に戻ります。よろしいですか ?", "確認", _title_);
+        } else {
+            _title_();
+        }
+    }
+
+    function _title_() {
+        loadFunction("title");
+    }
+
+    function click() {
+        return do_(_click, void, *);
+    }
+
+    function _click(arg0) {
+        if (arg0) {
+            kag.onPrimaryClickByKey();
+        } else {
+            kag.onPrimaryClick();
+        }
+    }
+
+    function rclick() {
+        return do_(_rclick, "rightClickMenuItem", *);
+    }
+
+    function _rclick() {
+        kag.onRightClickMenuItemClick();
+    }
+
+    function hide() {
+        return do_(_hide, void, *);
+    }
+
+    function _hide(arg0) {
+        if (!_chkEnable("hide")) {
+            return;
+        }
+        if (kag.inStable) {
+            _hide_(...);
+        } else {
+            _click(...);
+        }
+    }
+
+    function _hide_() {
+        kag.switchMessageLayerHiddenByUser();
+    }
+
+    function option() {
+        return _tglSubMode("option", "toggleOption", _option, "configMenuItem", *);
+    }
+
+    function _option() {
+        var local0 = inTitleMenu(kag);
+        startSubSystem(!local0, "option.sysfrom." + (local0 ? "title" : "game"));
+    }
+
+    function save() {
+        return _tglSubMode("save", "toggleSave", _save, "storeMenu", *);
+    }
+
+    function load() {
+        return _tglSubMode("load", "toggleLoad", _load, "restoreMenu", *);
+    }
+
+    function _save() {
+        startSubSystem(1, "save.sysfrom.game");
+    }
+
+    function _load() {
+        var local0 = inTitleMenu(kag);
+        startSubSystem(!local0, "load.sysfrom." + (local0 ? "title" : "game"));
+    }
+
+    function _preSave() {
+        var local0 = kag.historyLayer;
+        if (typeof local0.currentText != "undefined") {
+            kag.addBookMarkInfo("lastText", local0.currentText);
+        }
+        kag.callHook("onPreSaveStoreBookmarkInfo", kag.addBookMarkInfo);
+        _changeSaveThumbnail();
+    }
+
+    function _changeSaveThumbnail() {
+        var local0;
+        try {
+            if (kag.snapshotLayer === void) {
+                kag.lockSnapshot();
+            }
+            local0 = !SystemConfig.saveThumbDisableRedrawList ? [] : void;
+            var local1 = _getSaveThumbnailReplace(local0);
+            if (local1 !== void) {
+                var local2 = kag.snapshotLayer;
+                switch (typeof local1) {
+                    case "Object":
+                        local1(local2, kag.temporaryLayer);
+                        break;
+                    case "String":
+                        if (local1 != "") {
+                            local2.loadImages(local1);
+                        }
+                        break;
+                }
+                _applySaveThumbnailRedrawList(local2, local0);
+            }
+        } catch (e) {
+            dm(e.message);
+        }
+    }
+
+    function _applySaveThumbnailRedrawList(arg0, arg1) {
+        if (!arg0 || !arg1 || !arg1.count) {
+            return;
+        }
+        var local0 = new KAGLayer(arg0.window, arg0);
+        local0.assignImages(arg0);
+        var local1 = 0;
+        var local2 = arg1.count;
+        for (; local1 < local2; ++local1) {
+            var local3 = arg1[local1];
+            if (!(local3 instanceof "Array")) {
+                continue;
+            } else {
+                var local4 = [];
+                local4.assign(local3);
+                var local5;
+                if (typeof (local5 = local4.shift()) != "Object" || !(local5 instanceof "Function")) {
+                    continue;
+                } else {
+                    try {
+                        (local5 incontextof local0)(local4*);
+                        continue;
+                    } catch (e) {
+                        if (e && (typeof e == "Object" && typeof e.message == "String")) {
+                            dm(e.message);
+                        }
+                        continue;
+                    }
+                }
+            }
+        }
+        arg0.assignImages(local0);
+        invalidate(local0);
+    }
+
+    function _getSaveThumbnailReplace(arg0) {
+        var local4;
+        var local5;
+        var local0;
+        var local1 = [];
+        var local2 = [];
+        local2.assign(world_object.envobjects);
+        var local3 = 1;
+        while (local3 < local2.count) {
+            local4 = local2[local3];
+            if (local4 && (local4 instanceof "EnvLayerObject" && local4.visible)) {
+                local5 = local4.targetLayer;
+                if (local5 !== void && (local5.visible && local5.opacity > 0)) {
+                    local1.add(local4);
+                }
+            }
+            local3 += 2;
+        }
+        local1.sort(function(arg0, arg1) { return arg0.targetLayer.absolute > arg1.targetLayer.absolute; });
+        local3 = 0;
+        while (local3 < local1.count) {
+            local4 = local1[local3].imageFile;
+            if ((string(local4)).charAt(0) == "&") {
+                local4 = local4!;
+            }
+            local0 = _checkSaveThumbnail(local4, local1[local3]);
+            if (local0 !== void) {
+                if (arg0) {
+                    local5 = void;
+                    var local6 = local1[local3];
+                    try {
+                        local5 = local6.targetLayer._image._redrawList;
+                    } catch (e) { }
+                    if (local5 && local5 instanceof "Array") {
+                        arg0.assign(local5);
+                    }
+                }
+                break;
+            } else {
+                ++local3;
+                continue;
+            }
+        }
+        return local0;
+    }
+
+    function _checkSaveThumbnail(arg0, arg1) {
+        var local0;
+        local0 = Storages.chopStorageExt(Storages.extractStorageName((string(arg0)).toLowerCase()));
+        var local1 = _findThumbReplaceEffect(local0, arg0, arg1);
+        if (local1 != "") {
+            if (local1 != "" && debugWindowEnabled) {
+                dm("thumbnail replaced:", local0, local1);
+            }
+            var local2 = local1.indexOf(":");
+            return (local2 < 0) ? local1
+                : _findThumbReplaceMethod(local1.substr(local2 + 1), local0, arg0, arg1, local1.substr(0, local2));
+        }
+    }
+
+    function _findThumbReplaceEffect(arg0, arg1, arg2) {
+        var local0;
+        var local1 = SystemConfig.saveThumbReplaceFilter;
+        if (local1 !== void) {
+            if (typeof local1 == "String") {
+                local0 = applyInlineStringVariableExtract(local1, %[image: arg1, tag: arg0, obj: arg2]);
+            } else if (typeof local1 == "Object" && local1) {
+                if (local1 instanceof "Dictionary") {
+                    local0 = (arg0 == "") ? void : local1[arg0];
+                } else {
+                    local0 = local1(arg1, arg2, arg0);
+                }
+            }
+        }
+        var local2 = SystemConfig.saveThumbReplaceList;
+        if (local2 != "") {
+            if (arg0 == "") {
+                return;
+            }
+            if (typeof this.thumbReplMap == "undefined") {
+                loadThumbReplaceList(local2);
+            }
+            local0 = thumbReplMap[arg0];
+            if (local0 === void) {
+                local0 = searchThumbReplace(arg0);
+            }
+        }
+        return local0;
+    }
+
+    function _findThumbReplaceMethod(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = %[w: 64, h: 60];
+        var local1 = "effectThumbPixelization";
+        if (arg4 != "") {
+            local0[":"] = [arg4, arg3];
+            local1 = "effectThumbPixelizationWithMask";
+        }
+        var local2 = SystemConfig.saveThumbEffectDefaultParam;
+        if (local2 !== void) {
+            (Dictionary.assign incontextof local0)(local2, 0);
+        }
+        var local3 = arg0.split(":");
+        var local4 = local3.count - 1;
+        while (local4 >= 0) {
+            var local5 = string(local3[local4]);
+            var local6;
+            var local7;
+            var local8 = local5.indexOf("=");
+            if (local8 > 0) {
+                local6 = local5.substr(0, local8);
+                local7 = +local5.substr(local8 + 1);
+            } else {
+                local6 = local5;
+                local7 = 1;
+            }
+            if (local6 != "") {
+                local0[local6] = local7;
+            }
+            --local4;
+        }
+        return this[(local0.method != "") ? local0.method : local1] incontextof local0;
+    }
+
+    function effectThumbPixelization(arg0, arg1, arg2) {
+        if (arg1 === void) {
+            arg1 = kag.temporaryLayer;
+        }
+        if (arg2 === void) {
+            arg2 = this;
+        }
+        try {
+            arg1.shrinkCopyFast(arg0, arg2.w, arg2.h);
+            if (arg2.blur) {
+                arg0.assignImages(arg1);
+            } else {
+                arg0.stretchCopy(
+                    0, 0, arg0.imageWidth, arg0.imageHeight, arg1, 0, 0, arg1.imageWidth, arg1.imageHeight, stNearest
+                );
+            }
+        } catch (e) {
+            global.Debug.notice(e.message);
+        }
+    }
+
+    function effectThumbPixelizationWithMask(arg0, arg1, arg2) {
+        if (arg1 === void) {
+            arg1 = kag.temporaryLayer;
+        }
+        if (arg2 === void) {
+            arg2 = this;
+        }
+        var local4;
+        function create(arg0, arg1) {
+            var local0 = new global.Layer(arg0, arg0.poolLayer);
+            local0.name = arg1;
+            return local0;
+        }
+        var local0 = create(arg0.window, "bak1");
+        var local1 = create(arg0.window, "bak2");
+        var local2 = create(arg0.window, "mask");
+        var local3 = create(arg0.window, "work");
+        try {
+            var local9;
+            local4 = arg2[":"];
+            var local5 = local4[0];
+            var local6 = local4[1];
+            var local7 = local6.targetLayer;
+            var local8 = local7._image._image;
+            local0.assignImages(local7);
+            local1.assignImages(local8);
+            try {
+                local9 = local8.imageWidth;
+                var local10 = local8.imageHeight;
+                local3.setImageSize(local9, local10);
+                local2.setImageSize(local9, local10);
+                arg1.loadImages(local5);
+                local2.stretchCopy(0, 0, local9, local10, arg1, 0, 0, arg1.imageWidth, arg1.imageHeight, stFastLinear);
+                arg1.shrinkCopyFast(local8, arg2.w, arg2.h);
+                local3.stretchCopy(
+                    0, 0, local9, local10, arg1, 0, 0, arg1.imageWidth, arg1.imageHeight,
+                    arg2.blur ? stFastLinear : stNearest
+                );
+                local3.clipAlphaRect(0, 0, local2, 0, 0, local9, local10, 0);
+                local2.hasImage = 0;
+                local8.operateRect(0, 0, local3, 0, 0, local9, local10);
+                local7.calcAffine();
+                local7.onPaint();
+                global.kag.captureSnapshot(arg0);
+            } catch (e) {
+                (global.Layer.assignImages incontextof local7)(local0);
+                (global.Layer.assignImages incontextof local8)(local1);
+                throw e;
+            }
+            (global.Layer.assignImages incontextof local7)(local0);
+            (global.Layer.assignImages incontextof local8)(local1);
+        } catch (e) {
+            global.Debug.notice(e.message);
+        }
+        invalidate(local0);
+        invalidate(local1);
+        invalidate(local2);
+        invalidate(local3);
+    }
+
+    function loadThumbReplaceList(arg0) {
+        var local0;
+        this.thumbReplMap = %[];
+        this.thumbReplList = %[];
+        try {
+            local0 = loadConfigFile(arg0);
+            var local1 = 0;
+            var local2 = local0.count;
+            while (local1 < local2) {
+                var local3 = local0[local1];
+                var local4 = (string(local3[0])).trim();
+                if (local4 == "") {
+                    local4 = ":";
+                }
+                for (var local5 = local3.count - 1; local5 >= 1; --local5) {
+                    var local6 = (string(local3[local5])).trim().toLowerCase();
+                    if (local6 == "") {
+                        continue;
+                    } else {
+                        var local7 = local6.indexOf("*");
+                        if (local7 >= 0) {
+                            if (local7 != local6.length - 1) {
+                                throw new Exception("ワイルドカードが末尾ではありません:" + local6);
+                            }
+                            if (!local7) {
+                                throw new Exception("全画像マッチはできません:" + local6);
+                            }
+                            thumbReplList[local6.substr(0, local7)] = local4;
+                            continue;
+                        } else {
+                            thumbReplMap[local6] = local4;
+                        }
+                    }
+                }
+                ++local1;
+            }
+        } catch (e) {
+            Debug.notice(e.message);
+        }
+    }
+
+    function searchThumbReplace(arg0) {
+        if (typeof thumbReplMap[arg0] != "undefined" && debugWindowEnabled) {
+            dm("already mapped", arg0, thumbReplMap[arg0]);
+        }
+        var local0 = arg0.length;
+        while (local0 > 0) {
+            var local1 = arg0.substr(0, local0);
+            var local2 = thumbReplList[local1];
+            if (local2 != "") {
+                thumbReplMap[arg0] = local2;
+                return local2;
+            }
+            --local0;
+        }
+        thumbReplMap[arg0] = "";
+        return "";
+    }
+
+    property qsaveBookmarkNumber {
+        getter() {
+            return kag.numBookMarks - 1;
+        }
+    }
+
+    property canQuickLoad {
+        getter() {
+            var local0 = qsaveBookmarkNumber;
+            return kag.getBookMarkDate(local0) != "" && _qsvExists;
+        }
+    }
+
+    function updateQuickSaveDataExists() {
+        _qsvExists = Storages.isExistentStorage(kag.getBookMarkFileNameAtNum(qsaveBookmarkNumber));
+    }
+
+    function qsave() {
+        return do_(_qsave_, "quickStoreMenu", *);
+    }
+
+    function qload() {
+        if (canQuickLoad) {
+            do_(_qload_, "quickRestoreMenu", *);
+        }
+        return 1;
+    }
+
+    function _qsave() {
+        _qsvld(_qsave_, "クイックセーブしますか？", "askQSave");
+    }
+
+    function _qload() {
+        _qsvld(_qload_, "クイックロードしますか？", "askQLoad");
+    }
+
+    function _qsvld(arg0, arg1, arg2) {
+        if (kag.historyShowing) {
+            kag.hideHistory();
+        }
+        if (SystemConfig[arg2]) {
+            askYesNo(arg1, "確認", arg0);
+        } else {
+            arg0();
+        }
+    }
+
+    function _qsave_() {
+        _preSave();
+        if (qsaveFunction(qsaveBookmarkNumber) && SystemConfig.notifyQSave) {
+            askYesNo("クイックセーブしました", "通知");
+        }
+        updateQuickSaveDataExists();
+    }
+
+    function _qload_() {
+        if (qloadFunction(qsaveBookmarkNumber) && SystemConfig.notifyQLoad) {
+            askYesNo("クイックロードしました", "通知");
+        }
+    }
+
+    function skip() {
+        return do_(_skip, void, *);
+    }
+
+    function _skip(arg0) {
+        if (!_chkEnable("skip")) {
+            return;
+        }
+        _skip_(...);
+    }
+
+    function _skip_(arg0) {
+        if (arg0) {
+            kag.skipToNextStopByKey();
+        } else {
+            kag.onSkipToNextStopMenuItemClick();
+        }
+    }
+
+    function backskip() {
+        return do_(_backskip, void, *);
+    }
+
+    function _backskip(arg0) {
+        if (!_chkEnable("backskip")) {
+            return;
+        }
+        _backskip_(...);
+    }
+
+    function _backskip_(arg0, arg1 = 1) {
+        var local0 = kag.skipMode == SKIP_STOP && world_object.reversePlay;
+        kag.cancelSkip();
+        if (local0) {
+            return;
+        }
+        world_object.reversePlay = arg1;
+        var local1 = 1;
+        this.kag.allskip <-> local1;
+        try {
+            kag.skipToStop();
+        } catch (e) {
+            this.kag.allskip <-> local1;
+            throw e;
+        }
+        this.kag.allskip <-> local1;
+        kag.setMenuAccessibleAll();
+    }
+
+    function auto() {
+        return do_(_auto, void, *);
+    }
+
+    function _auto(arg0) {
+        if (!_chkEnable("auto")) {
+            return;
+        }
+        _auto_(...);
+    }
+
+    function _auto_(arg0) {
+        if (arg0) {
+            kag.switchAutoModeByKey();
+        } else {
+            kag.onAutoModeMenuItemClick();
+        }
+    }
+
+    function backlog() {
+        return do_(_backlog, void, *);
+    }
+
+    function _backlog(arg0) {
+        if (kag.historyShowing) {
+            if (kag.historyLayer.enabled) {
+                kag.hideHistory();
+            } else {
+                kag.stopAction(kag.historyLayer);
+            }
+        } else if (arg0) {
+            kag.historyLayer.startByKey = 1;
+            kag.showHistoryByKey();
+        } else {
+            kag.onShowHistoryMenuItemClick();
+        }
+    }
+
+    function log() {
+        return backlog(...);
+    }
+
+    function _log() {
+        return _backlog(...);
+    }
+
+    function next() {
+        return do_(_next, "goNextMenuItem", *);
+    }
+
+    function prev() {
+        return do_(_prev, "goBackMenuItem", *);
+    }
+
+    function _next() {
+        if (SystemConfig.askNext) {
+            askYesNo("次の選択肢に進みますか", "確認", _next_);
+        } else {
+            _next_();
+        }
+    }
+
+    function _prev() {
+        if (!kag.isHistoryOfStoreAlive()) {
+            return;
+        }
+        if (SystemConfig.askPrev) {
+            askYesNo("前の選択肢に戻りますか", "確認", _prev_);
+        } else {
+            _prev_();
+        }
+    }
+
+    function _next_() {
+        kag.skipToStop(1);
+    }
+
+    function _prev_() {
+        if (playerWorking) {
+            kag.goBackHistory(0);
+        } else {
+            loadFunction("prev");
+        }
+    }
+
+    property playerWorking {
+        getter() {
+            return typeof global.world_object == "Object" && world_object.playerWorking;
+        }
+    }
+
+    function vreplay() {
+        return do_(_vreplay, "voiceReplayMenuItem", *);
+    }
+
+    function _vreplay() {
+        if (!_chkEnable("vreplay")) {
+            return;
+        }
+        _vreplay_();
+    }
+
+    function _vreplay_() {
+        var local0 = kag.currentVoiceScript;
+        if (local0 != "") {
+            Scripts.eval(local0);
+        }
+    }
+}
+this.SystemActionBase = SystemActionBase;
+
+function SetSystemConfigDefaults(arg0, arg1) {
+    if (arg1 === void) {
+        arg1 = global.SystemConfig;
+    }
+
+    var local0 = "undefined";
+    var local1 = [];
+    local1.assign(arg0);
+    var local2 = 0;
+    var local3 = local1.count;
+    while (local2 < local3) {
+        var local4 = local1[local2];
+        if (local4 != "" && typeof arg1[local4] == local0) {
+            arg1[local4] = local1[local2 + 1];
+        }
+        local2 += 2;
+    }
+}
+this.SetSystemConfigDefaults = SetSystemConfigDefaults incontextof this;
+
+function GetSystemConfigItem(arg0, arg1, arg2) {
+    if (arg2 === void) {
+        arg2 = global.SystemConfig;
+    }
+    return (typeof arg2[arg0] != "undefined") ? arg2[arg0] : arg1;
+}
+this.GetSystemConfigItem = GetSystemConfigItem incontextof this;
+this.systemReboot = systemReboot incontextof this;
+this.loadExMenuInterface = loadExMenuInterface incontextof this;
+this.inputMiddleZoomPercent = inputMiddleZoomPercent incontextof this;
+this.bindGamePadButton = bindGamePadButton incontextof this;
+this.onBootStrapKicked = onBootStrapKicked incontextof this;
+this.entryErrorLogWithTimeStamp = entryErrorLogWithTimeStamp incontextof this;
+this.onSystemExceptionHandlerHook = onSystemExceptionHandlerHook incontextof this;
+this.Storages_deleteFile = Storages_deleteFile incontextof this;
+this.checkEmergencySaveData = checkEmergencySaveData incontextof this;
+this.loadEmergencySaveData = loadEmergencySaveData incontextof this;
+this.terminator = new DelayedInvoker();
+DelayedTrigger.instances = %[];
+this.Dialog = new DialogModeManager();
+this.Current = Dialog;
+
+{
+    addKagHandler("dialog", function(arg0) {
+        if (arg0.current !== void && arg0.current != Current._now) {
+            return 0;
+        }
+        if (arg0.done) {
+            Current.done();
+        } else if (arg0.name !== void) {
+            Current.start(arg0);
+        } else if (arg0.command !== void) {
+            Current.cmd(arg0.command);
+        } else if (arg0.action !== void) {
+            var local0 = Current.action(arg0.action, arg0);
+            if (arg0.retval && typeof local0 == "Integer") {
+                return local0;
+            }
+        }
+        return 0;
+    }, 0);
+
+    this.SystemScript = new SystemScriptMap();
+    this.SystemHook = new SystemManager();
+    global.systemJump = SystemHook.jump;
+    addKagHandler("addsyshook", SystemHook.kagAdd);
+    addKagHandler("syshook", SystemHook.kagExec);
+    addKagHandler("sysexec", SystemHook.execDelay);
+    addKagHandler("syscurrent", SystemHook.kagCurrent);
+    addKagHandler("sysjump", SystemHook.kagJump);
+    SystemHook.add("change", SystemHook.disableClickable);
+    SystemTransManager.instance = new SystemTransManager("systrans.ini");
+
+    addKagHandler("systrans", function(arg0) {
+        SystemHook.pending("_exec", arg0.name, arg0);
+        return SystemTransManager.instance.trans(arg0, kag.tagHandlers);
+    }, 0);
+
+    SystemSeManager.instance = new SystemSeManager("sysse.ini");
+    global.getSysSE = SystemSeManager.instance.get;
+    global.playSysSE = SystemSeManager.instance.play;
+    global.stateSysSE = SystemSeManager.instance.state;
+    global.uiloadSysSE = SystemSeManager.instance.setUiloadSE;
+    global.elementSysSE = SystemSeManager.instance.setElementSE;
+    global.addSysSeStorage = SystemSeManager.instance.add;
+
+    &System._uiloadExtraType = %[sysse: function(arg0, arg1, arg2, arg3, arg4) {
+        arg0.info("sysse", arg3*);
+        if (arg3[1] == "") {
+            arg0.dm("sysse:tag指定がありません");
+            return;
+        } else {
+            return [["eval", "names", "call", "uiloadSysSE", arg3[1]]];
+        }
+
+    } incontextof global, remove: function(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = arg0.names;
+        var local1 = 1;
+        while (local1 < arg3.count) {
+            var local2 = arg3[local1];
+            if (local2 != "") {
+                local0.remove(local2);
+            }
+            ++local1;
+        }
+
+    } incontextof global, debug: function(arg0, arg1, arg2, arg3, arg4) {
+        if (arg3[1] != "") {
+            var local0 = arg0.getInfo(arg3[1], 0);
+            arg0.dm("debug: %s = %s".sprintf(arg3[1], Scripts.toStructString(local0, , 5)));
+        }
+
+    } incontextof global, rename: function(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = kag.debugLevel > tkdlNone;
+        var local1 = 1;
+        var local2 = arg3.count;
+        for (; local1 < local2; local1 += 2) {
+            var local3 = arg3[local1];
+            var local4 = arg3[local1 + 1];
+            if (local3 == "" || local4 == "") {
+                continue;
+            } else if (arg0.result[local3]) {
+                if (arg0.result[local4]) {
+                    arg0.dm("rename: conflict %s".sprintf(local4));
+                }
+                arg0.result[local3].uiname = local4;
+                if (arg0.result[local3].name == local3) {
+                    arg0.result[local3].name = local4;
+                }
+                arg0.result[local4] = arg0.result[local3];
+                var local5 = arg0.names.find(local3);
+                if (local5 >= 0) {
+                    arg0.names[local5] = local4;
+                }
+                if (local0) {
+                    arg0.info("uirename: " + string(local3) + " -> " + string(local4));
+                    continue;
+                }
+                continue;
+            } else {
+                arg0.dm("rename: notfound %s".sprintf(local3));
+            }
+        }
+        return 1;
+    } incontextof global, clear: function(arg0, arg1, arg2, arg3, arg4) {
+        var local0;
+        var local1 = 1;
+        var local2 = arg3.count;
+        while (local1 < local2) {
+            var local3 = arg0.getInfo(arg3[local1], 0);
+            if (local3 && local3.uistates) {
+                (Dictionary.clear incontextof local3.uistates)();
+                local0 = 1;
+            }
+            ++local1;
+        }
+        return local0;
+    } incontextof global];
+
+    addKagHandler("sysse", function(arg0) {
+        playSysSE(arg0.name);
+        return 0;
+    }, 0);
+
+    addKagHandler("selopt", function(arg0) {
+        elementSysSE(arg0, "select", ["open", "click", "enter", "leave"]);
+        setSelectOptions(arg0);
+        return 0;
+    }, 1);
+
+    SystemHook.add("back", function(arg0, arg1) {
+        var local0;
+        local0 = getSysSE(arg0 + ".back");
+        if (local0.storage == "") {
+            local0 = getSysSE(arg0 + ".back." + arg1);
+        }
+        playSysSE(local0);
+    } incontextof global);
+
+    addKagHandler("sysupdate", function() { return -4; }, 0);
+
+    addKagHandler("sysinit", function(arg0) {
+        var local0 = %[];
+        tagHandlers.locklink(local0);
+        tagHandlers.disablestore(local0);
+        tagHandlers.cancelskip(local0);
+        tagHandlers.cancelautomode();
+        tagHandlers.rclick(%[enabled: 0]);
+        tagHandlers.history(%[enabled: 0, output: 1]);
+        tagHandlers.clearhistory(local0);
+        tagHandlers.stoprecollection(local0);
+        return 0;
+    }, 1);
+
+    this.sysRClickOption = %[enabled: 1, jump: 0];
+    addKagHandler("sysrclick", function(arg0) { return tagHandlers.rclick(sysRClickOption); }, 1);
+
+    addKagHandler("sysrclickopt", function(arg0) {
+        (Dictionary.assign incontextof sysRClickOption)(arg0, 1);
+        return 0;
+    }, 0);
+
+    addKagHandler("sysrestore", function(arg0) {
+        var local0 = "message0";
+        if (typeof global.SystemConfig == "Object") {
+            var local1 = SystemConfig.defaultMessageLayer;
+            switch (typeof local1) {
+                case "Integer":
+                    local0 = "message" + local1;
+                    break;
+                case "String":
+                    local0 = local1;
+                    break;
+                case "Object":
+                    local0 = local1();
+                    break;
+            }
+        }
+        tagHandlers.current(%[layer: local0]);
+        tagHandlers.sysrclick();
+        tagHandlers.history(%[enabled: 1]);
+        tagHandlers.unlocklink(%[]);
+        return 0;
+    }, 1);
+
+    addKagHandler("syspage", function(arg0) {
+        var local0 = %[];
+        (Dictionary.assign incontextof local0)(arg0, 1);
+        if (local0.layer === void) {
+            local0.layer = Current.layerName;
+        }
+
+        var local1 = kag.tagHandlers;
+        if (local0.uiload) {
+            delete local0.uiload;
+            local1.current(local0);
+            Current.uiload(local0);
+            Current.action("update");
+        } else if (local0.position) {
+            delete local0.position;
+            return local1.position(local0);
+        } else if (local0.current) {
+            delete local0.current;
+            local0.withback = 0;
+            return local1.current(local0);
+        } else if (local0.clear) {
+            var local2 = kag.getMessageLayerObjectFromElm(local0);
+            if (local2 !== void) {
+                local2.clear(+local0.all);
+            }
+        } else if (local0.free) {
+            delete local0.free;
+            local0.height = 1;
+            local0.width = local0.height;
+            local0.visible = 0;
+            return local1.position(local0);
+        }
+        return 0;
+    }, 0);
+
+    addKagHandler("syscover", function(arg0) {
+        var local0;
+        if (typeof this._sysCoverLayer != "undefined") {
+            local0 = this._sysCoverLayer;
+        } else {
+            local0 = this._sysCoverLayer = new Layer(this, uibase);
+            this.add(local0);
+            local0.name = "SysCoverLayer";
+            local0.hasImage = 0;
+            local0.hitType = htMask;
+            local0.hitThreshold = 0;
+            local0.setPos(0, 0);
+            local0.setSize(exWidth, exHeight);
+            local0.onKeyDown = onKeyDown;
+            local0.rightClickEnabled = 0;
+            local0.onClick = function() {
+                window.onPrimaryClick();
+            } incontextof local0;
+            local0.onMouseUp = function(arg0, arg1, arg2, arg3) {
+                if (arg2 == mbRight && rightClickEnabled) {
+                    window.onPrimaryRightClick();
+                }
+            } incontextof local0;
+        }
+        stopAction(local0);
+        if (arg0.d3dfocus !== void && isD3D) {
+            setMultiFocus(0);
+            if (arg0.d3dfocus) {
+                setPrimaryFocus(uibase);
+            } else {
+                resetPrimaryFocus(fore.base, back.base);
+            }
+        }
+
+        var local1 = !!arg0.visible;
+        var local2 = +arg0.time;
+        var local3 = +arg0.color;
+        if (!local1 && !local2 || arg0.clear) {
+            local0.hasImage = 0;
+        } else if (local1 && arg0.color !== void) {
+            local0.hasImage = 1;
+            local0.fillRect(
+                0, 0, exWidth, exHeight, ((arg0.opacity !== void) ? +arg0.opacity << 24 : 4278190080) | local3 & 16777215
+            );
+            if (arg0.absolute === void) {
+                local0.absolute = currentDialogAbsolute - 1;
+            }
+        }
+        if (arg0.absolute !== void) {
+            local0.absolute = arg0.absolute;
+        } else if (!local0.hasImage) {
+            local0.absolute = 9999999;
+        }
+        local0.rightClickEnabled = (arg0.rclick !== void) ? +arg0.rclick : 0;
+        if (local2 > 0) {
+            local0.visible = 1;
+            if (local1) {
+                local0.focus();
+            }
+            local0.opacity = local1 ? 0 : 255;
+            beginAction(
+                local0,
+                %[opacity: %[handler: MoveAction, start: local0.opacity, value: local1 ? 255 : 0, time: local2]]
+            );
+            if (!local1) {
+                insertTag("syscover", %[visible: 0]);
+            }
+            return waitSingleAction(local0, arg0.canskip);
+        } else {
+            if (local0.hasImage) {
+                local0.opacity = 255;
+            }
+            local0.visible = local1;
+            if (local1) {
+                local0.focus();
+            }
+            return 0;
+        }
+
+    }, 1);
+
+    addKagHandler("waitrclickup", function(arg0) {
+        if (!getKeyState(VK_RBUTTON) && (!arg0.withleft || !getKeyState(VK_LBUTTON))) {
+            return 0;
+        }
+
+        var local0 = function(arg0) {
+            if (arg0 !== void && (arg0.storage != "" || arg0.target != "")) {
+                insertTag("next", arg0);
+            }
+        } incontextof this;
+        conductor.wait(%[
+            "mouseup" + mbLeft => local0,
+            "mouseup" + mbMiddle => local0,
+            "mouseup" + mbRight => local0,
+            "mouseup" + mbLeft + "_arg" => arg0,
+            "mouseup" + mbMiddle + "_arg" => arg0,
+            "mouseup" + mbRight + "_arg" => arg0
+        ]);
+        return -2;
+    }, 1);
+
+    addKagHandler("sysmovie", function(arg0) {
+        var local6;
+        if (arg0.state == "") {
+            if (arg0.eval == "" || Scripts.eval(arg0.eval)) {
+                if (callHook("onSysMovieTagExtract", arg0)) {
+                    return 0;
+                }
+                insertTag("sysmovie", %[
+                    state: "term",
+                    color: arg0.color,
+                    endcolor: arg0.endcolor,
+                    keepcolor: arg0.keepcolor,
+                    stopcheck: arg0.stopcheck
+                ]);
+                insertTag("sysmovie", %[
+                    state: "wait",
+                    canskip: arg0.canskip,
+                    disablerclick: arg0.disablerclick
+                ]);
+                if (arg0.forcewait !== void) {
+                    insertTag("syswait", %[canskip: 0, time: arg0.forcewait]);
+                }
+                insertTag("sysmovie", %[
+                    state: "play",
+                    storage: arg0.storage,
+                    evalstorage: arg0.evalstorage,
+                    file: arg0.file,
+                    mode: arg0.mode,
+                    laystretch: arg0.laystretch,
+                    aspectzoom: arg0.aspectzoom,
+                    noaudio: arg0.noaudio,
+                    bgmflag: arg0.bgmflag,
+                    flag: arg0.flag,
+                    nohidemscur: arg0.nohidemscur
+                ]);
+                insertTag("sysmovie", %[state: "init", color: arg0.color, begincolor: arg0.begincolor]);
+            }
+            return 0;
+        }
+
+        var local0 = %[];
+        var local1 = arg0.color;
+        var local2;
+        var local3;
+        var local4 = (typeof this._sysMovieLayer == "Object") ? this._sysMovieLayer : null;
+        var local5 = movies[0];
+        if (local5 === void) {
+            throw new Exception("sysmovie: No movie objects. (Config.tjs: numMovies==0)");
+        }
+        if (typeof global.sysmovie_stop == "undefined") {
+            global.sysmovie_stop = function() {
+                tagHandlers.stopvideo(%[]);
+                onMovieStop(0);
+            } incontextof this;
+            local2 = global.sysmovie_stop;
+            global.sysmovie_keystop = function(arg0, arg1) {
+                if (arg0 == VK_ESCAPE && !(arg1 & ssRepeat)) {
+                    tagHandlers.stopvideo(%[]);
+                    onMovieStop(0);
+                    return 1;
+                }
+            } incontextof this;
+            local3 = global.sysmovie_keystop;
+        } else {
+            local2 = global.sysmovie_stop;
+            local3 = global.sysmovie_keystop;
+        }
+        switch (arg0.state) {
+            case "init":
+                if (local4 && isvalid local4) {
+                    invalidate(local4);
+                }
+                local4 = this._sysMovieLayer = new global.Layer(this, uibase);
+                local4.name = "SysMovieLayer";
+                local4.hitType = htMask;
+                local4.hitThreshold = 256;
+                local4.type = ltOpaque;
+                local4.setPos(0, 0, scWidth, scHeight);
+                local4.absolute = 999999;
+                local4.visible = 1;
+                if (!arg0.noclear) {
+                    tagHandlers.sysmovie(%[
+                        state: "clear",
+                        color: (arg0.begincolor != "") ? arg0.begincolor : local1
+                    ]);
+                }
+                tflags.sysmovie_skipstate = skipMode;
+                tflags.sysmovie_storage = arg0.storage;
+                if (!global.kirikiriz) {
+                    tflags.sysmovie_lastconsole = Debug.console.visible;
+                    Debug.console.visible = 0;
+                }
+                return -4;
+            case "clear":
+                local4.fillRect(0, 0, local4.width, local4.height, (local1 !== void) ? +local1 | 4278190080 : 0);
+                return 0;
+            case "play":
+                var local11;
+                local6 = (arg0.laystretch === void) ? 0 : +arg0.laystretch;
+                var local7 = checkWindowsVersion.getVomStyle(arg0.mode, 1);
+                var local8 = arg0.aspectzoom;
+                if (local8 == "" && SystemConfig.sysmovieForceAspectZoom != "") {
+                    local8 = SystemConfig.sysmovieForceAspectZoom;
+                }
+                tagHandlers.video(%[
+                    visible: 0,
+                    left: 0,
+                    top: 0,
+                    width: scWidth,
+                    height: scHeight,
+                    mode: local7,
+                    aspectzoom: local8,
+                    volume: arg0.noaudio ? void : "",
+                    laystretch: local6
+                ]);
+                var local9 = local5.mode == vomLayer;
+                if (local9) {
+                    local5.layer1 = local4;
+                    local5.layer2 = null;
+                    tagHandlers.syscover(%[visible: 1, absolute: 1000000, rclick: 1, clear: 1]);
+                }
+                var local10 = arg0.storage;
+                if (local10 == "") {
+                    local10 = arg0.file;
+                }
+                if (local10 == "" && arg0.evalstorage != "") {
+                    local10 = arg0.evalstorage!;
+                }
+                if (local10 == "") {
+                    local10 = tflags.sysmovie_storage;
+                }
+                delete tflags.sysmovie_storage;
+                if (local10 == "") {
+                    throw new Exception("sysmovie: storageの指定がありません");
+                }
+                if (!Storages.isExistentStorage(local10)) {
+                    if (Storages.isExistentStorage(local10 + (local11 = ".mpg"))) {
+                        local10 += local11;
+                    } else if (Storages.isExistentStorage(local10 + (local11 = ".wmv"))) {
+                        local10 += local11;
+                    } else if (Storages.isExistentStorage(local10 + (local11 = ".mp4")) && (canMFEVR || isSwitch())) {
+                        local10 += local11;
+                    } else if (Storages.isExistentStorage(local10 + (local11 = ".webm")) && isSwitch()) {
+                        local10 += local11;
+                    }
+                }
+                local11 = tagHandlers.openvideo(%[storage: local10]);
+                var local12 = arg0.flag;
+                if (local12 == "") {
+                    local12 = "movie_" + Storages.chopStorageExt(Storages.extractStorageName(local10)).toLowerCase();
+                }
+                tflags.sysmovie_skip = sflags[local12] || (skipNoDisp || skipMode >= SKIP_CANCEL);
+                sflags[local12] = 1;
+                var local13 = !arg0.noplay;
+                if (arg0.bgmflag != "") {
+                    sflags["bgm_" + arg0.bgmflag.toUpperCase()] = 1;
+                }
+                if (local9) {
+                    tagHandlers.preparevideo(local0);
+                    if (local13) {
+                        insertTag("sysmovie", %[
+                            state: "play_start",
+                            noaudio: arg0.noaudio,
+                            nohidemscur: arg0.nohidemscur
+                        ]);
+                    }
+                    if (prevSkipMode !== void) {
+                        conductor.wait(%["movieperiod0_" + perPrepare => function() { return 0; }]);
+                        return -2;
+                    }
+                    return tagHandlers.wp(%["for" => "prepare"]);
+                }
+                if (!local13) {
+                    return local11;
+                }
+                if (local11 != 0) {
+                    insertTag("sysmovie", %[
+                        state: "play_start",
+                        noaudio: arg0.noaudio,
+                        nohidemscur: arg0.nohidemscur
+                    ]);
+                    return local11;
+                }
+            case "play_start":
+                if (!arg0.nohidemscur) {
+                    hideMouseCursor();
+                }
+                tagHandlers.video(%[
+                    visible: 1,
+                    left: 0,
+                    top: 0,
+                    width: scWidth,
+                    height: scHeight,
+                    volume: arg0.noaudio ? void : ""
+                ]);
+                local6 = tagHandlers.playvideo(local0);
+                if (tflags.sysmovie_lastconsole) {
+                    Debug.console.visible = 1;
+                    if (typeof this.bringTo == "Object") {
+                        bringTo("top", 1);
+                    } else if (typeof Debug.console.bringAfter == "Object") {
+                        Debug.console.bringAfter(this);
+                    } else {
+                        bringToFront();
+                    }
+                }
+                delete tflags.sysmovie_lastconsole;
+                return local6;
+            case "wait":
+                rightClickHook.remove(local2, 1);
+                keyDownHook.remove(local3, 1);
+                if (!arg0.disablerclick) {
+                    rightClickHook.add(local2);
+                    keyDownHook.add(local3);
+                }
+                if (arg0.canskip === void) {
+                    arg0.canskip = +tflags.sysmovie_skip;
+                }
+                delete tflags.sysmovie_skip;
+                return tagHandlers.wv(arg0);
+            case "term":
+                tagHandlers.sysmovie(%[state: "clear", color: (arg0.endcolor != "") ? arg0.endcolor : local1]);
+                if (arg0.keepcolor) {
+                    local4 = void;
+                }
+                if (arg0.stopcheck == "") {
+                    checkClick();
+                } else if (!tflags.sysmovie_skipstate
+                        &&  (skipMode > 0 && (!skipNoDisp && skipMode >= Scripts.eval(arg0.stopcheck)))) {
+                    cancelSkip();
+                }
+                delete tflags.sysmovie_skipstate;
+            case "end":
+                if (local4) {
+                    if (isvalid local4) {
+                        invalidate(local4);
+                    }
+                    delete this._sysMovieLayer;
+                }
+                rightClickHook.remove(local2, 1);
+                keyDownHook.remove(local3, 1);
+                tagHandlers.syscover(%[visible: 0]);
+                tagHandlers.video(%[visible: 0]);
+                local5.layer2 = null;
+                local5.layer1 = local5.layer2;
+                return -4;
+        }
+        return 0;
+    }, 1);
+
+    SystemScript.script("title");
+    SystemScript.add("title.from.option", "title*loop");
+    SystemScript.add("title.from.load", "title*loop");
+    SystemScript.script("option");
+    SystemScript.add("option.sysfrom.title", "*sysfrom_title");
+    SystemScript.add("option.sysfrom.game", "*sysfrom_game");
+    SystemScript.add("option.from.title", "*start_title");
+    SystemScript.add("option.from.game", "*start_game");
+    SystemScript.add("game.from.option", "option*return");
+    SystemScript.script("load");
+    SystemScript.add("load.from.title", "*start_title");
+    SystemScript.add("load.from.save", "*start_save");
+    SystemScript.add("load.from.game", "*start_save");
+    SystemScript.add("load.sysfrom.title", "*sysfrom_title");
+    SystemScript.add("load.sysfrom.game", "*sysfrom_game");
+    SystemScript.add("game.from.load", "load*return");
+    SystemScript.script("save");
+    SystemScript.add("save.from.title", "*start_title");
+    SystemScript.add("save.from.load", "*start_load");
+    SystemScript.add("save.from.game", "*start_load");
+    SystemScript.add("save.sysfrom.game", "*sysfrom_game");
+    SystemScript.add("game.from.save", "save*return");
+    SystemScript.script("cgmode");
+    SystemScript.script("scenemode");
+    SystemScript.add("scenemode.from.game", "*restore");
+    SystemScript.add("scenemode.from.recollection", "title*start");
+    SystemScript.script("soundmode");
+    addKagHandler("addsysscript", SystemScript.kagAddScript);
+    var local0 = "dialog.done";
+    SystemHook.add(local0, Dialog.done);
+    SystemHook.add("title.leave", local0);
+    SystemHook.add("option.leave", local0);
+    SystemHook.add("load.leave", local0);
+    SystemHook.add("save.leave", local0);
+    SystemHook.add("cgmode.leave", local0);
+    SystemHook.add("scenemode.leave", local0);
+    SystemHook.add("soundmode.leave", local0);
+
+    SystemHook.add("change.title.game", function() {
+        kag.clearVariables();
+        kag.clearPlayTime();
+    } incontextof global);
+
+    SystemHook.add("first.init", function() {
+        if (!sf.first_initialized) {
+            initialEnvironment(1);
+            sf.first_initialized = 1;
+        }
+        try {
+            (checkEmergencySaveData incontextof kag)();
+        } catch (e) { }
+    } incontextof global);
+
+    SystemHook.add("save.enter", function() {
+        SystemAction._preSave();
+    } incontextof global);
+
+    this.SystemAction = void;
+    this.SystemActionClass = SystemActionBase;
+    this.SystemConfig = new Dictionary(512);
+    SystemConfig.askQLoad = 0;
+    SystemConfig.askQSave = 0;
+    SystemConfig.notifyQLoad = 0;
+    SystemConfig.notifyQSave = 0;
+    SystemConfig.askNext = 1;
+    SystemConfig.askPrev = 1;
+    SystemConfig.askOverwrite = 1;
+    SystemConfig.askInit = 1;
+    SystemConfig.askTitle = 1;
+    SystemConfig.askExit = 1;
+    SystemConfig.recollectionFadeInStart = 1;
+    SystemConfig.ignore_world = 0;
+    SystemConfig.disableDisplayMenuInMoviePlaying = 0;
+    SystemConfig.disableTroubleShootMenuFlatten = 0;
+    SystemConfig.haveEditLayerManager = 1;
+
+    addAfterInitCallback(function() {
+        kag.menuAccessibleTrigger = new AsyncTrigger(kag, "setMenuAccessibleAllTriggerAction");
+        kag.menuAccessibleTrigger.cached = 1;
+        kag.menuAccessibleTrigger.mode = atmExclusive;
+        kag.origSetMenuAccessibleAll = kag.setMenuAccessibleAll;
+        kag.setMenuAccessibleAll = function() {
+            menuAccessibleTrigger.trigger();
+        } incontextof kag;
+        kag.setMenuAccessibleAllTriggerAction = function() {
+            origSetMenuAccessibleAll();
+        } incontextof kag;
+        var local0 = SystemConfig.defaultMessageLayer;
+        if (local0 != "" && (string(local0)).indexOf("message") == 0) {
+            kag._clearMessageLayerNumOnSkipNoDispChanged = +local0.substr(7);
+        }
+
+    } incontextof global);
+
+    KAGWindow._selectFontDoUserSelect = KAGWindow.selectFontDoUserSelect;
+
+    KAGWindow.selectFontDoUserSelect = function() {
+        if (global.loadExMenuInterface()) {
+            try {
+                var local0 = new MyFontSelectDialog(kag.fore.base, chDefaultFace, *);
+                var local1 = local0.open(kag);
+                invalidate(local0);
+                return local1;
+            } catch (e) { }
+        }
+        return _selectFontDoUserSelect(...);
+    };
+
+    this.ErrorLogWithTimeStamp = void;
+    addKagHookCallback("onConductorError", onSystemExceptionHandlerHook);
+
+    addKagHookCallback("onSystemExceptionHandler", function(arg0, arg1) {
+        var local0 = (typeof SystemAction.canSuspendSave == "Object") ? SystemAction.canSuspendSave()
+            : (typeof global.canRedrawFrameAndText == "Object") ? canRedrawFrameAndText() : inGameState(this);
+        var local1 = arg0 && (typeof arg0 == "Object" && (isvalid arg0 && arg0 instanceof "Exception"));
+        var local2;
+        if (local1 && arg1.reboot) {
+            var local3 = string(arg0.message);
+            var local4 = local3.indexOf("ビットマップ用メモリ") >= 0
+                    ||  (local3.indexOf("Bitmap : ") > 0
+                        ||  (local3.indexOf("メモリ確保に失敗") >= 0 || local3.indexOf("Memory allocation") >= 0));
+            if (local0) {
+                try {
+                    var local5 = saveEmergencySaveData(, local4);
+                    local2 = %[restore: local5 != ""];
+                    if (local2.restore) {
+                        local2.restore_cleanup = this.removeEmergencySaveData;
+                        if (local4) {
+                            local2.tag = "bitmapexception";
+                            local2.restore = -1;
+                        }
+                    } else if (local4) {
+                        local2.reboot = -1;
+                    }
+                } catch (e) {
+                    local2 = void;
+                }
+            }
+            if (local4 && !local2) {
+                local2 = %[reboot: -1];
+            }
+        }
+        if (local1 && arg0 instanceof "ConductorException") {
+            Debug.notice("conductor exception occered!");
+            if (!local2 || !local2.restore) {
+                saveEmergencySaveData("");
+            }
+        }
+        if (local2) {
+            (Dictionary.assign incontextof arg1)(local2, 0);
+        }
+
+    }, 1);
+
+    &KAGWindow.reboot = function() {
+        removeEmergencySaveData();
+        if (canReboot(0)) {
+            systemReboot(...);
+        } else {
+            shutdown();
+        }
+
+    } incontextof null;
+
+    &KAGWindow.rebootWithRestore = function() {
+        if (canReboot(1)) {
+            systemReboot(...);
+        } else {
+            reboot();
+        }
+
+    } incontextof null;
+
+    &KAGWindow.canReboot = function(arg0) {
+        if (typeof System.waitForAppLock != "Object") {
+            return 0;
+        }
+        return !arg0 || (checkEmergencySaveData incontextof this)(1);
+    } incontextof null;
+
+    &KAGWindow.removeEmergencySaveData = function() {
+        var local0 = getBookMarkFileNameBySystem("emergency");
+        if (Storages.isExistentStorage(local0)) {
+            Storages_deleteFile(local0);
+        }
+
+    } incontextof null;
+
+    &KAGWindow.saveEmergencySaveData = function(arg0, arg1) {
+        if (arg0 === void) {
+            arg0 = "emergency";
+        }
+        if (arg1 === void) {
+            arg1 = 1;
+        }
+
+        var local0;
+        if (arg1) {
+            try {
+                world_object.env.initEnv();
+            } catch (e) { }
+        }
+        try {
+            clearCache();
+        } catch (e) { }
+        var local1 = System.graphicCacheLimit;
+        System.graphicCacheLimit = 0;
+        try {
+            var local2 = (arg0 != "") ? getBookMarkFileNameBySystem(arg0) : void;
+            if (arg0 == "" || local2 != "" && saveBookMarkToFile(local2)) {
+                saveSystemVariables(1);
+                local0 = local2;
+            }
+        } catch (e) {
+            local0 = void;
+        }
+        System.graphicCacheLimit = local1;
+        return local0;
+    } incontextof null;
+}
+
+SystemHook.add("emerinit.start", function() {
+    tf.fadetime = 0;
+} incontextof global);
+
+property hasDebugUtil {
+    getter() {
+        var local0 = 0;
+        var local1 = "debugutil.tjs";
+        try {
+            if (Storages.isExistentStorage(local1)) {
+                KAGLoadScript(local1);
+                local0 = 1;
+            }
+        } catch (e) { }
+        &hasDebugUtil = local0;
+        return local0;
+    }
+}
+
+property skipToScenarioLine {
+    getter() {
+        &skipToScenarioLine = hasDebugUtil ? global.DebugSkipToScenarioLine : function() {
+
+        };
+        return skipToScenarioLine;
+    }
+}
+
+property editCurrentLineScenario {
+    getter() {
+        &editCurrentLineScenario = hasDebugUtil ? global.DebugEditCurrentLineScenario : function() {
+
+        };
+        return editCurrentLineScenario;
+    }
+}
+
+property startFlagEdit {
+    getter() {
+        &startFlagEdit = hasDebugUtil ? global.FlagEditBase.menuItemClick : function() {
+
+        };
+        return startFlagEdit;
+    }
+}
+
+property selectAutoLabelStore {
+    getter() {
+        &selectAutoLabelStore = hasDebugUtil ? global.DebugAutoStoreBackDialog.menuItemClick : function() {
+
+        };
+        return selectAutoLabelStore;
+    }
+}
+
+property editCurrentVoiceLabel {
+    getter() {
+        &editCurrentVoiceLabel = hasDebugUtil ? global.DebugEditCurrentVoiceLabel : function() {
+
+        };
+        return editCurrentVoiceLabel;
+    }
+}
+
+property copyCurrentVoiceToClipBoard {
+    getter() {
+        return hasDebugUtil ? global.copyCurrentVoiceToClipBoard : function() {
+            global.Clipboard.asText = "！読み込みに失敗しました！";
+        } incontextof global;
+    }
+}
+
+property copyCurrentEnvInfoToClipBoard {
+    getter() {
+        return hasDebugUtil ? global.copyCurrentEnvInfoToClipBoard : function() {
+            global.Clipboard.asText = "！読み込みに失敗しました！";
+        } incontextof global;
+    }
+}
+
+property captureCurrentScreen {
+    getter() {
+        &captureCurrentScreen = hasDebugUtil ? global.DebugCaptureCurrentScreen : function() {
+
+        };
+        return captureCurrentScreen;
+    }
+}
+
+property editBugReport {
+    getter() {
+        &editBugReport = hasDebugUtil ? global.editBugReport : function() {
+
+        };
+        return editBugReport;
+    }
+}
+
+property myExecStorage {
+    getter() {
+        &myExecStorage = hasDebugUtil ? global.myExecStorage : function() {
+
+        };
+        return myExecStorage;
+    }
+}
+
+function systemReboot(arg0 = 0, arg1) {
+    if (!arg0) {
+        System.eventDisabled = 0;
+        if (typeof global.shutdownTrigger == "Object") {
+            return;
+        }
+        try {
+            kag.resetAll();
+            terminator.invoke();
+            SystemHook.exec("restart.invoke");
+        } catch (e) { }
+    }
+    Debug.controller.visible = 0;
+    var local0 = System.getArgument("-debug") == "yes";
+    var local1;
+    var local2;
+    if (typeof System.waitForAppLock == "Object") {
+        local1 = System.exeName;
+        local2 = "-restartboot=block" + (local0 ? " -debug=yes" : "");
+        if (arg1 != "") {
+            local2 += " " + arg1;
+        }
+        var local3 = System.getArgument("-restartkeepopts");
+        if (local3 != "") {
+            local2 += " \"-restartkeepopts=" + string(local3) + "\"";
+            var local4 = local3.split(",");
+            for (var local5 = 0; local5 < local4.count; ++local5) {
+                var local6 = (string(local4[local5])).trim();
+                var local7 = (local6 != "") ? System.getArgument("-" + local6) : void;
+                if (local7 != "") {
+                    if (local7.indexOf(" ") < 0) {
+                        local2 += " -" + string(local6) + "=" + string(local7);
+                        continue;
+                    } else {
+                        local2 += " \"-" + string(local6) + "=" + string(local7) + "\"";
+                    }
+                }
+            }
+        }
+    } else {
+        local1 = System.exePath + "tools/ReStarter.exe";
+        local2 = "-TIMEOUT=3000 -MUTEX=\"" + string(System.appLockKey) + "\"" + (local0 ? " -DEBUG" : "");
+    }
+    System.shellExecute(Storages.getLocalName(local1), local2);
+    if (!arg0) {
+        kag.shutdown();
+    } else {
+        System.exit();
+    }
+}
+
+property execDialog {
+    getter() {
+        var local0;
+        var local1 = Storages.isExistentStorage(System.exePath + "data/startup.tjs");
+        if (hasDebugUtil && local1) {
+            local0 = global.myExecDialog;
+        } else {
+            KAGLoadScript("ExecDialog.tjs");
+            local0 = global.execDialog;
+        }
+        &execDialog = local0;
+        return local0;
+    }
+}
+
+property execPopup {
+    getter() {
+        &execPopup = hasDebugUtil ? global.myExecPopup : function() {
+
+        };
+        return execPopup;
+    }
+}
+
+property debugMessageReceived {
+    getter() {
+        &debugMessageReceived = hasDebugUtil ? global.DebugMessageReceived : function() {
+
+        };
+        return debugMessageReceived;
+    }
+}
+
+property dirFilesSearch {
+    getter() {
+        Scripts.execStorage("dirutil.tjs");
+        return global.dirFilesSearch;
+    }
+}
+
+property dirFilesForeach {
+    getter() {
+        Scripts.execStorage("dirutil.tjs");
+        return global.dirFilesForeach;
+    }
+}
+
+function loadExMenuInterface() {
+    if (typeof global.WIN32DialogEX == "undefined") {
+        try {
+            KAGLoadScript("win32dialog.tjs");
+        } catch (e) {
+            return 0;
+        }
+    }
+    if (typeof global.MiddleZoomValueDialog == "undefined") {
+        try {
+            KAGLoadScript("exmenuintf.tjs");
+        } catch (e) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+function inputMiddleZoomPercent() {
+    var local2;
+    if (!loadExMenuInterface()) {
+        return;
+    }
+
+    var local0;
+    var local1 = "mzpercent";
+    if (typeof global.MiddleZoomValueDialog == "undefined" || System.getKeyState(VK_SHIFT)) {
+        local2 = System.getArgument("-" + local1);
+        if (local2 == "") {
+            local2 = 50;
+        }
+        local0 = System.inputString("拡大割合指定", "0(内接)～100(外接)を入力", local2);
+        if (local0 === void) {
+            return;
+        }
+        System.setArgument("-" + local1, string(local0));
+        changeUserConf(local1, string(local0));
+        kag.onResize();
+    } else {
+        local2 = new MiddleZoomValueDialog();
+        local2.open(kag);
+        invalidate(local2);
+    }
+}
+
+function bindGamePadButton() {
+    if (!loadExMenuInterface()) {
+        return;
+    }
+
+    var local0 = new GamePadBindDialog();
+    local0.open(kag);
+    invalidate(local0);
+}
+
+function onBootStrapKicked(arg0) {
+    if (arg0 === void) {
+        arg0 = System.exePath + "BootStrap.exe";
+    }
+
+    var local0 = GetSystemConfigItem;
+    var local1 = local0("BootStrapKickConfirm", "ゲームを終了して開始メニューを表示します");
+    var local2;
+    var local3;
+    if (loadExMenuInterface()) {
+        local2 = WIN32Dialog.messageBox(
+            kag, local1, System.title, WIN32Dialog.MB_YESNO | WIN32Dialog.MB_ICONINFORMATION
+        ) == WIN32Dialog.IDYES;
+    } else {
+        try {
+            local2 = System.confirm(local1, System.title, kag);
+        } catch (e) { }
+    }
+    if (local2) {
+        try {
+            if (System.shellExecute("\"" + Storages.getLocalName(arg0) + "\"")) {
+                kag.askOnClose = 0;
+                kag.close();
+            } else {
+                local3 = local0("BootStrapKickFailed", "開始メニューの起動に失敗しました");
+            }
+        } catch (e) {
+            local3 = e.message;
+        }
+    }
+    if (local3 != "") {
+        System.inform(local3);
+    }
+}
+
+function entryErrorLogWithTimeStamp(arg0, arg1, arg2) {
+    if (ErrorLogWithTimeStamp === void) {
+        ErrorLogWithTimeStamp = [];
+    }
+    ErrorLogWithTimeStamp.unshift(%[time: System.getTickCount(), msg: arg0, file: arg1, line: arg2]);
+    if (ErrorLogWithTimeStamp.count > 1000) {
+        ErrorLogWithTimeStamp.pop();
+    }
+}
+
+function onSystemExceptionHandlerHook(arg0) {
+    if (typeof arg0 == "Object" && (arg0 && (typeof arg0.disable_recovery != "undefined" && arg0.disable_recovery))) {
+        return 0;
+    }
+    if (typeof global.CustomSystemExceptionHandlerHook == "Object" && global.CustomSystemExceptionHandlerHook(arg0)) {
+        return 1;
+    }
+    if (typeof global.kag != "Object" || !kag || !isvalid kag) {
+        return;
+    }
+    if (typeof kag.onSystemExceptionHandler == "Object") {
+        return kag.onSystemExceptionHandler(...);
+    }
+}
+
+function Storages_deleteFile(arg0) {
+    if (typeof global.isSteamFile == "Object" && isSteamFile(arg0)) {
+        steamFileOperation("delete", arg0);
+    } else if (typeof Storages.deleteFile == "Object") {
+        Storages.deleteFile(arg0);
+    } else {
+        try {
+            [].save(arg0);
+        } catch (e) { }
+    }
+}
+
+function checkEmergencySaveData(arg0) {
+    var local0 = "emergency";
+    var local1 = Storages.isExistentStorage;
+    var local2 = getBookMarkFileNameBySystem;
+    var local3 = local2(local0);
+    var local4 = local1(local2("anchor")) && local1(local3);
+    if (arg0) {
+        return local4;
+    }
+    if (local4) {
+        var local5 = (loadEmergencySaveData incontextof this)(local3, local0);
+        if (local5 < 0) {
+            Storages_deleteFile(local3);
+        }
+    } else {
+        SystemHook.exec(local0 + ".skipped");
+    }
+}
+
+function loadEmergencySaveData(arg0, arg1, arg2 = "game") {
+    var local0;
+    try {
+        local0 = evalBookMarkFromFile(arg0);
+    } catch (e) {
+        return -1;
+    }
+    if (typeof local0 == "Object") {
+        try {
+            kag.tagHandlers.syscover(%[visible: 0]);
+        } catch (e) { }
+        if (arg2 != "") {
+            SystemHook.kagCurrent(%[name: arg2]);
+        }
+        SystemHook.exec("execdialog.start");
+        loadFunction(arg1);
+        startAnchorEnabled = 1;
+        return 1;
+    }
+    return 0;
+}

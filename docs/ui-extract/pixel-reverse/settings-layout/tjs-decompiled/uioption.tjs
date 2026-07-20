@@ -1,0 +1,1616 @@
+class CustomOption extends ModuleMixinOptionBase {
+    entryMyOption("facemode", %[prop: "world_object.faceMode"]);
+    entryMyOption("qcpopover", %[prop: "SystemConfig.quickConfAutoOpen"]);
+    entryMyOption("flowshow", %[prop: "SystemConfig.flowchartForceItemOpen"]);
+    entryMyOption("icpreview", %[prop: "kag.appIconicPreview"]);
+    entryMyOption("suspend", %[prop: "SystemConfig.suspendBootEnabled"]);
+    entryMyOption("autovwait", %[prop: "kag.autoModeWaitVoice", type: "radio", values: [0, 1, 2]]);
+    entryMyOption("skipst", %[prop: "kag.skipStyle", type: "radio", values: [0, 1, 2]]);
+    entryMyOption("filedclk", %[prop: "SystemConfig.saveLoadDblClick"]);
+    entryMyOption("lowprisysvo", %[prop: "SystemConfig.lowPrioritySystemVoice"]);
+    entryMyOption("movierclick", %[prop: "SystemConfig.movieRClickSkip"]);
+    entryMyOption("movieskip", %[prop: "SystemConfig.movieSkipOnSkip"]);
+    entryMyOption("item_icon", %[prop: "SystemConfig.showAutoSkipMark"]);
+    entryMyOption("item_vprg", %[prop: "SystemConfig.showTextVoiceProgress"]);
+    entryMyOption("item_qmlk", %[prop: "QuickMenuLocked"]);
+    entryMyOption("item_toch", %[prop: "_touchMode"]);
+    __entry("uiauto_showitem", function() {
+        __call("uiauto_item_icon", *);
+        __call("uiauto_item_vprg", *);
+        __call("uiauto_item_qmlk", *);
+        __call("uiauto_item_toch", *);
+    });
+    __entry("construct", function() {
+        _entrySysArgOption("scanim", %[update: "bgAnim", prop: void, defval: 1], void);
+    });
+    var _sliderValueDisabledOpac = 255;
+    var rexValueUnit = /^([0-9\.]+)([a-zA-Z]+)$/;
+    speedSliderTags.add("atextwait");
+    __entry("change_se_vol", function(arg0, arg1) {
+        if (!arg1) {
+            playSysSE("se_test");
+        }
+    });
+    _curhidestep = [0, 5, 10, 20];
+    entryMyOption("ctrlskip", %[prop: "_ctrlSkip"]);
+    __entry("change_skipall", function() {
+        update("ctrlskip");
+    });
+    __entry("fixitems_ctrlskip", function(arg0) {
+        disableFixItemsList(arg0, !_allSkip, "ctrlskip");
+    });
+    entryMyOption("readjump", %[prop: "kag.enterSkipNoDisp"]);
+    __entry("change_readskip", function() {
+        update("readjump");
+    });
+    __entry("fixitems_readjump", function(arg0) {
+        disableFixItemsList(arg0, _readSkip, "readjump");
+    });
+    entryMyOption("esccancel", %[prop: "sf.escapeMode", off: 2]);
+    entryMyOption("panictype", %[prop: "sf.scrambleMode", type: "radio", values: [0, 1, 2, 3]]);
+    __entry("change_esccancel", function() {
+        update("panictype");
+    });
+    __entry("change_panictype", function(arg0) {
+        if (arg0 == 3) {
+            var local0 = %[
+                filter: ["画像ファイル(*.png;*.jpg;*.bmp)|*.png;*.jpg;*.bmp", "すべてのファイル(*.*)|*.*"],
+                title: "スクランブル画像選択",
+                titletag: "ScrambleFileSelectCaption",
+                name: sf.scrambleCustomImage
+            ];
+            if (Storages.selectFile(local0)) {
+                sf.scrambleCustomImage = local0.name;
+            }
+        }
+    });
+    entryMyOption("curmoveyes", %[prop: "SystemConfig.DialogForcusForceYes"]);
+    __entry("change_curmove", function() {
+        update("curmoveyes");
+    });
+    __entry("fixitems_curmoveyes", function(arg0) {
+        disableFixItemsList(arg0, getSysArg("curmove"), "curmoveyes");
+    });
+    entryMyOption("hsel", %[prop: "sf.hselectFix"]);
+    entryMyOption("hout", %[prop: "sf.hselectOUTIN"]);
+    entryMyOption("hmou", %[prop: "sf.hselectMOUTHFACE"]);
+    __entry("change_hsel", function() {
+        update("hout");
+        update("hmou");
+    });
+    __entry("fixitems_hout", "disableHSelectFix");
+    __entry("fixitems_hmou", "disableHSelectFix");
+    entryMyOption("nohwindow", %[prop: "SystemConfig.disableHSceneWindow"]);
+    __entry("change_nohwindow", "syncHSceneWindow");
+    var _lastHSceneWin;
+    __entry("reset", function(arg0) {
+        _lastHSceneWin = (arg0 == "" || arg0 == "05text") ? SystemConfig.disableHSceneWindow : void;
+    });
+    __entry("syncinit", function() {
+        if (_lastHSceneWin !== void && _lastHSceneWin != SystemConfig.disableHSceneWindow) {
+            syncHSceneWindow();
+        }
+    });
+    __entry("myoption", function() {
+        ForeachConfirmDialogTags(function(arg0) {
+            __entry("change_" + _getNoCfChkDialogUiName(arg0), "updateDialogAllOnOff");
+        } incontextof this);
+    });
+    __entry("update", "updateDialogAllOnOff");
+    entryMyOption("winopac", %[type: "slider", prop: "sf.windowOpac", max: 255]);
+    __entry("update", updateWindowColor);
+    __entry("change_winopac", updateWindowColor);
+    __entry("color_change", function(arg0) {
+        if ((string(arg0)).indexOf("win") >= 0) {
+            updateWindowColor();
+        }
+    });
+    var _lastWindowColorTag;
+    __entry("construct", function() {
+        fontEdgeShadowColorTable.window = this.getCurrentWindowColor;
+    });
+    __entry("destruct", function() {
+        fontEdgeShadowColorTable.window = global.getFontEdgeShadowWindowColor;
+    });
+    var _lastTextColorTag;
+    __entry("langchanged", "syncRenderSample");
+    __entry("font_change", "syncRenderSample");
+    __entry("rendersetup", function(arg0) {
+        arg0.setDefault(%[color: getSampleColor()]);
+    });
+    var _colorDragging = 0;
+    __entry("update", updateSnapshotState);
+    __entry("update", updateSpeechEnabled);
+    __entry("update_textSpeech", updateSpeechAndDrama);
+    entryMyOption("txv_voice", %[prop: "_textView_vo", type: "radio", values: [0, 1, 2]]);
+    entryMyOption("txv_novo", %[prop: "_textView_nv", type: "radio", values: [0, 1, 2]]);
+    entryMyOption("txv_other", %[prop: "_textView_ot", type: "radio", values: [0, 1, 2]]);
+    entryMyOption("dramatic", %[prop: "_oldCompatDramaticMode"]);
+    __entry("change_txv_voice", updateDrama);
+    __entry("change_txv_novo", updateDrama);
+    __entry("change_txv_other", updateDrama);
+    var _voefftag = "sys_p0";
+    var _voeffsample = "config_samplevoeff.txt";
+    var _voefflist;
+    entryMyOption("vspeed", %[prop: "voiceSpeed", type: "slider"]);
+    __entry("fixitems_vspeed", function(arg0) {
+        var local0 = !_vspeedSync;
+        arg0[-1].enabled = local0;
+        arg0[-1].opacity = local0 ? 255 : _sliderValueDisabledOpac;
+    });
+    var _chmul = "x";
+    entryMyOption("vspeedsync", %[prop: "_vspeedSync"]);
+    var _resetVoiceTargetFirstChar = 1;
+    __entry("uiauto_chvmask", function(arg0) {
+        arg0.push("eval,base,call,Current.uiEval,onSetupChVoiceMaskLayer");
+    });
+    __entry("change_voice_vol", function(arg0, arg1) {
+        if (!arg1) {
+            playSampleVoice("*");
+        }
+    });
+    __entry("change_sysvo_vol", function(arg0, arg1) {
+        if (!arg1) {
+            PlaySystemVoice("volume");
+        }
+    });
+    var _sampleVoiceReplace = SystemConfig.sampleVoiceReplace;
+    __entry("change_sysvo_en", updateSysvoDetail);
+    __entry("update", updateSysvoDetail);
+    var _sysvoDetailPanel;
+    __entry("mvaudsmp", function() {
+        if (kag.panelShowing) {
+            return 1;
+        }
+    });
+    var _gestureItems = SystemConfig.mouseGestureOptionIconList;
+    var _gestureTags = ["Up", "Left", "Right", "Down", "Middle", "MouseX1", "MouseX2"];
+    var _gamePadTags = ["A", "B", "X", "Y", "L1", "R1", "L2", "R2", "Select", "Start", "L3", "R3"];
+    _gestureTags.push(_gamePadTags*);
+    var _gamePadButtonIndexMap;
+    var gamePadBindReverse = %[
+        click: VK_RETURN,
+        key_esc: VK_ESCAPE,
+        key_ctrl: VK_CONTROL,
+        key_pageup: VK_PRIOR,
+        key_pagedown: VK_NEXT,
+        rclick: "escape"
+    ];
+    var gamePadBindReplace;
+    entryMyOption("engamepad", %[prop: "_enGamePad"]);
+    __entry("update_gamepadDevice", function() {
+        update("engamepad");
+    });
+    __entry("destruct", termGamePadBind);
+    __entry("uiloaded", setupGamePadBind);
+    __entry("fixitems_engamepad", function(arg0, arg1) {
+        arg0.push("gamepad_assign", %[enabled: arg1 && isGamePadExEnabled]);
+    });
+
+    function CustomOption() {
+        super.ModuleMixinOptionBase(...);
+        __call("myoption");
+    }
+
+    function finalize() {
+        super.finalize(...);
+    }
+
+    function onLangChanged() {
+        __call("langchanged", *);
+    }
+
+    function entryMyOption(arg0, arg1) {
+        __entry("myoption", function() {
+            method(tag, elm);
+        }, %[method: entryBasicOption, tag: arg0, elm: arg1]);
+    }
+
+    function disableFixItemsList(arg0, arg1, arg2) {
+        var local0 = 0;
+        while (local0 < arg0.count) {
+            var local1 = arg0[local0 + 1];
+            if (local1) {
+                local1.enabled = !!+arg1;
+            }
+            local0 += 2;
+        }
+        if (arg2 != "") {
+            arg0.push("ds_" + arg2, %[visible: !arg1]);
+        }
+    }
+
+    property _touchMode {
+        getter() {
+            try {
+                return typeof kag.TouchUI == "Object" && kag.TouchUI.currentEnabled;
+            } catch (e) { }
+        }
+        setter(arg0) {
+            try {
+                if (typeof kag.TouchUI == "Object") {
+                    kag.TouchUI.currentEnabled = arg0;
+                }
+            } catch (e) { }
+        }
+    }
+
+    function _filterHideTimeText(arg0) {
+        return !arg0 ? "OFF" : (arg0 > _bgmhidemax) ? "ON" : "%d%s".sprintf(arg0, "sec");
+    }
+
+    function filterBasicSliderText_bgmhidetime() {
+        return _filterHideTimeText(...);
+    }
+
+    function filterBasicSliderText_chapthidetime() {
+        return _filterHideTimeText(...);
+    }
+
+    function _getSpeedMultiplyToString(arg0) {
+        if (!arg0) {
+            return "MAX";
+        }
+        arg0 = 1 / arg0;
+        return (arg0 >= 10) ? "%s%2d".sprintf(_chmul, arg0)
+            : (arg0 < 1) ? "%s0.%2d".sprintf(_chmul, 100 * arg0) : "%s%.2f".sprintf(_chmul, arg0);
+    }
+
+    function drawSliderValue(arg0, arg1, *) {
+        var local1;
+        var local0 = getItem(arg0 + "_unit");
+        if (local0) {
+            local0.fillRect(0, 0, local0.width, local0.height, 0);
+            local1 = rexValueUnit.match(string(arg1));
+            if (local1 && local1.count > 0) {
+                drawText(local0, local1[2], "value", arg0);
+                arg1 = local1[1];
+            }
+        }
+        super.drawSliderValue(arg0, arg1, *);
+        if (arg0 == "autospeed_value") {
+            local1 = kag.autoModePageWaits.slow;
+            var local2 = "%.2fs".sprintf((100 - arg1) * local1 / 100000);
+            drawSliderValue("autotime_value", local2, *);
+        }
+    }
+
+    property _ctrlSkip {
+        getter() {
+            return !kag.noForceSkipUnread || _allSkip;
+        }
+        setter(arg0) {
+            kag.noForceSkipUnread = !arg0;
+        }
+    }
+
+    function updateReadSkipJump() {
+        var local0 = _readSkip;
+        setItemEnabled("readjump_on", local0);
+        setItemEnabled("readjump_off", local0);
+    }
+
+    function disableHSelectFix(arg0) {
+        disableFixItemsList(arg0, sf.hselectFix);
+    }
+
+    function syncHSceneWindow() {
+        if (!fromTitle) {
+            try {
+                kag.messageFrameChanger.redraw();
+            } catch (e) { }
+        }
+    }
+
+    function setAllConfirm(arg0) {
+
+        function seton(arg0) {
+            SystemConfig[arg0] = 1;
+        }
+
+        function setoff(arg0) {
+            SystemConfig[arg0] = 0;
+        }
+        var local0 = seton;
+        var local1 = setoff;
+        ForeachConfirmDialogTags((arg0 ? local0 : local1) incontextof global);
+        updateDialogAllOnOff();
+        updateNoCfChkDialog();
+    }
+
+    function updateDialogAllOnOff() {
+        var local0 = [1, 1];
+        ForeachConfirmDialogTags(function(arg0) {
+            this[!SystemConfig[arg0]] = 0;
+        } incontextof local0);
+        setItemMultiProp(["cfall_on", %[toggle: local0[1]], "cfall_off", %[toggle: local0[0]], void]);
+    }
+
+    function filterBasicSliderText_winopac(arg0) {
+        return int(+arg0 * 100 / 255);
+    }
+
+    function updateWindowColor() {
+        var local0 = CustomMessageLayer.getFrameOpacity(1);
+        var local1 = getItem("winsample");
+        if (local1) {
+            var local2 = getCurrentWindowColor();
+            if (typeof local1.currentColor == "undefined" || local1.currentColor !== local2) {
+                local1.currentColor = local2;
+                var local3 = getItem("winsample_orig");
+                var local4 = getItem("winsample_orig_color");
+                var local5 = getItem("winsample_orig_base");
+                if (local4 && local5) {
+                    ApplyMessageFrameColor(local1, local2, %[
+                        colorover: local4,
+                        colorbase: local5
+                    ], _lastWindowColorTag);
+                } else if (local3) {
+                    local1.assignImages(local3);
+                    var local6 = 1;
+                    local1.holdAlpha <-> local6;
+                    local1.fillOperateRect(
+                        0, 0, local1.imageWidth, local1.imageHeight, local2 | 4278190080, omPsOverlay
+                    );
+                    local1.holdAlpha <-> local6;
+                }
+            }
+            local1.opacity = local0;
+            local1.visible = 1;
+        }
+    }
+
+    function getCurrentWindowColor() {
+        if (!isvalid this) {
+            return 0;
+        }
+        var local0 = currentColorTag;
+        switch (local0) {
+            case "win":
+            case "owin":
+            case "hwin":
+                _lastWindowColorTag = local0;
+                break;
+        }
+        var local1 = (_lastWindowColorTag != "") ? _lastWindowColorTag : "win";
+        return 16777215 & int(+getColor(local1));
+    }
+
+    function getSampleColor() {
+        var local0 = currentColorTag;
+        switch (local0) {
+            case "text":
+            case "read":
+                _lastTextColorTag = local0;
+                break;
+        }
+        return getColor((_lastTextColorTag != "") ? _lastTextColorTag : "text");
+    }
+
+    function onColorChanged() {
+        super.onColorChanged(...);
+        if (_colorDragging) {
+            redrawRenderSample();
+        } else {
+            syncRenderSample();
+        }
+    }
+
+    function redrawRenderSample() {
+        var local0 = currentColorTag;
+        if ((local0 == "text" || local0 == "read") && _renderSample) {
+            _renderSample.setDefault(%[color: getSampleColor()]);
+            _renderSample.redraw();
+        }
+    }
+
+    function onColorDragBegin() {
+        _colorDragging = 1;
+        redrawRenderSample();
+    }
+
+    function onColorDragEnd() {
+        _colorDragging = 0;
+        syncRenderSample();
+    }
+
+    function onColorTagChanged() {
+        var local0 = _lastTextColorTag;
+        if (local0 == "") {
+            local0 = "text";
+        }
+        super.onColorTagChanged(...);
+        var local1 = getSampleColor();
+        if (_lastTextColorTag != local0) {
+            syncRenderSample();
+        }
+        updateWindowColor();
+    }
+
+    function getRenderSampleTextOne(arg0, arg1, *) {
+        var local0 = [];
+        var local1 = kag.subLanguageType;
+        var local2 = local1 !== void && local1 != kag.languageType;
+        var local3 = 0;
+        while (local3 < LanguageTags.count) {
+            var local4 = GetSysLangText(arg1, LanguageTags[local3], null);
+            if (local4 != "") {
+                local4 = local4.replace(/\\n/g, local2 ? " " : "\n");
+            }
+            local0[local3] = %[text: arg0((local4 != "") ? local4 : arg1, *)];
+            ++local3;
+        }
+        return %[language: local0];
+    }
+
+    function updateSnapshotState() {
+        var local0 = getSnapshotSilent();
+        if (local0) {
+            setItemMultiProp(["snapsilent_on", %[toggle: local0[0]], "snapsilent_off", %[toggle: local0[1]]]);
+        }
+    }
+
+    function getSnapshotSilent() {
+        var local0 = SaveSnapshotLayer("get");
+        if (local0) {
+            function contains(arg0, arg1) {
+                return arg0.indexOf(arg1) >= 0;
+            }
+            var local1 = string(local0.DefFile);
+            var local2 = contains(local1, "%H") || (contains(local1, "%M") || (contains(local1, "%S") || (contains(
+                local1, "%m"
+            ) || contains(local1, "%d"))));
+            var local3 = +local0.NoDialog;
+            var local4 = !local3;
+            var local5 = local3 && local2;
+            return [local5, local4, local2];
+        }
+    }
+
+    function setSnapshotSilent(arg0) {
+        if (!arg0) {
+            SaveSnapshotLayer("set|NoDialog:0");
+        } else {
+            var local0 = "set|NoDialog:1";
+            var local1 = getSnapshotSilent();
+            if (!local1[2]) {
+                var local2 = SaveSnapshotLayer("getdefault");
+                if (local2.DefFile != "") {
+                    local0 += ",DefFile:\"" + string(local2.DefFile) + "\"";
+                }
+            }
+            dm(local0);
+            SaveSnapshotLayer(local0);
+        }
+        updateSnapshotState();
+    }
+
+    function showSnapshotDetail() {
+        SaveSnapshotLayer("config");
+        updateSnapshotState();
+    }
+
+    function updateSpeechAndDrama() {
+        updateSpeechEnabled();
+        updateDrama();
+    }
+
+    property _textSpeechModuleLoaded {
+        getter() {
+            return typeof kag.textSpeechMenuItem == "Object";
+        }
+    }
+
+    function updateSpeechEnabled() {
+        var local0 = _textSpeechModuleLoaded;
+        setItemMultiProp(["use_speech", %[enabled: local0, toggle: local0 && SystemConfig.TextSpeechEnabled]]);
+    }
+
+    function toggleSpeechEnabled() {
+        if (CheckValidTextSpeech()) {
+            SystemConfig.TextSpeechEnabled = !SystemConfig.TextSpeechEnabled;
+            UpdateTextSpeech();
+        } else {
+            SetupTextSpeech(1);
+        }
+        updateSpeechAndDrama();
+    }
+
+    property _textView_vo {
+        getter() {
+            return getTextView(0);
+        }
+        setter(arg0) {
+            setTextView(0, arg0);
+        }
+    }
+
+    property _textView_nv {
+        getter() {
+            return getTextView(1);
+        }
+        setter(arg0) {
+            setTextView(1, arg0);
+        }
+    }
+
+    property _textView_ot {
+        getter() {
+            return getTextView(2);
+        }
+        setter(arg0) {
+            setTextView(2, arg0);
+        }
+    }
+
+    function getTextView(arg0) {
+        var local0 = kag.dramaticMode >> arg0 * 2 & 3;
+        return (local0 <= 2) ? local0 : 0;
+    }
+
+    function setTextView(arg0, arg1) {
+        arg1 = (+arg1 & 3) << arg0 * 2;
+        var local0 = ~(3 << arg0 * 2);
+        kag.dramaticMode = kag.dramaticMode & local0 | arg1;
+    }
+
+    function updateDrama() {
+        update("dramatic");
+    }
+
+    property _oldCompatDramaticMode {
+        getter() {
+            var local0 = _textSpeechModuleLoaded && SystemConfig.TextSpeechEnabled;
+            var local1 = _textView_vo;
+            var local2 = _textView_nv;
+            var local3 = _textView_ot;
+            return local1 == 1 && (local2 == (local0 ? 1 : 0) && local3 == 0);
+        }
+        setter(arg0) {
+            var local0 = _textSpeechModuleLoaded && SystemConfig.TextSpeechEnabled;
+            setBasicOptionValue("txv_voice", arg0 ? 1 : 0);
+            setBasicOptionValue("txv_novo", (arg0 && local0) ? 1 : 0);
+            setBasicOptionValue("txv_other", 0);
+        }
+    }
+
+    function getTempVoiceEffectParam() {
+        var local0;
+        var local1;
+        var local2;
+        if (_voefflist === void) {
+            _voefflist = [];
+            local0 = loadConfigFile(_voeffsample);
+            if (local0.count > 0) {
+                local1 = 0;
+                while (local1 < local0.count) {
+                    local2 = (string(local0[local1][0])).trim();
+                    if (local2 != "") {
+                        _voefflist.add(local2);
+                    }
+                    ++local1;
+                }
+            }
+            if (!_voefflist.count) {
+                _voefflist = null;
+            }
+        }
+        if (_voefflist && SystemVoice.enabled) {
+            local0 = SystemVoice.getVoiceInfo(_voefftag);
+            if (local0) {
+                local1 = SystemVoice._getExistVoice(local0.file);
+                if (local1 != "") {
+                    local2 = SystemVoice.stop();
+                    var local3 = SystemConfig.VoiceEffectEnabled
+                        ? "|" + _voefflist[int(defaultRandomGenerator.random() * _voefflist.count)] : "";
+                    var local4 = SystemVoice.getKagVoiceVolume(local0.name);
+                    var local5 = SystemVoice.pervolume;
+                    dm(local0.name, local1 + local3);
+                    return [local0.name, local1 + local3, local5, local4];
+                } else {
+                    SystemVoice.getVoiceFileWithExt(_voefftag, local0.base);
+                }
+            }
+        }
+    }
+
+    function convVoiceSpeedS2V(arg0) {
+        return (arg0 < 0) ? 1.0 : (arg0 < 100) ? arg0 / 50 + 1.0 : 3.0;
+    }
+
+    function convVoiceSpeedV2S(arg0) {
+        return (arg0 < 1) ? 0 : (arg0 < 3.0) ? (arg0 - 1.0) * 50 : 100;
+    }
+
+    property voiceSpeed {
+        getter() {
+            return convVoiceSpeedV2S(kag.voicespeed);
+        }
+        setter(arg0) {
+            kag.voicespeed = convVoiceSpeedS2V(arg0);
+        }
+    }
+
+    function filterBasicSliderText_vspeed(arg0) {
+        var local0 = convVoiceSpeedS2V(arg0);
+        return !local0 ? "MAX" : "%s%.2f".sprintf(_chmul, local0);
+    }
+
+    property _vspeedSync {
+        getter() {
+            return !!kag.scflags.voiceSpeedSync;
+        }
+        setter(arg0) {
+            kag.scflags.voiceSpeedSync = !!arg0;
+            syncVoiceSpeed(1);
+        }
+    }
+
+    function _setSpeedSlider(arg0, arg1) {
+        super._setSpeedSlider(...);
+        if (arg0 == "drawspeed") {
+            syncVoiceSpeed();
+        }
+    }
+
+    function syncVoiceSpeed(arg0) {
+        var local0 = _vspeedSync;
+        if (local0) {
+            var local1 = 1 / kag.drawspeed;
+            if (local1 < 1.0) {
+                local1 = 1.0;
+            } else if (local1 > 3.0) {
+                local1 = 3.0;
+            }
+            kag.voicespeed = local1;
+        }
+        if (arg0 || local0) {
+            update("vspeed");
+        }
+    }
+
+    function getCharVoiceUpdateTarget(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = super.getCharVoiceUpdateTarget(...);
+        local0[arg0 + "_num"] = local0[arg0 + "_value"];
+        local0[arg0 + "_dsmask"] = %[visible: !arg3];
+        return local0;
+    }
+
+    function onSetupChVoiceMaskLayer(arg0, arg1) {
+        if (SystemConfig.checkDisabledEffectColor === void) {
+            kag.waring("auto:chvmaskは色指定がないため無視されます");
+            return;
+        }
+        _foreachCharVoiceNames(function(arg0, arg1) {
+            var local0 = _voiceSwitchUiTag + arg1;
+            var local1 = "_dsmask";
+            var local2 = getItem(local0);
+            var local3 = getItem(local0 + local1);
+            if (local2 && local3) {
+                var local4 = SystemConfig.checkDisabledEffectColor;
+                local3.fillRect(0, 0, local3.width, local3.height, local4);
+                local3.type = ltPsMultiplicative;
+                local3.setPos(local3.left - local2.left, local3.top - local2.top);
+                local3.parent = local2;
+            }
+        });
+    }
+
+    function drawVoiceView(arg0, arg1) {
+        super.drawVoiceView(...);
+        arg0._copyButtonUIStates(0, _voiceViewUi, , "namebase");
+        super.drawVoiceView(arg0, arg1, , "name", 0);
+    }
+
+    function onChVoiceTargetChanged(arg0, arg1) {
+        _flashVoiceTargetChanged();
+        reloadHelp();
+        return super.onChVoiceTargetChanged(...);
+    }
+
+    function _flashVoiceTargetChanged() {
+        var local0 = getItem("flash");
+        if (local0) {
+            kag.stopAction(local0, 1);
+            local0.opacity = 255;
+            kag.beginAction(local0, %[opacity: %[handler: MoveAction, start: local0.opacity, value: 0, time: 200]], function() {
+                if (isvalid this) {
+                    visible = 0;
+                }
+            } incontextof local0, 1);
+            local0.type = ltPsOverlay;
+            local0.visible = 1;
+        }
+    }
+
+    function getSysSE(arg0, *) {
+        if (_sampleVoiceReplace && arg0.substr(0, _sampleVoiceSETag.length + 1) == _sampleVoiceSETag + ".") {
+            var local0 = arg0.substr(_sampleVoiceSETag.length + 1);
+            if (_sampleVoiceReplace[local0]) {
+                var local1 = _sampleVoiceReplace[local0]();
+                if (local1 != "") {
+                    arg0 = _sampleVoiceSETag + "." + local1;
+                }
+            }
+        }
+        return global.getSysSE(arg0, *);
+    }
+
+    function updateSysvoDetail() {
+        var local0 = SystemVoice.enabled;
+        setItemProp("sysvodetail", "enabled", local0);
+        setItemProp("ds_sysvodetail", "visible", !local0);
+    }
+
+    function showSystemVoiceDetail() {
+        var local0 = _sysvoDetailPanel = new OptionSystemVoiceDetailPanel(kag, "SystemVoiceDetail");
+        uiTargetLayer.setSelProcessLock(1);
+        local0.open();
+    }
+
+    function hideSystemVoiceDetail() {
+        if (_sysvoDetailPanel && isvalid _sysvoDetailPanel) {
+            invalidate(_sysvoDetailPanel);
+        }
+        _sysvoDetailPanel = void;
+        uiTargetLayer.setSelProcessLock(0);
+        update();
+    }
+
+    function copyMouseGestureIcon(arg0, arg1) {
+        return super.copyMouseGestureIcon(arg0, (arg1 != "") ? arg1 : "none");
+    }
+
+    function internalUiAutoMouseGestureAdd(arg0, arg1, arg2, arg3) {
+        var local0 = ["|000:", "|002:", "|001:", "|010:", "|012:", "|011:"];
+        var local1 = ["f_", "v_", "n_"];
+        var local2 = arg2;
+        var local3 = _gestureIconUiName + arg1;
+        arg0.push("func," + string(local3) + ",name," + string(arg3) + ",overlay," + string(local2)
+            + ",autotoggle,false");
+    }
+
+    function updateMouseGesture() {
+        setItemProp("frame_gesture", "visible", !_enGesture);
+        setItemProp("frame_gamepad", "visible", !_enGamePad);
+        return super.updateMouseGesture(...);
+    }
+
+    function getGamePadButtonIndex(arg0) {
+        var local0;
+        var local1;
+        if (_gamePadButtonIndexMap === void) {
+            local0 = _gamePadButtonIndexMap = %[];
+            local1 = _gamePadTags.count - 1;
+            while (local1 >= 0) {
+                local0[_gamePadTags[local1]] = local1;
+                --local1;
+            }
+        }
+        local0 = normalizeMouseGestureBindTag(...);
+        local1 = (local0 != "") ? _gamePadButtonIndexMap[local0] : void;
+        return (local1 !== void) ? local1 : -1;
+    }
+
+    function getMouseGestureBind(arg0) {
+        var local0 = getGamePadButtonIndex(arg0);
+        return (local0 >= 0) ? getGamePadBind(local0) : super.getMouseGestureBind(...);
+    }
+
+    function setMouseGestureBind(arg0, arg1) {
+        var local0 = getGamePadButtonIndex(arg0);
+        if (local0 >= 0) {
+            setGamePadBind(local0, arg1);
+        } else {
+            super.setMouseGestureBind(...);
+        }
+    }
+
+    function _getGestureTagType(arg0) {
+        var local0 = getGamePadButtonIndex(arg0);
+        return (local0 >= 0) ? "GamePad" : super._getGestureTagType(...);
+    }
+
+    function _getGestureTagEnabled(arg0, arg1) {
+        if (arg1 === void) {
+            arg1 = _getGestureTagType(arg0);
+        }
+        return (arg1 == "GamePad") ? _enGamePad : super._getGestureTagEnabled(arg0, arg1);
+    }
+
+    function getGamePadBind(arg0) {
+        if (gamePadBindReplace == void) {
+            gamePadBindReplace = %[];
+            Scripts.foreach(gamePadBindReverse, function(arg0, arg1, arg2) {
+                arg2[arg1] = arg0;
+            }, gamePadBindReplace);
+        }
+        var local0 = (arg0 >= 0) ? GamePadRebind.get(arg0) : void;
+        if (typeof local0 == "Integer" || local0 != "") {
+            var local1 = gamePadBindReplace[local0];
+            if (local1 != "") {
+                local0 = local1;
+            }
+        }
+        return local0;
+    }
+
+    function setGamePadBind(arg0, arg1) {
+        if (arg0 >= 0) {
+            var local0 = (arg1 != "") ? gamePadBindReverse[arg1] : void;
+            if (local0 !== void) {
+                arg1 = local0;
+            }
+            GamePadRebind.set(arg0, arg1);
+            GamePadRebind();
+        }
+    }
+
+    property _enGamePad {
+        getter() {
+            return GamePadEnabled() || SystemConfig.GamePadExForceDisabled == -2;
+        }
+        setter(arg0) {
+            GamePadEnabled.change(!!arg0);
+            __call("help_reload");
+            updateMouseGesture();
+            if (!arg0) {
+                hideGamePadButtonIndicator();
+            }
+        }
+    }
+
+    property isGamePadExEnabled {
+        getter() {
+            return typeof kag.GamePadInput == "Object" && kag.GamePadInput;
+        }
+    }
+
+    function reassignGamePadButtons() {
+        if (isGamePadExEnabled) {
+            var local0 = new GamePadButtonAssin(kag, kag.uibase, "GamePadButtonAssin", this);
+            local0.open();
+            __call("help_reset", 0);
+        }
+    }
+
+    function getGamePadButtonAssignLayer(arg0) {
+        return "button_" + (string(_gamePadTags[arg0])).toLowerCase();
+    }
+
+    function onGamePadButtonAssignLoaded(arg0) {
+
+        function oprfuncs(arg0, arg1, arg2) {
+            arg2[arg1 + arg0.toLowerCase()] = 1;
+        }
+        var local0 = oprfuncs;
+        _foreachGestureItems(local0, arg0);
+    }
+
+    function doneGamePadButtonAssign(arg0, arg1, arg2) {
+        var local0 = arg0.flagname;
+        if (local0 != "_dummy_gamepad_") {
+            switch (arg1) {
+                case "done":
+                    kag.scflags[local0] = arg2;
+                    GamePadRefresh(kag);
+                    break;
+                case "reset":
+                    delete kag.scflags[local0];
+                    GamePadRefresh(kag);
+                    break;
+            }
+        }
+        hideGamePadButtonIndicator();
+    }
+
+    function termGamePadBind() {
+        SystemConfig.GamePadExInputPassThrough = void;
+    }
+
+    function setupGamePadBind() {
+        if (typeof kag.GamePadInput == "Object") {
+            kag.GamePadInput.updateWithSuspendedState();
+        }
+        termGamePadBind();
+        if (currentPageTab != "10gamepad") {
+            return;
+        }
+        SystemConfig.GamePadExInputPassThrough = onGamePadBindInputEvent;
+    }
+
+    function onGamePadBindInputEvent(arg0, arg1) {
+        if (arg0 === void) {
+            return showGamePadButtonIndicator(arg1);
+        }
+        var local0 = arg1.key;
+        var local1 = kag.postInputEvent;
+        if (local0 >= VK_PAD1 && local0 <= VK_PAD10 + 2) {
+            var local2;
+            switch (kag.padKeyMap[local0]) {
+                case VK_RETURN:
+                    return local1(...);
+                case VK_ESCAPE:
+                    local2 = "GAMEPAD_CANCEL";
+                    break;
+            }
+            var local3 = kagCustomizedKeys[local0];
+            if (local3 == "") {
+                local3 = kagCustomizedKeys["*" + local0];
+            }
+            switch (local3) {
+                case "rclick":
+                case "escape":
+                case "panic":
+                    local2 = "GAMEPAD_CANCEL";
+                    local2 = "GAMEPAD_CANCEL";
+                    break;
+                case "click":
+                    return local1(...);
+            }
+            if (local2 != "") {
+                if (arg0 == "onKeyUp") {
+                    __call("help_reset");
+                } else if (arg0 == "onKeyDown") {
+                    __call("help", local2, 1);
+                }
+            }
+            return;
+        }
+        return local1(...);
+    }
+
+    function showGamePadButtonIndicator(arg0) {
+        var local0 = arg0.state;
+        var local1 = arg0.mask;
+        var local2 = arg0.map;
+        var local3;
+        while (local1 != 0) {
+            local3 = local1 & ~(local1 - 1);
+            var local4 = local2[local3];
+            if (local4 >= VK_PAD1 && local4 <= VK_PAD10 + 2) {
+                var local5 = getItem(getGamePadButtonAssignLayer(local4 - VK_PAD1));
+                if (local5) {
+                    local5.visible = !!(local0 & local3);
+                }
+            }
+            local1 &= ~local3;
+        }
+    }
+
+    function hideGamePadButtonIndicator() {
+        var local0 = 0;
+        while (local0 < _gamePadTags.count) {
+            var local1 = getItem(getGamePadButtonAssignLayer(local0));
+            if (local1) {
+                local1.visible = 0;
+            }
+            ++local0;
+        }
+    }
+
+    function getDrawKeyBindTextTag(arg0, arg1, arg2, arg3) {
+        var local0 = super.getDrawKeyBindTextTag(...);
+        if (arg1) {
+            return local0 + ".ds";
+        }
+        return local0 + ((arg2 || (string(arg3)).length >= 7) ? ".un" : "");
+    }
+
+    function getKeyBindCaption(arg0) {
+        return (arg0 != "")
+            ? GetSystemLangMessage("ShortCutBind_" + arg0, super.getKeyBindCaption(...)) : void;
+    }
+
+    property _sysseEnable {
+        getter() {
+            return _getAudioEnable("sysse");
+        }
+    }
+
+    property _sysvoEnable {
+        getter() {
+            return SystemVoice.enabled;
+        }
+    }
+
+    function getVoiceTargetName(arg0 = currentVoiceChar) {
+        if (typeof arg0 == "Integer") {
+            arg0 = _voiceNames[arg0];
+        }
+        var local0 = arg0;
+        var local1 = (arg0 != "") ? SystemConfig.voiceNameReplace[arg0] : void;
+        if (local1 !== void) {
+            switch (typeof local1) {
+                case "String":
+                    arg0 = local1;
+                    break;
+                case "Object":
+                    local1 = local1(arg0);
+                    if (local1 != "") {
+                        local0 = local1;
+                        arg0 = local1;
+                    }
+                    break;
+            }
+        }
+        arg0 = GetSystemLangMessage("ConfigRenameChar" + local0, arg0);
+        return (arg0 != "") ? arg0 : void;
+    }
+
+    function isVoiceTarget(arg0) {
+        return currentVoiceChar != "" && currentVoiceChar == _voiceNames[+arg0];
+    }
+}
+this.CustomOption = CustomOption;
+
+class OptionChapterHideTimeModule extends Module {
+    var _chapthidemax = 30;
+    __entry("construct", function() {
+        entryBasicOption("chapthidetime", %[
+            prop: "_chaptHideTime",
+            type: "slider",
+            max: _chapthidemax + 1
+        ]);
+    });
+    var _chaptHideTimeChanged;
+    __entry("destruct", function() {
+        if (_chaptHideTimeChanged) {
+            try {
+                ShowDate.onConfigUpdate();
+            } catch (e) { }
+        }
+    });
+
+    property _chaptHideTime {
+        getter() {
+            var local0 = SystemConfig.ChapterAutoHideTime;
+            return !local0 ? _chapthidemax + 1 : (local0 < 0) ? 0 : local0;
+        }
+        setter(arg0) {
+            SystemConfig.ChapterAutoHideTime = (arg0 > _chapthidemax) ? 0 : !arg0 ? -1 : arg0;
+            _chaptHideTimeChanged = 1;
+        }
+    }
+}
+this.OptionChapterHideTimeModule = OptionChapterHideTimeModule;
+
+class OptionPageModule extends Module {
+    var pagetabs = [
+        "01basic", "02image", "03game1", "04game2", "05text", "06sound", "07dialog", "08mouse", "09keyboard",
+        "10gamepad"
+    ];
+    var pagemaps = %[
+        "01basic" => "0simple",
+        "02image" => "1display",
+        "03game1" => "2game1",
+        "04game2" => "3game2",
+        "05text" => "4text",
+        "06sound" => "5sound1",
+        "07dialog" => "6dialog",
+        "08mouse" => "7mouse",
+        "09keyboard" => "8keyboard1",
+        "10gamepad" => "9gamepad"
+    ];
+    var _page = SystemConfig.lastOptionPage;
+    __entry("uiloaded", setupPageToggle);
+    __entry("uiauto_page", function(arg0) {
+        var local0 = "rgrp,page";
+        var local1 = pagetabs.count - 1;
+        while (local1 >= 0) {
+            var local2 = "page" + local1;
+            local0 += "," + local2;
+            arg0.push("func," + string(local2) + ",sename,page,target,*page,exp,Current.page=" + string(local1));
+            --local1;
+        }
+        arg0.push(local0);
+    });
+
+    property currentPageTab {
+        getter() {
+            return pagetabs[+page];
+        }
+    }
+
+    property storage {
+        getter() {
+            var local0 = currentPageTab;
+            var local1 = (local0 != "" && pagemaps[local0] != "") ? "option_" + pagemaps[local0] : void;
+            if (local1 == "" || !Storages.isExistentStorage(local1 + ".pbd")) {
+                return "option";
+            }
+            var local2 = !checkAdult() ? local1 + "_allage.func" : void;
+            if (local2 != "" && Storages.isExistentStorage(local2)) {
+                local1 = [local1, local2];
+            }
+            return local1;
+        }
+    }
+
+    property page {
+        getter() {
+            return int(_page);
+        }
+        setter(arg0) {
+            var local0 = int(arg0);
+            var local1 = pagetabs.count;
+            while (local0 < 0) {
+                local0 += local1;
+            }
+            local0 = local0 % local1;
+            _page = local0;
+            SystemConfig.lastOptionPage = local0;
+        }
+    }
+
+    function setupPageToggle() {
+        setItemProp("page" + page, "toggle", 1);
+        setItemProp("page" + page, "absolute", -1);
+    }
+}
+this.OptionPageModule = OptionPageModule;
+
+class GamePadButtonAssin extends GamePadExButtonAssingWizardDialogBase {
+    function GamePadButtonAssin() {
+        super.GamePadExButtonAssingWizardDialogBase(...);
+    }
+
+    function finalize() {
+        super.finalize(...);
+    }
+
+    function loadDialog(arg0) {
+        var local0 = super.loadDialog(...);
+        var local1 = %[
+            page0: 1,
+            page1: 1,
+            page2: 1,
+            page3: 1,
+            page4: 1,
+            page5: 1,
+            page6: 1,
+            page7: 1,
+            page8: 1,
+            page9: 1,
+            engamepad_rev: 1,
+            label_a: -1,
+            label_b: -1,
+            sep_a: -1,
+            sep_b: -1,
+            back: 1,
+            reset: 1,
+            title: 1,
+            caption: -1
+        ];
+        ownerCallback("onGamePadButtonAssignLoaded", local1);
+        PiledTempDisableScreenImage(this, kag.current, local1);
+        return local0;
+    }
+}
+this.GamePadButtonAssin = GamePadButtonAssin;
+this.OptionSystemVoiceDetail = OptionSystemVoiceDetail;
+this.OptionSystemVoiceDetailPanel = OptionSystemVoiceDetailPanel;
+this.CustomKeyboardPanelInputDialog = CustomKeyboardPanelInputDialog;
+this.PiledTempDisableScreenImage = PiledTempDisableScreenImage incontextof this;
+SystemConfig.optionModuleList = null;
+
+SystemConfig.optionModuleIgnore = %[
+    OptionQmorderDragModule: 1,
+    OptionSpeedSampleModule: 1,
+    OptionPulldownSelectUtil: 1
+];
+
+Dialog.add(%[name: "option", start: CustomOption]);
+
+SystemHook.add("option.close.init", function() {
+    redrawMessageText();
+    if (kag.selectShowing) {
+        kag.selectLayer.redrawButtons();
+    }
+    kag.setMenuAccessibleAll();
+} incontextof global, 1000);
+
+SystemHook.add("option.close.done", function() {
+    resetModeChanged();
+} incontextof global);
+
+OptionModule("OptionChapterHideTimeModule");
+OptionModule("OptionPageModule");
+createPropertyProxy("lastOptionPage", "0", , "(int)+", SystemConfig);
+&SystemActionBase.escape = SystemActionBase._rclick;
+
+addAfterInitCallback(function() {
+    kag.atextwait = createPropertyProxy("autoModeChWait", "0", , "(int)+", kag);
+});
+
+SystemConfig.GamePadExButtonAssignWizard = %[storage: "option_9gamepad2_assign", bgopacity: 0, bgcolor: 0];
+SystemConfig.GamePadExButtonAssignTexts.nobutton = "ボタンがないか、押しても反応がない場合は「スキップ」を押してください";
+SystemConfig.GamePadExButtonAssignTexts.reset = "すべての配置を初期状態に戻すには「リセット」ボタンを押してください";
+SystemConfig.GamePadExButtonAssignTexts.norelease = "ボタンを離しているのに進まない時は「リセット」ボタンを押してサポートにご連絡ください";
+global.KeyBindInputDialog = CustomKeyboardPanelInputDialog;
+
+if (typeof global.MakeSysLangProxyInSystemConfig == "Object") {
+    MakeSysLangProxyInSystemConfig(["ShortCutNoBind"]);
+}
+
+property ModuleOptionSystemVoiceDetailBase {
+    getter() {
+        delete global.ModuleOptionSystemVoiceDetailBase;
+        if (typeof global.BuildMixinClass != "Object") {
+            KAGLoadScript("mixinclass.tjs");
+        }
+        BuildMixinClass("ModuleOptionSystemVoiceDetailBase", "PanelReferedOptionBase", [
+            "OptionBasicPropertyModule", "OptionAudioVolumeModule", "OptionSystemVoiceModule", "OptionHelpModule"
+        ]);
+        return global.ModuleOptionSystemVoiceDetailBase;
+    }
+}
+
+class OptionSystemVoiceDetail extends ModuleOptionSystemVoiceDetailBase {
+    __entry("uiauto_sysvoplay", function(arg0) {
+        var local0 = sysvoSettingsList;
+        if (local0) {
+            var local1 = 0;
+            while (local1 < local0.count) {
+                var local2 = local0[local1];
+                if (local2 != "") {
+                    var local3 = "changeSysvoPlay/" + local2 + "/" + local1;
+                    var local4 = "sysvoplay" + local1;
+                    pushOnOffAutoFunc(arg0, local4, local3 + "/on", local3 + "/off", local3 + "/tgl");
+                    arg0.push("empt," + local4);
+                }
+                ++local1;
+            }
+        }
+        arg0.push(
+            "func,sysvo_init,exp,Current.cmd('doInit')", "func,sysvo_revert,exp,Current.cmd('doRevert')",
+            "func,sysvo_ok,exp,Current.cmd('close'),sename,back",
+                "func,sysvoall_on,exp,Current.cmd('doToggleAll/true')",
+                
+            "func,sysvoall_off,exp,Current.cmd('doToggleAll/false')",
+            "empt,sysvoall_on,sysvoall_off,sysvo_revert,sysvo_init,sysvo_ok"
+        );
+    });
+    __entry("update", updateSysvoPlay);
+    __entry("update", updateSysvoRandom);
+
+    function OptionSystemVoiceDetail() {
+        super.ModuleOptionSystemVoiceDetailBase(...);
+        if (!_sysvoTypeMode) {
+            var local0 = SystemVoice.keylist;
+            var local1 = 0;
+            while (local1 < local0.count) {
+                __entry("change_sysvo" + local1, "onSysvoStateChanged");
+                ++local1;
+            }
+        }
+    }
+
+    function finalize() {
+        super.finalize(...);
+    }
+
+    function onSysvoStateChanged(arg0, arg1) {
+        var local0 = (arg0 && arg1 instanceof "Dictionary") ? arg1.name : void;
+        if (local0 != "" && local0.substr(0, 5) == "sysvo") {
+            var local1 = SystemVoice.keylist[+local0.substr(5)];
+            dm("onSysvoStateChanged", local0, local1);
+            if (local1 != "") {
+                PlaySystemVoice("volume", local1);
+            }
+        }
+    }
+
+    property sysvoSettingsList {
+        getter() {
+            return SystemVoice._voiceSettingsList;
+        }
+    }
+
+    function updateSysvoPlay() {
+        var local0 = sysvoSettingsList;
+        var local1 = 1;
+        var local2 = 1;
+        if (local0) {
+            for (var local3 = 0; local3 < local0.count; ++local3) {
+                var local4 = updateSysvoPlayOne(local0[local3], local3);
+                if (local4) {
+                    local2 = 0;
+                    continue;
+                } else {
+                    local1 = 0;
+                }
+            }
+        }
+        setItemMultiProp(["sysvoall_on", %[toggle: local1], "sysvoall_off", %[toggle: local2], void]);
+    }
+
+    function updateSysvoPlayOne(arg0, arg1) {
+        var local0 = getSysvoPlay(arg0);
+        var local1 = makeOnOffPropList("sysvoplay" + arg1, local0);
+        setItemMultiProp(local1);
+        return local0;
+    }
+
+    function setBasicOptionValue(arg0) {
+        super.setBasicOptionValue(...);
+        if (arg0.substr(0, 5) == "sysvo") {
+            var local0 = #arg0.charAt(5);
+            if (local0 >= 48 && local0 <= 57) {
+                updateSysvoRandom();
+            }
+        }
+    }
+
+    function updateSysvoRandom() {
+        var local0 = SystemVoice.charmask;
+        var local1 = !!(local0 & local0 - 1);
+        setItemProp("sysvo_rnd", "toggle", local1);
+    }
+
+    property isAllSysVoice {
+        getter() {
+            var local0 = SystemVoice.charmaskall;
+            return (SystemVoice.charmask & local0) == local0;
+        }
+    }
+
+    function toggleSysvoRandom() {
+        var local0 = isAllSysVoice;
+        SystemVoice.charmask = local0 ? SystemVoice.charmaskall + 1 : SystemVoice.charmaskall;
+        if (local0) {
+            SystemVoice.stop();
+        }
+        update();
+    }
+
+    function changeSysvoPlay(arg0, arg1, arg2) {
+        if (arg0 == "") {
+            return;
+        }
+        var local0;
+        switch (arg2) {
+            case "on":
+                local0 = 1;
+                break;
+            case "off":
+                local0 = 0;
+                break;
+            default:
+                local0 = !getSysvoPlay(arg0);
+                break;
+        }
+        setSysvoPlay(arg0, local0);
+        updateSysvoPlay();
+        if (local0) {
+            PlaySystemVoice(arg0);
+        }
+    }
+
+    function doRevert() {
+        dm("doRevert");
+    }
+
+    function doInit() {
+        dm("doInit");
+    }
+
+    function doToggleAll(arg0) {
+        arg0 = !!+arg0;
+        var local0 = sysvoSettingsList;
+        if (local0) {
+            var local1 = 0;
+            var local2 = local0.count;
+            while (local1 < local2) {
+                setSysvoPlay(local0[local1], arg0, local1 + 1 == local2);
+                ++local1;
+            }
+        }
+        updateSysvoPlay();
+    }
+
+    function getSysvoPlay(arg0) {
+        return kag.scflags["sysvoplay_" + arg0];
+    }
+
+    function setSysvoPlay(arg0, arg1, arg2 = 1) {
+        kag.scflags["sysvoplay_" + arg0] = arg1;
+        if (arg2) {
+            SystemVoice.updateVoiceTagTable();
+        }
+    }
+}
+
+class OptionSystemVoiceDetailPanel extends OptionPanelBase {
+    var modal = 1;
+    var optionClass = OptionSystemVoiceDetail;
+    var optionStorage = "option_5sound2";
+    if (!checkAdult()) {
+        optionStorage = [optionStorage, "option_5sound2_allage.func"];
+    }
+
+    function OptionSystemVoiceDetailPanel() {
+        super.OptionPanelBase(...);
+    }
+
+    function finalize() {
+        super.finalize(...);
+    }
+
+    function onUiload(arg0) {
+        arg0.bgcolor = MyYesNoDialog.bgColor;
+        arg0.bgopacity = MyYesNoDialog.bgOpacity;
+    }
+
+    function onUiloaded(arg0) {
+        PiledTempDisableScreenImage(this, kag.current);
+        option.update();
+    }
+
+    function open(arg0) {
+        window.showPanel(this, arg0);
+        showHideFade(1);
+    }
+
+    function close() {
+        playSysSE("sysvosetting.close");
+        enabled = 0;
+        showHideFade(0);
+    }
+
+    function onShowHideFadeDone(arg0, arg1) {
+        if (!isvalid this) {
+            return;
+        }
+        super.onShowHideFadeDone(...);
+        if (!arg0) {
+            if (window.panelLayer === this) {
+                window.hidePanel();
+            }
+            global.Current.cmd("hideSystemVoiceDetail");
+        }
+    }
+}
+
+class CustomKeyboardPanelInputDialog extends KeyboardPanelInputDialog {
+    function CustomKeyboardPanelInputDialog() {
+        super.KeyboardPanelInputDialog(...);
+    }
+
+    function finalize() {
+        super.finalize(...);
+    }
+
+    function setupDialog() {
+        super.setupDialog(...);
+        PiledTempDisableScreenImage(this, kag.current);
+        if (_uiPopup) {
+            _popox = 0;
+            _popoy = -_uiPopup.height - 4;
+        }
+    }
+
+    function onOpen() {
+        if (names.helptext) {
+            try {
+                CustomDrawLayerText(names.helptext, owner.help.getHelpText("KEY_RESERVED"), "option.help");
+            } catch (e) { }
+        }
+        return super.onOpen(...);
+    }
+
+    function drawHelpTip(arg0, arg1, arg2) {
+        arg0.fillRect(0, 0, arg0.width, arg0.height, 0);
+        if (_uiPopup && (typeof arg1 == "String" && (arg1 != "" && arg1 != "none"))) {
+            arg0._copyButtonUIStates(0, _uiPopup, , "base");
+            arg0._copyButtonUIStates(0, _uiPopup, , "head");
+            arg0._copyButtonUIStates(0, _uiPopup, , arg1);
+            arg0.bringToFront();
+        }
+        if (arg2) {
+            setHelpTipPos(arg0, arg2.left, arg2.top, _popox, _popoy);
+        }
+    }
+
+    function updateBindableKeyReset(arg0, arg1, arg2, arg3, arg4) {
+        super.updateBindableKeyReset(...);
+        var local0 = 0;
+        if (resetMode && !arg0.enabled) {
+            if (!arg0.halftone) {
+                arg0.enabled = 1;
+                local0 = 1;
+            } else {
+                arg0.halftone = 0;
+                arg0.opacity = 255;
+            }
+        }
+        arg0.eventTransparent = local0;
+    }
+
+    function updateBindableKeyOne(arg0, arg1, arg2) {
+        super.updateBindableKeyOne(...);
+        if (resetMode && arg0.toggle) {
+            arg0.eventTransparent = 0;
+        }
+    }
+}
+
+function PiledTempDisableScreenImage(arg0, arg1, arg2, arg3) {
+    if (arg2 === void) {
+        arg2 = %[
+            page0: 1,
+            page1: 1,
+            page2: 1,
+            page3: 1,
+            page4: 1,
+            page5: 1,
+            page6: 1,
+            page7: 1,
+            page8: 1,
+            page9: 1,
+            back: 1,
+            reset: 1,
+            title: 1,
+            caption: -1
+        ];
+    }
+    if (arg3 === void) {
+        arg3 = 1073741824;
+    }
+
+    var local5;
+    var local6;
+    var local7;
+    var local0 = arg1.names;
+    var local1 = Scripts.getObjectKeys(local0);
+    var local2 = [];
+    var local3 = [];
+    var local4;
+    for (local4 = 0; local4 < local1.count; ++local4) {
+        local5 = local1[local4];
+        local6 = local0[local5];
+        local7 = arg2[local5];
+        if (local7) {
+            if (local7 < 0) {
+                continue;
+            } else if (local6.showDisableImage || local6.halftone) {
+                local2.push(local6, "enabled", local6.enabled);
+                local6.enabled = 0;
+                continue;
+            } else {
+                local2.push(local6, "visible", local6.visible);
+                local3.add(local6);
+                local6.visible = 0;
+                continue;
+            }
+        } else {
+            local2.push(local6, "visible", local6.visible);
+            local6.visible = 0;
+        }
+    }
+    arg0.type = ltOpaque;
+    kag.captureSnapshot(arg0, , , 0);
+    local4 = 0;
+    while (local4 < local2.count) {
+        local5 = local2[local4];
+        local6 = local2[local4 + 1];
+        local7 = local2[local4 + 2];
+        local5[local6] = local7;
+        local4 += 3;
+    }
+    local4 = arg1.left;
+    local5 = arg1.top;
+    local6 = kag.temporaryLayer;
+    local7 = arg3 & 16777215;
+    var local8 = arg3 >> 24 & 255;
+    var local9 = 0;
+    while (local9 < local3.count) {
+        var local10 = local3[local9];
+        local6.setSize(local10.width, local10.height);
+        local6.copyRect(0, 0, local10, -local10.imageLeft, -local10.imageTop, local10.width, local10.height);
+        UILayer_ApplyDisableEffect(local6, null, 0);
+        arg0.operateRect(local4 + local10.left, local5 + local10.top, local6, 0, 0, local10.width, local10.height);
+        ++local9;
+    }
+    local6.face = dfAuto;
+}

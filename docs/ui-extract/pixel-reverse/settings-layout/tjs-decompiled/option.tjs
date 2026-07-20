@@ -1,0 +1,3472 @@
+class OptionAtom {
+    var fromTitle;
+
+    function finalize() { }
+
+    function OptionAtom(arg0) {
+        fromTitle = (arg0.fromtitle !== void) ? +arg0.fromtitle : 0;
+    }
+
+    function update() { }
+
+    property uiTargetLayer {
+        getter() {
+            return kag.current;
+        }
+    }
+
+    function getItem(arg0) {
+        return (arg0 != "") ? uiTargetLayer.names[arg0] : void;
+    }
+
+    function focusItem(arg0) {
+        var local0 = getItem(arg0);
+        if (local0 !== void) {
+            uiTargetLayer.setFocusToLink(uiTargetLayer.checkFocus(local0.linkNum, 1), 1);
+        }
+    }
+
+    function setItemProp(arg0, arg1, arg2) {
+        var local0 = getItem(arg0);
+        if (local0 !== void) {
+            local0[arg1] = arg2;
+        }
+    }
+}
+this.OptionAtom = OptionAtom;
+
+class OptionBase extends OptionAtom {
+    var _voiceNames;
+    var lastItem;
+    var itemNames = [];
+    var itemUpdates = %[];
+    var _ts = %[max: 9, format: "ts%d", offset: 1, num: 10, prop: "textSpeed"];
+    var _as = %[max: 9, format: "as%d", offset: 1, num: 10, prop: "autoSpeed"];
+    var _vol = %[max: 9, format: "vol%d", offset: 1, num: 10, prop: "waveVolume"];
+    var _bgm = %[max: 9, format: "bgm%d", offset: 1, num: 10, prop: "bgmVolume"];
+    var _se = %[max: 9, format: "se%d", offset: 1, num: 10, prop: "seVolume"];
+    var _sse = %[max: 9, format: "sse%d", offset: 1, num: 10, prop: "sysseVolume"];
+    var _vo = %[max: 9, format: "vo%d", offset: 1, num: 10, prop: "voiceVolume"];
+    var _fontList;
+    var fontSelectFlags = fsfSameCharSet | fsfNoVertical | fsfTrueTypeOnly;
+    if (kag.showFixedPitchOnlyInFontSelector) {
+        fontSelectFlags |= fsfFixedPitch;
+    }
+
+    var fontSelectSize = 24;
+    var fontSelectDraw = [16777215, 255, 1];
+
+    function finalize() {
+        super.finalize(...);
+    }
+
+    function OptionBase(arg0) {
+        super.OptionAtom(...);
+        _voiceNames = (typeof SystemConfig.voiceNames == "Object")
+            ? SystemConfig.voiceNames : global.OptionBase.voiceNames;
+        if (_voiceNames === void) {
+            var _temp1 = new global.Array();
+            global.OptionBase.voiceNames = _temp1;
+            _voiceNames = global.OptionBase.voiceNames;
+            kag.errorCmd("internal error: SystemConfig.voiceNames not defined");
+        }
+        lastItem = arg0.lastitem;
+        addOnOffItem("fullscreen", "fullscreen", "window", "_fullscreen");
+        addOnOffItem("afterSkip", "afterskip", , "kag.afterskip");
+        addOnOffItem("afterAuto", "afterauto", , "kag.afterauto");
+        addOnOffItem("voiceCut", "voicecut", , "kag.voicecut");
+        addOnOffItem("voiceCutPage", "voicecutpage", , "kag.voicecutpage");
+        addOnOffItem("bgmDown", "bgmdown", , "kag.bgmdown");
+        addOnOffItem("allSkip", "skipall", "skipread", "_allSkip");
+        addOnOffItem("waveEnable", "wave", , "_waveEnable");
+        addOnOffItem("bgmEnable", "bgm", , "_bgmEnable");
+        addOnOffItem("seEnable", "se", , "_seEnable");
+        addOnOffItem("sysseEnable", "sysse", , "_sysseEnable");
+        addOnOffItem("voiceEnable", "voice", , "_voiceEnable");
+        addUpdate("waveVolume", updateWaveVolume);
+        addUpdate("bgmVolume", updateBgmVolume);
+        addUpdate("seVolume", updateSeVolume);
+        addUpdate("sysseVolume", updateSysSeVolume);
+        addUpdate("voiceVolume", updateVoiceVolume);
+        addUpdate("textSpeed", updateTextSpeed);
+        addUpdate("autoSpeed", updateAutoSpeed);
+        addUpdate("effectSpeed", updateEffectSpeed);
+        addUpdate("voice", updateVoice);
+        addUpdate("titleBack", updateTitleBack);
+        addUpdate("fontSelect", updateFontSelect);
+    }
+
+    function addUpdate(arg0, arg1) {
+        itemNames.remove(arg0, 1);
+        itemNames.add(arg0);
+        itemUpdates[arg0] = arg1;
+    }
+
+    function addOnOffItem(arg0, arg1, arg2, arg3, arg4) {
+        if (arg2 === void) {
+            arg2 = arg1 + "_off";
+            arg1 = arg1 + "_on";
+        }
+        entrySwitchItem(arg0, arg4, "function() { setItemProp(" + string(arg3) + " ? '" + string(arg1) + "' : '"
+            + string(arg2) + "', 'toggle', true);}", "property " + string(arg0) + " { setter(v) { " + string(arg3)
+            + " = v; itemUpdates." + string(arg0) + "(); } getter { return " + string(arg3) + "; } }");
+    }
+
+    function addCheckItem(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = arg4 ? "!" : "!!";
+        entrySwitchItem(arg0, arg3, "function() { setItemProp('" + string(arg1) + "', 'toggle', " + string(local0) + "("
+            + string(arg2) + "));}", "property " + string(arg0) + " { setter(v) { " + string(arg2)
+            + " = (v == 'toggle') ? !(" + string(arg2) + ") : !!v; itemUpdates." + string(arg0)
+            + "(); } getter { return !!" + string(arg2) + "; } }");
+    }
+
+    function entrySwitchItem(arg0, arg1, arg2, arg3) {
+        if (typeof this[arg0] != "undefined") {
+            Debug.message(arg0 + "が上書きされます");
+        }
+        if (arg1 === void) {
+            arg3!;
+        } else {
+            this[arg0] = arg1;
+        }
+        addUpdate(arg0, arg2! incontextof this);
+    }
+
+    function update(arg0 = void) {
+        var local0;
+        if (arg0 == "") {
+            local0 = 0;
+            while (local0 < itemNames.count) {
+                update(itemNames[local0]);
+                ++local0;
+            }
+        } else {
+            local0 = itemUpdates[arg0];
+            if (local0 !== void) {
+                local0();
+            }
+        }
+    }
+
+    function updateTitleBack() {
+        setItemProp("backtotitle", "enabled", !fromTitle);
+    }
+
+    property _fullscreen {
+        getter() {
+            return kag.fullScreened;
+        }
+        setter(arg0) {
+            if (arg0) {
+                kag.fullScreenMenuItem.click();
+            } else {
+                kag.windowedMenuItem.click();
+            }
+        }
+    }
+
+    property _allSkip {
+        getter() {
+            return (typeof kag._allskip != "undefined") ? kag._allskip : kag.allskip;
+        }
+        setter(arg0) {
+            if (arg0) {
+                kag.allskipMenuItem.click();
+            } else {
+                kag.noallskipMenuItem.click();
+            }
+        }
+    }
+
+    property _waveEnable {
+        getter() {
+            return !!kag.waveenable;
+        }
+        setter(arg0) {
+            kag.waveenable = !!arg0;
+            updateWaveVolume();
+        }
+    }
+
+    property _bgmEnable {
+        getter() {
+            return !!kag.bgmenable;
+        }
+        setter(arg0) {
+            kag.bgmenable = !!arg0;
+            updateBgmVolume();
+        }
+    }
+
+    property _seEnable {
+        getter() {
+            return !!kag.seenable;
+        }
+        setter(arg0) {
+            kag.seenable = !!arg0;
+            updateSeVolume();
+        }
+    }
+
+    property _sysseEnable {
+        getter() {
+            return !!kag.sysseenable;
+        }
+        setter(arg0) {
+            kag.sysseenable = !!arg0;
+            updateSysSeVolume();
+        }
+    }
+
+    property _voiceEnable {
+        getter() {
+            return !!kag.voiceenable;
+        }
+        setter(arg0) {
+            kag.voiceenable = !!arg0;
+            updateVoiceVolume();
+        }
+    }
+
+    function updateTextSpeed() {
+        updateVolume("textspeed", kag.textspeed, , _ts);
+    }
+
+    function updateAutoSpeed() {
+        updateVolume("autospeed", kag.autospeed, , _as);
+    }
+
+    function updateWaveVolume() {
+        updateVolume("wavevolume", kag.wavevolume, kag.waveenable, _vol);
+    }
+
+    function updateBgmVolume() {
+        updateVolume("bgmvolume", kag.bgmvolume, kag.bgmenable, _bgm);
+    }
+
+    function updateSeVolume() {
+        updateVolume("sevolume", kag.sevolume, kag.seenable, _se);
+    }
+
+    function updateSysSeVolume() {
+        updateVolume("syssevolume", kag.syssevolume, kag.sysseenable, _sse);
+    }
+
+    function updateVoiceVolume() {
+        updateVolume("voicevolume", kag.voicevolume, kag.voiceenable, _vo);
+    }
+
+    function updateVolume(arg0, arg1, arg2, arg3) {
+        setItemProp(arg0, "position", arg1);
+        if (arg2 !== void) {
+            setItemProp(arg0, "enabled", arg2);
+            if (arg3 !== void) {
+                var local0 = 0;
+                while (local0 < arg3.num) {
+                    var local1 = arg3.format.sprintf(local0 + arg3.offset);
+                    setItemProp(local1, "enabled", arg2);
+                    setItemProp(local1, "opacity", arg2 ? 255 : 128);
+                    ++local0;
+                }
+            }
+        }
+        if (arg3 !== void) {
+            setItemProp(arg3.format.sprintf(this[arg3.prop] + arg3.offset), "toggle", 1);
+        }
+    }
+
+    function getEffectSpeedItem(arg0) {
+        var local0 = (arg0 <= 0) ? "none" : (arg0 < 1) ? "fast" : "normal";
+        return "effect_" + local0;
+    }
+
+    function getEffectSpeedValue(arg0) {
+        switch (arg0) {
+            case "none":
+                return 0;
+            case "fast":
+                return 0.5;
+            case "normal":
+                break;
+        }
+        return 1;
+    }
+
+    function updateEffectSpeed() {
+        setItemProp(getEffectSpeedItem(kag.drawspeed), "toggle", 1);
+    }
+
+    property effectSpeed {
+        getter() {
+            return getEffectSpeedItem(kag.drawspeed);
+        }
+        setter(arg0) {
+            var local0 = getEffectSpeedValue(arg0);
+            if (local0 !== void) {
+                kag.drawspeed = local0;
+                updateEffectSpeed();
+            }
+        }
+    }
+
+    function updateVoice() {
+        var local0 = 0;
+        while (local0 < _voiceNames.count) {
+            var local1 = _voiceNames[local0];
+            setItemProp(local1, "toggle", kag.getVoiceOn(local1));
+            ++local0;
+        }
+    }
+
+    property voiceAll {
+        setter(arg0) {
+            global.setVoiceAll(arg0);
+            updateVoice();
+        }
+    }
+
+    property toggleVoice {
+        setter(arg0) {
+            chara(arg0);
+        }
+    }
+
+    function chara(arg0) {
+        var local0 = !kag.getVoiceOn(arg0);
+        kag.setVoiceOn(arg0, local0);
+        setItemProp(arg0, "toggle", local0);
+    }
+
+    function setDefault(arg0 = 0, arg1 = 1) {
+        var local0 = arg0 ? initAndUpdate : initAndSave;
+        if (arg1) {
+            askYesNo("初期化してよろしいですか？", "確認", local0);
+        } else {
+            local0();
+        }
+    }
+
+    function initAndSave() {
+        initialEnvironment();
+        setAllSkip(, 1);
+        kag.setMessageLayerUserFont();
+        kag.saveSystemVariables();
+    }
+
+    function initAndUpdate() {
+        initAndSave();
+        update();
+    }
+
+    property textSpeed {
+        getter() {
+            return Math.round(kag.textspeed * _ts.max / 10);
+        }
+        setter(arg0) {
+            kag.textspeed = arg0 * 10 / _ts.max;
+        }
+    }
+
+    property autoSpeed {
+        getter() {
+            return Math.round(kag.autospeed * _as.max / 10);
+        }
+        setter(arg0) {
+            kag.autospeed = arg0 * 10 / _as.max;
+        }
+    }
+
+    property waveVolume {
+        getter() {
+            return Math.round(kag.wavevolume * _vol.max / 100);
+        }
+        setter(arg0) {
+            kag.wavevolume = arg0 * 100 / _vol.max;
+        }
+    }
+
+    property bgmVolume {
+        getter() {
+            return Math.round(kag.bgmvolume * _bgm.max / 100);
+        }
+        setter(arg0) {
+            kag.bgmvolume = arg0 * 100 / _bgm.max;
+        }
+    }
+
+    property seVolume {
+        getter() {
+            return Math.round(kag.sevolume * _se.max / 100);
+        }
+        setter(arg0) {
+            kag.sevolume = arg0 * 100 / _se.max;
+        }
+    }
+
+    property sysseVolume {
+        getter() {
+            return Math.round(kag.syssevolume * _sse.max / 100);
+        }
+        setter(arg0) {
+            kag.syssevolume = arg0 * 100 / _sse.max;
+        }
+    }
+
+    property voiceVolume {
+        getter() {
+            return Math.round(kag.voicevolume * _vo.max / 100);
+        }
+        setter(arg0) {
+            kag.voicevolume = arg0 * 100 / _vo.max;
+        }
+    }
+
+    function setupBlockConfig(arg0, arg1) {
+        _vo[arg0] = arg1;
+        _sse[arg0] = arg1;
+        _se[arg0] = arg1;
+        _bgm[arg0] = arg1;
+        _vol[arg0] = arg1;
+        _as[arg0] = arg1;
+        _ts[arg0] = arg1;
+    }
+
+    function updateFontSelect() {
+        var local0 = getItem("font");
+        if (local0 === void) {
+            return;
+        }
+        local0.font.face = currentFont;
+        var local1 = local0.font.face;
+        var local2 = local0.width;
+        var local3 = fontSelectSize;
+        while (local3 > 0) {
+            local0.font.height = local3;
+            if (local0.font.getTextWidth(local1) <= local2) {
+                break;
+            } else {
+                --local3;
+                continue;
+            }
+        }
+        drawFontSelect(local0, currentFont);
+    }
+
+    function drawFontSelect(arg0, arg1) {
+        clearFontSelect(arg0);
+        drawButtonCaptionWithAlign(arg0, 0, 0, 5, arg1, fontSelectDraw*);
+    }
+
+    function clearFontSelect(arg0) {
+        arg0.fillRect(0, 0, arg0.imageWidth, arg0.imageHeight, 0);
+    }
+
+    property fontList {
+        getter() {
+            if (_fontList === void) {
+                var local0 = (typeof kag.getFontFaceList == "Object")
+                    ? kag.getFontFaceList : kag.temporaryLayer.font.getList;
+                var local1 = local0(fontSelectFlags);
+                _fontList = [];
+                if (local1 !== void) {
+                    _fontList.assign(local1);
+                }
+            }
+            return _fontList;
+        }
+    }
+
+    property currentFont {
+        getter() {
+            return kag.chDefaultFace;
+        }
+        setter(arg0) {
+            kag.chDefaultFace = arg0;
+        }
+    }
+
+    property font {
+        getter() {
+            var local0 = 0;
+            var local1 = fontList;
+            while (local0 < local1.count) {
+                if (local1[local0] == currentFont) {
+                    return local0;
+                }
+                ++local0;
+            }
+        }
+        setter(arg0) {
+            var local0 = fontList;
+            if (arg0 >= local0.count) {
+                arg0 = 0;
+            }
+            if (arg0 < 0) {
+                arg0 = local0.count - 1;
+            }
+            currentFont = local0[arg0];
+            kag.setMessageLayerUserFont();
+            itemUpdates.fontSelect();
+        }
+    }
+}
+this.OptionBase = OptionBase;
+
+function setVoiceAll(arg0 = 1, arg1 = void) {
+    var local0 = (typeof SystemConfig.voiceNames == "Object") ? SystemConfig.voiceNames : OptionBase.voiceNames;
+    if (local0) {
+        var local1 = 0;
+        while (local1 < local0.count) {
+            kag.setVoiceOn(local0[local1], arg0);
+            if (arg1 !== void) {
+                kag.setVoiceVolume(local0[local1], arg1);
+            }
+            ++local1;
+        }
+    }
+}
+this.setVoiceAll = setVoiceAll incontextof this;
+
+function systemUpdate(arg0) {
+    if (typeof global.kag != "Object" || !kag || !isvalid global.kag) {
+        return;
+    }
+    if (kag.conductor.curStorage == "option.ks" && kag.inSleep) {
+        Dialog.action("update", arg0);
+    }
+}
+this.systemUpdate = systemUpdate incontextof this;
+this.OptionModule = OptionModule incontextof this;
+this.ModulableOptionBase = ModulableOptionBase;
+this.OptionBasicPropertyModule = OptionBasicPropertyModule;
+this.OptionStandardModule = OptionStandardModule;
+this.OptionSysArgModule = OptionSysArgModule;
+this.OptionPulldownSelectUtil = OptionPulldownSelectUtil;
+this.OptionSelectPulldownBase = OptionSelectPulldownBase;
+this.OptionSliderValueUtil = OptionSliderValueUtil;
+this.OptionAudioVolumeModule = OptionAudioVolumeModule;
+this.OptionCharVoiceSwitchModule = OptionCharVoiceSwitchModule;
+this.OptionSpeedSliderModule = OptionSpeedSliderModule;
+this.OptionFontSelectModule = OptionFontSelectModule;
+this.OptionSpeedSampleModule = OptionSpeedSampleModule;
+this.OptionSpeedSampleRender = OptionSpeedSampleRender;
+this.OptionRenderSampleModule = OptionRenderSampleModule;
+setSystemMenuStorage("option.ks");
+&OptionBase.voiceNames = void;
+OptionModule("OptionBasicPropertyModule", 1);
+OptionModule("OptionStandardModule", 1);
+OptionModule("OptionSysArgModule", 1);
+OptionModule("OptionPulldownSelectUtil", 0);
+OptionModule("OptionSliderValueUtil", 0);
+OptionModule("OptionAudioVolumeModule", 1);
+OptionModule("OptionCharVoiceSwitchModule", 1);
+OptionModule("OptionSpeedSliderModule", 1);
+OptionModule("OptionFontSelectModule", 1);
+OptionModule("OptionSpeedSampleModule", 1);
+OptionModule("OptionRenderSampleModule", 1);
+
+property ModuleMixinOptionBase {
+    getter() {
+        delete global.ModuleMixinOptionBase;
+        var local0 = OptionModule.GetList();
+        if (local0 === void) {
+            throw new Exception("ModuleMixinOptionBase:Empty Modules.");
+        } else {
+            if (debugWindowEnabled) {
+                dm("OptionModuleList:", local0*);
+            }
+            if (typeof global.BuildMixinClass != "Object") {
+                KAGLoadScript("mixinclass.tjs");
+            }
+            BuildMixinClass("ModuleMixinOptionBase", "ModulableOptionBase", local0);
+            return global.ModuleMixinOptionBase;
+        }
+    }
+}
+
+function OptionModule(arg0, arg1 = 1) {
+    function _static() { }
+    var local0 = typeof _static.List == "undefined";
+    if (local0) {
+        if (arg0 == "") {
+            return;
+        }
+        _static.List = [];
+        _static.DefaultUse = %[];
+    }
+    if (arg0 != "") {
+        _static.List.add(arg0);
+        _static.DefaultUse[arg0] = arg1;
+    }
+    return _static;
+
+    function SetDefaultUse(arg0, arg1 = 1) {
+        if (arg0 == "") {
+            return;
+        }
+        var local0 = OptionModule();
+        if (local0 === void) {
+            return;
+        }
+        if (typeof local0.DefaultUse[arg0] != "undefined") {
+            local0.DefaultUse[arg0] = arg1;
+        }
+    }
+
+    function GetList() {
+        var local6;
+        var local7;
+        var local8;
+        var local0 = OptionModule();
+        if (local0 === void) {
+            return;
+        }
+        var local1 = local0.DefaultUse;
+        var local2 = 0;
+        var local3;
+        var local4;
+        var local5;
+        local3 = SystemConfig.optionModuleList;
+        local4 = SystemConfig.optionModuleAppend;
+        local5 = SystemConfig.optionModuleIgnore;
+        if (typeof local3 != "Object" || local3 === null) {
+            local6 = local3 !== null;
+            local3 = [];
+            local3.assign(local0.List);
+            if (local6) {
+                local7 = local3.count - 1;
+                while (local7 >= 0) {
+                    local8 = local3[local7];
+                    if (!local1[local8]) {
+                        local3[local7] = void;
+                    }
+                    --local7;
+                }
+            }
+        } else {
+            local6 = [];
+            local6.assign(local3);
+            local3 = local6;
+        }
+        if (local4 instanceof "Array") {
+            local3.push(local4*);
+        }
+        local6 = %[];
+        for (local7 = local3.count - 1; local7 >= 0; --local7) {
+            local8 = local3[local7];
+            if (local8 == "" || local6[local8]) {
+                local3[local7] = void;
+                local2 = 1;
+                continue;
+            } else {
+                local6[local8] = 1;
+                if (local1[local8] === void) {
+                    Debug.notice("OptionModule: unknown module:" + local8);
+                }
+                continue;
+            }
+        }
+        if (typeof local5 == "Object" && local5) {
+            if (local5 instanceof "Array") {
+                local6 = %[];
+                local7 = local5.count - 1;
+                while (local7 >= 0) {
+                    local8 = local5[local7];
+                    if (local8 != "") {
+                        local6[local8] = 1;
+                    }
+                    --local7;
+                }
+                local5 = local6;
+            }
+            local6 = local3.count - 1;
+            while (local6 >= 0) {
+                local7 = local3[local6];
+                if (local7 != "" && local5[local7]) {
+                    local3[local6] = void;
+                    local2 = 1;
+                }
+                --local6;
+            }
+        }
+        if (local2) {
+            local3.remove(, 1);
+        }
+        return (local3 && local3.count > 0) ? local3 : void;
+    }
+}
+
+class ModulableOptionBase extends OptionAtom {
+    var _inUpdate = 0;
+    var _uiAutoCache = %[];
+    var _sliderValueDisabledOpac = 128;
+    var _filterValueReverse = %[];
+    var _resetTag;
+
+    function ModulableOptionBase() {
+        super.OptionAtom(...);
+    }
+
+    function finalize() {
+        super.finalize(...);
+    }
+
+    function onUiload(arg0, *) {
+        arg0.partremove = "remove";
+        arg0.extratype = %[auto: this.onUiloadAutoType];
+        __call("uiload", arg0, *);
+    }
+
+    function onUiloaded() {
+        __call("uiloaded", *);
+    }
+
+    function update(arg0) {
+        var local0;
+        ++_inUpdate;
+        try {
+            if (arg0 == "") {
+                __call("update");
+            } else {
+                __call("update_" + arg0, arg0);
+            }
+            local0 = super.update(...);
+        } catch (e) {
+            --_inUpdate;
+            throw e;
+        }
+        --_inUpdate;
+        return local0;
+    }
+
+    function _invoke(arg0, *) {
+        if (typeof this[arg0] == "Object") {
+            return this[arg0](*);
+        }
+    }
+
+    function _foreachTags(arg0, arg1, *) {
+        var local0 = 0;
+        var local1 = arg0.count;
+        while (local0 < local1) {
+            var local2 = arg0[local0];
+            if (local2 != "") {
+                (arg1 incontextof this)(local2, *);
+            }
+            ++local0;
+        }
+    }
+
+    function setItemMultiProp(arg0, arg1) {
+        if (arg1 === void) {
+            arg1 = uiTargetLayer.names;
+        }
+        if (typeof arg0 != "Object" || !arg0) {
+            return;
+        }
+        var local0 = arg0;
+        if (arg0 instanceof "Dictionary") {
+            local0 = [];
+            local0.assign(arg0);
+        }
+        var local1 = 0;
+        var local2 = local0.count;
+        while (local1 < local2) {
+            var local3 = local0[local1];
+            var local4 = local0[local1 + 1];
+            if (local3 == "") {
+                return;
+            }
+            var local5 = arg1[local3];
+            if (local5 && isvalid local5) {
+                foreach(local4, function(arg0, arg1) {
+                    if (arg0 != "") {
+                        this[arg0] = arg1;
+                    }
+                } incontextof local5);
+            }
+            local1 += 2;
+        }
+    }
+
+    function makeOnOffPropList(arg0, arg1) {
+        return [arg0 + "_on", %[toggle: arg1], arg0 + "_off", %[toggle: !arg1], arg0 + "_chk", %[toggle: arg1], arg0 + "_rev", %[toggle: !arg1]];
+    }
+
+    function pushOnOffAutoFunc(arg0, arg1, arg2, arg3, arg4, arg5) {
+        var local0 = string(arg1) + "_on," + string(arg1) + "_off," + string(arg1) + "_chk," + string(arg1) + "_rev";
+        if (arg5 != "") {
+            local0 += "," + string(arg1) + "_sel";
+            arg0.push("func," + string(arg1) + "_sel,exp,Current.cmd(\"" + string(arg5) + "\")");
+        }
+        arg0.push("func," + string(arg1) + "_on,exp,Current.cmd(\"" + string(arg2) + "\")", "func," + string(arg1)
+            + "_off,exp,Current.cmd(\"" + string(arg3) + "\")", "func," + string(arg1) + "_chk,exp,Current.cmd(\""
+            + string(arg4) + "\")", "func," + string(arg1) + "_rev,exp,Current.cmd(\"" + string(arg4) + "\")", "empt,"
+            + local0, "rgrp," + string(arg1) + "," + string(arg1) + "_on," + string(arg1) + "_off");
+    }
+
+    function pushOnOffAutoFuncWithProp(arg0, arg1, arg2) {
+        __call("set_prop_trait", arg1, arg2, ["off", "on"]);
+        var local0 = "changeOnOffProp/" + string(arg1) + "/" + string(arg2) + "/";
+        var local1 = __call("has_select", arg1) ? local0 + "select" : void;
+        pushOnOffAutoFunc(arg0, arg1, local0 + "true", local0 + "false", local0 + "toggle", local1);
+    }
+
+    function changeOnOffProp(arg0, arg1, arg2) {
+        var _;
+        if (arg2 == "toggle") {
+            arg2 = "!" + arg1;
+        } else if (arg2 == "select") {
+            _ = function(arg0, arg1) {
+                try {
+                    this[0](this[1], this[2], arg0);
+                } catch (e) { }
+            };
+            __call("select_prop", arg0, _ incontextof [this.changeOnOffProp, arg0, arg1]);
+            return;
+        }
+        _ = arg1 + "=" + arg2;
+        try {
+            setItemMultiProp(makeOnOffPropList(arg0, _!));
+        } catch (e) {
+            Debug.notice("changeOnOffProp: " + e.message, _);
+        }
+        __call("change_" + arg0, arg2);
+    }
+
+    function onUiloadAutoType(arg0, arg1, arg2, arg3, arg4) {
+        var local1;
+        if (arg2 == "") {
+            return;
+        }
+        var local0;
+        if (_uiAutoCache[arg2] !== void) {
+            local1 = _uiAutoCache[arg2];
+            local0 = [];
+            if (local1) {
+                local0.assign(local1);
+            }
+        } else {
+            local1 = [];
+            var local2 = __call("uiauto_" + arg2, local1, arg3);
+            if (!local1.count) {
+                if (!local2) {
+                    _uiAutoCache[arg2] = null;
+                }
+                return;
+            }
+            local0 = [];
+            var local3 = 0;
+            var local4 = local1.count;
+            for (; local3 < local4; ++local3) {
+                var local5;
+                if (typeof (local5 = local1[local3]) == "String") {
+                    local0.add(local5.split(","));
+                    continue;
+                } else {
+                    if (typeof local5 == "Object" && local5 instanceof "Array") {
+                        local0.add(local5);
+                        continue;
+                    }
+                    continue;
+                }
+            }
+            if (!local2) {
+                local3 = _uiAutoCache[arg2] = [];
+                local3.assign(local0);
+            }
+        }
+        if (local0) {
+            return (local0.count > 0) ? local0 : 1;
+        }
+    }
+
+    function addUiAuto(arg0, arg1, args*) {
+        __entry("uiauto_" + arg0, function(arg0, _args*) {
+            if (args.count > 0) {
+                _args.unshift(args*);
+            }
+            return callback(arg0, _args*);
+        }, %[callback: arg1, args: args]);
+    }
+
+    function filterValueFunc(arg0, arg1, arg2, *) {
+        var local0 = (typeof this[arg0 + arg1] == "Object") ? this[arg0 + arg1](arg2, *) : arg2;
+        var local1 = _filterValueReverse[arg1];
+        if (local1 !== void) {
+            local0 = local1 - local0;
+        }
+        return local0;
+    }
+
+    function _needDrawTextParam() {
+        if (typeof global.CustomDrawLayerText != "Object") {
+            KAGLoadScript("drawtextparam.tjs");
+        }
+        this._needDrawTextParam = function() {
+
+        };
+    }
+
+    function drawText(arg0, arg1, arg2, arg3, *) {
+        _needDrawTextParam();
+        return CustomDrawLayerText(arg0, arg1, getDrawTextTag(arg2, arg3), *);
+    }
+
+    function getTextParam(arg0, arg1, *) {
+        _needDrawTextParam();
+        return FilterDrawTextParam(getDrawTextTag(...), *);
+    }
+
+    function getDrawTextTag(arg0, arg1) {
+        return "option." + ((arg0 != "") ? arg0 : arg1);
+    }
+
+    function reset(arg0) {
+        if (arg0 === void) {
+            arg0 = getCurrentResetTag();
+        }
+        _resetTag = (arg0 != "") ? arg0 : void;
+        var local0 = SystemConfig.askInit;
+        if (local0 === void || local0) {
+            askYesNo(getResetDialogText(_resetTag), "確認", initAndUpdate);
+        } else {
+            initAndUpdate();
+        }
+    }
+
+    function initAndUpdate() {
+        __call("reset", _resetTag);
+        initialEnvironment(0, _resetTag);
+        syncInit();
+        kag.saveSystemVariables();
+        update();
+    }
+
+    function syncInit() {
+        setAllSkip(, 1);
+        kag.setMessageLayerUserFont();
+        __call("syncinit");
+    }
+
+    function getResetDialogText(arg0) {
+        return "初期化してよろしいですか？";
+    }
+
+    function getCurrentResetTag() {
+        if (typeof this.currentPageTab != "undefined") {
+            return kag.getKeyState(VK_SHIFT) ? void : currentPageTab;
+        }
+    }
+}
+
+class OptionBasicPropertyModule extends Module {
+    var _basicOptionList;
+    var _basicOptionMap = %[];
+    var _basicOptionTypes = %[onoff: "OnOff", radio: "Radio", slider: "Slider"];
+    var _basicOptionMustMethod = %[entryBasic: 1];
+    var _inUpdateBasicOption;
+    __entry("undo_hooks", function(arg0) {
+        arg0.push(%[
+            name: "onoff",
+            type: "keyvalue",
+            keyvalue: "setValueBasicOnOff"
+        ], %[
+            name: "radio",
+            type: "keyvalue",
+            keyvalue: "setValueBasicRadio"
+        ], %[name: "slider", type: "slider", onchangefunc: "changeBasicSlider"]);
+    });
+
+    function callBasicOptionFunc(arg0, arg1, *) {
+        var local0 = (arg0 != "") ? _basicOptionTypes[arg0] : void;
+        if (local0 == "") {
+            Debug.notice("callBasicOptionFunc: invalid type: " + arg0);
+            return null;
+        }
+        var local1 = arg1 + local0;
+        if (typeof this[local1] != "Object") {
+            if (arg1 != "" && _basicOptionMustMethod[arg1]) {
+                Debug.notice("callBasicOptionFunc: method not found: " + local1);
+            }
+            return null;
+        }
+        return this[local1](*);
+    }
+
+    function entryBasicOption(arg0, arg1) {
+        if (arg0 == "") {
+            return;
+        }
+        __call("fixbasicopt_" + arg0, arg1);
+        if (arg1.name == "") {
+            arg1.name = arg0;
+        } else if (arg1.name != arg0) {
+            if (_basicOptionMap[arg1.name] === void) {
+                _basicOptionMap[arg1.name] = arg0;
+            } else {
+                Debug.notice("entryBasicOption: conflict another update name: " + string(arg0) + "/"
+                    + string(arg1.name));
+            }
+        }
+        if (arg1.type == "") {
+            arg1.type = arg1.values ? "radio" : "onoff";
+        }
+        if (callBasicOptionFunc(arg1.type, "entryBasic", arg0, arg1) === null) {
+            return;
+        }
+        if (arg1.update != "" && arg1.update != arg0) {
+            if (_basicOptionMap[arg1.update] !== void) {
+                Debug.notice("entryBasicOption: conflict another update name: " + arg0);
+            }
+            _basicOptionMap[arg1.update] = arg0;
+            __entry("update_" + arg1.update, updateBasicOption);
+        } else {
+            __entry("update_" + arg0, updateBasicOption);
+        }
+        if (_basicOptionMap[arg0] === void) {
+            _basicOptionMap[arg0] = arg1;
+            if (_basicOptionList === void) {
+                _basicOptionList = [];
+                __entry("update", updateAllBasicOptions);
+            }
+            _basicOptionList.add(arg0);
+        } else {
+            Debug.notice("entryBasicOption: conflict name: " + arg0);
+        }
+    }
+
+    function getBasicOptionDefs(arg0) {
+        var local0 = (arg0 != "") ? _basicOptionMap[arg0] : void;
+        return (typeof local0 == "String") ? getBasicOptionDefs(local0) : local0;
+    }
+
+    function updateAllBasicOptions() {
+        var local0 = 0;
+        var local1 = _basicOptionList.count;
+        while (local0 < local1) {
+            updateBasicOption(_basicOptionList[local0]);
+            ++local0;
+        }
+    }
+
+    function updateBasicOption(arg0) {
+        _inUpdateBasicOption = 1;
+        var local0 = getBasicOptionDefs(arg0);
+        if (local0) {
+            var local1 = callBasicOptionFunc;
+            if (!local1(local0.type, "updateBasic", local0.name, local0)) {
+                var local2 = getBasicOptionValue(local0.name, local0);
+                var local3 = local1(local0.type, "makeItemBasic", local0.name, local2, local0);
+                if (local3) {
+                    __call("fixitems_" + local0.name, local3, local2);
+                    setItemMultiProp(local3);
+                }
+                __call("draw_select", arg0, local2);
+            }
+        }
+        _inUpdateBasicOption = 0;
+    }
+
+    function setBasicOptionValue(arg0, arg1, arg2 = 1) {
+        var local0 = getBasicOptionDefs(arg0);
+        if (local0) {
+            if (callBasicOptionFunc(local0.type, "setValueBasic", local0.name, local0, arg1) === null) {
+                (local0.prop + "=" + arg1)!;
+            }
+            arg1 = getBasicOptionValue(arg0, local0);
+        }
+        if (arg2) {
+            updateBasicOption(arg0);
+        }
+        __call("change_" + arg0, arg1, local0);
+    }
+
+    function getBasicOptionValue(arg0, arg1 = void) {
+        if (arg1 === void) {
+            arg1 = getBasicOptionDefs(arg0);
+        }
+        if (arg1) {
+            var local0 = callBasicOptionFunc(arg1.type, "getValueBasic", arg1.name, arg1);
+            if (local0 === null) {
+                local0 = arg1.prop!;
+            }
+            return local0;
+        }
+    }
+
+    function selectBasicOptionValue(arg0) {
+        var local0 = getBasicOptionDefs(arg0);
+        if (local0 && __call("has_select", arg0)) {
+            callBasicOptionFunc(local0.type, "selectValueBasic", local0.name, local0);
+        } else {
+            Debug.notice("selectBasicOptionValue: invalid name: " + arg0);
+        }
+    }
+
+    function makeItemBasicOnOff() {
+        return makeOnOffPropList(...);
+    }
+
+    function entryBasicOnOff(arg0, arg1) {
+        var local0 = typeof arg1.on == "undefined";
+        var local1 = typeof arg1.off == "undefined";
+        if (local0 || local1) {
+            if (local0 && local1) {
+                arg1.on = 1;
+                arg1.off = 0;
+            } else if (local0) {
+                arg1.on = !arg1.off;
+            } else if (local1) {
+                arg1.off = !arg1.on;
+            }
+        }
+        if (typeof arg1.set == "undefined") {
+            arg1.set = ("function (value) { " + string(arg1.prop) + " = value; }")! incontextof this;
+        }
+        if (typeof arg1.get == "undefined") {
+            arg1.get = ("function { return " + string(arg1.prop) + "; }")! incontextof this;
+        }
+        __call("set_prop_trait", arg0, getBasicOptionValue, ["off", "on"]);
+        addUiAuto(arg0, pushAutoFuncBasicOnOff, arg0);
+    }
+
+    function pushAutoFuncBasicOnOff(arg0, arg1) {
+        var local0 = "setBasicOptionValue/" + string(arg1) + "/";
+        pushOnOffAutoFunc(arg0, arg1, local0 + "on", local0 + "off", local0
+            + "toggle", __call("has_select", arg1) ? "selectBasicOptionValue/" + string(arg1) : void);
+    }
+
+    function setValueBasicOnOff(arg0, arg1, arg2) {
+        switch (arg2) {
+            case "on":
+                arg1.set(arg1.on);
+                break;
+            case "off":
+                arg1.set(arg1.off);
+                break;
+            case "toggle":
+                arg1.set((arg1.get() == arg1.off) ? arg1.on : arg1.off);
+                break;
+            default:
+                arg1.set(arg2 ? arg1.on : arg1.off);
+                break;
+        }
+    }
+
+    function getValueBasicOnOff(arg0, arg1) {
+        return arg1.get() != arg1.off;
+    }
+
+    function selectValueBasicOnOff(arg0, arg1) {
+
+        function _(arg0, arg1) {
+            setBasicOptionValue(arg1, arg0 ? "on" : "off");
+        }
+        var local0 = _;
+        __call("select_prop", arg0, local0 incontextof this);
+    }
+
+    function entryBasicRadio(arg0, arg1) {
+        if (typeof arg1.set == "undefined") {
+            arg1.set = ("function (elm, idx) { " + string(arg1.prop) + " = elm.values[+idx]; }")! incontextof this;
+        }
+        if (typeof arg1.get == "undefined") {
+            arg1.get = ("function (elm) { return elm.values.find(" + string(arg1.prop) + "); }")! incontextof this;
+        }
+        if (arg1.values && arg1.values.count > 1) {
+            __call("set_prop_trait", arg0, getBasicOptionValue, arg1.values);
+        }
+        addUiAuto(arg0, pushAutoFuncBasicRadio, arg0);
+    }
+
+    function pushAutoFuncBasicRadio(arg0, arg1) {
+        var local0 = getBasicOptionDefs(arg1);
+        var local1 = local0.values;
+        if (local1) {
+            var local4;
+            var local2 = [];
+            var local3 = 0;
+            while (local3 < local1.count) {
+                local4 = arg1 + "_" + local3;
+                arg0.add("func," + string(local4) + ",exp,Current.cmd(\"setBasicOptionValue/" + string(arg1) + "/"
+                    + string(local3) + "\")");
+                local2.add(local4);
+                ++local3;
+            }
+            local3 = (local0.group != "") ? local0.group : arg1;
+            local4 = local2.join(",");
+            arg0.push("empt," + string(local4), "rgrp," + string(local3) + "," + string(local4));
+            if (__call("has_select", arg1)) {
+                arg0.push("func," + string(arg1) + "_sel,exp,Current.cmd(\"selectBasicOptionValue/" + string(arg1)
+                    + "\")", "empt," + string(arg1) + "_sel");
+            }
+        } else {
+            Debug.notice("basicradio: " + string(arg1) + " values undefined.");
+        }
+    }
+
+    function setValueBasicRadio(arg0, arg1, arg2) {
+        arg1.set(arg1, arg2);
+    }
+
+    function getValueBasicRadio(arg0, arg1) {
+        return arg1.get(arg1);
+    }
+
+    function makeItemBasicRadio(arg0, arg1, arg2) {
+        var local0 = arg2.values;
+        if (local0) {
+            var local1 = [];
+            var local2 = 0;
+            while (local2 < local0.count) {
+                local1.push(arg0 + "_" + local2, %[toggle: local2 == arg1]);
+                ++local2;
+            }
+            return local1;
+        }
+    }
+
+    function selectValueBasicRadio(arg0, arg1) {
+
+        function _(arg0, arg1) {
+            setBasicOptionValue(arg1, arg0);
+        }
+        var local0 = _;
+        __call("select_prop", arg0, local0 incontextof this);
+    }
+
+    function makeItemBasicSlider(arg0, arg1, arg2) {
+        _invoke("drawSliderValue", arg0 + "_value", filterValueFunc("filterBasicSliderText_", arg0, arg1, arg2), arg2);
+        var local0 = [arg0 + "_slider", %[position: arg1]];
+        __call("slider_props", local0, arg0, %[slider: "_slider"], "slider", "basic");
+        return local0;
+    }
+
+    function entryBasicSlider(arg0, arg1) {
+        addUiAuto(arg0, this.pushSliderAutoFunc, arg0, arg1);
+    }
+
+    function pushSliderAutoFunc(arg0, arg1, arg2) {
+        var local0 = 0;
+        var local1 = 100;
+        if (arg2.min !== void) {
+            local0 = arg2.min;
+        }
+        if (arg2.max !== void) {
+            local1 = arg2.max;
+        }
+        if (local0 > local1) {
+            local0 <-> local1;
+        }
+        arg0.push("func," + string(arg1) + "_slider,min," + string(local0) + ",max," + string(local1)
+            + ",onchangefunc,Current.func(\"changeBasicSlider\"),onchangefuncdata,\"" + string(arg1) + "\"");
+        __call("slider_funcs", arg0, arg1, %[slider: "_slider"], "slider", "basic");
+    }
+
+    function changeBasicSlider(arg0, arg1, arg2) {
+        if (_inUpdateBasicOption) {
+            return;
+        }
+        setBasicOptionValue(arg2, arg0);
+        if (!arg1) {
+            __call("changed_" + arg2, arg0);
+        }
+    }
+}
+
+class OptionStandardModule extends Module {
+    __require("OptionBasicPropertyModule");
+    __entry("construct", function() {
+        entryBasicOption("afterskip", %[update: "afterSkip", prop: "kag.afterskip"]);
+        entryBasicOption("afterauto", %[update: "afterAuto", prop: "kag.afterauto"]);
+        entryBasicOption("voicecut", %[update: "voiceCut", prop: "kag.voicecut"]);
+        entryBasicOption("voicecutpage", %[update: "voiceCutPage", prop: "kag.voicecutpage"]);
+        entryBasicOption("noeffect", %[update: "effectSpeed", prop: "kag.noeffect"]);
+        entryBasicOption("sysnoeffect", %[prop: "kag.sysnoeffect"]);
+        entryBasicOption("fullscreen", %[prop: "_fullscreen"]);
+        entryBasicOption("skipall", %[update: "allSkip", prop: "_allSkip"]);
+        entryBasicOption("readskip", %[prop: "_readSkip"]);
+    });
+    __entry("undo_hooks", function(arg0) {
+        arg0.push(%[name: "_fullscreen", type: "value"]);
+    });
+
+    property _fullscreen {
+        getter() {
+            return kag.fullScreened;
+        }
+        setter(arg0) {
+            if (arg0) {
+                kag.fullScreenMenuItem.click();
+            } else {
+                kag.windowedMenuItem.click();
+            }
+        }
+    }
+
+    property _allSkip {
+        getter() {
+            return kag._allskip;
+        }
+        setter(arg0) {
+            if (arg0) {
+                kag.allskipMenuItem.click();
+            } else {
+                kag.noallskipMenuItem.click();
+            }
+        }
+    }
+
+    property _readSkip {
+        getter() {
+            return kag.enterSkipOnReadedLabel;
+        }
+        setter(arg0) {
+            kag.enterSkipOnReadedLabel = arg0;
+            if (!fromTitle) {
+                if (kag.onExtraConductorReturn === void) {
+                    kag.onExtraConductorReturn = kag.checkSkipOnReadedLabelPause;
+                } else if (kag.onExtraConductorReturn !== kag.checkSkipOnReadedLabelPause) {
+                    dm("onExtraConductorReturn used");
+                }
+            }
+        }
+    }
+}
+
+class OptionSysArgModule extends Module {
+    __entry("construct", function() {
+        _entrySysArgOption("curmove", %[prop: void, update: "curMove", defval: 1]);
+        if (typeof global.enableSceneAnimEffect != "undefined") {
+            _entrySysArgOption("scanim", %[prop: "enableSceneAnimEffect", update: "bgAnim"]);
+        }
+    });
+    var sysargOptionTags = [];
+    var sysargConfigs = %[];
+    __entry("update", updateSysArgOptions);
+    var _sysargSystemUpdateMap = %[];
+    __entry("construct", function() {
+        _foreachSysArgTags(setSystemUpdateMap);
+    });
+    __entry("uiauto_sysarg", function(arg0) {
+        _foreachSysArgTags(function(arg0, arg1) {
+            var local0 = _getSysArgInfo(arg0);
+            var local1 = (local0 && local0.ui != "") ? local0.ui : arg0;
+            if (local0 && local0.radio) {
+                var local6;
+                var local2 = local0.radio;
+                var local3;
+                var local4;
+                var local5 = 0;
+                while (local5 < local2.count) {
+                    local6 = local2[local5];
+                    if (local6 == "sel") {
+                        local4 = 1;
+                    }
+                    arg1.push("func," + string(local1) + "_" + string(local6) + ",exp,Current.cmd(\"changeSysArg/"
+                        + string(local5) + "/" + string(arg0) + "\")");
+                    local3 += local1 + "_" + local6 + ",";
+                    ++local5;
+                }
+                local5 = "empt," + string(local3);
+                local6 = void;
+                if (__call("has_select", arg0)) {
+                    var local7 = local1 + (local4 ? "" : "_") + "sel";
+                    local5 += "," + local7;
+                    local6 = "func," + string(local7) + ",exp,Current.cmd(\"selectSysArg/" + string(arg0) + "\")";
+                }
+                arg1.push(local5, "rgrp," + string(arg0) + "," + string(local3));
+                if (local6 != "") {
+                    arg1.add(local6);
+                }
+            } else {
+                pushOnOffAutoFunc(arg1, local1, "changeSysArg/true/" + arg0, "changeSysArg/false/"
+                    + arg0, "changeSysArg/toggle/" + arg0, __call("has_select", arg0) ? "selectSysArg/" + arg0 : void);
+            }
+        }, arg0);
+    });
+    __entry("undo_hooks", function(arg0) {
+        arg0.push(%[name: "sysarg", type: "keyvalue", keyvalue: "setSysArg"]);
+    });
+    __entry("undo_data", function(arg0, arg1, arg2) {
+        _foreachSysArgTags(arg1 ? backupSysArgUndoData : applySysArgUndoData, arg0);
+    });
+
+    function _foreachSysArgTags() {
+        _foreachTags(sysargOptionTags, *);
+    }
+
+    function _entrySysArgOption(arg0, arg1) {
+        if (typeof sysargConfigs[arg0] == "undefined") {
+            sysargConfigs[arg0] = arg1;
+            sysargOptionTags.add(arg0);
+            setSystemUpdateMap(arg0);
+            var local0;
+            if (typeof arg1 == "String") {
+                local0 = ["no", "yes"];
+            } else if (typeof arg1 == "Object" && arg1) {
+                if (arg1.radio) {
+                    local0 = [];
+                    local0.assign(arg1.radio);
+                    while (local0.count > 0 && local0[-1] == "") {
+                        local0.pop();
+                    }
+                } else {
+                    local0 = [_getSysArgOnOffArgValue(arg1, 0), _getSysArgOnOffArgValue(arg1, 1)];
+                }
+            }
+            if (local0 && local0.count > 1) {
+                __call("set_prop_trait", arg0, getSysArg, local0);
+            }
+        } else {
+            dm("_entrySysArgOption: redefined: " + arg0);
+        }
+    }
+
+    function _getSysArgInfo(arg0) {
+        var local0 = (arg0 != "") ? sysargConfigs[arg0] : void;
+        if (typeof local0 == "String") {
+            local0 = %[prop: local0];
+        }
+        return local0;
+    }
+
+    function _getSysArgGlobalProp(arg0, arg1) {
+        try {
+        } catch (e) {
+            Debug.notice("OptionSysArgModule:_getSysArgGlobalProp: invalid config:" + arg0, arg1);
+            return;
+        }
+    }
+
+    function _getSysArgOnOffArgValue(arg0, arg1) {
+        if (arg0) {
+            if (arg1 && arg0.on !== void) {
+                return arg0.on;
+            } else if (!arg1 && arg0.off !== void) {
+                return arg0.off;
+            }
+        }
+        return arg1 ? "yes" : "no";
+    }
+
+    function getSysArg(arg0) {
+        var local0 = _getSysArgInfo(arg0);
+        if (local0 === void) {
+            Debug.notice("OptionSysArgModule:getSysArg: config not found:" + arg0);
+            return;
+        }
+        var local1;
+        if (local0.prop !== void) {
+            if (typeof local0.prop == "String") {
+                try {
+                    return global[local0.prop];
+                } catch (e) {
+                    Debug.notice("OptionSysArgModule:getSysArg: invalid config prop name:" + arg0, local0.prop);
+                }
+                return;
+            } else if (typeof local0.prop == "Object") {
+                try {
+                    local1 = local0.prop(arg0, local0);
+                } catch (e) {
+                    Debug.notice("OptionSysArgModule:getSysArg: config prop get failed:" + arg0);
+                }
+            } else {
+                Debug.notice("OptionSysArgModule:getSysArg: invalid config prop type:" + arg0);
+            }
+        } else {
+            local1 = System.getArgument("-" + arg0);
+        }
+        return decodeSysArgValue(local0, local1);
+    }
+
+    function _getSysArgDefVal(arg0, arg1) {
+        if (arg0 === void) {
+            return arg1;
+        }
+        var local0 = arg0.defval;
+        var local1 = arg1;
+        switch (typeof local0) {
+            case "Integer":
+            case "Real":
+            case "String":
+                local1 = local0;
+                break;
+            default:
+                local1 = arg1;
+                break;
+        }
+        return local1;
+    }
+
+    function setSysArg(arg0, arg1) {
+        setSysArgMenuItem(arg0, encodeSysArgValue(arg0, arg1));
+    }
+
+    function encodeSysArgValue(arg0, arg1) {
+        var local0 = (typeof arg0 == "Object") ? arg0 : _getSysArgInfo(arg0);
+        if (local0 !== void) {
+            if (local0.radio) {
+                arg1 = local0.radio[+arg1];
+            } else if (typeof arg1 != "String") {
+                if (local0) {
+                    arg1 = _getSysArgOnOffArgValue(local0, !!arg1);
+                }
+            } else if (arg1 == "") {
+                var local1 = _getSysArgOnOffArgValue(local0, 0);
+                arg1 = _getSysArgDefVal(local0, local1);
+            }
+        }
+        return string(arg1);
+    }
+
+    function decodeSysArgValue(arg0, arg1) {
+        var local0;
+        var local1 = (typeof arg0 == "Object") ? arg0 : _getSysArgInfo(arg0);
+        if (local1 !== void) {
+            if (local1.radio) {
+                local0 = (arg1 != "") ? local1.radio.find(arg1) : 0;
+                if (local0 < 0) {
+                    local0 = 0;
+                }
+            } else {
+                var local2 = _getSysArgOnOffArgValue(local1, 1);
+                var local3 = _getSysArgOnOffArgValue(local1, 0);
+                if (arg1 === void) {
+                    arg1 = _getSysArgDefVal(local1, local3);
+                }
+                if (typeof arg1 != "String") {
+                    arg1 = arg1 ? local2 : local3;
+                }
+                var local4 = !local1.neg ? arg1 == local2 : arg1 != no;
+                local0 = !local1.rev ? local4 : !local4;
+            }
+        }
+        return local0;
+    }
+
+    function changeSysArg(arg0, arg1) {
+        if (arg0 == "toggle") {
+            arg0 = !getSysArg(arg1);
+        }
+        var local0 = int(+arg0);
+        setSysArg(arg1, local0);
+        updateSysArgOptionOne(arg1, local0);
+        __call("change_" + arg1, local0);
+    }
+
+    function selectSysArg(arg0) {
+        var local0 = (arg0 != "") ? _getSysArgInfo(arg0) : void;
+        if (!local0) {
+            return;
+        }
+        if (__call("has_select", arg0)) {
+            var local1 = getSysArg(arg0);
+            function _(arg0, arg1) {
+                try {
+                    this[0](arg0, this[1]);
+                } catch (e) { }
+            }
+            __call("select_prop", arg0, _ incontextof [this.changeSysArg, arg0]);
+        } else {
+            Debug.notice("selectSysArg: invalid tag: " + arg0);
+        }
+    }
+
+    function updateSysArgOptions() {
+        _foreachSysArgTags(function(arg0) {
+            updateSysArgOptionOne(arg0);
+        });
+    }
+
+    function updateSysArgOptionOne(arg0, arg1) {
+        if (arg1 === void) {
+            arg1 = getSysArg(arg0);
+        }
+        if (arg0 != "") {
+            var local0 = _getSysArgInfo(arg0);
+            var local1 = (local0 && local0.ui != "") ? local0.ui : arg0;
+            var local2;
+            if (local0 && local0.radio) {
+                local2 = [];
+                var local3 = local0.radio;
+                var local4 = 0;
+                while (local4 < local3.count) {
+                    local2.push(local1 + "_" + local3[local4], %[toggle: local4 == arg1]);
+                    ++local4;
+                }
+            } else {
+                local2 = makeOnOffPropList(local1, arg1);
+            }
+            if (local2) {
+                setItemMultiProp(local2);
+            }
+            __call("draw_select", local1, arg1);
+        }
+    }
+
+    function updateSysArgOptionFromSystemUpdate(arg0) {
+        updateSysArgOptionOne(_sysargSystemUpdateMap[arg0]);
+    }
+
+    function setSystemUpdateMap(arg0) {
+        var local0 = _getSysArgInfo(arg0);
+        if (local0 && (local0.update != "" && !local0._updateSetuped)) {
+            local0._updateSetuped = 1;
+            if (_sysargSystemUpdateMap[local0.update] != "") {
+                dm("setSystemUpdateMap: re-entried: " + local0.update);
+            }
+            __entry("update_" + local0.update, updateSysArgOptionFromSystemUpdate);
+            _sysargSystemUpdateMap[local0.update] = arg0;
+        }
+    }
+
+    function backupSysArgUndoData(arg0, arg1) {
+        var local0 = "-" + arg0;
+        arg1(local0, System.getArgument(local0));
+    }
+
+    function applySysArgUndoData(arg0, arg1) {
+        var local0 = "-" + arg0;
+        var local1 = arg1(local0);
+        if (local1 != System.getArgument(local0)) {
+            setSysArgMenuItem(arg0, encodeSysArgValue(local1));
+        }
+    }
+}
+
+class OptionPulldownSelectUtil extends Module {
+    var _pulldownClass = OptionSelectPulldownBase;
+    var _pulldownStorage = "option_select%d";
+    var _pulldownPanel;
+    var _pulldownHelp;
+    var _pulldownBaseName = "pulldown_pos";
+    var _pulldownBasePos;
+    var _pulldownButtonPostfix = "_sel";
+    var _pulldownTextPostfix = "_sel";
+    var _pulldownTextUiName = "pulldown_sel";
+    var _pulldownTextUiInfo;
+    var _pulldownPropMap = %[];
+    var _pulldownTextMap = %[
+        on: "ON",
+        off: "OFF",
+        full: "フルスクリーン",
+        win: "ウインドウ",
+        tall: "全て",
+        tread: "既読のみ",
+        akeep: "継続",
+        astop: "解除",
+        dkeep: "継続",
+        dstop: "停止"
+    ];
+    var _pulldownTextBinds = %[
+        _onoff: [1, "on", 0, "off"],
+        _offon: [0, "off", 1, "on"],
+        _ronoff: [0, "on", 1, "off"],
+        _roffon: [1, "off", 0, "on"],
+        fullscreen: [0, "win", 1, "full"],
+        skipall: [0, "tread", 1, "tall"],
+        stopdeactive: [0, "dkeep", 1, "dstop"]
+    ];
+    var _pulldownTextBindBoolTypeDefault = "_onoff";
+    __entry("set_prop_trait", "pulldownSetPropTrait");
+    __entry("destruct", "closePulldown");
+    __entry("pulldown_cancel", "onPulldownCancel");
+    __entry("pulldown_item", "onPulldownItemDraw");
+    __entry("pulldown_select", "onPulldownItemSelect");
+    __entry("pulldown_enter", "onPulldownItemEnter");
+    __entry("pulldown_leave", "onPulldownItemLeave");
+    __entry("draw_select", "onPulldownDrawButton");
+    __entry("has_select", "onPulldownCheckSelect");
+    __entry("select_prop", "onPulldownShowSelect");
+    __entry("uiloaded", function(arg0, arg1) {
+        if (_pulldownBaseName != "") {
+            _pulldownBasePos = uiloadGetRect(_pulldownBaseName, arg1);
+        }
+        if (_pulldownTextUiName != "" && arg1[_pulldownTextUiName]) {
+            _pulldownTextUiInfo = Scripts.clone(arg1[_pulldownTextUiName]);
+        }
+    });
+
+    function _pulldownSwapOnOffOrder(arg0) {
+        var local0 = (arg0 != "") ? _pulldownTextBinds[arg0] : void;
+        if (local0) {
+            local0[0] = local0[2];
+            local0[2] = local0[0];
+            local0[1] = local0[3];
+            local0[3] = local0[1];
+        }
+    }
+
+    function pulldownSetPropTrait(arg0, arg1, arg2) {
+        if (arg0 != "" && arg2) {
+            var local0 = _pulldownPropMap[arg0] = [arg1, arg2.count];
+            var local1 = _pulldownTextBinds;
+            if (local1[arg0] === void) {
+                if (arg2.count == 2
+                        &&  ((arg2[1] == "on" || arg2[1] == "yes") && (arg2[0] == "off" || arg2[0] == "no"))) {
+                    local1[arg0] = "_onoff";
+                } else {
+                    var local2 = local1[arg0] = [];
+                    var local3 = 0;
+                    while (local3 < arg2.count) {
+                        local2.push(local3, arg2[local3]);
+                        ++local3;
+                    }
+                }
+            }
+        }
+    }
+
+    function pulldownGetProp(arg0) {
+        var local0 = -1;
+        var local1 = (arg0 != "") ? _pulldownPropMap[arg0] : void;
+        if (local1) {
+            var local2 = local1[0];
+            var local3 = local1[1];
+            switch (typeof local2) {
+                case "String":
+                    local0 = local2!;
+                    break;
+                case "Object":
+                    if (local2 instanceof "Function") {
+                        local0 = local2(arg0);
+                    } else {
+                        return -1;
+                    }
+                    break;
+                default:
+                    return -1;
+            }
+            if (local3 == 2) {
+                local0 = !!local0;
+            } else if (local0 < 0) {
+                local0 = 0;
+            } else if (local0 >= local3) {
+                local0 = local3 - 1;
+            }
+        }
+        return local0;
+    }
+
+    function closePulldown() {
+        if (_pulldownPanel && isvalid _pulldownPanel) {
+            _pulldownPanel.close();
+        }
+        _pulldownPanel = void;
+    }
+
+    function showPulldown() {
+        var local0 = getPulldownParam(...);
+        var local1 = _pulldownPanel = new _pulldownClass(this, local0);
+        local1.open(local0);
+        if (_pulldownHelp != "") {
+            runOnceDelayedTrigger(function() {
+                __call("help", _pulldownHelp, 1);
+            } incontextof this);
+        }
+    }
+
+    function getPulldownParam(arg0, arg1, arg2, arg3, arg4, arg5) {
+        var local0 = getPulldownItemPos(arg0);
+        var local1 = getPulldownItemPos(arg1);
+        if (local1 && local0) {
+            local0.x -= local1.x;
+            local0.y -= local1.y;
+        }
+        var local2 = arg5.count \ 2;
+        var local3 = _pulldownStorage.sprintf(local2);
+        var local4 = %[
+            storage: local3,
+            bgcolor: 0,
+            bgopacity: 0,
+            idtag: arg2,
+            current: arg4,
+            items: arg5,
+            callback: arg3
+        ];
+        if (local0) {
+            local4.baseoffsetx = local0.x;
+            local4.baseoffsety = local0.y;
+        }
+        __call("pulldown_param", arg0, local4);
+        return local4;
+    }
+
+    function getPulldownItemPos(arg0) {
+        if (typeof arg0 == "Object") {
+            return arg0;
+        }
+        var local0 = getItem(arg0);
+        if (local0) {
+            return %[x: local0.left, y: local0.top];
+        }
+    }
+
+    function onPulldownItemDraw(arg0, arg1, arg2, arg3, arg4, arg5) {
+        if (arg1) {
+            var local0 = getPulldownItemText(arg0, arg4);
+            drawText(arg1, local0, "pulldown", arg0);
+            if (arg5 !== void) {
+                arg1.toggle = arg5;
+            }
+        }
+    }
+
+    function getPulldownItemText(arg0, arg1) {
+        var local0 = (arg0 != "") ? _pulldownPropMap[arg0] : void;
+        if (local0) {
+            var local1 = local0[1];
+            var local2 = _pulldownTextMap;
+            if (arg1 < 0) {
+                arg1 = 0;
+            } else if (arg1 >= local1) {
+                arg1 = local1 - 1;
+            }
+            var local3 = "!%s:%d".sprintf(arg0, arg1);
+            var local4 = local2[local3];
+            if (local4 === void) {
+                var local5 = getPulldownSelectList(arg0);
+                var local6;
+                var local7 = local1 * 2 - 2;
+                while (local7 >= 0) {
+                    if (local5[local7] == arg1) {
+                        local6 = local5[local7 + 1];
+                        break;
+                    } else {
+                        local7 -= 2;
+                        continue;
+                    }
+                }
+                local4 = local2[local3] = string(local6);
+            }
+            if (local4 != "") {
+                return pulldownFilterItemText(arg0, local4);
+            }
+        }
+        return string(arg1);
+    }
+
+    function pulldownFilterItemText(arg0, arg1) {
+        var local0 = _pulldownTextMap;
+        return (local0 && local0[arg1] != "") ? local0[arg1] : arg1;
+    }
+
+    function onPulldownCancel(arg0) {
+        closePulldown(arg0);
+        if (arg0 != "") {
+            playSysSE("option." + arg0 + ".close");
+            setItemProp(arg0 + _pulldownButtonPostfix, "toggle", 0);
+        }
+    }
+
+    function onPulldownItemSelect(arg0, arg1, arg2, arg3) {
+        closePulldown(arg0);
+        if (arg0 != "") {
+            setItemProp(arg0 + _pulldownButtonPostfix, "toggle", 0);
+        }
+        if (arg3 && arg2) {
+            arg3(arg2[arg1 * 2], arg0);
+        }
+    }
+
+    function onPulldownItemEnter(arg0, arg1, arg2) { }
+
+    function onPulldownItemLeave(arg0, arg1, arg2) { }
+
+    function onPulldownCheckSelect() {
+        return 1;
+    }
+
+    function onPulldownDrawButton(arg0, arg1) {
+        var local0 = getItem(arg0 + _pulldownTextPostfix);
+        if (local0) {
+            var local1 = _pulldownTextUiInfo;
+            local0.fillRect(0, 0, local0.imageWidth, local0.imageHeight, 0);
+            if (local1) {
+                local0.loadUIInfo(local1, 1);
+            }
+            var local2 = getPulldownItemText(arg0, (arg1 === void) ? arg1 : pulldownGetProp(arg0));
+            drawText(local0, local2, "prop", arg0, (local1 && local1.uistates) ? local1.uistates.text : void);
+        }
+    }
+
+    function onPulldownShowSelect(arg0, arg1) {
+        var local0 = getPulldownSelectList(arg0);
+        if (local0) {
+            showPulldown(arg0 + _pulldownButtonPostfix, _pulldownBasePos, arg0, arg1, pulldownGetProp(arg0), local0);
+        }
+    }
+
+    function getPulldownSelectList(arg0) {
+        var local0 = _pulldownTextBinds;
+        var local1 = local0[arg0];
+        if (local1 === void) {
+            return;
+        }
+        while (typeof local1 == "String" && local1 != "") {
+            local1 = local0[local1];
+        }
+        if (local1 instanceof "Array") {
+            return local1;
+        }
+        local1 = _pulldownTextBinds[arg0] = [];
+        var local2 = 0;
+        while (local2 < list.count) {
+            local1.push(local2, string(local2));
+            ++local2;
+        }
+        return local1;
+    }
+}
+
+class OptionSelectPulldownBase extends BasicPulldownBase {
+    var _idtag;
+    var _items;
+    var _cursel;
+    var _callback;
+
+    function OptionSelectPulldownBase() {
+        super.BasicPulldownBase(...);
+    }
+
+    function finalize() {
+        super.finalize(...);
+    }
+
+    function open(arg0) {
+        _idtag = arg0.idtag;
+        _items = arg0.items;
+        _cursel = arg0.current;
+        _callback = arg0.callback;
+        var local0 = this.names;
+        var local1 = 0;
+        var local2 = 0;
+        var local3 = _items.count;
+        while (local1 < local3) {
+            var local4 = local0["item" + local2];
+            var local5 = _items[local1];
+            var local6 = _items[local1 + 1];
+            var local7 = (_cursel !== void && _cursel >= 0) ? local5 == _cursel : void;
+            ownerCall("item", local4, local2, local6, local5, local7);
+            ++local2;
+            local1 += 2;
+        }
+        return super.open(...);
+    }
+
+    function onAutoType_buttons(arg0, arg1) {
+        var local0 = 0;
+        var local1 = 0;
+        var local2 = +arg1[2];
+        while (local0 < local2) {
+            var local3 = "item" + local1;
+            arg0.push([
+                "func", local3, "exp", "onSelect(" + string(local1) + ")", "onenter",
+                "onEnterLeave(" + string(local1) + ",1)", "onleave", "onEnterLeave(" + string(local1) + ",0)"
+            ], ["empt", local3]);
+            ++local1;
+            local0 += 2;
+        }
+    }
+
+    function ownerCall(arg0, *) {
+        if (arg0 != "") {
+            arg0 = "_" + arg0;
+        }
+        try {
+            return owner.__call("pulldown" + arg0, _idtag, *);
+        } catch (e) { }
+    }
+
+    function onEnterLeave(arg0, arg1) {
+        ownerCall(arg1 ? "enter" : "leave", arg0, _items);
+    }
+
+    function onSelect(arg0) {
+        ownerCall("select", arg0, _items, _callback);
+    }
+
+    function onOuterClicked() {
+        ownerCall("cancel");
+        return !isvalid this;
+    }
+
+    function onRightClicked() {
+        ownerCall("cancel");
+        if (isvalid this) {
+            return super.onRightClicked();
+        }
+    }
+}
+
+class OptionSliderValueUtil extends Module {
+    __entry("uiloaded", setupSliderValue);
+    var _sliderValueUi;
+    var _sliderValueUiName = "_num";
+
+    function setupSliderValue(arg0, arg1) {
+        _sliderValueUi = arg1[_sliderValueUiName];
+    }
+
+    function drawSliderValue(arg0, arg1, arg2) {
+        var local0 = getItem(arg0);
+        if (local0) {
+            local0.fillRect(0, 0, local0.width, local0.height, 0);
+            if (_sliderValueUi) {
+                var local1 = _sliderValueUi;
+                var local2 = local0._copyButtonUIStates;
+                local2(0, local1, , "xx%1d".sprintf(arg1 % 10));
+                if (arg1 >= 10) {
+                    local2(0, local1, , "x%1dx".sprintf(arg1 \ 10 % 10));
+                }
+                if (arg1 >= 100) {
+                    local2(0, local1, , "1xx");
+                }
+            } else {
+                drawText(local0, string(arg1), "value", arg0);
+            }
+        }
+    }
+}
+
+class OptionAudioVolumeModule extends Module {
+    var audioVolumeTags = ["wave", "bgm", "se", "sysse", "voice", "bgv2", "bgv", "down", "movie"];
+    var _audioSyncMap = %[];
+    var _audioNoCallbacks = %[wave: 1, down: 1, sedown: 1];
+    var _audioUiMap = %[
+        volume: "_slider",
+        on: "_on",
+        off: "_off",
+        mute: "_mute",
+        play: "_play",
+        test: "_test",
+        value: "_value"
+    ];
+    var _audioSyncBgmDownVolume = 1;
+    __entry("construct", function() {
+        _foreachAudioVolumeTags(function(arg0) {
+            __entry("update_" + arg0, onAudioVolumeUpdate);
+        });
+        if (_audioSyncBgmDownVolume) {
+            _audioSyncMap["bgm"] = "down";
+            this.filterValue2Audio_down = function(arg0, arg1) { return _getAudioVolume("bgm") * ((!arg1 && _audioSyncBgmDownVolume > 0) ? 1 : arg0 / 100); } incontextof this;
+            this.filterAudio2Value_down = function(arg0, arg1) {
+                var local0 = _getAudioVolume("bgm");
+                if (arg0 > local0) {
+                    arg0 = local0;
+                }
+                return (local0 > 0) ? arg0 / local0 * 100 : 0;
+            } incontextof this;
+        }
+    });
+    __entry("update", updateAudioVolumes);
+    var _inAudioVolumeUpdate;
+    __entry("construct", function() {
+        kag.addHook("onSoundPropertyChanged", this.onSoundPropertyChanged);
+    });
+    __entry("destruct", function() {
+        kag.removeHook("onSoundPropertyChanged", this.onSoundPropertyChanged);
+    });
+    __entry("uiauto_audio", function(arg0) {
+        _foreachAudioVolumeTags(function(arg0, arg1) {
+            arg1.push("func," + string(arg0) + string(_audioUiMap.volume)
+                + ",onchangefunc,Current.func(\"onAudioVolumeChange\"),onchangefuncdata,\"" + string(arg0)
+                + "\"", "func," + string(arg0) + string(_audioUiMap.on) + ",exp,Current.cmd(\"setAudioOnOff/"
+                + string(arg0) + "/1\")", "func," + string(arg0) + string(_audioUiMap.off)
+                + ",exp,Current.cmd(\"setAudioOnOff/" + string(arg0) + "/0\")", "func," + string(arg0)
+                + string(_audioUiMap.mute) + ",exp,Current.cmd(\"setAudioOnOff/" + string(arg0) + "/toggle\")", "func,"
+                + string(arg0) + string(_audioUiMap.play) + ",exp,Current.cmd(\"setAudioOnOff/" + string(arg0)
+                + "/toggle\")", "func," + string(arg0) + string(_audioUiMap.test) + ",exp,Current.cmd(\"testAudioPlay/"
+                + string(arg0) + "\")", "empt," + string(arg0) + string(_audioUiMap.volume) + "," + string(arg0)
+                + string(_audioUiMap.on) + "," + string(arg0) + string(_audioUiMap.off) + "," + string(arg0)
+                + string(_audioUiMap.mute) + "," + string(arg0) + string(_audioUiMap.play) + "," + string(arg0)
+                + string(_audioUiMap.test), "rgrp," + string(arg0) + "," + string(arg0) + "_on," + string(arg0)
+                + "_off");
+            __call("slider_funcs", arg1, arg0, _audioUiMap, "volume", "audio");
+        }, arg0);
+    });
+    __entry("undo_hooks", function(arg0) {
+        arg0.push(%[
+            name: "audio",
+            type: "slider",
+            onchangefunc: "onAudioVolumeChange"
+        ], %[
+            name: "audio_en",
+            type: "keyvalue",
+            keyvalue: "setAudioOnOff"
+        ], %[
+            name: "audio_upd",
+            type: "update",
+            eventhook: ["onBgmVolumeChange", "onSEVolumeChange", "onVoiceVolumeUpdate"]
+        ]);
+    });
+
+    function _foreachAudioVolumeTags() {
+        _foreachTags(audioVolumeTags, *);
+    }
+
+    function updateAudioVolumes() {
+        _foreachAudioVolumeTags(onAudioVolumeUpdate);
+    }
+
+    function onAudioVolumeUpdate(arg0) {
+        var local0;
+        if (_inAudioVolumeUpdate) {
+            return;
+        }
+        _inAudioVolumeUpdate = 1;
+        try {
+            local0 = _getAudioEnable(arg0);
+            var local1 = _getAudioVolume(arg0);
+            var local2 = getAudioUpdateTarget(arg0, local1, local0);
+            if (local2) {
+                setItemMultiProp(local2);
+            }
+            updateAudioValue(arg0, local1, local0);
+        } catch (e) {
+            _inAudioVolumeUpdate = 0;
+            throw e;
+        }
+        _inAudioVolumeUpdate = 0;
+    }
+
+    function getAudioUpdateTarget(arg0, arg1, arg2) {
+        var local0;
+        local0 = %[
+            arg0 + _audioUiMap.volume => %[
+                position: filterValue2Audio(...),
+                enabled: arg2,
+                opacity: arg2 ? 255 : _sliderValueDisabledOpac,
+                disablepos: (arg0 != "down") ? filterValue2Audio(arg0, 0, 0) : void
+            ],
+            arg0 + _audioUiMap.on => %[toggle: arg2],
+            arg0 + _audioUiMap.off => %[toggle: !arg2],
+            arg0 + _audioUiMap.mute => %[toggle: !arg2],
+            arg0 + _audioUiMap.play => %[toggle: arg2],
+            arg0 + _audioUiMap.test => %[enabled: arg2]
+        ];
+        __call("slider_props", local0, arg0, _audioUiMap, "volume", "audio");
+        return local0;
+    }
+
+    function updateAudioValue(arg0, arg1, arg2) {
+        _invoke("drawSliderValue", arg0 + _audioUiMap.value, getAudioValue(...));
+    }
+
+    function getAudioValue(arg0, arg1, arg2) {
+        if (arg0 == "down" && _audioSyncBgmDownVolume) {
+            arg1 = filterValue2Audio(arg0, arg1, arg2);
+            arg2 = 1;
+        }
+        return arg2 ? int(+arg1) : 0;
+    }
+
+    function filterAudio2Value(arg0, arg1, *) {
+        return filterValueFunc("filterAudio2Value_", arg0, arg1, *);
+    }
+
+    function filterValue2Audio(arg0, arg1, *) {
+        return filterValueFunc("filterValue2Audio_", arg0, arg1, *);
+    }
+
+    function _getAudioPropName(arg0, arg1) {
+        switch (arg0) {
+            case "movie":
+                arg0 = "movieaudio";
+                break;
+            case "down":
+                if (arg1 == "enable") {
+                    return "bgmdown";
+                } else if (arg1 == "volume") {
+                    return "bgmdownlevel";
+                }
+                break;
+            case "sedown":
+                if (arg1 == "enable") {
+                    return "sedown";
+                } else if (arg1 == "volume") {
+                    return "sedownlevel";
+                }
+                break;
+        }
+        return arg0 + arg1;
+    }
+
+    function _getAudioProp(arg0, arg1) {
+        try {
+            return kag[_getAudioPropName(...)];
+        } catch (e) { }
+    }
+
+    function _setAudioProp(arg0, arg1, arg2) {
+        kag[_getAudioPropName(...)] = arg2;
+    }
+
+    function _getAudioEnable(arg0) {
+        return _getAudioProp(arg0, "enable");
+    }
+
+    function _setAudioEnable(arg0, arg1) {
+        _setAudioProp(arg0, "enable", !!arg1);
+    }
+
+    function _getAudioVolume(arg0) {
+        return _getAudioProp(arg0, "volume");
+    }
+
+    function _setAudioVolume(arg0, arg1) {
+        _setAudioProp(arg0, "volume", arg1);
+    }
+
+    function onAudioVolumeChange(arg0, arg1, arg2) {
+        if (arg2 == "" || _inAudioVolumeUpdate) {
+            return;
+        }
+        if (_getAudioEnable(arg2)) {
+            _setAudioVolume(arg2, filterAudio2Value(arg2, arg0));
+        }
+        if (_audioNoCallbacks[arg2]) {
+            update(arg2);
+        }
+        __call("change_" + string(arg2) + "_vol", arg0, arg1);
+    }
+
+    function setAudioOnOff(arg0, arg1) {
+        var local0;
+        if (arg1 == "toggle") {
+            local0 = !_getAudioEnable(arg0);
+        } else {
+            local0 = !!+arg1;
+        }
+        _setAudioEnable(arg0, local0);
+        update(arg0);
+        __call("change_" + string(arg0) + "_en", local0);
+    }
+
+    function testAudioPlay(arg0) { }
+
+    function onSoundPropertyChanged(arg0, arg1, arg2) {
+        if (arg0 != "" && arg1 == "globalVolume") {
+            update(arg0);
+            var local0 = _audioSyncMap[arg0];
+            if (local0 !== void) {
+                if (typeof local0 == "String") {
+                    update(local0);
+                } else {
+                    var local1 = 0;
+                    while (local1 < local0.count) {
+                        update(local0[local1]);
+                        ++local1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+class OptionCharVoiceSwitchModule extends Module {
+    __require("OptionAudioVolumeModule");
+    var _voiceNames = SystemConfig.voiceNames;
+    __entry("construct", function() {
+        if (_voiceNames === void) {
+            throw new Exception("OptionCharVoiceSwitchModule: SystemConfig.voiceNames not defined.");
+        }
+        _foreachCharVoiceNames(function(arg0, arg1) {
+            __entry("update_" + _voiceSwitchUiTag + arg1, updateVoiceOneFromUpdateOne);
+        });
+        resetVoiceTarget();
+    });
+    var _voiceSwitchUiTag = "chv";
+    var _voiceViewUiTag = "chview";
+    var _voiceViewUi;
+    var currentVoiceChar;
+    __entry("uiloaded", function(arg0, arg1) {
+        _voiceViewUi = arg1[_voiceViewUiTag];
+    });
+    __entry("update", updateVoice);
+    __entry("update_" + _voiceSwitchUiTag, updateVoiceCurrent);
+    var _inChVoiceVolumeUpdate;
+    var _sampleVoiceSETag = "voicetest";
+    var _sampleVoicePlayed;
+    var _stopSampleVoiceOnClose = 1;
+    var _stopSampleVoiceOnPlay = 1;
+    __entry("destruct", function() {
+        if (_sampleVoicePlayed && _stopSampleVoiceOnClose) {
+            kag.stopAllVoice();
+        }
+    });
+    var _resetVoiceTargetFirstChar = 0;
+    __entry("uiauto_chvoice", function(arg0) {
+        _foreachCharVoiceNames(function(arg0, arg1, arg2) {
+            var local0 = _voiceSwitchUiTag + arg1;
+            uiautoVoiceTarget(arg2, local0, arg1);
+            arg2.push("func," + string(local0) + ",exp,Current.cmd(\"setChVoiceTarget/" + string(arg1) + "\")", "empt,"
+                + string(local0));
+        }, arg0);
+        uiautoVoiceTarget(arg0, _voiceSwitchUiTag, -1);
+    });
+    __entry("undo_hooks", function(arg0) {
+        arg0.push(%[
+            name: "chvol",
+            type: "slider",
+            onchangefunc: "onChVoiceVolumeChange"
+        ], %[
+            name: "chven",
+            type: "keyvalue",
+            keyvalue: "setChVoiceOnOff"
+        ], %[
+            name: "chsel",
+            type: "change",
+            change: "setChVoiceTarget"
+        ], %[name: "currentVoiceChar", type: "value"]);
+    });
+
+    function _foreachCharVoiceNames(arg0, *) {
+        var local0 = _voiceNames;
+        var local1 = 0;
+        var local2 = local0.count;
+        while (local1 < local2) {
+            (arg0 incontextof this)(local0[local1], local1, *);
+            ++local1;
+        }
+    }
+
+    function updateVoice() {
+        _foreachCharVoiceNames(updateVoiceOne);
+        updateVoiceCurrent();
+    }
+
+    function updateVoiceCurrent() {
+        onUpdateVoiceTarget(_voiceSwitchUiTag, currentVoiceChar);
+        if (_voiceViewUi) {
+            var local0 = _voiceNames.find(currentVoiceChar);
+            var local1 = getItem(_voiceViewUiTag);
+            if (local1) {
+                drawVoiceView(local1, local0);
+            }
+        }
+    }
+
+    function drawVoiceView(arg0, arg1, arg2 = _voiceViewUi, arg3 = _voiceSwitchUiTag, arg4 = 1) {
+        if (arg4) {
+            arg0.fillRect(0, 0, arg0.width, arg0.height, 0);
+        }
+        arg0._copyButtonUIStates(0, arg2, , arg3 + arg1);
+    }
+
+    function updateVoiceOneFromUpdateOne(arg0) {
+        var local0 = _voiceSwitchUiTag;
+        var local1 = local0.length;
+        if ((string(arg0)).substr(0, local1) == local0) {
+            updateVoiceOne(int(+arg0.substr(local1)));
+        }
+    }
+
+    function updateVoiceOne(arg0, arg1 = -1) {
+        if (typeof arg0 == "Integer") {
+            arg1 = arg0;
+            arg0 = _voiceNames[arg0];
+        }
+        if (arg1 < 0) {
+            arg1 = _voiceNames.find(arg0);
+        }
+        if (arg1 >= 0) {
+            onUpdateVoiceTarget(_voiceSwitchUiTag + arg1, arg0, arg0 == currentVoiceChar);
+        }
+    }
+
+    function onUpdateVoiceTarget(arg0, arg1, arg2 = -1) {
+        var local0 = arg1 != "";
+        var local1 = local0 ? _getChVoiceVolume(arg1) : -1;
+        var local2 = local0 && _getChVoiceOn(arg1);
+        var local3 = getCharVoiceUpdateTarget(arg0, local0, local1, local2, arg2);
+        _inChVoiceVolumeUpdate = 1;
+        if (local3) {
+            setItemMultiProp(local3);
+        }
+        if (local0) {
+            updateAudioValue(arg0, local1, local2);
+        }
+        _inChVoiceVolumeUpdate = 0;
+    }
+
+    function getCharVoiceUpdateTarget(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = !arg1 ? %[visible: 0] : void;
+        var local1;
+        local1 = %[
+            arg0 => local0 ? local0 : %[visible: 1],
+            arg0 + _audioUiMap.volume => local0 ? local0 : %[
+                visible: 1,
+                position: filterValue2Chvol(arg0, arg2),
+                enabled: arg3,
+                opacity: arg3 ? 255 : _sliderValueDisabledOpac,
+                disablepos: filterValue2Chvol(arg0, 0)
+            ],
+            arg0 + _audioUiMap.on => local0 ? local0 : %[visible: 1, toggle: arg3],
+            arg0 + _audioUiMap.off => local0 ? local0 : %[visible: 1, toggle: !arg3],
+            arg0 + _audioUiMap.mute => local0 ? local0 : %[visible: 1, toggle: !arg3],
+            arg0 + _audioUiMap.play => local0 ? local0 : %[visible: 1, toggle: arg3],
+            arg0 + _audioUiMap.test => local0 ? local0 : %[visible: 1, enabled: arg3],
+            arg0 + _audioUiMap.value => local0 ? local0 : %[visible: 1]
+        ];
+        if (arg4 >= 0 && arg1) {
+            local1[arg0].toggle = arg4;
+        }
+        __call("slider_props", local1, arg0, _audioUiMap, "volume", "voice");
+        return local1;
+    }
+
+    function filterValue2Chvol(arg0, arg1) {
+        return arg1;
+    }
+
+    function filterChvol2Value(arg0, arg1) {
+        return arg1;
+    }
+
+    function testChVoicePlay(arg0) {
+        var local0 = (arg0 >= 0) ? _voiceNames[+arg0] : currentVoiceChar;
+        if (local0 != "") {
+            playSampleVoice(local0);
+        }
+    }
+
+    function playSampleVoice(arg0, arg1 = _sampleVoiceSETag) {
+        if (arg0 == "*") {
+            arg0 = getRandomSampleVoiceName();
+        }
+        if (arg0 != "") {
+            arg1 += "." + arg0;
+        }
+        var local0 = getSysSE(arg1);
+        if (local0 === void || local0.storage == "") {
+            return;
+        }
+        var local1;
+        var local2 = KAGSoundBuffer.SupportedExtensions;
+        var local3 = local0.storage.split(/[ \t]/, , 1);
+        if (local3.count > 1) {
+            for (var local4 = 0; local4 < local3.count; ++local4) {
+                local1 = getExistFileNameAutoExtFill(local3[local4], local2*);
+                if (local1 != "") {
+                    local3[local4] = local1;
+                    continue;
+                } else {
+                    local3[local4] = void;
+                    kag.errorSound("テストボイスがありません:" + local3[local4]);
+                }
+            }
+            local3.remove(, 1);
+            local1 = local3[int(defaultRandomGenerator.random() * local3.count)];
+        } else {
+            local1 = getExistFileNameAutoExtFill(local0.storage, local2*);
+            if (local1 == "") {
+                kag.errorSound("テストボイスがありません:" + local0.storage);
+                return;
+            }
+        }
+        if (_stopSampleVoiceOnPlay) {
+            if (typeof global.SystemVoiceTrack == "Object") {
+                SystemVoice.stop();
+            }
+            kag.stopAllVoice();
+        }
+        _sampleVoicePlayed = 1;
+        kag.playVoice((string(arg0)).toLowerCase(), local1);
+    }
+
+    function getRandomSampleVoiceName() {
+        var local0 = [];
+        local0.assign(_voiceNames);
+        var local1 = 0;
+        while (local1 < local0.count) {
+            var local2 = local0[local1];
+            if (local2 == "*" || !_getChVoiceOn(local2)) {
+                local0[local1] = void;
+            }
+            ++local1;
+        }
+        local0.remove(, 1);
+        return local0[int(defaultRandomGenerator.random() * local0.count)];
+    }
+
+    function stopSampleVoice() {
+        var local0 = currentVoiceChar;
+        if (local0 != "") {
+            kag.stopVoice(local0);
+        } else {
+            kag.stopAllVoice();
+        }
+        __call("stopvoice", local0);
+    }
+
+    function onChVoiceVolumeChange(arg0, arg1, arg2) {
+        if (_inChVoiceVolumeUpdate) {
+            return;
+        }
+        var local0 = _voiceSwitchUiTag;
+        var local1 = currentVoiceChar;
+        if (arg2 >= 0) {
+            local1 = _voiceNames[+arg2];
+            local0 += arg2;
+        }
+        if (local1 != "" && _getChVoiceOn(local1)) {
+            _setChVoiceVolume(local1, filterChvol2Value(local0, arg0));
+            if (!arg1) {
+                onChVoiceTargetDragStop(local1, arg2);
+            }
+        }
+        update(local0);
+    }
+
+    function setChVoiceOnOff(arg0, arg1, arg2 = 1) {
+        var local0 = (arg0 >= 0) ? _voiceNames[+arg0] : currentVoiceChar;
+        var local1;
+        var local2 = _voiceSwitchUiTag;
+        var local3 = _getChVoiceOn(local0);
+        if (arg1 == "toggle") {
+            local1 = !local3;
+        } else {
+            local1 = !!+arg1;
+        }
+        _setChVoiceOn(local0, local1);
+        if (!local3 && local1) {
+            onChVoiceTargetOn(local0, arg0);
+        } else if (local3 && !local1) {
+            onChVoiceTargetOff(local0, arg0);
+        }
+        if (arg2) {
+            if (arg0 < 0) {
+                update(local2);
+            }
+            var local4 = local2 + ((arg0 >= 0) ? +arg0 : _voiceNames.find(local0));
+            update(local4);
+        }
+        return local1;
+    }
+
+    function setChVoiceTarget(arg0) {
+        var local0 = _voiceNames[+arg0];
+        if (local0 == "") {
+            return;
+        }
+        stopSampleVoice();
+        var local1 = currentVoiceChar;
+        currentVoiceChar = local0;
+        SystemConfig.lastVoiceSwitchTarget = local0;
+        if (local0 == local1) {
+            onChVoiceTargetDoubleClicked(local0, arg0);
+        } else {
+            onChVoiceTargetChanged(local0, arg0);
+        }
+        updateVoice();
+    }
+
+    function _getChVoiceOn(arg0) {
+        return (arg0 != "*") ? kag.getVoiceOn(arg0) : kag.voiceenable;
+    }
+
+    function _getChVoiceVolume(arg0) {
+        return (arg0 != "*") ? kag.getVoiceVolume(arg0, 1) : kag.voicevolume;
+    }
+
+    function _setChVoiceOn(arg0, arg1) {
+        if (arg0 != "*") {
+            kag.setVoiceOn(arg0, arg1);
+        } else {
+            kag.voiceenable = arg1;
+        }
+    }
+
+    function _setChVoiceVolume(arg0, arg1) {
+        if (arg0 != "*") {
+            kag.setVoiceVolume(arg0, arg1);
+        } else {
+            kag.voicevolume = arg1;
+        }
+    }
+
+    function onChVoiceTargetDoubleClicked(arg0, arg1) {
+        if (setChVoiceOnOff(arg1, "toggle", 0)) {
+            onChVoiceTargetDoubleClickAndOn(...);
+        }
+    }
+
+    function onChVoiceTargetDoubleClickAndOn() { }
+
+    function onChVoiceTargetChanged(arg0, arg1) {
+        testChVoicePlay(arg1);
+    }
+
+    function onChVoiceTargetOn(arg0, arg1) {
+        testChVoicePlay(arg1);
+    }
+
+    function onChVoiceTargetOff(arg0, arg1) { }
+
+    function onChVoiceTargetDragStop(arg0, arg1) {
+        testChVoicePlay(arg1);
+    }
+
+    function resetVoiceTarget(arg0) {
+        if (arg0 === void) {
+            arg0 = SystemConfig.lastVoiceSwitchTarget;
+        }
+        var local0 = _resetVoiceTargetFirstChar ? _voiceNames[0] : void;
+        currentVoiceChar = arg0;
+        if (currentVoiceChar == "" || _voiceNames.find(currentVoiceChar) < 0) {
+            currentVoiceChar = local0;
+        }
+    }
+
+    function uiautoVoiceTarget(arg0, arg1, arg2) {
+        arg0.push("func," + string(arg1) + string(_audioUiMap.volume)
+            + ",onchangefunc,Current.func(\"onChVoiceVolumeChange\"),onchangefuncdata," + string(arg2), "func,"
+            + string(arg1) + string(_audioUiMap.on) + ",exp,Current.cmd(\"setChVoiceOnOff/" + string(arg2)
+            + "/1\")", "func," + string(arg1) + string(_audioUiMap.off) + ",exp,Current.cmd(\"setChVoiceOnOff/"
+            + string(arg2) + "/0\")", "func," + string(arg1) + string(_audioUiMap.mute)
+            + ",exp,Current.cmd(\"setChVoiceOnOff/" + string(arg2) + "/toggle\")", "func," + string(arg1)
+            + string(_audioUiMap.play) + ",exp,Current.cmd(\"setChVoiceOnOff/" + string(arg2) + "/toggle\")", "func,"
+            + string(arg1) + string(_audioUiMap.test) + ",exp,Current.cmd(\"testChVoicePlay/" + string(arg2)
+            + "\"),sename," + string(_voiceSwitchUiTag + _audioUiMap.test), "empt," + string(arg1)
+            + string(_audioUiMap.volume) + "," + string(arg1) + string(_audioUiMap.on) + "," + string(arg1)
+            + string(_audioUiMap.off) + "," + string(arg1) + string(_audioUiMap.mute) + "," + string(arg1)
+            + string(_audioUiMap.play) + "," + string(arg1) + string(_audioUiMap.test), "rgrp," + string(arg1) + ","
+            + string(arg1) + "_on," + string(arg1) + "_off");
+        __call("slider_funcs", arg0, arg1, _audioUiMap, "volume", "voice");
+    }
+}
+
+class OptionSpeedSliderModule extends Module {
+    var speedSliderTags = ["textspeed", "autospeed", "skipspeed", "drawspeed"];
+    var _speedUiMap = %[slider: "_slider", value: "_value"];
+    __entry("construct", function() {
+        _foreachSpeedSliderTags(function(arg0) {
+            __entry("update_" + arg0, onSpeedSliderUpdate);
+        });
+    });
+    __entry("update_textSpeed", function() {
+        onSpeedSliderUpdate("textspeed");
+    });
+    __entry("update_autoSpeed", function() {
+        onSpeedSliderUpdate("autospeed");
+    });
+    __entry("update", updateSpeedSliders);
+    var _inSpeedSliderUpdate;
+    __entry("uiauto_speed", function(arg0) {
+        _foreachSpeedSliderTags(function(arg0, arg1) {
+            arg1.push("func," + string(arg0) + string(_speedUiMap.slider)
+                + ",onchangefunc,Current.func(\"onSpeedSliderChange\"),onchangefuncdata,\"" + string(arg0)
+                + "\"", "empt," + string(arg0) + string(_speedUiMap.slider));
+            __call("slider_funcs", arg1, arg0, _speedUiMap, "slider", "speed");
+        }, arg0);
+    });
+    __entry("undo_hooks", function(arg0) {
+        arg0.push(%[name: "speed", type: "slider", onchangefunc: "onSpeedSliderChange"]);
+    });
+
+    function _foreachSpeedSliderTags() {
+        _foreachTags(speedSliderTags, *);
+    }
+
+    function updateSpeedSliders() {
+        _foreachSpeedSliderTags(onSpeedSliderUpdate);
+    }
+
+    function onSpeedSliderUpdate(arg0) {
+        var local0;
+        if (_inSpeedSliderUpdate) {
+            return;
+        }
+        _inSpeedSliderUpdate = 1;
+        try {
+            local0 = _getSpeedSlider(arg0);
+            var local1 = !__call("isdisable_" + arg0);
+            var local2 = getSpeedSliderTarget(arg0, local0, local1);
+            if (local2) {
+                setItemMultiProp(local2);
+            }
+            updateSpeedValue(arg0, local0);
+        } catch (e) {
+            _inSpeedSliderUpdate = 0;
+            throw e;
+        }
+        _inSpeedSliderUpdate = 0;
+    }
+
+    function getSpeedSliderTarget(arg0, arg1, arg2 = 1) {
+        var local0;
+        local0 = %[arg0 + _speedUiMap.slider => %[position: filterValue2Speed(...), enabled: arg2, opacity: arg2 ? 255 : _sliderValueDisabledOpac]];
+        __call("slider_props", local0, arg0, _speedUiMap, "slider", "speed");
+        return local0;
+    }
+
+    function updateSpeedValue(arg0, arg1) {
+        _invoke("drawSliderValue", arg0 + _speedUiMap.value, getSpeedValue(...));
+    }
+
+    function getSpeedValue(arg0, arg1) {
+        var local0 = filterValueFunc("filterValue2SpeedText_", arg0, arg1);
+        return (typeof local0 == "String") ? local0 : int(+local0);
+    }
+
+    function filterSpeed2Value(arg0, arg1, *) {
+        return filterValueFunc("filterSpeed2Value_", arg0, arg1, *);
+    }
+
+    function filterValue2Speed(arg0, arg1, *) {
+        return filterValueFunc("filterValue2Speed_", arg0, arg1, *);
+    }
+
+    function _getSpeedMultiplyToString(arg0) {
+        if (!arg0) {
+            return "MAX";
+        }
+        arg0 = 1 / arg0;
+        return (arg0 >= 10) ? "x%2d".sprintf(arg0) : (arg0 < 1) ? "x.%2d".sprintf(100 * arg0) : "x%.1f".sprintf(arg0);
+    }
+
+    function filterValue2SpeedText_skipspeed(arg0) {
+        return _getSpeedMultiplyToString(arg0);
+    }
+
+    function filterValue2Speed_skipspeed(arg0) {
+        return (arg0 < 0) ? 100 : (arg0 < 1.0) ? 100 - arg0 * 100 : 0;
+    }
+
+    function filterSpeed2Value_skipspeed(arg0) {
+        return (arg0 < 0) ? 1.0 : (arg0 < 100) ? (100 - arg0) / 100 : 0;
+    }
+
+    function filterValue2SpeedText_drawspeed(arg0) {
+        return _getSpeedMultiplyToString(arg0);
+    }
+
+    function filterValue2Speed_drawspeed(arg0) {
+        return (arg0 < 0) ? 100 : (arg0 < 2.0) ? 100 - arg0 * 50 : 0;
+    }
+
+    function filterSpeed2Value_drawspeed(arg0) {
+        return (arg0 < 0) ? 2.0 : (arg0 < 100) ? (100 - arg0) / 50 : 0;
+    }
+
+    function _getSpeedPropName(arg0) {
+        return arg0;
+    }
+
+    function _getSpeedSlider(arg0) {
+        try {
+            return kag[_getSpeedPropName(...)];
+        } catch (e) { }
+    }
+
+    function _setSpeedSlider(arg0, arg1) {
+        kag[_getSpeedPropName(...)] = arg1;
+    }
+
+    function onSpeedSliderChange(arg0, arg1, arg2) {
+        if (arg2 == "" || _inSpeedSliderUpdate) {
+            return;
+        }
+        _setSpeedSlider(arg2, filterSpeed2Value(arg2, arg0));
+        update(arg2);
+        if (!arg1) {
+            __call("speedchanged", arg2);
+        }
+    }
+}
+
+class OptionFontSelectModule extends Module {
+    var fontSelectFlags = fsfSameCharSet | fsfNoVertical | fsfTrueTypeOnly;
+    if (kag.showFixedPitchOnlyInFontSelector) {
+        fontSelectFlags |= fsfFixedPitch;
+    }
+
+    var _fontList;
+    var _fontUi;
+    var _fontSizeCache;
+    var _fontSampleMaxSize;
+    var _fontSampleMesColor = 0;
+    __entry("uiloaded", function(arg0, arg1) {
+        _fontUi = arg1.font;
+    });
+    __entry("update_fontSelect", drawCurrentFont);
+    __entry("update", drawCurrentFont);
+    __entry("uiauto_font", function(arg0) {
+        arg0.push(
+            "func,font,exp,Current.cmd(\"selectFont\")", "func,font_up,exp,Current.cmd(\"moveFont/1\")",
+            "func,font_down,exp,Current.cmd(\"moveFont/-1\")", "file,font_sample",
+            "empt,font,font_up,font_down,font_sample"
+        );
+    });
+    __entry("undo_hooks", function(arg0) {
+        arg0.push(%[name: "font", type: "change", change: "changeFont"]);
+    });
+
+    function getFontList() {
+        if (_fontList === void) {
+            var local0 = kag.getFontFaceList(fontSelectFlags);
+            _fontList = [];
+            if (local0 !== void) {
+                _fontList.assign(local0);
+            }
+        }
+        return _fontList;
+    }
+
+    function drawCurrentFont() {
+
+        function getTarget() {
+            var local0 = getItem("font");
+            if (local0 && _fontUi) {
+                local0.loadUIInfo(_fontUi);
+                if (typeof local0.textrect == "undefined") {
+                    local0.textrect = Scripts.clone(_fontUi.uistates.text);
+                }
+            } else {
+                local0 = getItem("font_sample");
+                if (local0) {
+                    local0.fillRect(0, 0, local0.width, local0.height, 0);
+                    local0.textrect = null;
+                }
+            }
+            return local0;
+        }
+
+        function calcDefaultRect(arg0, arg1) {
+            var local0 = 0;
+            if (arg1) {
+                local0 = int(+Math.max(
+                    arg1.edgeExtent, Math.abs(arg1.shadowOffsetX) + arg1.shadowWidth,
+                    Math.abs(arg1.shadowOffsetY) + arg1.shadowWidth
+                ));
+            }
+            return %[ox: local0, oy: local0, w: arg0.width - local0 * 2, h: arg0.height - local0 * 2];
+        }
+
+        function makeTextParam(arg0, arg1, arg2, arg3) {
+            var local0 = %[
+                x: arg0.ox,
+                y: arg0.oy,
+                w: arg0.w,
+                h: arg0.h,
+                halign: 0,
+                valign: 0,
+                maxline: 1,
+                fontface: arg1
+            ];
+            if (arg2 !== void) {
+                local0.color = arg2;
+            }
+            if (arg3 == 1) {
+                local0.states = null;
+            }
+            return local0;
+        }
+
+        function getFaceTextSize(arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
+            arg0.font.face = arg2;
+            var local0 = arg4[arg2 + ":" + arg3];
+            if (local0 === void) {
+                local0 = int(+Math.min(arg1.h, arg6));
+                if (arg5 !== void && arg5 < local0) {
+                    local0 = arg5;
+                }
+                var local1 = arg1.w;
+                while (local0 > 1) {
+                    arg0.font.height = local0;
+                    if (arg0.font.getTextWidth(arg3) <= local1) {
+                        break;
+                    } else {
+                        --local0;
+                        continue;
+                    }
+                }
+                arg4[arg2 + ":" + arg3] = local0;
+            }
+            return local0;
+        }
+        var local0 = getTarget;
+        var local1 = calcDefaultRect;
+        var local2 = makeTextParam;
+        var local3 = getFaceTextSize;
+        var local4 = local0();
+        if (!local4) {
+            return;
+        }
+        var local5;
+        var local6;
+        local5 = local4.textrect ? local4.textrect : void;
+        local6 = (local4.textrect === null) ? 1 : local4.imageWidth \ local4.width;
+        var local7 = kag.fore.messages[msgHackTargetLayer];
+        if (!local5) {
+            local5 = local1(local4, local7);
+        }
+        var local8 = kag.chDefaultFace;
+        var local9 = _fontSampleMesColor ? local7.defaultChColor : void;
+        var local10 = local2(local5, local8, local9, local6);
+        var local11 = filterFontFaceName(local8);
+        var local12 = Math.abs(local7.defaultFontSize);
+        if (_fontSizeCache === void) {
+            _fontSizeCache = %[];
+        }
+        local10.fontheight = local3(local4, local5, local8, local11, _fontSizeCache, _fontSampleMaxSize, local12);
+        internalDrawCurrentFont(local4, local11, local8, local10);
+    }
+
+    function internalDrawCurrentFont(arg0, arg1, arg2, arg3) {
+        drawText(arg0, arg1, "font", arg2, , arg3);
+    }
+
+    function filterFontFaceName(arg0) {
+        return arg0;
+    }
+
+    function moveFont(arg0) {
+        var local0 = kag.chDefaultFace;
+        var local1 = getFontList();
+        var local2;
+        if (!local1) {
+            return;
+        }
+        local2 = local1.find(local0);
+        if (local2 >= 0) {
+            local2 = (local1.count + local2 + int(+arg0)) % local1.count;
+            local0 = local1[local2];
+        } else {
+            local0 = local1[(arg0 > 0) ? 0 : -1];
+        }
+        changeFont(local0);
+    }
+
+    function selectFont() {
+        kag.selectFont();
+        changeFont();
+    }
+
+    function changeFont(arg0, arg1) {
+        if (arg0 !== void) {
+            kag.chDefaultFace = arg0;
+            if (typeof kag.setLanguageFont == "Object") {
+                kag.setLanguageFont(arg0, arg1);
+            }
+            kag.setMessageLayerUserFont();
+        }
+        kag.saveSystemVariables();
+        update("font");
+        __call("font_change", arg0);
+    }
+}
+
+class OptionSpeedSampleModule extends Module {
+    __entry("construct", initSpeedSample);
+    __entry("destruct", termSpeedSample);
+    var _speedSampleConfig;
+    var textSpeedSample1;
+    var textSpeedSample2;
+    var timer;
+    var currentSpeedSample;
+    var currentSpeedSampleSelect;
+    var currentSpeedSamplePos;
+    var lastSpeedSampleText;
+    __entry("syncinit", updateSpeedSample);
+    __entry("speedchanged", updateSpeedSample);
+    __entry("uiloaded", updateSpeedSample);
+    __entry("font_change", redrawSpeedSample);
+
+    function loadSpeedSampleConfig() {
+        if (_speedSampleConfig === void) {
+            _speedSampleConfig = %[
+                layer: "speedsample",
+                ox: 0,
+                oy: 0,
+                text1: "テキストとオートモード速度のサンプルです\n１２３４５６７８９０１２３４５６７８９０",
+                text2: "１２３４５６７８９０１２３４５６７８９０\nテキストとオートモード速度のサンプルです",
+                color: void,
+                param: void
+            ];
+            var local0 = SystemConfig.speedSampleConfig;
+            if (local0) {
+                (Dictionary.assign incontextof _speedSampleConfig)(local0, 0);
+            }
+        }
+    }
+
+    function resetSpeedSampleText() {
+        if (textSpeedSample1 === void) {
+            textSpeedSample1 = string(_speedSampleConfig.text1);
+            textSpeedSample2 = string(_speedSampleConfig.text2);
+        }
+    }
+
+    property speedSampleLayer {
+        getter() {
+            return getItem(_speedSampleConfig.layer);
+        }
+    }
+
+    function getSpeedSampleVisible() {
+        return 1;
+    }
+
+    function getSampleColor(arg0) {
+        if (_speedSampleConfig.color !== void) {
+            return _speedSampleConfig.color;
+        }
+        var local0 = %[color: kag.chDefaultColor];
+        kag.callHook("onGetCurrentMessageColor", local0, arg0 == "read");
+        return local0.color;
+    }
+
+    function getSampleDrawOption(arg0) {
+        return [255, arg0.antialiased, arg0.defaultShadow, arg0.defaultShadowColor, arg0.shadowWidth, arg0.shadowOffsetX, arg0.shadowOffsetY, arg0.defaultEdge, arg0.defaultEdgeColor, arg0.edgeEmphasis, arg0.edgeExtent];
+    }
+
+    function getSampleOffset() {
+        return %[ox: int(+_speedSampleConfig.ox), oy: int(+_speedSampleConfig.oy)];
+    }
+
+    function setSampleOverride(arg0) {
+        var local0 = _speedSampleConfig.param;
+        if (typeof local0 == "String") {
+            _speedSampleConfig.param = getTextParam(local0);
+            local0 = _speedSampleConfig.param;
+            delete local0.fontface;
+        }
+        if (local0) {
+            (Dictionary.assign incontextof arg0)(local0, 0);
+        }
+        return arg0;
+    }
+
+    function initSpeedSample() {
+        loadSpeedSampleConfig();
+        termSpeedSample();
+        timer = new Timer(this, "onSpeedSampleTimer");
+        timer.capacity = 1;
+        timer.enabled = 0;
+        timer.interval = 1000;
+        timer.mode = atmAtIdle;
+        resetSpeedSampleText();
+    }
+
+    function termSpeedSample() {
+        if (timer) {
+            invalidate(timer);
+        }
+        timer = void;
+    }
+
+    function getSpeedSampleParams() {
+        return [kag.autoModePageWait, kag.autoModeLineWait, kag.userChSpeed];
+    }
+
+    function onSpeedSampleTimer() {
+        if (!isvalid this || !isvalid kag || timer === void) {
+            return;
+        }
+        timer.enabled = 0;
+        var local0 = getSpeedSampleParams();
+        var local1 = 0;
+        var local2;
+        var local3 = local0[0];
+        var local4 = local0[1];
+        var local5 = local0[2];
+        if (!local3 && (!local4 && !local5)) {
+            currentSpeedSample = textSpeedSample1;
+            drawSpeedSample(currentSpeedSample);
+            return;
+        } else {
+            do {
+                var local6 = currentSpeedSampleSelect ? textSpeedSample2 : textSpeedSample1;
+                if (currentSpeedSamplePos >= local6.length) {
+                    local2 = currentSpeedSample;
+                    resetSpeedSample(!currentSpeedSampleSelect);
+                    local1 = local3;
+                } else {
+                    var local7 = local6.charAt(currentSpeedSamplePos++);
+                    currentSpeedSample += local7;
+                    local2 = currentSpeedSample;
+                    local1 = (local7 == "\n") ? local4 : local5;
+                }
+            } while (!local1);
+            timer.interval = local1;
+            timer.enabled = 1;
+            drawSpeedSample(local2);
+            return;
+        }
+    }
+
+    function updateSpeedSample() {
+        if (timer !== void) {
+            timer.enabled = 0;
+        }
+        if (speedSampleLayer !== void) {
+            var local0 = getSpeedSampleVisible();
+            speedSampleLayer.visible = local0;
+            if (local0) {
+                lastSpeedSampleText = void;
+                resetSpeedSample();
+                drawSpeedSample();
+                onSpeedSampleTimer();
+            }
+        }
+    }
+
+    function resetSpeedSample(arg0) {
+        currentSpeedSample = "";
+        currentSpeedSamplePos = 0;
+        currentSpeedSampleSelect = !!arg0;
+    }
+
+    function drawSpeedSample(arg0) {
+        var local0 = speedSampleLayer;
+        if (local0 !== void) {
+            lastSpeedSampleText = arg0;
+            var _temp1 = getSampleOffset();
+            drawSampleText(local0, 1, _temp1.ox, _temp1.oy, arg0, getSampleColor());
+        } else if (timer !== void) {
+            timer.enabled = 0;
+        }
+    }
+
+    function redrawSpeedSample() {
+        drawSpeedSample(lastSpeedSampleText);
+    }
+
+    function drawSampleText(arg0, arg1, arg2, arg3, arg4, arg5) {
+        if (arg0 !== void) {
+            if (arg1) {
+                arg0.fillRect(0, 0, arg0.width, arg0.height, 0);
+            }
+            if (arg4 == "") {
+                return;
+            }
+            var local0 = kag.fore.messages[msgHackTargetLayer];
+            drawTextKinsokuRect(arg0, arg4, setSampleOverride(%[
+                x: arg2,
+                y: arg3,
+                w: arg0.width - arg2,
+                h: arg0.height - arg3,
+                drawtext: this.internalDrawSampleText,
+                color: arg5,
+                fontface: kag.chDefaultFace,
+                fontheight: local0.defaultFontSize
+            ]));
+        }
+    }
+
+    function internalDrawSampleText(arg0, arg1, arg2, arg3, arg4) {
+        var local0 = kag.fore.messages[msgHackTargetLayer];
+        if (arg4 < 0) {
+            arg4 = local0.chColor;
+        }
+        var local1 = getSampleDrawOption(local0);
+        if (local1 === void) {
+            local1 = [];
+        }
+        EdgeShadowDrawText(arg0.drawText, arg0, arg1, arg2, arg3, arg4, local1*);
+    }
+}
+
+class OptionSpeedSampleRender extends MsgwinRender {
+    var padding = 8;
+    var message;
+    var inActive = 0;
+    var elm_t1;
+    var elm_t2;
+    var cursel;
+    var curlen;
+
+    function OptionSpeedSampleRender(arg0 = %[]) {
+        super.MsgwinRender(global.kag, "option");
+        var local0 = (arg0.msgclass !== void) ? arg0.msgclass : MessageClass;
+        var local1 = (arg0.msgid !== void) ? +arg0.msgid : MessageDefaultID;
+        if (arg0.padding !== void) {
+            padding = +arg0.padding;
+        }
+        message = new local0(kag, kag.uibase, "speedrender", local1, 1);
+        message.absolute = 0;
+        message.hasTextLayer = 1;
+        message.textLayer.noRelative = 1;
+        setDefaultFromMessageLayer(message);
+        oy = 0;
+        ox = oy;
+    }
+
+    function finalize() {
+        invalidate(message);
+        super.finalize(...);
+    }
+
+    property MessageClass {
+        getter() {
+            return (typeof KAGWindow.MessageLayer == "Object") ? KAGWindow.MessageLayer : MessageLayer;
+        }
+    }
+
+    property MessageDefaultID {
+        getter() {
+            return (typeof global.msgHackTargetLayer == "Integer") ? msgHackTargetLayer : -1;
+        }
+    }
+
+    property _fore_message {
+        getter() {
+            return message;
+        }
+    }
+
+    property _back_message {
+        getter() { }
+    }
+
+    property _actual_chspeed {
+        getter() {
+            return kag.userChSpeed;
+        }
+    }
+
+    function _main_trigger() { }
+
+    function _on_chadd() { }
+
+    function init() { }
+
+    function drawName() { }
+
+    function locateFloatGlyph() { }
+
+    function _delayStateChanged(arg0) { }
+
+    function showLineBreakForMsg() {
+        return autoModeLineWait;
+    }
+
+    function hideLineBreakForMsg() { }
+
+    function begin(arg0) {
+        message.clear();
+        message.setPosition(%[visible: 1]);
+        cursel = arg0 ? 0 : !cursel;
+        var local0 = cursel ? elm_t2 : elm_t1;
+        curlen = local0.textlength;
+        start(local0);
+        inActive = 1;
+    }
+
+    function end() {
+        inActive = 0;
+        clear();
+        message.clear(1);
+        message.setPosition(%[visible: 0]);
+    }
+
+    function stop(arg0) {
+        var local0 = super.stop(...);
+        var local1 = kag.autoModePageWait;
+        local1 += kag.autoModeChWait * curlen;
+        if (arg0 || local1 > 1) {
+            if (local1 > 1) {
+                timer = new Timer(this, "onNextText");
+                timer.interval = local1;
+                timer.enabled = 1;
+            } else {
+                onNextText();
+            }
+        }
+        return local0;
+    }
+
+    function redraw() {
+        _stop();
+        message.clear();
+        redrawMessageText(1);
+    }
+
+    function onNextText() {
+        if (!isvalid this || !isvalid kag) {
+            return;
+        }
+        clear();
+        begin();
+    }
+
+    function calcTextLength(arg0, arg1) {
+        if (arg0.textlength !== void) {
+            return;
+        }
+        var local0 = kag.getLangInfo(arg0, "text");
+        arg1.convert(string(local0));
+        arg0.textlength = (string(arg1.speechtext)).length;
+    }
+
+    function setText(arg0, arg1) {
+        elm_t1 = Scripts.clone(arg0);
+        elm_t2 = arg1 ? Scripts.clone(arg1) : elm_t1;
+        if (typeof global.TextTagConverter == "undefined") {
+            KAGLoadScript("TextTagConverter.tjs");
+        }
+        var local0 = new TextTagConverter();
+        calcTextLength(elm_t1, local0);
+        calcTextLength(elm_t2, local0);
+        invalidate(local0);
+    }
+
+    function setRect(arg0) {
+        var local0 = padding;
+        var local1 = padding + padding;
+        message.setPosition(%[
+            left: arg0.x - local0,
+            top: arg0.y - local0,
+            width: arg0.w + local1,
+            height: arg0.h + local1,
+            base: "",
+            frame: "",
+            color: 0,
+            opacity: 0,
+            visible: 1,
+            marginl: local0,
+            margint: local0,
+            marginr: local0,
+            marginb: local0
+        ]);
+        oy = local0;
+        ox = local0;
+        setRenderSize(arg0.w, arg0.h);
+    }
+
+    function setup(arg0, arg1, arg2, arg3) {
+        if (arg3 === void) {
+            arg3 = kag.current;
+        }
+        if (arg0) {
+            setRect(arg0);
+        }
+        if (arg1) {
+            setText(arg1, arg2);
+        }
+        if (!kag.isD3D && arg3) {
+            message.parent = arg3;
+        }
+        begin(1);
+    }
+
+    function pile(arg0, arg1, arg2) {
+        arg0.piledCopy(
+            message.left - (arg1 + arg0.left), message.top - (arg2 + arg0.top), message, 0, 0, message.width,
+            message.height
+        );
+        end();
+    }
+}
+
+class OptionRenderSampleModule extends Module {
+    __entry("construct", initRenderSample);
+    __entry("destruct", termRenderSample);
+    var _renderSampleConfig;
+    var _renderSample;
+    var _renderSampleTexts;
+    __entry("font_change", syncRenderSample);
+    __entry("syncinit", syncRenderSample);
+    __entry("speedchanged", syncRenderSample);
+    __entry("uiloaded", updateRenderSample);
+
+    function loadRenderSampleConfig() {
+        if (_renderSampleConfig === void) {
+            _renderSampleConfig = %[
+                layer: "rendersample",
+                ox: 0,
+                oy: 0,
+                text1: "テキストとオートモード速度のサンプルです\n１２３４５６７８９０１２３４５６７８９０",
+                text2: "１２３４５６７８９０１２３４５６７８９０\nテキストとオートモード速度のサンプルです"
+            ];
+            var local0 = SystemConfig.renderSampleConfig;
+            if (local0) {
+                (Dictionary.assign incontextof _renderSampleConfig)(local0, 0);
+            }
+        }
+    }
+
+    function initRenderSample() {
+        loadRenderSampleConfig();
+        resetRenderSampleText();
+    }
+
+    function termRenderSample() {
+        stopRenderSample();
+        if (_renderSample) {
+            invalidate(_renderSample);
+        }
+        _renderSample = void;
+    }
+
+    function stopRenderSample() {
+        var local0 = getItem(_renderSampleConfig.layer);
+        if (local0 && (_renderSample && _renderSample.inActive)) {
+            var local1 = local0.parent;
+            _renderSample.pile(local0, local1.left, local1.top);
+            local0.visible = 1;
+        }
+    }
+
+    function syncRenderSample() {
+        resetRenderSampleText();
+        updateRenderSample();
+    }
+
+    function updateRenderSample() {
+        var local0 = getItem(_renderSampleConfig.layer);
+        if (!local0) {
+            if (_renderSample) {
+                _renderSample.end();
+            }
+            return;
+        }
+        if (_renderSample === void) {
+            _renderSample = new OptionSpeedSampleRender();
+            _renderSample.setDefault(_renderSampleConfig);
+        }
+        if (_renderSample && _renderSampleTexts) {
+
+            _renderSample.end();
+            _renderSample.setDefault(%[face: kag.chDefaultFace]);
+            if (local0) {
+                var local1;
+                var local2;
+                var local3 = local0.parent;
+                local1 = +_renderSampleConfig.ox;
+                local2 = +_renderSampleConfig.oy;
+                var local4 = %[
+                    x: local0.left + local3.left + local1,
+                    y: local0.top + local3.top + local2,
+                    w: local0.width - local1,
+                    h: local0.height
+                ];
+                __call("rendersetup", _renderSample);
+                _renderSample.setup(local4, _renderSampleTexts*);
+            }
+        }
+    }
+
+    function resetRenderSampleText() {
+        var local0 = /[\\\[%#&$]/g;
+        var local1 = "%%t%d;".sprintf(kag.autoModeLineWait);
+        function repl(arg0) {
+            return "\\" + arg0[0];
+        }
+        function filter(arg0, arg1, arg2, arg3) {
+            return (string(arg0)).replace(arg2, arg3).split("\n", , 1).join(arg1 + "\\n");
+        }
+        _renderSampleTexts = [
+            getRenderSampleTextOne(filter, _renderSampleConfig.text1, local1, local0, repl),
+            getRenderSampleTextOne(filter, _renderSampleConfig.text2, local1, local0, repl)
+        ];
+    }
+
+    function getRenderSampleTextOne(arg0, *) {
+        return %[text: arg0(*)];
+    }
+}

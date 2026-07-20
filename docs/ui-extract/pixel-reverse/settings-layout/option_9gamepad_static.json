@@ -1,0 +1,1235 @@
+{
+  "stem": "option_9gamepad",
+  "stats": {
+    "stem": "option_9gamepad",
+    "pbd_bytes": 80368,
+    "layers": 269,
+    "bindings": 14,
+    "clusters": 157,
+    "placeable": 4,
+    "storage_hits": 38,
+    "bind_cmds_sample": [
+      "setBasicOptionValue/engamepad/off",
+      "setBasicOptionValue/gsenable/off",
+      "setBasicOptionValue/gsflick/off",
+      "setBasicOptionValue/gsmouse/off",
+      "setBasicOptionValue/engamepad/on",
+      "setBasicOptionValue/gsenable/on",
+      "setBasicOptionValue/gsflick/on",
+      "setBasicOptionValue/gsmouse/on",
+      "reassignGamePadButtons",
+      "reset",
+      "setBasicOptionValue/engamepad/toggle",
+      "setBasicOptionValue/engamepad/toggle",
+      "setBasicOptionValue/gsenable/toggle",
+      "setBasicOptionValue/gsenable/toggle",
+      "setBasicOptionValue/gsflick/toggle",
+      "setBasicOptionValue/gsflick/toggle",
+      "setBasicOptionValue/gsmouse/toggle",
+      "setBasicOptionValue/gsmouse/toggle"
+    ],
+    "bind_cmd_count": 18,
+    "id_prefixes": [
+      [
+        "config",
+        34
+      ],
+      [
+        "gsfunc",
+        30
+      ],
+      [
+        "button",
+        12
+      ],
+      [
+        "gsbind",
+        12
+      ],
+      [
+        "option",
+        6
+      ],
+      [
+        "gsenable",
+        5
+      ],
+      [
+        "gsflick",
+        5
+      ],
+      [
+        "gsmouse",
+        5
+      ],
+      [
+        "engamepad",
+        5
+      ],
+      [
+        "gamepad",
+        4
+      ],
+      [
+        "common",
+        3
+      ],
+      [
+        "key",
+        3
+      ],
+      [
+        "sep",
+        2
+      ],
+      [
+        "label",
+        2
+      ],
+      [
+        "normal",
+        2
+      ],
+      [
+        "over",
+        2
+      ],
+      [
+        "overlay",
+        1
+      ],
+      [
+        "gsicon24",
+        1
+      ],
+      [
+        "caption",
+        1
+      ],
+      [
+        "sename",
+        1
+      ]
+    ],
+    "layer_ids_sample": [
+      "overlay",
+      "gsicon24",
+      "caption",
+      "sename",
+      "title",
+      "page0",
+      "helpbase",
+      "page7",
+      "visible",
+      "target",
+      "reset",
+      "sep_a",
+      "page4",
+      "page5",
+      "page6",
+      "page8",
+      "page1",
+      "page3",
+      "autotoggle",
+      "page2",
+      "drag",
+      "gamepad",
+      "gsenable_rev",
+      "gsicon25",
+      "label_b",
+      "gsicon3",
+      "gsicon7",
+      "gsicon6",
+      "gsicon5",
+      "gsicon1",
+      "gsicon2",
+      "copy",
+      "gsicon8",
+      "gamepad_assign",
+      "page9",
+      "gsicon0",
+      "button_r3",
+      "base",
+      "uiname",
+      "holder03",
+      "gsicon21",
+      "gsicon12",
+      "holder10",
+      "gsicon13",
+      "gsicon9",
+      "holder06",
+      "gsicon18",
+      "holder05",
+      "helptext",
+      "gsbind_start",
+      "button_b",
+      "lines",
+      "holder11",
+      "gsicon26",
+      "gamepad_bind2",
+      "gsicon16",
+      "button_a",
+      "gsicon29",
+      "gsicon28",
+      "gsicon27"
+    ],
+    "placeable_with_formula": [],
+    "storage_with_formula": [
+      {
+        "geo": {
+          "ch": 15433,
+          "cw": 64305,
+          "cx": 79,
+          "cy": 155,
+          "h": 15577,
+          "ox": 21,
+          "oy": 191,
+          "storage": "option_cmds__pack",
+          "w": 64486,
+          "width": 64455,
+          "x": 81,
+          "y": 34967,
+          "height": 15515
+        },
+        "formula": {
+          "x": 1018,
+          "y": 504
+        }
+      },
+      {
+        "geo": {
+          "ch": 96238,
+          "cw": 182899,
+          "cx": 34,
+          "cy": 21,
+          "h": 96134,
+          "ox": 243,
+          "oy": 211,
+          "storage": "option_9gamepad__pack",
+          "w": 182874,
+          "width": 182823,
+          "x": 44268,
+          "y": 90904
+        },
+        "formula": {
+          "x": 751,
+          "y": 350
+        }
+      },
+      {
+        "geo": {
+          "ch": 212619,
+          "cw": 1263,
+          "cx": 83,
+          "cy": 192,
+          "h": 212712,
+          "ox": 7,
+          "oy": 69,
+          "storage": "option__pack",
+          "w": 1139,
+          "width": 1204,
+          "x": 22842,
+          "y": 32172,
+          "height": 212692
+        },
+        "formula": {
+          "x": 1036,
+          "y": 663
+        }
+      },
+      {
+        "geo": {
+          "ch": 212549,
+          "cw": 1033,
+          "cx": 116,
+          "cy": 179,
+          "h": 212670,
+          "ox": 49,
+          "oy": 228,
+          "storage": "option__pack",
+          "w": 1130,
+          "width": 1098,
+          "x": 252933,
+          "y": 32190
+        },
+        "formula": {
+          "x": 1027,
+          "y": 491
+        }
+      }
+    ]
+  },
+  "placeable": [
+    {
+      "id": "base",
+      "geo": {
+        "width": 62,
+        "height": 199,
+        "storagex": 73
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "f",
+      "geo": {
+        "x": 237,
+        "width": 210
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "option__bg0",
+      "geo": {
+        "storagex": 73
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "width",
+      "geo": {
+        "x": 53
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "storage": [
+    {
+      "geo": {
+        "ch": 34495,
+        "cw": 34399,
+        "cx": 176,
+        "cy": 15457,
+        "h": 34443,
+        "ox": 76,
+        "oy": 227,
+        "storage": "option_cmds__pack",
+        "w": 34488,
+        "width": 34443,
+        "x": 53,
+        "y": 253,
+        "height": 33323
+      },
+      "formula": {
+        "x": 1060,
+        "y": 15770
+      }
+    },
+    {
+      "geo": {
+        "ch": 12802,
+        "cw": 12273,
+        "cx": 102161,
+        "cy": 21,
+        "h": 12804,
+        "ox": 12086,
+        "oy": 7438,
+        "storage": "option_cmds__pack",
+        "w": 12123,
+        "width": 33620,
+        "x": 300,
+        "y": 613,
+        "height": 15427
+      },
+      "formula": {
+        "x": 91035,
+        "y": -6877
+      }
+    },
+    {
+      "geo": {
+        "ch": 15433,
+        "cw": 64305,
+        "cx": 79,
+        "cy": 155,
+        "h": 15577,
+        "ox": 21,
+        "oy": 191,
+        "storage": "option_cmds__pack",
+        "w": 64486,
+        "width": 64455,
+        "x": 81,
+        "y": 34967,
+        "height": 15515
+      },
+      "formula": {
+        "x": 1018,
+        "y": 504
+      }
+    },
+    {
+      "geo": {
+        "h": 14999,
+        "ox": 175,
+        "oy": 45,
+        "w": 80752,
+        "ch": 15026,
+        "cw": 80688,
+        "cx": 27176,
+        "cy": 98557,
+        "storage": "option__pack",
+        "width": 80839,
+        "x": 404768,
+        "y": 253225,
+        "height": 15059
+      },
+      "formula": {
+        "x": 27961,
+        "y": 99052
+      }
+    },
+    {
+      "geo": {
+        "width": 80828,
+        "x": 404939,
+        "y": 253226,
+        "height": 276679,
+        "storage": "option__bg0",
+        "storagex": 73,
+        "storagey": 122
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "geo": {
+        "ch": 5684,
+        "cw": 5704,
+        "cx": 100639,
+        "cy": 134456,
+        "h": 5857,
+        "ox": 221,
+        "oy": 140,
+        "storage": "option_9gamepad__pack",
+        "w": 5836,
+        "width": 5770,
+        "x": 110285,
+        "y": 127773,
+        "height": 6143
+      },
+      "formula": {
+        "x": 101378,
+        "y": 134856
+      }
+    },
+    {
+      "geo": {
+        "ch": 5784,
+        "cw": 5903,
+        "cx": 94883,
+        "cy": 134622,
+        "h": 6100,
+        "ox": 44,
+        "oy": 72,
+        "storage": "option_9gamepad__pack",
+        "w": 5710,
+        "width": 5834,
+        "x": 115207,
+        "y": 122537,
+        "height": 7191
+      },
+      "formula": {
+        "x": 95799,
+        "y": 135090
+      }
+    },
+    {
+      "geo": {
+        "ch": 14598,
+        "cw": 7327,
+        "cx": 168070,
+        "cy": 96233,
+        "h": 7248,
+        "ox": 212,
+        "oy": 244,
+        "storage": "option_9gamepad__pack",
+        "w": 14689,
+        "width": 14681,
+        "x": 152052,
+        "y": 139389,
+        "height": 12032
+      },
+      "formula": {
+        "x": 168818,
+        "y": 96529
+      }
+    },
+    {
+      "geo": {
+        "ch": 6377,
+        "cw": 12250,
+        "cx": 168187,
+        "cy": 110782,
+        "h": 12228,
+        "ox": 209,
+        "oy": 15,
+        "storage": "option_9gamepad__pack",
+        "w": 6200,
+        "width": 6381,
+        "x": 156602,
+        "y": 126684,
+        "height": 38724
+      },
+      "formula": {
+        "x": 168938,
+        "y": 111307
+      }
+    },
+    {
+      "geo": {
+        "ch": 9281,
+        "cw": 9086,
+        "cx": 84404,
+        "cy": 144916,
+        "h": 9104,
+        "ox": 88,
+        "oy": 110,
+        "storage": "option_9gamepad__pack",
+        "w": 9251,
+        "width": 102913,
+        "x": 64877,
+        "y": 119105,
+        "height": 7210
+      },
+      "formula": {
+        "x": 85276,
+        "y": 145346
+      }
+    },
+    {
+      "geo": {
+        "ch": 14386,
+        "cw": 7169,
+        "cx": 175189,
+        "cy": 96210,
+        "h": 7371,
+        "ox": 42,
+        "oy": 90,
+        "storage": "option_9gamepad__pack",
+        "w": 14450,
+        "width": 14485,
+        "x": 203029,
+        "y": 139437,
+        "height": 12235
+      },
+      "formula": {
+        "x": 176107,
+        "y": 96660
+      }
+    },
+    {
+      "geo": {
+        "ch": 6500,
+        "cw": 12261,
+        "cx": 168016,
+        "cy": 116938,
+        "h": 12285,
+        "ox": 21,
+        "oy": 75,
+        "storage": "option_9gamepad__pack",
+        "w": 6515,
+        "width": 6523,
+        "x": 206821,
+        "y": 126484,
+        "height": 22667
+      },
+      "formula": {
+        "x": 168955,
+        "y": 117403
+      }
+    },
+    {
+      "geo": {
+        "ch": 10687,
+        "cw": 10631,
+        "cx": 84304,
+        "cy": 134453,
+        "h": 10686,
+        "ox": 94,
+        "oy": 8,
+        "storage": "option_9gamepad__pack",
+        "w": 10545,
+        "width": 103727,
+        "x": 98610,
+        "y": 135337,
+        "height": 3183
+      },
+      "formula": {
+        "x": 85170,
+        "y": 134985
+      }
+    },
+    {
+      "geo": {
+        "ch": 5306,
+        "cw": 3280,
+        "cx": 100610,
+        "cy": 145599,
+        "h": 3291,
+        "ox": 198,
+        "oy": 25,
+        "storage": "option_9gamepad__pack",
+        "w": 5170,
+        "width": 5253,
+        "x": 82881,
+        "y": 126458,
+        "height": 3112
+      },
+      "formula": {
+        "x": 101372,
+        "y": 146114
+      }
+    },
+    {
+      "geo": {
+        "ch": 5529,
+        "cw": 3270,
+        "cx": 100720,
+        "cy": 140053,
+        "h": 3167,
+        "ox": 192,
+        "oy": 230,
+        "storage": "option_9gamepad__pack",
+        "w": 5469,
+        "width": 5463,
+        "x": 96445,
+        "y": 126249,
+        "height": 6000
+      },
+      "formula": {
+        "x": 101488,
+        "y": 140363
+      }
+    },
+    {
+      "geo": {
+        "ch": 5937,
+        "cw": 5956,
+        "cx": 94749,
+        "cy": 140270,
+        "h": 5945,
+        "ox": 24,
+        "oy": 40,
+        "storage": "option_9gamepad__pack",
+        "w": 5953,
+        "width": 6045,
+        "x": 104779,
+        "y": 122390,
+        "height": 5967
+      },
+      "formula": {
+        "x": 95685,
+        "y": 140770
+      }
+    },
+    {
+      "geo": {
+        "ch": 5661,
+        "cw": 5916,
+        "cx": 94777,
+        "cy": 146155,
+        "h": 6099,
+        "ox": 128,
+        "oy": 172,
+        "storage": "option_9gamepad__pack",
+        "w": 5714,
+        "width": 5869,
+        "x": 110081,
+        "y": 117499,
+        "height": 11231
+      },
+      "formula": {
+        "x": 95609,
+        "y": 146523
+      }
+    },
+    {
+      "geo": {
+        "ch": 11203,
+        "cw": 75549,
+        "cx": 27352,
+        "cy": 128132,
+        "h": 11186,
+        "ox": 207,
+        "oy": 94,
+        "storage": "option__pack",
+        "w": 75718,
+        "width": 75579,
+        "x": 22455,
+        "y": 5097,
+        "height": 15492
+      },
+      "formula": {
+        "x": 28105,
+        "y": 128578
+      }
+    },
+    {
+      "geo": {
+        "ch": 8835,
+        "cw": 8859,
+        "cx": 107911,
+        "cy": 98326,
+        "h": 8892,
+        "ox": 38,
+        "oy": 25,
+        "storage": "option__pack",
+        "w": 8874,
+        "opacity": 32922,
+        "width": 94587,
+        "x": 33618,
+        "y": 46017,
+        "height": 59135,
+        "top": 1845493760
+      },
+      "formula": {
+        "x": 108833,
+        "y": 98841
+      }
+    },
+    {
+      "geo": {
+        "ch": 59031,
+        "cw": 84356,
+        "cx": 139,
+        "cy": 96038,
+        "h": 59050,
+        "ox": 38,
+        "oy": 75,
+        "storage": "option_9gamepad__pack",
+        "w": 84421,
+        "width": 176863,
+        "x": 50102,
+        "y": 110272
+      },
+      "formula": {
+        "x": 1061,
+        "y": 96503
+      }
+    },
+    {
+      "geo": {
+        "h": 13032,
+        "opacity": 32917,
+        "ox": 116,
+        "oy": 67,
+        "w": 97399,
+        "ch": 12990,
+        "cw": 97332,
+        "cx": 27386,
+        "cy": 33,
+        "storage": "option__pack",
+        "width": 97490,
+        "x": 87171,
+        "y": 218327,
+        "height": 33361
+      },
+      "formula": {
+        "x": 28230,
+        "y": 506
+      }
+    },
+    {
+      "geo": {
+        "ch": 12920,
+        "cw": 12286,
+        "cx": 102259,
+        "cy": 241,
+        "h": 13037,
+        "ox": 12129,
+        "oy": 7550,
+        "storage": "option_cmds__pack",
+        "w": 12265,
+        "width": 33688,
+        "x": 432,
+        "y": 657
+      },
+      "formula": {
+        "x": 91090,
+        "y": -6769
+      }
+    },
+    {
+      "geo": {
+        "ch": 187202,
+        "cw": 19821,
+        "cx": 2208,
+        "cy": 44,
+        "h": 19867,
+        "ox": 111,
+        "oy": 21,
+        "storage": "option__pack",
+        "w": 187164,
+        "width": 187362,
+        "x": 7131,
+        "y": 250784,
+        "height": 19733
+      },
+      "formula": {
+        "x": 3057,
+        "y": 563
+      }
+    },
+    {
+      "geo": {
+        "ch": 34476,
+        "cw": 34434,
+        "cx": 224,
+        "cy": 15375,
+        "h": 34444,
+        "ox": 188,
+        "oy": 186,
+        "storage": "option_cmds__pack",
+        "w": 34552,
+        "width": 34351,
+        "x": 31087,
+        "y": 65898,
+        "height": 34316
+      },
+      "formula": {
+        "x": 996,
+        "y": 15729
+      }
+    },
+    {
+      "geo": {
+        "ch": 34442,
+        "cw": 34337,
+        "cx": 34,
+        "cy": 15548,
+        "h": 34507,
+        "ox": 183,
+        "oy": 99,
+        "storage": "option_cmds__pack",
+        "w": 34537,
+        "width": 34388,
+        "x": 66060,
+        "y": 65847,
+        "height": 34436
+      },
+      "formula": {
+        "x": 811,
+        "y": 15989
+      }
+    },
+    {
+      "geo": {
+        "ch": 34535,
+        "cw": 34321,
+        "cx": 30,
+        "cy": 15413,
+        "h": 34305,
+        "ox": 34,
+        "oy": 123,
+        "storage": "option_cmds__pack",
+        "w": 34332,
+        "width": 34454,
+        "x": 101145,
+        "y": 65855,
+        "height": 34537
+      },
+      "formula": {
+        "x": 956,
+        "y": 15830
+      }
+    },
+    {
+      "geo": {
+        "ch": 34411,
+        "cw": 34415,
+        "cx": 9,
+        "cy": 15536,
+        "h": 34322,
+        "ox": 11,
+        "oy": 220,
+        "storage": "option_cmds__pack",
+        "w": 34547,
+        "width": 34442,
+        "x": 136331,
+        "y": 65935,
+        "height": 34331
+      },
+      "formula": {
+        "x": 958,
+        "y": 15856
+      }
+    },
+    {
+      "geo": {
+        "ch": 34551,
+        "cw": 34312,
+        "cx": 184,
+        "cy": 15542,
+        "h": 34488,
+        "ox": 97,
+        "oy": 177,
+        "storage": "option_cmds__pack",
+        "w": 34498,
+        "width": 34319,
+        "x": 171440,
+        "y": 66018,
+        "height": 34311
+      },
+      "formula": {
+        "x": 1047,
+        "y": 15905
+      }
+    },
+    {
+      "geo": {
+        "ch": 34326,
+        "cw": 34304,
+        "cx": 57,
+        "cy": 15365,
+        "h": 34309,
+        "ox": 76,
+        "oy": 74,
+        "storage": "option_cmds__pack",
+        "w": 34455,
+        "width": 34397,
+        "x": 206468,
+        "y": 65832,
+        "height": 34348
+      },
+      "formula": {
+        "x": 941,
+        "y": 15831
+      }
+    },
+    {
+      "geo": {
+        "ch": 34518,
+        "cw": 34420,
+        "cx": 12,
+        "cy": 15476,
+        "h": 34530,
+        "ox": 234,
+        "oy": 111,
+        "storage": "option_cmds__pack",
+        "w": 34418,
+        "width": 34504,
+        "x": 31000,
+        "y": 176009,
+        "height": 34418
+      },
+      "formula": {
+        "x": 738,
+        "y": 15905
+      }
+    },
+    {
+      "geo": {
+        "ch": 34384,
+        "cw": 34427,
+        "cx": 243,
+        "cy": 15386,
+        "h": 34448,
+        "ox": 151,
+        "oy": 170,
+        "storage": "option_cmds__pack",
+        "w": 34487,
+        "width": 34392,
+        "x": 66125,
+        "y": 176027,
+        "height": 34309
+      },
+      "formula": {
+        "x": 1052,
+        "y": 15756
+      }
+    },
+    {
+      "geo": {
+        "ch": 34453,
+        "cw": 34314,
+        "cx": 26,
+        "cy": 15523,
+        "h": 34473,
+        "ox": 147,
+        "oy": 99,
+        "storage": "option_cmds__pack",
+        "w": 34353,
+        "width": 34455,
+        "x": 101173,
+        "y": 175970,
+        "height": 34340
+      },
+      "formula": {
+        "x": 839,
+        "y": 15964
+      }
+    },
+    {
+      "geo": {
+        "ch": 34537,
+        "cw": 34420,
+        "cx": 154,
+        "cy": 15539,
+        "h": 34365,
+        "ox": 145,
+        "oy": 80,
+        "storage": "option_cmds__pack",
+        "w": 34474,
+        "width": 34376,
+        "x": 136289,
+        "y": 176020,
+        "height": 34386
+      },
+      "formula": {
+        "x": 969,
+        "y": 15999
+      }
+    },
+    {
+      "geo": {
+        "ch": 34493,
+        "cw": 34362,
+        "cx": 209,
+        "cy": 15370,
+        "h": 34375,
+        "ox": 63,
+        "oy": 38,
+        "storage": "option_cmds__pack",
+        "w": 34483,
+        "width": 34508,
+        "x": 171491,
+        "y": 175916,
+        "height": 34345
+      },
+      "formula": {
+        "x": 1106,
+        "y": 15872
+      }
+    },
+    {
+      "geo": {
+        "ch": 34371,
+        "cw": 34334,
+        "cx": 49,
+        "cy": 15604,
+        "h": 34505,
+        "ox": 129,
+        "oy": 141,
+        "storage": "option_cmds__pack",
+        "w": 34394,
+        "width": 34498,
+        "x": 206487,
+        "y": 175980,
+        "height": 8255
+      },
+      "formula": {
+        "x": 880,
+        "y": 16003
+      }
+    },
+    {
+      "geo": {
+        "ch": 96238,
+        "cw": 182899,
+        "cx": 34,
+        "cy": 21,
+        "h": 96134,
+        "ox": 243,
+        "oy": 211,
+        "storage": "option_9gamepad__pack",
+        "w": 182874,
+        "width": 182823,
+        "x": 44268,
+        "y": 90904
+      },
+      "formula": {
+        "x": 751,
+        "y": 350
+      }
+    },
+    {
+      "geo": {
+        "ch": 212619,
+        "cw": 1263,
+        "cx": 83,
+        "cy": 192,
+        "h": 212712,
+        "ox": 7,
+        "oy": 69,
+        "storage": "option__pack",
+        "w": 1139,
+        "width": 1204,
+        "x": 22842,
+        "y": 32172,
+        "height": 212692
+      },
+      "formula": {
+        "x": 1036,
+        "y": 663
+      }
+    },
+    {
+      "geo": {
+        "ch": 212549,
+        "cw": 1033,
+        "cx": 116,
+        "cy": 179,
+        "h": 212670,
+        "ox": 49,
+        "oy": 228,
+        "storage": "option__pack",
+        "w": 1130,
+        "width": 1098,
+        "x": 252933,
+        "y": 32190
+      },
+      "formula": {
+        "x": 1027,
+        "y": 491
+      }
+    }
+  ],
+  "binds": [
+    {
+      "layer_id": "off_engamepad",
+      "bindings": [
+        "setBasicOptionValue/engamepad/off"
+      ],
+      "properties": {
+        "w": 204
+      }
+    },
+    {
+      "layer_id": "off_gsenable",
+      "bindings": [
+        "setBasicOptionValue/gsenable/off"
+      ],
+      "properties": {
+        "w": 75
+      }
+    },
+    {
+      "layer_id": "off_gsflick",
+      "bindings": [
+        "setBasicOptionValue/gsflick/off"
+      ],
+      "properties": {
+        "y": 192
+      }
+    },
+    {
+      "layer_id": "off_gsmouse",
+      "bindings": [
+        "setBasicOptionValue/gsmouse/off"
+      ],
+      "properties": {
+        "height": 165
+      }
+    },
+    {
+      "layer_id": "on_engamepad",
+      "bindings": [
+        "setBasicOptionValue/engamepad/on"
+      ],
+      "properties": {
+        "ch": 152
+      }
+    },
+    {
+      "layer_id": "on_gsenable",
+      "bindings": [
+        "setBasicOptionValue/gsenable/on"
+      ],
+      "properties": {
+        "ox": 143
+      }
+    },
+    {
+      "layer_id": "on_gsflick",
+      "bindings": [
+        "setBasicOptionValue/gsflick/on"
+      ],
+      "properties": {
+        "h": 13032
+      }
+    },
+    {
+      "layer_id": "on_gsmouse",
+      "bindings": [
+        "setBasicOptionValue/gsmouse/on"
+      ],
+      "properties": {
+        "height": 56
+      }
+    },
+    {
+      "layer_id": "reassignGamePadButtons",
+      "bindings": [
+        "reassignGamePadButtons"
+      ],
+      "properties": {
+        "ch": 50
+      }
+    },
+    {
+      "layer_id": "reset",
+      "bindings": [
+        "reset"
+      ],
+      "properties": {
+        "w": 179
+      }
+    },
+    {
+      "layer_id": "toggle_engamepad",
+      "bindings": [
+        "setBasicOptionValue/engamepad/toggle",
+        "setBasicOptionValue/engamepad/toggle"
+      ],
+      "properties": {
+        "ch": 52,
+        "x": 7
+      }
+    },
+    {
+      "layer_id": "toggle_gsenable",
+      "bindings": [
+        "setBasicOptionValue/gsenable/toggle",
+        "setBasicOptionValue/gsenable/toggle"
+      ],
+      "properties": {
+        "cy": 144,
+        "ch": 151
+      }
+    },
+    {
+      "layer_id": "toggle_gsflick",
+      "bindings": [
+        "setBasicOptionValue/gsflick/toggle",
+        "setBasicOptionValue/gsflick/toggle"
+      ],
+      "properties": {
+        "ch": 205,
+        "w": 7
+      }
+    },
+    {
+      "layer_id": "toggle_gsmouse",
+      "bindings": [
+        "setBasicOptionValue/gsmouse/toggle",
+        "setBasicOptionValue/gsmouse/toggle"
+      ],
+      "properties": {
+        "width": 12
+      }
+    }
+  ]
+}

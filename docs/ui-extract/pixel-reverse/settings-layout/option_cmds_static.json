@@ -1,0 +1,254 @@
+{
+  "stem": "option_cmds",
+  "stats": {
+    "stem": "option_cmds",
+    "pbd_bytes": 12396,
+    "layers": 56,
+    "bindings": 0,
+    "clusters": 4,
+    "placeable": 1,
+    "storage_hits": 3,
+    "bind_cmds_sample": [],
+    "bind_cmd_count": 0,
+    "id_prefixes": [
+      [
+        "key",
+        3
+      ],
+      [
+        "option",
+        3
+      ],
+      [
+        "layer",
+        1
+      ],
+      [
+        "uiname",
+        1
+      ],
+      [
+        "arrow",
+        1
+      ],
+      [
+        "auto",
+        1
+      ],
+      [
+        "b",
+        1
+      ],
+      [
+        "backone",
+        1
+      ],
+      [
+        "backskip",
+        1
+      ],
+      [
+        "c",
+        1
+      ],
+      [
+        "click",
+        1
+      ],
+      [
+        "cr",
+        1
+      ],
+      [
+        "custom",
+        1
+      ],
+      [
+        "deftext",
+        1
+      ],
+      [
+        "dsave",
+        1
+      ],
+      [
+        "evals",
+        1
+      ],
+      [
+        "g",
+        1
+      ],
+      [
+        "hide",
+        1
+      ],
+      [
+        "holdimage",
+        1
+      ],
+      [
+        "imports",
+        1
+      ]
+    ],
+    "layer_ids_sample": [
+      "layer",
+      "uiname",
+      "arrow",
+      "auto",
+      "b",
+      "backone",
+      "backskip",
+      "c",
+      "click",
+      "cr",
+      "custom",
+      "deftext",
+      "dsave",
+      "evals",
+      "g",
+      "hide",
+      "holdimage",
+      "imports",
+      "key_ctrl",
+      "key_pagedown",
+      "key_pageup",
+      "load",
+      "log",
+      "n",
+      "names",
+      "next",
+      "nextscn",
+      "none",
+      "o",
+      "option",
+      "option_cmds",
+      "option_cmds__pack",
+      "p",
+      "panic",
+      "prev",
+      "prevscn",
+      "qload",
+      "qsave",
+      "qvsave",
+      "rclick",
+      "s",
+      "save",
+      "scnchart",
+      "screen",
+      "skip",
+      "snapshot",
+      "t",
+      "text",
+      "title",
+      "toggle",
+      "volume",
+      "vreplay",
+      "vsave",
+      "width",
+      "x",
+      "y"
+    ],
+    "placeable_with_formula": [],
+    "storage_with_formula": [
+      {
+        "geo": {
+          "ch": 15598,
+          "cw": 64434,
+          "cx": 139,
+          "cy": 169,
+          "h": 15468,
+          "ox": 248,
+          "oy": 27,
+          "storage": "option_cmds__pack",
+          "w": 64436,
+          "width": 64298,
+          "x": 83,
+          "y": 34867
+        },
+        "formula": {
+          "x": 851,
+          "y": 682
+        }
+      }
+    ]
+  },
+  "placeable": [
+    {
+      "id": "width",
+      "geo": {
+        "x": 23
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "storage": [
+    {
+      "geo": {
+        "ch": 34520,
+        "cw": 34493,
+        "cx": 25,
+        "cy": 15473,
+        "h": 34494,
+        "ox": 131,
+        "oy": 4,
+        "storage": "option_cmds__pack",
+        "w": 34393,
+        "width": 34398,
+        "x": 23,
+        "y": 249,
+        "height": 33335
+      },
+      "formula": {
+        "x": 854,
+        "y": 16009
+      }
+    },
+    {
+      "geo": {
+        "ch": 13055,
+        "cw": 12184,
+        "cx": 102169,
+        "cy": 27,
+        "h": 12981,
+        "ox": 12169,
+        "oy": 7604,
+        "storage": "option_cmds__pack",
+        "w": 12267,
+        "width": 33602,
+        "x": 279,
+        "y": 756,
+        "height": 15369
+      },
+      "formula": {
+        "x": 90960,
+        "y": -7037
+      }
+    },
+    {
+      "geo": {
+        "ch": 15598,
+        "cw": 64434,
+        "cx": 139,
+        "cy": 169,
+        "h": 15468,
+        "ox": 248,
+        "oy": 27,
+        "storage": "option_cmds__pack",
+        "w": 64436,
+        "width": 64298,
+        "x": 83,
+        "y": 34867
+      },
+      "formula": {
+        "x": 851,
+        "y": 682
+      }
+    }
+  ],
+  "binds": []
+}

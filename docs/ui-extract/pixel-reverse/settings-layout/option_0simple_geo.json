@@ -1,0 +1,4306 @@
+{
+  "source": "option_0simple",
+  "layer_count": 197,
+  "layers": [
+    {
+      "layer_id": "area",
+      "hits": 9,
+      "best": {
+        "ox": 10,
+        "oy": 13,
+        "x": 10,
+        "y": 13,
+        "h": 10
+      },
+      "abs": {
+        "x": 10,
+        "y": 13,
+        "w": null,
+        "h": 10
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "atextwait_slider",
+      "hits": 4,
+      "best": {
+        "top": 16,
+        "x": 116,
+        "ox": 116,
+        "oy": 187,
+        "y": 187,
+        "h": 116
+      },
+      "abs": {
+        "x": 116,
+        "y": 16,
+        "w": null,
+        "h": 116
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "autospeed",
+      "hits": 3,
+      "best": {
+        "ox": 116,
+        "oy": 187,
+        "x": 116,
+        "y": 187,
+        "h": 116
+      },
+      "abs": {
+        "x": 116,
+        "y": 187,
+        "w": null,
+        "h": 116
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "autospeed_numbase",
+      "hits": 3,
+      "best": {
+        "ox": 154,
+        "oy": 241,
+        "x": 154,
+        "y": 241,
+        "h": 154
+      },
+      "abs": {
+        "x": 154,
+        "y": 241,
+        "w": null,
+        "h": 154
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "autospeed_slider",
+      "hits": 3,
+      "best": {
+        "cx": 146,
+        "cy": 146,
+        "ox": 338,
+        "oy": 338,
+        "x": 146,
+        "y": 146,
+        "h": 1410,
+        "ch": 277
+      },
+      "abs": {
+        "x": 146,
+        "y": 146,
+        "w": null,
+        "h": 277
+      },
+      "formula": {
+        "x": 768,
+        "y": 348
+      }
+    },
+    {
+      "layer_id": "autospeed_value",
+      "hits": 3,
+      "best": {
+        "storagex": 117,
+        "ox": 79,
+        "oy": 220,
+        "x": 79,
+        "y": 79,
+        "storagey": 34,
+        "width": 136,
+        "w": 136,
+        "h": 136
+      },
+      "abs": {
+        "x": 79,
+        "y": 79,
+        "w": 136,
+        "h": 136
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "back",
+      "hits": 5,
+      "best": {
+        "ox": 69,
+        "oy": 64,
+        "x": 69,
+        "y": 34,
+        "h": 69,
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "w": 136
+      },
+      "abs": {
+        "x": 69,
+        "y": 34,
+        "w": 136,
+        "h": 69
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "base",
+      "hits": 4,
+      "best": {
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "ox": 38,
+        "oy": 38,
+        "x": 38,
+        "y": 38,
+        "w": 136,
+        "h": 69
+      },
+      "abs": {
+        "x": 38,
+        "y": 38,
+        "w": 136,
+        "h": 69
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "bgm",
+      "hits": 4,
+      "best": {
+        "ox": 38,
+        "oy": 38,
+        "x": 38,
+        "y": 38,
+        "h": 69
+      },
+      "abs": {
+        "x": 38,
+        "y": 38,
+        "w": null,
+        "h": 69
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "bgm_mute",
+      "hits": 3,
+      "best": {
+        "ox": 42,
+        "oy": 23,
+        "x": 42,
+        "y": 23,
+        "h": 42
+      },
+      "abs": {
+        "x": 42,
+        "y": 23,
+        "w": null,
+        "h": 42
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "bgm_numbase",
+      "hits": 3,
+      "best": {
+        "ox": 238,
+        "oy": 254,
+        "x": 238,
+        "y": 254,
+        "h": 238
+      },
+      "abs": {
+        "x": 238,
+        "y": 254,
+        "w": null,
+        "h": 238
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "bgm_on",
+      "hits": 2,
+      "best": {
+        "ox": 496,
+        "oy": 496,
+        "x": 496,
+        "y": 496
+      },
+      "abs": {
+        "x": 496,
+        "y": 496,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "bgm_play",
+      "hits": 3,
+      "best": {
+        "ox": 496,
+        "oy": 496,
+        "x": 496,
+        "y": 496,
+        "cx": 184,
+        "cy": 184,
+        "h": 1475
+      },
+      "abs": {
+        "x": 496,
+        "y": 496,
+        "w": null,
+        "h": 1475
+      },
+      "formula": {
+        "x": 648,
+        "y": 228
+      }
+    },
+    {
+      "layer_id": "bgm_slider",
+      "hits": 3,
+      "best": {
+        "cx": 184,
+        "cy": 184,
+        "ox": 496,
+        "oy": 122,
+        "x": 184,
+        "y": 122,
+        "h": 1475,
+        "ch": 494
+      },
+      "abs": {
+        "x": 184,
+        "y": 122,
+        "w": null,
+        "h": 494
+      },
+      "formula": {
+        "x": 648,
+        "y": 602
+      }
+    },
+    {
+      "layer_id": "bgm_test",
+      "hits": 3,
+      "best": {
+        "ox": 238,
+        "oy": 225,
+        "x": 238,
+        "y": 225
+      },
+      "abs": {
+        "x": 238,
+        "y": 225,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "bgm_value",
+      "hits": 3,
+      "best": {
+        "ox": 238,
+        "oy": 225,
+        "x": 238,
+        "y": 225
+      },
+      "abs": {
+        "x": 238,
+        "y": 225,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "bgv_play",
+      "hits": 1,
+      "best": {
+        "ox": 175,
+        "x": 175,
+        "h": 175
+      },
+      "abs": {
+        "x": 175,
+        "y": null,
+        "w": null,
+        "h": 175
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "bgv_slider",
+      "hits": 3,
+      "best": {
+        "ox": 175,
+        "oy": 45,
+        "x": 175,
+        "y": 45,
+        "h": 175
+      },
+      "abs": {
+        "x": 175,
+        "y": 45,
+        "w": null,
+        "h": 175
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "bgv_test",
+      "hits": 3,
+      "best": {
+        "ox": 175,
+        "oy": 45,
+        "x": 175,
+        "y": 45,
+        "h": 175
+      },
+      "abs": {
+        "x": 175,
+        "y": 45,
+        "w": null,
+        "h": 175
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "button",
+      "hits": 8,
+      "best": {
+        "cx": 20,
+        "cw": 463,
+        "ch": 469,
+        "ox": 51,
+        "oy": 0,
+        "x": 51,
+        "y": 51,
+        "w": 463,
+        "h": 6,
+        "cy": 20
+      },
+      "abs": {
+        "x": 51,
+        "y": 51,
+        "w": 463,
+        "h": 469
+      },
+      "formula": {
+        "x": 929,
+        "y": 560
+      }
+    },
+    {
+      "layer_id": "call",
+      "hits": 5,
+      "best": {
+        "w": 20
+      },
+      "abs": {
+        "x": null,
+        "y": null,
+        "w": 20,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "caption",
+      "hits": 3,
+      "best": {
+        "ox": 175,
+        "oy": 45,
+        "x": 175,
+        "y": 45,
+        "h": 175
+      },
+      "abs": {
+        "x": 175,
+        "y": 45,
+        "w": null,
+        "h": 175
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "class",
+      "hits": 108,
+      "best": {
+        "cx": 185,
+        "cw": 1180,
+        "ch": 1180,
+        "ox": 78,
+        "oy": 75,
+        "x": 0,
+        "y": 31,
+        "w": 1180,
+        "h": 78,
+        "cy": 12,
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "height": 5,
+        "top": 0
+      },
+      "abs": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 5
+      },
+      "formula": {
+        "x": 1067,
+        "y": 477
+      }
+    },
+    {
+      "layer_id": "color",
+      "hits": 28,
+      "best": {
+        "cx": 5,
+        "cy": 5,
+        "ch": 261,
+        "ox": 327,
+        "oy": 327,
+        "x": 0,
+        "y": 5,
+        "h": 1384
+      },
+      "abs": {
+        "x": 0,
+        "y": 5,
+        "w": null,
+        "h": 261
+      },
+      "formula": {
+        "x": 638,
+        "y": 218
+      }
+    },
+    {
+      "layer_id": "config_label_allskip",
+      "hits": 1,
+      "best": {
+        "w": 20
+      },
+      "abs": {
+        "x": null,
+        "y": null,
+        "w": 20,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "config_label_autospeed",
+      "hits": 1,
+      "best": {
+        "w": 20
+      },
+      "abs": {
+        "x": null,
+        "y": null,
+        "w": 20,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "config_label_scrwide",
+      "hits": 1,
+      "best": {
+        "w": 20
+      },
+      "abs": {
+        "x": null,
+        "y": null,
+        "w": 20,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "config_label_textspeed",
+      "hits": 1,
+      "best": {
+        "w": 20
+      },
+      "abs": {
+        "x": null,
+        "y": null,
+        "w": 20,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "copy",
+      "hits": 24,
+      "best": {
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "ox": 216,
+        "oy": 75,
+        "x": 0,
+        "y": 75,
+        "w": 136,
+        "h": 216
+      },
+      "abs": {
+        "x": 0,
+        "y": 75,
+        "w": 136,
+        "h": 216
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "cr",
+      "hits": 44,
+      "best": {
+        "cx": 5,
+        "cw": 463,
+        "ox": 327,
+        "oy": 327,
+        "x": 0,
+        "y": 5,
+        "w": 463,
+        "h": 6,
+        "cy": 5,
+        "ch": 261
+      },
+      "abs": {
+        "x": 0,
+        "y": 5,
+        "w": 463,
+        "h": 261
+      },
+      "formula": {
+        "x": 638,
+        "y": 218
+      }
+    },
+    {
+      "layer_id": "curmove_chk",
+      "hits": 1,
+      "best": {
+        "top": 16,
+        "x": -119
+      },
+      "abs": {
+        "x": -119,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "curmove_off",
+      "hits": 1,
+      "best": {
+        "top": 16,
+        "x": -119
+      },
+      "abs": {
+        "x": -119,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "curmove_on",
+      "hits": 1,
+      "best": {
+        "top": 16,
+        "x": -142
+      },
+      "abs": {
+        "x": -142,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "curmove_rev",
+      "hits": 1,
+      "best": {
+        "top": 16,
+        "x": -21
+      },
+      "abs": {
+        "x": -21,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "disable",
+      "hits": 7,
+      "best": {
+        "cx": 146,
+        "cy": 51,
+        "ch": 270,
+        "ox": 1384,
+        "oy": 1,
+        "x": 1384,
+        "y": 224,
+        "h": 1384
+      },
+      "abs": {
+        "x": 1384,
+        "y": 224,
+        "w": null,
+        "h": 270
+      },
+      "formula": {
+        "x": -278,
+        "y": 590
+      }
+    },
+    {
+      "layer_id": "down_mute",
+      "hits": 1,
+      "best": {
+        "top": 16
+      },
+      "abs": {
+        "x": null,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "down_off",
+      "hits": 1,
+      "best": {
+        "top": 16
+      },
+      "abs": {
+        "x": null,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "down_on",
+      "hits": 1,
+      "best": {
+        "top": 16
+      },
+      "abs": {
+        "x": null,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "down_play",
+      "hits": 1,
+      "best": {
+        "top": 16
+      },
+      "abs": {
+        "x": null,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "down_test",
+      "hits": 1,
+      "best": {
+        "top": 16
+      },
+      "abs": {
+        "x": null,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "drawspeed_slider",
+      "hits": 1,
+      "best": {
+        "top": 16,
+        "x": -142
+      },
+      "abs": {
+        "x": -142,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "dsbase",
+      "hits": 7,
+      "best": {
+        "cx": 146,
+        "cy": 146,
+        "ch": 270,
+        "ox": 1384,
+        "oy": 1,
+        "x": 1384,
+        "y": 224,
+        "h": 1384
+      },
+      "abs": {
+        "x": 1384,
+        "y": 224,
+        "w": null,
+        "h": 270
+      },
+      "formula": {
+        "x": -278,
+        "y": 685
+      }
+    },
+    {
+      "layer_id": "exp",
+      "hits": 55,
+      "best": {
+        "ox": 51,
+        "oy": 23,
+        "x": 0,
+        "y": 23,
+        "h": 5,
+        "cx": 24,
+        "cy": 24,
+        "ch": 9,
+        "w": 10,
+        "height": 5,
+        "cw": 1180,
+        "top": 0
+      },
+      "abs": {
+        "x": 0,
+        "y": 0,
+        "w": 1180,
+        "h": 5
+      },
+      "formula": {
+        "x": 933,
+        "y": 541
+      }
+    },
+    {
+      "layer_id": "false",
+      "hits": 2,
+      "best": {
+        "ox": 47,
+        "oy": 127,
+        "x": 47,
+        "y": 216,
+        "h": 47
+      },
+      "abs": {
+        "x": 47,
+        "y": 216,
+        "w": null,
+        "h": 47
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "fillmode",
+      "hits": 14,
+      "best": {
+        "cx": 5,
+        "cy": 5,
+        "ch": 261,
+        "ox": 18,
+        "oy": 285,
+        "x": 0,
+        "y": 5,
+        "h": 18
+      },
+      "abs": {
+        "x": 0,
+        "y": 5,
+        "w": null,
+        "h": 261
+      },
+      "formula": {
+        "x": 947,
+        "y": 260
+      }
+    },
+    {
+      "layer_id": "fullscreen",
+      "hits": 4,
+      "best": {
+        "ox": 245,
+        "x": 245,
+        "y": 245,
+        "oy": 23,
+        "cx": 20,
+        "cy": 20,
+        "h": 42
+      },
+      "abs": {
+        "x": 245,
+        "y": 245,
+        "w": null,
+        "h": 42
+      },
+      "formula": {
+        "x": 735,
+        "y": 537
+      }
+    },
+    {
+      "layer_id": "fullscreen_chk",
+      "hits": 4,
+      "best": {
+        "x": 212,
+        "cx": 212,
+        "cy": 212,
+        "ox": 245,
+        "oy": 23,
+        "y": 23,
+        "h": 134
+      },
+      "abs": {
+        "x": 212,
+        "y": 23,
+        "w": null,
+        "h": 134
+      },
+      "formula": {
+        "x": 927,
+        "y": 729
+      }
+    },
+    {
+      "layer_id": "fullscreen_off",
+      "hits": 3,
+      "best": {
+        "cx": 212,
+        "cy": 212,
+        "ox": 125,
+        "oy": 23,
+        "x": 125,
+        "y": 23,
+        "h": 125
+      },
+      "abs": {
+        "x": 125,
+        "y": 23,
+        "w": null,
+        "h": 125
+      },
+      "formula": {
+        "x": 1047,
+        "y": 729
+      }
+    },
+    {
+      "layer_id": "fullscreen_on",
+      "hits": 3,
+      "best": {
+        "cx": 20,
+        "cy": 20,
+        "ox": 88,
+        "oy": 11,
+        "x": 20,
+        "y": 11,
+        "h": 88
+      },
+      "abs": {
+        "x": 20,
+        "y": 11,
+        "w": null,
+        "h": 88
+      },
+      "formula": {
+        "x": 892,
+        "y": 549
+      }
+    },
+    {
+      "layer_id": "fullscreen_rev",
+      "hits": 4,
+      "best": {
+        "x": 41,
+        "cx": 2184,
+        "cy": 198,
+        "ch": 459,
+        "ox": 41,
+        "oy": 100,
+        "y": 100,
+        "h": 41
+      },
+      "abs": {
+        "x": 41,
+        "y": 100,
+        "w": null,
+        "h": 459
+      },
+      "formula": {
+        "x": 3103,
+        "y": 638
+      }
+    },
+    {
+      "layer_id": "height",
+      "hits": 83,
+      "best": {
+        "cx": 103,
+        "cw": 1032,
+        "ch": 1032,
+        "ox": 38,
+        "oy": 64,
+        "x": 0,
+        "y": 31,
+        "w": 136,
+        "h": 78,
+        "cy": 12,
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "height": 5
+      },
+      "abs": {
+        "x": 0,
+        "y": 31,
+        "w": 136,
+        "h": 5
+      },
+      "formula": {
+        "x": 1025,
+        "y": 488
+      }
+    },
+    {
+      "layer_id": "helpbase",
+      "hits": 3,
+      "best": {
+        "cx": 2184,
+        "cy": 198,
+        "ch": 459,
+        "ox": 41,
+        "oy": 100,
+        "x": 41,
+        "y": 62,
+        "h": 41
+      },
+      "abs": {
+        "x": 41,
+        "y": 62,
+        "w": null,
+        "h": 459
+      },
+      "formula": {
+        "x": 3103,
+        "y": 638
+      }
+    },
+    {
+      "layer_id": "helptext",
+      "hits": 3,
+      "best": {
+        "ox": 47,
+        "oy": 127,
+        "x": 47,
+        "y": 62,
+        "h": 47
+      },
+      "abs": {
+        "x": 47,
+        "y": 62,
+        "w": null,
+        "h": 47
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "index",
+      "hits": 13,
+      "best": {
+        "x": -11,
+        "ox": 82,
+        "h": 82,
+        "oy": 207,
+        "y": 207,
+        "ch": 469,
+        "cx": 463,
+        "cw": 463,
+        "w": 463
+      },
+      "abs": {
+        "x": -11,
+        "y": 207,
+        "w": 463,
+        "h": 469
+      },
+      "formula": {
+        "x": 1341,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "knob",
+      "hits": 7,
+      "best": {
+        "ch": 270,
+        "ox": 1,
+        "oy": 1,
+        "x": 1,
+        "y": 1,
+        "h": 6
+      },
+      "abs": {
+        "x": 1,
+        "y": 1,
+        "w": null,
+        "h": 270
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_a",
+      "hits": 3,
+      "best": {
+        "ox": 47,
+        "oy": 127,
+        "x": 47,
+        "y": 127,
+        "h": 47
+      },
+      "abs": {
+        "x": 47,
+        "y": 127,
+        "w": null,
+        "h": 47
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_a_jump",
+      "hits": 3,
+      "best": {
+        "ox": 198,
+        "oy": 25,
+        "x": 198,
+        "y": 25,
+        "h": 198
+      },
+      "abs": {
+        "x": 198,
+        "y": 25,
+        "w": null,
+        "h": 198
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_b",
+      "hits": 3,
+      "best": {
+        "ox": 198,
+        "oy": 25,
+        "x": 198,
+        "y": 25,
+        "h": 198
+      },
+      "abs": {
+        "x": 198,
+        "y": 25,
+        "w": null,
+        "h": 198
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_b_jump",
+      "hits": 3,
+      "best": {
+        "ox": 189,
+        "oy": 41,
+        "x": 189,
+        "y": 41,
+        "h": 189
+      },
+      "abs": {
+        "x": 189,
+        "y": 41,
+        "w": null,
+        "h": 189
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_c",
+      "hits": 4,
+      "best": {
+        "w": 20,
+        "ox": 189,
+        "oy": 41,
+        "x": 189,
+        "y": 41,
+        "h": 189
+      },
+      "abs": {
+        "x": 189,
+        "y": 41,
+        "w": 20,
+        "h": 189
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_c_jump",
+      "hits": 3,
+      "best": {
+        "ox": 0,
+        "oy": 215,
+        "x": 0,
+        "y": 215
+      },
+      "abs": {
+        "x": 0,
+        "y": 215,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_d",
+      "hits": 4,
+      "best": {
+        "w": 20,
+        "ox": 0,
+        "oy": 215,
+        "x": 0,
+        "y": 215,
+        "h": 216
+      },
+      "abs": {
+        "x": 0,
+        "y": 215,
+        "w": 20,
+        "h": 216
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_d_jump",
+      "hits": 3,
+      "best": {
+        "ox": 216,
+        "oy": 132,
+        "x": 216,
+        "y": 132,
+        "h": 216
+      },
+      "abs": {
+        "x": 216,
+        "y": 132,
+        "w": null,
+        "h": 216
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_e",
+      "hits": 4,
+      "best": {
+        "w": 20,
+        "ox": 216,
+        "oy": 132,
+        "x": 216,
+        "y": 132,
+        "h": 216
+      },
+      "abs": {
+        "x": 216,
+        "y": 132,
+        "w": 20,
+        "h": 216
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_e_jump",
+      "hits": 3,
+      "best": {
+        "ox": 205,
+        "oy": 69,
+        "x": 0,
+        "y": 69,
+        "h": 205
+      },
+      "abs": {
+        "x": 0,
+        "y": 69,
+        "w": null,
+        "h": 205
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_f",
+      "hits": 4,
+      "best": {
+        "w": 20,
+        "ox": 205,
+        "oy": 69,
+        "x": 0,
+        "y": 69,
+        "h": 205
+      },
+      "abs": {
+        "x": 0,
+        "y": 69,
+        "w": 20,
+        "h": 205
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_f_jump",
+      "hits": 3,
+      "best": {
+        "ox": 216,
+        "oy": 170,
+        "x": 0,
+        "y": 170,
+        "h": 216
+      },
+      "abs": {
+        "x": 0,
+        "y": 170,
+        "w": null,
+        "h": 216
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_g",
+      "hits": 3,
+      "best": {
+        "ox": 216,
+        "oy": 170,
+        "x": 0,
+        "y": 170,
+        "h": 216
+      },
+      "abs": {
+        "x": 0,
+        "y": 170,
+        "w": null,
+        "h": 216
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_g_jump",
+      "hits": 3,
+      "best": {
+        "ox": 45,
+        "oy": 30,
+        "x": 0,
+        "y": 30,
+        "h": 45
+      },
+      "abs": {
+        "x": 0,
+        "y": 30,
+        "w": null,
+        "h": 45
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_h",
+      "hits": 3,
+      "best": {
+        "ox": 45,
+        "oy": 30,
+        "x": 0,
+        "y": 30,
+        "h": 45
+      },
+      "abs": {
+        "x": 0,
+        "y": 30,
+        "w": null,
+        "h": 45
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_h_jump",
+      "hits": 3,
+      "best": {
+        "ox": 38,
+        "oy": 75,
+        "x": 0,
+        "y": 75,
+        "h": 38
+      },
+      "abs": {
+        "x": 0,
+        "y": 75,
+        "w": null,
+        "h": 38
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_i",
+      "hits": 3,
+      "best": {
+        "ox": 38,
+        "oy": 75,
+        "x": 0,
+        "y": 75,
+        "h": 38
+      },
+      "abs": {
+        "x": 0,
+        "y": 75,
+        "w": null,
+        "h": 38
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_i_jump",
+      "hits": 3,
+      "best": {
+        "ox": 67,
+        "oy": 241,
+        "x": 0,
+        "y": 241,
+        "h": 67
+      },
+      "abs": {
+        "x": 0,
+        "y": 241,
+        "w": null,
+        "h": 67
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_j",
+      "hits": 3,
+      "best": {
+        "ox": 67,
+        "oy": 241,
+        "x": 0,
+        "y": 241,
+        "h": 67
+      },
+      "abs": {
+        "x": 0,
+        "y": 241,
+        "w": null,
+        "h": 67
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "label_j_jump",
+      "hits": 3,
+      "best": {
+        "ox": 28,
+        "oy": 28,
+        "x": 28,
+        "y": 28,
+        "h": 83
+      },
+      "abs": {
+        "x": 28,
+        "y": 28,
+        "w": null,
+        "h": 83
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "layer",
+      "hits": 60,
+      "best": {
+        "ox": 47,
+        "oy": 95,
+        "x": 0,
+        "y": 110,
+        "h": 47,
+        "storagex": 117,
+        "storagey": 34,
+        "cx": 103,
+        "cy": 12,
+        "ch": 1032,
+        "width": 1119,
+        "cw": 1032,
+        "w": 1032
+      },
+      "abs": {
+        "x": 0,
+        "y": 110,
+        "w": 1119,
+        "h": 1032
+      },
+      "formula": {
+        "x": 1016,
+        "y": 457
+      }
+    },
+    {
+      "layer_id": "movie",
+      "hits": 4,
+      "best": {
+        "ox": 28,
+        "oy": 28,
+        "x": 28,
+        "y": 28,
+        "h": 83
+      },
+      "abs": {
+        "x": 28,
+        "y": 28,
+        "w": null,
+        "h": 83
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "movie_mute",
+      "hits": 3,
+      "best": {
+        "ox": 148,
+        "oy": 160,
+        "x": 148,
+        "y": 160,
+        "w": 54,
+        "h": 148
+      },
+      "abs": {
+        "x": 148,
+        "y": 160,
+        "w": 54,
+        "h": 148
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "movie_numbase",
+      "hits": 3,
+      "best": {
+        "ox": 19,
+        "oy": 235,
+        "x": 19,
+        "y": 235,
+        "h": 19
+      },
+      "abs": {
+        "x": 19,
+        "y": 235,
+        "w": null,
+        "h": 19
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "movie_off",
+      "hits": 1,
+      "best": {
+        "top": 16
+      },
+      "abs": {
+        "x": null,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "movie_on",
+      "hits": 3,
+      "best": {
+        "top": 16,
+        "ox": 18,
+        "oy": 267,
+        "x": 18,
+        "y": 267,
+        "h": 18
+      },
+      "abs": {
+        "x": 18,
+        "y": 16,
+        "w": null,
+        "h": 18
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "movie_play",
+      "hits": 4,
+      "best": {
+        "top": 16,
+        "ox": 18,
+        "oy": 267,
+        "x": 18,
+        "y": 267,
+        "h": 18,
+        "cx": 220,
+        "cy": 220
+      },
+      "abs": {
+        "x": 18,
+        "y": 16,
+        "w": null,
+        "h": 18
+      },
+      "formula": {
+        "x": 1162,
+        "y": 493
+      }
+    },
+    {
+      "layer_id": "movie_slider",
+      "hits": 3,
+      "best": {
+        "cx": 220,
+        "cy": 220,
+        "ox": 18,
+        "oy": 267,
+        "x": 18,
+        "y": 220,
+        "h": 18,
+        "ch": 294
+      },
+      "abs": {
+        "x": 18,
+        "y": 220,
+        "w": null,
+        "h": 294
+      },
+      "formula": {
+        "x": 1162,
+        "y": 493
+      }
+    },
+    {
+      "layer_id": "movie_test",
+      "hits": 4,
+      "best": {
+        "top": 16,
+        "ch": 9,
+        "ox": 237,
+        "oy": 150,
+        "x": 237,
+        "y": 150,
+        "h": 9
+      },
+      "abs": {
+        "x": 237,
+        "y": 16,
+        "w": null,
+        "h": 9
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "movie_value",
+      "hits": 3,
+      "best": {
+        "ch": 9,
+        "ox": 237,
+        "oy": 150,
+        "x": 237,
+        "y": 150,
+        "h": 9
+      },
+      "abs": {
+        "x": 237,
+        "y": 150,
+        "w": null,
+        "h": 9
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "mute",
+      "hits": 5,
+      "best": {
+        "ox": 12,
+        "oy": 3504,
+        "x": 12,
+        "y": 3504,
+        "h": 12
+      },
+      "abs": {
+        "x": 12,
+        "y": 3504,
+        "w": null,
+        "h": 12
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "mvaudiosample",
+      "hits": 1,
+      "best": {
+        "ox": 26,
+        "oy": 121,
+        "x": 26,
+        "y": 26
+      },
+      "abs": {
+        "x": 26,
+        "y": 26,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "mvaudiosample_chk",
+      "hits": 3,
+      "best": {
+        "ox": 114,
+        "oy": 17,
+        "x": 114,
+        "y": 17,
+        "h": 114
+      },
+      "abs": {
+        "x": 114,
+        "y": 17,
+        "w": null,
+        "h": 114
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "mvaudiosample_off",
+      "hits": 1,
+      "best": {
+        "x": -10
+      },
+      "abs": {
+        "x": -10,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "mvaudiosample_on",
+      "hits": 3,
+      "best": {
+        "x": 26,
+        "ox": 26,
+        "oy": 121,
+        "y": 26
+      },
+      "abs": {
+        "x": 26,
+        "y": 26,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "mvaudiosample_rev",
+      "hits": 4,
+      "best": {
+        "x": 26,
+        "ox": 26,
+        "oy": 121,
+        "y": 26
+      },
+      "abs": {
+        "x": 26,
+        "y": 26,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "mvaudsmp",
+      "hits": 3,
+      "best": {
+        "ox": 26,
+        "oy": 121,
+        "x": 26,
+        "y": 26
+      },
+      "abs": {
+        "x": 26,
+        "y": 26,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "normal",
+      "hits": 7,
+      "best": {
+        "ch": 270,
+        "ox": 327,
+        "oy": 327,
+        "x": 327,
+        "y": 327,
+        "h": 6
+      },
+      "abs": {
+        "x": 327,
+        "y": 327,
+        "w": null,
+        "h": 270
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "normal_off",
+      "hits": 6,
+      "best": {
+        "ox": 114,
+        "oy": 3374,
+        "x": 114,
+        "y": 3374,
+        "h": 114,
+        "w": 54
+      },
+      "abs": {
+        "x": 114,
+        "y": 3374,
+        "w": 54,
+        "h": 114
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "normal_on",
+      "hits": 6,
+      "best": {
+        "ox": 114,
+        "oy": 3374,
+        "x": 114,
+        "y": 3374,
+        "h": 114,
+        "w": 54
+      },
+      "abs": {
+        "x": 114,
+        "y": 3374,
+        "w": 54,
+        "h": 114
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "nosave",
+      "hits": 50,
+      "best": {
+        "cx": 5,
+        "cw": 463,
+        "ch": 261,
+        "ox": 216,
+        "oy": 127,
+        "x": 0,
+        "y": 127,
+        "w": 10,
+        "h": 216,
+        "cy": 5,
+        "height": 5
+      },
+      "abs": {
+        "x": 0,
+        "y": 127,
+        "w": 463,
+        "h": 5
+      },
+      "formula": {
+        "x": 749,
+        "y": 418
+      }
+    },
+    {
+      "layer_id": "num",
+      "hits": 7,
+      "best": {
+        "ox": 10,
+        "oy": 3504,
+        "x": 10,
+        "y": 3504,
+        "h": 10
+      },
+      "abs": {
+        "x": 10,
+        "y": 3504,
+        "w": null,
+        "h": 10
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "on_on",
+      "hits": 5,
+      "best": {
+        "ox": 2055,
+        "oy": 3360,
+        "x": 2055,
+        "y": 3360
+      },
+      "abs": {
+        "x": 2055,
+        "y": 3360,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "onchangefunc",
+      "hits": 10,
+      "best": {
+        "ox": 10,
+        "oy": 1,
+        "x": 10,
+        "y": 1,
+        "h": 1384,
+        "cx": 146,
+        "cy": 51,
+        "ch": 270
+      },
+      "abs": {
+        "x": 10,
+        "y": 1,
+        "w": null,
+        "h": 270
+      },
+      "formula": {
+        "x": 1096,
+        "y": 590
+      }
+    },
+    {
+      "layer_id": "onchangefuncdata",
+      "hits": 10,
+      "best": {
+        "ox": 10,
+        "oy": 1,
+        "x": 10,
+        "y": 1,
+        "h": 1384,
+        "cx": 146,
+        "cy": 51,
+        "ch": 270
+      },
+      "abs": {
+        "x": 10,
+        "y": 1,
+        "w": null,
+        "h": 270
+      },
+      "formula": {
+        "x": 1096,
+        "y": 590
+      }
+    },
+    {
+      "layer_id": "opacity",
+      "hits": 33,
+      "best": {
+        "ox": 51,
+        "oy": 11,
+        "x": 0,
+        "y": 127,
+        "h": 114,
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "w": 10,
+        "cx": 20,
+        "cy": 12,
+        "ch": 9,
+        "height": 5,
+        "cw": 1032
+      },
+      "abs": {
+        "x": 0,
+        "y": 127,
+        "w": 136,
+        "h": 5
+      },
+      "formula": {
+        "x": 929,
+        "y": 541
+      }
+    },
+    {
+      "layer_id": "option__bg0",
+      "hits": 1,
+      "best": {
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "ox": 38,
+        "oy": 38,
+        "x": 38,
+        "y": 34,
+        "w": 136,
+        "h": 69
+      },
+      "abs": {
+        "x": 38,
+        "y": 34,
+        "w": 136,
+        "h": 69
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "option__pack",
+      "hits": 103,
+      "best": {
+        "cx": 5,
+        "cw": 463,
+        "ch": 261,
+        "ox": 51,
+        "oy": 235,
+        "x": 0,
+        "y": 5,
+        "w": 54,
+        "h": 78,
+        "cy": 5,
+        "width": 1119
+      },
+      "abs": {
+        "x": 0,
+        "y": 5,
+        "w": 1119,
+        "h": 261
+      },
+      "formula": {
+        "x": 914,
+        "y": 310
+      }
+    },
+    {
+      "layer_id": "order",
+      "hits": 1,
+      "best": {
+        "x": -10
+      },
+      "abs": {
+        "x": -10,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "over",
+      "hits": 15,
+      "best": {
+        "cx": 5,
+        "cw": 463,
+        "ox": 51,
+        "oy": 0,
+        "x": 0,
+        "y": 51,
+        "w": 463,
+        "h": 18,
+        "cy": 5,
+        "ch": 261
+      },
+      "abs": {
+        "x": 0,
+        "y": 51,
+        "w": 463,
+        "h": 261
+      },
+      "formula": {
+        "x": 914,
+        "y": 545
+      }
+    },
+    {
+      "layer_id": "over_off",
+      "hits": 6,
+      "best": {
+        "ox": 19,
+        "oy": 79,
+        "x": 19,
+        "y": 79,
+        "h": 19
+      },
+      "abs": {
+        "x": 19,
+        "y": 79,
+        "w": null,
+        "h": 19
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "over_on",
+      "hits": 6,
+      "best": {
+        "ox": 19,
+        "oy": 79,
+        "x": 19,
+        "y": 79,
+        "h": 19
+      },
+      "abs": {
+        "x": 19,
+        "y": 79,
+        "w": null,
+        "h": 19
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "overlay",
+      "hits": 10,
+      "best": {
+        "ox": 15,
+        "oy": 5,
+        "x": 0,
+        "y": 127,
+        "w": 10,
+        "height": 5,
+        "h": 5
+      },
+      "abs": {
+        "x": 0,
+        "y": 127,
+        "w": 10,
+        "h": 5
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page0",
+      "hits": 4,
+      "best": {
+        "ox": 194,
+        "oy": 198,
+        "x": 194,
+        "y": 69,
+        "h": 82
+      },
+      "abs": {
+        "x": 194,
+        "y": 69,
+        "w": null,
+        "h": 82
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page1",
+      "hits": 4,
+      "best": {
+        "ox": 51,
+        "oy": 92,
+        "x": 51,
+        "y": 92,
+        "h": 82
+      },
+      "abs": {
+        "x": 51,
+        "y": 92,
+        "w": null,
+        "h": 82
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page2",
+      "hits": 4,
+      "best": {
+        "ox": 231,
+        "oy": 71,
+        "x": 9,
+        "y": 9,
+        "h": 18
+      },
+      "abs": {
+        "x": 9,
+        "y": 9,
+        "w": null,
+        "h": 18
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page3",
+      "hits": 4,
+      "best": {
+        "ox": 115,
+        "oy": 169,
+        "x": 17,
+        "y": 17,
+        "h": 18
+      },
+      "abs": {
+        "x": 17,
+        "y": 17,
+        "w": null,
+        "h": 18
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page4",
+      "hits": 4,
+      "best": {
+        "ch": 469,
+        "ox": 167,
+        "oy": 11,
+        "x": 0,
+        "y": 11,
+        "h": 18
+      },
+      "abs": {
+        "x": 0,
+        "y": 11,
+        "w": null,
+        "h": 469
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page5",
+      "hits": 4,
+      "best": {
+        "ch": 469,
+        "ox": 15,
+        "oy": 5,
+        "x": 0,
+        "y": 5,
+        "h": 6,
+        "w": 10
+      },
+      "abs": {
+        "x": 0,
+        "y": 5,
+        "w": 10,
+        "h": 469
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page6",
+      "hits": 4,
+      "best": {
+        "ch": 469,
+        "ox": 119,
+        "oy": 10,
+        "x": 119,
+        "y": 10,
+        "h": 6,
+        "w": 10
+      },
+      "abs": {
+        "x": 119,
+        "y": 10,
+        "w": 10,
+        "h": 469
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page7",
+      "hits": 4,
+      "best": {
+        "ch": 469,
+        "ox": 67,
+        "oy": 100,
+        "x": 45,
+        "y": 45,
+        "h": 5,
+        "height": 5
+      },
+      "abs": {
+        "x": 45,
+        "y": 45,
+        "w": null,
+        "h": 5
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page8",
+      "hits": 4,
+      "best": {
+        "cx": 463,
+        "cw": 463,
+        "ch": 469,
+        "ox": 100,
+        "oy": 148,
+        "x": 45,
+        "y": 45,
+        "w": 463,
+        "h": 5,
+        "height": 5
+      },
+      "abs": {
+        "x": 45,
+        "y": 45,
+        "w": 463,
+        "h": 5
+      },
+      "formula": {
+        "x": 1323,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page9",
+      "hits": 4,
+      "best": {
+        "cx": 463,
+        "cw": 463,
+        "ch": 469,
+        "ox": 161,
+        "oy": 127,
+        "x": 105,
+        "y": 105,
+        "w": 463,
+        "h": 6
+      },
+      "abs": {
+        "x": 105,
+        "y": 105,
+        "w": 463,
+        "h": 469
+      },
+      "formula": {
+        "x": 1262,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "radio",
+      "hits": 10,
+      "best": {
+        "ox": 15,
+        "oy": 5,
+        "x": 0,
+        "y": 45,
+        "w": 10,
+        "height": 5,
+        "h": 5
+      },
+      "abs": {
+        "x": 0,
+        "y": 45,
+        "w": 10,
+        "h": 5
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "rail",
+      "hits": 7,
+      "best": {
+        "cx": 5,
+        "cy": 5,
+        "ch": 261,
+        "ox": 31,
+        "oy": 108,
+        "x": 0,
+        "y": 5,
+        "h": 261
+      },
+      "abs": {
+        "x": 0,
+        "y": 5,
+        "w": null,
+        "h": 261
+      },
+      "formula": {
+        "x": 934,
+        "y": 437
+      }
+    },
+    {
+      "layer_id": "reset",
+      "hits": 1,
+      "best": {
+        "x": -10
+      },
+      "abs": {
+        "x": -10,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "result",
+      "hits": 1,
+      "best": {
+        "cx": 463,
+        "cw": 463,
+        "ch": 469,
+        "ox": 6,
+        "oy": 0,
+        "x": 6,
+        "y": 0,
+        "w": 463,
+        "h": 6
+      },
+      "abs": {
+        "x": 6,
+        "y": 0,
+        "w": 463,
+        "h": 469
+      },
+      "formula": {
+        "x": 1417,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "scanim",
+      "hits": 2,
+      "best": {
+        "ox": 12,
+        "oy": 97,
+        "x": 12,
+        "y": 97,
+        "h": 12
+      },
+      "abs": {
+        "x": 12,
+        "y": 97,
+        "w": null,
+        "h": 12
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "scanim_chk",
+      "hits": 1,
+      "best": {
+        "top": 16,
+        "x": -21
+      },
+      "abs": {
+        "x": -21,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "scanim_off",
+      "hits": 3,
+      "best": {
+        "top": 16,
+        "x": 12,
+        "ox": 12,
+        "oy": 97,
+        "y": 97,
+        "h": 12
+      },
+      "abs": {
+        "x": 12,
+        "y": 16,
+        "w": null,
+        "h": 12
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "scanim_on",
+      "hits": 4,
+      "best": {
+        "top": 16,
+        "x": 12,
+        "ox": 12,
+        "oy": 97,
+        "y": 97,
+        "h": 12
+      },
+      "abs": {
+        "x": 12,
+        "y": 16,
+        "w": null,
+        "h": 12
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "scanim_rev",
+      "hits": 4,
+      "best": {
+        "top": 16,
+        "x": 12,
+        "ox": 12,
+        "oy": 85,
+        "y": 85,
+        "h": 12
+      },
+      "abs": {
+        "x": 12,
+        "y": 16,
+        "w": null,
+        "h": 12
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "se",
+      "hits": 4,
+      "best": {
+        "ox": 12,
+        "oy": 85,
+        "x": 12,
+        "y": 85,
+        "h": 12
+      },
+      "abs": {
+        "x": 12,
+        "y": 85,
+        "w": null,
+        "h": 12
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "se_mute",
+      "hits": 3,
+      "best": {
+        "ox": 211,
+        "oy": 3374,
+        "x": 211,
+        "y": 3374,
+        "h": 211
+      },
+      "abs": {
+        "x": 211,
+        "y": 3374,
+        "w": null,
+        "h": 211
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "se_numbase",
+      "hits": 3,
+      "best": {
+        "ox": 78,
+        "oy": 240,
+        "x": 78,
+        "y": 240,
+        "h": 78
+      },
+      "abs": {
+        "x": 78,
+        "y": 240,
+        "w": null,
+        "h": 78
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "se_on",
+      "hits": 2,
+      "best": {
+        "ox": 451,
+        "oy": 451,
+        "x": 451,
+        "y": 451
+      },
+      "abs": {
+        "x": 451,
+        "y": 451,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "se_play",
+      "hits": 3,
+      "best": {
+        "ox": 451,
+        "oy": 451,
+        "x": 451,
+        "y": 451,
+        "cx": 217,
+        "cy": 217,
+        "h": 1384
+      },
+      "abs": {
+        "x": 451,
+        "y": 451,
+        "w": null,
+        "h": 1384
+      },
+      "formula": {
+        "x": 726,
+        "y": 306
+      }
+    },
+    {
+      "layer_id": "se_slider",
+      "hits": 3,
+      "best": {
+        "cx": 217,
+        "cy": 217,
+        "ox": 136,
+        "oy": 136,
+        "x": 136,
+        "y": 136,
+        "h": 1384,
+        "ch": 270
+      },
+      "abs": {
+        "x": 136,
+        "y": 136,
+        "w": null,
+        "h": 270
+      },
+      "formula": {
+        "x": 1041,
+        "y": 621
+      }
+    },
+    {
+      "layer_id": "se_test",
+      "hits": 3,
+      "best": {
+        "cx": 185,
+        "cw": 1180,
+        "ch": 1180,
+        "ox": 110,
+        "oy": 143,
+        "x": 110,
+        "y": 110,
+        "w": 1180,
+        "h": 1180,
+        "cy": 12,
+        "width": 1198
+      },
+      "abs": {
+        "x": 110,
+        "y": 110,
+        "w": 1198,
+        "h": 1180
+      },
+      "formula": {
+        "x": 1035,
+        "y": 409
+      }
+    },
+    {
+      "layer_id": "se_value",
+      "hits": 3,
+      "best": {
+        "width": 1198,
+        "cx": 185,
+        "cy": 12,
+        "cw": 1180,
+        "ch": 1180,
+        "ox": 110,
+        "oy": 110,
+        "x": 110,
+        "y": 110,
+        "w": 1050,
+        "h": 116
+      },
+      "abs": {
+        "x": 110,
+        "y": 110,
+        "w": 1198,
+        "h": 1180
+      },
+      "formula": {
+        "x": 1035,
+        "y": 442
+      }
+    },
+    {
+      "layer_id": "sename",
+      "hits": 12,
+      "best": {
+        "cx": 463,
+        "cw": 463,
+        "ch": 469,
+        "ox": 15,
+        "oy": 5,
+        "x": 0,
+        "y": 45,
+        "w": 10,
+        "h": 5,
+        "height": 5
+      },
+      "abs": {
+        "x": 0,
+        "y": 45,
+        "w": 463,
+        "h": 5
+      },
+      "formula": {
+        "x": 1408,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "sep_a",
+      "hits": 3,
+      "best": {
+        "width": 1119,
+        "cx": 103,
+        "cy": 12,
+        "cw": 1032,
+        "ch": 1032,
+        "ox": 116,
+        "oy": 95,
+        "x": 103,
+        "y": 12,
+        "w": 1032,
+        "h": 116
+      },
+      "abs": {
+        "x": 103,
+        "y": 12,
+        "w": 1119,
+        "h": 1032
+      },
+      "formula": {
+        "x": 947,
+        "y": 457
+      }
+    },
+    {
+      "layer_id": "sep_b",
+      "hits": 3,
+      "best": {
+        "width": 1119,
+        "cx": 103,
+        "cy": 122,
+        "cw": 1032,
+        "ch": 1032,
+        "ox": 204,
+        "oy": 95,
+        "x": 103,
+        "y": 95,
+        "w": 1032,
+        "h": 204
+      },
+      "abs": {
+        "x": 103,
+        "y": 95,
+        "w": 1119,
+        "h": 1032
+      },
+      "formula": {
+        "x": 859,
+        "y": 567
+      }
+    },
+    {
+      "layer_id": "skipall",
+      "hits": 4,
+      "best": {
+        "ox": 179,
+        "oy": 13,
+        "x": 179,
+        "y": 13,
+        "cx": 24,
+        "cy": 24,
+        "h": 165
+      },
+      "abs": {
+        "x": 179,
+        "y": 13,
+        "w": null,
+        "h": 165
+      },
+      "formula": {
+        "x": 805,
+        "y": 551
+      }
+    },
+    {
+      "layer_id": "skipall_chk",
+      "hits": 4,
+      "best": {
+        "x": 24,
+        "cx": 24,
+        "cy": 24,
+        "ox": 109,
+        "oy": 13,
+        "y": 13,
+        "h": 109
+      },
+      "abs": {
+        "x": 24,
+        "y": 13,
+        "w": null,
+        "h": 109
+      },
+      "formula": {
+        "x": 875,
+        "y": 551
+      }
+    },
+    {
+      "layer_id": "skipall_off",
+      "hits": 3,
+      "best": {
+        "cx": 24,
+        "cy": 24,
+        "ox": 165,
+        "oy": 13,
+        "x": 165,
+        "y": 13,
+        "h": 165
+      },
+      "abs": {
+        "x": 165,
+        "y": 13,
+        "w": null,
+        "h": 165
+      },
+      "formula": {
+        "x": 819,
+        "y": 551
+      }
+    },
+    {
+      "layer_id": "skipall_on",
+      "hits": 3,
+      "best": {
+        "cx": 88,
+        "cy": 88,
+        "ox": 51,
+        "oy": 14,
+        "x": 51,
+        "y": 14,
+        "h": 62
+      },
+      "abs": {
+        "x": 51,
+        "y": 14,
+        "w": null,
+        "h": 62
+      },
+      "formula": {
+        "x": 997,
+        "y": 614
+      }
+    },
+    {
+      "layer_id": "skipall_rev",
+      "hits": 1,
+      "best": {
+        "x": -10
+      },
+      "abs": {
+        "x": -10,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "skipspeed_slider",
+      "hits": 2,
+      "best": {
+        "top": 16,
+        "x": 111,
+        "ox": 111,
+        "y": 111
+      },
+      "abs": {
+        "x": 111,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "slider",
+      "hits": 14,
+      "best": {
+        "ox": 10,
+        "oy": 136,
+        "x": 10,
+        "y": 136,
+        "h": 1384,
+        "cx": 146,
+        "cy": 51
+      },
+      "abs": {
+        "x": 10,
+        "y": 136,
+        "w": null,
+        "h": 1384
+      },
+      "formula": {
+        "x": 1096,
+        "y": 455
+      }
+    },
+    {
+      "layer_id": "sqscr",
+      "hits": 5,
+      "best": {
+        "ox": 111,
+        "oy": 21,
+        "x": 111,
+        "y": 21,
+        "cx": 147,
+        "cy": 147,
+        "h": 21
+      },
+      "abs": {
+        "x": 111,
+        "y": 21,
+        "w": null,
+        "h": 21
+      },
+      "formula": {
+        "x": 996,
+        "y": 666
+      }
+    },
+    {
+      "layer_id": "sqscr_chk",
+      "hits": 4,
+      "best": {
+        "top": 16,
+        "x": 21,
+        "cx": 147,
+        "cy": 147,
+        "ox": 21,
+        "oy": 21,
+        "y": 21,
+        "h": 21
+      },
+      "abs": {
+        "x": 21,
+        "y": 16,
+        "w": null,
+        "h": 21
+      },
+      "formula": {
+        "x": 1086,
+        "y": 666
+      }
+    },
+    {
+      "layer_id": "sqscr_off",
+      "hits": 3,
+      "best": {
+        "cx": 147,
+        "cy": 147,
+        "ox": 21,
+        "oy": 21,
+        "x": 21,
+        "y": 21,
+        "h": 21
+      },
+      "abs": {
+        "x": 21,
+        "y": 21,
+        "w": null,
+        "h": 21
+      },
+      "formula": {
+        "x": 1086,
+        "y": 666
+      }
+    },
+    {
+      "layer_id": "sqscr_on",
+      "hits": 3,
+      "best": {
+        "cx": 188,
+        "cy": 188,
+        "ox": 51,
+        "oy": 99,
+        "x": 51,
+        "y": 51,
+        "h": 183
+      },
+      "abs": {
+        "x": 51,
+        "y": 51,
+        "w": null,
+        "h": 183
+      },
+      "formula": {
+        "x": 1097,
+        "y": 629
+      }
+    },
+    {
+      "layer_id": "sqscr_rev",
+      "hits": 4,
+      "best": {
+        "top": 0,
+        "x": -21
+      },
+      "abs": {
+        "x": -21,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "stayontop",
+      "hits": 1,
+      "best": {
+        "top": 0
+      },
+      "abs": {
+        "x": null,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "stayontop_chk",
+      "hits": 4,
+      "best": {
+        "top": 0,
+        "x": -21
+      },
+      "abs": {
+        "x": -21,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "stayontop_off",
+      "hits": 4,
+      "best": {
+        "top": 0,
+        "x": -21
+      },
+      "abs": {
+        "x": -21,
+        "y": 0,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "stayontop_on",
+      "hits": 1,
+      "best": {
+        "top": 16,
+        "x": -21
+      },
+      "abs": {
+        "x": -21,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "stayontop_rev",
+      "hits": 1,
+      "best": {
+        "top": 16,
+        "x": -21
+      },
+      "abs": {
+        "x": -21,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "stopdeactive_chk",
+      "hits": 1,
+      "best": {
+        "x": -21
+      },
+      "abs": {
+        "x": -21,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "stopdeactive_off",
+      "hits": 1,
+      "best": {
+        "x": -21
+      },
+      "abs": {
+        "x": -21,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "stopdeactive_on",
+      "hits": 1,
+      "best": {
+        "x": -21
+      },
+      "abs": {
+        "x": -21,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "stopdeactive_rev",
+      "hits": 1,
+      "best": {
+        "x": -21
+      },
+      "abs": {
+        "x": -21,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "storage",
+      "hits": 177,
+      "best": {
+        "cx": 5,
+        "cw": 463,
+        "ch": 261,
+        "ox": 38,
+        "oy": 327,
+        "x": 0,
+        "y": 5,
+        "w": 54,
+        "h": 78,
+        "cy": 12,
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "height": 5
+      },
+      "abs": {
+        "x": 0,
+        "y": 5,
+        "w": 136,
+        "h": 5
+      },
+      "formula": {
+        "x": 927,
+        "y": 225
+      }
+    },
+    {
+      "layer_id": "storagex",
+      "hits": 1,
+      "best": {
+        "storagey": 34,
+        "width": 136,
+        "ox": 38,
+        "oy": 38,
+        "x": 38,
+        "y": 34,
+        "w": 136,
+        "h": 69
+      },
+      "abs": {
+        "x": 38,
+        "y": 34,
+        "w": 136,
+        "h": 69
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "storagey",
+      "hits": 1,
+      "best": {
+        "width": 136,
+        "ox": 38,
+        "oy": 38,
+        "x": 38,
+        "y": 38,
+        "w": 136,
+        "h": 69
+      },
+      "abs": {
+        "x": 38,
+        "y": 38,
+        "w": 136,
+        "h": 69
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "subref",
+      "hits": 12,
+      "best": {
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "ox": 216,
+        "oy": 75,
+        "x": 0,
+        "y": 75,
+        "w": 136,
+        "h": 216
+      },
+      "abs": {
+        "x": 0,
+        "y": 75,
+        "w": 136,
+        "h": 216
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "sysvo_mute",
+      "hits": 1,
+      "best": {
+        "top": 16
+      },
+      "abs": {
+        "x": null,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "sysvo_off",
+      "hits": 1,
+      "best": {
+        "top": 16
+      },
+      "abs": {
+        "x": null,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "sysvo_on",
+      "hits": 1,
+      "best": {
+        "top": 16
+      },
+      "abs": {
+        "x": null,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "sysvo_play",
+      "hits": 2,
+      "best": {
+        "top": 16,
+        "ox": 3212,
+        "oy": 3212,
+        "x": 3212,
+        "y": 3212
+      },
+      "abs": {
+        "x": 3212,
+        "y": 16,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "sysvo_slider",
+      "hits": 4,
+      "best": {
+        "top": 16,
+        "ox": 3212,
+        "oy": 3212,
+        "x": 3212,
+        "y": 3212,
+        "h": 10
+      },
+      "abs": {
+        "x": 3212,
+        "y": 16,
+        "w": null,
+        "h": 10
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "sysvo_test",
+      "hits": 4,
+      "best": {
+        "top": 16,
+        "ox": 10,
+        "oy": 71,
+        "x": 10,
+        "y": 71,
+        "h": 10
+      },
+      "abs": {
+        "x": 10,
+        "y": 16,
+        "w": null,
+        "h": 10
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "target",
+      "hits": 22,
+      "best": {
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "ox": 67,
+        "oy": 5,
+        "x": 0,
+        "y": 45,
+        "w": 10,
+        "h": 216,
+        "height": 5
+      },
+      "abs": {
+        "x": 0,
+        "y": 45,
+        "w": 136,
+        "h": 5
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "text",
+      "hits": 1,
+      "best": {
+        "ox": 690,
+        "oy": 690,
+        "x": 690,
+        "y": 690
+      },
+      "abs": {
+        "x": 690,
+        "y": 690,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "textspeed",
+      "hits": 3,
+      "best": {
+        "ox": 10,
+        "oy": 71,
+        "x": 10,
+        "y": 71,
+        "h": 10
+      },
+      "abs": {
+        "x": 10,
+        "y": 71,
+        "w": null,
+        "h": 10
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "textspeed_numbase",
+      "hits": 3,
+      "best": {
+        "ox": 244,
+        "oy": 201,
+        "x": 244,
+        "y": 201,
+        "h": 244,
+        "cy": 51
+      },
+      "abs": {
+        "x": 244,
+        "y": 201,
+        "w": null,
+        "h": 244
+      },
+      "formula": {
+        "x": null,
+        "y": 390
+      }
+    },
+    {
+      "layer_id": "textspeed_slider",
+      "hits": 3,
+      "best": {
+        "cx": 224,
+        "cy": 51,
+        "ox": 479,
+        "oy": 479,
+        "x": 224,
+        "y": 51,
+        "h": 51,
+        "ch": 380
+      },
+      "abs": {
+        "x": 224,
+        "y": 51,
+        "w": null,
+        "h": 380
+      },
+      "formula": {
+        "x": 705,
+        "y": 112
+      }
+    },
+    {
+      "layer_id": "textspeed_value",
+      "hits": 3,
+      "best": {
+        "ox": 217,
+        "oy": 146,
+        "x": 0,
+        "y": 146,
+        "h": 151
+      },
+      "abs": {
+        "x": 0,
+        "y": 146,
+        "w": null,
+        "h": 151
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "title",
+      "hits": 4,
+      "best": {
+        "x": 0,
+        "ox": 75,
+        "oy": 75,
+        "y": 75,
+        "h": 151
+      },
+      "abs": {
+        "x": 0,
+        "y": 75,
+        "w": null,
+        "h": 151
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "toggle",
+      "hits": 6,
+      "best": {
+        "ox": 114,
+        "oy": 3374,
+        "x": 114,
+        "y": 3374,
+        "h": 114,
+        "w": 54
+      },
+      "abs": {
+        "x": 114,
+        "y": 3374,
+        "w": 54,
+        "h": 114
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "uiname",
+      "hits": 117,
+      "best": {
+        "cx": 147,
+        "cw": 1180,
+        "ch": 1180,
+        "ox": 38,
+        "oy": 71,
+        "x": 0,
+        "y": 31,
+        "w": 136,
+        "h": 216,
+        "cy": 12,
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "height": 5,
+        "top": 0
+      },
+      "abs": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 5
+      },
+      "formula": {
+        "x": 1069,
+        "y": 481
+      }
+    },
+    {
+      "layer_id": "uistates",
+      "hits": 119,
+      "best": {
+        "cx": 147,
+        "cw": 1180,
+        "ch": 1180,
+        "ox": 38,
+        "oy": 71,
+        "x": 0,
+        "y": 45,
+        "w": 136,
+        "h": 216,
+        "cy": 12,
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "height": 5,
+        "top": 0
+      },
+      "abs": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 5
+      },
+      "formula": {
+        "x": 1069,
+        "y": 481
+      }
+    },
+    {
+      "layer_id": "visible",
+      "hits": 2,
+      "best": {
+        "ox": 47,
+        "oy": 127,
+        "x": 47,
+        "y": 216,
+        "h": 47
+      },
+      "abs": {
+        "x": 47,
+        "y": 216,
+        "w": null,
+        "h": 47
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "voice",
+      "hits": 3,
+      "best": {
+        "ox": 75,
+        "oy": 75,
+        "x": 75,
+        "y": 75,
+        "h": 151
+      },
+      "abs": {
+        "x": 75,
+        "y": 75,
+        "w": null,
+        "h": 151
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "voice_mute",
+      "hits": 3,
+      "best": {
+        "ox": 78,
+        "oy": 176,
+        "x": 78,
+        "y": 176,
+        "h": 78
+      },
+      "abs": {
+        "x": 78,
+        "y": 176,
+        "w": null,
+        "h": 78
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "voice_numbase",
+      "hits": 3,
+      "best": {
+        "ox": 131,
+        "oy": 223,
+        "x": 131,
+        "y": 223,
+        "h": 131
+      },
+      "abs": {
+        "x": 131,
+        "y": 223,
+        "w": null,
+        "h": 131
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "voice_on",
+      "hits": 2,
+      "best": {
+        "ox": 272,
+        "oy": 272,
+        "x": 272,
+        "y": 272
+      },
+      "abs": {
+        "x": 272,
+        "y": 272,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "voice_play",
+      "hits": 3,
+      "best": {
+        "ox": 272,
+        "oy": 272,
+        "x": 272,
+        "y": 272,
+        "cx": 232,
+        "cy": 232,
+        "h": 1349
+      },
+      "abs": {
+        "x": 272,
+        "y": 272,
+        "w": null,
+        "h": 1349
+      },
+      "formula": {
+        "x": 920,
+        "y": 500
+      }
+    },
+    {
+      "layer_id": "voice_slider",
+      "hits": 3,
+      "best": {
+        "cx": 232,
+        "cy": 232,
+        "ox": 272,
+        "oy": 272,
+        "x": 232,
+        "y": 232,
+        "h": 1349,
+        "ch": 450
+      },
+      "abs": {
+        "x": 232,
+        "y": 232,
+        "w": null,
+        "h": 450
+      },
+      "formula": {
+        "x": 920,
+        "y": 500
+      }
+    },
+    {
+      "layer_id": "voice_test",
+      "hits": 3,
+      "best": {
+        "ox": 31,
+        "oy": 108,
+        "x": 31,
+        "y": 31,
+        "h": 78
+      },
+      "abs": {
+        "x": 31,
+        "y": 31,
+        "w": null,
+        "h": 78
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "voice_value",
+      "hits": 3,
+      "best": {
+        "ox": 31,
+        "oy": 108,
+        "x": 31,
+        "y": 31,
+        "h": 78
+      },
+      "abs": {
+        "x": 31,
+        "y": 31,
+        "w": null,
+        "h": 78
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "wave",
+      "hits": 4,
+      "best": {
+        "ox": 78,
+        "oy": 136,
+        "x": 78,
+        "y": 136,
+        "h": 78
+      },
+      "abs": {
+        "x": 78,
+        "y": 136,
+        "w": null,
+        "h": 78
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "wave_mute",
+      "hits": 3,
+      "best": {
+        "ox": 241,
+        "oy": 233,
+        "x": 241,
+        "y": 233,
+        "h": 241
+      },
+      "abs": {
+        "x": 241,
+        "y": 233,
+        "w": null,
+        "h": 241
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "wave_numbase",
+      "hits": 3,
+      "best": {
+        "ox": 236,
+        "oy": 79,
+        "x": 236,
+        "y": 79,
+        "h": 236
+      },
+      "abs": {
+        "x": 236,
+        "y": 79,
+        "w": null,
+        "h": 236
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "wave_on",
+      "hits": 2,
+      "best": {
+        "ox": 498,
+        "oy": 498,
+        "x": 498,
+        "y": 498
+      },
+      "abs": {
+        "x": 498,
+        "y": 498,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "wave_play",
+      "hits": 3,
+      "best": {
+        "ox": 498,
+        "oy": 498,
+        "x": 498,
+        "y": 498,
+        "cx": 190,
+        "cy": 190,
+        "h": 1336
+      },
+      "abs": {
+        "x": 498,
+        "y": 498,
+        "w": null,
+        "h": 1336
+      },
+      "formula": {
+        "x": 652,
+        "y": 232
+      }
+    },
+    {
+      "layer_id": "wave_slider",
+      "hits": 3,
+      "best": {
+        "cx": 190,
+        "cy": 190,
+        "ox": 498,
+        "oy": 498,
+        "x": 190,
+        "y": 190,
+        "h": 1336,
+        "ch": 423
+      },
+      "abs": {
+        "x": 190,
+        "y": 190,
+        "w": null,
+        "h": 423
+      },
+      "formula": {
+        "x": 652,
+        "y": 232
+      }
+    },
+    {
+      "layer_id": "wave_test",
+      "hits": 3,
+      "best": {
+        "ox": 70,
+        "oy": 244,
+        "x": 70,
+        "y": 70
+      },
+      "abs": {
+        "x": 70,
+        "y": 70,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "wave_value",
+      "hits": 3,
+      "best": {
+        "ox": 70,
+        "oy": 244,
+        "x": 70,
+        "y": 70
+      },
+      "abs": {
+        "x": 70,
+        "y": 70,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "width",
+      "hits": 72,
+      "best": {
+        "ox": 38,
+        "oy": 64,
+        "x": 0,
+        "y": 127,
+        "h": 216,
+        "cx": 103,
+        "cy": 122,
+        "storagex": 117,
+        "storagey": 34,
+        "width": 136,
+        "w": 136,
+        "ch": 9,
+        "height": 5,
+        "cw": 1032
+      },
+      "abs": {
+        "x": 0,
+        "y": 127,
+        "w": 136,
+        "h": 5
+      },
+      "formula": {
+        "x": 1025,
+        "y": 598
+      }
+    }
+  ]
+}

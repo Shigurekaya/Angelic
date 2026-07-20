@@ -1,0 +1,1346 @@
+{
+  "stem": "option_3game2",
+  "stats": {
+    "stem": "option_3game2",
+    "pbd_bytes": 69228,
+    "layers": 175,
+    "bindings": 30,
+    "clusters": 108,
+    "placeable": 4,
+    "storage_hits": 37,
+    "bind_cmds_sample": [
+      "setBasicOptionValue/skipst/0",
+      "setBasicOptionValue/txv_novo/0",
+      "setBasicOptionValue/txv_other/0",
+      "setBasicOptionValue/txv_voice/0",
+      "setBasicOptionValue/skipst/1",
+      "setBasicOptionValue/txv_novo/1",
+      "setBasicOptionValue/txv_other/1",
+      "setBasicOptionValue/txv_voice/1",
+      "setBasicOptionValue/skipst/2",
+      "setBasicOptionValue/txv_novo/2",
+      "setBasicOptionValue/txv_other/2",
+      "setBasicOptionValue/txv_voice/2",
+      "changeBasicSlider",
+      "setBasicOptionValue/dramatic/off",
+      "setBasicOptionValue/movierclick/off",
+      "setBasicOptionValue/movieskip/off",
+      "setBasicOptionValue/vspeedsync/off",
+      "onSpeedSliderChange",
+      "onSpeedSliderChange",
+      "onSpeedSliderChange",
+      "onSpeedSliderChange",
+      "onSpeedSliderChange",
+      "setBasicOptionValue/dramatic/on",
+      "setBasicOptionValue/movierclick/on",
+      "setBasicOptionValue/movieskip/on",
+      "setBasicOptionValue/vspeedsync/on",
+      "reset",
+      "setSnapshotSilent/false",
+      "setSnapshotSilent/true",
+      "showSnapshotDetail",
+      "toggleSpeechEnabled",
+      "setBasicOptionValue/dramatic/toggle",
+      "setBasicOptionValue/dramatic/toggle",
+      "setBasicOptionValue/movierclick/toggle",
+      "setBasicOptionValue/movierclick/toggle",
+      "setBasicOptionValue/movieskip/toggle",
+      "setBasicOptionValue/movieskip/toggle",
+      "setBasicOptionValue/vspeedsync/toggle",
+      "setBasicOptionValue/vspeedsync/toggle"
+    ],
+    "bind_cmd_count": 39,
+    "id_prefixes": [
+      [
+        "config",
+        22
+      ],
+      [
+        "txv",
+        12
+      ],
+      [
+        "label",
+        11
+      ],
+      [
+        "common",
+        6
+      ],
+      [
+        "dramatic",
+        5
+      ],
+      [
+        "movieskip",
+        5
+      ],
+      [
+        "movierclick",
+        5
+      ],
+      [
+        "vspeedsync",
+        5
+      ],
+      [
+        "skipst",
+        4
+      ],
+      [
+        "vspeed",
+        4
+      ],
+      [
+        "skipspeed",
+        4
+      ],
+      [
+        "drawspeed",
+        4
+      ],
+      [
+        "snapsilent",
+        3
+      ],
+      [
+        "normal",
+        3
+      ],
+      [
+        "option",
+        3
+      ],
+      [
+        "sep",
+        2
+      ],
+      [
+        "over",
+        2
+      ],
+      [
+        "min",
+        1
+      ],
+      [
+        "max",
+        1
+      ],
+      [
+        "sename",
+        1
+      ]
+    ],
+    "layer_ids_sample": [
+      "min",
+      "max",
+      "sename",
+      "title",
+      "overlay",
+      "caption",
+      "page8",
+      "page7",
+      "sep_a",
+      "target",
+      "helpbase",
+      "page6",
+      "visible",
+      "page3",
+      "reset",
+      "page0",
+      "snapdetail",
+      "page1",
+      "page4",
+      "page2",
+      "page5",
+      "skipst_2",
+      "vspeed_slider",
+      "skipst",
+      "copy",
+      "dramatic_chk",
+      "movieskip",
+      "skipspeed_numbase",
+      "movierclick",
+      "uiname",
+      "drawspeed_numbase",
+      "page9",
+      "vspeed_numbase",
+      "base",
+      "layer",
+      "back",
+      "skipst_0",
+      "txv_novo_2",
+      "txv_novo",
+      "use_speech",
+      "helptext",
+      "txv_voice",
+      "skipst_1",
+      "label_d",
+      "txv_other_2",
+      "txv_voice_2",
+      "movieskip_off",
+      "skipspeed_slider",
+      "drawspeed_slider",
+      "txv_novo_0",
+      "label_g",
+      "snapsilent_off",
+      "label_g2",
+      "txv_novo_1",
+      "snapsilent",
+      "txv_other_1",
+      "label_g3",
+      "txv_voice_1",
+      "vspeedsync_rev",
+      "movierclick_off"
+    ],
+    "placeable_with_formula": [],
+    "storage_with_formula": [
+      {
+        "geo": {
+          "ch": 212531,
+          "cw": 1262,
+          "cx": 175,
+          "cy": 237,
+          "h": 212675,
+          "ox": 45,
+          "oy": 30,
+          "storage": "option__pack",
+          "w": 1061,
+          "width": 1026,
+          "x": 23019,
+          "y": 32154,
+          "height": 212509
+        },
+        "formula": {
+          "x": 1090,
+          "y": 747
+        }
+      },
+      {
+        "geo": {
+          "ch": 212651,
+          "cw": 1279,
+          "cx": 23,
+          "cy": 239,
+          "h": 212723,
+          "ox": 213,
+          "oy": 255,
+          "storage": "option__pack",
+          "w": 1175,
+          "width": 1156,
+          "x": 253067,
+          "y": 32038,
+          "height": 13899
+        },
+        "formula": {
+          "x": 770,
+          "y": 524
+        }
+      }
+    ]
+  },
+  "placeable": [
+    {
+      "id": "base",
+      "geo": {
+        "width": 41,
+        "height": 146,
+        "storagex": 68
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "f",
+      "geo": {
+        "x": 202,
+        "width": 5
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "option__bg0",
+      "geo": {
+        "storagex": 68
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "width",
+      "geo": {
+        "x": 124
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "storage": [
+    {
+      "geo": {
+        "h": 14940,
+        "ox": 206,
+        "oy": 171,
+        "w": 80646,
+        "ch": 14851,
+        "cw": 80649,
+        "cx": 27148,
+        "cy": 98312,
+        "storage": "option__pack",
+        "width": 80728,
+        "x": 404860,
+        "y": 253247
+      },
+      "formula": {
+        "x": 27902,
+        "y": 98681
+      }
+    },
+    {
+      "geo": {
+        "width": 80782,
+        "x": 404922,
+        "y": 253295,
+        "height": 276626,
+        "storage": "option__bg0",
+        "storagex": 68,
+        "storagey": 237
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "geo": {
+        "ch": 11058,
+        "cw": 75707,
+        "cx": 27383,
+        "cy": 128189,
+        "h": 11105,
+        "ox": 116,
+        "oy": 187,
+        "storage": "option__pack",
+        "w": 75667,
+        "width": 75594,
+        "x": 22365,
+        "y": 5094
+      },
+      "formula": {
+        "x": 28227,
+        "y": 128542
+      }
+    },
+    {
+      "geo": {
+        "ch": 8799,
+        "cw": 8881,
+        "cx": 107989,
+        "cy": 98345,
+        "h": 8953,
+        "ox": 154,
+        "oy": 241,
+        "storage": "option__pack",
+        "w": 8787,
+        "width": 100831,
+        "x": 264129,
+        "y": 159353
+      },
+      "formula": {
+        "x": 108795,
+        "y": 98644
+      }
+    },
+    {
+      "geo": {
+        "ch": 7585,
+        "cw": 19014,
+        "cx": 115905,
+        "cy": 201021,
+        "h": 7670,
+        "ox": 169,
+        "oy": 249,
+        "storage": "option__pack",
+        "w": 18975,
+        "width": 18967,
+        "x": 219153,
+        "y": 50995,
+        "height": 13934
+      },
+      "formula": {
+        "x": 116696,
+        "y": 201312
+      }
+    },
+    {
+      "geo": {
+        "ch": 12994,
+        "cw": 13090,
+        "cx": 74545,
+        "cy": 181903,
+        "h": 13307,
+        "ox": 4789,
+        "oy": 310,
+        "storage": "option__pack",
+        "w": 13027,
+        "width": 158743,
+        "x": 50932,
+        "y": 47914,
+        "height": 7541
+      },
+      "formula": {
+        "x": 70716,
+        "y": 182133
+      }
+    },
+    {
+      "geo": {
+        "ch": 187229,
+        "cw": 19788,
+        "cx": 2213,
+        "cy": 7,
+        "h": 19925,
+        "ox": 39,
+        "oy": 42,
+        "storage": "option__pack",
+        "w": 187187,
+        "width": 187315,
+        "x": 7154,
+        "y": 250674,
+        "height": 19876
+      },
+      "formula": {
+        "x": 3134,
+        "y": 505
+      }
+    },
+    {
+      "geo": {
+        "ch": 1874,
+        "cw": 5817,
+        "cx": 121951,
+        "cy": 75842,
+        "h": 5767,
+        "ox": 113,
+        "oy": 1471,
+        "storage": "option__pack",
+        "w": 1974,
+        "width": 126395,
+        "x": 263697,
+        "y": 51470,
+        "height": 8417
+      },
+      "formula": {
+        "x": 122798,
+        "y": 74911
+      }
+    },
+    {
+      "geo": {
+        "ch": 5767,
+        "cw": 2018,
+        "cx": 130962,
+        "cy": 67341,
+        "h": 5675,
+        "ox": 157,
+        "oy": 1433,
+        "storage": "option__pack",
+        "w": 1864,
+        "width": 126331,
+        "x": 263695,
+        "y": 89826,
+        "height": 8258
+      },
+      "formula": {
+        "x": 131765,
+        "y": 66448
+      }
+    },
+    {
+      "geo": {
+        "ch": 5878,
+        "cw": 1800,
+        "cx": 129210,
+        "cy": 67511,
+        "h": 5817,
+        "ox": 102,
+        "oy": 1461,
+        "storage": "option__pack",
+        "w": 1996,
+        "width": 126266,
+        "x": 263764,
+        "y": 127788,
+        "height": 8439
+      },
+      "formula": {
+        "x": 130068,
+        "y": 66590
+      }
+    },
+    {
+      "geo": {
+        "h": 13016,
+        "opacity": 32933,
+        "ox": 25,
+        "oy": 113,
+        "w": 97455,
+        "ch": 12948,
+        "cw": 97392,
+        "cx": 27146,
+        "cy": 178,
+        "storage": "option__pack",
+        "width": 97310,
+        "x": 140968,
+        "y": 189435
+      },
+      "formula": {
+        "x": 28081,
+        "y": 605
+      }
+    },
+    {
+      "geo": {
+        "h": 12833,
+        "opacity": 32853,
+        "ox": 188,
+        "oy": 203,
+        "w": 97517,
+        "ch": 12999,
+        "cw": 97513,
+        "cx": 27138,
+        "cy": 73,
+        "storage": "option__pack",
+        "width": 97418,
+        "x": 33485,
+        "y": 189213
+      },
+      "formula": {
+        "x": 27910,
+        "y": 410
+      }
+    },
+    {
+      "geo": {
+        "h": 12806,
+        "opacity": 32980,
+        "ox": 159,
+        "oy": 134,
+        "w": 97360,
+        "ch": 13044,
+        "cw": 97309,
+        "cx": 27233,
+        "cy": 113,
+        "storage": "option__pack",
+        "width": 97521,
+        "x": 140839,
+        "y": 224580
+      },
+      "formula": {
+        "x": 28034,
+        "y": 519
+      }
+    },
+    {
+      "geo": {
+        "h": 12980,
+        "opacity": 32788,
+        "ox": 144,
+        "oy": 88,
+        "w": 97494,
+        "ch": 12944,
+        "cw": 97531,
+        "cx": 27266,
+        "cy": 39,
+        "storage": "option__pack",
+        "width": 97370,
+        "x": 33294,
+        "y": 224626
+      },
+      "formula": {
+        "x": 28082,
+        "y": 491
+      }
+    },
+    {
+      "geo": {
+        "ch": 212531,
+        "cw": 1262,
+        "cx": 175,
+        "cy": 237,
+        "h": 212675,
+        "ox": 45,
+        "oy": 30,
+        "storage": "option__pack",
+        "w": 1061,
+        "width": 1026,
+        "x": 23019,
+        "y": 32154,
+        "height": 212509
+      },
+      "formula": {
+        "x": 1090,
+        "y": 747
+      }
+    },
+    {
+      "geo": {
+        "ch": 212651,
+        "cw": 1279,
+        "cx": 23,
+        "cy": 239,
+        "h": 212723,
+        "ox": 213,
+        "oy": 255,
+        "storage": "option__pack",
+        "w": 1175,
+        "width": 1156,
+        "x": 253067,
+        "y": 32038,
+        "height": 13899
+      },
+      "formula": {
+        "x": 770,
+        "y": 524
+      }
+    },
+    {
+      "geo": {
+        "ch": 7665,
+        "cw": 19063,
+        "cx": 115898,
+        "cy": 201150,
+        "h": 7476,
+        "ox": 250,
+        "oy": 33,
+        "storage": "option__pack",
+        "w": 19066,
+        "width": 18965,
+        "x": 219294,
+        "y": 121607,
+        "height": 13955
+      },
+      "formula": {
+        "x": 116608,
+        "y": 201657
+      }
+    },
+    {
+      "geo": {
+        "ch": 12967,
+        "cw": 13116,
+        "cx": 74509,
+        "cy": 181843,
+        "h": 13087,
+        "ox": 4619,
+        "oy": 504,
+        "storage": "option__pack",
+        "w": 12994,
+        "width": 158914,
+        "x": 50848,
+        "y": 118713,
+        "height": 7647
+      },
+      "formula": {
+        "x": 70850,
+        "y": 181879
+      }
+    },
+    {
+      "geo": {
+        "h": 12924,
+        "opacity": 32828,
+        "ox": 224,
+        "oy": 124,
+        "w": 62994,
+        "ch": 13023,
+        "cw": 63219,
+        "cx": 27224,
+        "cy": 143409,
+        "storage": "option__pack",
+        "width": 62980,
+        "x": 33291,
+        "y": 154019
+      },
+      "formula": {
+        "x": 27960,
+        "y": 143825
+      }
+    },
+    {
+      "geo": {
+        "h": 12904,
+        "opacity": 32770,
+        "ox": 203,
+        "oy": 111,
+        "w": 63031,
+        "ch": 12860,
+        "cw": 63072,
+        "cx": 27367,
+        "cy": 143549,
+        "storage": "option__pack",
+        "width": 63177,
+        "x": 104257,
+        "y": 153964
+      },
+      "formula": {
+        "x": 28124,
+        "y": 143978
+      }
+    },
+    {
+      "geo": {
+        "h": 12951,
+        "opacity": 32917,
+        "ox": 212,
+        "oy": 114,
+        "w": 63137,
+        "ch": 12907,
+        "cw": 63106,
+        "cx": 27384,
+        "cy": 143455,
+        "storage": "option__pack",
+        "width": 63126,
+        "x": 175286,
+        "y": 154006
+      },
+      "formula": {
+        "x": 28132,
+        "y": 143881
+      }
+    },
+    {
+      "geo": {
+        "h": 12983,
+        "opacity": 32951,
+        "ox": 37,
+        "oy": 254,
+        "w": 63061,
+        "ch": 12822,
+        "cw": 63212,
+        "cx": 27153,
+        "cy": 143400,
+        "storage": "option__pack",
+        "width": 63124,
+        "x": 405603,
+        "y": 189280,
+        "height": 12999
+      },
+      "formula": {
+        "x": 28076,
+        "y": 143686
+      }
+    },
+    {
+      "geo": {
+        "h": 12918,
+        "opacity": 32863,
+        "ox": 26,
+        "oy": 135,
+        "w": 63056,
+        "ch": 12890,
+        "cw": 63142,
+        "cx": 27336,
+        "cy": 143416,
+        "storage": "option__pack",
+        "width": 63122,
+        "x": 334732,
+        "y": 189285
+      },
+      "formula": {
+        "x": 28270,
+        "y": 143821
+      }
+    },
+    {
+      "geo": {
+        "h": 12994,
+        "opacity": 32966,
+        "ox": 23,
+        "oy": 81,
+        "w": 63017,
+        "ch": 13047,
+        "cw": 63121,
+        "cx": 27368,
+        "cy": 143596,
+        "storage": "option__pack",
+        "width": 63047,
+        "x": 263853,
+        "y": 189363
+      },
+      "formula": {
+        "x": 28305,
+        "y": 144055
+      }
+    },
+    {
+      "geo": {
+        "h": 12876,
+        "opacity": 32865,
+        "ox": 4,
+        "oy": 214,
+        "w": 63083,
+        "ch": 12967,
+        "cw": 62987,
+        "cx": 27178,
+        "cy": 143553,
+        "storage": "option__pack",
+        "width": 63075,
+        "x": 263914,
+        "y": 102422
+      },
+      "formula": {
+        "x": 28134,
+        "y": 143879
+      }
+    },
+    {
+      "geo": {
+        "h": 12897,
+        "opacity": 32887,
+        "ox": 10,
+        "oy": 173,
+        "w": 63039,
+        "ch": 12989,
+        "cw": 63209,
+        "cx": 27310,
+        "cy": 143482,
+        "storage": "option__pack",
+        "width": 63037,
+        "x": 334646,
+        "y": 102610
+      },
+      "formula": {
+        "x": 28260,
+        "y": 143849
+      }
+    },
+    {
+      "geo": {
+        "h": 13040,
+        "opacity": 32813,
+        "ox": 62,
+        "oy": 41,
+        "w": 62995,
+        "ch": 12939,
+        "cw": 63150,
+        "cx": 27141,
+        "cy": 143516,
+        "storage": "option__pack",
+        "width": 63027,
+        "x": 405575,
+        "y": 102505,
+        "height": 12891
+      },
+      "formula": {
+        "x": 28039,
+        "y": 144015
+      }
+    },
+    {
+      "geo": {
+        "h": 12803,
+        "opacity": 32772,
+        "ox": 15,
+        "oy": 11,
+        "w": 62999,
+        "ch": 12803,
+        "cw": 63035,
+        "cx": 27172,
+        "cy": 143397,
+        "storage": "option__pack",
+        "width": 63141,
+        "x": 263750,
+        "y": 140629
+      },
+      "formula": {
+        "x": 28117,
+        "y": 143926
+      }
+    },
+    {
+      "geo": {
+        "h": 12930,
+        "opacity": 32770,
+        "ox": 132,
+        "oy": 22,
+        "w": 63128,
+        "ch": 12945,
+        "cw": 63022,
+        "cx": 27389,
+        "cy": 143444,
+        "storage": "option__pack",
+        "width": 63203,
+        "x": 334819,
+        "y": 140750
+      },
+      "formula": {
+        "x": 28217,
+        "y": 143962
+      }
+    },
+    {
+      "geo": {
+        "h": 12807,
+        "opacity": 32934,
+        "ox": 59,
+        "oy": 53,
+        "w": 63114,
+        "ch": 12991,
+        "cw": 63026,
+        "cx": 27260,
+        "cy": 143540,
+        "storage": "option__pack",
+        "width": 63121,
+        "x": 405523,
+        "y": 140636,
+        "height": 12851
+      },
+      "formula": {
+        "x": 28161,
+        "y": 144027
+      }
+    },
+    {
+      "geo": {
+        "h": 12942,
+        "opacity": 32777,
+        "ox": 129,
+        "oy": 7,
+        "w": 63128,
+        "ch": 12983,
+        "cw": 62988,
+        "cx": 27279,
+        "cy": 143425,
+        "storage": "option__pack",
+        "width": 63194,
+        "x": 263755,
+        "y": 64336
+      },
+      "formula": {
+        "x": 28110,
+        "y": 143958
+      }
+    },
+    {
+      "geo": {
+        "h": 12831,
+        "opacity": 32895,
+        "ox": 253,
+        "oy": 194,
+        "w": 63059,
+        "ch": 13048,
+        "cw": 62997,
+        "cx": 27185,
+        "cy": 143423,
+        "storage": "option__pack",
+        "width": 63039,
+        "x": 334759,
+        "y": 64332
+      },
+      "formula": {
+        "x": 27892,
+        "y": 143769
+      }
+    },
+    {
+      "geo": {
+        "h": 12984,
+        "opacity": 33010,
+        "ox": 58,
+        "oy": 243,
+        "w": 63144,
+        "ch": 12976,
+        "cw": 63065,
+        "cx": 27309,
+        "cy": 143470,
+        "storage": "option__pack",
+        "width": 63008,
+        "x": 405713,
+        "y": 64473
+      },
+      "formula": {
+        "x": 28211,
+        "y": 143767
+      }
+    },
+    {
+      "geo": {
+        "ch": 8807,
+        "cw": 8826,
+        "cx": 107885,
+        "cy": 98508,
+        "h": 8799,
+        "ox": 230,
+        "oy": 172,
+        "storage": "option__pack",
+        "w": 8831,
+        "width": 100685,
+        "x": 384877,
+        "y": 34889,
+        "height": 14058
+      },
+      "formula": {
+        "x": 108615,
+        "y": 98876
+      }
+    },
+    {
+      "geo": {
+        "ch": 7425,
+        "cw": 19074,
+        "cx": 115861,
+        "cy": 201092,
+        "h": 7446,
+        "ox": 174,
+        "oy": 51,
+        "storage": "option__pack",
+        "w": 19194,
+        "width": 19122,
+        "x": 219318,
+        "y": 86446,
+        "height": 13912
+      },
+      "formula": {
+        "x": 116647,
+        "y": 201581
+      }
+    },
+    {
+      "geo": {
+        "ch": 12902,
+        "cw": 13309,
+        "cx": 74682,
+        "cy": 181825,
+        "h": 13134,
+        "ox": 4751,
+        "oy": 347,
+        "storage": "option__pack",
+        "w": 12801,
+        "width": 158752,
+        "x": 50856,
+        "y": 83277,
+        "height": 7446
+      },
+      "formula": {
+        "x": 70891,
+        "y": 182018
+      }
+    },
+    {
+      "geo": {
+        "ch": 8957,
+        "cw": 8842,
+        "cx": 107809,
+        "cy": 98338,
+        "h": 8892,
+        "ox": 203,
+        "oy": 183,
+        "storage": "option__pack",
+        "w": 8752,
+        "width": 100626,
+        "x": 108811,
+        "y": 70364
+      },
+      "formula": {
+        "x": 108566,
+        "y": 98695
+      }
+    }
+  ],
+  "binds": [
+    {
+      "layer_id": "0_skipst",
+      "bindings": [
+        "setBasicOptionValue/skipst/0"
+      ],
+      "properties": {
+        "h": 20811
+      }
+    },
+    {
+      "layer_id": "0_txv_novo",
+      "bindings": [
+        "setBasicOptionValue/txv_novo/0"
+      ],
+      "properties": {
+        "height": 27
+      }
+    },
+    {
+      "layer_id": "0_txv_other",
+      "bindings": [
+        "setBasicOptionValue/txv_other/0"
+      ],
+      "properties": {
+        "w": 85
+      }
+    },
+    {
+      "layer_id": "0_txv_voice",
+      "bindings": [
+        "setBasicOptionValue/txv_voice/0"
+      ],
+      "properties": {
+        "height": 122
+      }
+    },
+    {
+      "layer_id": "1_skipst",
+      "bindings": [
+        "setBasicOptionValue/skipst/1"
+      ],
+      "properties": {
+        "h": 20919
+      }
+    },
+    {
+      "layer_id": "1_txv_novo",
+      "bindings": [
+        "setBasicOptionValue/txv_novo/1"
+      ],
+      "properties": {
+        "height": 67
+      }
+    },
+    {
+      "layer_id": "1_txv_other",
+      "bindings": [
+        "setBasicOptionValue/txv_other/1"
+      ],
+      "properties": {
+        "height": 133
+      }
+    },
+    {
+      "layer_id": "1_txv_voice",
+      "bindings": [
+        "setBasicOptionValue/txv_voice/1"
+      ],
+      "properties": {
+        "w": 84
+      }
+    },
+    {
+      "layer_id": "2_skipst",
+      "bindings": [
+        "setBasicOptionValue/skipst/2"
+      ],
+      "properties": {
+        "height": 79
+      }
+    },
+    {
+      "layer_id": "2_txv_novo",
+      "bindings": [
+        "setBasicOptionValue/txv_novo/2"
+      ],
+      "properties": {
+        "height": 24
+      }
+    },
+    {
+      "layer_id": "2_txv_other",
+      "bindings": [
+        "setBasicOptionValue/txv_other/2"
+      ],
+      "properties": {
+        "h": 12994
+      }
+    },
+    {
+      "layer_id": "2_txv_voice",
+      "bindings": [
+        "setBasicOptionValue/txv_voice/2"
+      ],
+      "properties": {
+        "ch": 74
+      }
+    },
+    {
+      "layer_id": "changeBasicSlider",
+      "bindings": [
+        "changeBasicSlider"
+      ],
+      "properties": {
+        "cy": 84
+      }
+    },
+    {
+      "layer_id": "off_dramatic",
+      "bindings": [
+        "setBasicOptionValue/dramatic/off"
+      ],
+      "properties": {
+        "height": 13
+      }
+    },
+    {
+      "layer_id": "off_movierclick",
+      "bindings": [
+        "setBasicOptionValue/movierclick/off"
+      ],
+      "properties": {
+        "w": 44
+      }
+    },
+    {
+      "layer_id": "off_movieskip",
+      "bindings": [
+        "setBasicOptionValue/movieskip/off"
+      ],
+      "properties": {
+        "height": 93
+      }
+    },
+    {
+      "layer_id": "off_vspeedsync",
+      "bindings": [
+        "setBasicOptionValue/vspeedsync/off"
+      ],
+      "properties": {
+        "ch": 247
+      }
+    },
+    {
+      "layer_id": "onSpeedSliderChange",
+      "bindings": [
+        "onSpeedSliderChange",
+        "onSpeedSliderChange",
+        "onSpeedSliderChange",
+        "onSpeedSliderChange",
+        "onSpeedSliderChange"
+      ],
+      "properties": {
+        "height": 13,
+        "h": 20757,
+        "ox": 1517
+      }
+    },
+    {
+      "layer_id": "on_dramatic",
+      "bindings": [
+        "setBasicOptionValue/dramatic/on"
+      ],
+      "properties": {
+        "height": 13
+      }
+    },
+    {
+      "layer_id": "on_movierclick",
+      "bindings": [
+        "setBasicOptionValue/movierclick/on"
+      ],
+      "properties": {
+        "h": 7602
+      }
+    },
+    {
+      "layer_id": "on_movieskip",
+      "bindings": [
+        "setBasicOptionValue/movieskip/on"
+      ],
+      "properties": {
+        "h": 8301
+      }
+    },
+    {
+      "layer_id": "on_vspeedsync",
+      "bindings": [
+        "setBasicOptionValue/vspeedsync/on"
+      ],
+      "properties": {
+        "w": 168
+      }
+    },
+    {
+      "layer_id": "reset",
+      "bindings": [
+        "reset"
+      ],
+      "properties": {
+        "y": 125
+      }
+    },
+    {
+      "layer_id": "setSnapshotSilent",
+      "bindings": [
+        "setSnapshotSilent/false",
+        "setSnapshotSilent/true"
+      ],
+      "properties": {
+        "ch": 241,
+        "w": 155
+      }
+    },
+    {
+      "layer_id": "showSnapshotDetail",
+      "bindings": [
+        "showSnapshotDetail"
+      ],
+      "properties": {
+        "ox": 45
+      }
+    },
+    {
+      "layer_id": "toggleSpeechEnabled",
+      "bindings": [
+        "toggleSpeechEnabled"
+      ],
+      "properties": {
+        "ch": 127
+      }
+    },
+    {
+      "layer_id": "toggle_dramatic",
+      "bindings": [
+        "setBasicOptionValue/dramatic/toggle",
+        "setBasicOptionValue/dramatic/toggle"
+      ],
+      "properties": {
+        "height": 13
+      }
+    },
+    {
+      "layer_id": "toggle_movierclick",
+      "bindings": [
+        "setBasicOptionValue/movierclick/toggle",
+        "setBasicOptionValue/movierclick/toggle"
+      ],
+      "properties": {
+        "w": 34,
+        "x": 180
+      }
+    },
+    {
+      "layer_id": "toggle_movieskip",
+      "bindings": [
+        "setBasicOptionValue/movieskip/toggle",
+        "setBasicOptionValue/movieskip/toggle"
+      ],
+      "properties": {
+        "h": 8401
+      }
+    },
+    {
+      "layer_id": "toggle_vspeedsync",
+      "bindings": [
+        "setBasicOptionValue/vspeedsync/toggle",
+        "setBasicOptionValue/vspeedsync/toggle"
+      ],
+      "properties": {
+        "h": 12983,
+        "height": 21
+      }
+    }
+  ]
+}

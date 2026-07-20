@@ -1,0 +1,2167 @@
+{
+  "source": "option",
+  "layer_count": 95,
+  "layers": [
+    {
+      "layer_id": "area",
+      "hits": 7,
+      "best": {
+        "ox": 19,
+        "oy": 34,
+        "x": 19,
+        "y": 34,
+        "h": 19,
+        "ch": 50,
+        "width": 199,
+        "w": 199
+      },
+      "abs": {
+        "x": 19,
+        "y": 34,
+        "w": 199,
+        "h": 50
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "back",
+      "hits": 6,
+      "best": {
+        "x": 58,
+        "storagex": 58,
+        "storagey": 141,
+        "width": 194,
+        "ox": 103,
+        "oy": 139,
+        "y": 1,
+        "w": 194,
+        "h": 194,
+        "cx": 65,
+        "cy": 65,
+        "cw": 1137,
+        "ch": 1137
+      },
+      "abs": {
+        "x": 58,
+        "y": 1,
+        "w": 194,
+        "h": 1137
+      },
+      "formula": {
+        "x": 922,
+        "y": 466
+      }
+    },
+    {
+      "layer_id": "base",
+      "hits": 5,
+      "best": {
+        "x": 51,
+        "storagex": 58,
+        "storagey": 141,
+        "width": 194,
+        "cx": 65,
+        "cy": 65,
+        "ox": 51,
+        "oy": 139,
+        "y": 1,
+        "w": 194,
+        "h": 51
+      },
+      "abs": {
+        "x": 51,
+        "y": 1,
+        "w": 194,
+        "h": 51
+      },
+      "formula": {
+        "x": 974,
+        "y": 466
+      }
+    },
+    {
+      "layer_id": "btn2",
+      "hits": 3,
+      "best": {
+        "cx": 65,
+        "cy": 65,
+        "ox": 51,
+        "oy": 139,
+        "x": 51,
+        "y": 65,
+        "h": 51
+      },
+      "abs": {
+        "x": 51,
+        "y": 65,
+        "w": null,
+        "h": 51
+      },
+      "formula": {
+        "x": 974,
+        "y": 466
+      }
+    },
+    {
+      "layer_id": "btn2b",
+      "hits": 3,
+      "best": {
+        "ox": 26,
+        "oy": 0,
+        "x": 26,
+        "y": 0,
+        "h": 26
+      },
+      "abs": {
+        "x": 26,
+        "y": 0,
+        "w": null,
+        "h": 26
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "btn3",
+      "hits": 3,
+      "best": {
+        "ox": 17,
+        "oy": 14,
+        "x": 17,
+        "y": 14,
+        "h": 17
+      },
+      "abs": {
+        "x": 17,
+        "y": 14,
+        "w": null,
+        "h": 17
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "btn4",
+      "hits": 3,
+      "best": {
+        "ch": 290,
+        "ox": 79,
+        "oy": 146,
+        "x": 79,
+        "y": 146,
+        "h": 79
+      },
+      "abs": {
+        "x": 79,
+        "y": 146,
+        "w": null,
+        "h": 290
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "btn4b",
+      "hits": 3,
+      "best": {
+        "ch": 326,
+        "ox": 10,
+        "oy": 51,
+        "x": 10,
+        "y": 51,
+        "h": 10
+      },
+      "abs": {
+        "x": 10,
+        "y": 51,
+        "w": null,
+        "h": 326
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "button",
+      "hits": 9,
+      "best": {
+        "ch": 290,
+        "ox": 37,
+        "oy": 146,
+        "x": 37,
+        "y": 146,
+        "h": 37,
+        "cx": 65,
+        "cy": 65
+      },
+      "abs": {
+        "x": 37,
+        "y": 146,
+        "w": null,
+        "h": 290
+      },
+      "formula": {
+        "x": 988,
+        "y": 459
+      }
+    },
+    {
+      "layer_id": "call",
+      "hits": 1,
+      "best": {
+        "x": -108
+      },
+      "abs": {
+        "x": -108,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "caption",
+      "hits": 4,
+      "best": {
+        "x": 73,
+        "ox": 73,
+        "oy": 32,
+        "y": 32,
+        "h": 73
+      },
+      "abs": {
+        "x": 73,
+        "y": 32,
+        "w": null,
+        "h": 73
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "class",
+      "hits": 49,
+      "best": {
+        "cw": 1090,
+        "ch": 50,
+        "ox": 37,
+        "oy": 139,
+        "x": 37,
+        "y": 139,
+        "w": 194,
+        "h": 41,
+        "width": 194,
+        "cx": 26,
+        "cy": 26,
+        "storagex": 58,
+        "storagey": 141
+      },
+      "abs": {
+        "x": 37,
+        "y": 139,
+        "w": 194,
+        "h": 50
+      },
+      "formula": {
+        "x": 949,
+        "y": 427
+      }
+    },
+    {
+      "layer_id": "common_back_title",
+      "hits": 1,
+      "best": {
+        "x": -19
+      },
+      "abs": {
+        "x": -19,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "common_init",
+      "hits": 1,
+      "best": {
+        "x": -149
+      },
+      "abs": {
+        "x": -149,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "copy",
+      "hits": 6,
+      "best": {
+        "storagex": 58,
+        "storagey": 141,
+        "width": 194,
+        "ox": 19,
+        "oy": 94,
+        "x": 0,
+        "y": 1,
+        "w": 194,
+        "h": 19,
+        "cx": 80,
+        "cy": 215,
+        "cw": 1137,
+        "ch": 1137
+      },
+      "abs": {
+        "x": 0,
+        "y": 1,
+        "w": 194,
+        "h": 1137
+      },
+      "formula": {
+        "x": 1021,
+        "y": 661
+      }
+    },
+    {
+      "layer_id": "cr",
+      "hits": 16,
+      "best": {
+        "cw": 1104,
+        "ch": 407,
+        "ox": 10,
+        "oy": 155,
+        "x": 10,
+        "y": 155,
+        "w": 1796,
+        "h": 10,
+        "width": 199,
+        "cx": 69,
+        "cy": 69
+      },
+      "abs": {
+        "x": 10,
+        "y": 155,
+        "w": 199,
+        "h": 407
+      },
+      "formula": {
+        "x": 1019,
+        "y": 454
+      }
+    },
+    {
+      "layer_id": "dot_on",
+      "hits": 1,
+      "best": {
+        "ch": 339,
+        "ox": 22,
+        "oy": 167,
+        "x": 22,
+        "y": 167,
+        "h": 22
+      },
+      "abs": {
+        "x": 22,
+        "y": 167,
+        "w": null,
+        "h": 339
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "dot_ov",
+      "hits": 1,
+      "best": {
+        "ch": 339,
+        "ox": 19,
+        "oy": 94,
+        "x": 19,
+        "y": 94,
+        "h": 19
+      },
+      "abs": {
+        "x": 19,
+        "y": 94,
+        "w": null,
+        "h": 339
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "exp",
+      "hits": 2,
+      "best": {
+        "ox": 19,
+        "oy": 94,
+        "x": 0,
+        "y": 94,
+        "h": 19,
+        "width": 1170,
+        "cx": 80,
+        "cy": 215,
+        "cw": 1137,
+        "ch": 1137,
+        "w": 1137
+      },
+      "abs": {
+        "x": 0,
+        "y": 94,
+        "w": 1170,
+        "h": 1137
+      },
+      "formula": {
+        "x": 1021,
+        "y": 661
+      }
+    },
+    {
+      "layer_id": "false",
+      "hits": 1,
+      "best": {
+        "ox": 113,
+        "oy": 89,
+        "x": 113,
+        "y": 89,
+        "h": 251
+      },
+      "abs": {
+        "x": 113,
+        "y": 89,
+        "w": null,
+        "h": 251
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "height",
+      "hits": 49,
+      "best": {
+        "cw": 1090,
+        "ch": 50,
+        "ox": 37,
+        "oy": 139,
+        "x": 0,
+        "y": 139,
+        "w": 194,
+        "h": 41,
+        "width": 194,
+        "cx": 65,
+        "cy": 65,
+        "storagex": 58,
+        "storagey": 141
+      },
+      "abs": {
+        "x": 0,
+        "y": 139,
+        "w": 194,
+        "h": 50
+      },
+      "formula": {
+        "x": 988,
+        "y": 466
+      }
+    },
+    {
+      "layer_id": "helpbase",
+      "hits": 4,
+      "best": {
+        "x": 113,
+        "cx": 2250,
+        "cy": 7,
+        "ch": 334,
+        "ox": 113,
+        "oy": 89,
+        "y": 7,
+        "h": 224
+      },
+      "abs": {
+        "x": 113,
+        "y": 7,
+        "w": null,
+        "h": 334
+      },
+      "formula": {
+        "x": 3097,
+        "y": 458
+      }
+    },
+    {
+      "layer_id": "helptext",
+      "hits": 4,
+      "best": {
+        "x": 113,
+        "ox": 113,
+        "oy": 89,
+        "y": 89,
+        "h": 251
+      },
+      "abs": {
+        "x": 113,
+        "y": 89,
+        "w": null,
+        "h": 251
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "holdimage",
+      "hits": 1,
+      "best": {
+        "x": -19
+      },
+      "abs": {
+        "x": -19,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "imports",
+      "hits": 1,
+      "best": {
+        "x": -19
+      },
+      "abs": {
+        "x": -19,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "index",
+      "hits": 12,
+      "best": {
+        "x": -227
+      },
+      "abs": {
+        "x": -227,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "initialize",
+      "hits": 1,
+      "best": {
+        "ch": 50,
+        "ox": 19,
+        "oy": 94,
+        "x": 19,
+        "y": 94,
+        "h": 19
+      },
+      "abs": {
+        "x": 19,
+        "y": 94,
+        "w": null,
+        "h": 50
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "knob",
+      "hits": 4,
+      "best": {
+        "cx": 69,
+        "cy": 69,
+        "ch": 50,
+        "ox": 64,
+        "oy": 69,
+        "x": 69,
+        "y": 69,
+        "h": 50
+      },
+      "abs": {
+        "x": 69,
+        "y": 69,
+        "w": null,
+        "h": 50
+      },
+      "formula": {
+        "x": 965,
+        "y": 540
+      }
+    },
+    {
+      "layer_id": "layer",
+      "hits": 26,
+      "best": {
+        "cw": 1090,
+        "ch": 1090,
+        "ox": 40,
+        "oy": 89,
+        "x": 110,
+        "y": 26,
+        "w": 1090,
+        "h": 40,
+        "width": 1123,
+        "cx": 26,
+        "cy": 26
+      },
+      "abs": {
+        "x": 110,
+        "y": 26,
+        "w": 1123,
+        "h": 1090
+      },
+      "formula": {
+        "x": 946,
+        "y": 477
+      }
+    },
+    {
+      "layer_id": "mute",
+      "hits": 5,
+      "best": {
+        "x": 251,
+        "ox": 251,
+        "oy": 190,
+        "y": 190,
+        "h": 251
+      },
+      "abs": {
+        "x": 251,
+        "y": 190,
+        "w": null,
+        "h": 251
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "mute_mute",
+      "hits": 3,
+      "best": {
+        "ox": 169,
+        "oy": 214,
+        "x": 169,
+        "y": 214,
+        "h": 169
+      },
+      "abs": {
+        "x": 169,
+        "y": 214,
+        "w": null,
+        "h": 169
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "names",
+      "hits": 1,
+      "best": {
+        "x": -19
+      },
+      "abs": {
+        "x": -19,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "normal",
+      "hits": 4,
+      "best": {
+        "cx": 69,
+        "cy": 69,
+        "ch": 50,
+        "ox": 37,
+        "oy": 84,
+        "x": 37,
+        "y": 69,
+        "h": 37
+      },
+      "abs": {
+        "x": 37,
+        "y": 69,
+        "w": null,
+        "h": 50
+      },
+      "formula": {
+        "x": 992,
+        "y": 525
+      }
+    },
+    {
+      "layer_id": "normal_off",
+      "hits": 2,
+      "best": {
+        "ox": 41,
+        "oy": 25,
+        "x": 41,
+        "y": 25,
+        "h": 41
+      },
+      "abs": {
+        "x": 41,
+        "y": 25,
+        "w": null,
+        "h": 41
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "normal_on",
+      "hits": 2,
+      "best": {
+        "ox": 41,
+        "oy": 25,
+        "x": 41,
+        "y": 25,
+        "h": 41
+      },
+      "abs": {
+        "x": 41,
+        "y": 25,
+        "w": null,
+        "h": 41
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "nosave",
+      "hits": 23,
+      "best": {
+        "ch": 474,
+        "ox": 37,
+        "oy": 146,
+        "x": 37,
+        "y": 2,
+        "h": 37,
+        "cx": 65,
+        "cy": 65,
+        "width": 199,
+        "w": 199
+      },
+      "abs": {
+        "x": 37,
+        "y": 2,
+        "w": 199,
+        "h": 474
+      },
+      "formula": {
+        "x": 988,
+        "y": 459
+      }
+    },
+    {
+      "layer_id": "num",
+      "hits": 2,
+      "best": {
+        "ox": 41,
+        "oy": 34,
+        "x": 41,
+        "y": 34,
+        "h": 41,
+        "ch": 284
+      },
+      "abs": {
+        "x": 41,
+        "y": 34,
+        "w": null,
+        "h": 284
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "num_l",
+      "hits": 4,
+      "best": {
+        "x": 62,
+        "ox": 62,
+        "oy": 163,
+        "y": 62,
+        "h": 216
+      },
+      "abs": {
+        "x": 62,
+        "y": 62,
+        "w": null,
+        "h": 216
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "num_l_numbase",
+      "hits": 3,
+      "best": {
+        "ox": 144,
+        "oy": 163,
+        "x": 144,
+        "y": 144,
+        "h": 216
+      },
+      "abs": {
+        "x": 144,
+        "y": 144,
+        "w": null,
+        "h": 216
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "num_l_value",
+      "hits": 3,
+      "best": {
+        "ox": 110,
+        "oy": 34,
+        "x": 110,
+        "y": 34,
+        "h": 110,
+        "ch": 284
+      },
+      "abs": {
+        "x": 110,
+        "y": 34,
+        "w": null,
+        "h": 284
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "num_s",
+      "hits": 4,
+      "best": {
+        "x": 41,
+        "ch": 284,
+        "ox": 41,
+        "oy": 34,
+        "y": 34,
+        "h": 41
+      },
+      "abs": {
+        "x": 41,
+        "y": 34,
+        "w": null,
+        "h": 284
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "num_s_numbase",
+      "hits": 3,
+      "best": {
+        "ch": 284,
+        "ox": 40,
+        "oy": 100,
+        "x": 40,
+        "y": 100,
+        "h": 40
+      },
+      "abs": {
+        "x": 40,
+        "y": 100,
+        "w": null,
+        "h": 284
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "num_s_value",
+      "hits": 3,
+      "best": {
+        "ox": 40,
+        "oy": 100,
+        "x": 40,
+        "y": 28,
+        "h": 40
+      },
+      "abs": {
+        "x": 40,
+        "y": 28,
+        "w": null,
+        "h": 40
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "on_on",
+      "hits": 1,
+      "best": {
+        "ox": 2133,
+        "oy": 3330,
+        "x": 2133,
+        "y": 3330
+      },
+      "abs": {
+        "x": 2133,
+        "y": 3330,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "opacity",
+      "hits": 18,
+      "best": {
+        "cx": 65,
+        "cy": 65,
+        "ox": 37,
+        "oy": 146,
+        "x": 0,
+        "y": 2,
+        "h": 179,
+        "ch": 474
+      },
+      "abs": {
+        "x": 0,
+        "y": 2,
+        "w": null,
+        "h": 474
+      },
+      "formula": {
+        "x": 988,
+        "y": 459
+      }
+    },
+    {
+      "layer_id": "option_3game2",
+      "hits": 1,
+      "best": {
+        "w": 1158
+      },
+      "abs": {
+        "x": null,
+        "y": null,
+        "w": 1158,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "option_4text",
+      "hits": 1,
+      "best": {
+        "w": 1158
+      },
+      "abs": {
+        "x": null,
+        "y": null,
+        "w": 1158,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "option_6dialog",
+      "hits": 1,
+      "best": {
+        "w": 1158
+      },
+      "abs": {
+        "x": null,
+        "y": null,
+        "w": 1158,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "option_8keyboard1",
+      "hits": 1,
+      "best": {
+        "w": 1158
+      },
+      "abs": {
+        "x": null,
+        "y": null,
+        "w": 1158,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "option__bg0",
+      "hits": 1,
+      "best": {
+        "storagex": 58,
+        "storagey": 141,
+        "width": 194,
+        "cx": 65,
+        "cy": 65,
+        "ox": 51,
+        "oy": 139,
+        "x": 51,
+        "y": 1,
+        "w": 194,
+        "h": 51
+      },
+      "abs": {
+        "x": 51,
+        "y": 1,
+        "w": 194,
+        "h": 51
+      },
+      "formula": {
+        "x": 974,
+        "y": 466
+      }
+    },
+    {
+      "layer_id": "option__pack",
+      "hits": 58,
+      "best": {
+        "x": 62,
+        "cw": 1208,
+        "ch": 290,
+        "ox": 62,
+        "w": 1796,
+        "h": 204,
+        "oy": 146,
+        "y": 146,
+        "cx": 1241,
+        "cy": 7,
+        "width": 1088,
+        "storagex": 58,
+        "storagey": 141
+      },
+      "abs": {
+        "x": 62,
+        "y": 146,
+        "w": 1088,
+        "h": 290
+      },
+      "formula": {
+        "x": 2139,
+        "y": 401
+      }
+    },
+    {
+      "layer_id": "order",
+      "hits": 1,
+      "best": {
+        "x": -19
+      },
+      "abs": {
+        "x": -19,
+        "y": null,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "over",
+      "hits": 8,
+      "best": {
+        "width": 194,
+        "cx": 1241,
+        "cy": 161,
+        "cw": 1137,
+        "ch": 290,
+        "ox": 93,
+        "oy": 146,
+        "x": 93,
+        "y": 146,
+        "w": 194,
+        "h": 204,
+        "storagex": 58,
+        "storagey": 141
+      },
+      "abs": {
+        "x": 93,
+        "y": 146,
+        "w": 194,
+        "h": 290
+      },
+      "formula": {
+        "x": 2108,
+        "y": 555
+      }
+    },
+    {
+      "layer_id": "over_off",
+      "hits": 2,
+      "best": {
+        "cx": 2250,
+        "cy": 7,
+        "ch": 334,
+        "ox": 62,
+        "oy": 216,
+        "x": 62,
+        "y": 7,
+        "h": 193
+      },
+      "abs": {
+        "x": 62,
+        "y": 7,
+        "w": null,
+        "h": 334
+      },
+      "formula": {
+        "x": 3148,
+        "y": 331
+      }
+    },
+    {
+      "layer_id": "over_on",
+      "hits": 2,
+      "best": {
+        "cx": 2250,
+        "cy": 7,
+        "ch": 334,
+        "ox": 62,
+        "oy": 216,
+        "x": 62,
+        "y": 7,
+        "h": 193
+      },
+      "abs": {
+        "x": 62,
+        "y": 7,
+        "w": null,
+        "h": 334
+      },
+      "formula": {
+        "x": 3148,
+        "y": 331
+      }
+    },
+    {
+      "layer_id": "overlay",
+      "hits": 10,
+      "best": {
+        "ox": 37,
+        "oy": 2,
+        "x": 0,
+        "y": 2,
+        "h": 179,
+        "ch": 339
+      },
+      "abs": {
+        "x": 0,
+        "y": 2,
+        "w": null,
+        "h": 339
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "packlist",
+      "hits": 1,
+      "best": {
+        "w": 1158
+      },
+      "abs": {
+        "x": null,
+        "y": null,
+        "w": 1158,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page0",
+      "hits": 5,
+      "best": {
+        "x": 57,
+        "ox": 57,
+        "oy": 195,
+        "y": 28
+      },
+      "abs": {
+        "x": 57,
+        "y": 28,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page1",
+      "hits": 5,
+      "best": {
+        "x": 64,
+        "ox": 64,
+        "oy": 91,
+        "y": 5
+      },
+      "abs": {
+        "x": 64,
+        "y": 5,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page2",
+      "hits": 5,
+      "best": {
+        "x": 2,
+        "ox": 96,
+        "oy": 91,
+        "y": 2
+      },
+      "abs": {
+        "x": 2,
+        "y": 2,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page3",
+      "hits": 5,
+      "best": {
+        "x": 96,
+        "ox": 96,
+        "oy": 22,
+        "y": 22
+      },
+      "abs": {
+        "x": 96,
+        "y": 22,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page4",
+      "hits": 5,
+      "best": {
+        "x": 0,
+        "ox": 104,
+        "oy": 22,
+        "y": 22,
+        "h": 179
+      },
+      "abs": {
+        "x": 0,
+        "y": 22,
+        "w": null,
+        "h": 179
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page5",
+      "hits": 5,
+      "best": {
+        "x": 0,
+        "ox": 37,
+        "oy": 2,
+        "y": 2,
+        "h": 179
+      },
+      "abs": {
+        "x": 0,
+        "y": 2,
+        "w": null,
+        "h": 179
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page6",
+      "hits": 5,
+      "best": {
+        "x": 29,
+        "ox": 37,
+        "oy": 2,
+        "y": 2
+      },
+      "abs": {
+        "x": 29,
+        "y": 2,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page7",
+      "hits": 5,
+      "best": {
+        "x": 170,
+        "ox": 171,
+        "oy": 47,
+        "y": 47
+      },
+      "abs": {
+        "x": 170,
+        "y": 47,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page8",
+      "hits": 5,
+      "best": {
+        "x": 171,
+        "ox": 171,
+        "oy": 47,
+        "y": 47
+      },
+      "abs": {
+        "x": 171,
+        "y": 47,
+        "w": null,
+        "h": null
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "page9",
+      "hits": 4,
+      "best": {
+        "x": 22,
+        "ch": 474,
+        "ox": 22,
+        "oy": 119,
+        "y": 33,
+        "h": 22
+      },
+      "abs": {
+        "x": 22,
+        "y": 33,
+        "w": null,
+        "h": 474
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "pgdot",
+      "hits": 3,
+      "best": {
+        "ch": 339,
+        "ox": 22,
+        "oy": 167,
+        "x": 22,
+        "y": 167,
+        "h": 22
+      },
+      "abs": {
+        "x": 22,
+        "y": 167,
+        "w": null,
+        "h": 339
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "radio",
+      "hits": 10,
+      "best": {
+        "ox": 37,
+        "oy": 2,
+        "x": 0,
+        "y": 2,
+        "h": 179,
+        "ch": 339
+      },
+      "abs": {
+        "x": 0,
+        "y": 2,
+        "w": null,
+        "h": 339
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "rail",
+      "hits": 4,
+      "best": {
+        "cx": 69,
+        "cy": 69,
+        "ch": 336,
+        "ox": 37,
+        "oy": 69,
+        "x": 69,
+        "y": 69,
+        "h": 37,
+        "width": 199,
+        "w": 199
+      },
+      "abs": {
+        "x": 69,
+        "y": 69,
+        "w": 199,
+        "h": 336
+      },
+      "formula": {
+        "x": 992,
+        "y": 540
+      }
+    },
+    {
+      "layer_id": "reset",
+      "hits": 5,
+      "best": {
+        "x": 19,
+        "ox": 19,
+        "oy": 94,
+        "y": 94,
+        "h": 19,
+        "ch": 50
+      },
+      "abs": {
+        "x": 19,
+        "y": 94,
+        "w": null,
+        "h": 50
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "result",
+      "hits": 1,
+      "best": {
+        "cw": 1868,
+        "ch": 1835,
+        "ox": 65,
+        "oy": 234,
+        "x": 65,
+        "y": 234,
+        "w": 1868,
+        "h": 65
+      },
+      "abs": {
+        "x": 65,
+        "y": 234,
+        "w": 1868,
+        "h": 1835
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "sename",
+      "hits": 2,
+      "best": {
+        "ch": 50,
+        "ox": 19,
+        "oy": 94,
+        "x": 0,
+        "y": 94,
+        "h": 19,
+        "width": 1170,
+        "cx": 80,
+        "cy": 215,
+        "cw": 1137,
+        "w": 1137
+      },
+      "abs": {
+        "x": 0,
+        "y": 94,
+        "w": 1170,
+        "h": 50
+      },
+      "formula": {
+        "x": 1021,
+        "y": 661
+      }
+    },
+    {
+      "layer_id": "slider",
+      "hits": 8,
+      "best": {
+        "ch": 50,
+        "ox": 64,
+        "oy": 69,
+        "x": 69,
+        "y": 69,
+        "h": 50,
+        "cx": 69,
+        "cy": 69,
+        "width": 199,
+        "w": 199
+      },
+      "abs": {
+        "x": 69,
+        "y": 69,
+        "w": 199,
+        "h": 50
+      },
+      "formula": {
+        "x": 965,
+        "y": 540
+      }
+    },
+    {
+      "layer_id": "slider_l",
+      "hits": 4,
+      "best": {
+        "x": 19,
+        "ch": 50,
+        "ox": 19,
+        "oy": 94,
+        "y": 94,
+        "h": 19
+      },
+      "abs": {
+        "x": 19,
+        "y": 94,
+        "w": null,
+        "h": 50
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "slider_l_slider",
+      "hits": 3,
+      "best": {
+        "cx": 69,
+        "cy": 69,
+        "ch": 50,
+        "ox": 122,
+        "oy": 163,
+        "x": 69,
+        "y": 69,
+        "h": 50
+      },
+      "abs": {
+        "x": 69,
+        "y": 69,
+        "w": null,
+        "h": 50
+      },
+      "formula": {
+        "x": 907,
+        "y": 446
+      }
+    },
+    {
+      "layer_id": "slider_m",
+      "hits": 4,
+      "best": {
+        "x": 235,
+        "ch": 283,
+        "ox": 235,
+        "oy": 148,
+        "y": 148,
+        "h": 235
+      },
+      "abs": {
+        "x": 235,
+        "y": 148,
+        "w": null,
+        "h": 283
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "slider_m_slider",
+      "hits": 3,
+      "best": {
+        "cy": 3507,
+        "ch": 283,
+        "ox": 144,
+        "oy": 156,
+        "x": 144,
+        "y": 156,
+        "h": 144
+      },
+      "abs": {
+        "x": 144,
+        "y": 156,
+        "w": null,
+        "h": 283
+      },
+      "formula": {
+        "x": null,
+        "y": 3891
+      }
+    },
+    {
+      "layer_id": "slider_s",
+      "hits": 4,
+      "best": {
+        "x": 69,
+        "width": 199,
+        "ch": 356,
+        "ox": 69,
+        "oy": 69,
+        "y": 69,
+        "w": 199,
+        "h": 199
+      },
+      "abs": {
+        "x": 69,
+        "y": 69,
+        "w": 199,
+        "h": 356
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "slider_s_slider",
+      "hits": 3,
+      "best": {
+        "cy": 3491,
+        "ch": 356,
+        "ox": 69,
+        "oy": 69,
+        "x": 69,
+        "y": 69,
+        "h": 154
+      },
+      "abs": {
+        "x": 69,
+        "y": 69,
+        "w": null,
+        "h": 356
+      },
+      "formula": {
+        "x": null,
+        "y": 3962
+      }
+    },
+    {
+      "layer_id": "slider_t",
+      "hits": 4,
+      "best": {
+        "x": 250,
+        "ch": 314,
+        "ox": 250,
+        "oy": 84,
+        "y": 84,
+        "h": 250
+      },
+      "abs": {
+        "x": 250,
+        "y": 84,
+        "w": null,
+        "h": 314
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "slider_t_slider",
+      "hits": 3,
+      "best": {
+        "cy": 3363,
+        "ch": 314,
+        "ox": 64,
+        "oy": 130,
+        "x": 64,
+        "y": 130,
+        "h": 64
+      },
+      "abs": {
+        "x": 64,
+        "y": 130,
+        "w": null,
+        "h": 314
+      },
+      "formula": {
+        "x": null,
+        "y": 3773
+      }
+    },
+    {
+      "layer_id": "storage",
+      "hits": 95,
+      "best": {
+        "cw": 1208,
+        "ch": 290,
+        "ox": 37,
+        "x": 37,
+        "w": 199,
+        "h": 37,
+        "oy": 146,
+        "y": 146,
+        "cx": 69,
+        "cy": 69,
+        "width": 199,
+        "storagex": 58,
+        "storagey": 141
+      },
+      "abs": {
+        "x": 37,
+        "y": 146,
+        "w": 199,
+        "h": 290
+      },
+      "formula": {
+        "x": 992,
+        "y": 463
+      }
+    },
+    {
+      "layer_id": "storagex",
+      "hits": 1,
+      "best": {
+        "storagey": 141,
+        "width": 194,
+        "cx": 65,
+        "cy": 65,
+        "ox": 51,
+        "oy": 139,
+        "x": 51,
+        "y": 1,
+        "w": 194,
+        "h": 51
+      },
+      "abs": {
+        "x": 51,
+        "y": 1,
+        "w": 194,
+        "h": 51
+      },
+      "formula": {
+        "x": 974,
+        "y": 466
+      }
+    },
+    {
+      "layer_id": "storagey",
+      "hits": 1,
+      "best": {
+        "width": 194,
+        "cx": 65,
+        "cy": 65,
+        "ox": 51,
+        "oy": 139,
+        "x": 51,
+        "y": 1,
+        "w": 194,
+        "h": 51
+      },
+      "abs": {
+        "x": 51,
+        "y": 1,
+        "w": 194,
+        "h": 51
+      },
+      "formula": {
+        "x": 974,
+        "y": 466
+      }
+    },
+    {
+      "layer_id": "subref",
+      "hits": 3,
+      "best": {
+        "storagex": 58,
+        "storagey": 141,
+        "width": 194,
+        "cx": 65,
+        "cy": 65,
+        "ox": 19,
+        "oy": 94,
+        "x": 0,
+        "y": 1,
+        "w": 194,
+        "h": 19,
+        "ch": 50,
+        "cw": 1137
+      },
+      "abs": {
+        "x": 0,
+        "y": 1,
+        "w": 194,
+        "h": 50
+      },
+      "formula": {
+        "x": 1006,
+        "y": 511
+      }
+    },
+    {
+      "layer_id": "target",
+      "hits": 2,
+      "best": {
+        "storagex": 58,
+        "storagey": 141,
+        "width": 194,
+        "cx": 65,
+        "cy": 65,
+        "ox": 51,
+        "oy": 139,
+        "x": 0,
+        "y": 1,
+        "w": 194,
+        "h": 51,
+        "cw": 1137,
+        "ch": 1137
+      },
+      "abs": {
+        "x": 0,
+        "y": 1,
+        "w": 194,
+        "h": 1137
+      },
+      "formula": {
+        "x": 974,
+        "y": 466
+      }
+    },
+    {
+      "layer_id": "test_test",
+      "hits": 3,
+      "best": {
+        "ox": 37,
+        "oy": 254,
+        "x": 37,
+        "y": 254,
+        "h": 37
+      },
+      "abs": {
+        "x": 37,
+        "y": 254,
+        "w": null,
+        "h": 37
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "title",
+      "hits": 6,
+      "best": {
+        "x": 0,
+        "width": 1170,
+        "cx": 80,
+        "cy": 215,
+        "cw": 1137,
+        "ch": 1137,
+        "ox": 166,
+        "oy": 200,
+        "y": 200,
+        "w": 1137,
+        "h": 166
+      },
+      "abs": {
+        "x": 0,
+        "y": 200,
+        "w": 1170,
+        "h": 1137
+      },
+      "formula": {
+        "x": 874,
+        "y": 555
+      }
+    },
+    {
+      "layer_id": "toggle",
+      "hits": 2,
+      "best": {
+        "ox": 41,
+        "oy": 25,
+        "x": 41,
+        "y": 25,
+        "h": 41
+      },
+      "abs": {
+        "x": 41,
+        "y": 25,
+        "w": null,
+        "h": 41
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "uiname",
+      "hits": 49,
+      "best": {
+        "cw": 1090,
+        "ch": 50,
+        "ox": 37,
+        "oy": 139,
+        "x": 0,
+        "y": 139,
+        "w": 194,
+        "h": 41,
+        "width": 194,
+        "cx": 65,
+        "cy": 65,
+        "storagex": 58,
+        "storagey": 141
+      },
+      "abs": {
+        "x": 0,
+        "y": 139,
+        "w": 194,
+        "h": 50
+      },
+      "formula": {
+        "x": 988,
+        "y": 466
+      }
+    },
+    {
+      "layer_id": "uistates",
+      "hits": 49,
+      "best": {
+        "cw": 1090,
+        "ch": 50,
+        "ox": 37,
+        "oy": 139,
+        "x": 0,
+        "y": 139,
+        "w": 194,
+        "h": 41,
+        "width": 194,
+        "cx": 65,
+        "cy": 65,
+        "storagex": 58,
+        "storagey": 141
+      },
+      "abs": {
+        "x": 0,
+        "y": 139,
+        "w": 194,
+        "h": 50
+      },
+      "formula": {
+        "x": 988,
+        "y": 466
+      }
+    },
+    {
+      "layer_id": "vbar",
+      "hits": 3,
+      "best": {
+        "width": 1170,
+        "cx": 80,
+        "cy": 215,
+        "cw": 1137,
+        "ch": 1137,
+        "ox": 166,
+        "oy": 200,
+        "x": 80,
+        "y": 200,
+        "w": 1137,
+        "h": 166
+      },
+      "abs": {
+        "x": 80,
+        "y": 200,
+        "w": 1170,
+        "h": 1137
+      },
+      "formula": {
+        "x": 874,
+        "y": 555
+      }
+    },
+    {
+      "layer_id": "visible",
+      "hits": 1,
+      "best": {
+        "ox": 113,
+        "oy": 89,
+        "x": 113,
+        "y": 89,
+        "h": 251
+      },
+      "abs": {
+        "x": 113,
+        "y": 89,
+        "w": null,
+        "h": 251
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "layer_id": "width",
+      "hits": 48,
+      "best": {
+        "ch": 50,
+        "ox": 37,
+        "oy": 146,
+        "x": 0,
+        "y": 139,
+        "h": 41,
+        "width": 194,
+        "cx": 26,
+        "cy": 26,
+        "cw": 1090,
+        "w": 194,
+        "storagex": 58,
+        "storagey": 141
+      },
+      "abs": {
+        "x": 0,
+        "y": 139,
+        "w": 194,
+        "h": 50
+      },
+      "formula": {
+        "x": 949,
+        "y": 420
+      }
+    }
+  ]
+}

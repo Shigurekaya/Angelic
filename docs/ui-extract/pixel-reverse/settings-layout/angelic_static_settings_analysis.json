@@ -1,0 +1,1137 @@
+{
+  "title": "Angelic settings UI — static unpack analysis",
+  "date": "2026-07-20",
+  "sources": {
+    "filtered": "docs/ui-extract/ui-cn-jp-static/filtered-cn-jp/uipsd/option*",
+    "tlg_png": "docs/ui-extract/pixel-reverse/tlg-png/option*",
+    "slices": "docs/ui-extract/pixel-reverse/_pack_slices/option*",
+    "locale": "locale/cn/uitexts_cn.toml + help_opt_cn.txt",
+    "scripts": "sysscn/option.ks (source); option.tjs/uioption.tjs are TJS2 bytecode",
+    "cafe_ref": "CafeStella/ui-preview/assets/settings/settings-layout.json"
+  },
+  "verdict": {
+    "unpack_complete": true,
+    "chassis": "option__bg0 = 1920x1080 empty chassis (cloud+header), no controls baked",
+    "shared_chrome": "option__pack = 19 slices (labels 313x57, rail 288x13, knob 47x46, ...)",
+    "page_packs": "4text/5sound/6dialog/7mouse/8keyboard/9gamepad have extra art; 0simple/1display/2game1/3game2 use shared pack only",
+    "slot_topology": "IDENTICAL to Cafe 0_simple: label_a..j (10 slots, 2-col). Confirmed by PBD layer ids + help_opt jumps",
+    "geometry_truth": "PBD ox/oy/storagex heuristic is NOISY — not pixel-truth. Cafe absolute coords MUST NOT be treated as Angelic truth (chrome sizes differ)",
+    "chrome_scale": {
+      "label_w_ratio": 0.3722,
+      "label_h_ratio": 1.2391,
+      "rail_w_ratio": 0.4521,
+      "rail_h_ratio": 0.4483,
+      "note": "Angelic labels/rails are native half-ish width; current rebuild 9-slices them to Cafe 841/637 boxes"
+    },
+    "captures": "ig_option_*/setcap_option_* are NOT usable settings truth (quit dialog / title art / washed frames)",
+    "cafe_method_parallel": [
+      "Cafe: PSB chassis+parts+CN @ left/top/w/h → bake plate + RenPy overlay",
+      "Angelic: bg0+pack slices+CN @ ??? → same bake/overlay pipeline",
+      "Missing piece: reliable absolute screen coords for Angelic (PSB-equivalent)"
+    ]
+  },
+  "option__pack_classified": [
+    {
+      "i": 0,
+      "role": "sidebar_vbar",
+      "w": 80,
+      "h": 731,
+      "file": "s000_80x731.png"
+    },
+    {
+      "i": 1,
+      "role": "rail_thin_v",
+      "w": 16,
+      "h": 610,
+      "file": "s001_16x610.png"
+    },
+    {
+      "i": 2,
+      "role": "decor_panel_412",
+      "w": 412,
+      "h": 383,
+      "file": "s002_412x383.png"
+    },
+    {
+      "i": 3,
+      "role": "chip_mini_56",
+      "w": 56,
+      "h": 33,
+      "file": "s003_56x33.png"
+    },
+    {
+      "i": 4,
+      "role": "check_or_dot_30",
+      "w": 30,
+      "h": 30,
+      "file": "s004_30x30.png"
+    },
+    {
+      "i": 5,
+      "role": "label_bar_313_a",
+      "w": 313,
+      "h": 57,
+      "file": "s005_313x57.png"
+    },
+    {
+      "i": 6,
+      "role": "icon_30_a",
+      "w": 30,
+      "h": 30,
+      "file": "s006_30x30.png"
+    },
+    {
+      "i": 7,
+      "role": "icon_30_b",
+      "w": 30,
+      "h": 30,
+      "file": "s007_30x30.png"
+    },
+    {
+      "i": 8,
+      "role": "icon_30_c",
+      "w": 30,
+      "h": 30,
+      "file": "s008_30x30.png"
+    },
+    {
+      "i": 9,
+      "role": "label_bar_313_b",
+      "w": 313,
+      "h": 57,
+      "file": "s009_313x57.png"
+    },
+    {
+      "i": 10,
+      "role": "tab_or_header_76",
+      "w": 76,
+      "h": 54,
+      "file": "s010_76x54.png"
+    },
+    {
+      "i": 11,
+      "role": "btn_124x32",
+      "w": 124,
+      "h": 32,
+      "file": "s011_124x32.png"
+    },
+    {
+      "i": 12,
+      "role": "btn_138x37",
+      "w": 138,
+      "h": 37,
+      "file": "s012_138x37.png"
+    },
+    {
+      "i": 13,
+      "role": "btn_144x37",
+      "w": 144,
+      "h": 37,
+      "file": "s013_144x37.png"
+    },
+    {
+      "i": 14,
+      "role": "slider_rail_288x13",
+      "w": 288,
+      "h": 13,
+      "file": "s014_288x13.png"
+    },
+    {
+      "i": 15,
+      "role": "help_or_block_421",
+      "w": 421,
+      "h": 265,
+      "file": "s015_421x265.png"
+    },
+    {
+      "i": 16,
+      "role": "arrow_19_a",
+      "w": 19,
+      "h": 35,
+      "file": "s016_19x35.png"
+    },
+    {
+      "i": 17,
+      "role": "arrow_19_b",
+      "w": 19,
+      "h": 35,
+      "file": "s017_19x35.png"
+    },
+    {
+      "i": 18,
+      "role": "knob_47x46",
+      "w": 47,
+      "h": 46,
+      "file": "s018_47x46.png"
+    }
+  ],
+  "packs_summary": {
+    "option_4text__pack": {
+      "n": 2,
+      "sizes": [
+        [
+          800,
+          312
+        ],
+        [
+          800,
+          71
+        ]
+      ]
+    },
+    "option_5sound1__pack": {
+      "n": 9,
+      "sizes": [
+        [
+          243,
+          122
+        ],
+        [
+          148,
+          122
+        ],
+        [
+          245,
+          126
+        ],
+        [
+          645,
+          488
+        ],
+        [
+          183,
+          355
+        ],
+        [
+          143,
+          122
+        ],
+        [
+          166,
+          125
+        ],
+        [
+          122,
+          148
+        ],
+        [
+          61,
+          25
+        ]
+      ]
+    },
+    "option_5sound2__pack": {
+      "n": 15,
+      "sizes": [
+        [
+          576,
+          667
+        ],
+        [
+          225,
+          116
+        ],
+        [
+          116,
+          216
+        ],
+        [
+          126,
+          235
+        ],
+        [
+          126,
+          235
+        ],
+        [
+          103,
+          218
+        ],
+        [
+          59,
+          96
+        ],
+        [
+          31,
+          31
+        ],
+        [
+          31,
+          31
+        ],
+        [
+          88,
+          25
+        ],
+        [
+          74,
+          98
+        ],
+        [
+          46,
+          24
+        ],
+        [
+          46,
+          24
+        ],
+        [
+          31,
+          31
+        ],
+        [
+          31,
+          31
+        ]
+      ]
+    },
+    "option_6dialog__pack": {
+      "n": 1,
+      "sizes": [
+        [
+          124,
+          150
+        ]
+      ]
+    },
+    "option_7mouse__pack": {
+      "n": 6,
+      "sizes": [
+        [
+          47,
+          23
+        ],
+        [
+          139,
+          215
+        ],
+        [
+          140,
+          215
+        ],
+        [
+          22,
+          47
+        ],
+        [
+          22,
+          47
+        ],
+        [
+          47,
+          23
+        ]
+      ]
+    },
+    "option_8keyboard1__pack": {
+      "n": 1,
+      "sizes": [
+        [
+          440,
+          449
+        ]
+      ]
+    },
+    "option_9gamepad2_assign__pack": {
+      "n": 1,
+      "sizes": [
+        [
+          731,
+          133
+        ]
+      ]
+    },
+    "option_9gamepad__pack": {
+      "n": 24,
+      "sizes": [
+        [
+          56,
+          132
+        ],
+        [
+          164,
+          144
+        ],
+        [
+          172,
+          110
+        ],
+        [
+          78,
+          131
+        ],
+        [
+          67,
+          137
+        ],
+        [
+          124,
+          136
+        ],
+        [
+          98,
+          234
+        ],
+        [
+          153,
+          237
+        ],
+        [
+          36,
+          213
+        ],
+        [
+          96,
+          165
+        ],
+        [
+          124,
+          167
+        ],
+        [
+          70,
+          159
+        ],
+        [
+          56,
+          137
+        ],
+        [
+          327,
+          228
+        ],
+        [
+          325,
+          148
+        ],
+        [
+          63,
+          84
+        ],
+        [
+          62,
+          84
+        ],
+        [
+          69,
+          69
+        ],
+        [
+          26,
+          18
+        ],
+        [
+          27,
+          18
+        ],
+        [
+          73,
+          73
+        ],
+        [
+          73,
+          73
+        ],
+        [
+          41,
+          77
+        ],
+        [
+          45,
+          67
+        ]
+      ]
+    },
+    "option__bg0": {
+      "n": 1,
+      "sizes": [
+        [
+          1920,
+          1080
+        ]
+      ]
+    },
+    "option__pack": {
+      "n": 19,
+      "sizes": [
+        [
+          80,
+          731
+        ],
+        [
+          16,
+          610
+        ],
+        [
+          412,
+          383
+        ],
+        [
+          56,
+          33
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          313,
+          57
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          313,
+          57
+        ],
+        [
+          76,
+          54
+        ],
+        [
+          124,
+          32
+        ],
+        [
+          138,
+          37
+        ],
+        [
+          144,
+          37
+        ],
+        [
+          288,
+          13
+        ],
+        [
+          421,
+          265
+        ],
+        [
+          19,
+          35
+        ],
+        [
+          19,
+          35
+        ],
+        [
+          47,
+          46
+        ]
+      ]
+    },
+    "option_cmds__pack": {
+      "n": 37,
+      "sizes": [
+        [
+          242,
+          60
+        ],
+        [
+          157,
+          51
+        ],
+        [
+          33,
+          49
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          53,
+          121
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          70,
+          153
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          124,
+          124
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          126,
+          126
+        ],
+        [
+          13,
+          43
+        ],
+        [
+          12,
+          33
+        ],
+        [
+          33,
+          49
+        ],
+        [
+          294,
+          255
+        ],
+        [
+          21,
+          27
+        ],
+        [
+          21,
+          27
+        ],
+        [
+          21,
+          27
+        ],
+        [
+          124,
+          124
+        ],
+        [
+          19,
+          19
+        ],
+        [
+          13,
+          19
+        ],
+        [
+          19,
+          19
+        ],
+        [
+          11,
+          19
+        ],
+        [
+          15,
+          18
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          60,
+          64
+        ],
+        [
+          28,
+          11
+        ],
+        [
+          21,
+          7
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          124,
+          124
+        ],
+        [
+          27,
+          11
+        ],
+        [
+          179,
+          107
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          39,
+          29
+        ]
+      ]
+    },
+    "option_keyinput__pack": {
+      "n": 35,
+      "sizes": [
+        [
+          1583,
+          482
+        ],
+        [
+          47,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          47,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          47,
+          32
+        ],
+        [
+          47,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          1389,
+          309
+        ],
+        [
+          47,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          47,
+          48
+        ],
+        [
+          47,
+          112
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          47,
+          113
+        ],
+        [
+          96,
+          48
+        ],
+        [
+          47,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          113,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          1814,
+          209
+        ]
+      ]
+    }
+  },
+  "page_0simple_slots": [
+    {
+      "slot": "a",
+      "label_id": "label_a",
+      "jump": "label_a_jump",
+      "keys": [
+        "fullscreen"
+      ],
+      "type": "toggle",
+      "detail_page": 1
+    },
+    {
+      "slot": "b",
+      "label_id": "label_b",
+      "jump": "label_b_jump",
+      "keys": [
+        "sqscr"
+      ],
+      "type": "toggle",
+      "detail_page": 1
+    },
+    {
+      "slot": "c",
+      "label_id": "label_c",
+      "jump": "label_c_jump",
+      "keys": [
+        "textspeed"
+      ],
+      "type": "slider",
+      "detail_page": 4
+    },
+    {
+      "slot": "d",
+      "label_id": "label_d",
+      "jump": "label_d_jump",
+      "keys": [
+        "autospeed"
+      ],
+      "type": "slider",
+      "detail_page": 4
+    },
+    {
+      "slot": "e",
+      "label_id": "label_e",
+      "jump": "label_e_jump",
+      "keys": [
+        "skipall"
+      ],
+      "type": "toggle",
+      "detail_page": 4
+    },
+    {
+      "slot": "f",
+      "label_id": "label_f",
+      "jump": "label_f_jump",
+      "keys": [
+        "wave"
+      ],
+      "type": "slider",
+      "detail_page": "5a"
+    },
+    {
+      "slot": "g",
+      "label_id": "label_g",
+      "jump": "label_g_jump",
+      "keys": [
+        "bgm"
+      ],
+      "type": "slider",
+      "detail_page": "5a"
+    },
+    {
+      "slot": "h",
+      "label_id": "label_h",
+      "jump": "label_h_jump",
+      "keys": [
+        "se"
+      ],
+      "type": "slider",
+      "detail_page": "5a"
+    },
+    {
+      "slot": "i",
+      "label_id": "label_i",
+      "jump": "label_i_jump",
+      "keys": [
+        "voice"
+      ],
+      "type": "slider",
+      "detail_page": "5a"
+    },
+    {
+      "slot": "j",
+      "label_id": "label_j",
+      "jump": "label_j_jump",
+      "keys": [
+        "movie"
+      ],
+      "type": "slider",
+      "detail_page": "5a"
+    }
+  ],
+  "cafe_0simple_rows": [
+    {
+      "slot": "a",
+      "key": "fullscreen",
+      "type": "toggle",
+      "x": 89,
+      "y": 166,
+      "w": 841,
+      "h": 46,
+      "ctrl": {
+        "x": 149,
+        "y": 229,
+        "w": 726,
+        "h": 46,
+        "slot": "a"
+      }
+    },
+    {
+      "slot": "b",
+      "key": "sqscr",
+      "type": "toggle",
+      "x": 89,
+      "y": 331,
+      "w": 841,
+      "h": 46,
+      "ctrl": {
+        "x": 149,
+        "y": 394,
+        "w": 726,
+        "h": 46,
+        "slot": "b"
+      }
+    },
+    {
+      "slot": "c",
+      "key": "textspeed",
+      "type": "slider",
+      "x": 89,
+      "y": 495,
+      "w": 841,
+      "h": 46,
+      "ctrl": {
+        "x": 152,
+        "y": 566,
+        "w": 637,
+        "h": 29,
+        "slot": "c"
+      }
+    },
+    {
+      "slot": "d",
+      "key": "autospeed",
+      "type": "slider",
+      "x": 89,
+      "y": 660,
+      "w": 841,
+      "h": 46,
+      "ctrl": {
+        "x": 152,
+        "y": 729,
+        "w": 637,
+        "h": 29,
+        "slot": "d"
+      }
+    },
+    {
+      "slot": "e",
+      "key": "skipall",
+      "type": "toggle",
+      "x": 89,
+      "y": 824,
+      "w": 841,
+      "h": 46,
+      "ctrl": {
+        "x": 149,
+        "y": 887,
+        "w": 726,
+        "h": 46,
+        "slot": "e"
+      }
+    },
+    {
+      "slot": "f",
+      "key": "wave",
+      "type": "slider",
+      "x": 990,
+      "y": 166,
+      "w": 841,
+      "h": 46,
+      "ctrl": {
+        "x": 1079,
+        "y": 237,
+        "w": 637,
+        "h": 29,
+        "slot": "f"
+      }
+    },
+    {
+      "slot": "g",
+      "key": "bgm",
+      "type": "slider",
+      "x": 990,
+      "y": 331,
+      "w": 841,
+      "h": 46,
+      "ctrl": {
+        "x": 1079,
+        "y": 402,
+        "w": 637,
+        "h": 29,
+        "slot": "g"
+      }
+    },
+    {
+      "slot": "h",
+      "key": "se",
+      "type": "slider",
+      "x": 990,
+      "y": 495,
+      "w": 841,
+      "h": 46,
+      "ctrl": {
+        "x": 1079,
+        "y": 566,
+        "w": 637,
+        "h": 29,
+        "slot": "h"
+      }
+    },
+    {
+      "slot": "i",
+      "key": "voice",
+      "type": "slider",
+      "x": 990,
+      "y": 660,
+      "w": 841,
+      "h": 46,
+      "ctrl": {
+        "x": 1079,
+        "y": 731,
+        "w": 637,
+        "h": 29,
+        "slot": "i"
+      }
+    },
+    {
+      "slot": "j",
+      "key": "movie",
+      "type": "slider",
+      "x": 990,
+      "y": 824,
+      "w": 841,
+      "h": 46,
+      "ctrl": {
+        "x": 1079,
+        "y": 895,
+        "w": 637,
+        "h": 29,
+        "slot": "j"
+      }
+    }
+  ],
+  "shared_option_pbd_notes": {
+    "slider_templates": [
+      "slider_l",
+      "slider_m",
+      "slider_s",
+      "slider_t"
+    ],
+    "btn_templates": [
+      "btn2",
+      "btn2b",
+      "btn3",
+      "btn4",
+      "btn4b"
+    ],
+    "page_refs": [
+      "option_0simple",
+      "option_3game2",
+      "option_4text",
+      "option_6dialog",
+      "option_8keyboard1"
+    ],
+    "footer_ids": [
+      "common_init",
+      "common_back_title",
+      "common_back_game",
+      "helpbase",
+      "helptext",
+      "reset",
+      "title",
+      "back"
+    ]
+  },
+  "recommended_next": [
+    "1) Keep Cafe SLOT TOPOLOGY (a-j) — proven by Angelic PBD/help",
+    "2) Stop treating Cafe x/y/w/h as Angelic pixel truth",
+    "3) Derive Angelic layout: either (A) template-match pack slices onto a good orig capture, or (B) build grid from 313x57 labels + 288 rails fitting content frame",
+    "4) Bake plates: bg0 + 9-slice native labels (do not force 841) + rails + tabs/footer from option__pack/option_cmds",
+    "5) RenPy: knob/chip/mute/detail overlay from interaction_slots using Angelic-native rects"
+  ]
+}

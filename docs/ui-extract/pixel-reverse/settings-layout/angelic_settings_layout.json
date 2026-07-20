@@ -1,0 +1,1931 @@
+{
+  "source": "Angelic static: option__bg0 + option__pack native + Cafe slot topology (keys only); no mouse/gamepad",
+  "chrome": {
+    "label": {
+      "w": 313,
+      "h": 57,
+      "slice": "option__pack/s005"
+    },
+    "rail": {
+      "w": 288,
+      "h": 13,
+      "slice": "option__pack/s014"
+    },
+    "chip": {
+      "w": 313,
+      "h": 57,
+      "slice": "option__pack/s005"
+    },
+    "chip_on": {
+      "slice": "option__pack/s009"
+    },
+    "detail": {
+      "w": 124,
+      "h": 32,
+      "slice": "option__pack/s011"
+    },
+    "mute": {
+      "w": 76,
+      "h": 54,
+      "slice": "option__pack/s010"
+    },
+    "knob": {
+      "slice": "option__pack/s018"
+    },
+    "footer": {
+      "slice": "option_cmds__pack/s000"
+    }
+  },
+  "grid": {
+    "left_x": 181,
+    "right_x": 1020,
+    "row_ys": [
+      160,
+      300,
+      440,
+      580,
+      720
+    ],
+    "ctrl_dy": 62
+  },
+  "tabs": [
+    {
+      "id": "0",
+      "cafe_id": "0_simple",
+      "label": "基本设置",
+      "rows": [
+        {
+          "slot": "a",
+          "key": "fullscreen",
+          "label": "显示模式",
+          "type": "toggle",
+          "x": 181,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "a"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "窗口",
+            "全屏"
+          ]
+        },
+        {
+          "slot": "b",
+          "key": "sqscr",
+          "label": "画面比例",
+          "type": "toggle",
+          "x": 181,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 362,
+            "w": 292,
+            "h": 37,
+            "slot": "b"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "16:9",
+            "4:3"
+          ]
+        },
+        {
+          "slot": "c",
+          "key": "textspeed",
+          "label": "文本显示速度",
+          "type": "slider",
+          "x": 181,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 510,
+            "w": 288,
+            "h": 13,
+            "slot": "c"
+          },
+          "track": {
+            "x": 193,
+            "y": 510,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "d",
+          "key": "autospeed",
+          "label": "自动模式速度",
+          "type": "slider",
+          "x": 181,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 650,
+            "w": 288,
+            "h": 13,
+            "slot": "d"
+          },
+          "track": {
+            "x": 193,
+            "y": 650,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "e",
+          "key": "skipall",
+          "label": "快进未读文本",
+          "type": "toggle",
+          "x": 181,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 782,
+            "w": 292,
+            "h": 37,
+            "slot": "e"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "仅已读",
+            "全部"
+          ]
+        },
+        {
+          "slot": "f",
+          "key": "wave",
+          "label": "总音量",
+          "type": "slider",
+          "x": 1020,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 230,
+            "w": 288,
+            "h": 13,
+            "slot": "f"
+          },
+          "track": {
+            "x": 1032,
+            "y": 230,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "g",
+          "key": "bgm",
+          "label": "ＢＧＭ",
+          "type": "slider",
+          "x": 1020,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 370,
+            "w": 288,
+            "h": 13,
+            "slot": "g"
+          },
+          "track": {
+            "x": 1032,
+            "y": 370,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "h",
+          "key": "se",
+          "label": "ＳＥ",
+          "type": "slider",
+          "x": 1020,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 510,
+            "w": 288,
+            "h": 13,
+            "slot": "h"
+          },
+          "track": {
+            "x": 1032,
+            "y": 510,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "i",
+          "key": "voice",
+          "label": "语音",
+          "type": "slider",
+          "x": 1020,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 650,
+            "w": 288,
+            "h": 13,
+            "slot": "i"
+          },
+          "track": {
+            "x": 1032,
+            "y": 650,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "j",
+          "key": "movie",
+          "label": "视频",
+          "type": "slider",
+          "x": 1020,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 790,
+            "w": 288,
+            "h": 13,
+            "slot": "j"
+          },
+          "track": {
+            "x": 1032,
+            "y": 790,
+            "w": 288,
+            "h": 13
+          }
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "cafe_id": "1_display",
+      "label": "画面设置",
+      "rows": [
+        {
+          "slot": "a",
+          "key": "fullscreen",
+          "label": "显示模式",
+          "type": "toggle",
+          "x": 181,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "a"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "窗口",
+            "全屏"
+          ]
+        },
+        {
+          "slot": "b",
+          "key": "sqscr",
+          "label": "画面比例",
+          "type": "toggle",
+          "x": 181,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 362,
+            "w": 292,
+            "h": 37,
+            "slot": "b"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "16:9",
+            "4:3"
+          ]
+        },
+        {
+          "slot": "c",
+          "key": "noeffect",
+          "label": "画面效果",
+          "type": "toggle",
+          "x": 181,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 502,
+            "w": 292,
+            "h": 37,
+            "slot": "c"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "d",
+          "key": "scanim",
+          "label": "动画效果",
+          "type": "toggle",
+          "x": 181,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 642,
+            "w": 292,
+            "h": 37,
+            "slot": "d"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "e",
+          "key": "esccancel",
+          "label": "ESC键功能",
+          "type": "toggle",
+          "x": 181,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 782,
+            "w": 292,
+            "h": 37,
+            "slot": "e"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "右键菜单",
+            "老板键"
+          ]
+        },
+        {
+          "slot": "f",
+          "key": "panictype",
+          "label": "老板键功能",
+          "type": "toggle",
+          "x": 1020,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 222,
+            "w": 308,
+            "h": 37,
+            "slot": "f"
+          },
+          "chip_w": 74,
+          "chip_n": 4,
+          "options": [
+            "最小化",
+            "图1",
+            "图2",
+            "自定义"
+          ]
+        },
+        {
+          "slot": "g",
+          "key": "stayontop",
+          "label": "保持窗口最前",
+          "type": "toggle",
+          "x": 1020,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 362,
+            "w": 292,
+            "h": 37,
+            "slot": "g"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "h",
+          "key": "showitems",
+          "label": "功能区域开关",
+          "type": "toggle",
+          "x": 1020,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 502,
+            "w": 292,
+            "h": 37,
+            "slot": "h"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "i",
+          "key": "chapthidetime",
+          "label": "章节标题显示",
+          "type": "slider",
+          "x": 1020,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 650,
+            "w": 288,
+            "h": 13,
+            "slot": "i"
+          },
+          "track": {
+            "x": 1032,
+            "y": 650,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "j",
+          "key": "bgmhidetime",
+          "label": "BGM标题显示",
+          "type": "slider",
+          "x": 1020,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 790,
+            "w": 288,
+            "h": 13,
+            "slot": "j"
+          },
+          "track": {
+            "x": 1032,
+            "y": 790,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "k",
+          "key": "facemode",
+          "label": "立绘模式",
+          "type": "toggle",
+          "x": 610,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "k"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "l",
+          "key": "qcpopover",
+          "label": "弹出菜单",
+          "type": "toggle",
+          "x": 610,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 362,
+            "w": 292,
+            "h": 37,
+            "slot": "l"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "悬停",
+            "右键"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "cafe_id": "2_game1",
+      "label": "游戏设置1",
+      "rows": [
+        {
+          "slot": "a",
+          "key": "readskip",
+          "label": "自动跳过已读",
+          "type": "toggle",
+          "x": 181,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "a"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "b",
+          "key": "readjump",
+          "label": "已读跳过方式",
+          "type": "toggle",
+          "x": 181,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 362,
+            "w": 292,
+            "h": 37,
+            "slot": "b"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "跳过",
+            "跳转"
+          ]
+        },
+        {
+          "slot": "c",
+          "key": "curmove",
+          "label": "光标自动移动",
+          "type": "toggle",
+          "x": 181,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 502,
+            "w": 292,
+            "h": 37,
+            "slot": "c"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "d",
+          "key": "curmoveyes",
+          "label": "光标移向",
+          "type": "toggle",
+          "x": 181,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 642,
+            "w": 292,
+            "h": 37,
+            "slot": "d"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "是",
+            "否"
+          ]
+        },
+        {
+          "slot": "e",
+          "key": "curhidestep",
+          "label": "光标自动隐藏",
+          "type": "toggle",
+          "x": 181,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 782,
+            "w": 308,
+            "h": 37,
+            "slot": "e"
+          },
+          "chip_w": 74,
+          "chip_n": 4,
+          "options": [
+            "无",
+            "5秒",
+            "10秒",
+            "20秒"
+          ]
+        },
+        {
+          "slot": "f",
+          "key": "filedclk",
+          "label": "存读档点击",
+          "type": "toggle",
+          "x": 1020,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "f"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "双击",
+            "单击"
+          ]
+        },
+        {
+          "slot": "g",
+          "key": "hmode",
+          "label": "H相关",
+          "type": "toggle",
+          "x": 1020,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 362,
+            "w": 292,
+            "h": 37,
+            "slot": "g"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "h",
+          "key": "flowshow",
+          "label": "流程图显示",
+          "type": "toggle",
+          "x": 1020,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 502,
+            "w": 292,
+            "h": 37,
+            "slot": "h"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "i",
+          "key": "stopdeactive",
+          "label": "失焦暂停",
+          "type": "toggle",
+          "x": 1020,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 642,
+            "w": 292,
+            "h": 37,
+            "slot": "i"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "j",
+          "key": "icpreview",
+          "label": "图标预览",
+          "type": "toggle",
+          "x": 1020,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 782,
+            "w": 292,
+            "h": 37,
+            "slot": "j"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "k",
+          "key": "suspend",
+          "label": "待机功能",
+          "type": "toggle",
+          "x": 610,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "k"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "cafe_id": "3_game2",
+      "label": "游戏设置2",
+      "rows": [
+        {
+          "slot": "a",
+          "key": "drawspeed",
+          "label": "游戏进行速度",
+          "type": "slider",
+          "x": 181,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 230,
+            "w": 288,
+            "h": 13,
+            "slot": "a"
+          },
+          "track": {
+            "x": 193,
+            "y": 230,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "b",
+          "key": "vspeed",
+          "label": "语音连动速度",
+          "type": "slider",
+          "x": 181,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 370,
+            "w": 288,
+            "h": 13,
+            "slot": "b"
+          },
+          "track": {
+            "x": 193,
+            "y": 370,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "c",
+          "key": "skipspeed",
+          "label": "快进速度",
+          "type": "slider",
+          "x": 181,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 510,
+            "w": 288,
+            "h": 13,
+            "slot": "c"
+          },
+          "track": {
+            "x": 193,
+            "y": 510,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "d",
+          "key": "skipst",
+          "label": "快进样式",
+          "type": "toggle",
+          "x": 181,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 642,
+            "w": 308,
+            "h": 37,
+            "slot": "d"
+          },
+          "chip_w": 100,
+          "chip_n": 3,
+          "options": [
+            "普通",
+            "高速",
+            "仅文本"
+          ]
+        },
+        {
+          "slot": "e",
+          "key": "movierclick",
+          "label": "影片右键",
+          "type": "toggle",
+          "x": 181,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 782,
+            "w": 292,
+            "h": 37,
+            "slot": "e"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "f",
+          "key": "movieskip",
+          "label": "影片跳过",
+          "type": "toggle",
+          "x": 1020,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "f"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "g",
+          "key": "textview",
+          "label": "文本显示",
+          "type": "toggle",
+          "x": 1020,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 362,
+            "w": 308,
+            "h": 37,
+            "slot": "g"
+          },
+          "chip_w": 100,
+          "chip_n": 3,
+          "options": [
+            "总是",
+            "自动关",
+            "其他"
+          ]
+        },
+        {
+          "slot": "h",
+          "key": "vspeedsync",
+          "label": "速度连动",
+          "type": "toggle",
+          "x": 1020,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 1032,
+            "y": 502,
+            "w": 292,
+            "h": 37,
+            "slot": "h"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "cafe_id": "4_text",
+      "label": "文本设置",
+      "rows": [
+        {
+          "slot": "a",
+          "key": "textspeed",
+          "label": "文本显示速度",
+          "type": "slider",
+          "x": 181,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 230,
+            "w": 288,
+            "h": 13,
+            "slot": "a"
+          },
+          "track": {
+            "x": 193,
+            "y": 230,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "b",
+          "key": "autospeed",
+          "label": "自动模式速度",
+          "type": "slider",
+          "x": 181,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 370,
+            "w": 288,
+            "h": 13,
+            "slot": "b"
+          },
+          "track": {
+            "x": 193,
+            "y": 370,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "c",
+          "key": "autovwait",
+          "label": "语音等待",
+          "type": "toggle",
+          "x": 181,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 502,
+            "w": 308,
+            "h": 37,
+            "slot": "c"
+          },
+          "chip_w": 100,
+          "chip_n": 3,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "slot": "d",
+          "key": "skipall",
+          "label": "快进未读文本",
+          "type": "toggle",
+          "x": 181,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 642,
+            "w": 292,
+            "h": 37,
+            "slot": "d"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "仅已读",
+            "全部"
+          ]
+        },
+        {
+          "slot": "e",
+          "key": "ctrlskip",
+          "label": "Ctrl跳过",
+          "type": "toggle",
+          "x": 181,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 782,
+            "w": 292,
+            "h": 37,
+            "slot": "e"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "f",
+          "key": "colors",
+          "label": "颜色设定",
+          "type": "toggle",
+          "x": 610,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "f"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "开",
+            "开"
+          ]
+        },
+        {
+          "slot": "g",
+          "key": "winopac",
+          "label": "对话框透明度",
+          "type": "slider",
+          "x": 610,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 370,
+            "w": 288,
+            "h": 13,
+            "slot": "g"
+          },
+          "track": {
+            "x": 622,
+            "y": 370,
+            "w": 288,
+            "h": 13
+          }
+        }
+      ]
+    },
+    {
+      "id": "5a",
+      "cafe_id": "5a_sound1",
+      "label": "音频1",
+      "rows": [
+        {
+          "slot": "a",
+          "key": "wave",
+          "label": "总音量",
+          "type": "slider",
+          "x": 181,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 230,
+            "w": 288,
+            "h": 13,
+            "slot": "a"
+          },
+          "track": {
+            "x": 193,
+            "y": 230,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "b",
+          "key": "bgm",
+          "label": "ＢＧＭ",
+          "type": "slider",
+          "x": 181,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 370,
+            "w": 288,
+            "h": 13,
+            "slot": "b"
+          },
+          "track": {
+            "x": 193,
+            "y": 370,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "c",
+          "key": "movie_se",
+          "label": "影片 / 音效",
+          "type": "slider",
+          "x": 181,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 510,
+            "w": 288,
+            "h": 13,
+            "slot": "c"
+          },
+          "track": {
+            "x": 193,
+            "y": 510,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "d",
+          "key": "bgv",
+          "label": "ＢＧＶ（通常）",
+          "type": "slider",
+          "x": 181,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 650,
+            "w": 288,
+            "h": 13,
+            "slot": "d"
+          },
+          "track": {
+            "x": 193,
+            "y": 650,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "e",
+          "key": "voicecut",
+          "label": "语音中断",
+          "type": "toggle",
+          "x": 181,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 782,
+            "w": 292,
+            "h": 37,
+            "slot": "e"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "f",
+          "key": "voice",
+          "label": "语音",
+          "type": "slider",
+          "x": 610,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 230,
+            "w": 288,
+            "h": 13,
+            "slot": "f"
+          },
+          "track": {
+            "x": 622,
+            "y": 230,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "g",
+          "key": "chv",
+          "label": "角色语音",
+          "type": "slider",
+          "x": 610,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 370,
+            "w": 288,
+            "h": 13,
+            "slot": "g"
+          },
+          "track": {
+            "x": 622,
+            "y": 370,
+            "w": 288,
+            "h": 13
+          }
+        },
+        {
+          "slot": "h",
+          "key": "syssnd",
+          "label": "系统声音模式",
+          "type": "toggle",
+          "x": 610,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 502,
+            "w": 308,
+            "h": 37,
+            "slot": "h"
+          },
+          "chip_w": 100,
+          "chip_n": 3,
+          "options": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "slot": "i",
+          "key": "sys",
+          "label": "系统音效/语音",
+          "type": "slider",
+          "x": 610,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 650,
+            "w": 288,
+            "h": 13,
+            "slot": "i"
+          },
+          "track": {
+            "x": 622,
+            "y": 650,
+            "w": 288,
+            "h": 13
+          }
+        }
+      ]
+    },
+    {
+      "id": "5b",
+      "cafe_id": "5b_sound2",
+      "label": "音频2",
+      "rows": [
+        {
+          "slot": "a",
+          "key": "sysvoall",
+          "label": "系统语音总开关",
+          "type": "toggle",
+          "x": 181,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "a"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "s0",
+          "key": "sysvo_title",
+          "label": "标题画面语音",
+          "type": "toggle",
+          "x": 181,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 362,
+            "w": 292,
+            "h": 37,
+            "slot": "s0"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "s2",
+          "key": "sysvo_save",
+          "label": "存档语音",
+          "type": "toggle",
+          "x": 181,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 502,
+            "w": 292,
+            "h": 37,
+            "slot": "s2"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "s4",
+          "key": "sysvo_extra",
+          "label": "鉴赏模式语音",
+          "type": "toggle",
+          "x": 181,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 642,
+            "w": 292,
+            "h": 37,
+            "slot": "s4"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "s6",
+          "key": "sysvo_chart",
+          "label": "流程图语音",
+          "type": "toggle",
+          "x": 181,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 782,
+            "w": 292,
+            "h": 37,
+            "slot": "s6"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "s1",
+          "key": "sysvo_option",
+          "label": "系统设定语音",
+          "type": "toggle",
+          "x": 610,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "s1"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "s3",
+          "key": "sysvo_load",
+          "label": "读档语音",
+          "type": "toggle",
+          "x": 610,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 362,
+            "w": 292,
+            "h": 37,
+            "slot": "s3"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "s5",
+          "key": "sysvo_backlog",
+          "label": "履历语音",
+          "type": "toggle",
+          "x": 610,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 502,
+            "w": 292,
+            "h": 37,
+            "slot": "s5"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "s7",
+          "key": "sysvo_exit",
+          "label": "结束游戏语音",
+          "type": "toggle",
+          "x": 610,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 642,
+            "w": 292,
+            "h": 37,
+            "slot": "s7"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "cafe_id": "6_dialog",
+      "label": "确认信息",
+      "rows": [
+        {
+          "slot": "cfall",
+          "key": "cfall",
+          "label": "全部确认开关",
+          "type": "toggle",
+          "x": 181,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "cfall"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "d0",
+          "key": "cf_save",
+          "label": "存档时确认",
+          "type": "toggle",
+          "x": 181,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 362,
+            "w": 292,
+            "h": 37,
+            "slot": "d0"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "d7",
+          "key": "cf_jump",
+          "label": "跳转确认",
+          "type": "toggle",
+          "x": 181,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 502,
+            "w": 292,
+            "h": 37,
+            "slot": "d7"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "d1",
+          "key": "cf_overwrite",
+          "label": "覆盖存档时确认",
+          "type": "toggle",
+          "x": 181,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 642,
+            "w": 292,
+            "h": 37,
+            "slot": "d1"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "d8",
+          "key": "cf_flow",
+          "label": "流程图确认",
+          "type": "toggle",
+          "x": 181,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 782,
+            "w": 292,
+            "h": 37,
+            "slot": "d8"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "d2",
+          "key": "cf_dsave",
+          "label": "快速存档确认",
+          "type": "toggle",
+          "x": 610,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "d2"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "d9",
+          "key": "cf_next",
+          "label": "下一场景确认",
+          "type": "toggle",
+          "x": 610,
+          "y": 300,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 362,
+            "w": 292,
+            "h": 37,
+            "slot": "d9"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "d3",
+          "key": "cf_load",
+          "label": "读档时确认",
+          "type": "toggle",
+          "x": 610,
+          "y": 440,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 502,
+            "w": 292,
+            "h": 37,
+            "slot": "d3"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "d10",
+          "key": "cf_backto",
+          "label": "返回确认",
+          "type": "toggle",
+          "x": 610,
+          "y": 580,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 642,
+            "w": 292,
+            "h": 37,
+            "slot": "d10"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "d4",
+          "key": "cf_qsave",
+          "label": "快速存档时确认",
+          "type": "toggle",
+          "x": 610,
+          "y": 720,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 622,
+            "y": 782,
+            "w": 292,
+            "h": 37,
+            "slot": "d4"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "cafe_id": "8a_keyboard1",
+      "label": "键盘",
+      "rows": [
+        {
+          "slot": "kb",
+          "key": "keybind",
+          "label": "快捷键绑定",
+          "type": "toggle",
+          "x": 181,
+          "y": 160,
+          "w": 313,
+          "h": 57,
+          "ctrl": {
+            "x": 193,
+            "y": 222,
+            "w": 292,
+            "h": 37,
+            "slot": "kb"
+          },
+          "chip_w": 144,
+          "chip_n": 2,
+          "options": [
+            "预览",
+            "预览"
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "id": "init",
+      "label": "初始化",
+      "x": 940,
+      "y": 973,
+      "w": 242,
+      "h": 60
+    },
+    {
+      "id": "title",
+      "label": "标题",
+      "x": 1187,
+      "y": 973,
+      "w": 242,
+      "h": 60
+    },
+    {
+      "id": "back",
+      "label": "返回",
+      "x": 1434,
+      "y": 973,
+      "w": 242,
+      "h": 60
+    }
+  ],
+  "help_box": {
+    "x": 48,
+    "y": 994,
+    "w": 520,
+    "h": 60
+  },
+  "exclude_pages": [
+    "7",
+    "9"
+  ]
+}

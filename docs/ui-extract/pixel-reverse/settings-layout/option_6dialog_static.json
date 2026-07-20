@@ -1,0 +1,556 @@
+{
+  "stem": "option_6dialog",
+  "stats": {
+    "stem": "option_6dialog",
+    "pbd_bytes": 81766,
+    "layers": 228,
+    "bindings": 3,
+    "clusters": 185,
+    "placeable": 4,
+    "storage_hits": 8,
+    "bind_cmds_sample": [
+      "changeOnOffProp/cf_backto/SystemConfig.askBackTo/toggle",
+      "changeOnOffProp/cf_backto/SystemConfig.askBackTo/false",
+      "changeOnOffProp/cf_backto/SystemConfig.askBackTo/true",
+      "changeOnOffProp/cf_backto/SystemConfig.askBackTo/toggle",
+      "changeOnOffProp/cf_copy/SystemConfig.askCopy/toggle",
+      "changeOnOffProp/cf_copy/SystemConfig.askCopy/false",
+      "changeOnOffProp/cf_copy/SystemConfig.askCopy/true",
+      "changeOnOffProp/cf_copy/SystemConfig.askCopy/toggle",
+      "changeOnOffProp/cf_delete/SystemConfig.askDelete/toggle",
+      "changeOnOffProp/cf_delete/SystemConfig.askDelete/false",
+      "changeOnOffProp/cf_delete/SystemConfig.askDelete/true",
+      "changeOnOffProp/cf_delete/SystemConfig.askDelete/toggle",
+      "changeOnOffProp/cf_dsave/SystemConfig.askDSave/toggle",
+      "changeOnOffProp/cf_dsave/SystemConfig.askDSave/false",
+      "changeOnOffProp/cf_dsave/SystemConfig.askDSave/true",
+      "changeOnOffProp/cf_dsave/SystemConfig.askDSave/toggle",
+      "changeOnOffProp/cf_exit/SystemConfig.askExit/toggle",
+      "changeOnOffProp/cf_exit/SystemConfig.askExit/false",
+      "changeOnOffProp/cf_exit/SystemConfig.askExit/true",
+      "changeOnOffProp/cf_exit/SystemConfig.askExit/toggle",
+      "changeOnOffProp/cf_flow/SystemConfig.askFlow/toggle",
+      "changeOnOffProp/cf_flow/SystemConfig.askFlow/false",
+      "changeOnOffProp/cf_flow/SystemConfig.askFlow/true",
+      "changeOnOffProp/cf_flow/SystemConfig.askFlow/toggle",
+      "changeOnOffProp/cf_init/SystemConfig.askInit/toggle",
+      "changeOnOffProp/cf_init/SystemConfig.askInit/false",
+      "changeOnOffProp/cf_init/SystemConfig.askInit/true",
+      "changeOnOffProp/cf_init/SystemConfig.askInit/toggle",
+      "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/toggle",
+      "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/false",
+      "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/true",
+      "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/toggle",
+      "changeOnOffProp/cf_jump/SystemConfig.askJump/toggle",
+      "changeOnOffProp/cf_jump/SystemConfig.askJump/false",
+      "changeOnOffProp/cf_jump/SystemConfig.askJump/true",
+      "changeOnOffProp/cf_jump/SystemConfig.askJump/toggle",
+      "changeOnOffProp/cf_load/SystemConfig.askLoad/toggle",
+      "changeOnOffProp/cf_load/SystemConfig.askLoad/false",
+      "changeOnOffProp/cf_load/SystemConfig.askLoad/true",
+      "changeOnOffProp/cf_load/SystemConfig.askLoad/toggle"
+    ],
+    "bind_cmd_count": 91,
+    "id_prefixes": [
+      [
+        "cf",
+        110
+      ],
+      [
+        "config",
+        23
+      ],
+      [
+        "label",
+        21
+      ],
+      [
+        "option",
+        5
+      ],
+      [
+        "common",
+        5
+      ],
+      [
+        "cfall",
+        3
+      ],
+      [
+        "sep",
+        3
+      ],
+      [
+        "uiname",
+        1
+      ],
+      [
+        "caption",
+        1
+      ],
+      [
+        "sename",
+        1
+      ],
+      [
+        "title",
+        1
+      ],
+      [
+        "visible",
+        1
+      ],
+      [
+        "page4",
+        1
+      ],
+      [
+        "page8",
+        1
+      ],
+      [
+        "page5",
+        1
+      ],
+      [
+        "page1",
+        1
+      ],
+      [
+        "page7",
+        1
+      ],
+      [
+        "reset",
+        1
+      ],
+      [
+        "page6",
+        1
+      ],
+      [
+        "target",
+        1
+      ]
+    ],
+    "layer_ids_sample": [
+      "uiname",
+      "caption",
+      "sename",
+      "title",
+      "cfall_off",
+      "visible",
+      "sep_a",
+      "page4",
+      "page8",
+      "page5",
+      "page1",
+      "sep_b",
+      "cf_resume",
+      "page7",
+      "reset",
+      "page6",
+      "target",
+      "helpbase",
+      "page3",
+      "page0",
+      "page2",
+      "cf_init_off",
+      "cf_save_off",
+      "cf_next_off",
+      "cf_swap_off",
+      "cf_copy_off",
+      "copy",
+      "page9",
+      "cf_exit_off",
+      "cf_jump_off",
+      "cf_flow_off",
+      "cf_load_off",
+      "cf_vsave_off",
+      "back",
+      "base",
+      "cf_qsave_off",
+      "helptext",
+      "cf_title_off",
+      "cf_dsave_off",
+      "cf_qload_off",
+      "layer",
+      "label_l3b",
+      "label_l3a",
+      "label_l1b",
+      "cf_backto_off",
+      "label_l1a",
+      "label_l2c",
+      "cf_vsave",
+      "label_l2b",
+      "cf_delete_off",
+      "label_l2f",
+      "label_l1f",
+      "label_l2d",
+      "cfall",
+      "label_l3f",
+      "label_l2e",
+      "label_l3e",
+      "label_l3d",
+      "label_l1c",
+      "label_l1e"
+    ],
+    "placeable_with_formula": [],
+    "storage_with_formula": [
+      {
+        "geo": {
+          "h": 13004,
+          "ox": 185,
+          "oy": 254,
+          "w": 31852,
+          "ch": 12976,
+          "cw": 31767,
+          "cx": 181,
+          "cy": 117,
+          "storage": "option_6dialog__pack",
+          "width": 31771,
+          "x": 93097,
+          "y": 67764,
+          "height": 15541
+        },
+        "formula": {
+          "x": 956,
+          "y": 403
+        }
+      }
+    ]
+  },
+  "placeable": [
+    {
+      "id": "base",
+      "geo": {
+        "width": 194,
+        "height": 147,
+        "storagex": 141
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "f",
+      "geo": {
+        "x": 96,
+        "width": 254
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "option__bg0",
+      "geo": {
+        "storagex": 141
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "width",
+      "geo": {
+        "x": 169
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "storage": [
+    {
+      "geo": {
+        "h": 13004,
+        "ox": 185,
+        "oy": 254,
+        "w": 31852,
+        "ch": 12976,
+        "cw": 31767,
+        "cx": 181,
+        "cy": 117,
+        "storage": "option_6dialog__pack",
+        "width": 31771,
+        "x": 93097,
+        "y": 67764,
+        "height": 15541
+      },
+      "formula": {
+        "x": 956,
+        "y": 403
+      }
+    },
+    {
+      "geo": {
+        "h": 15039,
+        "ox": 71,
+        "oy": 93,
+        "w": 80716,
+        "ch": 14855,
+        "cw": 80853,
+        "cx": 27175,
+        "cy": 98346,
+        "storage": "option__pack",
+        "width": 80784,
+        "x": 404974,
+        "y": 253438,
+        "height": 14997
+      },
+      "formula": {
+        "x": 28064,
+        "y": 98793
+      }
+    },
+    {
+      "geo": {
+        "width": 80859,
+        "x": 404874,
+        "y": 253240,
+        "height": 276627,
+        "storage": "option__bg0",
+        "storagex": 141,
+        "storagey": 7
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "geo": {
+        "ch": 11111,
+        "cw": 75659,
+        "cx": 27238,
+        "cy": 128198,
+        "h": 11079,
+        "ox": 224,
+        "oy": 180,
+        "storage": "option__pack",
+        "w": 75585,
+        "width": 75667,
+        "x": 22323,
+        "y": 5104,
+        "height": 12818
+      },
+      "formula": {
+        "x": 27974,
+        "y": 128558
+      }
+    },
+    {
+      "geo": {
+        "h": 12802,
+        "opacity": 33020,
+        "ox": 123,
+        "oy": 114,
+        "w": 97534,
+        "ch": 13041,
+        "cw": 97517,
+        "cx": 27233,
+        "cy": 126,
+        "storage": "option__pack",
+        "width": 97395,
+        "x": 251013,
+        "y": 38633
+      },
+      "formula": {
+        "x": 28070,
+        "y": 552
+      }
+    },
+    {
+      "geo": {
+        "h": 12880,
+        "opacity": 32983,
+        "ox": 90,
+        "oy": 166,
+        "w": 97336,
+        "ch": 12946,
+        "cw": 97482,
+        "cx": 27302,
+        "cy": 1,
+        "storage": "option__pack",
+        "width": 97521,
+        "x": 143490,
+        "y": 38502,
+        "height": 19781
+      },
+      "formula": {
+        "x": 28172,
+        "y": 375
+      }
+    },
+    {
+      "geo": {
+        "ch": 187177,
+        "cw": 19959,
+        "cx": 2193,
+        "cy": 232,
+        "h": 19948,
+        "ox": 71,
+        "oy": 118,
+        "storage": "option__pack",
+        "w": 187275,
+        "width": 187349,
+        "x": 6998,
+        "y": 250704,
+        "height": 19763
+      },
+      "formula": {
+        "x": 3082,
+        "y": 654
+      }
+    },
+    {
+      "geo": {
+        "ch": 181373,
+        "cw": 1277,
+        "cx": 21761,
+        "cy": 130,
+        "h": 181397,
+        "ox": 132,
+        "oy": 22,
+        "storage": "option__pack",
+        "w": 1075,
+        "width": 1038,
+        "x": 23034,
+        "y": 62898,
+        "height": 181434
+      },
+      "formula": {
+        "x": 22589,
+        "y": 648
+      }
+    }
+  ],
+  "binds": [
+    {
+      "layer_id": "changeOnOffProp",
+      "bindings": [
+        "changeOnOffProp/cf_backto/SystemConfig.askBackTo/toggle",
+        "changeOnOffProp/cf_backto/SystemConfig.askBackTo/false",
+        "changeOnOffProp/cf_backto/SystemConfig.askBackTo/true",
+        "changeOnOffProp/cf_backto/SystemConfig.askBackTo/toggle",
+        "changeOnOffProp/cf_copy/SystemConfig.askCopy/toggle",
+        "changeOnOffProp/cf_copy/SystemConfig.askCopy/false",
+        "changeOnOffProp/cf_copy/SystemConfig.askCopy/true",
+        "changeOnOffProp/cf_copy/SystemConfig.askCopy/toggle",
+        "changeOnOffProp/cf_delete/SystemConfig.askDelete/toggle",
+        "changeOnOffProp/cf_delete/SystemConfig.askDelete/false",
+        "changeOnOffProp/cf_delete/SystemConfig.askDelete/true",
+        "changeOnOffProp/cf_delete/SystemConfig.askDelete/toggle",
+        "changeOnOffProp/cf_dsave/SystemConfig.askDSave/toggle",
+        "changeOnOffProp/cf_dsave/SystemConfig.askDSave/false",
+        "changeOnOffProp/cf_dsave/SystemConfig.askDSave/true",
+        "changeOnOffProp/cf_dsave/SystemConfig.askDSave/toggle",
+        "changeOnOffProp/cf_exit/SystemConfig.askExit/toggle",
+        "changeOnOffProp/cf_exit/SystemConfig.askExit/false",
+        "changeOnOffProp/cf_exit/SystemConfig.askExit/true",
+        "changeOnOffProp/cf_exit/SystemConfig.askExit/toggle",
+        "changeOnOffProp/cf_flow/SystemConfig.askFlow/toggle",
+        "changeOnOffProp/cf_flow/SystemConfig.askFlow/false",
+        "changeOnOffProp/cf_flow/SystemConfig.askFlow/true",
+        "changeOnOffProp/cf_flow/SystemConfig.askFlow/toggle",
+        "changeOnOffProp/cf_init/SystemConfig.askInit/toggle",
+        "changeOnOffProp/cf_init/SystemConfig.askInit/false",
+        "changeOnOffProp/cf_init/SystemConfig.askInit/true",
+        "changeOnOffProp/cf_init/SystemConfig.askInit/toggle",
+        "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/toggle",
+        "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/false",
+        "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/true",
+        "changeOnOffProp/cf_initstand/SystemConfig.askInitStand/toggle",
+        "changeOnOffProp/cf_jump/SystemConfig.askJump/toggle",
+        "changeOnOffProp/cf_jump/SystemConfig.askJump/false",
+        "changeOnOffProp/cf_jump/SystemConfig.askJump/true",
+        "changeOnOffProp/cf_jump/SystemConfig.askJump/toggle",
+        "changeOnOffProp/cf_load/SystemConfig.askLoad/toggle",
+        "changeOnOffProp/cf_load/SystemConfig.askLoad/false",
+        "changeOnOffProp/cf_load/SystemConfig.askLoad/true",
+        "changeOnOffProp/cf_load/SystemConfig.askLoad/toggle",
+        "changeOnOffProp/cf_move/SystemConfig.askMove/toggle",
+        "changeOnOffProp/cf_move/SystemConfig.askMove/false",
+        "changeOnOffProp/cf_move/SystemConfig.askMove/true",
+        "changeOnOffProp/cf_move/SystemConfig.askMove/toggle",
+        "changeOnOffProp/cf_next/SystemConfig.askNext/toggle",
+        "changeOnOffProp/cf_next/SystemConfig.askNext/false",
+        "changeOnOffProp/cf_next/SystemConfig.askNext/true",
+        "changeOnOffProp/cf_next/SystemConfig.askNext/toggle",
+        "changeOnOffProp/cf_nextscn/SystemConfig.askNextScn/toggle",
+        "changeOnOffProp/cf_nextscn/SystemConfig.askNextScn/false",
+        "changeOnOffProp/cf_nextscn/SystemConfig.askNextScn/true",
+        "changeOnOffProp/cf_nextscn/SystemConfig.askNextScn/toggle",
+        "changeOnOffProp/cf_overwrite/SystemConfig.askOverwrite/toggle",
+        "changeOnOffProp/cf_overwrite/SystemConfig.askOverwrite/false",
+        "changeOnOffProp/cf_overwrite/SystemConfig.askOverwrite/true",
+        "changeOnOffProp/cf_overwrite/SystemConfig.askOverwrite/toggle",
+        "changeOnOffProp/cf_prevscn/SystemConfig.askPrevScn/toggle",
+        "changeOnOffProp/cf_prevscn/SystemConfig.askPrevScn/false",
+        "changeOnOffProp/cf_prevscn/SystemConfig.askPrevScn/true",
+        "changeOnOffProp/cf_prevscn/SystemConfig.askPrevScn/toggle",
+        "changeOnOffProp/cf_qload/SystemConfig.askQLoad/toggle",
+        "changeOnOffProp/cf_qload/SystemConfig.askQLoad/false",
+        "changeOnOffProp/cf_qload/SystemConfig.askQLoad/true",
+        "changeOnOffProp/cf_qload/SystemConfig.askQLoad/toggle",
+        "changeOnOffProp/cf_qsave/SystemConfig.askQSave/toggle",
+        "changeOnOffProp/cf_qsave/SystemConfig.askQSave/false",
+        "changeOnOffProp/cf_qsave/SystemConfig.askQSave/true",
+        "changeOnOffProp/cf_qsave/SystemConfig.askQSave/toggle",
+        "changeOnOffProp/cf_resume/SystemConfig.askResume/toggle",
+        "changeOnOffProp/cf_resume/SystemConfig.askResume/false",
+        "changeOnOffProp/cf_resume/SystemConfig.askResume/true",
+        "changeOnOffProp/cf_resume/SystemConfig.askResume/toggle",
+        "changeOnOffProp/cf_save/SystemConfig.askSave/toggle",
+        "changeOnOffProp/cf_save/SystemConfig.askSave/false",
+        "changeOnOffProp/cf_save/SystemConfig.askSave/true",
+        "changeOnOffProp/cf_save/SystemConfig.askSave/toggle",
+        "changeOnOffProp/cf_swap/SystemConfig.askSwap/toggle",
+        "changeOnOffProp/cf_swap/SystemConfig.askSwap/false",
+        "changeOnOffProp/cf_swap/SystemConfig.askSwap/true",
+        "changeOnOffProp/cf_swap/SystemConfig.askSwap/toggle",
+        "changeOnOffProp/cf_title/SystemConfig.askTitle/toggle",
+        "changeOnOffProp/cf_title/SystemConfig.askTitle/false",
+        "changeOnOffProp/cf_title/SystemConfig.askTitle/true",
+        "changeOnOffProp/cf_title/SystemConfig.askTitle/toggle",
+        "changeOnOffProp/cf_vsave/SystemConfig.askVSave/toggle",
+        "changeOnOffProp/cf_vsave/SystemConfig.askVSave/false",
+        "changeOnOffProp/cf_vsave/SystemConfig.askVSave/true",
+        "changeOnOffProp/cf_vsave/SystemConfig.askVSave/toggle"
+      ],
+      "properties": {
+        "height": 228,
+        "y": 27,
+        "cw": 213,
+        "oy": 557,
+        "width": 192,
+        "x": 5
+      }
+    },
+    {
+      "layer_id": "reset",
+      "bindings": [
+        "reset"
+      ],
+      "properties": {
+        "width": 47
+      }
+    },
+    {
+      "layer_id": "setAllConfirm",
+      "bindings": [
+        "setAllConfirm/0",
+        "setAllConfirm/1"
+      ],
+      "properties": {
+        "x": 69,
+        "height": 212
+      }
+    }
+  ]
+}

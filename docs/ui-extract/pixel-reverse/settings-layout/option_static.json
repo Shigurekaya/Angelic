@@ -1,0 +1,782 @@
+{
+  "stem": "option",
+  "stats": {
+    "stem": "option",
+    "pbd_bytes": 36872,
+    "layers": 104,
+    "bindings": 1,
+    "clusters": 51,
+    "placeable": 4,
+    "storage_hits": 26,
+    "bind_cmds_sample": [
+      "reset"
+    ],
+    "bind_cmd_count": 1,
+    "id_prefixes": [
+      [
+        "slider",
+        9
+      ],
+      [
+        "option",
+        8
+      ],
+      [
+        "num",
+        7
+      ],
+      [
+        "common",
+        3
+      ],
+      [
+        "normal",
+        3
+      ],
+      [
+        "dot",
+        2
+      ],
+      [
+        "mute",
+        2
+      ],
+      [
+        "over",
+        2
+      ],
+      [
+        "layer",
+        1
+      ],
+      [
+        "caption",
+        1
+      ],
+      [
+        "title",
+        1
+      ],
+      [
+        "auto",
+        1
+      ],
+      [
+        "page8",
+        1
+      ],
+      [
+        "visible",
+        1
+      ],
+      [
+        "target",
+        1
+      ],
+      [
+        "page6",
+        1
+      ],
+      [
+        "page0",
+        1
+      ],
+      [
+        "page2",
+        1
+      ],
+      [
+        "page4",
+        1
+      ],
+      [
+        "page3",
+        1
+      ]
+    ],
+    "layer_ids_sample": [
+      "layer",
+      "caption",
+      "title",
+      "num_l",
+      "auto",
+      "slider_s",
+      "num_s",
+      "page8",
+      "visible",
+      "target",
+      "page6",
+      "page0",
+      "page2",
+      "page4",
+      "page3",
+      "page5",
+      "helpbase",
+      "page1",
+      "page7",
+      "reset",
+      "page9",
+      "copy",
+      "back",
+      "helptext",
+      "slider_t",
+      "base",
+      "slider_l",
+      "slider_m",
+      "sename",
+      "uiname",
+      "option_3game2",
+      "option_0simple",
+      "option",
+      "option_4text",
+      "common_back_game",
+      "common_init",
+      "common_back_title",
+      "option_6dialog",
+      "overlay",
+      "exp",
+      "a",
+      "area",
+      "b",
+      "btn2",
+      "btn2b",
+      "btn3",
+      "btn4",
+      "btn4b",
+      "c",
+      "cr",
+      "d",
+      "delay",
+      "dot_on",
+      "dot_ov",
+      "e",
+      "evals",
+      "f",
+      "false",
+      "g",
+      "holdimage"
+    ],
+    "placeable_with_formula": [],
+    "storage_with_formula": [
+      {
+        "geo": {
+          "ch": 212615,
+          "cw": 1137,
+          "cx": 80,
+          "cy": 215,
+          "h": 212570,
+          "ox": 166,
+          "oy": 200,
+          "storage": "option__pack",
+          "w": 1234,
+          "width": 1170,
+          "x": 22986,
+          "y": 32166
+        },
+        "formula": {
+          "x": 874,
+          "y": 555
+        }
+      }
+    ]
+  },
+  "placeable": [
+    {
+      "id": "base",
+      "geo": {
+        "width": 209,
+        "height": 193,
+        "storagex": 58
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "f",
+      "geo": {
+        "x": 38,
+        "width": 139,
+        "cy": 26
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "option__bg0",
+      "geo": {
+        "storagex": 58
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "id": "width",
+      "geo": {
+        "x": 14
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "storage": [
+    {
+      "geo": {
+        "ch": 1879,
+        "cw": 5877,
+        "cx": 121877,
+        "cy": 75874,
+        "h": 5745,
+        "ox": 65,
+        "oy": 234,
+        "storage": "option__pack",
+        "w": 1961,
+        "width": 231990,
+        "x": 33550,
+        "y": 52739,
+        "height": 8271
+      },
+      "formula": {
+        "x": 122772,
+        "y": 76180
+      }
+    },
+    {
+      "geo": {
+        "h": 8385,
+        "ox": 61,
+        "oy": 246,
+        "w": 16121,
+        "ch": 8223,
+        "cw": 15895,
+        "cx": 102673,
+        "cy": 128051,
+        "storage": "option__pack",
+        "width": 15925,
+        "x": 28250,
+        "y": 35273,
+        "height": 212514
+      },
+      "formula": {
+        "x": 103572,
+        "y": 128345
+      }
+    },
+    {
+      "geo": {
+        "ch": 212512,
+        "cw": 1208,
+        "cx": 1241,
+        "cy": 161,
+        "h": 212603,
+        "ox": 28,
+        "oy": 251,
+        "storage": "option__pack",
+        "w": 1093,
+        "width": 1088,
+        "x": 23034,
+        "y": 32044,
+        "height": 181396
+      },
+      "formula": {
+        "x": 2173,
+        "y": 450
+      }
+    },
+    {
+      "geo": {
+        "ch": 181306,
+        "cw": 1090,
+        "cx": 21798,
+        "cy": 110,
+        "h": 181411,
+        "ox": 222,
+        "oy": 114,
+        "storage": "option__pack",
+        "w": 1260,
+        "width": 1123,
+        "x": 22984,
+        "y": 62948,
+        "height": 71205
+      },
+      "formula": {
+        "x": 22536,
+        "y": 536
+      }
+    },
+    {
+      "geo": {
+        "ch": 1132,
+        "cw": 71344,
+        "cx": 27159,
+        "cy": 142517,
+        "h": 71285,
+        "ox": 67,
+        "oy": 146,
+        "storage": "option__pack",
+        "w": 1243,
+        "width": 1139,
+        "x": 132689,
+        "y": 173365,
+        "height": 127255
+      },
+      "formula": {
+        "x": 28052,
+        "y": 142911
+      }
+    },
+    {
+      "geo": {
+        "ch": 127299,
+        "cw": 1104,
+        "cx": 26305,
+        "cy": 26,
+        "h": 127470,
+        "ox": 178,
+        "oy": 139,
+        "storage": "option__pack",
+        "w": 1132,
+        "width": 1272,
+        "x": 363291,
+        "y": 32425,
+        "height": 15459
+      },
+      "formula": {
+        "x": 27087,
+        "y": 427
+      }
+    },
+    {
+      "geo": {
+        "h": 14862,
+        "ox": 191,
+        "oy": 71,
+        "w": 80785,
+        "ch": 15013,
+        "cw": 80647,
+        "cx": 27349,
+        "cy": 98343,
+        "storage": "option__pack",
+        "width": 80891,
+        "x": 404880,
+        "y": 253422,
+        "height": 14946
+      },
+      "formula": {
+        "x": 28118,
+        "y": 98812
+      }
+    },
+    {
+      "geo": {
+        "width": 80738,
+        "x": 404955,
+        "y": 253322,
+        "height": 276673,
+        "storage": "option__bg0",
+        "storagex": 58,
+        "storagey": 141
+      },
+      "formula": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "geo": {
+        "h": 12893,
+        "opacity": 32937,
+        "ox": 103,
+        "oy": 139,
+        "w": 97478,
+        "ch": 13024,
+        "cw": 97460,
+        "cx": 27245,
+        "cy": 65,
+        "storage": "option__pack",
+        "width": 97518,
+        "x": 33523,
+        "y": 48176,
+        "height": 12864
+      },
+      "formula": {
+        "x": 28102,
+        "y": 466
+      }
+    },
+    {
+      "geo": {
+        "h": 13029,
+        "opacity": 32806,
+        "ox": 149,
+        "oy": 169,
+        "w": 94837,
+        "ch": 13035,
+        "cw": 94829,
+        "cx": 27373,
+        "cy": 41932,
+        "storage": "option__pack",
+        "width": 94732,
+        "x": 33439,
+        "y": 48254,
+        "height": 12882
+      },
+      "formula": {
+        "x": 28184,
+        "y": 42303
+      }
+    },
+    {
+      "geo": {
+        "h": 12935,
+        "opacity": 32881,
+        "ox": 191,
+        "oy": 37,
+        "w": 63079,
+        "ch": 13019,
+        "cw": 63084,
+        "cx": 27240,
+        "cy": 143371,
+        "storage": "option__pack",
+        "width": 63016,
+        "x": 33369,
+        "y": 48251,
+        "height": 12919
+      },
+      "formula": {
+        "x": 28009,
+        "y": 143874
+      }
+    },
+    {
+      "geo": {
+        "h": 12990,
+        "opacity": 32979,
+        "ox": 93,
+        "oy": 146,
+        "w": 47368,
+        "ch": 12983,
+        "cw": 47545,
+        "cx": 27238,
+        "cy": 181941,
+        "storage": "option__pack",
+        "width": 47551,
+        "x": 33472,
+        "y": 48358,
+        "height": 12892
+      },
+      "formula": {
+        "x": 28105,
+        "y": 182335
+      }
+    },
+    {
+      "geo": {
+        "h": 13053,
+        "opacity": 32851,
+        "ox": 164,
+        "oy": 183,
+        "w": 44978,
+        "ch": 44934,
+        "cw": 12999,
+        "cx": 102993,
+        "cy": 156311,
+        "storage": "option__pack",
+        "width": 44991,
+        "x": 33342,
+        "y": 48163,
+        "height": 11213
+      },
+      "formula": {
+        "x": 103789,
+        "y": 156668
+      }
+    },
+    {
+      "geo": {
+        "ch": 11152,
+        "cw": 75580,
+        "cx": 27166,
+        "cy": 128168,
+        "h": 11259,
+        "ox": 199,
+        "oy": 32,
+        "storage": "option__pack",
+        "w": 75623,
+        "width": 75528,
+        "x": 22385,
+        "y": 5075,
+        "height": 8737
+      },
+      "formula": {
+        "x": 27927,
+        "y": 128676
+      }
+    },
+    {
+      "geo": {
+        "ch": 8941,
+        "cw": 8879,
+        "cx": 107975,
+        "cy": 98537,
+        "h": 8706,
+        "ox": 73,
+        "oy": 122,
+        "storage": "option__pack",
+        "w": 8864,
+        "width": 8737,
+        "x": 35480,
+        "y": 50404,
+        "height": 19727
+      },
+      "formula": {
+        "x": 108862,
+        "y": 98955
+      }
+    },
+    {
+      "geo": {
+        "ch": 187198,
+        "cw": 19865,
+        "cx": 2250,
+        "cy": 7,
+        "h": 19881,
+        "ox": 224,
+        "oy": 245,
+        "storage": "option__pack",
+        "w": 187188,
+        "width": 187152,
+        "x": 6988,
+        "y": 250673,
+        "height": 19871
+      },
+      "formula": {
+        "x": 2986,
+        "y": 302
+      }
+    },
+    {
+      "geo": {
+        "ch": 7007,
+        "cw": 9790,
+        "cx": 103155,
+        "cy": 200971,
+        "h": 6986,
+        "ox": 2134,
+        "oy": 3393,
+        "storage": "option__pack",
+        "w": 9854,
+        "width": 14077,
+        "x": 31253,
+        "y": 132683,
+        "height": 7590
+      },
+      "formula": {
+        "x": 101981,
+        "y": 198118
+      }
+    },
+    {
+      "geo": {
+        "ch": 7473,
+        "cw": 18991,
+        "cx": 115839,
+        "cy": 200993,
+        "h": 7511,
+        "ox": 216,
+        "oy": 163,
+        "storage": "option__pack",
+        "w": 18987,
+        "width": 19148,
+        "x": 219400,
+        "y": 135799,
+        "height": 7593
+      },
+      "formula": {
+        "x": 116583,
+        "y": 201370
+      }
+    },
+    {
+      "geo": {
+        "ch": 13542,
+        "cw": 7517,
+        "cx": 82813,
+        "cy": 194647,
+        "h": 7613,
+        "ox": 41,
+        "oy": 210,
+        "storage": "option__pack",
+        "w": 13424,
+        "width": 13323,
+        "x": 219409,
+        "y": 145287,
+        "height": 7473
+      },
+      "formula": {
+        "x": 83732,
+        "y": 194977
+      }
+    },
+    {
+      "geo": {
+        "ch": 9859,
+        "cw": 5487,
+        "cx": 128739,
+        "cy": 156306,
+        "h": 5428,
+        "ox": 22,
+        "oy": 167,
+        "storage": "option__pack",
+        "w": 9931,
+        "width": 9912,
+        "x": 130606,
+        "y": 15441
+      },
+      "formula": {
+        "x": 129677,
+        "y": 156679
+      }
+    },
+    {
+      "geo": {
+        "h": 13867,
+        "ox": 3869,
+        "oy": 244,
+        "w": 13984,
+        "ch": 12804,
+        "cw": 13056,
+        "cx": 74508,
+        "cy": 181801,
+        "storage": "option__pack",
+        "width": 158880,
+        "x": 51129,
+        "y": 132842,
+        "height": 14075
+      },
+      "formula": {
+        "x": 71599,
+        "y": 182097
+      }
+    },
+    {
+      "geo": {
+        "h": 14051,
+        "ox": 3848,
+        "oy": 156,
+        "w": 13990,
+        "ch": 13035,
+        "cw": 13100,
+        "cx": 74517,
+        "cy": 181819,
+        "storage": "option__pack",
+        "width": 88520,
+        "x": 51170,
+        "y": 132673,
+        "height": 14069
+      },
+      "formula": {
+        "x": 71629,
+        "y": 182203
+      }
+    },
+    {
+      "geo": {
+        "h": 13852,
+        "ox": 4060,
+        "oy": 69,
+        "w": 13826,
+        "ch": 12911,
+        "cw": 13111,
+        "cx": 74629,
+        "cy": 181820,
+        "storage": "option__pack",
+        "width": 76502,
+        "x": 51154,
+        "y": 132785,
+        "height": 13939
+      },
+      "formula": {
+        "x": 71529,
+        "y": 182291
+      }
+    },
+    {
+      "geo": {
+        "h": 13863,
+        "ox": 3947,
+        "oy": 130,
+        "w": 13919,
+        "ch": 12996,
+        "cw": 13124,
+        "cx": 74498,
+        "cy": 181838,
+        "storage": "option__pack",
+        "width": 97430,
+        "x": 51003,
+        "y": 132832,
+        "height": 13861
+      },
+      "formula": {
+        "x": 71511,
+        "y": 182248
+      }
+    },
+    {
+      "geo": {
+        "h": 14007,
+        "ox": 37,
+        "oy": 254,
+        "w": 13909,
+        "ch": 8470,
+        "cw": 7404,
+        "cx": 116497,
+        "cy": 83496,
+        "storage": "option__pack",
+        "width": 13972,
+        "x": 224611,
+        "y": 117088
+      },
+      "formula": {
+        "x": 117420,
+        "y": 83782
+      }
+    },
+    {
+      "geo": {
+        "ch": 212615,
+        "cw": 1137,
+        "cx": 80,
+        "cy": 215,
+        "h": 212570,
+        "ox": 166,
+        "oy": 200,
+        "storage": "option__pack",
+        "w": 1234,
+        "width": 1170,
+        "x": 22986,
+        "y": 32166
+      },
+      "formula": {
+        "x": 874,
+        "y": 555
+      }
+    }
+  ],
+  "binds": [
+    {
+      "layer_id": "reset",
+      "bindings": [
+        "reset"
+      ],
+      "properties": {}
+    }
+  ]
+}
