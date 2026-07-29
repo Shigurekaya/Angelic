@@ -1,0 +1,30 @@
+if (!SystemConfig.UpgradePatchExists) {
+	System.inform("Upgrade data not found!");
+@if (PACKED)
+	System.exit(1);
+@endif
+}
+
+global.IsTrial = false; // 体験版フラグ消去
+SystemConfig.XRated = true; // R18フラグ有効
+SystemConfig.scnchartInfo = "x_scnchartdata.tjs"; // チャート定義上書き
+SystemHook.kagAdd(%[ name:"start.afterstory", storage:"start_1.ks", target:"*start", call:true ]); // アフター開始フック
+
+
+// ビデオ再生モード変更
+addAfterInitCallback(function() {
+	// Steam版でかつ layer モード設定だった場合
+	if (typeof global.Steam != "undefined" && System.getArgument("-vomstyle") == "layer") {
+		// 初回のみ
+		if(!kag.sflags.SteamVideoModeChanged) {
+			kag.sflags.SteamVideoModeChanged = true;
+
+			setSysArgMenuItem("vomstyle", "auto"); // autoに変更
+		}
+	}
+} incontextof global);
+
+//addAutoPathRecursive(System.exePath+"scenario_R18/", false, tkdlVerbose);
+@if (! PACKED && DEBUG)
+SystemConfig.ScenarioDevelopPathEnabled = true;
+@endif

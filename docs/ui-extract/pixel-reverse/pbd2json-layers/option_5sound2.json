@@ -1,0 +1,2152 @@
+{
+  "source": "option_5sound2.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "helptext",
+    "helpbase",
+    "base",
+    "label_a",
+    "sysvoall_on",
+    "sysvoall_off",
+    "sysvoall",
+    "sysvoplay_area",
+    "sysvoplay0_chk",
+    "sysvoplay1_chk",
+    "sysvoplay2_chk",
+    "sysvoplay3_chk",
+    "sysvoplay4_chk",
+    "sysvoplay5_chk",
+    "sysvoplay6_chk",
+    "sysvoplay7_chk",
+    "sysvoplay8_chk",
+    "sysvoplay9_chk",
+    "sysvoplay10_chk",
+    "sysvoplay11_chk",
+    "sysvoplay12_chk",
+    "sysvoplay13_chk",
+    "sysvoplay14_chk",
+    "sysvoplay15_chk",
+    "label_b",
+    "sysvo0_chk",
+    "sysvo1_chk",
+    "sysvo2_chk",
+    "sysvo3_chk",
+    "sysvo4_chk",
+    "sysvo5_chk",
+    "sysvo6_chk",
+    "sysvo7_chk",
+    "sysvo8_chk",
+    "sysvo9_chk",
+    "sysvo10_chk",
+    "sysvo11_chk",
+    "sysvo_rnd",
+    "sysvomask_area",
+    "sysvo_ok",
+    "sep_a",
+    "sep_b",
+    "sysvo0_on",
+    "sysvo0_off",
+    "sysvo0_rev",
+    "sysvo1_on",
+    "sysvo1_off",
+    "sysvo1_rev",
+    "sysvo2_on",
+    "sysvo2_off",
+    "sysvo2_rev",
+    "sysvo3_on",
+    "sysvo3_off",
+    "sysvo3_rev",
+    "sysvo4_on",
+    "sysvo4_off",
+    "sysvo4_rev",
+    "sysvo5_on",
+    "sysvo5_off",
+    "sysvo5_rev",
+    "sysvo6_on",
+    "sysvo6_off",
+    "sysvo6_rev",
+    "sysvo7_on",
+    "sysvo7_off",
+    "sysvo7_rev",
+    "sysvo8_on",
+    "sysvo8_off",
+    "sysvo8_rev",
+    "sysvo9_on",
+    "sysvo9_off",
+    "sysvo9_rev",
+    "sysvo10_on",
+    "sysvo10_off",
+    "sysvo10_rev",
+    "sysvo11_on",
+    "sysvo11_off",
+    "sysvo11_rev",
+    "sysvoplay0_on",
+    "sysvoplay0_off",
+    "sysvoplay0_rev",
+    "sysvoplay0",
+    "sysvoplay1_on",
+    "sysvoplay1_off",
+    "sysvoplay1_rev",
+    "sysvoplay1",
+    "sysvoplay2_on",
+    "sysvoplay2_off",
+    "sysvoplay2_rev",
+    "sysvoplay2",
+    "sysvoplay3_on",
+    "sysvoplay3_off",
+    "sysvoplay3_rev",
+    "sysvoplay3",
+    "sysvoplay4_on",
+    "sysvoplay4_off",
+    "sysvoplay4_rev",
+    "sysvoplay4",
+    "sysvoplay5_on",
+    "sysvoplay5_off",
+    "sysvoplay5_rev",
+    "sysvoplay5",
+    "sysvoplay6_on",
+    "sysvoplay6_off",
+    "sysvoplay6_rev",
+    "sysvoplay6",
+    "sysvoplay7_on",
+    "sysvoplay7_off",
+    "sysvoplay7_rev",
+    "sysvoplay7",
+    "sysvoplay8_on",
+    "sysvoplay8_off",
+    "sysvoplay8_rev",
+    "sysvoplay8",
+    "sysvoplay9_on",
+    "sysvoplay9_off",
+    "sysvoplay9_rev",
+    "sysvoplay9",
+    "sysvoplay10_on",
+    "sysvoplay10_off",
+    "sysvoplay10_rev",
+    "sysvoplay10",
+    "sysvoplay11_on",
+    "sysvoplay11_off",
+    "sysvoplay11_rev",
+    "sysvoplay11",
+    "sysvoplay12_on",
+    "sysvoplay12_off",
+    "sysvoplay12_rev",
+    "sysvoplay12",
+    "sysvoplay13_on",
+    "sysvoplay13_off",
+    "sysvoplay13_rev",
+    "sysvoplay13",
+    "sysvoplay14_on",
+    "sysvoplay14_off",
+    "sysvoplay14_rev",
+    "sysvoplay14",
+    "sysvoplay15_on",
+    "sysvoplay15_off",
+    "sysvoplay15_rev",
+    "sysvoplay15",
+    "sysvo_init",
+    "sysvo_revert"
+  ],
+  "layer_count": 160,
+  "hotspot_count": 58,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 1920,
+          "h": 1080,
+          "storage": "psd://option_5sound2.psd/id/3421.bmp"
+        }
+      }
+    },
+    {
+      "name": "page0",
+      "left": 465,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page0",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page1",
+      "left": 593,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page1",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page2",
+      "left": 721,
+      "top": 0,
+      "width": 163,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page2",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 163,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page3",
+      "left": 884,
+      "top": 0,
+      "width": 167,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page3",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 167,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page4",
+      "left": 1051,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page4",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page5",
+      "left": 1179,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page5",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page6",
+      "left": 1307,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page6",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page7",
+      "left": 1455,
+      "top": 0,
+      "width": 102,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page7",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 102,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page8",
+      "left": 1557,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page8",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page9",
+      "left": 1705,
+      "top": 0,
+      "width": 167,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page9",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 167,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "caption",
+      "left": 87,
+      "top": 19,
+      "width": 295,
+      "height": 43,
+      "class": "layer",
+      "uiname": "caption",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 500,
+          "w": 295,
+          "h": 43,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sep_a",
+      "left": 89,
+      "top": 125,
+      "width": 4,
+      "height": 830,
+      "class": "layer",
+      "uiname": "sep_a",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 4,
+          "h": 830,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sep_b",
+      "left": 988,
+      "top": 125,
+      "width": 4,
+      "height": 830,
+      "class": "layer",
+      "uiname": "sep_b",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 4,
+          "h": 830,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "label_a",
+      "left": 106,
+      "top": 137,
+      "width": 480,
+      "height": 32,
+      "class": "layer",
+      "uiname": "label_a",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 480,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "label_b",
+      "left": 1005,
+      "top": 137,
+      "width": 480,
+      "height": 32,
+      "class": "layer",
+      "uiname": "label_b",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 480,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "_sysvo",
+      "left": 1025,
+      "top": 181,
+      "width": 130,
+      "height": 239,
+      "class": "toggle",
+      "uiname": "_sysvo",
+      "uistates": {
+        "over_on": {
+          "ox": 7,
+          "oy": 7,
+          "cx": 476,
+          "cy": 217,
+          "w": 116,
+          "h": 225,
+          "storage": "option_5sound2__pack"
+        },
+        "normal_on": {
+          "ox": 7,
+          "oy": 7,
+          "cx": 360,
+          "cy": 442,
+          "w": 116,
+          "h": 225,
+          "storage": "option_5sound2__pack"
+        },
+        "ch0": {
+          "ox": 7,
+          "oy": 14,
+          "cx": 128,
+          "cy": 0,
+          "w": 116,
+          "h": 218,
+          "storage": "option_5sound2__pack"
+        },
+        "icon_off": {
+          "ox": 41,
+          "oy": 212,
+          "cx": 688,
+          "cy": 667,
+          "w": 49,
+          "h": 26,
+          "storage": "option_5sound2__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 130,
+          "h": 239,
+          "storage": "",
+          "opacity": 0
+        },
+        "ch3": {
+          "ox": 7,
+          "oy": 7,
+          "cx": 360,
+          "cy": 0,
+          "w": 116,
+          "h": 225,
+          "storage": "option_5sound2__pack"
+        },
+        "ch4": {
+          "ox": 7,
+          "oy": 16,
+          "cx": 585,
+          "cy": 0,
+          "w": 116,
+          "h": 216,
+          "storage": "option_5sound2__pack"
+        },
+        "over_off": {
+          "ox": 7,
+          "oy": 7,
+          "cx": 476,
+          "cy": 217,
+          "w": 116,
+          "h": 225,
+          "storage": "option_5sound2__pack"
+        },
+        "ch9": {
+          "ox": 10,
+          "oy": 15,
+          "cx": 592,
+          "cy": 217,
+          "w": 112,
+          "h": 217,
+          "storage": "option_5sound2__pack"
+        },
+        "ch11": {
+          "ox": 7,
+          "oy": 7,
+          "cx": 128,
+          "cy": 433,
+          "w": 116,
+          "h": 225,
+          "storage": "option_5sound2__pack"
+        },
+        "dsch10": {
+          "ox": 7,
+          "oy": 17,
+          "cx": 128,
+          "cy": 218,
+          "w": 116,
+          "h": 215,
+          "storage": "option_5sound2__pack"
+        },
+        "opr_chk_ov": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 0,
+          "cy": 237,
+          "w": 128,
+          "h": 237,
+          "storage": "option_5sound2__pack"
+        },
+        "rnd": {
+          "ox": 20,
+          "oy": 7,
+          "cx": 688,
+          "cy": 442,
+          "w": 90,
+          "h": 225,
+          "storage": "option_5sound2__pack"
+        },
+        "ch2": {
+          "ox": 7,
+          "oy": 15,
+          "cx": 244,
+          "cy": 0,
+          "w": 116,
+          "h": 217,
+          "storage": "option_5sound2__pack"
+        },
+        "ch1": {
+          "ox": 12,
+          "oy": 16,
+          "cx": 360,
+          "cy": 116,
+          "w": 100,
+          "h": 216,
+          "storage": "option_5sound2__pack"
+        },
+        "normal_off": {
+          "ox": 7,
+          "oy": 7,
+          "cx": 360,
+          "cy": 217,
+          "w": 116,
+          "h": 225,
+          "storage": "option_5sound2__pack"
+        },
+        "opr_chk_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 0,
+          "cy": 0,
+          "w": 128,
+          "h": 237,
+          "storage": "option_5sound2__pack"
+        },
+        "opr_unc_ov": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 0,
+          "cy": 474,
+          "w": 128,
+          "h": 237,
+          "storage": "option_5sound2__pack"
+        },
+        "ch6": {
+          "ox": 7,
+          "oy": 15,
+          "cx": 244,
+          "cy": 435,
+          "w": 116,
+          "h": 217,
+          "storage": "option_5sound2__pack"
+        },
+        "text": {
+          "ox": 7,
+          "oy": 179,
+          "w": 116,
+          "h": 31,
+          "storage": ""
+        },
+        "ch10": {
+          "ox": 7,
+          "oy": 17,
+          "cx": 128,
+          "cy": 218,
+          "w": 116,
+          "h": 215,
+          "storage": "option_5sound2__pack"
+        },
+        "ch8": {
+          "ox": 16,
+          "oy": 14,
+          "cx": 476,
+          "cy": 442,
+          "w": 107,
+          "h": 218,
+          "storage": "option_5sound2__pack"
+        },
+        "icon_ov": {
+          "ox": 41,
+          "oy": 212,
+          "cx": 476,
+          "cy": 660,
+          "w": 49,
+          "h": 26,
+          "storage": "option_5sound2__pack"
+        },
+        "ch5": {
+          "ox": 7,
+          "oy": 14,
+          "cx": 244,
+          "cy": 217,
+          "w": 116,
+          "h": 218,
+          "storage": "option_5sound2__pack"
+        },
+        "nbase": {
+          "ox": 7,
+          "oy": 179,
+          "w": 116,
+          "h": 31,
+          "storage": ""
+        },
+        "dsch11": {
+          "ox": 7,
+          "oy": 7,
+          "cx": 128,
+          "cy": 433,
+          "w": 116,
+          "h": 225,
+          "storage": "option_5sound2__pack"
+        },
+        "ch7": {
+          "ox": 11,
+          "oy": 14,
+          "cx": 583,
+          "cy": 442,
+          "w": 105,
+          "h": 218,
+          "storage": "option_5sound2__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvo0_chk",
+      "left": 1025,
+      "top": 181,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo0_chk"
+    },
+    {
+      "name": "sysvomask_area",
+      "left": 1025,
+      "top": 181,
+      "width": 810,
+      "height": 740,
+      "class": "area",
+      "uiname": "sysvomask_area"
+    },
+    {
+      "name": "sysvo1_chk",
+      "left": 1161,
+      "top": 181,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo1_chk"
+    },
+    {
+      "name": "sysvo2_chk",
+      "left": 1297,
+      "top": 181,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo2_chk"
+    },
+    {
+      "name": "sysvo3_chk",
+      "left": 1433,
+      "top": 181,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo3_chk"
+    },
+    {
+      "name": "sysvo4_chk",
+      "left": 1569,
+      "top": 181,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo4_chk"
+    },
+    {
+      "name": "sysvo5_chk",
+      "left": 1705,
+      "top": 181,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo5_chk"
+    },
+    {
+      "name": "sysvoall",
+      "left": 130,
+      "top": 188,
+      "width": 800,
+      "height": 50,
+      "class": "area",
+      "uiname": "sysvoall"
+    },
+    {
+      "name": "sysvoall_on",
+      "left": 130,
+      "top": 188,
+      "width": 380,
+      "height": 50,
+      "class": "toggle",
+      "uiname": "sysvoall_on",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 50,
+          "w": 380,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 100,
+          "w": 380,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 0,
+          "w": 380,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 380,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "sysvoall_off",
+      "left": 550,
+      "top": 188,
+      "width": 380,
+      "height": 50,
+      "class": "toggle",
+      "uiname": "sysvoall_off",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 50,
+          "w": 380,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 100,
+          "w": 380,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 0,
+          "w": 380,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 380,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "sysvoplay_area",
+      "left": 130,
+      "top": 293,
+      "width": 760,
+      "height": 359,
+      "class": "area",
+      "uiname": "sysvoplay_area",
+      "uistates": {
+        "text": {
+          "ox": 427,
+          "oy": 329,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "sysvoplay0_chk",
+      "left": 131,
+      "top": 294,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay0_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay1_chk",
+      "left": 521,
+      "top": 294,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay1_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay2_chk",
+      "left": 131,
+      "top": 341,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay2_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay3_chk",
+      "left": 521,
+      "top": 341,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay3_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay4_chk",
+      "left": 131,
+      "top": 387,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay4_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay5_chk",
+      "left": 521,
+      "top": 387,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay5_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvo6_chk",
+      "left": 1025,
+      "top": 432,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo6_chk"
+    },
+    {
+      "name": "sysvo7_chk",
+      "left": 1161,
+      "top": 432,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo7_chk"
+    },
+    {
+      "name": "sysvo8_chk",
+      "left": 1297,
+      "top": 432,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo8_chk"
+    },
+    {
+      "name": "sysvo9_chk",
+      "left": 1433,
+      "top": 432,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo9_chk"
+    },
+    {
+      "name": "sysvo10_chk",
+      "left": 1569,
+      "top": 432,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo10_chk"
+    },
+    {
+      "name": "sysvo11_chk",
+      "left": 1705,
+      "top": 432,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo11_chk"
+    },
+    {
+      "name": "sysvoplay6_chk",
+      "left": 131,
+      "top": 434,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay6_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay7_chk",
+      "left": 521,
+      "top": 434,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay7_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay8_chk",
+      "left": 131,
+      "top": 480,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay8_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay9_chk",
+      "left": 521,
+      "top": 480,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay9_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay10_chk",
+      "left": 131,
+      "top": 527,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay10_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay11_chk",
+      "left": 521,
+      "top": 527,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay11_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay12_chk",
+      "left": 131,
+      "top": 573,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay12_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay13_chk",
+      "left": 521,
+      "top": 573,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay13_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay14_chk",
+      "left": 131,
+      "top": 620,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay14_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvoplay15_chk",
+      "left": 521,
+      "top": 620,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "sysvoplay15_chk",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sysvo_rnd",
+      "left": 1025,
+      "top": 682,
+      "width": 130,
+      "height": 239,
+      "class": "copy",
+      "uiname": "sysvo_rnd"
+    },
+    {
+      "name": "sysvo_ok",
+      "left": 1584,
+      "top": 852,
+      "width": 246,
+      "height": 50,
+      "class": "button",
+      "uiname": "sysvo_ok",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 610,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 660,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 560,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 246,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "helpbase",
+      "left": 27,
+      "top": 979,
+      "width": 731,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helpbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 8,
+          "cy": 0,
+          "w": 731,
+          "h": 77,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "helptext",
+      "left": 43,
+      "top": 979,
+      "width": 715,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helptext",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 672,
+          "h": 62,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "reset",
+      "left": 923,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "reset"
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title"
+    },
+    {
+      "name": "_sysbtn",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_sysbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 326,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 442,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 384,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 315,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back"
+    }
+  ],
+  "raw_result_keys": [
+    "_sysbtn",
+    "_sysvo",
+    "back",
+    "base",
+    "caption",
+    "helpbase",
+    "helptext",
+    "label_a",
+    "label_b",
+    "page0",
+    "page1",
+    "page2",
+    "page3",
+    "page4",
+    "page5",
+    "page6",
+    "page7",
+    "page8",
+    "page9",
+    "reset",
+    "sep_a",
+    "sep_b",
+    "sysvo0_chk",
+    "sysvo0_off",
+    "sysvo0_on",
+    "sysvo0_rev",
+    "sysvo10_chk",
+    "sysvo10_off",
+    "sysvo10_on",
+    "sysvo10_rev",
+    "sysvo11_chk",
+    "sysvo11_off",
+    "sysvo11_on",
+    "sysvo11_rev",
+    "sysvo1_chk",
+    "sysvo1_off",
+    "sysvo1_on",
+    "sysvo1_rev",
+    "sysvo2_chk",
+    "sysvo2_off",
+    "sysvo2_on",
+    "sysvo2_rev",
+    "sysvo3_chk",
+    "sysvo3_off",
+    "sysvo3_on",
+    "sysvo3_rev",
+    "sysvo4_chk",
+    "sysvo4_off",
+    "sysvo4_on",
+    "sysvo4_rev",
+    "sysvo5_chk",
+    "sysvo5_off",
+    "sysvo5_on",
+    "sysvo5_rev",
+    "sysvo6_chk",
+    "sysvo6_off",
+    "sysvo6_on",
+    "sysvo6_rev",
+    "sysvo7_chk",
+    "sysvo7_off",
+    "sysvo7_on",
+    "sysvo7_rev",
+    "sysvo8_chk",
+    "sysvo8_off",
+    "sysvo8_on",
+    "sysvo8_rev",
+    "sysvo9_chk",
+    "sysvo9_off",
+    "sysvo9_on",
+    "sysvo9_rev",
+    "sysvo_init",
+    "sysvo_ok",
+    "sysvo_revert",
+    "sysvo_rnd",
+    "sysvoall",
+    "sysvoall_off",
+    "sysvoall_on",
+    "sysvomask_area",
+    "sysvoplay0",
+    "sysvoplay0_chk",
+    "sysvoplay0_off",
+    "sysvoplay0_on",
+    "sysvoplay0_rev",
+    "sysvoplay1",
+    "sysvoplay10",
+    "sysvoplay10_chk",
+    "sysvoplay10_off",
+    "sysvoplay10_on",
+    "sysvoplay10_rev",
+    "sysvoplay11",
+    "sysvoplay11_chk",
+    "sysvoplay11_off",
+    "sysvoplay11_on",
+    "sysvoplay11_rev",
+    "sysvoplay12",
+    "sysvoplay12_chk",
+    "sysvoplay12_off",
+    "sysvoplay12_on",
+    "sysvoplay12_rev",
+    "sysvoplay13",
+    "sysvoplay13_chk",
+    "sysvoplay13_off",
+    "sysvoplay13_on",
+    "sysvoplay13_rev",
+    "sysvoplay14",
+    "sysvoplay14_chk",
+    "sysvoplay14_off",
+    "sysvoplay14_on",
+    "sysvoplay14_rev",
+    "sysvoplay15",
+    "sysvoplay15_chk",
+    "sysvoplay15_off",
+    "sysvoplay15_on",
+    "sysvoplay15_rev",
+    "sysvoplay1_chk",
+    "sysvoplay1_off",
+    "sysvoplay1_on",
+    "sysvoplay1_rev",
+    "sysvoplay2",
+    "sysvoplay2_chk",
+    "sysvoplay2_off",
+    "sysvoplay2_on",
+    "sysvoplay2_rev",
+    "sysvoplay3",
+    "sysvoplay3_chk",
+    "sysvoplay3_off",
+    "sysvoplay3_on",
+    "sysvoplay3_rev",
+    "sysvoplay4",
+    "sysvoplay4_chk",
+    "sysvoplay4_off",
+    "sysvoplay4_on",
+    "sysvoplay4_rev",
+    "sysvoplay5",
+    "sysvoplay5_chk",
+    "sysvoplay5_off",
+    "sysvoplay5_on",
+    "sysvoplay5_rev",
+    "sysvoplay6",
+    "sysvoplay6_chk",
+    "sysvoplay6_off",
+    "sysvoplay6_on",
+    "sysvoplay6_rev",
+    "sysvoplay7",
+    "sysvoplay7_chk",
+    "sysvoplay7_off",
+    "sysvoplay7_on",
+    "sysvoplay7_rev",
+    "sysvoplay8",
+    "sysvoplay8_chk",
+    "sysvoplay8_off",
+    "sysvoplay8_on",
+    "sysvoplay8_rev",
+    "sysvoplay9",
+    "sysvoplay9_chk",
+    "sysvoplay9_off",
+    "sysvoplay9_on",
+    "sysvoplay9_rev",
+    "sysvoplay_area",
+    "title"
+  ]
+}

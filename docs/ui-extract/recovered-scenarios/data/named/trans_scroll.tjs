@@ -1,0 +1,6 @@
+%[
+method:"scroll",
+time:1000,
+from:sttLeft,    // sttTop, sttRigt, sttBottom
+stay:ststNoStay, // ststStaySrc, ststStayDest
+]

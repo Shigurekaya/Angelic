@@ -1,0 +1,6 @@
+%[
+method:"rotateswap",
+time:1000,
+twist:1,
+bgcolor:0x000000,
+]

@@ -1,0 +1,177 @@
+# タッチＵＩカスタマイズ画面ヘルプテキスト
+
+FIRST
+	Change the ${!qmEditMode?"touch UI":"window menu"} button lineup with drag and drop.
+
+DRAG
+	Drag on top of a button slot in the bar.
+
+DROP
+	Drop on the desired button slot.	The same button cannot be assigned multiple times.
+
+ONDRAG1
+	${DROP}	(If the same button is already assigned, it will disappear.)
+
+ONDRAG2
+	${DROP}	(Caution: This button cannot be removed.)
+
+
+preview
+	Preview of the touch UI that will be displayed during gameplay.	Opacity and size can be checked. Use the bar below to change button assignment.
+
+icons_area
+	The current button assignment. Drag left/right to interchange positions.	Buttons can be removed by dropping them where no button slot is located.
+
+tab_window
+	Customize the window menu buttons.
+tab_touch
+	Customize the touch UI menu buttons.
+menulink
+	Merge the window menu and touch UI menus together.
+entouch	qmlock
+	Show the ${!qmEditMode?"Touch Panel UI":"Window Menu"}
+
+func0
+	This button opens the button customization interface. It cannot be removed.${!qmEditMode?"\nThe interface can also be opened by holding right click over the touch UI bar.":""}
+
+func1
+	${GetFuncHelp(1)}	${DRAG}
+func2
+	${GetFuncHelp(2)}	${DRAG}
+func3
+	${GetFuncHelp(3)}	${DRAG}
+func4
+	${GetFuncHelp(4)}	${DRAG}
+func5
+	${GetFuncHelp(5)}	${DRAG}
+func6
+	${GetFuncHelp(6)}	${DRAG}
+func7
+	${GetFuncHelp(7)}	${DRAG}
+func8
+	${GetFuncHelp(8)}	${DRAG}
+func9
+	${GetFuncHelp(9)}	${DRAG}
+func10
+	${GetFuncHelp(10)}	${DRAG}
+func11
+	${GetFuncHelp(11)}	${DRAG}
+func12
+	${GetFuncHelp(12)}	${DRAG}
+func13
+	${GetFuncHelp(13)}	${DRAG}
+func14
+	${GetFuncHelp(14)}	${DRAG}
+func15
+	${GetFuncHelp(15)}	${DRAG}
+func16
+	${GetFuncHelp(16)}	${DRAG}
+func17
+	${GetFuncHelp(17)}	${DRAG}
+func18
+	${GetFuncHelp(18)}	${DRAG}
+func19
+	${GetFuncHelp(19)}	${DRAG}
+func20
+	${GetFuncHelp(20)}	${DRAG}
+func21
+	${GetFuncHelp(21)}	${DRAG}
+
+cmd_pad
+	${qmEditMode?"Check this to create a gap here":syncMode?"Check this to create a gap here in the window menu":""}
+
+ITEM_SAVE
+	This button opens the save interface.
+
+ITEM_LOAD
+	This button opens the load interface.
+
+ITEM_QSAVE
+	This button opens the quicksave interface.
+
+ITEM_DSAVE
+	Direct save button.
+
+ITEM_QLOAD
+	This button opens the quickload interface.
+
+ITEM_OPTION
+	This button opens settings.
+
+ITEM_VREPLAY
+	This button replays current voice line.
+
+ITEM_VSAVE
+	This button opens the bookmarked voice lines interface.
+
+ITEM_QVSAVE
+	This button bookmarks the current voice line.
+
+ITEM_PREVSCN
+	This button takes you back to the previous scene.
+
+ITEM_PREV
+	This button takes you back to the previous choice.
+
+ITEM_BACKONE
+	This button takes you back one line.
+
+ITEM_BACKSKIP
+	This button initiates rewind mode.
+
+ITEM_LOG
+	This button opens the backlog.
+
+ITEM_AUTO
+	This button initiates auto mode.
+
+ITEM_SKIP
+	This button initiates skip mode.
+
+ITEM_NEXTSCN
+	This button takes you to the next scene.
+
+ITEM_NEXT
+	This button takes you to the next choice.
+
+ITEM_SCNCHART
+	This button opens the flowchart menu.
+
+ITEM_VOLUME
+	This button lets you change the volume.
+
+ITEM_HIDE
+	This button hides the text box.
+
+ITEM_TITLE
+	This button returns you to the title screen.
+
+ITEM_SNAPSHOT
+	This button lets you save screenshots
+
+sl_size
+	Adjust size of touch UI buttons.	Pinch to adjust button size at any time during gameplay.
+
+useqvsave
+	This switches the mode of the bookmark voice line button.
+
+usedsave
+	This switches the mode of the save button.
+
+
+sl_opac
+	Adjust opacity of touch UI.
+
+init
+	Returns ${_helpTabName} customization to its default state.
+NAME_WINDOW
+	Window Menu
+NAME_TOUCH
+	Touch UI Menu
+
+revert
+	Revert all settings to the way they were before you opened this menu	[NOTE] There's no confirmation prompt, so be sure of your choice before clicking.
+
+ok
+	Close the button customization interface.
+

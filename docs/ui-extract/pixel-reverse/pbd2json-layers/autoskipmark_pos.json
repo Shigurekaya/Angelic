@@ -1,0 +1,23 @@
+{
+  "source": "autoskipmark_pos.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "markpos"
+  ],
+  "layer_count": 1,
+  "hotspot_count": 1,
+  "hotspots": [
+    {
+      "name": "markpos",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "area",
+      "uiname": "markpos"
+    }
+  ],
+  "raw_result_keys": [
+    "markpos"
+  ]
+}

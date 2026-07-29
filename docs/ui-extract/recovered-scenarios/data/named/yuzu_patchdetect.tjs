@@ -1,0 +1,176 @@
+SetSystemConfigDefaults(%[
+	patchDetectConfirmText:"オンラインでの修正パッチ問い合わせ機能を有効にしますか？\n\n（※この設定はメニューバー内「ヘルプ／修正パッチの有無確認」で\n　後から変更することができます）",
+	patchDetectUpdateText: "最新の修正パッチが提供されています。\nゲームを終了して修正パッチのダウンロードページを開きますか？",
+	]);
+
+createPropertyProxy("patchDetectLastDate",  "void", /*scflags*/, "", SystemConfig);
+
+PatchDetect.local.checked = false;
+function PatchDetect(url, callback, file = kag.saveDataLocation + "/data_patch.ksd")
+{
+	function local {}
+
+	if (typeof global.HttpRequest != "Object") {
+		try { Plugins.link("httprequest.dll"); } catch { global.HttpRequest = null; }
+	}
+	if (global.HttpRequest === null) return;
+
+	dm("PatchDetect", url, file);
+
+	try { if (Storages.isExistentStorage(file)) Storages.deleteFile(file); } catch {}
+
+	var req = local.request = new HttpRequest(kag, false, "KIRIKIRI_YUZU_PATCH"); // [XXX] UserAgent
+	with (req) {
+		&.targetURL  = url;
+		&.targetFile = file;
+		&.callback = callback;
+		&.onReadyStateChange = function(readyState) {
+			if (readyState == global.HttpRequest.LOADED) {
+				dm("PatchDetect.status", status);
+				var ok = status == 200, file = this.targetFile;
+				this.callback(ok ? file : void, this.targetURL);
+				if (!ok && Storages.isExistentStorage(file)) try { Storages.deleteFile(file); } catch {}
+				delete PatchDetect.local.request; // [XXX] remove reference
+				invalidate this;
+			}
+		} incontextof req;
+
+		.open("GET", url);
+		.send(, file);
+	}
+	return req;
+
+	//--------------------------------------------------------------
+
+	function confirm(message) {
+		var dll = "win32dialog.dll";
+		Plugins.link(dll) if (typeof global.WIN32Dialog == "undefined" && CanLoadPlugin(dll));
+		if (typeof global.WIN32Dialog == "Object") with (WIN32Dialog)
+			return .messageBox(kag, message, System.title, .MB_YESNO|.MB_ICONINFORMATION) == .IDYES;
+		return System.confirm(message, System.title, kag);
+	}
+
+	function getDownloadURL(path) {
+		var base = (string)(System.getArgument("-downloadurl"));
+		/**/base = Storages.extractStoragePath(global.ENV_GameURL) if (base == "" || base.indexOf("http://") != 0);
+		/**/base += "/" if (base.substr(base.length-1) != "/");
+		return base + path;
+	}
+
+	function checkRevision(file) {
+		SystemConfig.patchDetectLastDate = kag.getBookMarkDateText();
+		PatchDetect.updateLastDateLog();
+
+		if (file == "" || !Storages.isExistentStorage(file)) {
+			dm("PatchDetect.checkRevision: not found");
+			return;
+		}
+		var lines = [];
+		try {
+			lines.load(file);
+			Storages.deleteFile(file);
+		} catch {}
+
+		var revision = int(+lines[0]);
+		var patchurl = lines[1];
+		var currev   = int(+GetRevisionString("%s", debugWindowEnabled ? GetRevisionString.unknown : void));
+
+		dm("PatchDetect.checkRevision:", currev, revision, patchurl);
+		if (currev < revision) PatchDetect.openPatchURL(patchurl);
+	}
+
+	function openPatchURL(url) {
+		if (PatchDetect.confirm(SystemConfig.patchDetectUpdateText)) {
+			System.shellExecute(url);
+			if (kag.currentDialog === void) {
+				// [XXX] 終了処理
+				delete SystemConfig.askExit;
+				/**/   SystemConfig.askExit = false;
+				kag.close();
+			} else {
+				// [XXX]
+				if (SystemAction.hasSuspendSaveData()) {
+					kag.scflags.gamecont_contquick = true;
+				}
+				kag.askOnClose = false;
+				kag.shutdown();
+			}
+		}
+	}
+
+
+
+	function checkDateLimit(last, per) {
+		var date;
+		try {
+			if (/^[0-9][0-9][0-9][0-9]\/[0-9][0-9]\/[0-9][0-9]/.test(last)) {
+				date = new Date(last.substr(0, "0000/00/00".length) + " 00:00:00"); // [XXX] 判定は0時基準にしておく
+			}
+		} catch {}
+		if (!date) return true; // 日付情報が不明なのでチェック有りにする
+
+		var diff = ( ((new Date()).getTime()) - date.getTime() )/ 1000;
+		var nocheck =  (diff >= 0 && diff < (per*60*60*24));
+		with (date) dm("PatchDetect.checkDateLimit", last, per, diff, nocheck);
+		return !nocheck;
+	}
+
+	function processMain() {
+		if (PatchDetect.local.checked) return;
+		/**/PatchDetect.local.checked = true;
+
+		PatchDetect.updateLastDateLog();
+
+		// プラグインがない
+		if (!CanLoadPlugin("httprequest.dll")) return;
+
+		// 設定がない場合はユーザー確認
+		if (System.getArgument("-patchdetect") == "") {
+			var yes = PatchDetect.confirm(SystemConfig.patchDetectConfirmText);
+			setDefaultSystemArgument("patchdetect", yes ? "per1day" : "no");
+		}
+		var detect = System.getArgument("-patchdetect");
+		switch (detect) {
+		default: case "no": return;
+		case "everytime": break;
+
+		case "per1day":
+		case "per7day":
+			var last = SystemConfig.patchDetectLastDate;
+			if (last != "" && !PatchDetect.checkDateLimit(last, detect == "per7day" ? 7 : 1)) return;
+			break;
+		}
+
+		var url = PatchDetect.getDownloadURL("patch.ini");
+		PatchDetect(url, PatchDetect.checkRevision);
+	}
+
+	function updateLastDateLog() {
+		try {
+			var date = SystemConfig.patchDetectLastDate;
+			if (date == "") date = "情報なし";
+			kag.onlinePatchDetectLogItem.caption = "前回問い合わせ日時："+date;
+		} catch {}
+	}
+}
+
+SystemHook.add("patch.check",  PatchDetect.processMain);
+SystemHook.add("emerinit.end", function { runOnceDelayedTrigger(PatchDetect.processMain); } incontextof global);
+
+SystemArgumentInfo.patchdetect = %[ type:"String" ];
+addKagHookCallback("onKAGSetupMenu", function(kag) {
+	// メニュー項目
+	createMenuFromList(this, helpMenu, [
+		getSysArgRadioMenu("onlinePatchDetectMenuItem", "修正パッチの有無確認(&P)", "patchdetect", CanLoadPlugin("httprequest.dll"), [
+			"*no:      オンラインの問い合わせをしない",
+			"-",
+			"per1day:  １日間隔でゲーム起動時に確認",
+			"per7day:  １週間隔でゲーム起動時に確認",
+			"everytime:毎回ゲーム起動時に確認（※非推奨）",
+			"-",
+			%[ name:"onlinePatchDetectLogItem", caption:"前回問い合わせ日時：情報なし", prop:%[ enabled:false ] ]
+			]) ]);
+
+	onlinePatchDetectMenuItem.index = helpAboutMenuItem.index;
+	updateSysArgMenuItem(onlinePatchDetectMenuItem);
+}, true);

@@ -1,0 +1,92 @@
+
+addArchive("steam");
+addArchive("locale");
+addArchive("sdmotion");
+//addArchive("evimage2");
+
+/*
+検索パスの追加登録方法：
+ setupSubFolders([ サブフォルダ名, ... ]);
+  サブフォルダ名：data/以下のフォルダ名。サブサブフォルダ以下は"/"で区切る
+ */
+
+setupSubFolders([
+	/* 記述例：
+	"scenario/part1"
+	"scenario/part2"
+
+	"fgimage/chara1",
+	"fgimage/chara2",
+
+	"image/cutin",
+	"image/effect/type1",
+	"image/effect/type2",
+
+	"voice/chara1",
+	"voice/chara2",
+	 ここまでコメント */
+
+// [NOTICE] evimage, fgimage, image, voice は自動検索が有効なため，サブフォルダ登録不要です
+
+//	"evimage/XXXX",
+//	"fgimage/XXXX",
+//	"image/XXXX",
+//	"voice/XXXX",
+
+	"motion/other",
+
+	"thum/bgthum",
+	"thum/chthum",
+	"thum/cgthum",
+	"thum/savethum",
+	"thum/mov_thum",
+	"scenario/scripts",
+	"uipsd/ini",
+	"uipsd/func",
+
+	"locale/jp",
+	"locale/en",
+	"locale/cn",
+	"locale/tw",
+
+@if (kirikiriz)
+	// H.264用
+	"others/krmovie_h264",
+@endif
+
+	]);
+
+// 自動再帰フォルダ追加 (※パック時の *.xp3 アーカイブは -flatten 指定を忘れないこと)
+if (!inXP3archivePacked) {
+	var auto = [ "evimage", "fgimage", "image", "voice" ];
+	for (var i = 0; i < auto.count; i++) {
+		addAutoPathRecursive(System.exePath+@"data/${auto[i]}/", true, tkdlNone);
+	}
+}
+
+
+// アペンド初期化
+///*
+  // 特殊アペンド情報定義
+var AppendDataConfig = %[
+	"patch_append0"  => [ "upgrade", "upgrade2", "upgrade3" ],
+	"patch_append1"  => [ "adult", "adult2", "adult3" ],
+//	"patch_append1"  => "rename_xp3",
+//	"patch_append2"  => [ "separated_xp3_1", "separated_xp3_2", "separated_xp3_3" ],
+
+//	"patch_append88"  => "patch_dmmcloud",
+	];
+// */
+KAGLoadScript("append_init.tjs");
+
+// [XXX]
+var FullHDMode = true;
+function SizeCoef (n, toreal) { var r = n*1.5; return toreal ? r : int(r); }
+
+@if (DEBUG && !PACKED)
+// scenario/ 再帰フォルダ追加
+if (debugWindowEnabled && !inXP3archivePacked) {
+	addAutoPathRecursive(System.exePath+"scenario/", false, tkdlVerbose);
+	addAutoPathRecursive(System.exePath+"scenario_forSteam/", false, tkdlVerbose);
+}
+@endif

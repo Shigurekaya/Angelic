@@ -1,0 +1,376 @@
+{
+  "source": "dialog.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "_yesno",
+    "yes",
+    "no",
+    "chk",
+    "_off",
+    "_on",
+    "suspend_on",
+    "suspend_off",
+    "suspend",
+    "readjumpoff",
+    "text",
+    "base",
+    "readskip_on",
+    "readskip_off",
+    "common",
+    "grp_askresume",
+    "readjump",
+    "grp_readjump",
+    "readjump_mes"
+  ],
+  "layer_count": 19,
+  "hotspot_count": 14,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 540,
+      "top": 321,
+      "width": 842,
+      "height": 438,
+      "class": "base",
+      "uiname": "base"
+    },
+    {
+      "name": "text",
+      "left": 554,
+      "top": 390,
+      "width": 812,
+      "height": 150,
+      "class": "layer",
+      "uiname": "text",
+      "uistates": {
+        "askqload": {},
+        "askexit": {},
+        "askinitall": {},
+        "askcopy": {},
+        "askinitstand": {},
+        "asktitle": {},
+        "asknext": {},
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 812,
+          "h": 150,
+          "storage": ""
+        },
+        "askjump": {},
+        "askdsave": {},
+        "askprevscn": {},
+        "askvsave": {},
+        "askresume": {},
+        "askbackto": {},
+        "askoverwrite": {},
+        "askflow": {},
+        "asksave": {},
+        "askqsave": {},
+        "askdelete": {},
+        "asknextscn": {},
+        "askquitreplay": {},
+        "askinit": {},
+        "askload": {},
+        "askswap": {}
+      }
+    },
+    {
+      "name": "_yesno",
+      "left": 691,
+      "top": 569,
+      "width": 246,
+      "height": 50,
+      "class": "button",
+      "uiname": "_yesno",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 492,
+          "cy": 218,
+          "w": 246,
+          "h": 50,
+          "storage": "dialog__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 492,
+          "cy": 268,
+          "w": 246,
+          "h": 50,
+          "storage": "dialog__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 246,
+          "cy": 268,
+          "w": 246,
+          "h": 50,
+          "storage": "dialog__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 246,
+          "h": 50,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "yes",
+      "left": 691,
+      "top": 569,
+      "width": 246,
+      "height": 50,
+      "class": "copy",
+      "uiname": "yes"
+    },
+    {
+      "name": "no",
+      "left": 984,
+      "top": 569,
+      "width": 246,
+      "height": 50,
+      "class": "copy",
+      "uiname": "no"
+    },
+    {
+      "name": "chk",
+      "left": 844,
+      "top": 671,
+      "width": 232,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "chk",
+      "uistates": {
+        "toggle": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": "",
+          "opacity": 128
+        },
+        "text": {
+          "ox": 37,
+          "oy": 3,
+          "w": 195,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 738,
+          "cy": 252,
+          "w": 34,
+          "h": 34,
+          "storage": "dialog__pack"
+        },
+        "over_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 772,
+          "cy": 252,
+          "w": 34,
+          "h": 34,
+          "storage": "dialog__pack"
+        },
+        "normal_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 772,
+          "cy": 218,
+          "w": 34,
+          "h": 34,
+          "storage": "dialog__pack"
+        },
+        "normal_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 738,
+          "cy": 218,
+          "w": 34,
+          "h": 34,
+          "storage": "dialog__pack"
+        }
+      }
+    },
+    {
+      "name": "readjumpoff",
+      "left": 543,
+      "top": 789,
+      "width": 833,
+      "height": 218,
+      "class": "layer",
+      "uiname": "readjumpoff",
+      "uistates": {
+        "frame": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 833,
+          "h": 218,
+          "storage": "dialog__pack",
+          "opacity": 230
+        }
+      }
+    },
+    {
+      "name": "suspend",
+      "left": 543,
+      "top": 789,
+      "width": 833,
+      "height": 218,
+      "class": "layer",
+      "uiname": "suspend",
+      "uistates": {
+        "comment": {
+          "ox": 5,
+          "oy": 13,
+          "w": 823,
+          "h": 89,
+          "storage": ""
+        },
+        "frame": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 833,
+          "h": 218,
+          "storage": "dialog__pack",
+          "opacity": 230
+        },
+        "header": {
+          "ox": 5,
+          "oy": 110,
+          "w": 214,
+          "h": 85,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "_off",
+      "left": 793,
+      "top": 916,
+      "width": 246,
+      "height": 50,
+      "class": "radio",
+      "uiname": "_off",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 268,
+          "w": 246,
+          "h": 50,
+          "storage": "dialog__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 246,
+          "cy": 218,
+          "w": 246,
+          "h": 50,
+          "storage": "dialog__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 218,
+          "w": 246,
+          "h": 50,
+          "storage": "dialog__pack"
+        }
+      }
+    },
+    {
+      "name": "_on",
+      "left": 793,
+      "top": 916,
+      "width": 246,
+      "height": 50,
+      "class": "button",
+      "uiname": "_on",
+      "uistates": {
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 268,
+          "w": 246,
+          "h": 50,
+          "storage": "dialog__pack"
+        }
+      }
+    },
+    {
+      "name": "readskip_on",
+      "left": 793,
+      "top": 916,
+      "width": 246,
+      "height": 50,
+      "class": "copy",
+      "uiname": "readskip_on"
+    },
+    {
+      "name": "suspend_on",
+      "left": 793,
+      "top": 916,
+      "width": 246,
+      "height": 50,
+      "class": "copy",
+      "uiname": "suspend_on"
+    },
+    {
+      "name": "readskip_off",
+      "left": 1070,
+      "top": 916,
+      "width": 246,
+      "height": 50,
+      "class": "copy",
+      "uiname": "readskip_off"
+    },
+    {
+      "name": "suspend_off",
+      "left": 1070,
+      "top": 916,
+      "width": 246,
+      "height": 50,
+      "class": "copy",
+      "uiname": "suspend_off"
+    }
+  ],
+  "raw_result_keys": [
+    "_off",
+    "_on",
+    "_yesno",
+    "base",
+    "chk",
+    "common",
+    "grp_askresume",
+    "grp_readjump",
+    "no",
+    "readjump",
+    "readjump_mes",
+    "readjumpoff",
+    "readskip_off",
+    "readskip_on",
+    "suspend",
+    "suspend_off",
+    "suspend_on",
+    "text",
+    "yes"
+  ]
+}

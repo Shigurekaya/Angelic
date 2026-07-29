@@ -1,0 +1,30 @@
+{
+  "source": "bgmtitle.pbd",
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 18,
+      "width": 869,
+      "height": 27,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "text": {
+          "ox": 55,
+          "oy": 0,
+          "w": 814,
+          "h": 27,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 462,
+          "h": 27,
+          "storage": ""
+        }
+      }
+    }
+  ]
+}

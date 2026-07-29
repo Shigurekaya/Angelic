@@ -1,0 +1,107 @@
+# Save-Load Screen Help Text
+
+back	title	title2
+	Go back to Title Screen
+
+to_cg
+	Go to CG Gallery
+to_scene
+	Go to Scene Gallery
+to_stand
+	Move to Sprite Gallery.${_disableStand}
+DISABLE_STAND
+	(Clear all routes to unlock.)
+to_voice
+	Go to Favorited Voice Clips Screen
+
+grouparea
+	Choose a Category
+itemarea
+	Select a file
+
+keepbgm
+	Keep Playing Actual Song When you Return to Title Screen
+
+snd_itemarea
+	Select a Song to Play
+
+seek
+	Current Play List
+ptime_now	ptime_len
+	Keep Playing Current Song
+
+pprev
+	Play Previous Song
+pnext
+	Play Next Song
+play
+	Switch Between Play and Stop
+playpause
+	Pause Current Song
+repeat_a
+	Switch to Repeat All Songs
+repeat_s
+	Swith to Shuffle Mode
+volume
+	Set Volume (Only Applicable to this Menu)
+
+
+snd_pageup
+	Scroll to Previous Page
+snd_pagedown
+	Scroll to Next Page
+snd_top
+	Scroll to the Top of the Page
+snd_end
+	Scroll to the End of the Page
+
+#------------------------------------------------------------------------------
+# CG Gallery
+
+
+lock
+	Set to Always Display the Thumbnail Preview Selection
+rep
+	Set to repeat CG transitions and loop the variations, or skip to the next CG
+
+scr_hgrp
+	Scroll through CG List
+scr_vgrp
+	Scroll through CG variations
+
+help_hbar
+	Choose the CG you wish to display. You can scroll or drag the image away
+help_vbar
+	Choose the CG variation you wish to display. You can scroll or drag the image away
+help_center
+	Click to display the next CG
+itemview
+	This is the CG being displayed. You can scroll vertically by using the wheel. You can scroll vertically and horizontally by swiping.
+help_center
+	${switchCgViewCenterHelp("CGVIEW_CLICK","CGVIEW_DRAG")}
+CGVIEW_CLICK
+	Click to display the next CG
+CGVIEW_DRAG
+	You can drag the image around to change the display position.	You can zoom in and out by using the wheel.
+
+close
+	Return to Selection Screen
+
+kbd
+	↓,Space,Enter:Next CG ／ ↑,BackSpace:Previous CG ／ ←→:Choose CG ／ ${ESC}:BACK ／ Delete,Control:PreviewLock Switch
+#Shift+↑↓: CG Scrolling (If Applicable)
+ESC
+	ESC
+SCRAMBLE
+	Half-Width / Full-Width
+
+#------------------------------------------------------------------------------
+SUBITEM
+	Play Back Scene from Thumbnail
+SUBITEM_NODIV
+	Watsh Scene (Start Point Cannot be Selected)
+
+OPMOVIE	sitem0
+	Play Opening Movie
+EDMOVIE	sitem1
+	Play Ending Movie

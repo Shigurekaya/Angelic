@@ -1,0 +1,799 @@
+with (SystemConfig) {
+	.TitleBGM = .DefaultTitleBGM = "bgm91";
+
+	// ムービー音量設定の一時再生サンプル曲／末尾に *label を付加するとその label から開始(*自身は除くラベル名)
+	.MovieAudioSampleFile = function {
+		var file = SystemConfig.DefaultTitleBGM;
+		if (tf.allseen || sf.movie_op) file = "SongOP"; // OPムービーを見る前後でボーカル有無を決定
+		return file + "*sabi";
+	} incontextof global;
+	.MovieAudioSampleFilter = "wf_reverb"; // サンプル曲に対する音声フィルタ("|"で接続可)
+
+	// ムービー関連設定
+	.movieQSelMP4CheckFile = "ＯＰ"; // mp4有無チェック用ファイル名（拡張子除く）
+	.movieQSelLowSuffix = "_low"; // SD解像度用サフィックス
+	.fixFullHDMovie = true; // FullHDムービー固定 (アペンドパッチでSD対応)
+
+@if (CUSTOM_MULTILANG)
+	{ // 言語別 WebPage マップ
+		var hikari = "https://hikarifield.co.jp/";
+		var neko   = "https://nekonyansoft.com/";
+		.LangGameURLMap = %[ cn:hikari, tw:hikari,  en:neko ];
+	}
+	// UI言語設定に依存する固定画像
+	.LangImageUIReplace = [
+		"attention",
+		"aboutdialog",
+		"deactivelogo",
+		//"scramble1", "scramble2", // ※自前で切り替えるため不要 (cf. uisystem.tjs)
+		"sqscrmask",
+		"title_logo",
+		"extra_watermark",
+		"screenshot_watermark",
+	];
+	.IgnoreImageReplaceRegExp = /^stamp_/i; // チャットスタンプ画像は自動言語切り替えを無視
+
+	.BGVSubtitleMesOffset = 64; // BGV字幕のオフセット
+@endif
+
+	// 色選択のデフォルト色はこちらで変更してください
+	.DefaultColors = %[
+	win:  0x002B66,	/*2nd color*/win_ov:  0x0068E8, // ウィンドウ色
+	owin: 0x320066,	/*2nd color*/owin_ov: 0x882BDA, // ウィンドウ色（他者視点）
+	hwin: 0xFFD1DF, /*2nd color*/hwin_ov: 0xF37AA1,	// Hシーンウィンドウ色
+	text: 0xFFFFFF,	// （未読）文字色
+	read: 0xEFDFFF,	// 既読文字色
+		];
+	.ColorPickerTags    =  [ "win", "owin", "hwin", "text", "read" ];
+	.ColorPickerNameMap =
+		%[
+		win:"通常時ウィンドウ",
+		owin:"視点変更時ウィンドウ",
+		hwin:"Ｈシーン時ウィンドウ",
+		text:"未読文字",
+		read:"既読文字" ];
+	.windowBaseStorage = "window_";
+
+	.msgHackChFadeMenuPos = [ "chSpeedMenu", 1 ];
+	.msgHackChFadeMenuList = [
+		"なし",
+		"-",
+		%[ id:"fast",   caption:"短い",     coef:2, min:25 ],
+		%[ id:"faster", caption:"やや短い", coef:3, min:38 ],
+		%[ id:"medium", caption:"普通",     coef:4, min:50 ],
+		%[ id:"slower", caption:"やや長い", coef:6, min:100 ],
+		%[ id:"slow",   caption:"長い",     coef:8, min:150 ],
+		];
+	.msgHackChFadeMenuDefault = "medium";
+
+	.ExChViewCaptureFileBase = "天使騒々_portrait"; // 立ち絵鑑賞状態ファイル名
+	.SaveSnapshotName        = "天使騒々_screenshot"; // スクリーンショットファイル名
+	.SaveSnapshotShortcut = "PrtSc"; // スクリーンショットショートカット(PrtSc:デフォルト)
+	.SaveSnapshotWord = "スクリーンショット";
+//	.SaveSnapshotMenuCaption = "スクリーンショット(&S)";
+//	.SaveSnapshotMenuOption  =  "スクリーンショット保存設定(&S)";
+	.SaveSnapshotWatermark   = "screenshot_watermark"; // キャプチャ時刻印画像
+	.SaveSnapshotFormat = "jpg:png:bmp"; // スクリーンショット保存可能フォーマット（先頭がデフォルト）
+
+	// 16:9用メッセージ位置調整
+	.sqscrAutoReposFace = (303-360); // window.psdの1440から上の空間の高さ-360
+	.sqscrAutoReposList = [
+		// ※keyはfunc名でなく，pimgのベースパス名基準なので注意
+		"window"   => %[ base:"base", /*func:"window.ini",*/ oy:.sqscrAutoReposFace ],
+		"window_h" => %[ base:"base", /*func:"window.ini",*/ oy:(200-360) ],
+		];
+	// ウィンドウサイズ幅一覧
+	windowResolutionWidthList = [
+		640, 720, 800, 960, 1024, 1280, 1440, 1600, 1920, 2048, 2560
+		];
+
+@if (0)
+	// システムボイスタイプ（※通常は不要）
+		.SystemVoiceTypes = [
+			"rnd" => [ "rin", "tsu" ],
+			"rin" => "rin",
+			"tsu" => "tsu",
+		];
+@endif
+
+	// ボイス選択
+	.voiceNames = [
+//		"リノ",
+		"乃愛", // 白雪（しらゆき）	乃愛（のあ）
+		"天音", // 谷風（たにかぜ）	天音（あまね）
+		"来海", // 小雲雀（こひばり）	来海（くるみ）
+		"かぐ耶", // 星河（ほしかわ）	かぐ耶（かぐや）
+		"オリエ", // 高楯（たかだて）	オリエ
+		"風実花", // 百里（おざと）	風実花（ふみか）
+
+		"木下", // 木下（きのした）	カエデ
+		"白石", // 白石（しらいし）	チカ
+		"三国", // 三国（みくに）	彩里（さいり）
+		"由月", // 谷風（たにかぜ）	由月（ゆづき）
+
+		"クラヴィ", // ???
+		"魔王",     // ???
+
+		"その他男",
+		"その他女" ];
+	// コンフィグ画面のヘルプテキスト表記
+	.voiceNameReplace = %[
+		"その他男" => "その他（男性）",
+		"その他女" => "その他（女性）",
+
+		"クラヴィ" => function { return .sf.openname_clr ? "クラヴィ" : "？？？"; },
+		"魔王"     => function { return .sf.openname_mao ? "魔王"     : "？？？"; },
+		// 立ち絵鑑賞用
+		"少女" => "シュティ",
+//		"迷子の女の子" => "迷子の少女",
+		];
+	.sampleVoiceReplace = %[
+		// [XXX]テストボイス差し替え
+		"魔王" => function { return .sf.openname_mao ? void : "魔王？"; },
+		];
+	.sysvoFixPrefix = function (file) {
+		//dm("sysvoFixPrefix", file);
+		if (file == "mao_volume" && !.sf.openname_mao) return "?";
+	} incontextof global;
+	// 立ち絵鑑賞のテキスト入力時のキャラ名ドロップダウンリスト
+	.exchviewTextInputNameList = [
+		"乃愛",
+		"天音",
+		"来海",
+		"かぐ耶",
+		"オリエ",
+		"風実花",
+		"木下",
+		"白石",
+		"三国",
+		"由月",
+		"クラヴィ",
+		"ヴェガ",
+		"月乃",
+		"五島",
+		"シュティ",
+		"第一王子",
+		"迷子の女の子", // "迷子の少女",
+		"魔王"//,
+	];
+
+	// お気に入りボイス枠の顔表示マップ
+	.vsaveFaceMap = %[
+//		"芳乃"   => "face_yos",
+		];
+	.voiceClipThumbImageFormat = [ ".jpg",             75 ];
+	.voiceClipFaceImageFormat  = [ ".png", /*fillcolor*/-1, /*jpgquality*/void, /*shrink*/ 2 ];
+	.voiceSaveItemCount = [ 3, 4 ];
+	.FaceThumbRect = [ 225*2, 202*2 ];
+	// スクリプト中でキャラ非表示におけるボイスモード顔デフォルト指定
+	.FaceThumbDefalts = %[
+//		"リノ"   => %[ dress:"私服",   pose:"1", face:"01"],
+		];
+
+	// クリアフラグチェック用
+	.clearFlagTagList = [
+		"noa",
+		"ama",
+		"kur",
+		"kag",
+		"ori",
+		"fum",
+		];
+	// cgview種別判定
+	.cgViewGroupMap = %[
+		"noa" => "乃%02d",
+		"ama" => "天%02d",
+		"kur" => "来%02d",
+		"kag" => "か%02d",
+		"ori" => "オ%02d",
+		"fum" => "風%02d",
+		"etc" => "他%02d",
+		"sd"  => "SD%02d",
+		];
+	// チャット画面用アイコン定義
+	.phoneChatAutoTextIconMap = %[ (
+		.phoneChatAutoTextSelfName =
+		"李空"  )=> "rik", // 主人公は先頭に配置
+		"乃愛"   => "noa",
+		"天音"   => "ama",
+		"来海"   => "kur",
+		"かぐ耶" => "kag",
+		"オリエ" => "ori",
+		"風実花" => "fum",
+		];
+	// チャット画面ウインドウカラー
+	.phoneChatWindowColorMap = %[
+		"rik" => 0x8dc467,
+		"noa" => 0xfff8d4,
+		"ama" => 0xffdef3,
+		"kur" => 0xb3b2f6,
+		"kag" => 0xe06b8e,
+		"ori" => 0xb4eacb,
+		"fum" => 0xfed0d1,
+		];
+	.phoneChatOpenScript  = "time=%time|500 sync",
+	.phoneChatCloseScript = "time=%time|500 opacity=0 sync",
+
+	// セーブデータ用ルート名判定テーブル
+	.routeScenarioPrefixMap = %[
+		"*" => 1, // 初回１文字マッチ
+		"【" => 2, // ２文字マッチ
+		"【共" => "共通",
+		"【乃" => function(scn) { return ((string)scn).indexOf("分岐") > 0 ? "【共" : "noa"; },
+		"【天" => "天音",
+		"【来" => "来海",
+		"【か" => "かぐ耶",
+		"e"    => "オリエ", // １文字マッチ
+		"【風" => function(scn) { return ((string)scn).indexOf("分岐") > 0 ? "【共" : "fum"; },
+
+		// linked alias
+		"noa"  => "乃愛",
+		"fum"  => "風実花",
+		];
+	
+	// メッセージ速度サンプルテキスト
+	.speedSampleConfig = .renderSampleConfig = %[
+	ox:32, oy:16, param:%[ linestep:64 ],
+@if (!CUSTOM_MULTILANG)
+	text1: "テキスト速度のサンプルと、\nオート速度のサンプルです。",
+	text2: "天使騒々\n(C)YUZUSOFT/JUNOS inc.",
+@endif
+		];
+
+	//------------------------------
+	// セーブロード画面
+
+	.savedataThumSize = [ 219, 124 ]; // セーブ画面サムネサイズ（※小サムネ）
+
+	//------------------------------
+	// タッチUI関連
+	{ var iconsize = 110;
+	.touchUIMaxSize = int(iconsize*1.5); // FullHDMode ? 130 :  88; // 最大サイズ
+	.touchUIMinSize = int(iconsize*0.5); // FullHDMode ?  65 :  44;  // 最小サイズ
+	.touchUIDefaultSize = iconsize;
+	}
+
+	//------------------------------
+	// ショートカットキー関連
+
+	// 割り当て無し時の表記
+	.ShortCutNoBind = "- EMPTY -";
+
+	//------------------------------
+	// フローチャート関連
+	.scnchartUiItemConsts = %[
+		// チャート配置アイテムの定義a
+		"firstofs"   => %[             step:(80) ], // [XXX] 初期開始位置
+		"chapter"    => %[ absolute:0, step:(150),                      ui:"separator",   forcevisible:true ],
+		"endofchapt" => %[             step:(100) ], // [XXX] 次chapter間隔
+		"section"    => %[ absolute:5, step:(100), vert:SizeCoef(240), ui:"section",     clickable:true,  focusable:true, drawtext:true  ],
+		"subsection" => %[ absolute:5, step:(100), vert:SizeCoef(240), ui:"subsection",  clickable:true,  focusable:true, drawtext:true  ],
+		"minsection" => %[ absolute:5, step:(100), vert:SizeCoef(120), ui:"minsection",  clickable:true,  focusable:true, drawtext:true  ],
+		"nonsection" => %[ absolute:5, step:(100), vert:SizeCoef(240),                   clickable:false, focusable:false,drawtext:false ],
+//		"mapsection" => %[ absolute:5, step:(220), vert:SizeCoef( 70), ui:"mapsection",  clickable:true,  focusable:true, drawtext:true, joinsize:50 ],
+//		"mapsection2"=> %[ absolute:5, step:(220), vert:SizeCoef( 70), ui:"mapsection2", clickable:true,  focusable:true, drawtext:true, joinsize:50 ], // 特殊用途(アイコン無しマップ枠)
+		"select"     => %[ absolute:1, step:(100), vert:SizeCoef(240), ui:"select",      clickable:true,  focusable:true, drawtext:true, spread:true, texttag:"choice" ],
+		"branch"     => %[ absolute:1, step:(100),                     ui:"branch",                       focusable:true,                spread:true ],
+		"warp"       => %[ absolute:5, step:(0),   clickable:-1, focusable:true ],
+		"label"      => %[ absolute:5, step:(100), clickable:false, ui:"" ],
+
+		"update"     => %[ shrink:0.45 ], // [XXX] 更新通知縮小率
+		];
+//	.scnchartUiLineTypes = [ "noroute", "sbox", "rbox", "hbox", "normal", "query", "sline", "rline" ]; // ライン種別（後ろの方が優先順位高い）
+	.scnchartUiLineConsts = %[
+			// ラインの形状・色・太さ等
+			//種別   => %[ color:0xAARRGGBB, width:太さ, shape:形状, edge:フチ, edgeColor:フチ色, ox:オフセットX, oy:オフセットY ],
+			"noroute"=> %[ color:0xFF656565, width:4, shape:"*arrow" ], // 到達不能ライン
+			"normal" => %[ color:0xFF918cff, width:4, shape:"*arrow" ], // 通常ライン
+			"query"  => %[ color:0xFF6fdf8b, width:4, shape:"*arrow" ], // 選択分岐可能ライン
+			"rline"  => %[ color:0xFF19d6ff, width:5, shape:"*arrow", edge:4, edgeColor:0x80000000, ], // 現在遷移中ルート
+			"rbox"   => %[ color:0xFF19d6ff, width:6, caps :"@bcaps" ], // 遷移中強調枠ライン用
+			"sline"  => %[ color:0xFFf5b4c8, width:5, shape:"*arrow", edge:4, edgeColor:0x80000000, ], // 選択変更ルート
+			"sbox"   => %[ color:0xFFf5b4c8, width:6, caps :"@bcaps" ], // 選択変更枠ライン用
+			"hbox"   => %[ color:0xFFFFFFFF, width:7, caps :"@bcaps" ], // 現在選択枠ライン用
+
+			"minimap"  => %[ brush:0xFF19d6ff ], // ミニマップ
+			"miniline" => %[ color:0x8019d6ff, width:SizeCoef(16) ], // ミニマップ線
+			"minichapt"=> %[ color:0xC0FFFFFF, width:SizeCoef(4) ], // ミニマップchapter
+
+		// 線端形状
+			"@bcaps" => %[ endCap:"LineCapRound" ],
+
+		// 矢印形状
+			"*arrow" => %[ width:4, height:2, filled:false ],
+			];
+	.scnchartUiDisableEffect = [ 0x80404040, ltPsHardLight ];
+
+	//------------------------------
+	// エクストラ・他
+
+	.soundModeUnknownText = "No Data"; // 音楽鑑賞未オープン表記
+
+	// スクランブル画像・タイトル
+	.scrambleFileList = [
+		"scramble1" => "YouPipe - ブラウザ",
+		"scramble2" => "Yoozle検索 - ブラウザ",
+		];
+
+	// CG鑑賞スクロール初期位置
+	.cgViewInitialPosTable = [
+		// LowerCased前方マッチ => %[ 位置指定(x,y:-1～1), z:50～200 ]
+//		"ev000" => %[ x:0, y:0 ],
+
+		];
+
+	//立ち絵鑑賞のキャラ移動範囲  左右   下    上  （大きくするほど画面外に動かせる）
+	.exchviewDragMoveRange =   %[  LR:800, B:400, T:2000 ];
+
+	// 立ち絵鑑賞顔サムネ補正
+	.exchviewFaceThumbOptions = %[
+//		"*" => %[ ox:0, oy:0 ],  // 全体オフセット
+//		"立ち絵名"  => %[ ox,oy,oz lx,ly, Dress:%[ ox,oy,oz ], Diff:%[ ox,oy,oz ], Face:%[ ox,oy,oz ], Popup:%[ ox,oy,oz ] ], // lx,ly:存在する立ち絵一覧顔オフセット
+		"乃愛"   => %[ Popup:%[ oy:50  ] ],
+		"来海"   => %[ Popup:%[ oy:-20 ] ],
+		"かぐ耶" => %[ Popup:%[ oy:0,  ox:20 ], Face:%[ ox:10 ] ],
+		"オリエ" => %[ Popup:%[ oy:-20 ] ],
+		"白石"   => %[ Popup:%[ oy:20, ox:-5 ], Face:%[ ox:-12 ] ],
+		"月乃"         => %[ Face:%[ ox:10 ] ],
+		"五島"         => %[ Face:%[ ox:20 ] ],
+		"迷子の女の子" => %[ Face:%[ ox:10 ] ],
+		"魔王"         => %[ Face:%[ ox:20 ] ],
+		];
+
+	// 立ち絵鑑賞の服装に対する補足説明
+	.exchviewDressThumbTextMap = %[
+//		"立ち絵名" => %[ "服装名" => "テキスト", ... ];
+		"乃愛" => %[
+			"天使羽根"     => "羽",
+			"制服羽根"     => "羽",
+			"私服羽根"     => "羽",
+			"部屋着羽根"   => "羽",
+			"水着羽根"     => "羽",
+			"裸羽根"       => "羽",
+			"制服裸羽根"   => "羽",
+			"私服帽子"     => "ベ",
+			"私服帽子羽根" => "羽ベ",
+			],
+
+		"天音" => %[
+			"水着帽子" => "帽",
+			],
+
+		"かぐ耶" => %[
+			"耳前世"   => "耳",
+			"耳制服"   => "耳",
+			"耳制服裸" => "耳",
+			"耳私服"   => "耳",
+			"耳部屋着" => "耳",
+			"耳水着"   => "耳",
+			"耳裸"     => "耳",
+			"耳面"     => "耳掛",
+			"前世面"   => "面",
+			"面"       => "掛",
+			"制服面"   => "面",
+			],
+		];
+	.exchviewCharCountMax = 8; // 最大追加可能人数
+}
+KAGLoadScript("yuzu_default.tjs"); // 作品固有の定義がないdefault
+
+// タイトル背景選択
+function GetTitleImageFile(mode/*0:raw, 1:img, -1:num*/, idx = GetTitleImageFile.GetNum()) {
+	var stat = GetTitleImageFile.Status();
+	var num = +idx;
+	if (num < 0 || num >= (stat.count\2) || (!tf.allseen && !stat[num*2+1])) num = 0; // 補正
+	if (mode < 0) return num;
+	var file = stat[num*2];
+	return mode ? getExistImageName(file) : file;
+	function Change(idx) {     sf.TitleBGIndex = idx; }
+	function GetNum() { return sf.TitleBGIndex; }
+	function IsLeft() { //return true; }
+		switch (GetTitleImageFile(-1)) {
+		case 2: case 5: case 7: return true; // title_bg{2,5,7} is left lang menu
+		}
+		return false;
+	}
+	function Status() {
+		// タイトル背景解放条件
+		var after = GetClearFlag("after_");
+		return [
+			"title_bg0" => true,   // 通常
+			"title_bg1" => after.any,   // 異世界
+			"title_bg2" => sf.clear_noa,   // のあ
+			"title_bg3" => sf.clear_ama,   // あまね
+			"title_bg4" => sf.clear_kur,   // くるみ
+			"title_bg5" => sf.clear_kag,   // かぐや
+			"title_bg6" => sf.clear_ori,   // おりえ
+			"title_bg7" => sf.clear_fum,   // ふみか
+			"title_bg8" => after.all ];    // 全員
+	}
+	function UseMotion() {
+		if (!enableSceneAnimEffect) return false;
+		var img = world_object.getImageData(GetTitleImageFile(false));
+		//dm("UseMotion", getPrint(img));
+		return img && Storages.isExistentStorage(img.storage);
+	}
+}
+
+// アフターストーリーのボタン加工
+function SetupAfterButton(dic, ui, tag, flag) {
+	var en    = tf.allseen || sf["clear_"+flag];
+	var after = true; //tf.allseen || sf["after_"+flag]; // [XXX] 1→2で順番にオープンする場合
+	var elm = ui[tag];
+	dm("SetupAfterButton", tag, flag, en, after);
+	if (!en) {
+		/*
+		elm.class = "layer";
+		elm.layer = "empty";
+		if (ui[tag+"_1"]) ui[tag+"_1"].visible = false;
+		if (ui[tag+"_2"]) ui[tag+"_2"].visible = false;
+		 */
+		elm.overlay = "dschara";
+		elm.enabled = false;
+	} else {
+		/* _1, _2 対応旧コード
+		var overlay = "name";
+		if (ui[tag+"_1"] && ui[tag+"_2"]) {
+			if (after) {
+				elm.enabled = false;
+				var method = "SetupAfterButton.hack";
+				var onenter = @"${method}('${tag}',2)";
+				var onleave = @"${method}('${tag}',0)";
+				var ontoggle= @"${method}('${tag}',1)";
+				with (ui[tag+"_1"]) .exp = @"tf.afterstory='${flag}_1', ${ontoggle}", .onenter=onenter, .onleave=onleave;
+				with (ui[tag+"_2"]) .exp = @"tf.afterstory='${flag}_2', ${ontoggle}", .onenter=onenter, .onleave=onleave;
+			} else {
+				elm.exp = @"tf.afterstory='${flag}_1'";
+				ui[tag+"_1"].visible = false;
+				overlay += "|0:_1off|1:_1on|2:_1over|010:_1on";
+				with (ui[tag+"_2"]) .halftone = true, .enabled = false;
+			}
+		} else {
+			elm.exp = @"tf.afterstory='${flag}'";
+		}
+		elm.overlay = overlay;
+		*/
+		@if (0)
+		var lang = "jp_"; // [XXX][FIXME] 多言語スタブ
+		var ovl  =  @"000:f_${flag}|002:v_${flag}|001:v_${flag}";
+		/**/ovl +=  "|000:f_nbase|002:v_nbase|001:n_nbase";
+		/**/ovl += @"|000:${lang}nf_${flag}|002:${lang}nv_${flag}|001:${lang}nn_${flag}";
+		elm.overlay = ovl;
+		@endif
+		elm.exp = @"tf.afterstory='${flag}',kag.current.names.${tag}.toggle=true";
+	}
+	return;
+	function hack(tag, st) {
+		var btn = kag.current.names[tag];
+		if (btn) with (btn) {
+			//dm("hack", tag, btn, st);
+			.onPaint = global.Layer.onPaint;
+			.getImageDrawState = function(st) { return st; };
+			.drawState(st);
+		}
+	}
+}
+
+// シナリオ検索が開く追加条件（立ち絵鑑賞オープン後）
+function CheckSearchOpened() {
+@if (CUSTOM_USE_R18HACK)
+	if (!checkAdult()) return checkAllClear;
+@endif
+	return tf.allseen ||
+		(   GetClearFlag("after_").all &&
+			// [XXX] アフター1/2を考慮する場合は個々に条件を列挙
+			true);
+}
+
+// クリア条件
+///property checkAnyClear { getter {...} }
+///property checkAllClear { getter {...} }
+
+// ランダムアイキャッチ選択
+function _get_eyecatch_random_image(sel = tf.lastSystemVoiceChara, format="アイキャッチ%srand", unknown = "サブ") {
+	try { if (world_object.parserConverting) sel = ""; } catch {} // [XXX] コンバート中は最後のシステムボイスキャラに依存する問題があるため強制
+	var chara = sel != "" ? SystemVoice.selectChara(sel) : unknown;
+	var r = format.sprintf(chara);
+	dm("GetEyecatchRandomImage", sel, chara, r);
+	return r;
+}
+// [メガネ選択]マクロ翻訳
+function _megane_select(onoff, defval, key = "SceneModeMeganeSelect") {
+	var r = GetSysLangText(key + (onoff?"_on":"_off"), CurrentLanguageTag, null);
+	return r != "" ? r : defval;
+}
+
+// 環境初期化処理
+function initialEnvironment(isFirst = false, tag)
+{
+	var section = function (sec) { return tag == "" || tag == sec; } incontextof %[ tag:tag ];
+	// "01basic", "02image", "03game1", "04game2", "05text", "06sound", "07dialog", "08mouse", "09keyboard", "10gamepad"
+
+	// 簡易設定用初期化パラメータ
+	var BASIC =
+		%[
+		sqscr       : "off",				// 画面サイズ ("off" = 16:9 / "on" = 4:3)
+		textspeed   :  50,					// テキスト速度 (min:0～10:max)
+		autospeed   :  50,					// オート速度   (min:0～10:max)
+		allskip     : false,				// 未読スキップ許可 (true:有効, false:無効)
+		wavevolume  : 100,					// 全体音量
+		bgmvolume   :  50,					// BGM音量
+		sevolume    :  80,					// SE音量
+		voicevolume : 100,					// ボイス音量
+		movievolume :  50,					// ムービー音量
+		moviesample : false,				// ムービーサンプル再生
+		];
+
+	// 簡易設定タブ
+	if (section("01basic") && tag != "") {
+		// デフォルト値は↑のBASIC設定を書き換えてください
+		setSysArgMenuItem("sqscr", BASIC.sqscr) if (!isFirst);
+		kag.textspeed   = BASIC.textspeed;
+		kag.autospeed   = BASIC.autospeed;
+		kag.allskip     = BASIC.allskip;
+		kag.waveenable  = true;			kag.wavevolume  = BASIC.wavevolume;
+		kag.bgmenable   = true;			kag.bgmvolume   = BASIC.bgmvolume;
+		kag.seenable    = true;			kag.sevolume    = BASIC.sevolume;
+		kag.voiceenable = true;			kag.voicevolume = BASIC.voicevolume;
+		kag.movieAudioEnable = true;	kag.movieAudioVolume = BASIC.movievolume;
+		SystemConfig.movieAudioSample = BASIC.moviesample;
+	}
+
+	// 画面表示タブ
+	if (section("02image")) {
+
+		// 画面サイズ
+
+		// 画面効果
+		kag.noeffect = false;
+
+		// ESC/スクランブル機能選択
+		sf.escapeMode = 0;
+		sf.scrambleMode = 0;
+
+		if (!isFirst) {
+			setSysArgMenuItem("sqscr", BASIC.sqscr);			// 画面サイズ (16:9/4:3) ⇒ BASIC設定を書き換えてください
+			setSysArgMenuItem("scanim", "yes") if (!enableSceneAnimEffect); // 背景アニメ
+			setSysArgMenuItem("stayontop", "no");		// 常に手前
+		}
+
+		// 画面アイテムの表示
+		with (SystemConfig) {
+			.showAutoSkipMark = true;			// オートスキップ状態進行表示アイコン;
+
+			.ChapterAutoHideTime = 5; // Chapterを常に表示
+			.showTextVoiceProgress = true; // 進行バー
+			.showVoiceReplay = true; // 音声リピート
+			.showVoiceSave   = true; // お気に入りボイス登録
+
+			QuickMenuLocked = true if (!isFirst); // ウィンドウメニュー
+		}
+
+		// 曲名表示
+		SystemConfig.MusicTitleAutoHideTime = 3; // -1:なし, 0:常時, 1～:指定秒
+
+		// 話者の表情を表示
+		world_object.faceMode = true;
+
+		// タッチパネルUI
+		kag.scflags.touchUI_enabled = void; // void:タッチデバイスの有無で自動決定, true:ON, false:OFF
+
+		SystemConfig.quickConfAutoOpen = true; // ポップアップ表示
+	}
+
+	// ゲーム進行１タブ
+	if (section("03game1")) {
+
+		// 既読自動スキップ
+		kag.enterSkipOnReadedLabel = false;		// 既読自動スキップ (true:有効, false:無効)
+		kag.enterSkipNoDisp = false;			// 既読自動スキップの機能選択 (true:ジャンプ, false:スキップ)
+
+		// ダイアログマウス自動移動
+		if (!isFirst) setSysArgMenuItem("curmove", "yes");
+
+		// 自動移動場所
+		SystemConfig.DialogForcusForceYes = false;
+
+		// マウスカーソル自動消去
+		kag.scflags.hideMouseCursorTime = 0;
+
+		SystemConfig.saveLoadDblClick = false; // セーブロード実行動作 false:シングル, true:ダブル
+
+		SystemConfig.flowchartForceItemOpen = false; // フローチャート未到達箇所表示
+
+		// Hシーン選択肢固定
+		sf.hselectFix = false;
+		sf.hselectOUTIN = false;				// 外だし・中だし
+		sf.hselectMOUTHFACE = true;				// 口内・顔面
+
+		if (!isFirst) {
+			setSysArgMenuItem("stopdeactive", "no"); // 非アクティブ時動作
+		}
+		// プレビュー切り替え
+		kag.appIconicPreview = false;
+
+		// サスペンド機能
+		SystemConfig.suspendBootEnabled = true;
+	}
+
+	// ゲーム進行２タブ
+	if (section("04game2")) {
+		kag.drawspeed     = 1;					// ゲーム再生速度 (min:1.0～)
+		kag.voicespeed    = 1;					// 音声再生速度   (min:1.0～)
+		kag.skipspeed     = 0;					// スキップ速度   (min:1.0～0:max)
+
+		// ボイス速度をゲーム再生速度と連動する
+		kag.scflags.voiceSpeedSync = false;
+
+		// スキップスタイル
+		kag.skipStyle = 0;
+
+		// ドラマチックモード
+		kag.dramaticMode = 0;
+		if (!isFirst) {
+			SystemConfig.TextSpeechEnabled = false; // 外部音声ツール連動
+			UpdateTextSpeech();
+
+			SaveSnapshotLayer('set|NoDialog:0'); // スナップショット保存ダイアログ表示
+		}
+
+		SystemConfig.movieRClickSkip = true;  // 右クリックのムービースキップ
+		SystemConfig.movieSkipOnSkip = false; // スキップ時のムービースキップ
+	}
+
+	// テキストタブ
+	if (section("05text")) {
+		kag.textspeed   = BASIC.textspeed;		// テキスト速度 (min:0～10:max) ⇒ BASIC設定を書き換えてください
+		kag.autospeed   = BASIC.autospeed;		// オート速度   (min:0～10:max) ⇒ BASIC設定を書き換えてください
+		kag.atextwait   = 25;					// オート1文字あたり追加待ち時間(ms) 0～100ms
+
+		// オートモードパターン
+		kag.autoModeWaitVoice = 0;				// 0:ノーマル 1:ボイス 2:スピード
+
+		kag.allskip       = BASIC.allskip;		// 未読スキップ許可 (true:有効, false:無効) ⇒ BASIC設定を書き換えてください
+		kag.noForceSkipUnread = false;			// CTRLスキップタイプ (true:既読のみ, false:全て)
+
+		kag.afterauto     = true;				// 選択後の auto (true:継続, false:停止)
+		kag.afterskip     = true;				// 選択後の skip (true:継続, false:停止)
+
+		sf.windowOpac  = (int)( 75 *256/100);		// ウィンドウ不透明度
+
+		//kag.chDefaultFace = global.MessageDefaultFontFace;	// フォント
+		kag.resetLanguageFont(); // フォントリセット
+
+		SystemConfig.disableHSceneWindow = false; // Ｈシーン専用ウィンドウ false:有効, true:無効
+	}
+
+	// テキストタブ内カラー設定
+	if (section("05text") || section("color")) {
+		// ゲーム特化
+		with (kag.scflags) {
+			var cols = SystemConfig.DefaultColors;
+			// 色はこのファイルの冒頭にある定義を変更してください（下記は編集禁止）
+			.color_win  = cols.win ;	// ウィンドウ色
+			.color_owin = cols.owin;	// ウィンドウ色（他者視点）
+			.color_hwin = cols.hwin;	// ウィンドウ色（他者視点）
+			.color_text = cols.text;	// （未読）文字色
+			.color_read = cols.read;	// 既読文字色
+
+			// コンフィグ画面の補助情報を初期化
+			.currentColorTag = "text";
+			delete .hsv_win;
+			delete .hsv_owin;
+			delete .hsv_hwin;
+			delete .hsv_text;
+			delete .hsv_read;
+		}
+	}
+
+	// サウンドタブ
+	if (section("06sound")) {
+		// 音の有効
+		kag.waveenable  = true;
+		kag.bgmenable   = true;
+		kag.seenable    = true;
+		kag.sysseenable = true;
+		kag.voiceenable = true;
+		kag.bgvenable   = true;
+		kag.bgv2enable  = true;
+		kag.movieAudioEnable = true;
+
+		// 音量設定
+		kag.wavevolume  = BASIC.wavevolume;		// 全体音量 ⇒ BASIC設定を書き換えてください
+		kag.bgmvolume   = BASIC.bgmvolume;		// BGM音量 ⇒ BASIC設定を書き換えてください
+		kag.sevolume    = BASIC.sevolume;		// SE音量 ⇒ BASIC設定を書き換えてください
+		kag.syssevolume = 50;					// システムSE音量
+		kag.voicevolume = BASIC.voicevolume;	// ボイス音量 ⇒ BASIC設定を書き換えてください
+		kag.bgvvolume   = 70;					// BGV音量通常   (min:0～100:max)
+		kag.bgv2volume  = 70;					// BGV音量Hシーン(min:0～100:max)
+		kag.movieAudioVolume = BASIC.movievolume;// ムービー音量 ⇒ BASIC設定を書き換えてください
+		SystemConfig.movieAudioSample = BASIC.moviesample;	// サンプル再生有無
+
+		kag.bgmdownlevel = 50;					// BGMダウン時の音量を下げる割合 [0-100%]（画面の表示の値とは違うので注意）
+
+		kag.bgmdown   = false;					// 音声再生時にBGM音量を(true:下げる, false:下げない)
+
+		kag.nosewhenskip = true;				// スキップ時の単発SE (true:鳴らさない, false:鳴らす)
+
+		kag.voicecut = true;					// ボイスをカットを有効
+		kag.voicecutpage = true;				// カットするタイミング（true:ページ消去時にカット, false:名前表示時にカット)
+
+		SystemConfig.VoiceEffectEnabled = true; // ボイスエフェクト
+
+		// システムボイス
+		with (SystemVoice) {
+			.enabled = true;
+			.pervolume = 100;
+			if (SystemConfig.SystemVoiceTypes !== void) {
+				.chartype = void; // 先頭の定義がデフォルト値
+			} else {
+				.charmask = .charmaskdefault; // mask (cf. sysse.ini: syvo.defkeys
+			}
+
+			.setDefaultSettings(); // ボイス再生箇所の設定をリセット
+		}
+		SystemConfig.lowPrioritySystemVoice = false; // 本編ボイス再生中はシステムボイスを再生しない
+	}
+
+	// サウンドタブ内キャラ個別ボイス設定
+	if (section("06sound") || section("voice")) {
+		setVoiceAll(true, 100);						// 全キャラボイスON
+
+		var vol = kag.setVoiceVolume;
+		//vol("キャラ名",   100);
+	}
+
+	// ダイアログ設定タブ
+	if (section("07dialog")) {
+		// 確認ダイアログの設定の初期化
+		ForeachConfirmDialogTags(function (tag, defval) {
+			SystemConfig[tag] = defval;
+		} incontextof global);
+	}
+
+	// マウス設定タブ
+	if (section("08mouse")) {
+		var bind = kag.scflags.mouseGesture = %[];
+		(Dictionary.assign incontextof bind)(SystemConfig.mouseGestureDefaults);
+		try { kag.mouseGesture.enabled = -1; } catch {}
+	}
+
+	// ゲームパッド設定タブ（※処理の順序の都合上，ショートカットキーの初期化より前に配置すること）
+	if (section("10gamepad")) {
+		GamePadRebind.clear(!(isFirst || tag == ""));
+
+		if (!isFirst) with (SystemConfig) {
+			// ゲームパッド操作無効を解除
+			GamePadEnabled.change(true) if (!.GamePadExForceDisabled && !.GamePadExEnabled);
+		}
+	}
+	// ショートカットキー設定タブ
+	if (section("09keyboard")) {
+		resetAllShortcutKeys(isFirst);
+	}
+
+	// 初回起動時(savedataがない)のみの初期化処理
+	if (isFirst) {
+		sf.saveOverwrite = true;				// セーブ上書き確認
+
+		// DSoundセカンダリバッファを常に再生成
+		setDefaultSystemArgument("wsrecreate", "yes");
+		@if (kirikiriz) try { WaveSoundBuffer.freeDirectSound(); } catch {} @endif // [XXX] DirectSound作り直し(kzではwsrecreateが反映される）
+
+		// パッドリピート間隔
+		setDefaultSystemArgument("padinterval", 70);
+
+		// フレーム上限を設定
+		setDefaultSystemArgument("contfreq", 60);
+
+		// VistaではダブルバッファをDirect3Dに
+		setDefaultSystemArgument("dbstyle", "d3d") if (checkWindowsVersion("vista"));
+
+		// 等倍でもダブルバッファ有効
+		setDefaultSystemArgument("usedb", "yes");
+	}
+
+	// 表情窓同期表示
+	//kag.scflags.faceMode = true;
+}
+

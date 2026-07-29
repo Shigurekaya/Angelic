@@ -1,4 +1,4 @@
-﻿[project]
+[project]
 name = "angelic-extract"
 version = "0.1.0"
 description = "天使☆嚣嚣 RE-BOOT CN/JP UI static unpack tools"
@@ -9,6 +9,7 @@ dependencies = [
     "pillow>=10.0.0",
     "construct>=2.10.0",
     "pefile>=2024.8.26",
+    "numpy>=2.4.6",
 ]
 
 [tool.uv]

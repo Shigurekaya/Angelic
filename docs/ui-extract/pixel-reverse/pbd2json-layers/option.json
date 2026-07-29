@@ -1,0 +1,1406 @@
+{
+  "source": "option.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "reset",
+    "title",
+    "back",
+    "helptext",
+    "helpbase",
+    "page0",
+    "page1",
+    "page2",
+    "page3",
+    "page4",
+    "page5",
+    "page6",
+    "page7",
+    "page8",
+    "page9",
+    "caption",
+    "base",
+    "slider_l",
+    "slider_m",
+    "slider_t",
+    "slider_s",
+    "num_s",
+    "num_l",
+    "mute"
+  ],
+  "layer_count": 49,
+  "hotspot_count": 49,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "class": "base",
+      "uiname": "base"
+    },
+    {
+      "name": "page0",
+      "left": 465,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page0",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page1",
+      "left": 593,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page1",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page2",
+      "left": 721,
+      "top": 0,
+      "width": 163,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page2",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 163,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page3",
+      "left": 884,
+      "top": 0,
+      "width": 167,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page3",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 167,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page4",
+      "left": 1051,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page4",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page5",
+      "left": 1179,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page5",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page6",
+      "left": 1307,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page6",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page7",
+      "left": 1455,
+      "top": 0,
+      "width": 102,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page7",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 102,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page8",
+      "left": 1557,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page8",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page9",
+      "left": 1705,
+      "top": 0,
+      "width": 167,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page9",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 167,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "caption",
+      "left": 87,
+      "top": 19,
+      "width": 295,
+      "height": 43,
+      "class": "layer",
+      "uiname": "caption",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 500,
+          "w": 295,
+          "h": 43,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "pgdot",
+      "left": 510,
+      "top": 60,
+      "width": 38,
+      "height": 21,
+      "class": "button",
+      "uiname": "pgdot",
+      "uistates": {
+        "dot_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 502,
+          "cy": 610,
+          "w": 38,
+          "h": 21,
+          "storage": "option__pack"
+        },
+        "dot_ov": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 502,
+          "cy": 648,
+          "w": 38,
+          "h": 21,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "_sep_a",
+      "left": 89,
+      "top": 125,
+      "width": 4,
+      "height": 830,
+      "class": "layer",
+      "uiname": "_sep_a",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 4,
+          "cy": 0,
+          "w": 4,
+          "h": 830,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "vbar",
+      "left": 89,
+      "top": 125,
+      "width": 4,
+      "height": 830,
+      "class": "layer",
+      "uiname": "vbar",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 4,
+          "h": 830,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "_sep_d",
+      "left": 1419,
+      "top": 126,
+      "width": 4,
+      "height": 497,
+      "class": "layer",
+      "uiname": "_sep_d",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 102,
+          "cy": 0,
+          "w": 4,
+          "h": 497,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "_jump",
+      "left": 110,
+      "top": 137,
+      "width": 62,
+      "height": 32,
+      "class": "button",
+      "uiname": "_jump",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 291,
+          "cy": 760,
+          "w": 62,
+          "h": 32,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 463,
+          "cy": 500,
+          "w": 62,
+          "h": 32,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 401,
+          "cy": 500,
+          "w": 62,
+          "h": 32,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 62,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "btn2",
+      "left": 130,
+      "top": 188,
+      "width": 380,
+      "height": 50,
+      "class": "button",
+      "uiname": "btn2",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 50,
+          "w": 380,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 100,
+          "w": 380,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 0,
+          "w": 380,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 380,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "btn2b",
+      "left": 130,
+      "top": 188,
+      "width": 370,
+      "height": 50,
+      "class": "button",
+      "uiname": "btn2b",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 213,
+          "w": 370,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 263,
+          "w": 370,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 163,
+          "w": 370,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 370,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "btn3",
+      "left": 130,
+      "top": 188,
+      "width": 246,
+      "height": 50,
+      "class": "button",
+      "uiname": "btn3",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 610,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 660,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 560,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 246,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "btn4",
+      "left": 130,
+      "top": 188,
+      "width": 185,
+      "height": 50,
+      "class": "button",
+      "uiname": "btn4",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 760,
+          "w": 185,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 352,
+          "cy": 610,
+          "w": 185,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 710,
+          "w": 185,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 185,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "btn4b",
+      "left": 130,
+      "top": 188,
+      "width": 175,
+      "height": 50,
+      "class": "button",
+      "uiname": "btn4b",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 452,
+          "cy": 610,
+          "w": 175,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 352,
+          "cy": 560,
+          "w": 175,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 402,
+          "cy": 610,
+          "w": 175,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 175,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "chk",
+      "left": 138,
+      "top": 196,
+      "width": 34,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "chk",
+      "uistates": {
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "_inner_box",
+      "left": 131,
+      "top": 206,
+      "width": 906,
+      "height": 320,
+      "class": "layer",
+      "uiname": "_inner_box",
+      "uistates": {
+        "c": {
+          "ox": 0,
+          "oy": 298,
+          "cx": 504,
+          "cy": 263,
+          "w": 7,
+          "h": 22,
+          "storage": "option__pack"
+        },
+        "a": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 476,
+          "cy": 296,
+          "w": 7,
+          "h": 22,
+          "storage": "option__pack"
+        },
+        "b": {
+          "ox": 0,
+          "oy": 149,
+          "cx": 511,
+          "cy": 263,
+          "w": 7,
+          "h": 22,
+          "storage": "option__pack"
+        },
+        "d": {
+          "ox": 0,
+          "oy": 273,
+          "cx": 476,
+          "cy": 303,
+          "w": 7,
+          "h": 22,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "_sep_b",
+      "left": 89,
+      "top": 245,
+      "width": 4,
+      "height": 708,
+      "class": "layer",
+      "uiname": "_sep_b",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 85,
+          "cy": 0,
+          "w": 4,
+          "h": 708,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "test_test",
+      "left": 877,
+      "top": 457,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "test_test",
+      "uistates": {
+        "on": {
+          "ox": 13,
+          "oy": 11,
+          "cx": 483,
+          "cy": 326,
+          "w": 28,
+          "h": 33,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 13,
+          "oy": 11,
+          "cx": 476,
+          "cy": 263,
+          "w": 28,
+          "h": 33,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 13,
+          "oy": 11,
+          "cx": 455,
+          "cy": 326,
+          "w": 28,
+          "h": 33,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "mute",
+      "left": 122,
+      "top": 518,
+      "width": 54,
+      "height": 54,
+      "class": "area",
+      "uiname": "mute",
+      "uistates": {
+        "mute": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "mute_mute",
+      "left": 122,
+      "top": 518,
+      "width": 54,
+      "height": 54,
+      "class": "toggle",
+      "uiname": "mute_mute",
+      "uistates": {
+        "on": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 421,
+          "cy": 442,
+          "w": 38,
+          "h": 27,
+          "storage": "option__pack"
+        },
+        "over_off": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 459,
+          "cy": 442,
+          "w": 38,
+          "h": 27,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 459,
+          "cy": 469,
+          "w": 38,
+          "h": 27,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 352,
+          "cy": 795,
+          "w": 38,
+          "h": 27,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 402,
+          "cy": 785,
+          "w": 38,
+          "h": 27,
+          "storage": "option__pack"
+        },
+        "on_on": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 421,
+          "cy": 469,
+          "w": 38,
+          "h": 27,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "slider_l",
+      "left": 199,
+      "top": 518,
+      "width": 620,
+      "height": 54,
+      "class": "area",
+      "uiname": "slider_l",
+      "uistates": {
+        "slider": {
+          "ox": 0,
+          "oy": 0,
+          "w": 620,
+          "h": 54,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "slider_l_slider",
+      "left": 199,
+      "top": 518,
+      "width": 620,
+      "height": 54,
+      "class": "slider",
+      "uiname": "slider_l_slider",
+      "uistates": {
+        "rail": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 89,
+          "cy": 0,
+          "w": 610,
+          "h": 13,
+          "storage": "option__pack"
+        },
+        "normal": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "knob": {
+          "ox": 15,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 620,
+          "h": 54,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "slider_m",
+      "left": 199,
+      "top": 518,
+      "width": 345,
+      "height": 54,
+      "class": "area",
+      "uiname": "slider_m",
+      "uistates": {
+        "slider": {
+          "ox": 0,
+          "oy": 0,
+          "w": 345,
+          "h": 54,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "slider_m_slider",
+      "left": 199,
+      "top": 518,
+      "width": 345,
+      "height": 54,
+      "class": "slider",
+      "uiname": "slider_m_slider",
+      "uistates": {
+        "rail": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 106,
+          "cy": 313,
+          "w": 335,
+          "h": 13,
+          "storage": "option__pack"
+        },
+        "normal": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "knob": {
+          "ox": 15,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 345,
+          "h": 54,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "slider_s",
+      "left": 199,
+      "top": 518,
+      "width": 298,
+      "height": 54,
+      "class": "area",
+      "uiname": "slider_s",
+      "uistates": {
+        "slider": {
+          "ox": 0,
+          "oy": 0,
+          "w": 298,
+          "h": 54,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "slider_s_slider",
+      "left": 199,
+      "top": 518,
+      "width": 298,
+      "height": 54,
+      "class": "slider",
+      "uiname": "slider_s_slider",
+      "uistates": {
+        "rail": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 106,
+          "cy": 543,
+          "w": 288,
+          "h": 13,
+          "storage": "option__pack"
+        },
+        "normal": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "knob": {
+          "ox": 15,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 298,
+          "h": 54,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "slider_t",
+      "left": 199,
+      "top": 518,
+      "width": 380,
+      "height": 54,
+      "class": "area",
+      "uiname": "slider_t",
+      "uistates": {
+        "slider": {
+          "ox": 0,
+          "oy": 0,
+          "w": 380,
+          "h": 54,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "slider_t_slider",
+      "left": 199,
+      "top": 518,
+      "width": 380,
+      "height": 54,
+      "class": "slider",
+      "uiname": "slider_t_slider",
+      "uistates": {
+        "rail": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 106,
+          "cy": 150,
+          "w": 370,
+          "h": 13,
+          "storage": "option__pack"
+        },
+        "normal": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "knob": {
+          "ox": 15,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 380,
+          "h": 54,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "num_l",
+      "left": 857,
+      "top": 530,
+      "width": 74,
+      "height": 29,
+      "class": "area",
+      "uiname": "num_l",
+      "uistates": {
+        "num": {
+          "ox": 0,
+          "oy": 0,
+          "w": 74,
+          "h": 29,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "num_l_numbase",
+      "left": 857,
+      "top": 530,
+      "width": 74,
+      "height": 29,
+      "class": "layer",
+      "uiname": "num_l_numbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 452,
+          "cy": 785,
+          "w": 74,
+          "h": 29,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "num_l_value",
+      "left": 857,
+      "top": 530,
+      "width": 74,
+      "height": 29,
+      "class": "layer",
+      "uiname": "num_l_value",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 74,
+          "h": 29,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "num_s",
+      "left": 857,
+      "top": 567,
+      "width": 52,
+      "height": 29,
+      "class": "area",
+      "uiname": "num_s",
+      "uistates": {
+        "num": {
+          "ox": 0,
+          "oy": 0,
+          "w": 52,
+          "h": 29,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "num_s_numbase",
+      "left": 857,
+      "top": 567,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "num_s_numbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 323,
+          "cy": 760,
+          "w": 52,
+          "h": 29,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "num_s_value",
+      "left": 857,
+      "top": 567,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "num_s_value",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 52,
+          "h": 29,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "_sep_c",
+      "left": 518,
+      "top": 677,
+      "width": 4,
+      "height": 278,
+      "class": "layer",
+      "uiname": "_sep_c",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 556,
+          "w": 4,
+          "h": 278,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "helpbase",
+      "left": 27,
+      "top": 979,
+      "width": 731,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helpbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 8,
+          "cy": 0,
+          "w": 731,
+          "h": 77,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "helptext",
+      "left": 43,
+      "top": 979,
+      "width": 715,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helptext",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 672,
+          "h": 62,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "reset",
+      "left": 923,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "reset"
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title"
+    },
+    {
+      "name": "_sysbtn",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_sysbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 326,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 442,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 384,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 315,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back"
+    }
+  ],
+  "raw_result_keys": [
+    "_inner_box",
+    "_jump",
+    "_sep_a",
+    "_sep_b",
+    "_sep_c",
+    "_sep_d",
+    "_sysbtn",
+    "back",
+    "base",
+    "btn2",
+    "btn2b",
+    "btn3",
+    "btn4",
+    "btn4b",
+    "caption",
+    "chk",
+    "helpbase",
+    "helptext",
+    "mute",
+    "mute_mute",
+    "num_l",
+    "num_l_numbase",
+    "num_l_value",
+    "num_s",
+    "num_s_numbase",
+    "num_s_value",
+    "page0",
+    "page1",
+    "page2",
+    "page3",
+    "page4",
+    "page5",
+    "page6",
+    "page7",
+    "page8",
+    "page9",
+    "pgdot",
+    "reset",
+    "slider_l",
+    "slider_l_slider",
+    "slider_m",
+    "slider_m_slider",
+    "slider_s",
+    "slider_s_slider",
+    "slider_t",
+    "slider_t_slider",
+    "test_test",
+    "title",
+    "vbar"
+  ]
+}

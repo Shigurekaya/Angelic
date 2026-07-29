@@ -99,31 +99,30 @@ D:\gamedev\renpy-8.5.3-sdk\renpy.exe D:\gamedev\renpy-angelic
 
 ## 5. 设定 UI（近期主战场 · 状态摘要）
 
-### 5.1 方法（对齐 Cafe，几何用 Angelic 原生）
+### 5.1 方法（对齐 Cafe keys，几何/结构用原版真值）
 
-- **拓扑**：Cafe `settings-layout.json` 的 **keys/types only**（简易页 a–j 与 Angelic PBD / `help_opt` 一致）
-- **几何**：**不要用 Cafe 的 841×46 / 637×29**；用官方 `option__pack` 尺寸：
-  - 标签条 **313×57**（s005 / s009）
-  - 滑轨 **288×13**（s014）
-- **交互**：plate 烤背景+标签字；运行时叠官方 chrome 整片（滑钮/开关壳/静音/详细）
-- **硬约束（用户明确）**：**完全官方素材，不要自己剪切**  
-  - 禁止 `make_chip`  
-  - 禁止对 s010/s011 等官方片二次半切/四切  
-  - 禁止九切片造假 chrome  
-  - 允许：官方 `s*.png` **整片**复制为别名；分页 pack **逐片整片摆放**
+- **拓扑**：Cafe `settings-layout.json` 的 **keys/types only**（简易页 a–j 与 Angelic PBD / `help_opt` 一致；可见简易页为 **4+4**）
+- **几何**：`settings_truth.json`（自 `ig_option_*_1080`）  
+  - 行 y ≈ **237 / 483 / 728 / 880**；左栏控件 x≈195；右栏滑轨 x≈1655；静音 x≈1544
+  - 标签：**箭头胶囊 + 深蓝字**（`label_arrow_truth.png`），**禁止**把 `option__pack` s005 当分类标签
+  - 开关槽：**571×75** 宽值条（运行时 `wide_value` 显示当前选项并循环）
+  - 滑轨：**288×13**（s014 整片）
+- **硬约束**：**完全官方素材整片**（箭头精灵来自原版截图像素真值导出）  
+  - 禁止 `make_chip` / 二次半切四切 / 九切片造假 chrome
 
 ### 5.2 重烤命令
 
 ```bat
 cd /d D:\gamedev\Angelic
+python tools\extract_settings_truth.py
 python tools\rebuild_settings_1to1.py
 ```
 
 产出：
 
-- `Angelic/ui-preview/assets/settings/`
-- 同步 → `renpy-angelic/game/images/angelic/settings/`
-- 布局 JSON → `docs/ui-extract/pixel-reverse/settings-layout/angelic_settings_layout.json`
+- `settings_truth.json` / `label_arrow_truth.png` / `slice_placements.json`
+- `Angelic/ui-preview/assets/settings/` → sync `renpy-angelic/game/images/angelic/settings/`
+- `angelic_settings_layout.json`
 
 自检脚本（结构/字节对照，**不能**代替视觉真值）：
 
@@ -260,7 +259,8 @@ python tools\sync_all_ui_to_renpy.py
 
 | 脚本 | 职责 |
 |------|------|
-| `rebuild_settings_1to1.py` | **设定烤板主脚本（当前政策：官方整片）** |
+| `rebuild_settings_1to1.py` | **设定烤板主脚本（当前政策：官方整片 + 真值几何）** |
+| `extract_settings_truth.py` | ig_option 坐标真值 + 箭头精灵 + 刷新 slice_placements |
 | `sync_all_ui_to_renpy.py` | 同步到 renpy-angelic |
 | `build_title_1to1.py` | 标题 |
 | `build_other_screens_1to1.py` | 其它屏 |
@@ -290,7 +290,8 @@ python tools\sync_all_ui_to_renpy.py
 - [x] 去掉鼠标 / 手柄页（用户要求）；保留基本/画面/游戏1/2/文本/音频1/2/确认/键盘
 - [x] 分页 pack 由流式改为定点摆放；有装饰图的页改左栏布局
 - [x] 开关槽停止把 313×57 官方片压扁，小槽改用 check 整片
-- [ ] 用原版 `ig_option_*` 真图再精调标签/滑轨像素坐标（当前网格仍为启发式 + 部分锚点）
+- [x] 原版设置页补解包 + `ig_option_*` 坐标真值提取；烤板改为箭头标签 + 宽值条结构
+- [ ] 宽值条改用更接近原版的扁平蓝条（现用官方 s005/s009 整片居中叠在 571×75 槽）
 - [ ] 音频页立绘语音等小切片按原版坐标补全（现仅主面板定点）
 - [ ] 标题/存读档/CG 与原版视觉抽检
 
@@ -301,19 +302,22 @@ python tools\sync_all_ui_to_renpy.py
 | 文档/产物 | 路径 |
 |-----------|------|
 | 本交接 | `renpy-angelic/docs/UI-HANDOFF.md` |
+| 坐标真值 | `Angelic/.../settings-layout/settings_truth.json` |
+| 标签箭头 | `Angelic/.../settings-layout/label_arrow_truth.png` |
 | 摆片匹配 | `Angelic/.../settings-layout/slice_placements.json` |
+| uipsd 补解包 | `Angelic/.../pixel-reverse/_supplement_uipsd/` |
 | 原版抓图 | `Angelic/.../_orig_capture/ig_option_*_1080.png` |
 | Cafe 对照 | `renpy-cafe/docs/UI-HANDOFF.md` |
 
 ---
 
-## 11. 会话结论快照（2026-07-20 续）
+## 11. 会话结论快照（2026-07-21 · Angelic 解包直出）
 
-- 已用 ImageGrab 抓到可用设定真图（`ig_option_*_1080`）；PrintWindow 不可用。
-- 按用户要求 **排除鼠标(7)/手柄(9)**，保留 9 页（含确认/键盘）。
-- 烤板：`PAGE_PACK_PLACEMENTS` 定点；侧栏 (58,161)；底栏 y≈973。
-- 运行时：toggle/dialog 小槽不再压扁 chip。
-- 重烤：`python Angelic/tools/rebuild_settings_1to1.py`
+- **不再读 Cafe `settings-layout.json`**：页拓扑 = `ANGELIC_PAGES`（help_opt / PBD keys）。
+- **宽值条**：`option__pack/s002` 蓝条色剖面 → `value_on/off_571x75.png`（引擎 fillRect 等价，解包复合片补解）。
+- **标签**：`label_arrow_truth.png` + 深蓝字；**禁止 s005 当分类标签**。
+- **几何**：`settings_truth.json`（ig_option 蓝块）；行 y 237/483/728/880。
+- 重烤：`python tools\extract_settings_truth.py` → `python tools\rebuild_settings_1to1.py`
 
 ---
 

@@ -1,254 +1,258 @@
 {
   "source": "qconf.pbd",
+  "tool": "pbd2json",
   "hotspots": [
     {
-      "layer_id": "slider_numbase",
-      "sort_index": 1068,
-      "height": 97,
-      "ch": 13
-    },
-    {
-      "layer_id": "save",
-      "sort_index": 1241,
-      "height": 220,
-      "ch": 26
-    },
-    {
-      "layer_id": "load",
-      "sort_index": 1450,
-      "height": 220,
-      "ch": 49
-    },
-    {
-      "layer_id": "mute",
-      "sort_index": 1494,
-      "height": 250,
-      "ch": 182
-    },
-    {
-      "layer_id": "page_dw100",
-      "sort_index": 1663,
-      "width": 81,
-      "height": 98
-    },
-    {
-      "layer_id": "page_base",
-      "sort_index": 1723,
-      "height": 76,
-      "ch": 83
-    },
-    {
-      "layer_id": "copy",
-      "sort_index": 1787,
-      "height": 201
-    },
-    {
-      "layer_id": "qload",
-      "sort_index": 2087,
-      "height": 54,
-      "ch": 5
-    },
-    {
-      "layer_id": "page_up1",
-      "sort_index": 2207,
-      "width": 109,
-      "height": 198
-    },
-    {
-      "layer_id": "layer",
-      "sort_index": 2213,
-      "height": 76
-    },
-    {
-      "layer_id": "page_up10",
-      "sort_index": 2254,
-      "width": 199,
-      "height": 2
-    },
-    {
-      "layer_id": "page_up100",
-      "sort_index": 2309,
-      "width": 58,
-      "height": 21
-    },
-    {
-      "layer_id": "page_dw1",
-      "sort_index": 2435,
-      "width": 121,
-      "height": 201
-    },
-    {
-      "layer_id": "page_dw10",
-      "sort_index": 2755,
-      "width": 109,
-      "height": 144
-    },
-    {
+      "name": "switch",
+      "left": 368,
+      "top": 738,
+      "width": 175,
+      "height": 38,
+      "class": "button",
+      "uiname": "switch",
       "layer_id": "switch",
-      "sort_index": 3569,
-      "height": 83
+      "x": 368,
+      "y": 738,
+      "w": 175,
+      "h": 38
     },
     {
+      "name": "_pgbtn",
+      "left": 370,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "_pgbtn",
+      "layer_id": "_pgbtn",
+      "x": 370,
+      "y": 789,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_up100",
+      "left": 370,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up100",
+      "layer_id": "page_up100",
+      "x": 370,
+      "y": 789,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_up10",
+      "left": 409,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up10",
+      "layer_id": "page_up10",
+      "x": 409,
+      "y": 789,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_up1",
+      "left": 448,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up1",
+      "layer_id": "page_up1",
+      "x": 448,
+      "y": 789,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_base",
+      "left": 501,
+      "top": 789,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_base",
+      "layer_id": "page_base",
+      "x": 501,
+      "y": 789,
+      "w": 104,
+      "h": 35
+    },
+    {
+      "name": "page_num",
+      "left": 501,
+      "top": 789,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_num",
+      "layer_id": "page_num",
+      "x": 501,
+      "y": 789,
+      "w": 104,
+      "h": 35
+    },
+    {
+      "name": "page_dw1",
+      "left": 621,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw1",
+      "layer_id": "page_dw1",
+      "x": 621,
+      "y": 789,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_dw10",
+      "left": 660,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw10",
+      "layer_id": "page_dw10",
+      "x": 660,
+      "y": 789,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_dw100",
+      "left": 699,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw100",
+      "layer_id": "page_dw100",
+      "x": 699,
+      "y": 789,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "mute",
+      "left": 1424,
+      "top": 789,
+      "width": 54,
+      "height": 54,
+      "class": "toggle",
+      "uiname": "mute",
+      "layer_id": "mute",
+      "x": 1424,
+      "y": 789,
+      "w": 54,
+      "h": 54
+    },
+    {
+      "name": "slider_slider",
+      "left": 1483,
+      "top": 789,
+      "width": 276,
+      "height": 54,
+      "class": "slider",
+      "uiname": "slider_slider",
+      "layer_id": "slider_slider",
+      "x": 1483,
+      "y": 789,
+      "w": 276,
+      "h": 54
+    },
+    {
+      "name": "slider_numbase",
+      "left": 1771,
+      "top": 802,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "slider_numbase",
+      "layer_id": "slider_numbase",
+      "x": 1771,
+      "y": 802,
+      "w": 52,
+      "h": 29
+    },
+    {
+      "name": "slider_value",
+      "left": 1771,
+      "top": 802,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "slider_value",
+      "layer_id": "slider_value",
+      "x": 1771,
+      "y": 802,
+      "w": 52,
+      "h": 29
+    },
+    {
+      "name": "load",
+      "left": 361,
+      "top": 838,
+      "width": 91,
+      "height": 54,
+      "class": "button",
+      "uiname": "load",
+      "layer_id": "load",
+      "x": 361,
+      "y": 838,
+      "w": 91,
+      "h": 54
+    },
+    {
+      "name": "qload",
+      "left": 361,
+      "top": 838,
+      "width": 91,
+      "height": 54,
+      "class": "button",
+      "uiname": "qload",
+      "layer_id": "qload",
+      "x": 361,
+      "y": 838,
+      "w": 91,
+      "h": 54
+    },
+    {
+      "name": "save",
+      "left": 361,
+      "top": 838,
+      "width": 91,
+      "height": 54,
+      "class": "button",
+      "uiname": "save",
+      "layer_id": "save",
+      "x": 361,
+      "y": 838,
+      "w": 91,
+      "h": 54
+    },
+    {
+      "name": "check",
+      "left": 835,
+      "top": 965,
+      "width": 36,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "check",
       "layer_id": "check",
-      "sort_index": null,
-      "height": 6,
-      "ch": 176
-    },
-    {
-      "layer_id": "normal",
-      "sort_index": null,
-      "ch": 8
-    },
-    {
-      "layer_id": "normal_off",
-      "sort_index": null,
-      "ch": 176
-    },
-    {
-      "layer_id": "normal_on",
-      "sort_index": null,
-      "ch": 123
-    },
-    {
-      "layer_id": "of_btm",
-      "sort_index": null,
-      "ch": 26
-    },
-    {
-      "layer_id": "of_dw",
-      "sort_index": null,
-      "ch": 37
-    },
-    {
-      "layer_id": "of_dw10",
-      "sort_index": null,
-      "ch": 171
-    },
-    {
-      "layer_id": "of_top",
-      "sort_index": null,
-      "ch": 28
-    },
-    {
-      "layer_id": "of_up",
-      "sort_index": null,
-      "ch": 47
-    },
-    {
-      "layer_id": "of_up10",
-      "sort_index": null,
-      "ch": 34
-    },
-    {
-      "layer_id": "on_btm",
-      "sort_index": null,
-      "ch": 163
-    },
-    {
-      "layer_id": "on_dw",
-      "sort_index": null,
-      "ch": 230
-    },
-    {
-      "layer_id": "on_dw10",
-      "sort_index": null,
-      "ch": 111
-    },
-    {
-      "layer_id": "on_off",
-      "sort_index": null,
-      "ch": 99
-    },
-    {
-      "layer_id": "on_on",
-      "sort_index": null,
-      "ch": 81
-    },
-    {
-      "layer_id": "on_top",
-      "sort_index": null,
-      "ch": 41
-    },
-    {
-      "layer_id": "on_up",
-      "sort_index": null,
-      "ch": 55
-    },
-    {
-      "layer_id": "on_up10",
-      "sort_index": null,
-      "ch": 74
-    },
-    {
-      "layer_id": "ov_btm",
-      "sort_index": null,
-      "ch": 47
-    },
-    {
-      "layer_id": "ov_dw",
-      "sort_index": null,
-      "ch": 74
-    },
-    {
-      "layer_id": "ov_dw10",
-      "sort_index": null,
-      "ch": 10
-    },
-    {
-      "layer_id": "ov_top",
-      "sort_index": null,
-      "ch": 82
-    },
-    {
-      "layer_id": "ov_up",
-      "sort_index": null,
-      "ch": 145
-    },
-    {
-      "layer_id": "ov_up10",
-      "sort_index": null,
-      "ch": 87
-    },
-    {
-      "layer_id": "over_off",
-      "sort_index": null,
-      "ch": 66
-    },
-    {
-      "layer_id": "over_on",
-      "sort_index": null,
-      "ch": 249
-    },
-    {
-      "layer_id": "qconf__pack",
-      "sort_index": null,
-      "width": 238
-    },
-    {
-      "layer_id": "slider",
-      "sort_index": null,
-      "height": 226
-    },
-    {
-      "layer_id": "toggle",
-      "sort_index": null,
-      "height": 6
-    },
-    {
-      "layer_id": "width",
-      "sort_index": null,
-      "x": 131
-    },
-    {
-      "layer_id": "x",
-      "sort_index": null,
-      "y": 54
-    },
-    {
-      "layer_id": "y",
-      "sort_index": null,
-      "height": 6
+      "x": 835,
+      "y": 965,
+      "w": 36,
+      "h": 36
     }
-  ],
-  "bindings": []
+  ]
 }

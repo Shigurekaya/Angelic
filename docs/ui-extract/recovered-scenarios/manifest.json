@@ -1,0 +1,3810 @@
+{
+  "counts": {
+    "scanned": 47797,
+    ".txt": 69,
+    ".ks": 63,
+    ".tjs": 267,
+    ".asd": 11,
+    ".csv": 12
+  },
+  "files": [
+    {
+      "archive": "adult",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\adult\\94D4A97C61498621\\9590269567CD6D3565BBF72689CE0235229B2ABB9D53B61E28229B16724ECB98",
+      "output": "adult/detected/9590269567CD6D3565BBF72689CE0235229B2ABB9D53B61E28229B16724ECB98.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 66,
+      "bytes": 1460
+    },
+    {
+      "archive": "adult",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\adult\\94D4A97C61498621\\CDDB98ADEAAC6D46E1DD08A9CA8E85F1B87A258298FBDA87C81F5D39BC397D90",
+      "output": "adult/detected/CDDB98ADEAAC6D46E1DD08A9CA8E85F1B87A258298FBDA87C81F5D39BC397D90.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 124,
+      "bytes": 5690
+    },
+    {
+      "archive": "adult",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\adult\\94D4A97C61498621\\6BC0DA5EFFC62346947ADC18B138D241C0CAE6872E69B0AB2FF245D8CA10A18F",
+      "output": "adult/named/append_setup_1.tjs",
+      "name": "append_setup_1.tjs",
+      "encoding": "utf-16",
+      "score": 37,
+      "bytes": 1822
+    },
+    {
+      "archive": "adult",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\adult\\94D4A97C61498621\\D54DB3EE5A7EEFCB5D410E6EABB32D079DE39CDC84BFC4C182D4DC0D10096471",
+      "output": "adult/named/scenelist.csv",
+      "name": "scenelist.csv",
+      "encoding": "utf-16",
+      "score": 15,
+      "bytes": 772
+    },
+    {
+      "archive": "adult",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\adult\\94D4A97C61498621\\4C9461238F67DF8F1766B263B78F44AD4F6A6E8BCBA9B7CD6A05874FEF209223",
+      "output": "adult/named/x_scnchartdata.tjs",
+      "name": "x_scnchartdata.tjs",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 302588
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\07813259F4B1DCBF5D5624FC9F821AB5B5E1B72FC6F058C3666FCBF652016529",
+      "output": "data/detected/07813259F4B1DCBF5D5624FC9F821AB5B5E1B72FC6F058C3666FCBF652016529.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 27,
+      "bytes": 404
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\1A8D00CECE0AC54670FA5449D6CC90FF9F06BD3C45402380C088A07F283A4585",
+      "output": "data/detected/1A8D00CECE0AC54670FA5449D6CC90FF9F06BD3C45402380C088A07F283A4585.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 27,
+      "bytes": 404
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\2EF9910B7D1D59939179A3AC7610CBA5AA22497FFB3D315C4D3FF690EE3EBA51",
+      "output": "data/detected/2EF9910B7D1D59939179A3AC7610CBA5AA22497FFB3D315C4D3FF690EE3EBA51.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 27,
+      "bytes": 404
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\DE097C7B9EA97EB7\\6975F7CE14F58C0F98CBA1C16391274E19B89C28CB1B65F36829C6C35EC5D65B",
+      "output": "data/detected/6975F7CE14F58C0F98CBA1C16391274E19B89C28CB1B65F36829C6C35EC5D65B.ks",
+      "name": "uitexts.toml",
+      "encoding": "utf-16",
+      "score": 202,
+      "bytes": 112858
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\874BCA8AEF23582C38ABF045EBEECBA834AFD6B2CEC0B73461702D451548ADBB",
+      "output": "data/detected/874BCA8AEF23582C38ABF045EBEECBA834AFD6B2CEC0B73461702D451548ADBB.ks",
+      "name": "flagedit.ini",
+      "encoding": "utf-16",
+      "score": 86,
+      "bytes": 756
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\88348780ADCBD99F0FDD4A7F7776F2580E0413A1D4AD69821E660B543CA226D4",
+      "output": "data/detected/88348780ADCBD99F0FDD4A7F7776F2580E0413A1D4AD69821E660B543CA226D4.ks",
+      "name": "uitexts_cn.toml",
+      "encoding": "utf-16",
+      "score": 38,
+      "bytes": 26870
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\94F0B4DA66C6466530874F0E1629463A2BF0AC8396B2FC8C6766F1A92D446E31",
+      "output": "data/detected/94F0B4DA66C6466530874F0E1629463A2BF0AC8396B2FC8C6766F1A92D446E31.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 38,
+      "bytes": 26872
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\A569B66A629855AFDDE18E844F155D5204E517130007E892B55E7FB865D1EEB7",
+      "output": "data/detected/A569B66A629855AFDDE18E844F155D5204E517130007E892B55E7FB865D1EEB7.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 27,
+      "bytes": 404
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\A5F427883FB1571EECF7C0FF0A5AAEEBD29EEE445753F9A6858C307FF23C0F24",
+      "output": "data/detected/A5F427883FB1571EECF7C0FF0A5AAEEBD29EEE445753F9A6858C307FF23C0F24.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 27,
+      "bytes": 404
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\BE63F8D7D9C8F0ABED82747E30B6AAB5B7918AF7035CC9119CBCC5E3CAE04940",
+      "output": "data/detected/BE63F8D7D9C8F0ABED82747E30B6AAB5B7918AF7035CC9119CBCC5E3CAE04940.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 27,
+      "bytes": 404
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\902994BB1913D6F2\\C1F625E3A4BB508E082A52A8B032F4B3D2F34FF7FB3A30502574717DE6579126",
+      "output": "data/named/!scnlist.txt",
+      "name": "!scnlist.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 3326
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\902994BB1913D6F2\\10FAEEC9E5FDD3F5200B79274D4B566AB2BBA9BC3595D0F9475A54B8ED187AD9",
+      "output": "data/named/_scnheads.txt",
+      "name": "_scnheads.txt",
+      "encoding": "utf-16",
+      "score": 7,
+      "bytes": 264
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\142F9B81ABBB6C293C91944D8A8AF392C4B225256A552082DFF260E207239815",
+      "output": "data/named/about.ks",
+      "name": "about.ks",
+      "encoding": "utf-16",
+      "score": 161,
+      "bytes": 3658
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\334A07E96BE17F13E62500082E10D0E575D9905E183E1A8D554B6A35BB8BB741",
+      "output": "data/named/action.tjs",
+      "name": "action.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 70380
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\79ECB0C27D1C3B39B5E9C15F9013AB06A88457D376E29F3B42F244C385788001",
+      "output": "data/named/advancedmenu.tjs",
+      "name": "advancedmenu.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 3932
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\9BB7E4B57F7FDF47524D600C866B89F66A49BEC5BF6765D3188B154D7951C963",
+      "output": "data/named/affinelayer.tjs",
+      "name": "affinelayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 42624
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\857D142CF9FA1669A69AD34677A3B911B3A662D60956E6D4D2D83C43518C6B42",
+      "output": "data/named/affinematrix.tjs",
+      "name": "affinematrix.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 14616
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\2B6C3C23BA3B4119D7603E6FD6897D5E19C4F8F7E1A6DA64EEA1D616A4AB7778",
+      "output": "data/named/affinesource.tjs",
+      "name": "affinesource.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 22256
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\5808348A0DB1B50772F5DCE30762F82DA3E3CFA5BD2837D13D40E9151FF5B52C",
+      "output": "data/named/affinesourceasd.tjs",
+      "name": "affinesourceasd.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 13492
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\9A37CC4393DBB0BDE9F569ECA7BCD75311828B79A3A26478F04608BFDB527613",
+      "output": "data/named/affinesourcebishamon.tjs",
+      "name": "affinesourcebishamon.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 7328
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\31286FA8C72FDEF625147425DCC02C9015FD76B58E217267C32453D174784B7B",
+      "output": "data/named/affinesourcebitmap.tjs",
+      "name": "affinesourcebitmap.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 18396
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\0631DB9FB59AEE282AFD0A60F077991B0DB1485D5AD7F8CF5A0F67DF388131EC",
+      "output": "data/named/affinesourcebmpbase.tjs",
+      "name": "affinesourcebmpbase.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 13868
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\609E34AF4ACC66467E5394135CDC0CA33F70DA7DC216BE23BC980111E9B5C115",
+      "output": "data/named/affinesourceflip.tjs",
+      "name": "affinesourceflip.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 9520
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\7A786415BF294811F3A27211AE1A469FBF661D30D2B0A5D8603A74571AA460D0",
+      "output": "data/named/affinesourceimage.tjs",
+      "name": "affinesourceimage.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 12308
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\5564A68D0D4D3BE6262F19F7E79B6C0515A9603231BC3EF21DB3ADC27298BA1D",
+      "output": "data/named/affinesourcelive2d.tjs",
+      "name": "affinesourcelive2d.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 22668
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\BC2C04B86398B8E63540624A850DBD7BF1A525763BD9761BDE9CF19D9E58F5F8",
+      "output": "data/named/affinesourcemotion.tjs",
+      "name": "affinesourcemotion.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 38396
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\CA5C5E31EEAC17D1B0B38A405AABDD353910EF9BFC10764FFC0DC29B0FC01175",
+      "output": "data/named/affinesourcemultitile.tjs",
+      "name": "affinesourcemultitile.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 8184
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\F982E182FCF2BCBF42F402F767B2A5F85169929BD46A6DD76C28A2B06F786F10",
+      "output": "data/named/affinesourcenoise.tjs",
+      "name": "affinesourcenoise.tjs",
+      "encoding": "utf-16le",
+      "score": 25,
+      "bytes": 2384
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\259CD155672F35C1DF5747D1A97038CA9CB4EA5DF76ED21A34E26D22665D0F7B",
+      "output": "data/named/affinesourcepsd.tjs",
+      "name": "affinesourcepsd.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 6356
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\14494C4209CDBDD09FC3CEB5153FC3ADEDB2BB0F9B5DB2F0549383B7687B34A3",
+      "output": "data/named/affinesourcestand.tjs",
+      "name": "affinesourcestand.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 22804
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\13E710E7528199CC6F68F04BB33BFBE43EDF3652B9516DD750F455144EB5E9E7",
+      "output": "data/named/affinesourcetile.tjs",
+      "name": "affinesourcetile.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 2772
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\77E1E298F578F471B032742155508955EDC16BC6E36DCFB0F395058E57AA4C05",
+      "output": "data/named/affinesourcevector.tjs",
+      "name": "affinesourcevector.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 3332
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\E6A28A28C31C523C9C0515B272B2BF84BB23BB11DAD36F6C4FFA2990347BD5FD",
+      "output": "data/named/afterinit.tjs",
+      "name": "afterinit.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 3504
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\AB3E5E2F673D4B3B4098AF269DBC76FEB5A984A87F1FECD7B9D9861A7347FD07",
+      "output": "data/named/afterstory.ks",
+      "name": "afterstory.ks",
+      "encoding": "utf-16",
+      "score": 200,
+      "bytes": 3040
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\277B28DB4A692C6F151EFA170C92C3CAA662A9188A1F5A4EB0FDAC6A26889653",
+      "output": "data/named/animationlayer.tjs",
+      "name": "animationlayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 25304
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\8F5BE5EC6E4112B0715482D03A3E3B7A14E6DE6645C576644739FAEA3A98154E",
+      "output": "data/named/animkaglayer.tjs",
+      "name": "animkaglayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4300
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\94D4A97C61498621\\5BA0F09AC06320DDC5A6ACBEBEDD832024CD075FA185D3413DFECFF0D21943ED",
+      "output": "data/named/appconfig.tjs",
+      "name": "appconfig.tjs",
+      "encoding": "utf-16",
+      "score": 14,
+      "bytes": 1128
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\F4F6B181C3087F8883D3AB00B47137DE46DCDB9B743CF45AE874C9CA5D35620D",
+      "output": "data/named/append_init.tjs",
+      "name": "append_init.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 26284
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\EA5FD94874BD591F8F9B9373166DD6428B78C35DA58497698DC5A85B5936766B",
+      "output": "data/named/arsenal-license.txt",
+      "name": "arsenal-license.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 8932
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\C6529E6DC5FD420EDFA0D294B5223D53D43BC5395BF0DB65E7DBAC50DE8DFC26",
+      "output": "data/named/arsenal-notice.txt",
+      "name": "arsenal-notice.txt",
+      "encoding": "utf-16",
+      "score": 4,
+      "bytes": 494
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\97D213CF705D607E71A30656C4541CA36D54F93FA767F5E251F2D907D3008DE0",
+      "output": "data/named/autoface.tjs",
+      "name": "autoface.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 13404
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\91D3B4F9A7725939F2FE8F76DDFC21DE71655458BCE0C316939A8B0927B68141",
+      "output": "data/named/autoskipmark.tjs",
+      "name": "autoskipmark.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 7968
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\294A31365E4AC7FD1DE2372BABF43CDC62BD6D6C82E701D7C4A7D872E69B6C48",
+      "output": "data/named/backlog.ks",
+      "name": "backlog.ks",
+      "encoding": "utf-16",
+      "score": 318,
+      "bytes": 4616
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\252BBFA924F42C1C8C6DE36433E725B4A611194FE2A1384B1248C06DC75E01C7",
+      "output": "data/named/backlog.tjs",
+      "name": "backlog.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 90512
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\25659666D26A7540B482A52D4DF05F2B80CDC52FEB72233D9BA448A9DFE9BC64",
+      "output": "data/named/baselayer.tjs",
+      "name": "baselayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 16192
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\5EC73084D33946C617D3D73E5CBD52E8E926F41236AA51009F0F84FB7624C908",
+      "output": "data/named/bgm.tjs",
+      "name": "bgm.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 17616
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\5CA849858C71A3218CACD244C093240D7862988EAF1254FA72A71950F36DF62F",
+      "output": "data/named/bgmtitleindicator.tjs",
+      "name": "bgmtitleindicator.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 21396
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\111B61A560CAF7F07777148F507A63D3B33E092E3A87904527D82B46D553C853",
+      "output": "data/named/bishamon.tjs",
+      "name": "bishamon.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 9452
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\7C541C94B8335A014B048E5929FA5B66689FEC920C6A95517D2E95969928B1E9",
+      "output": "data/named/brows.ks",
+      "name": "brows.ks",
+      "encoding": "utf-16",
+      "score": 692,
+      "bytes": 10728
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\6047E80D235200C81C1B0D4D157F6BDE8E632EE6380064688AEB7F5C4E9CA0D7",
+      "output": "data/named/brows_conf.ks",
+      "name": "brows_conf.ks",
+      "encoding": "utf-16",
+      "score": 189,
+      "bytes": 2804
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\A8CB337C17BF05EE734AF1316DC958971437DA379B75ACECDE95A67B7828B085",
+      "output": "data/named/brows_help.ks",
+      "name": "brows_help.ks",
+      "encoding": "utf-16",
+      "score": 679,
+      "bytes": 17994
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\295513BBDAE074233E067C3CA8B1A05327D74F981F7EFEFE04412FFA533D5DB3",
+      "output": "data/named/browswindow.tjs",
+      "name": "browswindow.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 38200
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\95B03671351F19E44366CF5804F8C7CC6AFCCD413C12DCF1CA64290B2D443F5E",
+      "output": "data/named/buttonlayer.tjs",
+      "name": "buttonlayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 36468
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\946282A7249043462EEDEB004D50C75E6FC34940B79988AA3BD426BA63359684",
+      "output": "data/named/cginipos.txt",
+      "name": "cginipos.txt",
+      "encoding": "utf-16",
+      "score": 2,
+      "bytes": 494
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\08ED7EE1E117605C40775D31DAAACD23B0485330C02182967CDB2120F23DCF56",
+      "output": "data/named/cglist.csv",
+      "name": "cglist.csv",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 81908
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\6438AF0AA11B5816B65F177D44162FD93FC6409B98178A8D7C9FAE2EDEE4703F",
+      "output": "data/named/cgmode.ks",
+      "name": "cgmode.ks",
+      "encoding": "utf-16",
+      "score": 284,
+      "bytes": 4176
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\3097102C7DD20299D4FD79BEA0D0F4282098B8B8E110016C6F438EAADD2A1CF0",
+      "output": "data/named/cgmode.tjs",
+      "name": "cgmode.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 53768
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\FF72B55F9C7A5DF66FC2B18FBCDB4C827F20DFDB254B11D8F439E1A3FB53329F",
+      "output": "data/named/cgview.tjs",
+      "name": "cgview.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 33124
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\0B7A824B679AD8316DED043CBB200D3320BA58878A36F1B5B10B732895371356",
+      "output": "data/named/charlist.csv",
+      "name": "charlist.csv",
+      "encoding": "utf-16",
+      "score": 20,
+      "bytes": 806
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\A1DFA6CF22DE12A999D80B12C989CBE11EFA5577F11191EF1F1FF2D1C978E337",
+      "output": "data/named/charvoice.csv",
+      "name": "charvoice.csv",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 4272
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\DDE9E739640B077678EC4C0AF3BDE3A91C00221EF78D467BDD84256B06C48676",
+      "output": "data/named/checkboxlayer.tjs",
+      "name": "checkboxlayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 13460
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\F180BE7033E99C4285F0A73CFF0D2FF461BB01764557721A4A9B5D902CBA6B5A",
+      "output": "data/named/compat.ks",
+      "name": "compat.ks",
+      "encoding": "utf-16",
+      "score": 32,
+      "bytes": 840
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\FAB833A2B1FEBB03369794CB27F62B68A2C048B9BA2EA3E4FCE9BDDD3841A777",
+      "output": "data/named/conductor.tjs",
+      "name": "conductor.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 20108
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\656A35088EAF14019045EBBD6C4AE2CF2FC9826D9B007D082EBD85E6372EF092",
+      "output": "data/named/config.tjs",
+      "name": "config.tjs",
+      "encoding": "utf-16",
+      "score": 126,
+      "bytes": 53156
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\3091F3CCF54BA4050C244E02EEE1EAE1E2D5A84E4CF419D61D33A308C7A14AD4",
+      "output": "data/named/custom.ks",
+      "name": "custom.ks",
+      "encoding": "utf-16",
+      "score": 1531,
+      "bytes": 30806
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\7B9B77CD9D9D418A2A2E17DA99EDE1932EAA12716A56FBE410C9E25408CE52CD",
+      "output": "data/named/custom.tjs",
+      "name": "custom.tjs",
+      "encoding": "utf-16",
+      "score": 74,
+      "bytes": 17068
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\626B9E349AFAD9620EE85A846AFEE9A4B2F156F557874785472BBC47B1B72FB5",
+      "output": "data/named/d3d.tjs",
+      "name": "d3d.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 29424
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\18EFBB405E271BFC3DAE7A326CD2393C0C7B86DA133438301E31AE5E9F7ED263",
+      "output": "data/named/d3daffinesource.tjs",
+      "name": "d3daffinesource.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 6996
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\BA9686C6B70B3658CC932E346877ADEEECFCFA2659695B9E141227EA879D3889",
+      "output": "data/named/d3daffinesourceemote.tjs",
+      "name": "d3daffinesourceemote.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 14208
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\778D32DE576CAB192DA9954FA850F35138FCF02E7CB7DE806A06D64ECB42A6CB",
+      "output": "data/named/d3daffinesourceimage.tjs",
+      "name": "d3daffinesourceimage.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4240
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\CEDDF8D8A35E490ED2E9DC337A2C2426649166BD0A9E826D4204A592E178BF5F",
+      "output": "data/named/d3daffinesourcelive2d.tjs",
+      "name": "d3daffinesourcelive2d.tjs",
+      "encoding": "utf-16le",
+      "score": 13,
+      "bytes": 1656
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\7059EB1146D7037462596CA8E609BCD0C8CADD146DD36C012CC4729DCDAE0258",
+      "output": "data/named/d3daffinesourcemotion.tjs",
+      "name": "d3daffinesourcemotion.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 6344
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\A4537190741DACBB56C851D97CB432E6F93F7E7AF4E1E1718141BFCB5CA77984",
+      "output": "data/named/d3daffinesourcepicture.tjs",
+      "name": "d3daffinesourcepicture.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 5940
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\784613EB69F616E93E71A2AA62A6F7B4796D038866B4B2B9982165ECE909A09A",
+      "output": "data/named/default.tjs",
+      "name": "default.tjs",
+      "encoding": "utf-16",
+      "score": 74,
+      "bytes": 49416
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\BAD8DA9BF3441D48DB21022CC7CC981466FDBDEBF916D77EFDBBF035A036F968",
+      "output": "data/named/defaultmover.tjs",
+      "name": "defaultmover.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 6592
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\F61127701B8CB4ECCC4D6859AD79F0F616BB9DBE7FC22D35A85EED6F433C5FDD",
+      "output": "data/named/deffontmap.tjs",
+      "name": "deffontmap.tjs",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 4384
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\EFA93D532B4E62F814226F1BB527713DF22716BB3C5FB5E69C2B96DFB5D5425D",
+      "output": "data/named/designmscur.tjs",
+      "name": "designmscur.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 6580
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\BD2C1ECE6022070F6979F9579E49F1F70AD2F099F1DF8FAF17C99EEC594E8E7C",
+      "output": "data/named/dialoglayer.tjs",
+      "name": "dialoglayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 35040
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\E7ACC983C70535447E7666B8ED84B509A8DBDA8C31FE4AB2EE807EAA250AD1EB",
+      "output": "data/named/diffimage.tjs",
+      "name": "diffimage.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4016
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\5E3753FE9BB325F303603042887D74596FEF963CC0E9531CF68E88CA441431F4",
+      "output": "data/named/diffimage2.tjs",
+      "name": "diffimage2.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4752
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\8D50AA98B4820BD1F5CD9AE312C1973CB1B65F1E12197059B35417BD3BACEF55",
+      "output": "data/named/dirutil.tjs",
+      "name": "dirutil.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 3260
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\17EB98617660DC37D80ADD6438F8E56C0351EAD56B10DB24569D0543390407BD",
+      "output": "data/named/dragutil.tjs",
+      "name": "dragutil.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 19068
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\DDC95D762C620C6BD16BB52637B0F89EF64B880E5395E1FA64D6707F01391E8D",
+      "output": "data/named/drawtextparam.tjs",
+      "name": "drawtextparam.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 11560
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\902994BB1913D6F2\\1E3AA7561129103CC9E2D023DD399E81AF52F32179C5892A877FB33E1FE455E7",
+      "output": "data/named/dummy_replay.ks",
+      "name": "dummy_replay.ks",
+      "encoding": "utf-16",
+      "score": 46,
+      "bytes": 1000
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\0B4FEF64BD6BE0F20D1B069F12845F64EBA9C4C1D3E8431F5E713B9430E17886",
+      "output": "data/named/dummymenuitem.tjs",
+      "name": "dummymenuitem.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 7004
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\D0EA27C1D76180EE50B55147CE0B4281E19127CB00F16B7BF282F96656A2BCAE",
+      "output": "data/named/editcomment.tjs",
+      "name": "editcomment.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4368
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\375906AD1FE3144E3FDA9D43210EF0A4E8B78225D752DF048B43ED4A8F9DA33E",
+      "output": "data/named/editlayer.tjs",
+      "name": "editlayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 26948
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\ED719787D4B42C7A69B995BC71CE58CE645DB1994D01ADCE4B62F12E9020BAC3",
+      "output": "data/named/editstandtext.tjs",
+      "name": "editstandtext.tjs",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 6170
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\460C70B3141175AFA7B48D80F72BF6FE9B810B9ACC4D681FD6FBC666020956A4",
+      "output": "data/named/embfontlist.tjs",
+      "name": "embfontlist.tjs",
+      "encoding": "utf-16",
+      "score": 58,
+      "bytes": 10532
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\44CE02849BA7EFDF7446F7025019AAFC51619A75E8A33E8A49C1E3E3355400D7",
+      "output": "data/named/embfontloader.tjs",
+      "name": "embfontloader.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 8508
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\A7A57330E6E0975ACD29BC17B60D8A71B63D83D1A24894EF35D2B5D62D314F34",
+      "output": "data/named/emotetalk.tjs",
+      "name": "emotetalk.tjs",
+      "encoding": "utf-16le",
+      "score": 21,
+      "bytes": 2436
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\0C528EAAD47265768D8806BA380F932D948CF89F968E38E3B30E4BBBBE179BC5",
+      "output": "data/named/emotion.tjs",
+      "name": "emotion.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 9400
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\CF83DA8B390E07342D37B3EA4A59E0B55B41D6BA7FE371B580EDDBE1548DC8E0",
+      "output": "data/named/encyclopedia.tjs",
+      "name": "encyclopedia.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 12600
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\96CBF03442D96F853665DB15D328A2EC695A82A6F292F93EA3E419562B89B754",
+      "output": "data/named/end.ks",
+      "name": "end.ks",
+      "encoding": "utf-16",
+      "score": 180,
+      "bytes": 2658
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\1028C8CC9FF94683F2BD43C449CB7506668B17E58DED4717FFC28C1C40C9D287",
+      "output": "data/named/envinit.tjs",
+      "name": "envinit.tjs",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 226652
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\066DD98C360F9C66FDAE735BF1B8250E14A85B81ADBC8A02FAF46431CA64C6D9",
+      "output": "data/named/envplay.ks",
+      "name": "envplay.ks",
+      "encoding": "utf-16",
+      "score": 68,
+      "bytes": 1124
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\2ED40649F1B0E3EE86156CF1D89E5CB0AB082AEEDA067B74D6EA974EB05D6F26",
+      "output": "data/named/exchview.ks",
+      "name": "exchview.ks",
+      "encoding": "utf-16",
+      "score": 620,
+      "bytes": 9306
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\D981F6D7EDFFC966B533DDBE87626BACC296A70C5BBAE4BF533E4F291073DA25",
+      "output": "data/named/exchview.tjs",
+      "name": "exchview.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 98380
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\6A74F38D93076A78CB5354908308CBFEB5392C4375D764889616B5397D889BD5",
+      "output": "data/named/execdialog.tjs",
+      "name": "execdialog.tjs",
+      "encoding": "utf-16le",
+      "score": 11,
+      "bytes": 1016
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\622B5491291D9AD4104B6A20067342EDADD24AA8293559047AD775F40AB49A27",
+      "output": "data/named/exgallery.tjs",
+      "name": "exgallery.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 99216
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\59BCF745B9DC344A6FCB575F4E9D3E638D1151EAE1056F6E79C119B2CE4E8759",
+      "output": "data/named/exgamepad.tjs",
+      "name": "exgamepad.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 34160
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\F505C67D89A291911BC5135DCD60C006CEABB0974E4A5AB519B108D8AA3687B2",
+      "output": "data/named/exmenuintf.tjs",
+      "name": "exmenuintf.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 33276
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\3D185DAC1A5443C386F7C349880BBD534D5ECBC7B5B3D704D3A05A38E5B4AFF6",
+      "output": "data/named/exroll.tjs",
+      "name": "exroll.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 52980
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\DAB6FB0592256D3AC1EF24BB4ED3F140A2AC7753505D25F238B330B0E632135D",
+      "output": "data/named/facethumbdraw.tjs",
+      "name": "facethumbdraw.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 16892
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\5C33E2183BF4217DB0EDB4B1EB01EBCB8B649310012443ABAC3673A276BB1684",
+      "output": "data/named/filegain.csv",
+      "name": "filegain.csv",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 3982
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\321C15F3946DCE5FB7D5C645F2E0334FA3761392F2DAA175CF268618DAE9D6E3",
+      "output": "data/named/first.ks",
+      "name": "first.ks",
+      "encoding": "utf-16",
+      "score": 177,
+      "bytes": 3562
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\3BD4156008149E4DDC79E89B3FB7E52FACBB57FE426CCDC810C69BC20B0846E7",
+      "output": "data/named/fontalias.tjs",
+      "name": "fontalias.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 7236
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\672BDB17F385B1F15014EBA6070983A46351A9FB4982B7E860DB09CA4F22CC32",
+      "output": "data/named/fonteffect.tjs",
+      "name": "fonteffect.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 12324
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\CCA8B7CFBF07C379CB4E7911BE9B7D624DADBCD99E01A6B0537F3385D19ABAA9",
+      "output": "data/named/gamecont.tjs",
+      "name": "gamecont.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 9884
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\D9D2ABD0B7676443B4E135E3CA61551935E023407F69CEEB23325C3EDD853B2F",
+      "output": "data/named/genericflip.tjs",
+      "name": "genericflip.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 5156
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\40CC1BEBC28EEE4B9CE2030640B3414171B44D90E871F4177ECE45C217D3DCF2",
+      "output": "data/named/gesture.tjs",
+      "name": "gesture.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 51916
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\52AC54B28E7216F103692B7459AE053806B91C589D0C965D35599CA82BDE8410",
+      "output": "data/named/gfx_amovie.tjs",
+      "name": "gfx_amovie.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 5476
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\A93D93A19A6CB8EC2C3F64BEE90D6B1C3CFC8472AAE79C7E116F1EC63666E334",
+      "output": "data/named/gfx_fire.tjs",
+      "name": "gfx_fire.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 13848
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\3007EA152B70BF05D1F0FA6F5A11839F8D5FD2E793544A021764D839BD800AF8",
+      "output": "data/named/gfx_flash.tjs",
+      "name": "gfx_flash.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4588
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\8B0FE72EA355125E75788BBC760493894DD1BE9D811C94EBFDF37B51D9516C9A",
+      "output": "data/named/gfx_motion.tjs",
+      "name": "gfx_motion.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 5924
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\63B9230253923158C6016634237FE131559D26151FB6887FC0905690A16EE006",
+      "output": "data/named/gfx_movie.tjs",
+      "name": "gfx_movie.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 7520
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\0C5E6EA89E18996D28966DC10870FD5DBBFFA1C3C21B9CB23EBE20BA6A107188",
+      "output": "data/named/gfx_mpeg2v.tjs",
+      "name": "gfx_mpeg2v.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 6424
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\186DE9C2515735D042EDC62014389AABE7A1CFEFDB518C5F6254AFC874CDF10E",
+      "output": "data/named/gfx_noise.tjs",
+      "name": "gfx_noise.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 2936
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\30BB8770C81C433201BD54DE0CE39E34E3F66D3E3E926CBBCBCC1AF3F18E285E",
+      "output": "data/named/gfx_particle.tjs",
+      "name": "gfx_particle.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 12964
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\3B200049D7A69199624A11F3C4DC7D2C918104AC23CC6A7DF6715C8E6D5A71E6",
+      "output": "data/named/gfx_texture.tjs",
+      "name": "gfx_texture.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4232
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\777BB47A7318120BFB264A004AC4FF989BE358D8E3EC399534DB3CC0FC065648",
+      "output": "data/named/gfx_voice.tjs",
+      "name": "gfx_voice.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 5532
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\66723CE8BBCCFCF0AC38F46EE0BD938D733D2BA869AD510BF9645C8F8B2D9193",
+      "output": "data/named/gpuaffinelayer.tjs",
+      "name": "gpuaffinelayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 29128
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\1B684376AE3B2DA19B9A1B209FA3A58D01FBA54AEFE10A9B38791C7FEAE5781F",
+      "output": "data/named/gpulayer.tjs",
+      "name": "gpulayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 44576
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\00CE10516610BB0C38C7F1549A1A946A0E54524CCA8021C76646836C30FCC90A",
+      "output": "data/named/gridchain.tjs",
+      "name": "gridchain.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 38568
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\DE097C7B9EA97EB7\\4B64B433625144FFEE43440806C85D683878A5BC779D479D67F12AD29B9584C5",
+      "output": "data/named/help_extra.txt",
+      "name": "help_extra.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 3618
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\311B1143EA478755A859114E2DD43F9D03E95FF4BDFB0EAF728241BF6AF4F707",
+      "output": "data/named/help_extra_cn.txt",
+      "name": "help_extra_cn.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 2850
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\F38B1062066EECF13394E321F9F30662A2F36DFB8F565687A2AFB19AA520C60A",
+      "output": "data/named/help_extra_en.txt",
+      "name": "help_extra_en.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 4766
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\58C4501B037DE472993E49D94BFA713761F061B1A691ED1E8CE617A9D2521DD9",
+      "output": "data/named/help_extra_tw.txt",
+      "name": "help_extra_tw.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 2846
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\DE097C7B9EA97EB7\\79E0B7DFA575EA4EB49124770CC80B12635D251F4150F4DA6EB85153227D631E",
+      "output": "data/named/help_file.txt",
+      "name": "help_file.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 8344
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\ABB62821DA63BFAE5FA4C1A666D9390F87F7D7B347B57945A62F1910B8E0D2D8",
+      "output": "data/named/help_file_cn.txt",
+      "name": "help_file_cn.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 6674
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\674C9C3D35D73CBE3005122EEA0EDD252BEC54D80D0A155FDC2F1D331290A078",
+      "output": "data/named/help_file_en.txt",
+      "name": "help_file_en.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 11600
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\FB910800175560F28E2B9EBE93494BA097A8F644961CC44445CB0C3A93720346",
+      "output": "data/named/help_file_tw.txt",
+      "name": "help_file_tw.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 6670
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\DE097C7B9EA97EB7\\E692A185F6429360604DC6DEF0225840F7B858C3B6E276867167B4EE8212D248",
+      "output": "data/named/help_flow.txt",
+      "name": "help_flow.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 1714
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\E5A4A517FFFC5BAF5BE5459591A8376DF460E24EBF30B23DCDFDD86BB62DD3B0",
+      "output": "data/named/help_flow_cn.txt",
+      "name": "help_flow_cn.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 1338
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\A3E0204543D989E5157EF5991752CCC5B27D9CE21BAA6BBD73F4E79AD5572CD4",
+      "output": "data/named/help_flow_en.txt",
+      "name": "help_flow_en.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 2602
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\3D64A885AC9389AD04E2D63964F7D8936CB3D42FED7DA7AF4390A72F06E33FE6",
+      "output": "data/named/help_flow_tw.txt",
+      "name": "help_flow_tw.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 1336
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\DE097C7B9EA97EB7\\82AB9D768FBFBDC7268B8D4FDEE017F051729227336AD9C4CBD036E78E5DDBC0",
+      "output": "data/named/help_lang.txt",
+      "name": "help_lang.txt",
+      "encoding": "utf-16",
+      "score": 12,
+      "bytes": 558
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\749D5006CC494B368610B267C51BA4EE65133B52DF1278563864EEC4459CC521",
+      "output": "data/named/help_lang_cn.txt",
+      "name": "help_lang_cn.txt",
+      "encoding": "utf-16",
+      "score": 12,
+      "bytes": 360
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\9EDE518C69875DAEFA81D45217F48174F3AEC4599532933AD602352B3587C560",
+      "output": "data/named/help_lang_en.txt",
+      "name": "help_lang_en.txt",
+      "encoding": "utf-16",
+      "score": 9,
+      "bytes": 798
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\243BBD2386F6AC31609C1D63E9202DFDF1B73BED99A5AD61E2D8D3D2831B6EBE",
+      "output": "data/named/help_lang_tw.txt",
+      "name": "help_lang_tw.txt",
+      "encoding": "utf-16",
+      "score": 12,
+      "bytes": 360
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\DE097C7B9EA97EB7\\33A2BB5FCAC2A2B2652CA58EBFA8F0937E3F3E51E919DDBC7AA11F80C51D33B2",
+      "output": "data/named/help_opt.txt",
+      "name": "help_opt.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 30322
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\7438D974275D3C46B340061736590703C462BCCB8D409308AA398B6913219554",
+      "output": "data/named/help_opt_cn.txt",
+      "name": "help_opt_cn.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 21712
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\A0ADB6AE4C65950187F90C3AB3BB279D1597638F1EF77DE02BFB6EE140D44F58",
+      "output": "data/named/help_opt_en.txt",
+      "name": "help_opt_en.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 45176
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\035B8F9D846018F6D4A1DCD2B28F0E8C884CE1A4D01A1275E93D17C8DAFEC0AA",
+      "output": "data/named/help_opt_tw.txt",
+      "name": "help_opt_tw.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 21720
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\DE097C7B9EA97EB7\\87C9DE2541D51116D30CA9A6261C235B57FEA1C05508ED44E9553429932752A2",
+      "output": "data/named/help_stand.txt",
+      "name": "help_stand.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 3684
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\DA767D7222D020E43E75695EFDD38394D293671EE3C73265202633B22E39DF1B",
+      "output": "data/named/help_stand_cn.txt",
+      "name": "help_stand_cn.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 2728
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\BDBEA1F2607D8CC20FBEC4D5268C35759E5E3F957D327E68453347AFBF1D6F6B",
+      "output": "data/named/help_stand_en.txt",
+      "name": "help_stand_en.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 5152
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\EC819F0F20DEB091798B9BBEC5728EB22C3941193AAC74AADC64F37A94BCD221",
+      "output": "data/named/help_stand_tw.txt",
+      "name": "help_stand_tw.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 2724
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\DE097C7B9EA97EB7\\6241E09CDE1CD250677566E3AE955369D7644FAC28B3F28DED317C838F45C5F9",
+      "output": "data/named/help_tui.txt",
+      "name": "help_tui.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 5636
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\453A0AEABCDEEBCAB24771B90537DA08450813C39AFC39D0E10EC58C30ECC7E3",
+      "output": "data/named/help_tui_cn.txt",
+      "name": "help_tui_cn.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 4356
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\E79E6CB882F252AC19E2DF532282C002D2C234A6DEA9720AF5B89FCC0667B70C",
+      "output": "data/named/help_tui_en.txt",
+      "name": "help_tui_en.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 7872
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\C3FA4BA093DAD0089A21FD7630CD71AC6352774B7BD5733074A89BE3EB5A2C2B",
+      "output": "data/named/help_tui_tw.txt",
+      "name": "help_tui_tw.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 4348
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\3526E7891BD41D932506EF3979530123CC568682D77765789B7C2D1EB6199C7B",
+      "output": "data/named/helptextman.tjs",
+      "name": "helptextman.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 30932
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\6CBC7D535A2403FD39A48B5DE30170B3DF485861C6BABFFCB154882E0057DAD7",
+      "output": "data/named/historylayer.tjs",
+      "name": "historylayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 26752
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\1DF82FD331C83BFE7BA2009690B853FB5725310B1C56A6764FDEEACC92FFC2A9",
+      "output": "data/named/iconfader.tjs",
+      "name": "iconfader.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 8040
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\092B4C129BF7BB55AD033CB0D55BBAC631F7C553CF1139FC773B0864F81ED137",
+      "output": "data/named/imagediffmap.csv",
+      "name": "imagediffmap.csv",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 239108
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\43C229C1377B0BFB9AEF940FD5EF915344D3F6CEDE886F42C6FEA748DE22A981",
+      "output": "data/named/imagedressmap.txt",
+      "name": "imagedressmap.txt",
+      "encoding": "utf-16",
+      "score": 2,
+      "bytes": 362
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\F28992E56C991B0C666129E8D5BFD8EFEDA295C2BAF2348027DCE4EADC4C36B9",
+      "output": "data/named/imageevalmap.csv",
+      "name": "imageevalmap.csv",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 40644
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\147262C21FA85557095F762D4D76D35CA471317B51AFB66DF6A37AE5BDF68AC4",
+      "output": "data/named/imagemulti.txt",
+      "name": "imagemulti.txt",
+      "encoding": "utf-16",
+      "score": 0,
+      "bytes": 290
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\8BD46B6DE957827E5915CD9294840F35615C2127AF765E7447612C03C7F75280",
+      "output": "data/named/imagenamemap.txt",
+      "name": "imagenamemap.txt",
+      "encoding": "utf-16",
+      "score": 21,
+      "bytes": 3844
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\04524DD030C3214347A48069CFCCBA7698FD92DE1BF915AB9D7CCEB4D0B0DD6C",
+      "output": "data/named/imagepropmap.txt",
+      "name": "imagepropmap.txt",
+      "encoding": "utf-16",
+      "score": 0,
+      "bytes": 268
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\C45BF1412F73A76FD9EE02F690269CFBCF2EF99B4B21CB51325821C0E210EA55",
+      "output": "data/named/initialize.tjs",
+      "name": "initialize.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 31284
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\0FC09C5947831482\\522E0E9DC746730DD2FD6BE8161908DDB18D00EED3C99AB38DB249864E8578B5",
+      "output": "data/named/k2compat.tjs",
+      "name": "k2compat.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 19124
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\0FC09C5947831482\\5281227A9988D4E39E8CDBB2B4A5BE9F6FD088CB13E80302F6829325C61652F2",
+      "output": "data/named/k2compat_console.tjs",
+      "name": "k2compat_console.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 9368
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\0FC09C5947831482\\FB222A2337EECF89D1C6BFCEE2AA05DA4668FD262170210D3755FCC97C5F78F0",
+      "output": "data/named/k2compat_controller.tjs",
+      "name": "k2compat_controller.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 2608
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\0FC09C5947831482\\2E18A982F724A5123D0BCF9889DCACB6802F4A9E6255FB620E19E370C3117E38",
+      "output": "data/named/k2compat_deskinfo.tjs",
+      "name": "k2compat_deskinfo.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4572
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\0FC09C5947831482\\FAC12A67BD398DB62C2A0D3BB5D196EA9BCB7422A9A73665D8A138C25602EC20",
+      "output": "data/named/k2compat_fontselect.tjs",
+      "name": "k2compat_fontselect.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 10760
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\0FC09C5947831482\\A51584CEA7D4DAA5C966680297984DE4DC01966669D4E67211EE3A3DC6E4ECA8",
+      "output": "data/named/k2compat_inputstring.tjs",
+      "name": "k2compat_inputstring.tjs",
+      "encoding": "utf-16le",
+      "score": 28,
+      "bytes": 2952
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\0FC09C5947831482\\E216423B66BC31F8EB873E3E2DDAE434F8ADD58689088BE9DB206BED784E0D63",
+      "output": "data/named/k2compat_modeless.tjs",
+      "name": "k2compat_modeless.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 13312
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\0FC09C5947831482\\3EA5C0B95F2FB8C339256046C17164209CD8DEE06419F227E3CCBD1782EC7B47",
+      "output": "data/named/k2compat_pad.tjs",
+      "name": "k2compat_pad.tjs",
+      "encoding": "utf-16le",
+      "score": 14,
+      "bytes": 1792
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\0FC09C5947831482\\0FF68E35F156B5795B9D64C358A1C3C6615CE2CE9C98F4242F391C73BA90028C",
+      "output": "data/named/k2compat_padcommon.tjs",
+      "name": "k2compat_padcommon.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 21524
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\0FC09C5947831482\\996D744C2D1DB52500158E760D82D4E95D7C5F0474A9246225C470A69BA7287A",
+      "output": "data/named/k2compat_scrinfo.tjs",
+      "name": "k2compat_scrinfo.tjs",
+      "encoding": "utf-16le",
+      "score": 11,
+      "bytes": 1108
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\0FC09C5947831482\\A9F0676D604298AD3C9016183CF3FC24D0217F3D14132CA29325CFB9AD272D7F",
+      "output": "data/named/k2compat_touchmouse.tjs",
+      "name": "k2compat_touchmouse.tjs",
+      "encoding": "utf-16le",
+      "score": 4,
+      "bytes": 352
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\39748C6964933DE2251FE4A5B3D2CEA123E8324F0E6CC84FD046D4A3CE6AC7A1",
+      "output": "data/named/kagenvbase.tjs",
+      "name": "kagenvbase.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 37864
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\260A93911F72D56140DE76F75D273A8EB2675EC2CC7BE326C1F58606D4DF3B42",
+      "output": "data/named/kagenveditdata.tjs",
+      "name": "kagenveditdata.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 18116
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\784ACF6474080B7108771D980FBD8C503ABA138F00805F15568B61BC5AB46213",
+      "output": "data/named/kagenvhistorydata.tjs",
+      "name": "kagenvhistorydata.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 9940
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\86888EDAE766270EC0CFE74C521663524915927C93E9EB4D3C0891B4C0F272DC",
+      "output": "data/named/kagenvimage.tjs",
+      "name": "kagenvimage.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 100076
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\F45CAE8ED40B9E603A3C60AC18EEFE47D3EA1819BF9705C8559E5A95FB9F371C",
+      "output": "data/named/kagenvimagemapperstage.tjs",
+      "name": "kagenvimagemapperstage.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 5644
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\51086280C30E6DF03CD7453AA19A2BFF60CF63B7146B22FB791A8FDF9CD800D1",
+      "output": "data/named/kagenvimagemapperstand.tjs",
+      "name": "kagenvimagemapperstand.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 16552
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\92C959162A3F2DA864C8EF4DA3F381DBFDB60E165C34219BE923C0320BC69019",
+      "output": "data/named/kagenvironment.tjs",
+      "name": "kagenvironment.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 87572
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\CC98EFC3EEC8ACE271B5BE2FC8DF0C97A3968E1A5018B178E28883B57746807E",
+      "output": "data/named/kagenvminiplayer.tjs",
+      "name": "kagenvminiplayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 9388
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\EBE1194330AB5814FA7A7546A37038A937DD56E5E80B427F6502EEDFC8B64049",
+      "output": "data/named/kagenvminiplayerlayer.tjs",
+      "name": "kagenvminiplayerlayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 9980
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\E484D3E7BE77176D26A46E9800060884624AB336F931154BCE6C04F36EE543B7",
+      "output": "data/named/kagenvmusic.tjs",
+      "name": "kagenvmusic.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 11784
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\5779E1BB8D90AD5C0A2487AA1074B9FC3BFD0A08D67101F5ECDB7A448B8434AC",
+      "output": "data/named/kagenvparseplayer.tjs",
+      "name": "kagenvparseplayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 2856
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\71BBB51112871AD2F20CD0255B1F70F62A058A9C836278465A4AF765AE97E613",
+      "output": "data/named/kagenvparser.tjs",
+      "name": "kagenvparser.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 35584
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\0B26C7AA6AB8BEBC1153D6BDCB241CEB387BFACD730AC78CEB197FA178F208C7",
+      "output": "data/named/kagenvplayer.tjs",
+      "name": "kagenvplayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 47408
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\C09E1E13653A0F1324E52F216B2ABA073FBF35BB1D1079EC934A0A41BA097BA5",
+      "output": "data/named/kagenvsound.tjs",
+      "name": "kagenvsound.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 5276
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\E812E5C4913A1C27D286EEFADE689D3DDB94FF6CE3BDFF637EC45B35C751E4A0",
+      "output": "data/named/kagenvtrans.tjs",
+      "name": "kagenvtrans.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 9644
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\E4404EDEA52D4A56F737E4779D9C99FAFEF6942B2CFE55AAAE105E2364E9A916",
+      "output": "data/named/kaglayer.tjs",
+      "name": "kaglayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 5228
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\A97F7A899DC12A9099C10FE89D3C00CD65B379069CB645BDF58119514B1638DC",
+      "output": "data/named/keybinder.tjs",
+      "name": "keybinder.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 38740
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\8327E6D1C07AFE95DCCA029236FC82C6CE7B3D7D00F9CE3A33F2DA95DB7DCF97",
+      "output": "data/named/kosugi-license.txt",
+      "name": "kosugi-license.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 20708
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\1F270A1F208340A4084A7BC0E16ED140150AED1540703EDAF059E08ADB4D82D9",
+      "output": "data/named/kosugi-notice.txt",
+      "name": "kosugi-notice.txt",
+      "encoding": "utf-16",
+      "score": 13,
+      "bytes": 1432
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\196CBB4F8FF121C4070F6D908277AA0FD364CA12A1D456C93D6AF3F88D1DCBD6",
+      "output": "data/named/langfileparser.tjs",
+      "name": "langfileparser.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 15276
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\E7784EC7F5C0D64C8704FBDD933FB0C1B5B33C1E5B41BC14E934A407ED9E00C7",
+      "output": "data/named/langrender.tjs",
+      "name": "langrender.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4600
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\43087BB1EB6E4EDC9B6589AC1209F74CFA70C2694E2988E258DF90B81AED87D7",
+      "output": "data/named/layerex.tjs",
+      "name": "layerex.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 7808
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\4F107307062CD1DAC818AC2A1B962D8FE87634E9DC79C37959C8C933E64996FD",
+      "output": "data/named/lets.txt",
+      "name": "lets.txt",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 354
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\5B4DF217951AC1A41A31C8ECFFCFC06F3A677C15F2B7D50A3C5C8768C08244AB",
+      "output": "data/named/lets_cn.txt",
+      "name": "lets_cn.txt",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 504
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\690EA1D6D3646394BC6ADDEE8F27E7B408BEFB2DEA592F8CB33C0E92C63E4034",
+      "output": "data/named/lets_en.txt",
+      "name": "lets_en.txt",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 504
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\706B9B01C0677AF47EA63293304BEFB50C5E7FF44544314E9D402EFDF6CBE03A",
+      "output": "data/named/lets_tw.txt",
+      "name": "lets_tw.txt",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 504
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\CCCBCA5FF442C95E5EC0C4386A4B1EEC90505183B436BD4484569E6CD4BB7939",
+      "output": "data/named/linebreak.asd",
+      "name": "linebreak.asd",
+      "encoding": "utf-16",
+      "score": 151,
+      "bytes": 1234
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\F6D2DB4D6EC7B94A3FAB6D81B1D411E066DA9879FBD5EE7FB6B2E50CEB65EBD0",
+      "output": "data/named/linemode.tjs",
+      "name": "linemode.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 28916
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\181165824052A3FAA355514570DD4AD652DD7844C91884483077298151BEA1D7",
+      "output": "data/named/linemodeex.tjs",
+      "name": "linemodeex.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 29100
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\3A60537B74BA21CDA7DD1243F26ADE7A1C2A84E1BC139DE34B96E5148CBC536A",
+      "output": "data/named/live2d.tjs",
+      "name": "live2d.tjs",
+      "encoding": "utf-16le",
+      "score": 12,
+      "bytes": 964
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\B724A4811D581AC6A1AAD582A5ED021661DBAE01C63B5CD2D8C1C5FD456C0FD9",
+      "output": "data/named/load.ks",
+      "name": "load.ks",
+      "encoding": "utf-16",
+      "score": 228,
+      "bytes": 3558
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\3C4DE1DD5DF67E3E9F5F27B5C9E0DF0FF4D83D9A762C05330A76FF313752B571",
+      "output": "data/named/loadinit.ks",
+      "name": "loadinit.ks",
+      "encoding": "utf-16",
+      "score": 182,
+      "bytes": 3704
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\94E2B109D352D8605ACF5EFA109D943A04BEDEFEDD2B7381FD724691DAEBCEA5",
+      "output": "data/named/logwindow.tjs",
+      "name": "logwindow.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 3956
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\63DCF48E0E53D5B5667FAB2F88196D739893A0FFFB89955A17907349DA3BC56F",
+      "output": "data/named/loopvoice.tjs",
+      "name": "loopvoice.tjs",
+      "encoding": "utf-16le",
+      "score": 22,
+      "bytes": 2612
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\902994BB1913D6F2\\1B03F4A1EAE30299D84EA145F38829D8D23E7932D2D9E1E028CF7CED4E22AF16",
+      "output": "data/named/macro.ks",
+      "name": "macro.ks",
+      "encoding": "utf-16",
+      "score": 1367,
+      "bytes": 28126
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\0B4431A8273D7CF6D75F309AF1D034A4193377F5307B1924B71373B955B8E1D1",
+      "output": "data/named/mainwindow.tjs",
+      "name": "mainwindow.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 465668
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\C3BF1E04E41CE692FE880BD65BB6C54116750BCAC2861862F350686CDEF81E5F",
+      "output": "data/named/mapselectlayer.tjs",
+      "name": "mapselectlayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 13160
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\193FEEEF746E7866A05269BC4AA13A22283F88B000432143C4B200120F3ABA40",
+      "output": "data/named/menus.tjs",
+      "name": "menus.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 33752
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\259C7C272E76DDCF2EBA88591B771677E857EB7792F0394A2386A029502B1F6E",
+      "output": "data/named/messagelayer.tjs",
+      "name": "messagelayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 124340
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\A7177810D6CBDCF8908223F1D0F071AA148DD1E4B8F7129465559575D21FA0AA",
+      "output": "data/named/mixinclass.tjs",
+      "name": "mixinclass.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 13764
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\F5DF2BC13255BAACA3975264A0106D3E07E5F29A416D6681C9D3B1EAC4514F65",
+      "output": "data/named/motion.tjs",
+      "name": "motion.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 3116
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\6A4563AC72B920516E56B1583B5A0C8FB91A08CFCC31EF72669E338E40DD9278",
+      "output": "data/named/movie.tjs",
+      "name": "movie.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 26580
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\E8C1B3E4F7F3E299FD7D8BF9D3FAD9D113BB926998789B4E7989D74B09692B43",
+      "output": "data/named/movieaudiosample.tjs",
+      "name": "movieaudiosample.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 14424
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\A696FD1B96CDB87806969F161056398CFF5535C68F0CD76443EBF6C5A76C5B4F",
+      "output": "data/named/movieqsel.tjs",
+      "name": "movieqsel.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 8192
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\D925E16D53B9C03F10E13D16214C66B786F841379DB4249DAA6D7BFBB96AD4BC",
+      "output": "data/named/mscurautohide.tjs",
+      "name": "mscurautohide.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 5304
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\E9BBB3FD090B5A25544B1EB00895D5517E1B2FBA2067689482B96265FFE8F23C",
+      "output": "data/named/multiresolution.tjs",
+      "name": "multiresolution.tjs",
+      "encoding": "utf-16le",
+      "score": 25,
+      "bytes": 2724
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\5A6B105E204C271503A340294238CBC9E80C838E9F46870357AA022CEF904900",
+      "output": "data/named/musictitle_cn.txt",
+      "name": "musictitle_cn.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 2700
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\BBF8F60CB50E4892A8EC7A2B72C19A03EEAE2EEFE4FB0A256B8F062DDEE7F9C7",
+      "output": "data/named/musictitle_en.txt",
+      "name": "musictitle_en.txt",
+      "encoding": "utf-16",
+      "score": 18,
+      "bytes": 1550
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\CDC719910BDABF4BEE9BB0580E073DCB8056D1FCB949E451ACDECDA36489006E",
+      "output": "data/named/musictitle_tw.txt",
+      "name": "musictitle_tw.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 2700
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\13B812340515C0211FC7348422682CE43DCC8346B1B3EEFBA715D9568AA393FD",
+      "output": "data/named/myhistorylayer.tjs",
+      "name": "myhistorylayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 38280
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\10B57C3B24AE5300AC2888D4230C8EFF20D61DDEF09B9443151E914A057C34E6",
+      "output": "data/named/mymapselectlayer.tjs",
+      "name": "mymapselectlayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 11004
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\ECD2647ECA73FB2E01332A72F90D331A17CF5FC3E72A35749C37F081E85302ED",
+      "output": "data/named/myyesnodialog.tjs",
+      "name": "myyesnodialog.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 24184
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\4808BB8D5A251F523D39BF1C2F7C693208D51F6554FC7A18B6E7DF4350D63632",
+      "output": "data/named/name.ks",
+      "name": "name.ks",
+      "encoding": "utf-16",
+      "score": 101,
+      "bytes": 1574
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\B2591F7741D641A6FF716C5DEFCE48DC1041D4EE8564229D7825482696699304",
+      "output": "data/named/name.tjs",
+      "name": "name.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 11544
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\14EB784F81045FC6B51CFEB0E250B102FF5E3AB38BD12E16E463C6860E799A91",
+      "output": "data/named/nameframe.tjs",
+      "name": "nameframe.tjs",
+      "encoding": "utf-16le",
+      "score": 29,
+      "bytes": 2376
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\F9A13812B63179342B2736097AA4332AA1A26B47CBC3E55D070FAB8F59CFD839",
+      "output": "data/named/ngword.csv",
+      "name": "ngword.csv",
+      "encoding": "utf-16",
+      "score": 2,
+      "bytes": 74
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\B3305FA4A175231642FAE17887F6681D7820A28E9F43251AEB1C25F8D3056B4E",
+      "output": "data/named/nocfchkdialog.tjs",
+      "name": "nocfchkdialog.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 14204
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\73F9BF1C35BCFA29B977F3917E8F7CE70B54B265E8CCD2720B0175046FF09BF3",
+      "output": "data/named/option.ks",
+      "name": "option.ks",
+      "encoding": "utf-16",
+      "score": 221,
+      "bytes": 3060
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\09DCABF4114A6ED0C3B13BE234DFE02DBACC4B29EF26FD28A727F5694F7A8647",
+      "output": "data/named/option.tjs",
+      "name": "option.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 133784
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\4BD61FAAAFFCCB3D9B68D65FD5386A09058DCDDB22FDED43A19C9EEEDB8F7E03",
+      "output": "data/named/optrevundo.tjs",
+      "name": "optrevundo.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 11612
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\1A40550DF8F41F8930F6EA7605034996B3A31734CAB96C18E6DF85BD2C45752B",
+      "output": "data/named/override.tjs",
+      "name": "override.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 138628
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\EAF056FB822CE013EC476B695A88E836B59938FA545027D988AB7F2AB5352C92",
+      "output": "data/named/pagebase.tjs",
+      "name": "pagebase.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 19172
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\4F382E503908D2B4249FEB07C6D2383F4757FB85E00C351EC42BCF86EF5DF56F",
+      "output": "data/named/pagebreak.asd",
+      "name": "pagebreak.asd",
+      "encoding": "utf-16",
+      "score": 151,
+      "bytes": 1234
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\902994BB1913D6F2\\A3796AE00467DAEAA37077562548679A6B78DD97859DF0674F4399D08BB0478E",
+      "output": "data/named/parsermacro.ks",
+      "name": "parsermacro.ks",
+      "encoding": "utf-16",
+      "score": 56,
+      "bytes": 1348
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\5A4DB2B4CFF147DB1FF9CA5BE353C4F3D65391DA1D94FBC8F8DECC3EF724E4A7",
+      "output": "data/named/passivecomp.tjs",
+      "name": "passivecomp.tjs",
+      "encoding": "utf-16",
+      "score": 25,
+      "bytes": 1552
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\2F0C3B7F8EDF486622BA79A77FAE076966274CA7C88B6DE4FB6D80889851CC5F",
+      "output": "data/named/phonechat.tjs",
+      "name": "phonechat.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 48384
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\A42B35A933DBD80E6CBCADCE1EA6D045E541F61569FF85D29EDAB09C49849308",
+      "output": "data/named/photoview.ks",
+      "name": "photoview.ks",
+      "encoding": "utf-16",
+      "score": 50,
+      "bytes": 678
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\4DBBAC0A63C03B2015BABA5FEF9F933A896D7F231EFBF4DF08FCE2CD012532FB",
+      "output": "data/named/plugin.tjs",
+      "name": "plugin.tjs",
+      "encoding": "utf-16le",
+      "score": 7,
+      "bytes": 1428
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\B16C15F3779173B6BA86EE7C9283EC901F995DF3AF126E55A43CE2C0AB4F6AF9",
+      "output": "data/named/prerenderfontex.tjs",
+      "name": "prerenderfontex.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 32748
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\FAD3503EBB7C74776589BC954F5CA0ACD221F1A92F992D40FCE882CD7A196031",
+      "output": "data/named/psdlayer.tjs",
+      "name": "psdlayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 40688
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\255D95EBE9D18447AECE801688239198D20A44E4F5BEDC5206EDB4E9DE613288",
+      "output": "data/named/qlpopup.tjs",
+      "name": "qlpopup.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 17812
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\54D3E5DF2591A21CD93EA3AA900D6ED369302202B81F6314A58AC38197F6FE3F",
+      "output": "data/named/quickmenu.tjs",
+      "name": "quickmenu.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 34484
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\91288C79A259C1B1D366A2278B4A322BF14DECF3095C61DF43CE0444A8CD2AA1",
+      "output": "data/named/rendermsgwin.tjs",
+      "name": "rendermsgwin.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 27056
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\902994BB1913D6F2\\2256991454F3C701A1E430C1BCE7CFEB55D47B6E0456F81DFB7C867102359894",
+      "output": "data/named/replay.ks",
+      "name": "replay.ks",
+      "encoding": "utf-16",
+      "score": 129,
+      "bytes": 2162
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\AACC8A3138525B076EDEFC47A05BF70A09286173B910D098A45566E6198513B6",
+      "output": "data/named/rndvoice.tjs",
+      "name": "rndvoice.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4600
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\62E55886FBDCD9C8D01D32E15065E18B0321710C00AAA295D127541A2AEE8D23",
+      "output": "data/named/rotatesave.tjs",
+      "name": "rotatesave.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 6188
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\2B12D57871E069584104BEEE45D4ADBD217113AE4BBEBB430E6F1C1480E189E0",
+      "output": "data/named/save.ks",
+      "name": "save.ks",
+      "encoding": "utf-16",
+      "score": 183,
+      "bytes": 2428
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\61F50263F743A8A955354C0371A90AF3A8DA95D3F58327E4043145B677433189",
+      "output": "data/named/savelist.csv",
+      "name": "savelist.csv",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 21144
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\9DAEE27CE174E9CE30F90A21FDBD2E6FAA45611177E8B5FB6A1BF80A5472657D",
+      "output": "data/named/saveload.tjs",
+      "name": "saveload.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 141948
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\D54DB3EE5A7EEFCB5D410E6EABB32D079DE39CDC84BFC4C182D4DC0D10096471",
+      "output": "data/named/scenelist.csv",
+      "name": "scenelist.csv",
+      "encoding": "utf-16",
+      "score": 10,
+      "bytes": 312
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\8B0F34BE3791FD41DB4D1DDCCDE677BB4235C2F118FD9EF7DEEC5998A32FAFAF",
+      "output": "data/named/scenemode.ks",
+      "name": "scenemode.ks",
+      "encoding": "utf-16",
+      "score": 261,
+      "bytes": 4310
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\56B2F91C03D1C99A7EF454DF7776A4B93CA6B3F5DC66E2A305D0F9296DBD06A0",
+      "output": "data/named/scenemode.tjs",
+      "name": "scenemode.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 9336
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\E79CB9A23080A67406BCA93FEE8E671FC038A43D2EFDB0DAADA7C76A2300B241",
+      "output": "data/named/sceneparserbase.tjs",
+      "name": "sceneparserbase.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 15280
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\D324C1406EF56A1315E9775214F2A0CF639790DF2051FA6A3E53639870389C6B",
+      "output": "data/named/scnchart.ks",
+      "name": "scnchart.ks",
+      "encoding": "utf-16",
+      "score": 471,
+      "bytes": 7442
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\FAE8229902AC9901FC55A3F808D34F6566B3A9136D8F7928F4479D8CA059722E",
+      "output": "data/named/scnchart.tjs",
+      "name": "scnchart.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 35836
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\3F6C02914DDA0C53EA46F18838FD877FB8B32F44D680005EBF09A645503A0C5D",
+      "output": "data/named/scnchart_ui.tjs",
+      "name": "scnchart_ui.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 125124
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\8CDD656C77044679FA3F3E3B6BA0CF7C28AE09C7616F7BBD33F61DCB8847DBBF",
+      "output": "data/named/scnchart_ui_opt.tjs",
+      "name": "scnchart_ui_opt.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 20088
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\72FC8518DD2657D57913907B5E64F65BF705E30D85BDA159CF295CAB1881AEC9",
+      "output": "data/named/scnchart_ui_sel.tjs",
+      "name": "scnchart_ui_sel.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 16480
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\44B76714B92FDAA05D5BF7839D30ECE4E83461457B1151B5A80CB38385C4B182",
+      "output": "data/named/scnchart_ui_smp.tjs",
+      "name": "scnchart_ui_smp.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 20152
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\A1F76C7CFBA23B72DB84BE85552FFC01A0AA4425746B7249437A38B6ABF762A3",
+      "output": "data/named/scnchartdata.tjs",
+      "name": "scnchartdata.tjs",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 107032
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\E69167D8BF05B4EBCEE43BEFC6BC44D359A549EC0148424CFFA15A25BA2719E2",
+      "output": "data/named/scnchartmacro.tjs",
+      "name": "scnchartmacro.tjs",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 56694
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\C81C19411C1A5E54\\1555D9EA92D2AC4E2F29E5CDFCECCC1D17D34B38D5C19F7B6CD6EC17E19475F7",
+      "output": "data/named/script_kirie.tjs",
+      "name": "script_kirie.tjs",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 3040
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\C81C19411C1A5E54\\ADEB12F061CE2A9FD8D932B0DDD34CB788C7457CBD7675884DC4F3F9865210C1",
+      "output": "data/named/script_lightedge.tjs",
+      "name": "script_lightedge.tjs",
+      "encoding": "utf-16",
+      "score": 26,
+      "bytes": 1730
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\C81C19411C1A5E54\\2A52B6ED4D863CEF297F1423693C0F95322DBD69672797BD35C2A0680DA16731",
+      "output": "data/named/script_mosaic.tjs",
+      "name": "script_mosaic.tjs",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 2408
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\69C29D8C88AF0EF93FEF07F27BFFE4327C289E7CFB283784085194AFC6DEE6F6",
+      "output": "data/named/scrollutil.tjs",
+      "name": "scrollutil.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 104244
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\2DBAC6F7A1325CD07EC1F1A630B5A2FB4FD768788AABB13A8EC2895BF814380E",
+      "output": "data/named/se.tjs",
+      "name": "se.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 8012
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\27CB95ADCDEBC195ABE4E3D8650AB0B84D18F9708D8C9CC53A13279F6F33AF09",
+      "output": "data/named/search.ks",
+      "name": "search.ks",
+      "encoding": "utf-16",
+      "score": 363,
+      "bytes": 5066
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\333257DA517CABEBA6AC7514D5ABDA06103E760B4344ACF2B73991219FB9092B",
+      "output": "data/named/selectlayer.tjs",
+      "name": "selectlayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 30752
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\30440D2868953F84D78CBB851B0BD89B8DB3F685A67ECA7C49BE1A65EE6CCF37",
+      "output": "data/named/showdate.tjs",
+      "name": "showdate.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 14588
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\5CC85FE133FDD43A8F7AB5D2E2A3E1BB4C06D0F8735DCD11EDDA513D4F8CC034",
+      "output": "data/named/sliderlayer.tjs",
+      "name": "sliderlayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 28764
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\F234949EF47203B9ECCD359CC1B5F5761F8C9DD2FC72582B8ADA1DF19EA8FB7C",
+      "output": "data/named/snapcapture.tjs",
+      "name": "snapcapture.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 77832
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\2C59B0AFC5F71E7E419CD6C4B541A44FE90E36CBCAEF8E8588CA552C7E25CAA1",
+      "output": "data/named/snapcapture_datefmt.txt",
+      "name": "snapcapture_datefmt.txt",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 268
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\C2F782AB5D69E9C0651D8B42FF81B70EF3355D47FA59F76AD7DCA2ADAD06ED24",
+      "output": "data/named/snapcapture_datefmt_cn.txt",
+      "name": "snapcapture_datefmt_cn.txt",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 268
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\A8DB7D6815FE6A6E727EBE9180B020C352032AFFFB42113604AEBE2728ECAAD6",
+      "output": "data/named/snapcapture_datefmt_en.txt",
+      "name": "snapcapture_datefmt_en.txt",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 348
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\A20CCC9C463A10709A1832681F2BF06512C7FF0FFF5490E49FAE60D7BE7BF223",
+      "output": "data/named/snapcapture_datefmt_tw.txt",
+      "name": "snapcapture_datefmt_tw.txt",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 268
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\183784DF6C8AC60B45E0D8F30D1B165A731F4ACC8B7B5F47007EB21129197546",
+      "output": "data/named/snapcapture_twitter.txt",
+      "name": "snapcapture_twitter.txt",
+      "encoding": "utf-16",
+      "score": 7,
+      "bytes": 654
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\265027FCD366D301E14FC97D7F1E140D6762E0E145BA8D9D403E9AF906138E8B",
+      "output": "data/named/snapcapture_twitter_cn.txt",
+      "name": "snapcapture_twitter_cn.txt",
+      "encoding": "utf-16",
+      "score": 7,
+      "bytes": 654
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\D3B17253B2D53B4A9993A85BF9E6A8FA27092AF77E1C80594D405159C07DDA9F",
+      "output": "data/named/snapcapture_twitter_en.txt",
+      "name": "snapcapture_twitter_en.txt",
+      "encoding": "utf-16",
+      "score": 4,
+      "bytes": 1376
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\611BEC269C9B3DBC6A117C8E18E97EAE3A4C96F898040FE16D5089CAB7FC3845",
+      "output": "data/named/snapcapture_twitter_tw.txt",
+      "name": "snapcapture_twitter_tw.txt",
+      "encoding": "utf-16",
+      "score": 7,
+      "bytes": 654
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\B39867441ED631843B5162193877B830E0D32ABAA218ADF5D5900688C4B2F80E",
+      "output": "data/named/softcursor.tjs",
+      "name": "softcursor.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 6352
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\514B42AA90B18D783A57DFA73D0362BC766D6BD0F1B4DA08D7FD86C33534A054",
+      "output": "data/named/soundgain.csv",
+      "name": "soundgain.csv",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 1786
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\77AB46C740F0CE10CE3B2BD6DF3491CD9FF29CFA62902542DF06A3FF86DDB890",
+      "output": "data/named/soundlist.csv",
+      "name": "soundlist.csv",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 2990
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\2280312F4CD27F1CB53D2BE7C6C458EA721BBC0C2A3DC7EE5DA647AA707B4C7D",
+      "output": "data/named/soundmode.ks",
+      "name": "soundmode.ks",
+      "encoding": "utf-16",
+      "score": 127,
+      "bytes": 1816
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\774E47B73B2E4A28491C7D5980D5826BE4BF14453B54EE222898BE3E2BE2214D",
+      "output": "data/named/soundmode.tjs",
+      "name": "soundmode.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 23600
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\6D5A706970686FF450E988C116D5CB9F8A8F5DF378D9E60A1A3F941EE7F7C5BB",
+      "output": "data/named/sourcehansansandserif-license.txt",
+      "name": "sourcehansansandserif-license.txt",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 8788
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\122C5CA31EF46C1F\\EE03633FDEBBADC4AC7B7F75B2227FAA89F1456C82F2412D80334530F1F5DF18",
+      "output": "data/named/sourcehansansandserif-notice.txt",
+      "name": "sourcehansansandserif-notice.txt",
+      "encoding": "utf-16",
+      "score": 4,
+      "bytes": 356
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\A629425572A7F733AC4395E89662B974B9A2C4892712DC84F31C39A7305DB1BC",
+      "output": "data/named/speech.tjs",
+      "name": "speech.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 26484
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\077F72CC2356CB9B1DD4EB31987BD14869BCC2B16DC00C83C065132772FAAFFA",
+      "output": "data/named/speech_app.tjs",
+      "name": "speech_app.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 2936
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\FEF1F0FC46971434410E7C9277F18989B6616C49F367D25A05B436EBDCA36F7E",
+      "output": "data/named/speech_app.txt",
+      "name": "speech_app.txt",
+      "encoding": "utf-16",
+      "score": 10,
+      "bytes": 836
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\781D90ECF926EB1159F34001D71E0071DE58A4D2DD2CF2DEC8CC1803E0EC557C",
+      "output": "data/named/speech_app_cn.txt",
+      "name": "speech_app_cn.txt",
+      "encoding": "utf-16",
+      "score": 10,
+      "bytes": 666
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\436DBE30FB5921CF1FE2CB45F8B6807D827F8F59758B03E848114CF0AABE4A23",
+      "output": "data/named/speech_app_en.txt",
+      "name": "speech_app_en.txt",
+      "encoding": "utf-16",
+      "score": 10,
+      "bytes": 1706
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\F9B5F944D9AD126806E22797BAB027B770308A9D0618BC8CA426AA588A43C317",
+      "output": "data/named/speech_app_tw.txt",
+      "name": "speech_app_tw.txt",
+      "encoding": "utf-16",
+      "score": 10,
+      "bytes": 668
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\DE097C7B9EA97EB7\\1BA36DBD85E15E017F743C78186F0C485A0093C54642DE3D459E18FDBA9E4814",
+      "output": "data/named/speech_defdic.txt",
+      "name": "speech_defdic.txt",
+      "encoding": "utf-16",
+      "score": 20,
+      "bytes": 394
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\494F46D79DF160BD55389B593E1FBFB74335FA010CA3159061679FE70C76A39B",
+      "output": "data/named/speech_defdic_cn.txt",
+      "name": "speech_defdic_cn.txt",
+      "encoding": "utf-16",
+      "score": 0,
+      "bytes": 112
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\132BB63F73C402837F1CE4267102D3AF68424FAC75733572D49AC33C445DA335",
+      "output": "data/named/speech_defdic_en.txt",
+      "name": "speech_defdic_en.txt",
+      "encoding": "utf-16",
+      "score": 0,
+      "bytes": 112
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\75C9F266636D2BEA8DEEB3086FE5569A082397FC3D62650F19EAAD29E1B30D44",
+      "output": "data/named/speech_defdic_tw.txt",
+      "name": "speech_defdic_tw.txt",
+      "encoding": "utf-16",
+      "score": 0,
+      "bytes": 112
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\124E1EDE9593FE37A82ABA65619598EC02D3E63D7DD0403459AFFF0A867928FF",
+      "output": "data/named/speech_dlg.tjs",
+      "name": "speech_dlg.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 84880
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\98AF3454785F1190B5071C4CD80DA8F9620B9585297696AC59D24ABAF34DA87B",
+      "output": "data/named/speech_help.txt",
+      "name": "speech_help.txt",
+      "encoding": "utf-16",
+      "score": 94,
+      "bytes": 9656
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\004659893895A9A2\\7B1B7A85A985B74B8A02CF8C8BFD8D7EC6A051C97605E16B43E1A181AAC7E298",
+      "output": "data/named/speech_help_cn.txt",
+      "name": "speech_help_cn.txt",
+      "encoding": "utf-16",
+      "score": 70,
+      "bytes": 7570
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\09DA0BD9D1ACDF9A\\5A6E56EA039BB624676D0EC67CE85415AE373B5FBBC348B064356930D0B8E30A",
+      "output": "data/named/speech_help_en.txt",
+      "name": "speech_help_en.txt",
+      "encoding": "utf-16",
+      "score": 74,
+      "bytes": 12750
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F77E17A94AF041E4\\44CB64D9E0EA605E0D40C876656B88173F4A746ED2FDFC877A4DF1B1CBA7B428",
+      "output": "data/named/speech_help_tw.txt",
+      "name": "speech_help_tw.txt",
+      "encoding": "utf-16",
+      "score": 70,
+      "bytes": 7570
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\91486B63B99D1DFCC717C11F21DE6BCB332F5169DADA5D0E02CBAFB25BC2EA2A",
+      "output": "data/named/speech_ole.tjs",
+      "name": "speech_ole.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 12204
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\4AE5CF21651B73AE2C95B6D44B5EAA78675E81F7E305244A7EC52B65DC17CEA5",
+      "output": "data/named/speech_vvx.tjs",
+      "name": "speech_vvx.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 17864
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\74836B5CA4A9B50276C661337D4937035BD947CBDE7D1E40B60AA740AE703201",
+      "output": "data/named/sqscr.tjs",
+      "name": "sqscr.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 15292
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\EFB1110454A694E6541AF6446DF69D2C329DCACB40E1410070CEB4B272CCFFF6",
+      "output": "data/named/standimage.tjs",
+      "name": "standimage.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 24396
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\E4D5F3EA5898C39779A98A1299E5E2F874F6CFA4975DCB86448E8A852227A2AB",
+      "output": "data/named/standinformation.tjs",
+      "name": "standinformation.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 21812
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\513C58604A2C42B0EECB3ACAF19574175869CF51079D63B425007570A9733DF4",
+      "output": "data/named/standlayer.tjs",
+      "name": "standlayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 13116
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\902994BB1913D6F2\\75537E4B29A25DE67C0746B17680E51C40CB83BFE663BA3E0799B8323BDA0928",
+      "output": "data/named/start.ks",
+      "name": "start.ks",
+      "encoding": "utf-16",
+      "score": 160,
+      "bytes": 2856
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\94D4A97C61498621\\D9FB4859A254D7B9EDA6621CFBE7DFD9D428082090CA08E32A9314E7116548E9",
+      "output": "data/named/startup.tjs",
+      "name": "startup.tjs",
+      "encoding": "utf-16le",
+      "score": 14,
+      "bytes": 1300
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\3E7EA6F69948CFB53AF7809AE155F99572B34FF05031FEA6817D0E1C9151F120",
+      "output": "data/named/stayontop.tjs",
+      "name": "stayontop.tjs",
+      "encoding": "utf-16le",
+      "score": 29,
+      "bytes": 2752
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\593D6C4908772B6EB19A67D2333732AB218262AF0C0977CFD59DB8046354B9D0",
+      "output": "data/named/stopdeactive.tjs",
+      "name": "stopdeactive.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 9752
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\269F7F2D7D5183098A196B9F57C57FC4541068E066583D213EDCA18CA0D88B9A",
+      "output": "data/named/storagedata.tjs",
+      "name": "storagedata.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 13948
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\3FBB40C21638ED83CCF115807A6AC866D1A6CE31951C79FF6233B1B5B77A3039",
+      "output": "data/named/storages.tjs",
+      "name": "storages.tjs",
+      "encoding": "utf-16",
+      "score": 46,
+      "bytes": 3852
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\7F047AEB90B110E9E046FA81FF3F83BF90B3CECFD1194612DE7F602F6FAF2518",
+      "output": "data/named/subtitlelayer.tjs",
+      "name": "subtitlelayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 7268
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\76D66FD372926222D2E35213AC1C55B091C4D9C9BF48A83589EF636B37F06FCF",
+      "output": "data/named/syslangtext.tjs",
+      "name": "syslangtext.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 8028
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\BFC1E7211D6A9A155CEE41A4C059C5079EA1AACC88AA9E3D2C3791A7F82196A1",
+      "output": "data/named/sysmenu.ks",
+      "name": "sysmenu.ks",
+      "encoding": "utf-16",
+      "score": 84,
+      "bytes": 1122
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\58341F16CE476AA2A1E6657C6C99775FB5C57B6043BBC4D884858204132A254C",
+      "output": "data/named/syssechk.tjs",
+      "name": "syssechk.tjs",
+      "encoding": "utf-16le",
+      "score": 21,
+      "bytes": 1388
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\D4C8B6E7D6E4EDB4AE3889103F8AF87212B8C1F42EAEBFEC873F8317B9D1B20D",
+      "output": "data/named/system.tjs",
+      "name": "system.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 116440
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\4400BA92E47702225B49F5CA841777F73581C3E0046F63D959EC9B43E28FBAA0",
+      "output": "data/named/sysvoice.tjs",
+      "name": "sysvoice.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 22612
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\A0ED6CEFC93476486691C27B33AAA13D65001321B9F64715B436E7E94079924C",
+      "output": "data/named/tagtextconverter.tjs",
+      "name": "tagtextconverter.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 14960
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\BA62ED84D65508C4D7288F776FC2F6BACC6AD0D70EEA4958F0BEEC7DD078DF4B",
+      "output": "data/named/tagtextconverterex.tjs",
+      "name": "tagtextconverterex.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 7068
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\BF037B0210ACA501D3FF5A2387F8C26903DBCD814A44FAD958C63A5FFB47CFED",
+      "output": "data/named/textrender.tjs",
+      "name": "textrender.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 15360
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\3C1342FA0E8B7283332E9041FE37C2F28394D7F195A4D4FA9C1927D3E198236A",
+      "output": "data/named/textspeedex.tjs",
+      "name": "textspeedex.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 6884
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\05928EFFF029C6A50EC4DE77C054BABF14F8D5BBEEA4689DFEA7EAE5E28DF1B8",
+      "output": "data/named/texttagconverter.tjs",
+      "name": "texttagconverter.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 10248
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\3270DCEB7DA27504AAD76E9C83E3F4B233061EB6953CF9A8CB9E9EB7D482BD8E",
+      "output": "data/named/title.ks",
+      "name": "title.ks",
+      "encoding": "utf-16",
+      "score": 213,
+      "bytes": 2486
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\BAD54446990FA342747B35C6B07995FCE44CC8F96814B253EC557FF51123133B",
+      "output": "data/named/trans_blurfade.tjs",
+      "name": "trans_blurfade.tjs",
+      "encoding": "utf-16",
+      "score": 9,
+      "bytes": 190
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\EDC044D130169545FEDB1F5C49823450B39286E66B4E3C09682397A336494F74",
+      "output": "data/named/trans_book.tjs",
+      "name": "trans_book.tjs",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 90
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\69B6CFFCA988DE7EDFB81CAB464260A4F0FCCA646D9093DD3E6E12C3C9E82346",
+      "output": "data/named/trans_crossfade.tjs",
+      "name": "trans_crossfade.tjs",
+      "encoding": "utf-16",
+      "score": 4,
+      "bytes": 82
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\7AE90C0D9DA7EE0147FC0AE04356A51420E962FE87DFDC618656EE7E07EC89B3",
+      "output": "data/named/trans_flutter.tjs",
+      "name": "trans_flutter.tjs",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 114
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\A773F264A6512EB9A24613A4B581F7F6B482C9F68139C0C57912DB69F484E336",
+      "output": "data/named/trans_honeyturn.tjs",
+      "name": "trans_honeyturn.tjs",
+      "encoding": "utf-16",
+      "score": 7,
+      "bytes": 140
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\35ED95C07FF7674115EE411A01880851BAFD4F56208EFB1635CEA5DFF5048FF2",
+      "output": "data/named/trans_laytranstest.tjs",
+      "name": "trans_laytranstest.tjs",
+      "encoding": "utf-16",
+      "score": 10,
+      "bytes": 250
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\B76F86FE454436656751CCC0CCEF2DE0E468192CE2D36735D58743DABA792F24",
+      "output": "data/named/trans_mosaic.tjs",
+      "name": "trans_mosaic.tjs",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 102
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\991EDD7B7047D1ED2FE567C3DAC571912FDBF73AA987CB24C00838F8C1CCA07D",
+      "output": "data/named/trans_multiripple.tjs",
+      "name": "trans_multiripple.tjs",
+      "encoding": "utf-16",
+      "score": 9,
+      "bytes": 220
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\94805CD638EFB8AE81C0FD132CEC3908D97055E351E27A4C476A912515BD0A95",
+      "output": "data/named/trans_ripple.tjs",
+      "name": "trans_ripple.tjs",
+      "encoding": "utf-16",
+      "score": 8,
+      "bytes": 186
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\4F1E4191606CAB397C1D7BFA7CEE572FDDA86D004801D510964E2F71BCAE38BA",
+      "output": "data/named/trans_rotateswap.tjs",
+      "name": "trans_rotateswap.tjs",
+      "encoding": "utf-16",
+      "score": 6,
+      "bytes": 142
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\0125C0D4D9CDB386083EFAAD7F40DA9301F4EDA2DBE39D770455331833E8B0C0",
+      "output": "data/named/trans_rotatevanish.tjs",
+      "name": "trans_rotatevanish.tjs",
+      "encoding": "utf-16",
+      "score": 7,
+      "bytes": 158
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\E3EE60B777123F1297C89CDFD66AB31DF4C715902B0596C876D9F449A47773F6",
+      "output": "data/named/trans_rotatezoom.tjs",
+      "name": "trans_rotatezoom.tjs",
+      "encoding": "utf-16",
+      "score": 8,
+      "bytes": 176
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\23279B2E2F7DB93CBC33C5864852AEB5BB9CF423BF3CC0A69DE2AAC9C5A982A0",
+      "output": "data/named/trans_scanline.tjs",
+      "name": "trans_scanline.tjs",
+      "encoding": "utf-16",
+      "score": 4,
+      "bytes": 80
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\134C6596B6EE63A5EBA3D011745D809610E0479ECDCFD8D3A30A7DF5E249C769",
+      "output": "data/named/trans_scroll.tjs",
+      "name": "trans_scroll.tjs",
+      "encoding": "utf-16",
+      "score": 6,
+      "bytes": 266
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\A5EB3B8C1C64DF2A0CE8AC6404CFB1CB08EB95EFD4F080A627C44258A2007887",
+      "output": "data/named/trans_showfade.tjs",
+      "name": "trans_showfade.tjs",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 110
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\586AA31FB21B82FB290EA7E25235CA524101055A4D8A63A0A7FD6F0EA293FB10",
+      "output": "data/named/trans_showslide.tjs",
+      "name": "trans_showslide.tjs",
+      "encoding": "utf-16",
+      "score": 14,
+      "bytes": 642
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\EE3960B4DD18E3CB559F8E22A94C7B223A1617135F58AA15A7F2A63B30CAB38E",
+      "output": "data/named/trans_showstand.tjs",
+      "name": "trans_showstand.tjs",
+      "encoding": "utf-16",
+      "score": 26,
+      "bytes": 1718
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\241BF8244069F1E7DE91A13C02458721B077E412711D559977E1C3345FF491E7",
+      "output": "data/named/trans_showzoom.tjs",
+      "name": "trans_showzoom.tjs",
+      "encoding": "utf-16",
+      "score": 14,
+      "bytes": 666
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\54032162D82EC3A9DAFE8CBDFA3C4DCA37B0BFECC1456B5DA5B9655EC50EBBE1",
+      "output": "data/named/trans_spin.tjs",
+      "name": "trans_spin.tjs",
+      "encoding": "utf-16",
+      "score": 6,
+      "bytes": 118
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\A85B077CFA5DE7B7D42BA45B033C49CD3BC6A22B06593D7BBBAA050EB9E0F9F8",
+      "output": "data/named/trans_turn.tjs",
+      "name": "trans_turn.tjs",
+      "encoding": "utf-16",
+      "score": 5,
+      "bytes": 110
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\3C9BBA5A4431514FB15B44CBD83DBA1B5A93AD35B7BB678782AE42385855E048",
+      "output": "data/named/trans_universal.tjs",
+      "name": "trans_universal.tjs",
+      "encoding": "utf-16",
+      "score": 6,
+      "bytes": 132
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\FDD728A18C8D3E7560A075D572AD61538CBF7E725E63ED7F5685E8CAB96F568B",
+      "output": "data/named/trans_wave.tjs",
+      "name": "trans_wave.tjs",
+      "encoding": "utf-16",
+      "score": 9,
+      "bytes": 226
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\AE39B1CF9AE0A751\\B1DB88EA63A23AD361A8CB47F99BF931FB379B00F8A1F59744F7837D975A6538",
+      "output": "data/named/trans_zoomfade.tjs",
+      "name": "trans_zoomfade.tjs",
+      "encoding": "utf-16",
+      "score": 6,
+      "bytes": 124
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\6CD7C55FF58D4DEA24A16581351B59392C67B091EE38846C3858C0E1CB88DFE1",
+      "output": "data/named/translayer.tjs",
+      "name": "translayer.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 6444
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\94FB5DAAE9166D866E490416B4BC7E5E40E8624B607A76725F9EAF59965FA692",
+      "output": "data/named/tuiconf.ks",
+      "name": "tuiconf.ks",
+      "encoding": "utf-16",
+      "score": 71,
+      "bytes": 948
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\2B8A6CCD6000CBB93962D34C005F20928D6B3C691AAB4D2E71906C0C335F5701",
+      "output": "data/named/uichart.tjs",
+      "name": "uichart.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 36304
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\B6483284FF39608E5AAC3166BA8D38E791A6663764D56E773C1D25F461403636",
+      "output": "data/named/uiextra.tjs",
+      "name": "uiextra.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 85016
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\BE1CF25A297198AA09E73A2AFDEDE381BE09F869AF30CD9A83BFC2ACEF48B8E3",
+      "output": "data/named/uifile.tjs",
+      "name": "uifile.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 27076
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\0B2621105DC0C0D89E8B2A6938D7FADAF7F8BFD4962E84E419CF9344784E829E",
+      "output": "data/named/uiloader.tjs",
+      "name": "uiloader.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 85696
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\A815FC52C281A075C5C34C538E81B5FF1DA3377CA33AA77C7A9F82AD319D9A7D",
+      "output": "data/named/uimain.tjs",
+      "name": "uimain.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 100644
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\5E1796530BA90BB20DBBF573DAFFEBB2F13A55DD4656B446C4F678D7B06C7769",
+      "output": "data/named/uioption.tjs",
+      "name": "uioption.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 74392
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\C0E19A28C21BD1C97007F8B60DE8D66164AFA62D608AD48F5CBFA247C1AFCB60",
+      "output": "data/named/uiparts.tjs",
+      "name": "uiparts.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 34980
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\2AFC039220B0D45CED12242EDB433512817EA2B3839C0EA7214F04B62F5A6F40",
+      "output": "data/named/uipsdinfo.tjs",
+      "name": "uipsdinfo.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 14724
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\69FD7C6DF0CD4169471AEB604E741C83BE2EBF86107C6DC6118467D77CA69163",
+      "output": "data/named/uistand.tjs",
+      "name": "uistand.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 141116
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\F3932F3EAF87FF30F87AA03AB2E05B7AB3E0F392E1A97AFE4B9D8A3EB5C4CB70",
+      "output": "data/named/uisupport.tjs",
+      "name": "uisupport.tjs",
+      "encoding": "utf-16le",
+      "score": 33,
+      "bytes": 29108
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\74401DF5E808942E8FB9A186FCD4F09913EC02F31D451D823666444173B27154",
+      "output": "data/named/uisystem.tjs",
+      "name": "uisystem.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 58148
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\7D529745D68F3173D05CECA8C0BD0C911D918E42AF343571541D9D9451B20A39",
+      "output": "data/named/uitext.tjs",
+      "name": "uitext.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 65796
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\C03682A074BF7445209C000C80C8423C4CC595BE3D9E3C9F2875C9431A262078",
+      "output": "data/named/uitouch.tjs",
+      "name": "uitouch.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 32352
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\C588D9B957A64590A83BE17AB515B0EE2F15992F848710A0AEDC3E4A325A95C9",
+      "output": "data/named/uivoice.tjs",
+      "name": "uivoice.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 18740
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\4444F3F0CAD4ED9C9656F2A3CF92B32F550A7187F8A9854C0E283CBD629C2C2E",
+      "output": "data/named/updateconfig.tjs",
+      "name": "updateconfig.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 2932
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\FD202AC9D58B159984ABC1CDE053B67AD462977584A12B271C6A6CDC67AF11F9",
+      "output": "data/named/updateregion.tjs",
+      "name": "updateregion.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 3496
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\2AF22469FEBA225200CBE0A8115F4BE6824172ED5300F243B2B8BD5CBD3E32A6",
+      "output": "data/named/utils.tjs",
+      "name": "utils.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 49640
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\4BF58C89B17AB27952423FD9373EA2C0EFC9F630C5E6B17E548F5EABB1013364",
+      "output": "data/named/vcutfade.tjs",
+      "name": "vcutfade.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4104
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\AA45FCBD9BB88AC7A13F87AACBCCFB294B5B212DF582308DA8B7A763A2E6B04F",
+      "output": "data/named/version.ks",
+      "name": "version.ks",
+      "encoding": "utf-16",
+      "score": 12,
+      "bytes": 338
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\A8976CBF98E4F7D5291954C8B7BCF567EF823BD2267B49AE181DB1F485AFB607",
+      "output": "data/named/voice.tjs",
+      "name": "voice.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 11816
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\021E1424374272A8942632387CE944A3FD5195398D5DC0BD5EEA2A75A7C34F0D",
+      "output": "data/named/voiceboost.tjs",
+      "name": "voiceboost.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 2592
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\511AD468E2F060DD44D4878AFF2AC1160345A496967DD84E4D3AF1DE78D5D8FB",
+      "output": "data/named/voiceeffect.tjs",
+      "name": "voiceeffect.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 35640
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\926BA2A355C54D815C6983F12AEAFD9A6ACAABCF221A9EA05E225477FE23C492",
+      "output": "data/named/voicematch.tjs",
+      "name": "voicematch.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 4544
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\6EA73188F255EBF4534D1A745D68A17702E33235A74375DDA1BCA0C19D5ECDCD",
+      "output": "data/named/voicemode.ks",
+      "name": "voicemode.ks",
+      "encoding": "utf-16",
+      "score": 406,
+      "bytes": 6140
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\BD0C06086F1CBAF42FDD3B75B7D1D8DAFF09D54BFC95FC8BFCB61CDF14E45DFD",
+      "output": "data/named/voicemode.tjs",
+      "name": "voicemode.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 84984
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\10BB31A8777F660E6F251AE5995ACF6E293C463AB5D58E43CD2487F151210785",
+      "output": "data/named/voiceprogress.tjs",
+      "name": "voiceprogress.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 12976
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\E90D8C7CDC34200A5B21D4318010EA655F240D3C216C700F6DB6402A3DAE2377",
+      "output": "data/named/win11depend.tjs",
+      "name": "win11depend.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 3900
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\0B1BFD6BAABBDFF4BCA4BB8616AB9B221552C1D3A24C602A076ED6AE8C1CD1A7",
+      "output": "data/named/win32dialog.tjs",
+      "name": "win32dialog.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 65612
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\2DDFC7CAA5C340A26F3A04FA8C8F1CC55A5DB3BC2F244B8911B8B90987F72114",
+      "output": "data/named/world.tjs",
+      "name": "world.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 239468
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\80CA6E9A1DA39CAC7C9E8BB7CA096F94A32C387833839E8A87B8AEF110326A4E",
+      "output": "data/named/xratedutil.tjs",
+      "name": "xratedutil.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 18612
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\A819E57D7665A393D6E45386FBC2BDB4C00D03EC6F0AB0835CCECA0830079FAB",
+      "output": "data/named/yaml.tjs",
+      "name": "yaml.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 12580
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\BC6792F831D5FBD5\\E12CB89F7072AE901089FB11463F4A9D987C458D9A7F1EAC00DDFC0E06FB22E3",
+      "output": "data/named/yesnodialog.tjs",
+      "name": "yesnodialog.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 5360
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\B1E3D0AA285E5444B4683BAB8470CD68AB1C1EC4D32E6BC2B1CE3A186BBD0578",
+      "output": "data/named/yuzu_default.tjs",
+      "name": "yuzu_default.tjs",
+      "encoding": "utf-16",
+      "score": 54,
+      "bytes": 33302
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\F051058EFED71C42\\3ACFE9C4E80603C6E25406E05E9DAC9F0704398820BB20CD7169F7D9D05772C2",
+      "output": "data/named/yuzu_patchdetect.tjs",
+      "name": "yuzu_patchdetect.tjs",
+      "encoding": "utf-16",
+      "score": 30,
+      "bytes": 11528
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\9418D6C07072C261\\FE063F6B2815B692CEC2A4E399BCC3BF793F23CF8D0582D264666D9AFF2E5CD2",
+      "output": "data/named/zoommap.tjs",
+      "name": "zoommap.tjs",
+      "encoding": "utf-16le",
+      "score": 30,
+      "bytes": 22880
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\DE097C7B9EA97EB7\\B7635DFDF3BD157468A40E47DB7BDB1B81E22DA16AC0226C0B67F1956355A260",
+      "output": "data/named/占い1_2.asd",
+      "name": "占い1_2.asd",
+      "encoding": "utf-16",
+      "score": 27,
+      "bytes": 404
+    },
+    {
+      "archive": "data",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\data\\DE097C7B9EA97EB7\\2F71AAEB2B5A9A7F294FC985F03405959D58135A4C606F77D9C1B4400DE0BBFC",
+      "output": "data/named/占い2_2.asd",
+      "name": "占い2_2.asd",
+      "encoding": "utf-16",
+      "score": 27,
+      "bytes": 404
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\007AD3F43E0AACB9FE9BAA60ABD9D24457869D21AF366D8CE38A502D048866C6",
+      "output": "upgrade/detected/007AD3F43E0AACB9FE9BAA60ABD9D24457869D21AF366D8CE38A502D048866C6.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 354
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\110B4E181CEF27F464ED68067F7B558EDFFF93C91E8F20B6B210A0069E50BBD5",
+      "output": "upgrade/detected/110B4E181CEF27F464ED68067F7B558EDFFF93C91E8F20B6B210A0069E50BBD5.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 12,
+      "bytes": 220
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\19D89F9DAA0BC9CF98FBB68D5B15081D3B7BD83EDDA9345A3ED0B8D0DF29070D",
+      "output": "upgrade/detected/19D89F9DAA0BC9CF98FBB68D5B15081D3B7BD83EDDA9345A3ED0B8D0DF29070D.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 12,
+      "bytes": 220
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\47724A1E7671C45C861155FF091807EE427A59415EDD5355632FBA92BED42B47",
+      "output": "upgrade/detected/47724A1E7671C45C861155FF091807EE427A59415EDD5355632FBA92BED42B47.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 35,
+      "bytes": 658
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\4B0E264C287760C86C4C357C0129B24030CB844A6426743E4C078386F72E4563",
+      "output": "upgrade/detected/4B0E264C287760C86C4C357C0129B24030CB844A6426743E4C078386F72E4563.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 12,
+      "bytes": 220
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\6549D6C5C966435A8746BF055DB97AB2B29B70F4CB5DBD6CE8A3EB60272E9163",
+      "output": "upgrade/detected/6549D6C5C966435A8746BF055DB97AB2B29B70F4CB5DBD6CE8A3EB60272E9163.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 12,
+      "bytes": 220
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\66A93B2C3116FA56A5352A7413A1293A1DDD4DB99B2F28A2FE4F44F408661500",
+      "output": "upgrade/detected/66A93B2C3116FA56A5352A7413A1293A1DDD4DB99B2F28A2FE4F44F408661500.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 354
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\704CC96F99DC9BE42C05A633B5CEE9BBF1BE398CCDCFF41480A0D7D61EE06F53",
+      "output": "upgrade/detected/704CC96F99DC9BE42C05A633B5CEE9BBF1BE398CCDCFF41480A0D7D61EE06F53.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 342
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\7B26162801EB42E99271FEAF60FA895D32A7CFFBEA99F8AC283764BD5F0F05C8",
+      "output": "upgrade/detected/7B26162801EB42E99271FEAF60FA895D32A7CFFBEA99F8AC283764BD5F0F05C8.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 35,
+      "bytes": 658
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\8DF0F0492B71F447146813F9BB60AC10093EE6844DE732F54783A5E86DB2FABA",
+      "output": "upgrade/detected/8DF0F0492B71F447146813F9BB60AC10093EE6844DE732F54783A5E86DB2FABA.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 12,
+      "bytes": 220
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\AFB6F957604BF2CBC3F30B4D650CA6C85A2C718E2999430CFFE2D6DF14BB5A01",
+      "output": "upgrade/detected/AFB6F957604BF2CBC3F30B4D650CA6C85A2C718E2999430CFFE2D6DF14BB5A01.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 342
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\BA2B5D7AB821E64595A6262A99908B2915B037D757BC7F7A3E4E8E72871F2790",
+      "output": "upgrade/detected/BA2B5D7AB821E64595A6262A99908B2915B037D757BC7F7A3E4E8E72871F2790.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 354
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\BE45723B62BD46D0C8D2275BE321C2419945F670F28A5774E872075414BD513C",
+      "output": "upgrade/detected/BE45723B62BD46D0C8D2275BE321C2419945F670F28A5774E872075414BD513C.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 342
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\C5617BCFC0F3D1E85AB11E1921E20A3D5322FC59D14C6A5C1C9877ECDB1E75A7",
+      "output": "upgrade/detected/C5617BCFC0F3D1E85AB11E1921E20A3D5322FC59D14C6A5C1C9877ECDB1E75A7.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 342
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\C8F3E46B80B48D41629CC4B9FC35EB630BE4FABC0AAD27879ABE21A9A8A2C6F3",
+      "output": "upgrade/detected/C8F3E46B80B48D41629CC4B9FC35EB630BE4FABC0AAD27879ABE21A9A8A2C6F3.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 35,
+      "bytes": 658
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\D1AD79643E7518600F4C0C50A19D62E8F32034A9677A50A984A5689E396E61C8",
+      "output": "upgrade/detected/D1AD79643E7518600F4C0C50A19D62E8F32034A9677A50A984A5689E396E61C8.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 342
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\E6AA89697DAD60399D9FEBD94CF6E97B47AA4F2F1361579127D374A77B40894D",
+      "output": "upgrade/detected/E6AA89697DAD60399D9FEBD94CF6E97B47AA4F2F1361579127D374A77B40894D.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 342
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\FBF96479D63A9F7D49B9E840C24B34E3F553F50069350EA61E50EF20F9234378",
+      "output": "upgrade/detected/FBF96479D63A9F7D49B9E840C24B34E3F553F50069350EA61E50EF20F9234378.ks",
+      "name": null,
+      "encoding": "utf-16",
+      "score": 12,
+      "bytes": 220
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\9965CC229BB67648B075900D6FC3BC0A101DE08330C785903CA63BC8422E1441",
+      "output": "upgrade/named/append_setup_0.tjs",
+      "name": "append_setup_0.tjs",
+      "encoding": "utf-16",
+      "score": 3,
+      "bytes": 282
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\680870878FA9C4E1FF3F44301D93EF30A2C7A83151189203743A8D3EE63CCBF2",
+      "output": "upgrade/named/imagenamemap_0.txt",
+      "name": "imagenamemap_0.txt",
+      "encoding": "utf-16",
+      "score": 24,
+      "bytes": 2298
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\72ACF2F0EA31864B2C9ABDCEFAC9C475F9EAB85B12AF2F3F91D9289E3C20BB80",
+      "output": "upgrade/named/sd202ba2.asd",
+      "name": "sd202ba2.asd",
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 346
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\A9341C29ACCB0263A95733AEDC7B05479C117ADAB0C07D947346489DF259F31E",
+      "output": "upgrade/named/sd302ca2.asd",
+      "name": "sd302ca2.asd",
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 342
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\AC58AE4A5541D2D5213823D4F04FD39D019CA45DABD67C81484B87FA5FF26901",
+      "output": "upgrade/named/sd302cb2.asd",
+      "name": "sd302cb2.asd",
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 342
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\28B6ED495F167F6084D0E11F3A62EAE4C5F86064EA4872F64826CFD39FB8A3C2",
+      "output": "upgrade/named/sd302cc2.asd",
+      "name": "sd302cc2.asd",
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 346
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\0E0CB3AFFA452BD8D7AB29A076977DCE8013FB64E75C19C1B8915C717A8D8D88",
+      "output": "upgrade/named/sd401da2.asd",
+      "name": "sd401da2.asd",
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 342
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\F0C47616E147A1633EBFAE7DFDB0C7B0567702AECCCF2D1F6F9A6637471B4663",
+      "output": "upgrade/named/sd401dg2.asd",
+      "name": "sd401dg2.asd",
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 342
+    },
+    {
+      "archive": "upgrade",
+      "source": "E:\\GAL\\天使☆嚣嚣\\Extractor_Output\\upgrade\\94D4A97C61498621\\82F603A81999BA61F05683FA8E660CAAB1020BA78DC33F8DAED4054168C949C2",
+      "output": "upgrade/named/sd602ce2.asd",
+      "name": "sd602ce2.asd",
+      "encoding": "utf-16",
+      "score": 23,
+      "bytes": 346
+    }
+  ]
+}

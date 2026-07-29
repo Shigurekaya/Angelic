@@ -1,0 +1,547 @@
+{
+  "source": "qconf_save.pbd",
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 51,
+      "top": 717,
+      "width": 1004,
+      "height": 312,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "right": {
+          "ox": 733,
+          "oy": 55,
+          "w": 271,
+          "h": 255,
+          "storage": ""
+        },
+        "poppos": {
+          "ox": 0,
+          "oy": 55,
+          "w": 271,
+          "h": 255,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 283,
+          "oy": 0,
+          "w": 438,
+          "h": 312,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "hit",
+      "left": 334,
+      "top": 717,
+      "width": 438,
+      "height": 312,
+      "class": "layer",
+      "uiname": "hit",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 0,
+          "h": 0,
+          "storage": null
+        },
+        "hit": {
+          "ox": 0,
+          "oy": 0,
+          "w": 438,
+          "h": 312,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "switch_dsave",
+      "left": 368,
+      "top": 738,
+      "width": 175,
+      "height": 38,
+      "class": "button",
+      "uiname": "switch_dsave",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 13,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "icon": {
+          "ox": 9,
+          "oy": 12,
+          "cx": 64,
+          "cy": 289,
+          "w": 23,
+          "h": 15,
+          "storage": "qconf__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 89,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "icon_off": {
+          "ox": 9,
+          "oy": 12,
+          "cx": 64,
+          "cy": 289,
+          "w": 23,
+          "h": 15,
+          "storage": "qconf__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 51,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 175,
+          "h": 38,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "dsave",
+      "left": 563,
+      "top": 738,
+      "width": 175,
+      "height": 38,
+      "class": "toggle",
+      "uiname": "dsave",
+      "uistates": {
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 89,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 51,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 51,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "on_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 13,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "ds_ovr": {},
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 175,
+          "h": 38,
+          "storage": ""
+        },
+        "ds_on": {},
+        "on_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 13,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "sv_on": {},
+        "ds_off": {},
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 89,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "sv_ovr": {},
+        "sv_off": {}
+      }
+    },
+    {
+      "name": "_pgbtn",
+      "left": 370,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "_pgbtn",
+      "uistates": {
+        "ov_up": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 311,
+          "cy": 181,
+          "w": 24,
+          "h": 25,
+          "storage": "qconf__pack"
+        },
+        "on_top": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 309,
+          "cy": 51,
+          "w": 26,
+          "h": 26,
+          "storage": "qconf__pack"
+        },
+        "of_btm": {
+          "ox": 6,
+          "oy": 5,
+          "cx": 309,
+          "cy": 13,
+          "w": 25,
+          "h": 26,
+          "storage": "qconf__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "on_dw": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 311,
+          "cy": 154,
+          "w": 24,
+          "h": 25,
+          "storage": "qconf__pack"
+        },
+        "of_dw": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 313,
+          "cy": 89,
+          "w": 24,
+          "h": 25,
+          "storage": "qconf__pack"
+        },
+        "of_top": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 207,
+          "cy": 13,
+          "w": 26,
+          "h": 26,
+          "storage": "qconf__pack"
+        },
+        "ov_dw10": {
+          "ox": 2,
+          "oy": 5,
+          "cx": 0,
+          "cy": 289,
+          "w": 32,
+          "h": 27,
+          "storage": "qconf__pack"
+        },
+        "of_up10": {
+          "ox": 2,
+          "oy": 5,
+          "cx": 277,
+          "cy": 51,
+          "w": 32,
+          "h": 27,
+          "storage": "qconf__pack"
+        },
+        "ov_dw": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 311,
+          "cy": 208,
+          "w": 24,
+          "h": 25,
+          "storage": "qconf__pack"
+        },
+        "ov_up10": {
+          "ox": 2,
+          "oy": 5,
+          "cx": 123,
+          "cy": 289,
+          "w": 32,
+          "h": 27,
+          "storage": "qconf__pack"
+        },
+        "on_up10": {
+          "ox": 2,
+          "oy": 5,
+          "cx": 32,
+          "cy": 289,
+          "w": 32,
+          "h": 27,
+          "storage": "qconf__pack"
+        },
+        "on_btm": {
+          "ox": 6,
+          "oy": 5,
+          "cx": 233,
+          "cy": 13,
+          "w": 25,
+          "h": 26,
+          "storage": "qconf__pack"
+        },
+        "ov_top": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 258,
+          "cy": 13,
+          "w": 26,
+          "h": 26,
+          "storage": "qconf__pack"
+        },
+        "ov_btm": {
+          "ox": 6,
+          "oy": 5,
+          "cx": 284,
+          "cy": 13,
+          "w": 25,
+          "h": 26,
+          "storage": "qconf__pack"
+        },
+        "of_up": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 311,
+          "cy": 127,
+          "w": 24,
+          "h": 25,
+          "storage": "qconf__pack"
+        },
+        "of_dw10": {
+          "ox": 2,
+          "oy": 5,
+          "cx": 91,
+          "cy": 289,
+          "w": 32,
+          "h": 27,
+          "storage": "qconf__pack"
+        },
+        "on_up": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 155,
+          "cy": 289,
+          "w": 24,
+          "h": 25,
+          "storage": "qconf__pack"
+        },
+        "on_dw10": {
+          "ox": 2,
+          "oy": 5,
+          "cx": 175,
+          "cy": 13,
+          "w": 32,
+          "h": 27,
+          "storage": "qconf__pack"
+        }
+      }
+    },
+    {
+      "name": "page_up100",
+      "left": 370,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up100"
+    },
+    {
+      "name": "page_up10",
+      "left": 409,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up10"
+    },
+    {
+      "name": "page_up1",
+      "left": 448,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up1"
+    },
+    {
+      "name": "page_base",
+      "left": 501,
+      "top": 789,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_base",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 175,
+          "cy": 89,
+          "w": 104,
+          "h": 35,
+          "storage": "qconf__pack"
+        }
+      }
+    },
+    {
+      "name": "page_num",
+      "left": 501,
+      "top": 789,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_num",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 104,
+          "h": 35,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "page_dw1",
+      "left": 621,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw1"
+    },
+    {
+      "name": "page_dw10",
+      "left": 660,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw10"
+    },
+    {
+      "name": "page_dw100",
+      "left": 699,
+      "top": 789,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw100"
+    },
+    {
+      "name": "item",
+      "left": 361,
+      "top": 838,
+      "width": 91,
+      "height": 54,
+      "class": "button",
+      "uiname": "item",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 182,
+          "cy": 181,
+          "w": 91,
+          "h": 54,
+          "storage": "qconf__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 182,
+          "cy": 127,
+          "w": 91,
+          "h": 54,
+          "storage": "qconf__pack"
+        },
+        "number": {
+          "ox": 18,
+          "oy": 0,
+          "w": 70,
+          "h": 14,
+          "storage": ""
+        },
+        "date": {
+          "ox": 6,
+          "oy": 15,
+          "w": 79,
+          "h": 34,
+          "storage": ""
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 182,
+          "cy": 235,
+          "w": 91,
+          "h": 54,
+          "storage": "qconf__pack"
+        }
+      }
+    },
+    {
+      "name": "item_pos00",
+      "left": 361,
+      "top": 838,
+      "width": 91,
+      "height": 54,
+      "class": "area",
+      "uiname": "item_pos00"
+    },
+    {
+      "name": "item_pos11",
+      "left": 458,
+      "top": 898,
+      "width": 91,
+      "height": 54,
+      "class": "area",
+      "uiname": "item_pos11"
+    }
+  ]
+}

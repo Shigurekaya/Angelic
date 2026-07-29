@@ -1,0 +1,199 @@
+# セーブロード画面ヘルプテキスト
+
+back	back2
+	Return to previous window.
+
+title	title2
+	Return to the title screen.
+
+to_quick
+	Go to quick load.
+to_load
+	Go to load.
+to_save
+	Go to save.
+to_voice
+	Go to voice line bookmarks.
+to_cg
+	Go to CG gallery${_disableExtra}
+to_scene
+	Move to Scene Gallery${_disableExtra}
+to_stand
+	Move to Sprite Gallery${_disableStand}
+DISABLE_EXTRA
+	(Cannot be selected until the main story is cleared)
+DISABLE_STAND
+	(Cannot be selected until the two after story branches have been selected)
+# ※↑help_extra.txt にも同文のテキストがあるので注意
+
+cgmode
+	Go to CG Mode.
+scenemode
+	Go to Scene Replay.
+exchview
+	Go to Sprite Mode.
+
+slider	sl_rail
+	Select a page.
+
+edit_copy
+	Switch to copy mode.
+edit_swap
+	Switch to move mode.
+edit_comment
+	Switch to comment mode.
+edit_remove
+	Switch to delete mode.
+
+# ${_dataName}切り替え(セーブロード/お気に入りボイス)
+FILE_DATA
+	data
+VOICE_DATA
+	voice line
+
+EDIT_COPY
+	Select file to copy
+EDIT_SWAP
+	Select file to move
+EDIT_COMMENT
+	Select comment to edit
+EDIT_REMOVE
+	Select file to delete
+
+
+hide_thumb
+	Resize the comment field of ${_dataName}'s slot to display details. (Thumbnails are hidden when details are displayed)
+#	Choose whether or not to show the data thumbnails.
+edit_hold
+	Determines whether or not the comment edit mode persists after editing data. Check if you want to edit multiple files in succession.
+
+sceneplay
+	Jump to the scene this voice is from.
+listmode
+	Switch to the voice playlist screen. Click the selection button again to return to the favorited voice playlist screen
+
+page_num
+	This number displays the current total of pages.
+
+page_add
+	Add another page.
+page_sub
+	Delete the last page. The last page must be empty.
+
+page_dw100
+	Jump ${_max>101?"100 pages forward":"to the last page"}.
+page_dw10
+	Jump 10 pages forward.
+page_dw1
+	Go to the next page.
+
+page_up100
+	Jump ${_max>101?"100 pages back":"to the first page"}.
+page_up10
+	Jump 10 pages back.
+page_up1
+	Go one page back.
+
+HELP_EDIT
+	Edit data ${_currentNumberText}. ${_currentNumber?"":"\nQuick1 cannot be moved or deleted."}
+
+#HELP_POP_COM
+#	Edit comment of ${_currentNumberText}.
+#HELP_POP_COPY
+#	Copy data ${_currentNumberText}.
+#HELP_POP_MOVE
+#	Move data ${_currentNumberText}.
+#HELP_POP_DEL
+#	Delete data ${_currentNumberText}.
+
+# ${_loadName} ${_saveName}切り替え(セーブロード/お気に入りボイス)
+FILE_LOAD
+	Load
+FILE_SAVE
+	Save
+VOICE_LOAD
+	Play
+VOICE_SAVE
+	Bookmark
+
+ITEM_VOICE
+	Play voice ${_curHelpNum}.
+ITEM_LOAD
+	Load save ${_curHelpNum}.
+ITEM_SAVE
+	Create save at save slot ${_curHelpNum}.
+
+
+HELP_COPY
+	Select ${getNumberText(_copysrc,true)}'s copy destination.${_specialPageMode?"":"\n"}${inDrag?"":"（Right-click to cancel）"}${!_specialPageMode?"":"[NOTE] Quick borders dissapear at the end of the overflowing sides."}
+#	Please select a save slot to copy to. (Cancel with right click.)${_page?"":"\nCaution: When quick saving and all slots are taken, the last one is deleted."}
+
+HELP_SWAP
+	Select ${getNumberText(_copysrc,true)}'s move destination.${_specialPageMode?"":"\n"}${inDrag?"":"（Right-click to cancel）"}${!_specialPageMode?"":"[NOTE] Quickborders dissapear at the end of the overflowing sides."}
+#	Please select a save slot to move to. (Cancel with right click.)${_page?"":"\nCaution: When quick saving and all slots are taken, the last one is deleted."}
+
+HELP_EDITCOPY
+	Copy ${_currentNumberText}.	Choose the location you want to copy to after clicking this option, or drag the file directly there. 
+HELP_EDITMOVE
+	Move ${_currentNumberText} to ${_dataName}.	Choose the location you want to move to after clicking this option, or drag the file directly there. 
+HELP_EDITEDIT
+	Edit the comments of ${_currentNumberText}
+HELP_EDITDEL
+	Delete ${_currentNumberText}.
+
+EDIT_ADDLIST
+	Add to current playlist.
+EDIT_DELLIST
+	Select playlist to delete
+
+EDIT_SAVELIST
+	Save current playlist.
+
+EDIT_LOADLIST
+	Load playlist.	[NOTE] This will delete your current playlist.
+
+HELP_PLIST_DRAG
+	Choose how to reorder the playlist.
+
+pitem0	pitem1	pitem2	pitem3	pitem4	pitem5	pitem6	pitem7	pitem8	pitem9
+	This is an overview of your playlist. Click a voice to replay it. You can drag the voices around to reorder them in the playlist.
+
+edit_addlist
+	Add a voice to the playist.	You can add up to ${_listModeMaxCount} voices total.
+edit_dellist
+	Delete a voice from the playlist.
+edit_clearlist
+	Delete every entry in the playlist.
+edit_savelist
+	Save your current playlist. （You can view saved playlists in the saved voices screen.）${_canExport?"\nIf you press save while holding the shift key, you can save the playlist as a sound file.":""}
+edit_loadlist
+	Load a saved playlist. ${_canExport?"\nIf you press load while holding the shift key, you can load just the voice data out of the file.":""}
+
+pslider	pslider_base	plist_top	plist_pageup	plist_pagedown	plist_end
+	Scroll through the playlist.
+
+plist_prev
+	Play the voice before the current one in the playlist. 
+plist_stop
+	Stop replaying voices.
+plist_play
+	Start from the beginning of the playlist.
+plist_next
+	Move to the next voice in the playlist.
+plist_all
+	Play all the voices in order upon clicking a voice in the playlist. Unchecking this option will play only the voice that's clicked.
+plist_loop
+	Loop the playlist.
+
+WEAK_SAVE
+	This is the save interface. Please choose where to save your data.
+
+WEAK_LOAD
+	This is the load interface. Please choose a save file to load.
+
+WEAK_QUICK
+	This is the quick load interface. Please choose a save file to load.	Pressing the quick load button during gameplay will load Quick1.
+
+WEAK_VOICE
+	${!_listMode?"This is the bookmarked voice lines interface.":"This is the voice playlist editing interface."}
+

@@ -1,0 +1,658 @@
+{
+  "items": [
+    {
+      "name": "autoskipmark_img.pbd",
+      "verdict": "OK",
+      "hotspots": 21,
+      "layers": 21
+    },
+    {
+      "name": "autoskipmark_pos.pbd",
+      "verdict": "OK",
+      "hotspots": 1,
+      "layers": 1
+    },
+    {
+      "name": "backlog.pbd",
+      "verdict": "OK",
+      "hotspots": 22,
+      "layers": 24
+    },
+    {
+      "name": "bgmtitle.pbd",
+      "verdict": "OK",
+      "hotspots": 1,
+      "layers": 1
+    },
+    {
+      "name": "btncustom.pbd",
+      "verdict": "OK",
+      "hotspots": 118,
+      "layers": 119
+    },
+    {
+      "name": "chapter.pbd",
+      "verdict": "OK",
+      "hotspots": 2,
+      "layers": 2
+    },
+    {
+      "name": "clickglyph_img.pbd",
+      "verdict": "OK",
+      "hotspots": 13,
+      "layers": 13
+    },
+    {
+      "name": "dialog.pbd",
+      "verdict": "OK",
+      "hotspots": 14,
+      "layers": 19
+    },
+    {
+      "name": "extra.pbd",
+      "verdict": "OK",
+      "hotspots": 12,
+      "layers": 12
+    },
+    {
+      "name": "extra_cg.pbd",
+      "verdict": "OK",
+      "hotspots": 63,
+      "layers": 69
+    },
+    {
+      "name": "extra_cgview.pbd",
+      "verdict": "OK",
+      "hotspots": 27,
+      "layers": 28
+    },
+    {
+      "name": "extra_locale_cn.pbd",
+      "verdict": "OK",
+      "hotspots": 5,
+      "layers": 5
+    },
+    {
+      "name": "extra_voice.pbd",
+      "verdict": "OK",
+      "hotspots": 67,
+      "layers": 77
+    },
+    {
+      "name": "file.pbd",
+      "verdict": "OK",
+      "hotspots": 36,
+      "layers": 36
+    },
+    {
+      "name": "file_load.pbd",
+      "verdict": "OK",
+      "hotspots": 40,
+      "layers": 42
+    },
+    {
+      "name": "file_quick.pbd",
+      "verdict": "OK",
+      "hotspots": 40,
+      "layers": 42
+    },
+    {
+      "name": "file_save.pbd",
+      "verdict": "OK",
+      "hotspots": 40,
+      "layers": 42
+    },
+    {
+      "name": "gesture_help.pbd",
+      "verdict": "OK",
+      "hotspots": 14,
+      "layers": 14
+    },
+    {
+      "name": "option.pbd",
+      "verdict": "OK",
+      "hotspots": 49,
+      "layers": 49
+    },
+    {
+      "name": "option_0simple.pbd",
+      "verdict": "OK",
+      "hotspots": 85,
+      "layers": 163
+    },
+    {
+      "name": "option_1display.pbd",
+      "verdict": "OK",
+      "hotspots": 73,
+      "layers": 109
+    },
+    {
+      "name": "option_2game1.pbd",
+      "verdict": "OK",
+      "hotspots": 70,
+      "layers": 106
+    },
+    {
+      "name": "option_3game2.pbd",
+      "verdict": "OK",
+      "hotspots": 72,
+      "layers": 85
+    },
+    {
+      "name": "option_4text.pbd",
+      "verdict": "OK",
+      "hotspots": 83,
+      "layers": 99
+    },
+    {
+      "name": "option_5sound1.pbd",
+      "verdict": "OK",
+      "hotspots": 136,
+      "layers": 270
+    },
+    {
+      "name": "option_5sound2.pbd",
+      "verdict": "OK",
+      "hotspots": 58,
+      "layers": 160
+    },
+    {
+      "name": "option_6dialog.pbd",
+      "verdict": "OK",
+      "hotspots": 109,
+      "layers": 155
+    },
+    {
+      "name": "option_7mouse.pbd",
+      "verdict": "OK",
+      "hotspots": 77,
+      "layers": 89
+    },
+    {
+      "name": "option_8keyboard1.pbd",
+      "verdict": "OK",
+      "hotspots": 141,
+      "layers": 141
+    },
+    {
+      "name": "option_9gamepad.pbd",
+      "verdict": "OK",
+      "hotspots": 99,
+      "layers": 115
+    },
+    {
+      "name": "option_9gamepad2_assign.pbd",
+      "verdict": "OK",
+      "hotspots": 33,
+      "layers": 33
+    },
+    {
+      "name": "option_cmds.pbd",
+      "verdict": "OK",
+      "hotspots": 3,
+      "layers": 3
+    },
+    {
+      "name": "option_keyinput.pbd",
+      "verdict": "OK",
+      "hotspots": 106,
+      "layers": 108
+    },
+    {
+      "name": "phonechat.pbd",
+      "verdict": "OK",
+      "hotspots": 11,
+      "layers": 11
+    },
+    {
+      "name": "qconf.pbd",
+      "verdict": "OK",
+      "hotspots": 18,
+      "layers": 18
+    },
+    {
+      "name": "qconf_load.pbd",
+      "verdict": "OK",
+      "hotspots": 14,
+      "layers": 16
+    },
+    {
+      "name": "qconf_qload.pbd",
+      "verdict": "OK",
+      "hotspots": 5,
+      "layers": 5
+    },
+    {
+      "name": "qconf_qvsave.pbd",
+      "verdict": "OK",
+      "hotspots": 3,
+      "layers": 3
+    },
+    {
+      "name": "qconf_save.pbd",
+      "verdict": "OK",
+      "hotspots": 16,
+      "layers": 18
+    },
+    {
+      "name": "qconf_text.pbd",
+      "verdict": "OK",
+      "hotspots": 16,
+      "layers": 20
+    },
+    {
+      "name": "qconf_volume.pbd",
+      "verdict": "OK",
+      "hotspots": 21,
+      "layers": 67
+    },
+    {
+      "name": "qlpopup.pbd",
+      "verdict": "OK",
+      "hotspots": 7,
+      "layers": 7
+    },
+    {
+      "name": "quickmenu.pbd",
+      "verdict": "OK",
+      "hotspots": 28,
+      "layers": 28
+    },
+    {
+      "name": "qvpopup.pbd",
+      "verdict": "OK",
+      "hotspots": 4,
+      "layers": 5
+    },
+    {
+      "name": "scnchart.pbd",
+      "verdict": "OK",
+      "hotspots": 37,
+      "layers": 51
+    },
+    {
+      "name": "select.pbd",
+      "verdict": "OK",
+      "hotspots": 31,
+      "layers": 31
+    },
+    {
+      "name": "title.pbd",
+      "verdict": "OK",
+      "hotspots": 31,
+      "layers": 31
+    },
+    {
+      "name": "title_locale_cn.pbd",
+      "verdict": "OK",
+      "hotspots": 11,
+      "layers": 11
+    },
+    {
+      "name": "touchuibar.pbd",
+      "verdict": "OK",
+      "hotspots": 30,
+      "layers": 31
+    },
+    {
+      "name": "touchvolume.pbd",
+      "verdict": "OK",
+      "hotspots": 8,
+      "layers": 8
+    },
+    {
+      "name": "voicebar.pbd",
+      "verdict": "OK",
+      "hotspots": 10,
+      "layers": 10
+    },
+    {
+      "name": "window.pbd",
+      "verdict": "OK",
+      "hotspots": 5,
+      "layers": 5
+    },
+    {
+      "name": "window_h.pbd",
+      "verdict": "OK",
+      "hotspots": 5,
+      "layers": 6
+    }
+  ],
+  "screens": {
+    "title": [
+      {
+        "name": "title.pbd",
+        "verdict": "OK",
+        "hotspots": 31,
+        "layers": 31
+      },
+      {
+        "name": "title_locale_cn.pbd",
+        "verdict": "OK",
+        "hotspots": 11,
+        "layers": 11
+      }
+    ],
+    "option": [
+      {
+        "name": "option.pbd",
+        "verdict": "OK",
+        "hotspots": 49,
+        "layers": 49
+      },
+      {
+        "name": "option_0simple.pbd",
+        "verdict": "OK",
+        "hotspots": 85,
+        "layers": 163
+      },
+      {
+        "name": "option_1display.pbd",
+        "verdict": "OK",
+        "hotspots": 73,
+        "layers": 109
+      },
+      {
+        "name": "option_2game1.pbd",
+        "verdict": "OK",
+        "hotspots": 70,
+        "layers": 106
+      },
+      {
+        "name": "option_3game2.pbd",
+        "verdict": "OK",
+        "hotspots": 72,
+        "layers": 85
+      },
+      {
+        "name": "option_4text.pbd",
+        "verdict": "OK",
+        "hotspots": 83,
+        "layers": 99
+      },
+      {
+        "name": "option_5sound1.pbd",
+        "verdict": "OK",
+        "hotspots": 136,
+        "layers": 270
+      },
+      {
+        "name": "option_5sound2.pbd",
+        "verdict": "OK",
+        "hotspots": 58,
+        "layers": 160
+      },
+      {
+        "name": "option_6dialog.pbd",
+        "verdict": "OK",
+        "hotspots": 109,
+        "layers": 155
+      },
+      {
+        "name": "option_7mouse.pbd",
+        "verdict": "OK",
+        "hotspots": 77,
+        "layers": 89
+      },
+      {
+        "name": "option_8keyboard1.pbd",
+        "verdict": "OK",
+        "hotspots": 141,
+        "layers": 141
+      },
+      {
+        "name": "option_9gamepad.pbd",
+        "verdict": "OK",
+        "hotspots": 99,
+        "layers": 115
+      },
+      {
+        "name": "option_9gamepad2_assign.pbd",
+        "verdict": "OK",
+        "hotspots": 33,
+        "layers": 33
+      },
+      {
+        "name": "option_cmds.pbd",
+        "verdict": "OK",
+        "hotspots": 3,
+        "layers": 3
+      },
+      {
+        "name": "option_keyinput.pbd",
+        "verdict": "OK",
+        "hotspots": 106,
+        "layers": 108
+      }
+    ],
+    "file": [
+      {
+        "name": "file.pbd",
+        "verdict": "OK",
+        "hotspots": 36,
+        "layers": 36
+      },
+      {
+        "name": "file_load.pbd",
+        "verdict": "OK",
+        "hotspots": 40,
+        "layers": 42
+      },
+      {
+        "name": "file_quick.pbd",
+        "verdict": "OK",
+        "hotspots": 40,
+        "layers": 42
+      },
+      {
+        "name": "file_save.pbd",
+        "verdict": "OK",
+        "hotspots": 40,
+        "layers": 42
+      }
+    ],
+    "qconf": [
+      {
+        "name": "qconf.pbd",
+        "verdict": "OK",
+        "hotspots": 18,
+        "layers": 18
+      },
+      {
+        "name": "qconf_load.pbd",
+        "verdict": "OK",
+        "hotspots": 14,
+        "layers": 16
+      },
+      {
+        "name": "qconf_qload.pbd",
+        "verdict": "OK",
+        "hotspots": 5,
+        "layers": 5
+      },
+      {
+        "name": "qconf_qvsave.pbd",
+        "verdict": "OK",
+        "hotspots": 3,
+        "layers": 3
+      },
+      {
+        "name": "qconf_save.pbd",
+        "verdict": "OK",
+        "hotspots": 16,
+        "layers": 18
+      },
+      {
+        "name": "qconf_text.pbd",
+        "verdict": "OK",
+        "hotspots": 16,
+        "layers": 20
+      },
+      {
+        "name": "qconf_volume.pbd",
+        "verdict": "OK",
+        "hotspots": 21,
+        "layers": 67
+      }
+    ],
+    "extra": [
+      {
+        "name": "extra.pbd",
+        "verdict": "OK",
+        "hotspots": 12,
+        "layers": 12
+      },
+      {
+        "name": "extra_cg.pbd",
+        "verdict": "OK",
+        "hotspots": 63,
+        "layers": 69
+      },
+      {
+        "name": "extra_cgview.pbd",
+        "verdict": "OK",
+        "hotspots": 27,
+        "layers": 28
+      },
+      {
+        "name": "extra_locale_cn.pbd",
+        "verdict": "OK",
+        "hotspots": 5,
+        "layers": 5
+      },
+      {
+        "name": "extra_voice.pbd",
+        "verdict": "OK",
+        "hotspots": 67,
+        "layers": 77
+      },
+      {
+        "name": "scnchart.pbd",
+        "verdict": "OK",
+        "hotspots": 37,
+        "layers": 51
+      }
+    ],
+    "window": [
+      {
+        "name": "backlog.pbd",
+        "verdict": "OK",
+        "hotspots": 22,
+        "layers": 24
+      },
+      {
+        "name": "dialog.pbd",
+        "verdict": "OK",
+        "hotspots": 14,
+        "layers": 19
+      },
+      {
+        "name": "select.pbd",
+        "verdict": "OK",
+        "hotspots": 31,
+        "layers": 31
+      },
+      {
+        "name": "window.pbd",
+        "verdict": "OK",
+        "hotspots": 5,
+        "layers": 5
+      },
+      {
+        "name": "window_h.pbd",
+        "verdict": "OK",
+        "hotspots": 5,
+        "layers": 6
+      }
+    ],
+    "hud": [
+      {
+        "name": "phonechat.pbd",
+        "verdict": "OK",
+        "hotspots": 11,
+        "layers": 11
+      },
+      {
+        "name": "quickmenu.pbd",
+        "verdict": "OK",
+        "hotspots": 28,
+        "layers": 28
+      },
+      {
+        "name": "touchuibar.pbd",
+        "verdict": "OK",
+        "hotspots": 30,
+        "layers": 31
+      },
+      {
+        "name": "touchvolume.pbd",
+        "verdict": "OK",
+        "hotspots": 8,
+        "layers": 8
+      },
+      {
+        "name": "voicebar.pbd",
+        "verdict": "OK",
+        "hotspots": 10,
+        "layers": 10
+      }
+    ],
+    "other": [
+      {
+        "name": "autoskipmark_img.pbd",
+        "verdict": "OK",
+        "hotspots": 21,
+        "layers": 21
+      },
+      {
+        "name": "autoskipmark_pos.pbd",
+        "verdict": "OK",
+        "hotspots": 1,
+        "layers": 1
+      },
+      {
+        "name": "bgmtitle.pbd",
+        "verdict": "OK",
+        "hotspots": 1,
+        "layers": 1
+      },
+      {
+        "name": "btncustom.pbd",
+        "verdict": "OK",
+        "hotspots": 118,
+        "layers": 119
+      },
+      {
+        "name": "chapter.pbd",
+        "verdict": "OK",
+        "hotspots": 2,
+        "layers": 2
+      },
+      {
+        "name": "clickglyph_img.pbd",
+        "verdict": "OK",
+        "hotspots": 13,
+        "layers": 13
+      },
+      {
+        "name": "gesture_help.pbd",
+        "verdict": "OK",
+        "hotspots": 14,
+        "layers": 14
+      },
+      {
+        "name": "qlpopup.pbd",
+        "verdict": "OK",
+        "hotspots": 7,
+        "layers": 7
+      },
+      {
+        "name": "qvpopup.pbd",
+        "verdict": "OK",
+        "hotspots": 4,
+        "layers": 5
+      }
+    ]
+  }
+}

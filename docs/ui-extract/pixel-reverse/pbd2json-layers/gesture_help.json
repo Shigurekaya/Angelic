@@ -1,0 +1,520 @@
+{
+  "source": "gesture_help.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "up",
+    "left",
+    "right",
+    "down",
+    "b_up",
+    "b_left",
+    "b_right",
+    "b_down",
+    "base"
+  ],
+  "layer_count": 14,
+  "hotspot_count": 14,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 440,
+      "height": 440,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 440,
+          "h": 440,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "up",
+      "left": 155,
+      "top": 1,
+      "width": 130,
+      "height": 130,
+      "class": "copy",
+      "uiname": "up"
+    },
+    {
+      "name": "item",
+      "left": 49,
+      "top": 8,
+      "width": 130,
+      "height": 130,
+      "class": "layer",
+      "uiname": "item",
+      "uistates": {
+        "qload": {
+          "ox": 37,
+          "oy": 33,
+          "cx": 57,
+          "cy": 309,
+          "w": 57,
+          "h": 62,
+          "storage": "touchuibar__pack"
+        },
+        "save": {
+          "ox": 37,
+          "oy": 33,
+          "cx": 0,
+          "cy": 309,
+          "w": 57,
+          "h": 62,
+          "storage": "touchuibar__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 130,
+          "h": 130,
+          "storage": ""
+        },
+        "load": {
+          "ox": 37,
+          "oy": 33,
+          "cx": 120,
+          "cy": 188,
+          "w": 57,
+          "h": 62,
+          "storage": "touchuibar__pack"
+        },
+        "dsave": {
+          "ox": 37,
+          "oy": 33,
+          "cx": 62,
+          "cy": 246,
+          "w": 57,
+          "h": 62,
+          "storage": "touchuibar__pack"
+        },
+        "base": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 0,
+          "cy": 0,
+          "w": 126,
+          "h": 126,
+          "storage": "touchuibar__pack"
+        },
+        "prevscn": {
+          "ox": 39,
+          "oy": 41,
+          "cx": 354,
+          "cy": 244,
+          "w": 52,
+          "h": 51,
+          "storage": "touchuibar__pack"
+        },
+        "vreplay": {
+          "ox": 41,
+          "oy": 37,
+          "cx": 235,
+          "cy": 186,
+          "w": 47,
+          "h": 58,
+          "storage": "touchuibar__pack"
+        },
+        "hide": {
+          "ox": 41,
+          "oy": 42,
+          "cx": 57,
+          "cy": 371,
+          "w": 49,
+          "h": 48,
+          "storage": "touchuibar__pack"
+        },
+        "base_over": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 252,
+          "cy": 0,
+          "w": 126,
+          "h": 126,
+          "storage": "touchuibar__pack"
+        },
+        "title": {
+          "ox": 40,
+          "oy": 35,
+          "cx": 120,
+          "cy": 311,
+          "w": 50,
+          "h": 61,
+          "storage": "touchuibar__pack"
+        },
+        "nextscn": {
+          "ox": 39,
+          "oy": 41,
+          "cx": 253,
+          "cy": 346,
+          "w": 52,
+          "h": 51,
+          "storage": "touchuibar__pack"
+        },
+        "none": {
+          "ox": 34,
+          "oy": 33,
+          "cx": 0,
+          "cy": 246,
+          "w": 62,
+          "h": 63,
+          "storage": "touchuibar__pack"
+        },
+        "custom": {
+          "ox": 36,
+          "oy": 37,
+          "cx": 177,
+          "cy": 186,
+          "w": 58,
+          "h": 58,
+          "storage": "touchuibar__pack"
+        },
+        "failed": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 0,
+          "cy": 126,
+          "w": 120,
+          "h": 120,
+          "storage": "touchuibar__pack"
+        },
+        "backskip": {
+          "ox": 33,
+          "oy": 42,
+          "cx": 305,
+          "cy": 295,
+          "w": 60,
+          "h": 50,
+          "storage": "touchuibar__pack"
+        },
+        "click": {
+          "ox": 43,
+          "oy": 35,
+          "cx": 120,
+          "cy": 250,
+          "w": 44,
+          "h": 61,
+          "storage": "touchuibar__pack"
+        },
+        "skip": {
+          "ox": 38,
+          "oy": 42,
+          "cx": 352,
+          "cy": 345,
+          "w": 60,
+          "h": 50,
+          "storage": "touchuibar__pack"
+        },
+        "screen": {
+          "ox": 29,
+          "oy": 40,
+          "cx": 177,
+          "cy": 349,
+          "w": 71,
+          "h": 51,
+          "storage": "touchuibar__pack"
+        },
+        "next": {
+          "ox": 43,
+          "oy": 41,
+          "cx": 253,
+          "cy": 295,
+          "w": 52,
+          "h": 51,
+          "storage": "touchuibar__pack"
+        },
+        "qsave": {
+          "ox": 37,
+          "oy": 33,
+          "cx": 120,
+          "cy": 126,
+          "w": 57,
+          "h": 62,
+          "storage": "touchuibar__pack"
+        },
+        "scnchart": {
+          "ox": 31,
+          "oy": 37,
+          "cx": 300,
+          "cy": 126,
+          "w": 68,
+          "h": 58,
+          "storage": "touchuibar__pack"
+        },
+        "base_on": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 126,
+          "cy": 0,
+          "w": 126,
+          "h": 126,
+          "storage": "touchuibar__pack"
+        },
+        "vsave": {
+          "ox": 33,
+          "oy": 41,
+          "cx": 344,
+          "cy": 186,
+          "w": 62,
+          "h": 57,
+          "storage": "touchuibar__pack"
+        },
+        "qvsave": {
+          "ox": 33,
+          "oy": 41,
+          "cx": 282,
+          "cy": 186,
+          "w": 62,
+          "h": 57,
+          "storage": "touchuibar__pack"
+        },
+        "snapshot": {
+          "ox": 32,
+          "oy": 39,
+          "cx": 177,
+          "cy": 297,
+          "w": 66,
+          "h": 52,
+          "storage": "touchuibar__pack"
+        },
+        "option": {
+          "ox": 36,
+          "oy": 37,
+          "cx": 241,
+          "cy": 126,
+          "w": 59,
+          "h": 59,
+          "storage": "touchuibar__pack"
+        },
+        "log": {
+          "ox": 37,
+          "oy": 41,
+          "cx": 365,
+          "cy": 295,
+          "w": 47,
+          "h": 50,
+          "storage": "touchuibar__pack"
+        },
+        "volume": {
+          "ox": 27,
+          "oy": 38,
+          "cx": 177,
+          "cy": 244,
+          "w": 76,
+          "h": 53,
+          "storage": "touchuibar__pack"
+        },
+        "prev": {
+          "ox": 34,
+          "oy": 41,
+          "cx": 302,
+          "cy": 244,
+          "w": 52,
+          "h": 51,
+          "storage": "touchuibar__pack"
+        },
+        "backone": {
+          "ox": 40,
+          "oy": 41,
+          "cx": 253,
+          "cy": 244,
+          "w": 49,
+          "h": 51,
+          "storage": "touchuibar__pack"
+        },
+        "panic": {
+          "ox": 33,
+          "oy": 35,
+          "cx": 177,
+          "cy": 126,
+          "w": 64,
+          "h": 60,
+          "storage": "touchuibar__pack"
+        },
+        "auto": {
+          "ox": 46,
+          "oy": 41,
+          "cx": 305,
+          "cy": 345,
+          "w": 47,
+          "h": 50,
+          "storage": "touchuibar__pack"
+        },
+        "base_off": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 0,
+          "cy": 0,
+          "w": 126,
+          "h": 126,
+          "storage": "touchuibar__pack"
+        }
+      }
+    },
+    {
+      "name": "_uarrow",
+      "left": 89,
+      "top": 9,
+      "width": 50,
+      "height": 25,
+      "class": "layer",
+      "uiname": "_uarrow",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 177,
+          "cy": 400,
+          "w": 50,
+          "h": 25,
+          "storage": "touchuibar__pack"
+        }
+      }
+    },
+    {
+      "name": "_larrow",
+      "left": 51,
+      "top": 52,
+      "width": 25,
+      "height": 49,
+      "class": "layer",
+      "uiname": "_larrow",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 368,
+          "cy": 126,
+          "w": 25,
+          "h": 49,
+          "storage": "touchuibar__pack"
+        }
+      }
+    },
+    {
+      "name": "_rarrow",
+      "left": 152,
+      "top": 52,
+      "width": 25,
+      "height": 49,
+      "class": "layer",
+      "uiname": "_rarrow",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 120,
+          "cy": 372,
+          "w": 25,
+          "h": 49,
+          "storage": "touchuibar__pack"
+        }
+      }
+    },
+    {
+      "name": "_darrow",
+      "left": 89,
+      "top": 111,
+      "width": 50,
+      "height": 25,
+      "class": "layer",
+      "uiname": "_darrow",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 253,
+          "cy": 397,
+          "w": 50,
+          "h": 25,
+          "storage": "touchuibar__pack"
+        }
+      }
+    },
+    {
+      "name": "b_up",
+      "left": 195,
+      "top": 130,
+      "width": 50,
+      "height": 25,
+      "class": "copy",
+      "uiname": "b_up"
+    },
+    {
+      "name": "left",
+      "left": 1,
+      "top": 155,
+      "width": 130,
+      "height": 130,
+      "class": "copy",
+      "uiname": "left"
+    },
+    {
+      "name": "right",
+      "left": 309,
+      "top": 155,
+      "width": 130,
+      "height": 130,
+      "class": "copy",
+      "uiname": "right"
+    },
+    {
+      "name": "b_left",
+      "left": 130,
+      "top": 195,
+      "width": 25,
+      "height": 49,
+      "class": "copy",
+      "uiname": "b_left"
+    },
+    {
+      "name": "b_right",
+      "left": 285,
+      "top": 195,
+      "width": 25,
+      "height": 49,
+      "class": "copy",
+      "uiname": "b_right"
+    },
+    {
+      "name": "b_down",
+      "left": 195,
+      "top": 285,
+      "width": 50,
+      "height": 25,
+      "class": "copy",
+      "uiname": "b_down"
+    },
+    {
+      "name": "down",
+      "left": 155,
+      "top": 309,
+      "width": 130,
+      "height": 130,
+      "class": "copy",
+      "uiname": "down"
+    }
+  ],
+  "raw_result_keys": [
+    "_darrow",
+    "_larrow",
+    "_rarrow",
+    "_uarrow",
+    "b_down",
+    "b_left",
+    "b_right",
+    "b_up",
+    "base",
+    "down",
+    "item",
+    "left",
+    "right",
+    "up"
+  ]
+}

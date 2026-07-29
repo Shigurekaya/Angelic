@@ -1,0 +1,130 @@
+{
+  "source": "window_h.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "nametext",
+    "base",
+    "colorover",
+    "colorbase",
+    "colorframe",
+    "logo"
+  ],
+  "layer_count": 6,
+  "hotspot_count": 5,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 838,
+      "width": 1920,
+      "height": 402,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "click": {
+          "ox": 1623,
+          "oy": 141,
+          "w": 54,
+          "h": 56,
+          "storage": ""
+        },
+        "text": {
+          "ox": 468,
+          "oy": 95,
+          "w": 1154,
+          "h": 102,
+          "storage": ""
+        },
+        "name": {
+          "ox": 34,
+          "oy": 90,
+          "w": 425,
+          "h": 61,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 1920,
+          "h": 402,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "colorbase",
+      "left": 0,
+      "top": 838,
+      "width": 1920,
+      "height": 402,
+      "class": "layer",
+      "uiname": "colorbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 286,
+          "w": 1920,
+          "h": 402,
+          "storage": "window_h__pack"
+        }
+      }
+    },
+    {
+      "name": "colorframe",
+      "left": 0,
+      "top": 838,
+      "width": 1920,
+      "height": 402,
+      "class": "layer",
+      "uiname": "colorframe",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 0,
+          "h": 0,
+          "storage": null
+        }
+      }
+    },
+    {
+      "name": "nametext",
+      "left": 38,
+      "top": 931,
+      "width": 417,
+      "height": 53,
+      "class": "area",
+      "uiname": "nametext"
+    },
+    {
+      "name": "colorover",
+      "left": 0,
+      "top": 937,
+      "width": 1920,
+      "height": 286,
+      "class": "layer",
+      "uiname": "colorover",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 1920,
+          "h": 286,
+          "storage": "window_h__pack"
+        }
+      }
+    }
+  ],
+  "raw_result_keys": [
+    "base",
+    "colorbase",
+    "colorframe",
+    "colorover",
+    "logo",
+    "nametext"
+  ]
+}

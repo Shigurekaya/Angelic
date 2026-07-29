@@ -1,0 +1,3431 @@
+{
+  "source": "btncustom.pbd",
+  "hotspots": [
+    {
+      "name": "_cholder",
+      "left": 0,
+      "top": 0,
+      "width": 134,
+      "height": 134,
+      "class": "layer",
+      "uiname": "_cholder",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 60,
+          "w": 134,
+          "h": 134,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "class": "base",
+      "uiname": "base"
+    },
+    {
+      "name": "page0",
+      "left": 465,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page0",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page1",
+      "left": 593,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page1",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page2",
+      "left": 721,
+      "top": 0,
+      "width": 163,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page2",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 163,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page3",
+      "left": 884,
+      "top": 0,
+      "width": 167,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page3",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 167,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page4",
+      "left": 1051,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page4",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page5",
+      "left": 1179,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page5",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page6",
+      "left": 1307,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page6",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "tab_window",
+      "left": 1420,
+      "top": 0,
+      "width": 234,
+      "height": 81,
+      "class": "button",
+      "uiname": "tab_window",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 234,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page7",
+      "left": 1455,
+      "top": 0,
+      "width": 102,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page7",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 102,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page8",
+      "left": 1557,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page8",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "tab_touch",
+      "left": 1654,
+      "top": 0,
+      "width": 218,
+      "height": 81,
+      "class": "button",
+      "uiname": "tab_touch",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 218,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page9",
+      "left": 1705,
+      "top": 0,
+      "width": 167,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page9",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 167,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "_cmd",
+      "left": 1,
+      "top": 2,
+      "width": 131,
+      "height": 130,
+      "class": "toggle",
+      "uiname": "_cmd",
+      "uistates": {
+        "qload": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 367,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "save": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 196,
+          "cy": 248,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "on": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 0,
+          "cy": 320,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "key_pageup": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 307,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 130,
+          "storage": ""
+        },
+        "load": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 310,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "dsave": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 196,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "prevscn": {
+          "ox": 40,
+          "oy": 29,
+          "cx": 336,
+          "cy": 135,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "vreplay": {
+          "ox": 42,
+          "oy": 25,
+          "cx": 311,
+          "cy": 418,
+          "w": 47,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "hide": {
+          "ox": 42,
+          "oy": 30,
+          "cx": 253,
+          "cy": 424,
+          "w": 49,
+          "h": 48,
+          "storage": "option_cmds__pack"
+        },
+        "title": {
+          "ox": 41,
+          "oy": 23,
+          "cx": 311,
+          "cy": 307,
+          "w": 50,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "nextscn": {
+          "ox": 40,
+          "oy": 29,
+          "cx": 260,
+          "cy": 130,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "over": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 134,
+          "cy": 60,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "none": {
+          "ox": 35,
+          "oy": 21,
+          "cx": 134,
+          "cy": 186,
+          "w": 62,
+          "h": 63,
+          "storage": "option_cmds__pack"
+        },
+        "custom": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 366,
+          "w": 58,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "text": {
+          "ox": 10,
+          "oy": 85,
+          "w": 112,
+          "h": 28,
+          "storage": ""
+        },
+        "backskip": {
+          "ox": 34,
+          "oy": 30,
+          "cx": 361,
+          "cy": 307,
+          "w": 60,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "key_pagedown": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 370,
+          "cy": 248,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "key_ctrl": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 312,
+          "cy": 248,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "click": {
+          "ox": 44,
+          "oy": 23,
+          "cx": 371,
+          "cy": 368,
+          "w": 44,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "skip": {
+          "ox": 39,
+          "oy": 30,
+          "cx": 311,
+          "cy": 368,
+          "w": 60,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "screen": {
+          "ox": 30,
+          "oy": 28,
+          "cx": 134,
+          "cy": 313,
+          "w": 71,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "next": {
+          "ox": 44,
+          "oy": 29,
+          "cx": 388,
+          "cy": 135,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "off": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 0,
+          "cy": 194,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "qsave": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 253,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "scnchart": {
+          "ox": 32,
+          "oy": 25,
+          "cx": 336,
+          "cy": 77,
+          "w": 68,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "vsave": {
+          "ox": 34,
+          "oy": 29,
+          "cx": 196,
+          "cy": 310,
+          "w": 62,
+          "h": 57,
+          "storage": "option_cmds__pack"
+        },
+        "qvsave": {
+          "ox": 34,
+          "oy": 29,
+          "cx": 134,
+          "cy": 384,
+          "w": 62,
+          "h": 57,
+          "storage": "option_cmds__pack"
+        },
+        "snapshot": {
+          "ox": 33,
+          "oy": 27,
+          "cx": 196,
+          "cy": 372,
+          "w": 66,
+          "h": 52,
+          "storage": "option_cmds__pack"
+        },
+        "option": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 248,
+          "w": 59,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "log": {
+          "ox": 38,
+          "oy": 29,
+          "cx": 352,
+          "cy": 0,
+          "w": 47,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "volume": {
+          "ox": 28,
+          "oy": 26,
+          "cx": 260,
+          "cy": 77,
+          "w": 76,
+          "h": 53,
+          "storage": "option_cmds__pack"
+        },
+        "prev": {
+          "ox": 35,
+          "oy": 29,
+          "cx": 251,
+          "cy": 0,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "backone": {
+          "ox": 41,
+          "oy": 29,
+          "cx": 303,
+          "cy": 0,
+          "w": 49,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "rclick": {
+          "ox": 44,
+          "oy": 23,
+          "cx": 371,
+          "cy": 429,
+          "w": 44,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "panic": {
+          "ox": 34,
+          "oy": 23,
+          "cx": 134,
+          "cy": 249,
+          "w": 64,
+          "h": 60,
+          "storage": "option_cmds__pack"
+        },
+        "auto": {
+          "ox": 47,
+          "oy": 29,
+          "cx": 399,
+          "cy": 0,
+          "w": 47,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "caption",
+      "left": 87,
+      "top": 19,
+      "width": 352,
+      "height": 43,
+      "class": "layer",
+      "uiname": "caption",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 500,
+          "w": 295,
+          "h": 43,
+          "storage": "option__pack"
+        },
+        "custom": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 4,
+          "cy": 155,
+          "w": 352,
+          "h": 43,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "preview_touch",
+      "left": 124,
+      "top": 81,
+      "width": 1796,
+      "height": 190,
+      "class": "area",
+      "uiname": "preview_touch"
+    },
+    {
+      "name": "_drag",
+      "left": 0,
+      "top": 136,
+      "width": 251,
+      "height": 60,
+      "class": "layer",
+      "uiname": "_drag",
+      "uistates": {
+        "text": {
+          "ox": 52,
+          "oy": 18,
+          "w": 199,
+          "h": 24,
+          "storage": ""
+        },
+        "deftext": {
+          "ox": 53,
+          "oy": 22,
+          "cx": 260,
+          "cy": 60,
+          "w": 143,
+          "h": 17,
+          "storage": "option_cmds__pack"
+        },
+        "arrow": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 251,
+          "h": 60,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "frame_qmenu",
+      "left": 132,
+      "top": 183,
+      "width": 1656,
+      "height": 67,
+      "class": "layer",
+      "uiname": "frame_qmenu",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 4,
+          "cy": 88,
+          "w": 1656,
+          "h": 67,
+          "storage": "btncustom__pack",
+          "opacity": 179
+        }
+      }
+    },
+    {
+      "name": "preview_qmenu",
+      "left": 172,
+      "top": 183,
+      "width": 1578,
+      "height": 67,
+      "class": "area",
+      "uiname": "preview_qmenu"
+    },
+    {
+      "name": "frame",
+      "left": 60,
+      "top": 285,
+      "width": 1800,
+      "height": 88,
+      "class": "layer",
+      "uiname": "frame",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 4,
+          "cy": 0,
+          "w": 1800,
+          "h": 88,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "icons_area",
+      "left": 89,
+      "top": 290,
+      "width": 1742,
+      "height": 78,
+      "class": "area",
+      "uiname": "icons_area"
+    },
+    {
+      "name": "item0",
+      "left": 89,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item0",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item1",
+      "left": 169,
+      "top": 290,
+      "width": 78,
+      "height": 78,
+      "class": "button",
+      "uiname": "item1",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item2",
+      "left": 248,
+      "top": 290,
+      "width": 78,
+      "height": 78,
+      "class": "button",
+      "uiname": "item2",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item3",
+      "left": 327,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item3",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item4",
+      "left": 406,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item4",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item5",
+      "left": 485,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item5",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item6",
+      "left": 565,
+      "top": 290,
+      "width": 78,
+      "height": 78,
+      "class": "button",
+      "uiname": "item6",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item7",
+      "left": 644,
+      "top": 290,
+      "width": 78,
+      "height": 78,
+      "class": "button",
+      "uiname": "item7",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item8",
+      "left": 723,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item8",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item9",
+      "left": 802,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item9",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item10",
+      "left": 881,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item10",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item11",
+      "left": 961,
+      "top": 290,
+      "width": 78,
+      "height": 78,
+      "class": "button",
+      "uiname": "item11",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item12",
+      "left": 1040,
+      "top": 290,
+      "width": 78,
+      "height": 78,
+      "class": "button",
+      "uiname": "item12",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item13",
+      "left": 1119,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item13",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item14",
+      "left": 1198,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item14",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item15",
+      "left": 1277,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item15",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item16",
+      "left": 1357,
+      "top": 290,
+      "width": 78,
+      "height": 78,
+      "class": "button",
+      "uiname": "item16",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item17",
+      "left": 1436,
+      "top": 290,
+      "width": 78,
+      "height": 78,
+      "class": "button",
+      "uiname": "item17",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item18",
+      "left": 1515,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item18",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item19",
+      "left": 1594,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item19",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item20",
+      "left": 1673,
+      "top": 290,
+      "width": 79,
+      "height": 78,
+      "class": "button",
+      "uiname": "item20",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 79,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item21",
+      "left": 1753,
+      "top": 290,
+      "width": 78,
+      "height": 78,
+      "class": "button",
+      "uiname": "item21",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "pad0",
+      "left": 143,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad0",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad1",
+      "left": 222,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad1",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad2",
+      "left": 301,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad2",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad3",
+      "left": 380,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad3",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad4",
+      "left": 459,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad4",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad5",
+      "left": 539,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad5",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad6",
+      "left": 618,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad6",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad7",
+      "left": 697,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad7",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad8",
+      "left": 776,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad8",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad9",
+      "left": 855,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad9",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad10",
+      "left": 935,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad10",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad11",
+      "left": 1014,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad11",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad12",
+      "left": 1093,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad12",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad13",
+      "left": 1172,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad13",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad14",
+      "left": 1251,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad14",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad15",
+      "left": 1331,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad15",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad16",
+      "left": 1410,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad16",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad17",
+      "left": 1489,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad17",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad18",
+      "left": 1568,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad18",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad19",
+      "left": 1647,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad19",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "pad20",
+      "left": 1727,
+      "top": 380,
+      "width": 52,
+      "height": 52,
+      "class": "toggle",
+      "uiname": "pad20",
+      "uistates": {
+        "over_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 424,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "over_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 458,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 8,
+          "oy": 8,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 390,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        },
+        "normal_off": {
+          "ox": 9,
+          "oy": 9,
+          "cx": 356,
+          "cy": 155,
+          "w": 34,
+          "h": 34,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "label_spc",
+      "left": 0,
+      "top": 388,
+      "width": 135,
+      "height": 36,
+      "class": "layer",
+      "uiname": "label_spc",
+      "uistates": {
+        "(~null~)": {
+          "ox": 42,
+          "oy": 7,
+          "cx": 492,
+          "cy": 155,
+          "w": 92,
+          "h": 21,
+          "storage": "btncustom__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 135,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "func0",
+      "left": 140,
+      "top": 471,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func0"
+    },
+    {
+      "name": "func1",
+      "left": 291,
+      "top": 471,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func1"
+    },
+    {
+      "name": "func2",
+      "left": 442,
+      "top": 471,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func2"
+    },
+    {
+      "name": "func3",
+      "left": 593,
+      "top": 471,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func3"
+    },
+    {
+      "name": "func4",
+      "left": 744,
+      "top": 471,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func4"
+    },
+    {
+      "name": "func5",
+      "left": 895,
+      "top": 471,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func5"
+    },
+    {
+      "name": "func6",
+      "left": 1046,
+      "top": 471,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func6"
+    },
+    {
+      "name": "func7",
+      "left": 1197,
+      "top": 471,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func7"
+    },
+    {
+      "name": "func8",
+      "left": 1348,
+      "top": 471,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func8"
+    },
+    {
+      "name": "func9",
+      "left": 1499,
+      "top": 471,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func9"
+    },
+    {
+      "name": "func10",
+      "left": 1650,
+      "top": 471,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func10"
+    },
+    {
+      "name": "func11",
+      "left": 140,
+      "top": 621,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func11"
+    },
+    {
+      "name": "func12",
+      "left": 291,
+      "top": 621,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func12"
+    },
+    {
+      "name": "func13",
+      "left": 442,
+      "top": 621,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func13"
+    },
+    {
+      "name": "func14",
+      "left": 593,
+      "top": 621,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func14"
+    },
+    {
+      "name": "func15",
+      "left": 744,
+      "top": 621,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func15"
+    },
+    {
+      "name": "func16",
+      "left": 895,
+      "top": 621,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func16"
+    },
+    {
+      "name": "func17",
+      "left": 1046,
+      "top": 621,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func17"
+    },
+    {
+      "name": "func18",
+      "left": 1197,
+      "top": 621,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func18"
+    },
+    {
+      "name": "func19",
+      "left": 1348,
+      "top": 621,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func19"
+    },
+    {
+      "name": "func20",
+      "left": 1499,
+      "top": 621,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func20"
+    },
+    {
+      "name": "func21",
+      "left": 1650,
+      "top": 621,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "func21"
+    },
+    {
+      "name": "sep_a",
+      "left": 89,
+      "top": 789,
+      "width": 4,
+      "height": 165,
+      "class": "layer",
+      "uiname": "sep_a",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 4,
+          "h": 165,
+          "storage": "btncustom__pack"
+        }
+      }
+    },
+    {
+      "name": "sep_b",
+      "left": 519,
+      "top": 789,
+      "width": 4,
+      "height": 165,
+      "class": "copy",
+      "uiname": "sep_b"
+    },
+    {
+      "name": "menulink",
+      "left": 962,
+      "top": 790,
+      "width": 349,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "menulink",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 313,
+          "h": 30,
+          "storage": ""
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "entouch",
+      "left": 1330,
+      "top": 790,
+      "width": 393,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "entouch",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 357,
+          "h": 30,
+          "storage": ""
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "qmlock",
+      "left": 1330,
+      "top": 790,
+      "width": 393,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "qmlock",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 357,
+          "h": 30,
+          "storage": ""
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "label_a2",
+      "left": 106,
+      "top": 801,
+      "width": 400,
+      "height": 32,
+      "class": "layer",
+      "uiname": "label_a2",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 400,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "label_a1",
+      "left": 535,
+      "top": 801,
+      "width": 400,
+      "height": 32,
+      "class": "layer",
+      "uiname": "label_a1",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 400,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "usedsave",
+      "left": 962,
+      "top": 844,
+      "width": 547,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "usedsave",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 511,
+          "h": 30,
+          "storage": ""
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sl_size",
+      "left": 125,
+      "top": 851,
+      "width": 298,
+      "height": 54,
+      "class": "slider",
+      "uiname": "sl_size",
+      "uistates": {
+        "over": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "normal": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "on": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 298,
+          "h": 54,
+          "storage": ""
+        },
+        "disable": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "knob": {
+          "ox": 15,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "rail": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 106,
+          "cy": 543,
+          "w": 288,
+          "h": 13,
+          "storage": "option__pack"
+        },
+        "dsbase": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 106,
+          "cy": 543,
+          "w": 288,
+          "h": 13,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sl_size_slider",
+      "left": 125,
+      "top": 851,
+      "width": 298,
+      "height": 54,
+      "class": "slider",
+      "uiname": "sl_size",
+      "uistates": {
+        "over": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "normal": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "on": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 298,
+          "h": 54,
+          "storage": ""
+        },
+        "disable": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "knob": {
+          "ox": 15,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "rail": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 106,
+          "cy": 543,
+          "w": 288,
+          "h": 13,
+          "storage": "option__pack"
+        },
+        "dsbase": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 106,
+          "cy": 543,
+          "w": 288,
+          "h": 13,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sl_opac",
+      "left": 555,
+      "top": 851,
+      "width": 298,
+      "height": 54,
+      "class": "slider",
+      "uiname": "sl_opac",
+      "uistates": {
+        "over": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "normal": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "on": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 298,
+          "h": 54,
+          "storage": ""
+        },
+        "disable": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "knob": {
+          "ox": 15,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "rail": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 106,
+          "cy": 543,
+          "w": 288,
+          "h": 13,
+          "storage": "option__pack"
+        },
+        "dsbase": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 106,
+          "cy": 543,
+          "w": 288,
+          "h": 13,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sl_opac_slider",
+      "left": 555,
+      "top": 851,
+      "width": 298,
+      "height": 54,
+      "class": "slider",
+      "uiname": "sl_opac",
+      "uistates": {
+        "over": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "normal": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "on": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 298,
+          "h": 54,
+          "storage": ""
+        },
+        "disable": {
+          "ox": 18,
+          "oy": 1,
+          "cx": 291,
+          "cy": 710,
+          "w": 50,
+          "h": 51,
+          "storage": "option__pack"
+        },
+        "knob": {
+          "ox": 15,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "rail": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 106,
+          "cy": 543,
+          "w": 288,
+          "h": 13,
+          "storage": "option__pack"
+        },
+        "dsbase": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 106,
+          "cy": 543,
+          "w": 288,
+          "h": 13,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sl_size_num_base",
+      "left": 448,
+      "top": 863,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "sl_size_num_base",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 323,
+          "cy": 760,
+          "w": 52,
+          "h": 29,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sl_size_num_val",
+      "left": 448,
+      "top": 863,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "sl_size_num_val",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 52,
+          "h": 29,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "sl_size_numbase",
+      "left": 448,
+      "top": 863,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "sl_size_num_base",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 323,
+          "cy": 760,
+          "w": 52,
+          "h": 29,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sl_size_value",
+      "left": 448,
+      "top": 863,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "sl_size_num_val",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 52,
+          "h": 29,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "sl_opac_num_base",
+      "left": 878,
+      "top": 863,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "sl_opac_num_base",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 323,
+          "cy": 760,
+          "w": 52,
+          "h": 29,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sl_opac_num_val",
+      "left": 878,
+      "top": 863,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "sl_opac_num_val",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 52,
+          "h": 29,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "sl_opac_numbase",
+      "left": 878,
+      "top": 863,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "sl_opac_num_base",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 323,
+          "cy": 760,
+          "w": 52,
+          "h": 29,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sl_opac_value",
+      "left": 878,
+      "top": 863,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "sl_opac_num_val",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 52,
+          "h": 29,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "useqvsave",
+      "left": 962,
+      "top": 898,
+      "width": 547,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "useqvsave",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 511,
+          "h": 30,
+          "storage": ""
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "helpbase",
+      "left": 27,
+      "top": 979,
+      "width": 731,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helpbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 8,
+          "cy": 0,
+          "w": 731,
+          "h": 77,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "helptext",
+      "left": 43,
+      "top": 979,
+      "width": 715,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helptext",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 672,
+          "h": 62,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "init",
+      "left": 923,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "init"
+    },
+    {
+      "name": "reset",
+      "left": 923,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "reset"
+    },
+    {
+      "name": "revert",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "revert"
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title"
+    },
+    {
+      "name": "_sysbtn",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_sysbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 326,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 442,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 384,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 315,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back"
+    },
+    {
+      "name": "ok",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "ok"
+    }
+  ]
+}

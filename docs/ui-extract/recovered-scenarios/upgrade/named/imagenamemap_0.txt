@@ -1,0 +1,28 @@
+#---------------------------------------------------------------
+# forSD012*_en
+
+#{NOTE} required ".png" suffix
+sd012aa.png	&meslangpbd("sd012aa")	_notjp
+sd012ab.png	&meslangpbd("sd012ab")	_notjp
+sd012ac.png	&meslangpbd("sd012ac")	_notjp
+sd012ba.png	&meslangpbd("sd012ba")	_notjp
+sd012ca.png	&meslangpbd("sd012ca")	_notjp
+sd012cb.png	&meslangpbd("sd012cb")	_notjp
+sd012cc.png	&meslangpbd("sd012cc")	_notjp
+sd012cd.png	&meslangpbd("sd012cd")	_notjp
+sd012da.png	&meslangpbd("sd012da")	_notjp
+sd012db.png	&meslangpbd("sd012db")	_notjp
+sd012dc.png	&meslangpbd("sd012dc")	_notjp
+sd012dd.png	&meslangpbd("sd012dd")	_notjp
+sd012de.png	&meslangpbd("sd012de")	_notjp
+sd012df.png	&meslangpbd("sd012df")	_notjp
+sd012dg.png	&meslangpbd("sd012dg")	_notjp
+sd012ea.png	&meslangpbd("sd012ea")	_notjp
+sd012eb.png	&meslangpbd("sd012eb")	_notjp
+sd012ec.png	&meslangpbd("sd012ec")	_notjp
+sd012ed.png	&meslangpbd("sd012ed")	_notjp
+sd012ee.png	&meslangpbd("sd012ee")	_notjp
+sd012ef.png	&meslangpbd("sd012ef")	_notjp
+sd012fa.png	&meslangpbd("sd012fa")	_notjp
+sd012ga.png	&meslangpbd("sd012ga")	_notjp
+sd012ha.png	&meslangpbd("sd012ha")	_notjp

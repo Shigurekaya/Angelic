@@ -1,0 +1,567 @@
+with (SystemConfig) {
+
+	//------------------------------
+	// 確認ダイアログデフォルト値
+	.ConfirmDialogDefaults = [
+		"askExit"      => true,
+		"askTitle"     => true,
+		"askInit"      => true,
+
+		"askLoad"      => true,
+		"askSave"      => true,
+		"askOverwrite" => true,
+		"askQLoad"     => true,
+		"askQSave"     => true,
+		"askDSave"     => true,
+
+		"askVSave"     => true,
+
+		"askNext"      => true,
+		"askBackTo"    => true,
+		"askJump"      => true,
+		"askFlow"      => true,
+
+		"askNextScn"   => true,
+		"askPrevScn"   => true,
+
+		"askMove"      => true,
+		"askSwap"      => true,
+		"askCopy"      => true,
+		"askDelete"    => true,
+
+		"askInitStand" => true,
+
+		"askResume"    => true,
+		];
+
+	.notifyQSave = .notifyQLoad = false;
+	.toggleSave = .toggleLoad = .toggleVoice = .toggleOption = true;
+
+	//------------------------------
+	// セーブロード画面
+	.commentFontFace = "*UserInputFont*"; // コメント入力フォント
+	.savedataCountPerPage = 12; // セーブロード1ページ当たりのアイテム個数
+///	.savedataThumSize = [ 174, 98 ]; // セーブ画面サムネサイズ（※小サムネ）
+	.saveThumbReplaceList = "savelist.csv"; // セーブサムネ差し替え
+
+	//------------------------------
+	// マウスジェスチャデフォルト
+	.mouseGestureDefaults = %[
+		"Left"  => "backskip",
+		"Right" => "skip",
+		"Up"    => "auto",
+		"Down"  => "save",
+		"Middle"=> "option",
+		// OS標準では2ボタンのうち手前側がXButton1なのでゲームの画面とは逆配置になる
+		"MouseX1" => "snapshot",
+		"MouseX2" => "vreplay",
+		];
+	.mouseGestureOptionIconList = [
+		"save",
+		"dsave",
+		"load",
+		"qsave",
+		"qload",
+		"option",
+		"prev",
+		"prevscn",
+		"backskip",
+		"backone",
+		"log",
+		"auto",
+		"skip",
+		"nextscn",
+		"next",
+		"scnchart",
+		"vreplay",
+		"qvsave",
+		"vsave",
+		"click",
+		"title",
+		"screen",
+		"snapshot",
+		"panic",
+		"none",
+		// for gamepad only
+		"key_pageup",
+		"key_pagedown",
+//		"key_esc",
+		"key_ctrl",
+		"rclick",
+		"volume"];
+	// ゲームパッド割り当てデフォルト
+	.GamePadExBindDefaults = [
+		VK_RETURN,  // A      : 左クリック（キーボード使用）
+		"escape",   // B      : 右クリック（このキーワードは特殊：rclick相当）
+		"vreplay",  // X      : 音声再生
+		"option",   // Y      : コンフィグ画面
+		VK_PRIOR,   // L1     : PageUpキー
+		VK_NEXT,    // R1     : PageDownキー
+		"backskip", // L2     : バックスキップ
+		"skip",     // R2     : スキップ
+		VK_CONTROL, // Select : Ctrlキー
+		"auto",     // Start  : オートモード
+		"save",     // L3     : セーブ画面
+		"volume",   // R3     : マスター音量調整
+		];
+	
+	//------------------------------
+	// タッチUI関連
+///	{ var iconsize = 110;
+///	.touchUIMaxSize = int(iconsize*1.5); // FullHDMode ? 130 :  88; // 最大サイズ
+///	.touchUIMinSize = int(iconsize*0.5); // FullHDMode ?  65 :  44;  // 最小サイズ
+///	.touchUIDefaultSize = iconsize;
+///	}
+	.touchUIDefaultOpacity = 128; // デフォルト不透明度(0-255)
+//	.touchUIDefaultList = "custom:prev:backone:log:auto:skip:next:volume:vreplay"; // デフォルト配置
+//	.touchUIDefaultList = "custom:save:load:qsave:qload:option:prev:backone:log:auto:skip:next:volume:vreplay:vsave:hide"; // デフォルト配置
+	.touchUIDefaultList = "custom:save:load:qsave:qload:option:prev:prevscn:backskip:backone:log:auto:skip:nextscn:next:scnchart:volume:vreplay:vsave:snapshot:hide:title";
+	.quickMenuDefaultList="custom/save:load:qsave:qload:option/prev:prevscn:backskip:backone:log:auto:skip:nextscn:next/scnchart:volume:vreplay:vsave:snapshot/hide/title";
+
+	.touchUIAllIconList = [
+		"custom",
+
+		"dsave",
+		"save",
+		"load",
+		"qsave",
+		"qload",
+		"option",
+
+		"volume",
+		"vreplay",
+		"vsave",
+		"qvsave",
+		"snapshot",
+		"scnchart",
+
+		"prev",
+		"prevscn",
+		"backskip",
+		"backone",
+		"log",
+		"auto",
+		"skip",
+		"nextscn",
+		"next",
+		"hide",
+		"title"];
+	.touchUIiconTraits = %[
+		"custom"  =>  1,
+		"empty"   => -1,
+		"base"    => -1,
+		"over"    => -1,
+
+		"qvsave"  => -1,
+		"dsave"   => -1,
+
+		"buttonSource" => true,
+		"uiSource" => true,
+		];
+
+	.quickConfClassTable = %[
+		"option"=> "QuickTextConfigPanel",
+		"volchg"=> "QuickVolumePanel",
+		"qload" => "QuickLoadPanel",
+		"load"  => "PopupLoadPanel",
+		"dsave" => "PopupSavePanel", //"ToggleDirectSaveButtonPanel",
+		"save"  => "PopupSavePanel", //"ToggleDirectSaveButtonPanel",
+		"vsave" => "ToggleVoiceSaveButtonPanel",
+		"qvsave"=> "ToggleVoiceSaveButtonPanel",
+		];
+	.quickConfClassList = [
+		"QuickTextConfigPanel",
+		"QuickVolumePanel",
+		"QuickLoadPanel",
+		"PopupLoadPanel",
+		"PopupSavePanel", //"ToggleDirectSaveButtonPanel",
+		"ToggleVoiceSaveButtonPanel" ];
+
+	//------------------------------
+	// ショートカットキー関連
+
+	// 割り当て機能一覧
+	.ShortCutBindTags = [
+		"save", "load", "dsave", "qsave", "qload", "option",
+		"screen", "click", "auto", "skip", "ctrl",
+		"nextscn", "next", "log", "pageup", "pagedown",
+		"backone", "backskip", "prevscn", "prev",
+		"scnchart", "title", "volume", "hide",
+		"vreplay", "vsave", "qvsave", "snapshot", "panic" ];
+	.ShortCutBindCaptions = %[
+	save:    "セーブ画面へ",
+	load:    "ロード画面へ",
+	dsave:   "ダイレクトセーブ",
+	qsave:   "クイックセーブ",
+	qload:   "クイックロード",
+	option:  "システム設定画面へ",
+	screen:  "画面サイズ切り替え",
+	click:   "メッセージ送り・決定",
+	auto:    "オートモード",
+	skip:    "スキップモード",
+	ctrl:    "Ctrlスキップ",
+
+	nextscn: "次のシーンに進む",
+	next:    "次の選択肢に進む",
+	log:     "バックログ画面へ",
+	pageup:  "バックログ時１画面上移動",
+	pagedown:"バックログ時１画面下移動",
+	backone: "１つ前のテキストに戻る",
+	backskip:"バックスキップ",
+	prevscn: "前のシーンに戻る",
+	prev:    "前の選択肢に戻る",
+	scnchart:"フローチャート画面へ",
+	title:   "タイトル画面へ",
+	volume:  "ボリューム調整",
+	hide:    "ウインドウ非表示",
+	vreplay: "音声リピート再生",
+	qvsave:  "お気に入りボイスの登録",
+	vsave:   "お気に入りボイス画面へ",
+	snapshot:"スクリーンショット",
+	panic:   "スクランブル",
+		];
+
+	// デフォルトバインド（void:割り当て無し／シフトキーコンビネーション:"S_"+VK_* ）
+	.ShortCutBindDefaultKeys = %[
+		"save"		=> [ VK_F2, "S_"+VK_S ],
+		"load"		=> [ VK_F3, VK_L ],
+		"dsave"		=>   VK_S,
+		"qsave"		=>   VK_F11,
+		"qload"		=>   VK_F12,
+		"option"	=>   VK_F8,
+		"screen"	=>   VK_F4,
+/**/	"click"		=>   VK_SPACE,
+		"auto"		=> [ VK_F6, VK_A ],
+		"skip"		=> [ VK_F7, VK_F ],
+/**/	"ctrl"		=>   void, //VK_CONTROL,
+		"nextscn"	=>   VK_N,
+		"next"		=>   VK_Q,
+		"log"		=> [ VK_F5, VK_R ],
+/**/	"pageup"	=>   void, //VK_PRIOR,
+/**/	"pagedown"	=>   void, //VK_NEXT,
+		"backone"	=>   VK_BACK,
+		"backskip"	=>   VK_D,
+		"prevscn"	=>   VK_P,
+		"prev"		=>   VK_B,
+		"scnchart"	=>   VK_W, //VK_C,
+		"title"		=>   VK_F10,
+		"volume"	=>   VK_HOME,
+		"hide"		=>   VK_DELETE,
+		"vreplay"	=>   VK_F9,
+		"vsave"		=>   "S_"+VK_V,
+		"qvsave"	=>   VK_V,
+		"snapshot"	=>   void, // PrtSc
+		"panic"		=>   void, // Esc
+		];
+	// 別のキーのエイリアスにする機能(各個複数キーの割り当て不可：1つのみ)
+	.ShortCutRemapKeyTable = %[
+/**/	"click"		=>   VK_RETURN,
+/**/	"ctrl"		=>   VK_CONTROL,
+/**/	"pageup"	=>   VK_PRIOR,
+/**/	"pagedown"	=>   VK_NEXT,
+		];
+	// 割り当て可能キー・名称一覧
+	.ShortCutBindableKeys = %[
+		VK_F1=>"F1",VK_F2=>"F2",VK_F3=>"F3",VK_F4=>"F4",VK_F5=>"F5",
+		VK_F6=>"F6",VK_F7=>"F7",VK_F8=>"F8",VK_F9=>"F9",VK_F10=>"F10",VK_F11=>"F11",VK_F12=>"F12",
+		VK_SPACE=>"Space",VK_INSERT=>"Insert",VK_DELETE=>"Delete",VK_HOME=>"Home",VK_END=>"End",
+		VK_NUMPAD0=>"Num0",VK_NUMPAD1=>"Num1",VK_NUMPAD2=>"Num2",VK_NUMPAD3=>"Num3",VK_NUMPAD4=>"Num4",
+		VK_NUMPAD5=>"Num5",VK_NUMPAD6=>"Num6",VK_NUMPAD7=>"Num7",VK_NUMPAD8=>"Num8",VK_NUMPAD9=>"Num9",
+		VK_0=>"0",VK_1=>"1",VK_2=>"2",VK_3=>"3",VK_4=>"4",VK_5=>"5",VK_6=>"6",VK_7=>"7",VK_8=>"8",VK_9=>"9",
+		VK_A=>"A",VK_B=>"B",VK_C=>"C",VK_D=>"D",VK_E=>"E",VK_F=>"F",VK_G=>"G",
+		VK_H=>"H",VK_I=>"I",VK_J=>"J",VK_K=>"K",VK_L=>"L",VK_M=>"M",VK_N=>"N",
+		VK_O=>"O",VK_P=>"P",VK_Q=>"Q",VK_R=>"R",VK_S=>"S",VK_T=>"T",VK_U=>"U",
+		VK_V=>"V",VK_W=>"W",VK_X=>"X",VK_Y=>"Y",VK_Z=>"Z",
+		];
+	// 固定キー情報
+	.ShortCutFixedBindKeys = %[
+		"click"    => "Enter",
+		"ctrl"     => "Control",
+		"pageup"   => "PgUp",
+		"pagedown" => "PgDown",
+		"backone"  => "BkSpc",
+		"snapshot" => "PrtSc",
+		"panic"    => "(ESC)",
+		];
+
+	// モディファイキー名称（CtrlやALTがありますが実際にはShiftしか対応していません）
+	.ShortCutModifyKeys = %[
+		/**/S:"SFT+", //"Shift+",
+		/**/C:"Control+", A:"ALT+", 
+		/**/SC:"Sft+Ctrl+", SA:"Sft+ALT+", CA:"Ctrl+ALT+",
+		/**/SCA:"Sft+Ctrl+ALT+" ];
+
+	// 割り当て無し時の表記
+///	.ShortCutNoBind = "- empty -";
+
+	// 割り当てキー入力時メッセージテキスト
+	.ShortCutInputHelp = "割り当てるキーを押すか選択してください\n${bindtext}";
+
+	// ${bindtext}フォーマット
+	.ShortCutInputBind = "『${caption}』";
+
+	.ShortCutDeleteHelp = "割り当てを解除するキーを押してください";
+	.ShortCutInputDialogBgColor = 0; // 背景カラー
+
+	.ShortCutInputDialogHalftone = -1; // E,N,Shift+Xを無効表示
+
+	.ShortCutMenuCaptionDetail = true; // メニューショートカット表記の割り当てマップ対応
+
+	.ShortCutInputDialogStorage = "option_keyinput"; // ダイアログ名
+
+	.splitMenuItemShortcut = true;
+
+	//------------------------------
+	// フローチャート関連
+///	.scnchartUiItemConsts = %[...];
+//	.scnchartUiLineTypes = [ "noroute", "sbox", "rbox", "hbox", "normal", "query", "sline", "rline" ]; // ライン種別（後ろの方が優先順位高い）
+///	.scnchartUiLineConsts = %[...];
+///	.scnchartUiDisableEffect = [ 0x80404040, ltPsHardLight ];
+	.scnchartUiSelectStorage = "select"; // チャート選択肢UI
+
+	//------------------------------
+	// クイックメニューのボタンヘルプチップテキスト
+	.windowHelpTexts = %[
+	custom:		"カスタマイズ",
+	hold:		"固定／解除",
+	dsave:		"ダイレクトセーブ",
+	save:		"セーブ画面",
+	load:		"ロード画面",
+	qsave:		"クイックセーブ",
+	qload:		"クイックロード",
+	option:		"システム設定画面",
+	prev:		"前の選択肢へ",
+	prevscn:	"前のシーンへ",
+	backskip:	"バックスキップ",
+	backone:	"前のテキストへ",
+	log:		"バックログ画面",
+	auto:		"オートモード",
+	skip:		"スキップモード",
+	nextscn:	"次のシーンへ",
+	next:		"次の選択肢へ",
+	scnchart:	"フローチャート",
+	volchg:		"マスター音量調整",
+	vreplay:	"音声リピート",
+	vsave:		"お気に入りボイス画面",
+	qvsave:		"お気に入りボイス登録",
+	hide:		"閉じる",
+	endreplay:	"回想を中断",
+	title:		"タイトル画面へ",
+	snapshot:	"スクリーンショット保存",
+
+	swap:		"ボタンを交換",
+
+	// 既読自動スキップ／ジャンプ通知
+	read_skip:     "既読自動スキップ開始",
+	read_paused:   "既読自動スキップ一時停止",
+	read_contskip: "既読自動スキップ再開",
+	read_endskip:  "既読自動スキップ解除",
+	read_doneskip: "既読自動スキップ完了",
+	read_jumped:   "既読自動ジャンプ完了",
+		];
+
+	//------------------------------
+	// フォント修飾テーブル -> data/font/ctxfontprefs.toml の定義に移動
+
+//	var numFont = "源ノ角ゴシックR", pageFont = "*番号", headFont = global.SystemHeaderFontFace, userFont = global.UserInputTextFontFace;
+	.drawTextParamMapTable = propDrawTextParamMapTable();
+
+	// バージョン情報は上記 "aboutdialog.text" に定義
+	aboutDialogConfig.drawtexttag   = "aboutdialog.text";
+	aboutDialogConfig.versionstring = "ver:${GetRevisionString.version}  ";
+
+///	.soundModeUnknownText = "No Data"; // 音楽鑑賞未オープン表記
+
+	// スクランブル画像・タイトル
+///	.scrambleFileList = [
+///		"scramble1" => "Instgram - ブラウザ",
+///		"scramble2" => "Yoozle検索 - ブラウザ",
+///		];
+
+	// CG鑑賞スクロール初期位置
+///	.cgViewInitialPosTable = [...];
+	.cgViewBaseColor = 0x80FFFFFF; // CG鑑賞透明部分ベースカラー
+
+	// 立ち絵鑑賞キャラ選択エフェクト
+	.exchviewSelectedCursorColor = 0x122228;
+	.exchviewSelectedCursorWidth = 4;
+	.exchviewSelectedListColor = 0x40FFFFFF;
+	.ExChViewTextUnsafeReplaceFace = .commentFontFace; // 立ち絵鑑賞ユーザー入力フォント
+
+	//立ち絵鑑賞のキャラ移動範囲  左右   下    上  （大きくするほど画面外に動かせる）
+///	.exchviewDragMoveRange =   %[  LR:800, B:400, T:2000 ];
+
+	//立ち絵鑑賞の表情バリエーション設定
+///	.exchviewFaceSuffixList = "h"; //"hnrde"; // サフィックス一覧
+///	.exchviewFaceSuffixMap = %[ ... ];
+	// 立ち絵鑑賞顔サムネ補正
+///	.exchviewFaceThumbOptions = %[...];
+///	.exchviewFaceSuffixShowAlways = %[ h:true, n:true ]; // ボタンは常に表示
+///	.exchviewCharCountMax = 9; // 最大追加可能人数
+
+
+	var fsz =
+	.defaultMessageFontSize = SizeCoef(26); // 26*1.5=39 | 通常のフォントサイズ（※Config.tjsのdefaultFontSizeと同じ値を記入すること）
+	.defaultMessageRubySize = 14; //SizeCoef(10); // Config.tjsと同じ値
+	.defaultMessageLineSpacing = SizeCoef(8); // 〃
+
+@if (CUSTOM_MULTILANG)
+	// 多言語対応
+	.multiLangLanguageTags = [ "jp", "en", "cn", "tw" ];
+	{	var debug = (debugWindowEnabled && !inXP3archivePacked);
+		// {NOTE} 日本語UI固定／多言語UIモード切り替え有無判定
+		if (false) { //!(Storages.isExistentStorage("_multilang.ini") || (debug && System.getArgument("-multilang") == "yes"))) {
+//			.multiLangLanguageTags.count = 1;
+			SystemConfig.fixUILanguage = true;
+			var force = System.getArgument("-forceuilang");
+			//System.inform(force+":"+debug+":"+.multiLangLanguageTags.find(force));
+			if (!(debug && .multiLangLanguageTags.find(force) >= 0)) System.setArgument("-forceuilang", "jp");
+		} else {
+//			SystemConfig.fixFullHDMovie = true; // FullHDムービー固定
+			SystemConfig.noPatchDetect = true;
+		}
+	}
+	.multiLangMenuMap = %[
+		jp:"&Japanese",
+		en:"&English",
+		cn:"Simplified &Chinese",
+		tw:"&Traditional Chinese",
+	];
+	.multiLangTitleCaption = true; // タイトルバー表記を言語別に指定
+	.multiLangFirstTag = "auto"; // 初回起動時言語（multiLangLanguageTags内の要素から１つもしくは"auto"）
+	.multiLangForceMultiLang = true; // multiLangLanguageTags.count == 2でも強制で多言語用設定にする
+	// 組み込みフォントサイズリスト [ 56, 48, 39, 32, 26, 20, 14, 10 ] 
+
+	.multiLangTextFontScale = 26/fsz; // ２言語同時表示の本文テキストスケール
+	.multiLangSingleFontScaleMap = %[ en: 32/fsz ]; // 英語のみ表示のときのフォントスケール
+	.multiLangSelectFontScale = 26/fsz; // 選択肢２言語同時表示時フォントスケール
+	.multiLangLineSpaceScale = 0.8;
+	.multiLangSingleLineSpaceScaleMap = %[ en:10/.defaultMessageLineSpacing ]; // １言語のみ表示の本文ラインスペーススケール（multiLangSingleFontScaleMapと同じフォーマット）
+	.multiLangRenderMsgwinAutoScale = true; // はみ出た場合の自動縮小処理
+	.AutoScaleFontSizeTable = [ 56, 48, 39, 32, 26, 20, 14, 10 ]; // [XXX] embfontlist.tjs より 組み込みスキップの登録リストと合わせる
+
+	.soundModeFontSize = %[ en:[ 18/*SizeCoef(20)*/, 15/*SizeCoef(15)*/, 12/*SizeCoef(10)*/ ] ]; // [TODO] EXTRA音楽鑑賞曲タイトルフォントサイズ
+
+	.AchFullCompAchievement = "allcomplete";// Steam実績オールコンプ実績名
+
+	// ファイルネームベース
+	MakeSystemLangMessageProxy([
+		"ExChViewCaptureFileBase",
+		"SaveSnapshotName",
+		]);
+	// コンフィグサンプルテキスト
+	with (.renderSampleConfig) {
+		.text1 = "ConfigPreviewText1";
+		.text2 = "ConfigPreviewText2";
+	}
+	@endif
+
+	.EditCommentDialogTextHeight = 36; // エンジン更新に伴うeditcommentパラメータ調整
+}
+function MakeSystemLangMessageProxy(tags, obj = SystemConfig) {
+	function _ { property proxy {
+		getter { return GetSystemLangMessage(this[0], this[1]); }
+		setter(v) { this[1] = v; }
+	} }
+	const prop = &_.proxy;
+	for (var i = tags.count; --i >= 0;) {
+		var tag = tags[i];
+		if (tag != "") &obj[tag] = prop incontextof [ tag, obj[tag] ];
+	}
+}
+function GetScnConvertLangList() {
+@if (CUSTOM_MULTILANG)
+	var r = [];
+	r.assign(SystemConfig.multiLangLanguageTags);
+	r.shift();
+	return r.join(",");
+@endif
+	return "";
+}
+
+function GetRouteName(scn) {
+	var map = SystemConfig.routeScenarioPrefixMap, route, src = (string)scn;
+	if (map && src != "") {
+@if (CUSTOM_USE_R18HACK) 
+		if (src.substr(0,2) == "x_") src = src.substr(2); // ルートアイコン判定修正
+@endif
+		for (var i = 0, tag = "*"; (tag != "" && i < 10); i++) {
+			var get = map[tag.toLowerCase()];
+			switch (typeof get) {
+			case "String": case "void":
+				route = get;
+				tag = void;
+				break;
+			case "Integer":
+				tag = src.substr(0, get);
+				break;
+			case "Object":
+				tag = get(scn, map);
+				break;
+			}
+		}
+	}
+	return route;
+}
+
+function GetClearFlag(prefix = "clear_", list = SystemConfig.clearFlagTagList) {
+	var r = %[];
+	var all = true, any = false;
+	if (list.count == 0) all = any = !!sf.clear; // [XXX]
+	else for (var i = 0, cnt = list.count; i < cnt; i++) {
+		var key = list[i];
+		if (key == "") continue;
+		var value = !!sf[prefix + key];
+		all &&= value;
+		any ||= value;
+		r[key] = value;
+	}
+	r.all = all;
+	r.any = any;
+	return r;
+}
+///function GetTitleImageFile(mode/*0:raw, 1:img, -1:num*/, idx = GetTitleImageFile.GetNum()) {...}
+///function SetupAfterButton(dic, ui, tag, flag) {...}
+
+// シナリオ検索が開く追加条件（立ち絵鑑賞オープン後）
+///function CheckSearchOpened() {...}
+property checkAnyClear { getter {
+	return tf.allseen || GetClearFlag().any;
+} }
+property checkAllClear { getter {
+	return tf.allseen || GetClearFlag().all;
+} }
+///function _get_eyecatch_random_image(sel = tf.lastSystemVoiceChara, format="アイキャッチ%srand", unknown = "サブ") {...}
+
+// [メガネ選択]マクロ翻訳
+///function _megane_select(onoff, defval, key = "SceneModeMeganeSelect") {...}
+
+// 環境初期化処理
+///function initialEnvironment(isFirst = false, tag) {...}
+
+
+function propDrawTextParamMapTable() {
+	function _{
+		property delayload { getter {
+			var ret, file = "ctxfontprefs";
+			if (debugWindowEnabled && typeof global.developMode != "undefined" && developMode) {
+				//dm(file, Scripts.getTraceString());
+				Plugins.link("toml.dll") if (typeof Scripts.tomlDecodeFromStorage == "undefined");
+				try {
+					ret = Scripts.tomlDecodeFromStorage(file+".toml");
+				} catch(e) {
+					System.inform(file+".toml: load failed.");
+				}
+				if (ret) with (Storages) (Dictionary.saveStruct incontextof ret)(.chopStorageExt(.getPlacedPath(file+".toml"))+".tjs", "b");
+			}
+			if (!ret) try {
+				ret = Scripts.evalStorage(file+".tjs");
+			} catch (e) {
+				System.inform(e.message);
+				ret = %[];
+			}
+			return &SystemConfig.drawTextParamMapTable = ret;
+		}  }
+	}
+	return &_.delayload incontextof global;
+}

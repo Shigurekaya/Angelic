@@ -1,0 +1,452 @@
+{
+  "source": "title_locale_cn.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "allbtns",
+    "start",
+    "load",
+    "continue",
+    "flowchart",
+    "extra",
+    "after",
+    "amv_pos0",
+    "system",
+    "amv_pos1",
+    "exit"
+  ],
+  "layer_count": 11,
+  "hotspot_count": 11,
+  "hotspots": [
+    {
+      "name": "start",
+      "left": 88,
+      "top": 984,
+      "width": 215,
+      "height": 96,
+      "class": "button",
+      "uiname": "start",
+      "uistates": {
+        "on": {
+          "ox": 44,
+          "oy": 22,
+          "cx": 0,
+          "cy": 278,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "over": {
+          "ox": 44,
+          "oy": 22,
+          "cx": 127,
+          "cy": 94,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "off": {
+          "ox": 46,
+          "oy": 24,
+          "cx": 254,
+          "cy": 140,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 215,
+          "h": 96,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "load",
+      "left": 306,
+      "top": 984,
+      "width": 215,
+      "height": 96,
+      "class": "button",
+      "uiname": "load",
+      "uistates": {
+        "on": {
+          "ox": 44,
+          "oy": 22,
+          "cx": 127,
+          "cy": 232,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "over": {
+          "ox": 44,
+          "oy": 22,
+          "cx": 127,
+          "cy": 277,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "off": {
+          "ox": 46,
+          "oy": 24,
+          "cx": 254,
+          "cy": 186,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 215,
+          "h": 96,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "continue",
+      "left": 525,
+      "top": 984,
+      "width": 215,
+      "height": 96,
+      "class": "button",
+      "uiname": "continue",
+      "uistates": {
+        "on": {
+          "ox": 44,
+          "oy": 22,
+          "cx": 0,
+          "cy": 186,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "over": {
+          "ox": 44,
+          "oy": 22,
+          "cx": 0,
+          "cy": 232,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "off": {
+          "ox": 46,
+          "oy": 24,
+          "cx": 254,
+          "cy": 317,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 215,
+          "h": 96,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "flowchart",
+      "left": 743,
+      "top": 984,
+      "width": 215,
+      "height": 96,
+      "class": "button",
+      "uiname": "flowchart",
+      "uistates": {
+        "on": {
+          "ox": 59,
+          "oy": 22,
+          "cx": 254,
+          "cy": 47,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "over": {
+          "ox": 59,
+          "oy": 22,
+          "cx": 254,
+          "cy": 0,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "off": {
+          "ox": 61,
+          "oy": 24,
+          "cx": 0,
+          "cy": 324,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 215,
+          "h": 96,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "extra",
+      "left": 962,
+      "top": 984,
+      "width": 215,
+      "height": 96,
+      "class": "button",
+      "uiname": "extra",
+      "uistates": {
+        "on": {
+          "ox": 44,
+          "oy": 21,
+          "cx": 0,
+          "cy": 47,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "over": {
+          "ox": 44,
+          "oy": 21,
+          "cx": 127,
+          "cy": 47,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "off": {
+          "ox": 46,
+          "oy": 23,
+          "cx": 254,
+          "cy": 232,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 215,
+          "h": 96,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "after",
+      "left": 1180,
+      "top": 984,
+      "width": 215,
+      "height": 96,
+      "class": "button",
+      "uiname": "after",
+      "uistates": {
+        "on": {
+          "ox": 44,
+          "oy": 22,
+          "cx": 0,
+          "cy": 94,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "over": {
+          "ox": 44,
+          "oy": 22,
+          "cx": 0,
+          "cy": 140,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "off": {
+          "ox": 46,
+          "oy": 24,
+          "cx": 254,
+          "cy": 275,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 215,
+          "h": 96,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "amv_pos0",
+      "left": 1180,
+      "top": 984,
+      "width": 215,
+      "height": 96,
+      "class": "area",
+      "uiname": "amv_pos0"
+    },
+    {
+      "name": "amv_pos1",
+      "left": 1399,
+      "top": 984,
+      "width": 215,
+      "height": 96,
+      "class": "area",
+      "uiname": "amv_pos1"
+    },
+    {
+      "name": "system",
+      "left": 1399,
+      "top": 984,
+      "width": 215,
+      "height": 96,
+      "class": "button",
+      "uiname": "system",
+      "uistates": {
+        "on": {
+          "ox": 44,
+          "oy": 22,
+          "cx": 127,
+          "cy": 140,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "over": {
+          "ox": 44,
+          "oy": 22,
+          "cx": 127,
+          "cy": 186,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "off": {
+          "ox": 46,
+          "oy": 24,
+          "cx": 254,
+          "cy": 94,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 215,
+          "h": 96,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "exit",
+      "left": 1617,
+      "top": 984,
+      "width": 215,
+      "height": 96,
+      "class": "button",
+      "uiname": "exit",
+      "uistates": {
+        "on": {
+          "ox": 44,
+          "oy": 21,
+          "cx": 0,
+          "cy": 0,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "over": {
+          "ox": 44,
+          "oy": 21,
+          "cx": 127,
+          "cy": 0,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "off": {
+          "ox": 46,
+          "oy": 23,
+          "cx": 127,
+          "cy": 322,
+          "w": 215,
+          "h": 96,
+          "storage": "title_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 215,
+          "h": 96,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "allbtns",
+      "left": 132,
+      "top": 1005,
+      "width": 1656,
+      "height": 47,
+      "class": "cref",
+      "uiname": "allbtns",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "w": 1656,
+          "h": 47,
+          "storage": "psd://title_cn.psd/id/2993.bmp"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "w": 1656,
+          "h": 47,
+          "storage": "psd://title_cn.psd/id/2991.bmp"
+        },
+        "off": {
+          "ox": 2,
+          "oy": 2,
+          "w": 1652,
+          "h": 43,
+          "storage": "psd://title_cn.psd/id/2989.bmp"
+        }
+      }
+    }
+  ],
+  "raw_result_keys": [
+    "after",
+    "allbtns",
+    "amv_pos0",
+    "amv_pos1",
+    "continue",
+    "exit",
+    "extra",
+    "flowchart",
+    "load",
+    "start",
+    "system"
+  ]
+}

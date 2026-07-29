@@ -1,0 +1,293 @@
+{
+  "source": "extra_locale_cn.pbd",
+  "hotspots": [
+    {
+      "name": "to_cg",
+      "left": 1235,
+      "top": 0,
+      "width": 125,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_cg",
+      "uistates": {
+        "on": {
+          "ox": 19,
+          "oy": 23,
+          "cx": 122,
+          "cy": 35,
+          "w": 125,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "dot_on": {
+          "ox": 43,
+          "oy": 60,
+          "cx": 99,
+          "cy": 168,
+          "w": 38,
+          "h": 21,
+          "storage": "extra_locale_cn__pack"
+        },
+        "over": {
+          "ox": 19,
+          "oy": 23,
+          "cx": 122,
+          "cy": 0,
+          "w": 125,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "off": {
+          "ox": 26,
+          "oy": 30,
+          "cx": 108,
+          "cy": 70,
+          "w": 125,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 125,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        },
+        "dot_ov": {
+          "ox": 43,
+          "oy": 60,
+          "cx": 137,
+          "cy": 168,
+          "w": 38,
+          "h": 21,
+          "storage": "extra_locale_cn__pack"
+        }
+      }
+    },
+    {
+      "name": "to_scene",
+      "left": 1361,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_scene",
+      "uistates": {
+        "on": {
+          "ox": 24,
+          "oy": 23,
+          "cx": 0,
+          "cy": 91,
+          "w": 148,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "dot_on": {
+          "ox": 55,
+          "oy": 60,
+          "cx": 99,
+          "cy": 168,
+          "w": 38,
+          "h": 21,
+          "storage": "extra_locale_cn__pack"
+        },
+        "over": {
+          "ox": 24,
+          "oy": 23,
+          "cx": 0,
+          "cy": 126,
+          "w": 148,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "off": {
+          "ox": 30,
+          "oy": 30,
+          "cx": 99,
+          "cy": 126,
+          "w": 148,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        },
+        "dot_ov": {
+          "ox": 55,
+          "oy": 60,
+          "cx": 137,
+          "cy": 168,
+          "w": 38,
+          "h": 21,
+          "storage": "extra_locale_cn__pack"
+        }
+      }
+    },
+    {
+      "name": "to_stand",
+      "left": 1510,
+      "top": 0,
+      "width": 149,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_stand",
+      "uistates": {
+        "on": {
+          "ox": 25,
+          "oy": 23,
+          "cx": 0,
+          "cy": 161,
+          "w": 149,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "dot_on": {
+          "ox": 56,
+          "oy": 60,
+          "cx": 99,
+          "cy": 168,
+          "w": 38,
+          "h": 21,
+          "storage": "extra_locale_cn__pack"
+        },
+        "over": {
+          "ox": 25,
+          "oy": 23,
+          "cx": 99,
+          "cy": 91,
+          "w": 149,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "off": {
+          "ox": 32,
+          "oy": 30,
+          "cx": 99,
+          "cy": 147,
+          "w": 149,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 149,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        },
+        "dot_ov": {
+          "ox": 56,
+          "oy": 60,
+          "cx": 137,
+          "cy": 168,
+          "w": 38,
+          "h": 21,
+          "storage": "extra_locale_cn__pack"
+        }
+      }
+    },
+    {
+      "name": "to_voice",
+      "left": 1660,
+      "top": 0,
+      "width": 212,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_voice",
+      "uistates": {
+        "on": {
+          "ox": 45,
+          "oy": 23,
+          "cx": 0,
+          "cy": 0,
+          "w": 212,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "dot_on": {
+          "ox": 88,
+          "oy": 60,
+          "cx": 99,
+          "cy": 168,
+          "w": 38,
+          "h": 21,
+          "storage": "extra_locale_cn__pack"
+        },
+        "over": {
+          "ox": 45,
+          "oy": 23,
+          "cx": 0,
+          "cy": 35,
+          "w": 212,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "off": {
+          "ox": 52,
+          "oy": 30,
+          "cx": 0,
+          "cy": 70,
+          "w": 212,
+          "h": 81,
+          "storage": "extra_locale_cn__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 212,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        },
+        "dot_ov": {
+          "ox": 88,
+          "oy": 60,
+          "cx": 137,
+          "cy": 168,
+          "w": 38,
+          "h": 21,
+          "storage": "extra_locale_cn__pack"
+        }
+      }
+    },
+    {
+      "name": "alltabs",
+      "left": 1254,
+      "top": 23,
+      "width": 573,
+      "height": 35,
+      "class": "cref",
+      "uiname": "alltabs",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "w": 573,
+          "h": 35,
+          "storage": "psd://extra_cgscene_cn.psd/id/4232.bmp"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "w": 573,
+          "h": 35,
+          "storage": "psd://extra_cgscene_cn.psd/id/4224.bmp"
+        },
+        "off": {
+          "ox": 7,
+          "oy": 7,
+          "w": 559,
+          "h": 21,
+          "storage": "psd://extra_cgscene_cn.psd/id/4201.bmp"
+        }
+      }
+    }
+  ]
+}

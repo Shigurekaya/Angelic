@@ -1,0 +1,693 @@
+{
+  "source": "backlog.pbd",
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1440,
+      "class": "base",
+      "uiname": "base"
+    },
+    {
+      "name": "caption_search",
+      "left": 91,
+      "top": 17,
+      "width": 512,
+      "height": 49,
+      "class": "layer",
+      "uiname": "caption_search",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 512,
+          "h": 49,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "caption_backlog",
+      "left": 87,
+      "top": 19,
+      "width": 187,
+      "height": 43,
+      "class": "layer",
+      "uiname": "caption_backlog",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 1245,
+          "cy": 236,
+          "w": 187,
+          "h": 43,
+          "storage": "backlog__pack"
+        }
+      }
+    },
+    {
+      "name": "caption",
+      "left": 1578,
+      "top": 27,
+      "width": 342,
+      "height": 96,
+      "class": "layer",
+      "uiname": "caption",
+      "uistates": {
+        "text": {
+          "ox": 53,
+          "oy": 24,
+          "w": 280,
+          "h": 48,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 342,
+          "h": 96,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "chapter",
+      "left": 1580,
+      "top": 28,
+      "width": 340,
+      "height": 93,
+      "class": "layer",
+      "uiname": "chapter",
+      "uistates": {
+        "base": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 191,
+          "w": 340,
+          "h": 93,
+          "storage": "backlog__pack"
+        },
+        "text": {
+          "ox": 51,
+          "oy": 23,
+          "w": 280,
+          "h": 48,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "block",
+      "left": 56,
+      "top": 136,
+      "width": 1737,
+      "height": 200,
+      "class": "area",
+      "uiname": "block",
+      "uistates": {
+        "text": {
+          "ox": 573,
+          "oy": 22,
+          "w": 1153,
+          "h": 167,
+          "storage": ""
+        },
+        "name": {
+          "ox": 11,
+          "oy": 22,
+          "w": 520,
+          "h": 49,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 1737,
+          "h": 200,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "vreplay",
+      "left": 61,
+      "top": 152,
+      "width": 1721,
+      "height": 174,
+      "class": "sysbutton",
+      "uiname": "vreplay",
+      "uistates": {
+        "on": {
+          "ox": 474,
+          "oy": 102,
+          "cx": 979,
+          "cy": 236,
+          "w": 41,
+          "h": 49,
+          "storage": "backlog__pack"
+        },
+        "over": {
+          "ox": 474,
+          "oy": 102,
+          "cx": 1028,
+          "cy": 236,
+          "w": 41,
+          "h": 49,
+          "storage": "backlog__pack"
+        },
+        "off": {
+          "ox": 474,
+          "oy": 102,
+          "cx": 930,
+          "cy": 236,
+          "w": 41,
+          "h": 49,
+          "storage": "backlog__pack"
+        },
+        "nosave": {
+          "ox": 470,
+          "oy": 102,
+          "w": 50,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        },
+        "hitarea": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 1721,
+          "h": 174,
+          "storage": "backlog__pack"
+        }
+      }
+    },
+    {
+      "name": "top",
+      "left": 1794,
+      "top": 152,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "top",
+      "uistates": {
+        "on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 720,
+          "cy": 236,
+          "w": 34,
+          "h": 33,
+          "storage": "backlog__pack"
+        },
+        "over": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 753,
+          "cy": 236,
+          "w": 34,
+          "h": 33,
+          "storage": "backlog__pack"
+        },
+        "off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 687,
+          "cy": 236,
+          "w": 34,
+          "h": 33,
+          "storage": "backlog__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "pageup",
+      "left": 1794,
+      "top": 191,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "pageup",
+      "uistates": {
+        "on": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 1209,
+          "cy": 236,
+          "w": 33,
+          "h": 32,
+          "storage": "backlog__pack"
+        },
+        "over": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 1663,
+          "cy": 178,
+          "w": 33,
+          "h": 32,
+          "storage": "backlog__pack"
+        },
+        "off": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 1560,
+          "cy": 246,
+          "w": 33,
+          "h": 32,
+          "storage": "backlog__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "slider",
+      "left": 1792,
+      "top": 252,
+      "width": 40,
+      "height": 615,
+      "class": "slider",
+      "uiname": "slider",
+      "uistates": {
+        "rail": {
+          "ox": 14,
+          "oy": 0,
+          "cx": 0,
+          "cy": 178,
+          "w": 13,
+          "h": 615,
+          "storage": "backlog__pack"
+        },
+        "on": {
+          "ox": 3,
+          "oy": 256,
+          "cx": 1560,
+          "cy": 178,
+          "w": 34,
+          "h": 103,
+          "storage": "backlog__pack"
+        },
+        "over": {
+          "ox": 3,
+          "oy": 256,
+          "cx": 1432,
+          "cy": 236,
+          "w": 34,
+          "h": 103,
+          "storage": "backlog__pack"
+        },
+        "normal": {
+          "ox": 3,
+          "oy": 256,
+          "cx": 1560,
+          "cy": 212,
+          "w": 34,
+          "h": 103,
+          "storage": "backlog__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 255,
+          "w": 40,
+          "h": 104,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "jump",
+      "left": 418,
+      "top": 254,
+      "width": 50,
+      "height": 50,
+      "class": "sysbutton",
+      "uiname": "jump",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 7,
+          "cx": 550,
+          "cy": 241,
+          "w": 50,
+          "h": 35,
+          "storage": "backlog__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 7,
+          "cx": 1663,
+          "cy": 212,
+          "w": 50,
+          "h": 35,
+          "storage": "backlog__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 7,
+          "cx": 550,
+          "cy": 191,
+          "w": 50,
+          "h": 35,
+          "storage": "backlog__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 50,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "vsave",
+      "left": 475,
+      "top": 254,
+      "width": 50,
+      "height": 50,
+      "class": "systoggle",
+      "uiname": "vsave",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 3,
+          "cx": 1165,
+          "cy": 236,
+          "w": 48,
+          "h": 44,
+          "storage": "backlog__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 3,
+          "cx": 1077,
+          "cy": 236,
+          "w": 48,
+          "h": 44,
+          "storage": "backlog__pack"
+        },
+        "normal": {
+          "ox": 0,
+          "oy": 3,
+          "cx": 1121,
+          "cy": 236,
+          "w": 48,
+          "h": 44,
+          "storage": "backlog__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 50,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "frame",
+      "left": 59,
+      "top": 331,
+      "width": 1681,
+      "height": 4,
+      "class": "syslayer",
+      "uiname": "frame",
+      "uistates": {
+        "line": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 174,
+          "w": 1681,
+          "h": 4,
+          "storage": "backlog__pack"
+        }
+      }
+    },
+    {
+      "name": "pagedown",
+      "left": 1794,
+      "top": 891,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "pagedown",
+      "uistates": {
+        "on": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 854,
+          "cy": 236,
+          "w": 33,
+          "h": 32,
+          "storage": "backlog__pack"
+        },
+        "over": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 1592,
+          "cy": 246,
+          "w": 33,
+          "h": 32,
+          "storage": "backlog__pack"
+        },
+        "off": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 886,
+          "cy": 236,
+          "w": 33,
+          "h": 32,
+          "storage": "backlog__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "end",
+      "left": 1794,
+      "top": 930,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "end",
+      "uistates": {
+        "on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 786,
+          "cy": 236,
+          "w": 34,
+          "h": 34,
+          "storage": "backlog__pack"
+        },
+        "over": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 653,
+          "cy": 236,
+          "w": 34,
+          "h": 34,
+          "storage": "backlog__pack"
+        },
+        "off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 820,
+          "cy": 236,
+          "w": 34,
+          "h": 34,
+          "storage": "backlog__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "search",
+      "left": 55,
+      "top": 977,
+      "width": 81,
+      "height": 70,
+      "class": "button",
+      "uiname": "search",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 410,
+          "cy": 191,
+          "w": 81,
+          "h": 70,
+          "storage": "backlog__pack"
+        },
+        "icon": {
+          "ox": 24,
+          "oy": 15,
+          "cx": 615,
+          "cy": 236,
+          "w": 38,
+          "h": 38,
+          "storage": "backlog__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 340,
+          "cy": 191,
+          "w": 81,
+          "h": 70,
+          "storage": "backlog__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 480,
+          "cy": 191,
+          "w": 81,
+          "h": 70,
+          "storage": "backlog__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 81,
+          "h": 70,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "caption2",
+      "left": 156,
+      "top": 977,
+      "width": 1401,
+      "height": 70,
+      "class": "layer",
+      "uiname": "caption2",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 1401,
+          "h": 70,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "flowchart",
+      "left": 923,
+      "top": 987,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "flowchart"
+    },
+    {
+      "name": "navi2",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "area",
+      "uiname": "navi2"
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title"
+    },
+    {
+      "name": "_navi",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_navi",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 930,
+          "cy": 178,
+          "w": 315,
+          "h": 58,
+          "storage": "backlog__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 1245,
+          "cy": 178,
+          "w": 315,
+          "h": 58,
+          "storage": "backlog__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 615,
+          "cy": 178,
+          "w": 315,
+          "h": 58,
+          "storage": "backlog__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 315,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back"
+    }
+  ]
+}

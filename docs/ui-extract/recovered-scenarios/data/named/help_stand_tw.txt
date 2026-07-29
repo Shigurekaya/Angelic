@@ -1,0 +1,89 @@
+# 立ち絵鑑賞画面ヘルプテキスト
+
+back	title	title2
+	回到標題界面。
+
+to_cg
+	跳轉到ＣＧ鑑賞界面。
+to_scene
+	跳轉到場景鑑賞畫面。
+to_voice
+	跳轉到語音收藏夾界面。
+to_stand
+	跳轉到立繪鑑賞界面。
+
+?meswin
+	顯示文本框，文本框中可以輸入任意文字。	（保存圖片或隱藏ＵＩ時文字不會消失）
+
+edit_save
+	將現在的狀態以文件形式保存。	點擊時按住Shift鍵可以臨時保存在記憶體中。
+
+edit_load
+	讀取文件，還原之前保存的狀態。點擊時按住Shift鍵可以讀取臨時保存在記憶體中的數據。
+
+edit_hide
+	暫時隱藏UI，允許用拖動的方式移動角色或背景圖片（固定壁紙除外）的位置。（與右鍵的功能相同）
+
+edit_capt
+	隱藏UI並截圖保存。
+
+edit_mybg
+	導入外部圖片當做背景。
+
+edit_init
+	將選中的角色初始化。（位置也將初始化）	點擊時按住Shift鍵可以直接將立繪鑑賞模式初始化。
+
+
+dress_frame	HELP_CHSEL_DRESS
+	更改當前角色的服裝。
+pose_frame	HELP_CHSEL_DIFF
+	更改當前角色的姿勢。
+face_help	HELP_CHSEL_FACE
+	更改當前角色的表情。
+
+fopt_h	fopt_n	fopt_r	fopt_d	fopt_e
+	為表情添加紅暈。取消勾選將恢復標準狀態。
+
+chzoom_frame
+	更改當前角色的大小。（不會影響與其他角色的前後關係）
+
+stage_frame	HELP_BGSEL_STAGE
+	更改背景。
+time_frame	HELP_BGSEL_TIME
+	切換背景的時間段/特殊差分。
+?chsel_pageup	?chsel_pagedown	?bgsel_pageup	?bgsel_pagedown
+	滾動縮圖一覽。
+?chsel_close	?bgsel_close
+	關閉縮圖一覽顯示。	點擊右鍵也可以關閉。
+
+chlock
+	鎖定當前操作中的角色的位置和大小，並使其無法移動且無法移除。
+
+?chadd
+	添加可操作的角色。
+?chpale
+	將非正在操作的角色半透明化。打開這個選項後，拖動操作將只對當前角色有效。
+
+chdel
+	移除當前正在操作的角色。${!_chlocked?"":"\n※請先解除當前角色的鎖定再進行移除操作"}
+?chfront
+	更改操作對象時，是否將選中的對象移到最前。
+?chsort
+	將角色一覽從大到小按順序排列。
+
+
+HELP_DRAG
+	點擊選中角色，拖動滑鼠移動角色。
+HELP_NODRAG
+	這個角色目前不能移動。請先選中角色並解除鎖定，然後再進行移動操作。
+
+HELP_CHIDX
+	更改操作角色。
+HELP_CHIDX_DRAG
+	更改操作角色。	拖動滑鼠可更改顯示順序。
+
+HELP_CHDEL
+	移除此角色。
+
+HELP_CHDRAG
+	請拖動至想要移動的位置。

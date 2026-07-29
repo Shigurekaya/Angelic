@@ -10,7 +10,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 TLG = ROOT / "docs/ui-extract/pixel-reverse/tlg-png"
-PBD = ROOT / "docs/ui-extract/pixel-reverse/pbd-layers"
+PBD = ROOT / "docs/ui-extract/pixel-reverse/pbd2json-layers"
 PREV = ROOT / "ui-preview/assets"
 RENPY = ROOT.parent / "renpy-angelic/game/images/angelic"
 
@@ -216,7 +216,8 @@ def bake_cg() -> None:
 
 
 def sync_to_renpy() -> None:
-    for name in ("settings", "load", "flowchart", "cg", "packs", "hotspots", "locale"):
+    # Never rmtree+replace settings — that clobbers pbd-uistates plates.
+    for name in ("load", "flowchart", "cg", "packs", "hotspots", "locale"):
         src = PREV / name
         if not src.exists():
             continue
@@ -232,7 +233,8 @@ def main() -> None:
     packs = ensure(PREV / "packs")
     for p in TLG.glob("*.png"):
         shutil.copy2(p, packs / p.name)
-    bake_settings()
+    # Settings plates come from bake_settings_from_pbd_uistates.py only.
+    # Do NOT bake_settings() here — it overwrites 1:1 plates with empty atlas dumps.
     bake_load()
     bake_flowchart()
     bake_cg()

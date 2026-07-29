@@ -1,0 +1,392 @@
+{
+  "source": "phonechat.pbd",
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "talk_max": {
+          "ox": 537,
+          "oy": 129,
+          "w": 640,
+          "h": 169,
+          "storage": ""
+        },
+        "self_max": {
+          "ox": 679,
+          "oy": 129,
+          "w": 640,
+          "h": 169,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "scroll",
+      "left": 316,
+      "top": 18,
+      "width": 1222,
+      "height": 844,
+      "class": "area",
+      "uiname": "scroll",
+      "uistates": {
+        "talk": {
+          "ox": 14,
+          "oy": 37,
+          "w": 160,
+          "h": 160,
+          "storage": ""
+        },
+        "self": {
+          "ox": 1050,
+          "oy": 37,
+          "w": 160,
+          "h": 160,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "top",
+      "left": 1564,
+      "top": 45,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "top",
+      "uistates": {
+        "on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 13,
+          "cy": 426,
+          "w": 34,
+          "h": 33,
+          "storage": "phonechat__pack"
+        },
+        "over": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 47,
+          "cy": 426,
+          "w": 34,
+          "h": 33,
+          "storage": "phonechat__pack"
+        },
+        "off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 47,
+          "cy": 392,
+          "w": 34,
+          "h": 33,
+          "storage": "phonechat__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "pageup",
+      "left": 1564,
+      "top": 84,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "pageup",
+      "uistates": {
+        "on": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 13,
+          "cy": 523,
+          "w": 33,
+          "h": 32,
+          "storage": "phonechat__pack"
+        },
+        "over": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 46,
+          "cy": 523,
+          "w": 33,
+          "h": 32,
+          "storage": "phonechat__pack"
+        },
+        "off": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 46,
+          "cy": 491,
+          "w": 33,
+          "h": 32,
+          "storage": "phonechat__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "talk",
+      "left": 515,
+      "top": 107,
+      "width": 76,
+      "height": 76,
+      "class": "layer",
+      "uiname": "talk",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 13,
+          "cy": 282,
+          "w": 76,
+          "h": 76,
+          "storage": "phonechat__pack"
+        },
+        "box": {
+          "ox": 22,
+          "oy": 22,
+          "w": 32,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "self",
+      "left": 1265,
+      "top": 107,
+      "width": 76,
+      "height": 76,
+      "class": "layer",
+      "uiname": "self",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 13,
+          "cy": 206,
+          "w": 76,
+          "h": 76,
+          "storage": "phonechat__pack"
+        },
+        "box": {
+          "ox": 22,
+          "oy": 22,
+          "w": 32,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "slider",
+      "left": 1562,
+      "top": 134,
+      "width": 40,
+      "height": 636,
+      "class": "slider",
+      "uiname": "slider",
+      "uistates": {
+        "rail": {
+          "ox": 14,
+          "oy": 11,
+          "cx": 0,
+          "cy": 0,
+          "w": 13,
+          "h": 615,
+          "storage": "phonechat__pack"
+        },
+        "on": {
+          "ox": 3,
+          "oy": 267,
+          "cx": 47,
+          "cy": 0,
+          "w": 34,
+          "h": 103,
+          "storage": "phonechat__pack"
+        },
+        "over": {
+          "ox": 3,
+          "oy": 267,
+          "cx": 13,
+          "cy": 103,
+          "w": 34,
+          "h": 103,
+          "storage": "phonechat__pack"
+        },
+        "normal": {
+          "ox": 3,
+          "oy": 267,
+          "cx": 13,
+          "cy": 0,
+          "w": 34,
+          "h": 103,
+          "storage": "phonechat__pack"
+        },
+        "knob": {
+          "ox": 0,
+          "oy": 266,
+          "w": 40,
+          "h": 104,
+          "storage": "",
+          "opacity": 128
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 40,
+          "h": 636,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "talk_arrow",
+      "left": 495,
+      "top": 135,
+      "width": 24,
+      "height": 29,
+      "class": "layer",
+      "uiname": "talk_arrow",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 13,
+          "cy": 584,
+          "w": 24,
+          "h": 29,
+          "storage": "phonechat__pack"
+        }
+      }
+    },
+    {
+      "name": "self_arrow",
+      "left": 1337,
+      "top": 135,
+      "width": 24,
+      "height": 29,
+      "class": "layer",
+      "uiname": "self_arrow",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 13,
+          "cy": 555,
+          "w": 24,
+          "h": 29,
+          "storage": "phonechat__pack"
+        }
+      }
+    },
+    {
+      "name": "pagedown",
+      "left": 1564,
+      "top": 784,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "pagedown",
+      "uistates": {
+        "on": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 46,
+          "cy": 459,
+          "w": 33,
+          "h": 32,
+          "storage": "phonechat__pack"
+        },
+        "over": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 13,
+          "cy": 491,
+          "w": 33,
+          "h": 32,
+          "storage": "phonechat__pack"
+        },
+        "off": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 13,
+          "cy": 459,
+          "w": 33,
+          "h": 32,
+          "storage": "phonechat__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "end",
+      "left": 1564,
+      "top": 823,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "end",
+      "uistates": {
+        "on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 47,
+          "cy": 358,
+          "w": 34,
+          "h": 34,
+          "storage": "phonechat__pack"
+        },
+        "over": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 13,
+          "cy": 392,
+          "w": 34,
+          "h": 34,
+          "storage": "phonechat__pack"
+        },
+        "off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 13,
+          "cy": 358,
+          "w": 34,
+          "h": 34,
+          "storage": "phonechat__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    }
+  ]
+}

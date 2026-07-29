@@ -1,0 +1,177 @@
+{
+  "source": "qconf_qvsave.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "switch_qvsave",
+    "qvsave",
+    "base"
+  ],
+  "layer_count": 3,
+  "hotspot_count": 3,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 1430,
+      "top": 951,
+      "width": 438,
+      "height": 78,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 438,
+          "h": 78,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "switch_qvsave",
+      "left": 1466,
+      "top": 972,
+      "width": 175,
+      "height": 38,
+      "class": "button",
+      "uiname": "switch_qvsave",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 13,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "icon": {
+          "ox": 9,
+          "oy": 12,
+          "cx": 64,
+          "cy": 289,
+          "w": 23,
+          "h": 15,
+          "storage": "qconf__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 89,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "icon_off": {
+          "ox": 9,
+          "oy": 12,
+          "cx": 64,
+          "cy": 289,
+          "w": 23,
+          "h": 15,
+          "storage": "qconf__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 51,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 175,
+          "h": 38,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "qvsave",
+      "left": 1661,
+      "top": 972,
+      "width": 175,
+      "height": 38,
+      "class": "toggle",
+      "uiname": "qvsave",
+      "uistates": {
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 89,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 51,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 51,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "on_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 13,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "qv_on": {},
+        "vs_off": {},
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 175,
+          "h": 38,
+          "storage": ""
+        },
+        "on_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 13,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "qv_ovr": {},
+        "qv_off": {},
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 89,
+          "w": 175,
+          "h": 38,
+          "storage": "qconf__pack"
+        },
+        "vs_on": {},
+        "vs_ovr": {}
+      }
+    }
+  ],
+  "raw_result_keys": [
+    "base",
+    "qvsave",
+    "switch_qvsave"
+  ]
+}

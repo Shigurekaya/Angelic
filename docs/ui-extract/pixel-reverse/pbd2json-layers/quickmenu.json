@@ -1,0 +1,2062 @@
+{
+  "source": "quickmenu.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "endreplay",
+    "title",
+    "hide",
+    "snapshot",
+    "vsave",
+    "qvsave",
+    "vreplay",
+    "volchg",
+    "scnchart",
+    "next",
+    "nextscn",
+    "skip",
+    "auto",
+    "log",
+    "backone",
+    "backskip",
+    "prevscn",
+    "prev",
+    "option",
+    "qload",
+    "qsave",
+    "load",
+    "save",
+    "dsave",
+    "custom",
+    "hold",
+    "help_base",
+    "base"
+  ],
+  "layer_count": 28,
+  "hotspot_count": 28,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 952,
+      "width": 1920,
+      "height": 128,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "att": {
+          "ox": 350,
+          "oy": 64,
+          "w": 1495,
+          "h": 64,
+          "storage": ""
+        },
+        "margin": {
+          "ox": 1841,
+          "oy": 80,
+          "w": 79,
+          "h": 48,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 1920,
+          "h": 128,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "hold",
+      "left": 358,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "toggle",
+      "uiname": "hold",
+      "uistates": {
+        "normal": {
+          "ox": 6,
+          "oy": 5,
+          "cx": 89,
+          "cy": 141,
+          "w": 42,
+          "h": 49,
+          "storage": "quickmenu__pack"
+        },
+        "over_on": {
+          "ox": 8,
+          "oy": 10,
+          "cx": 310,
+          "cy": 141,
+          "w": 38,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "normal_on": {
+          "ox": 6,
+          "oy": 8,
+          "cx": 254,
+          "cy": 376,
+          "w": 42,
+          "h": 42,
+          "storage": "quickmenu__pack"
+        },
+        "on_on": {
+          "ox": 8,
+          "oy": 10,
+          "cx": 272,
+          "cy": 141,
+          "w": 38,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "on_off": {
+          "ox": 8,
+          "oy": 7,
+          "cx": 177,
+          "cy": 180,
+          "w": 38,
+          "h": 45,
+          "storage": "quickmenu__pack"
+        },
+        "over_off": {
+          "ox": 8,
+          "oy": 7,
+          "cx": 177,
+          "cy": 225,
+          "w": 38,
+          "h": 45,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 6,
+          "oy": 8,
+          "cx": 254,
+          "cy": 376,
+          "w": 42,
+          "h": 42,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 6,
+          "oy": 5,
+          "cx": 89,
+          "cy": 141,
+          "w": 42,
+          "h": 49,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "custom",
+      "left": 413,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "custom",
+      "uistates": {
+        "on": {
+          "ox": 8,
+          "oy": 10,
+          "cx": 177,
+          "cy": 346,
+          "w": 38,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 8,
+          "oy": 10,
+          "cx": 89,
+          "cy": 266,
+          "w": 38,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 6,
+          "oy": 8,
+          "cx": 254,
+          "cy": 334,
+          "w": 42,
+          "h": 42,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 8,
+          "oy": 10,
+          "cx": 89,
+          "cy": 266,
+          "w": 38,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 8,
+          "oy": 10,
+          "cx": 89,
+          "cy": 266,
+          "w": 38,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 6,
+          "oy": 8,
+          "cx": 254,
+          "cy": 334,
+          "w": 42,
+          "h": 42,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "dsave",
+      "left": 475,
+      "top": 1026,
+      "width": 102,
+      "height": 54,
+      "class": "button",
+      "uiname": "dsave",
+      "uistates": {
+        "on": {
+          "ox": 6,
+          "oy": 15,
+          "cx": 0,
+          "cy": 129,
+          "w": 89,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 6,
+          "oy": 15,
+          "cx": 0,
+          "cy": 102,
+          "w": 89,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 4,
+          "oy": 13,
+          "cx": 96,
+          "cy": 71,
+          "w": 93,
+          "h": 31,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 6,
+          "oy": 15,
+          "cx": 0,
+          "cy": 102,
+          "w": 89,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 102,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 6,
+          "oy": 15,
+          "cx": 0,
+          "cy": 102,
+          "w": 89,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 4,
+          "oy": 13,
+          "cx": 96,
+          "cy": 71,
+          "w": 93,
+          "h": 31,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "save",
+      "left": 475,
+      "top": 1026,
+      "width": 102,
+      "height": 54,
+      "class": "button",
+      "uiname": "save",
+      "uistates": {
+        "on": {
+          "ox": 17,
+          "oy": 15,
+          "cx": 0,
+          "cy": 272,
+          "w": 67,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 17,
+          "oy": 15,
+          "cx": 0,
+          "cy": 299,
+          "w": 67,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 16,
+          "oy": 13,
+          "cx": 0,
+          "cy": 241,
+          "w": 70,
+          "h": 31,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 17,
+          "oy": 15,
+          "cx": 0,
+          "cy": 299,
+          "w": 67,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 102,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 17,
+          "oy": 15,
+          "cx": 0,
+          "cy": 299,
+          "w": 67,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 16,
+          "oy": 13,
+          "cx": 0,
+          "cy": 241,
+          "w": 70,
+          "h": 31,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "load",
+      "left": 585,
+      "top": 1026,
+      "width": 84,
+      "height": 54,
+      "class": "button",
+      "uiname": "load",
+      "uistates": {
+        "on": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 0,
+          "cy": 187,
+          "w": 72,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 0,
+          "cy": 214,
+          "w": 72,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 4,
+          "oy": 12,
+          "cx": 0,
+          "cy": 156,
+          "w": 76,
+          "h": 31,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 0,
+          "cy": 214,
+          "w": 72,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 84,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 0,
+          "cy": 214,
+          "w": 72,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 4,
+          "oy": 12,
+          "cx": 0,
+          "cy": 156,
+          "w": 76,
+          "h": 31,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "qsave",
+      "left": 677,
+      "top": 1026,
+      "width": 104,
+      "height": 54,
+      "class": "button",
+      "uiname": "qsave",
+      "uistates": {
+        "on": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 281,
+          "cy": 71,
+          "w": 92,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 189,
+          "cy": 71,
+          "w": 92,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 4,
+          "oy": 12,
+          "cx": 0,
+          "cy": 71,
+          "w": 96,
+          "h": 31,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 189,
+          "cy": 71,
+          "w": 92,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 104,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 189,
+          "cy": 71,
+          "w": 92,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 4,
+          "oy": 12,
+          "cx": 0,
+          "cy": 71,
+          "w": 96,
+          "h": 31,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "qload",
+      "left": 789,
+      "top": 1026,
+      "width": 110,
+      "height": 54,
+      "class": "button",
+      "uiname": "qload",
+      "uistates": {
+        "on": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 98,
+          "cy": 44,
+          "w": 98,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 0,
+          "cy": 44,
+          "w": 98,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 4,
+          "oy": 12,
+          "cx": 261,
+          "cy": 0,
+          "w": 102,
+          "h": 31,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 0,
+          "cy": 44,
+          "w": 98,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 110,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 6,
+          "oy": 14,
+          "cx": 0,
+          "cy": 44,
+          "w": 98,
+          "h": 27,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 4,
+          "oy": 12,
+          "cx": 261,
+          "cy": 0,
+          "w": 102,
+          "h": 31,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "option",
+      "left": 907,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "option",
+      "uistates": {
+        "on": {
+          "ox": 9,
+          "oy": 10,
+          "cx": 374,
+          "cy": 180,
+          "w": 36,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 9,
+          "oy": 10,
+          "cx": 89,
+          "cy": 228,
+          "w": 36,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 7,
+          "oy": 8,
+          "cx": 296,
+          "cy": 371,
+          "w": 40,
+          "h": 42,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 9,
+          "oy": 10,
+          "cx": 89,
+          "cy": 228,
+          "w": 36,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 9,
+          "oy": 10,
+          "cx": 89,
+          "cy": 228,
+          "w": 36,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 7,
+          "oy": 8,
+          "cx": 296,
+          "cy": 371,
+          "w": 40,
+          "h": 42,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "prev",
+      "left": 962,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "prev",
+      "uistates": {
+        "on": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 339,
+          "cy": 102,
+          "w": 34,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 373,
+          "cy": 102,
+          "w": 34,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 6,
+          "oy": 11,
+          "cx": 89,
+          "cy": 304,
+          "w": 38,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 373,
+          "cy": 102,
+          "w": 34,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 373,
+          "cy": 102,
+          "w": 34,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 6,
+          "oy": 11,
+          "cx": 89,
+          "cy": 304,
+          "w": 38,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "prevscn",
+      "left": 1017,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "prevscn",
+      "uistates": {
+        "on": {
+          "ox": 11,
+          "oy": 12,
+          "cx": 379,
+          "cy": 334,
+          "w": 33,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 11,
+          "oy": 12,
+          "cx": 379,
+          "cy": 369,
+          "w": 33,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 9,
+          "oy": 10,
+          "cx": 177,
+          "cy": 270,
+          "w": 37,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 11,
+          "oy": 12,
+          "cx": 379,
+          "cy": 369,
+          "w": 33,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 11,
+          "oy": 12,
+          "cx": 379,
+          "cy": 369,
+          "w": 33,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 9,
+          "oy": 10,
+          "cx": 177,
+          "cy": 270,
+          "w": 37,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "backskip",
+      "left": 1072,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "toggle",
+      "uiname": "backskip",
+      "uistates": {
+        "on": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 369,
+          "cy": 219,
+          "w": 36,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 177,
+          "cy": 384,
+          "w": 36,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 6,
+          "oy": 11,
+          "cx": 300,
+          "cy": 180,
+          "w": 40,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 177,
+          "cy": 384,
+          "w": 36,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 8,
+          "oy": 13,
+          "cx": 177,
+          "cy": 384,
+          "w": 36,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 6,
+          "oy": 11,
+          "cx": 300,
+          "cy": 180,
+          "w": 40,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "backone",
+      "left": 1127,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "backone",
+      "uistates": {
+        "on": {
+          "ox": 11,
+          "oy": 12,
+          "cx": 275,
+          "cy": 102,
+          "w": 32,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 11,
+          "oy": 12,
+          "cx": 307,
+          "cy": 102,
+          "w": 32,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 9,
+          "oy": 10,
+          "cx": 177,
+          "cy": 308,
+          "w": 36,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 11,
+          "oy": 12,
+          "cx": 307,
+          "cy": 102,
+          "w": 32,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 11,
+          "oy": 12,
+          "cx": 307,
+          "cy": 102,
+          "w": 32,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 9,
+          "oy": 10,
+          "cx": 177,
+          "cy": 308,
+          "w": 36,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "log",
+      "left": 1182,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "log",
+      "uistates": {
+        "on": {
+          "ox": 10,
+          "oy": 13,
+          "cx": 50,
+          "cy": 365,
+          "w": 32,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 10,
+          "oy": 13,
+          "cx": 380,
+          "cy": 297,
+          "w": 32,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 8,
+          "oy": 11,
+          "cx": 89,
+          "cy": 341,
+          "w": 36,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 10,
+          "oy": 13,
+          "cx": 380,
+          "cy": 297,
+          "w": 32,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 10,
+          "oy": 13,
+          "cx": 380,
+          "cy": 297,
+          "w": 32,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 8,
+          "oy": 11,
+          "cx": 89,
+          "cy": 341,
+          "w": 36,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "auto",
+      "left": 1237,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "toggle",
+      "uiname": "auto",
+      "uistates": {
+        "on": {
+          "ox": 12,
+          "oy": 13,
+          "cx": 51,
+          "cy": 326,
+          "w": 32,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 12,
+          "oy": 13,
+          "cx": 363,
+          "cy": 0,
+          "w": 32,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 10,
+          "oy": 11,
+          "cx": 89,
+          "cy": 378,
+          "w": 36,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 12,
+          "oy": 13,
+          "cx": 363,
+          "cy": 0,
+          "w": 32,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 12,
+          "oy": 13,
+          "cx": 363,
+          "cy": 0,
+          "w": 32,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 10,
+          "oy": 11,
+          "cx": 89,
+          "cy": 378,
+          "w": 36,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "skip",
+      "left": 1292,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "toggle",
+      "uiname": "skip",
+      "uistates": {
+        "on": {
+          "ox": 10,
+          "oy": 13,
+          "cx": 333,
+          "cy": 219,
+          "w": 36,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 10,
+          "oy": 13,
+          "cx": 297,
+          "cy": 219,
+          "w": 36,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 8,
+          "oy": 11,
+          "cx": 260,
+          "cy": 180,
+          "w": 40,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 10,
+          "oy": 13,
+          "cx": 297,
+          "cy": 219,
+          "w": 36,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 10,
+          "oy": 13,
+          "cx": 297,
+          "cy": 219,
+          "w": 36,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 8,
+          "oy": 11,
+          "cx": 260,
+          "cy": 180,
+          "w": 40,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "nextscn",
+      "left": 1347,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "nextscn",
+      "uistates": {
+        "on": {
+          "ox": 10,
+          "oy": 12,
+          "cx": 139,
+          "cy": 102,
+          "w": 34,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 10,
+          "oy": 12,
+          "cx": 173,
+          "cy": 102,
+          "w": 34,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 8,
+          "oy": 10,
+          "cx": 89,
+          "cy": 190,
+          "w": 38,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 10,
+          "oy": 12,
+          "cx": 173,
+          "cy": 102,
+          "w": 34,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 10,
+          "oy": 12,
+          "cx": 173,
+          "cy": 102,
+          "w": 34,
+          "h": 34,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 8,
+          "oy": 10,
+          "cx": 89,
+          "cy": 190,
+          "w": 38,
+          "h": 38,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "next",
+      "left": 1402,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "next",
+      "uistates": {
+        "on": {
+          "ox": 12,
+          "oy": 13,
+          "cx": 207,
+          "cy": 102,
+          "w": 34,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 12,
+          "oy": 13,
+          "cx": 241,
+          "cy": 102,
+          "w": 34,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 10,
+          "oy": 11,
+          "cx": 348,
+          "cy": 141,
+          "w": 38,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 12,
+          "oy": 13,
+          "cx": 241,
+          "cy": 102,
+          "w": 34,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 12,
+          "oy": 13,
+          "cx": 241,
+          "cy": 102,
+          "w": 34,
+          "h": 33,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 10,
+          "oy": 11,
+          "cx": 348,
+          "cy": 141,
+          "w": 38,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "scnchart",
+      "left": 1457,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "scnchart",
+      "uistates": {
+        "on": {
+          "ox": 4,
+          "oy": 9,
+          "cx": 131,
+          "cy": 261,
+          "w": 46,
+          "h": 40,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 4,
+          "oy": 9,
+          "cx": 131,
+          "cy": 180,
+          "w": 46,
+          "h": 40,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 2,
+          "oy": 7,
+          "cx": 0,
+          "cy": 365,
+          "w": 50,
+          "h": 44,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 4,
+          "oy": 9,
+          "cx": 131,
+          "cy": 180,
+          "w": 46,
+          "h": 40,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 4,
+          "oy": 9,
+          "cx": 131,
+          "cy": 180,
+          "w": 46,
+          "h": 40,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 2,
+          "oy": 7,
+          "cx": 0,
+          "cy": 365,
+          "w": 50,
+          "h": 44,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "volchg",
+      "left": 1512,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "toggle",
+      "uiname": "volchg",
+      "uistates": {
+        "normal": {
+          "ox": 2,
+          "oy": 10,
+          "cx": 89,
+          "cy": 102,
+          "w": 50,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        },
+        "over_on": {
+          "ox": 4,
+          "oy": 12,
+          "cx": 178,
+          "cy": 141,
+          "w": 47,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "normal_on": {
+          "ox": 2,
+          "oy": 10,
+          "cx": 0,
+          "cy": 326,
+          "w": 51,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        },
+        "on_on": {
+          "ox": 4,
+          "oy": 12,
+          "cx": 225,
+          "cy": 141,
+          "w": 47,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "on_off": {
+          "ox": 4,
+          "oy": 12,
+          "cx": 131,
+          "cy": 301,
+          "w": 46,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "over_off": {
+          "ox": 4,
+          "oy": 12,
+          "cx": 131,
+          "cy": 336,
+          "w": 46,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 2,
+          "oy": 10,
+          "cx": 0,
+          "cy": 326,
+          "w": 51,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 2,
+          "oy": 10,
+          "cx": 89,
+          "cy": 102,
+          "w": 50,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "vreplay",
+      "left": 1567,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "vreplay",
+      "uistates": {
+        "on": {
+          "ox": 10,
+          "oy": 9,
+          "cx": 215,
+          "cy": 263,
+          "w": 35,
+          "h": 40,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 10,
+          "oy": 9,
+          "cx": 377,
+          "cy": 254,
+          "w": 35,
+          "h": 40,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 8,
+          "oy": 7,
+          "cx": 215,
+          "cy": 219,
+          "w": 39,
+          "h": 44,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 10,
+          "oy": 9,
+          "cx": 377,
+          "cy": 254,
+          "w": 35,
+          "h": 40,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 10,
+          "oy": 9,
+          "cx": 377,
+          "cy": 254,
+          "w": 35,
+          "h": 40,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 8,
+          "oy": 7,
+          "cx": 215,
+          "cy": 219,
+          "w": 39,
+          "h": 44,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "qvsave",
+      "left": 1622,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "qvsave",
+      "uistates": {
+        "on": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 254,
+          "cy": 297,
+          "w": 42,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 296,
+          "cy": 297,
+          "w": 42,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 4,
+          "oy": 10,
+          "cx": 131,
+          "cy": 220,
+          "w": 46,
+          "h": 41,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 296,
+          "cy": 297,
+          "w": 42,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 296,
+          "cy": 297,
+          "w": 42,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 4,
+          "oy": 10,
+          "cx": 131,
+          "cy": 220,
+          "w": 46,
+          "h": 41,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "vsave",
+      "left": 1622,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "vsave",
+      "uistates": {
+        "on": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 338,
+          "cy": 297,
+          "w": 42,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 296,
+          "cy": 334,
+          "w": 42,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 4,
+          "oy": 10,
+          "cx": 131,
+          "cy": 371,
+          "w": 46,
+          "h": 41,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 296,
+          "cy": 334,
+          "w": 42,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 296,
+          "cy": 334,
+          "w": 42,
+          "h": 37,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 4,
+          "oy": 10,
+          "cx": 131,
+          "cy": 371,
+          "w": 46,
+          "h": 41,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "snapshot",
+      "left": 1677,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "snapshot",
+      "uistates": {
+        "on": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 254,
+          "cy": 219,
+          "w": 43,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 292,
+          "cy": 254,
+          "w": 43,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 4,
+          "oy": 10,
+          "cx": 131,
+          "cy": 141,
+          "w": 47,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 292,
+          "cy": 254,
+          "w": 43,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 6,
+          "oy": 12,
+          "cx": 292,
+          "cy": 254,
+          "w": 43,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 4,
+          "oy": 10,
+          "cx": 131,
+          "cy": 141,
+          "w": 47,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "hide",
+      "left": 1732,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "hide",
+      "uistates": {
+        "on": {
+          "ox": 7,
+          "oy": 12,
+          "cx": 338,
+          "cy": 334,
+          "w": 41,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 7,
+          "oy": 12,
+          "cx": 338,
+          "cy": 369,
+          "w": 41,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 5,
+          "oy": 10,
+          "cx": 215,
+          "cy": 180,
+          "w": 45,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 7,
+          "oy": 12,
+          "cx": 338,
+          "cy": 369,
+          "w": 41,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 7,
+          "oy": 12,
+          "cx": 338,
+          "cy": 369,
+          "w": 41,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 5,
+          "oy": 10,
+          "cx": 215,
+          "cy": 180,
+          "w": 45,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "endreplay",
+      "left": 1787,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "endreplay",
+      "uistates": {
+        "on": {
+          "ox": 8,
+          "oy": 12,
+          "cx": 215,
+          "cy": 303,
+          "w": 39,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 8,
+          "oy": 12,
+          "cx": 215,
+          "cy": 338,
+          "w": 39,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 7,
+          "oy": 10,
+          "cx": 335,
+          "cy": 254,
+          "w": 42,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 8,
+          "oy": 12,
+          "cx": 215,
+          "cy": 338,
+          "w": 39,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 8,
+          "oy": 12,
+          "cx": 215,
+          "cy": 338,
+          "w": 39,
+          "h": 35,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 7,
+          "oy": 10,
+          "cx": 335,
+          "cy": 254,
+          "w": 42,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "title",
+      "left": 1787,
+      "top": 1026,
+      "width": 54,
+      "height": 54,
+      "class": "button",
+      "uiname": "title",
+      "uistates": {
+        "on": {
+          "ox": 10,
+          "oy": 10,
+          "cx": 340,
+          "cy": 180,
+          "w": 34,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        },
+        "over": {
+          "ox": 10,
+          "oy": 10,
+          "cx": 215,
+          "cy": 373,
+          "w": 34,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        },
+        "normal": {
+          "ox": 8,
+          "oy": 8,
+          "cx": 254,
+          "cy": 254,
+          "w": 38,
+          "h": 43,
+          "storage": "quickmenu__pack"
+        },
+        "coverds_on": {
+          "ox": 10,
+          "oy": 10,
+          "cx": 215,
+          "cy": 373,
+          "w": 34,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": "",
+          "opacity": 0
+        },
+        "normal_on": {
+          "ox": 10,
+          "oy": 10,
+          "cx": 215,
+          "cy": 373,
+          "w": 34,
+          "h": 39,
+          "storage": "quickmenu__pack"
+        },
+        "coverds": {
+          "ox": 8,
+          "oy": 8,
+          "cx": 254,
+          "cy": 254,
+          "w": 38,
+          "h": 43,
+          "storage": "quickmenu__pack"
+        }
+      }
+    },
+    {
+      "name": "help_base",
+      "left": 82,
+      "top": 1033,
+      "width": 261,
+      "height": 44,
+      "class": "layer",
+      "uiname": "help_base",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 261,
+          "h": 44,
+          "storage": "quickmenu__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 261,
+          "h": 44,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    }
+  ],
+  "raw_result_keys": [
+    "auto",
+    "backone",
+    "backskip",
+    "base",
+    "custom",
+    "dsave",
+    "endreplay",
+    "help_base",
+    "hide",
+    "hold",
+    "load",
+    "log",
+    "next",
+    "nextscn",
+    "option",
+    "prev",
+    "prevscn",
+    "qload",
+    "qsave",
+    "qvsave",
+    "save",
+    "scnchart",
+    "skip",
+    "snapshot",
+    "title",
+    "volchg",
+    "vreplay",
+    "vsave"
+  ]
+}

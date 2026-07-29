@@ -1,0 +1,450 @@
+{
+  "source": "autoskipmark_img.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "icon_pause",
+    "icon_auto2",
+    "icon_auto1",
+    "icon_auto0",
+    "icon_skip",
+    "icon_back",
+    "icon",
+    "anim0",
+    "anim1",
+    "anim2",
+    "anim3",
+    "anim4",
+    "anim5",
+    "anim6",
+    "anim7",
+    "anim8",
+    "anim9",
+    "anim10",
+    "anim11",
+    "anim12",
+    "anim13"
+  ],
+  "layer_count": 21,
+  "hotspot_count": 21,
+  "hotspots": [
+    {
+      "name": "anim0",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim0"
+    },
+    {
+      "name": "anim1",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim1"
+    },
+    {
+      "name": "anim10",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim10"
+    },
+    {
+      "name": "anim11",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim11"
+    },
+    {
+      "name": "anim12",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim12"
+    },
+    {
+      "name": "anim13",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim13"
+    },
+    {
+      "name": "anim2",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim2"
+    },
+    {
+      "name": "anim3",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim3"
+    },
+    {
+      "name": "anim4",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim4"
+    },
+    {
+      "name": "anim5",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim5"
+    },
+    {
+      "name": "anim6",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim6"
+    },
+    {
+      "name": "anim7",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim7"
+    },
+    {
+      "name": "anim8",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim8"
+    },
+    {
+      "name": "anim9",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "copy",
+      "uiname": "anim9"
+    },
+    {
+      "name": "icon",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "layer",
+      "uiname": "icon",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 41,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "icon_auto0",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "layer",
+      "uiname": "icon_auto0",
+      "uistates": {
+        "auto0": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 51,
+          "cy": 0,
+          "w": 34,
+          "h": 34,
+          "storage": "autoskipmark_img__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 41,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "icon_auto1",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "layer",
+      "uiname": "icon_auto1",
+      "uistates": {
+        "auto1": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 85,
+          "cy": 0,
+          "w": 34,
+          "h": 34,
+          "storage": "autoskipmark_img__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 41,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "icon_auto2",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "layer",
+      "uiname": "icon_auto2",
+      "uistates": {
+        "auto2": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 39,
+          "w": 34,
+          "h": 34,
+          "storage": "autoskipmark_img__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 41,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "icon_back",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "layer",
+      "uiname": "icon_back",
+      "uistates": {
+        "4": {
+          "ox": 1,
+          "oy": 10,
+          "cx": 60,
+          "cy": 64,
+          "w": 26,
+          "h": 24,
+          "storage": "autoskipmark_img__pack"
+        },
+        "1": {
+          "ox": 4,
+          "oy": 10,
+          "cx": 34,
+          "cy": 64,
+          "w": 26,
+          "h": 24,
+          "storage": "autoskipmark_img__pack"
+        },
+        "3": {
+          "ox": 2,
+          "oy": 10,
+          "cx": 34,
+          "cy": 112,
+          "w": 26,
+          "h": 24,
+          "storage": "autoskipmark_img__pack"
+        },
+        "0": {
+          "ox": 5,
+          "oy": 10,
+          "cx": 78,
+          "cy": 39,
+          "w": 26,
+          "h": 24,
+          "storage": "autoskipmark_img__pack"
+        },
+        "backskip": {
+          "ox": 24,
+          "oy": 2,
+          "cx": 0,
+          "cy": 0,
+          "w": 51,
+          "h": 39,
+          "storage": "autoskipmark_img__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 41,
+          "storage": ""
+        },
+        "2": {
+          "ox": 3,
+          "oy": 10,
+          "cx": 34,
+          "cy": 88,
+          "w": 26,
+          "h": 24,
+          "storage": "autoskipmark_img__pack"
+        }
+      }
+    },
+    {
+      "name": "icon_pause",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "layer",
+      "uiname": "icon_pause",
+      "uistates": {
+        "pause": {
+          "ox": 5,
+          "oy": 0,
+          "cx": 0,
+          "cy": 73,
+          "w": 34,
+          "h": 34,
+          "storage": "autoskipmark_img__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 41,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "icon_skip",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "layer",
+      "uiname": "icon_skip",
+      "uistates": {
+        "4": {
+          "ox": 45,
+          "oy": 10,
+          "cx": 86,
+          "cy": 112,
+          "w": 26,
+          "h": 24,
+          "storage": "autoskipmark_img__pack"
+        },
+        "1": {
+          "ox": 42,
+          "oy": 10,
+          "cx": 60,
+          "cy": 88,
+          "w": 26,
+          "h": 24,
+          "storage": "autoskipmark_img__pack"
+        },
+        "skip": {
+          "ox": 5,
+          "oy": 9,
+          "cx": 34,
+          "cy": 39,
+          "w": 44,
+          "h": 25,
+          "storage": "autoskipmark_img__pack"
+        },
+        "3": {
+          "ox": 44,
+          "oy": 10,
+          "cx": 86,
+          "cy": 88,
+          "w": 26,
+          "h": 24,
+          "storage": "autoskipmark_img__pack"
+        },
+        "0": {
+          "ox": 41,
+          "oy": 10,
+          "cx": 86,
+          "cy": 64,
+          "w": 26,
+          "h": 24,
+          "storage": "autoskipmark_img__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 78,
+          "h": 41,
+          "storage": ""
+        },
+        "2": {
+          "ox": 43,
+          "oy": 10,
+          "cx": 60,
+          "cy": 112,
+          "w": 26,
+          "h": 24,
+          "storage": "autoskipmark_img__pack"
+        }
+      }
+    }
+  ],
+  "raw_result_keys": [
+    "anim0",
+    "anim1",
+    "anim10",
+    "anim11",
+    "anim12",
+    "anim13",
+    "anim2",
+    "anim3",
+    "anim4",
+    "anim5",
+    "anim6",
+    "anim7",
+    "anim8",
+    "anim9",
+    "icon",
+    "icon_auto0",
+    "icon_auto1",
+    "icon_auto2",
+    "icon_back",
+    "icon_pause",
+    "icon_skip"
+  ]
+}

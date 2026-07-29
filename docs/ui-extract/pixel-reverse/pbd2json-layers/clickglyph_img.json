@@ -1,0 +1,280 @@
+{
+  "source": "clickglyph_img.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "icon",
+    "anim0",
+    "anim1",
+    "anim2",
+    "anim3",
+    "anim4",
+    "anim5",
+    "anim6",
+    "anim7",
+    "anim8",
+    "anim9",
+    "anim10",
+    "anim11"
+  ],
+  "layer_count": 13,
+  "hotspot_count": 13,
+  "hotspots": [
+    {
+      "name": "anim0",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim0"
+    },
+    {
+      "name": "anim1",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim1"
+    },
+    {
+      "name": "anim10",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim10"
+    },
+    {
+      "name": "anim11",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim11"
+    },
+    {
+      "name": "anim2",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim2"
+    },
+    {
+      "name": "anim3",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim3"
+    },
+    {
+      "name": "anim4",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim4"
+    },
+    {
+      "name": "anim5",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim5"
+    },
+    {
+      "name": "anim6",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim6"
+    },
+    {
+      "name": "anim7",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim7"
+    },
+    {
+      "name": "anim8",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim8"
+    },
+    {
+      "name": "anim9",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "copy",
+      "uiname": "anim9"
+    },
+    {
+      "name": "icon",
+      "left": 1623,
+      "top": 979,
+      "width": 54,
+      "height": 56,
+      "class": "layer",
+      "uiname": "icon",
+      "uistates": {
+        "11": {
+          "ox": 1,
+          "oy": 7,
+          "cx": 46,
+          "cy": 53,
+          "w": 52,
+          "h": 48,
+          "storage": "clickglyph_img__pack"
+        },
+        "05": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 0,
+          "cy": 0,
+          "w": 46,
+          "h": 54,
+          "storage": "clickglyph_img__pack"
+        },
+        "04": {
+          "ox": 1,
+          "oy": 2,
+          "cx": 46,
+          "cy": 0,
+          "w": 47,
+          "h": 53,
+          "storage": "clickglyph_img__pack"
+        },
+        "02": {
+          "ox": 1,
+          "oy": 5,
+          "cx": 98,
+          "cy": 104,
+          "w": 50,
+          "h": 50,
+          "storage": "clickglyph_img__pack"
+        },
+        "08": {
+          "ox": 1,
+          "oy": 2,
+          "cx": 93,
+          "cy": 0,
+          "w": 47,
+          "h": 53,
+          "storage": "clickglyph_img__pack"
+        },
+        "03": {
+          "ox": 1,
+          "oy": 4,
+          "cx": 98,
+          "cy": 53,
+          "w": 48,
+          "h": 51,
+          "storage": "clickglyph_img__pack"
+        },
+        "06": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 0,
+          "cy": 54,
+          "w": 45,
+          "h": 54,
+          "storage": "clickglyph_img__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 54,
+          "h": 56,
+          "storage": "",
+          "opacity": 128
+        },
+        "01": {
+          "ox": 1,
+          "oy": 7,
+          "cx": 140,
+          "cy": 0,
+          "w": 52,
+          "h": 48,
+          "storage": "clickglyph_img__pack"
+        },
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 0,
+          "h": 0,
+          "storage": null
+        },
+        "12": {
+          "ox": 1,
+          "oy": 7,
+          "cx": 46,
+          "cy": 101,
+          "w": 52,
+          "h": 48,
+          "storage": "clickglyph_img__pack"
+        },
+        "07": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 0,
+          "cy": 108,
+          "w": 46,
+          "h": 54,
+          "storage": "clickglyph_img__pack"
+        },
+        "10": {
+          "ox": 1,
+          "oy": 5,
+          "cx": 148,
+          "cy": 104,
+          "w": 50,
+          "h": 50,
+          "storage": "clickglyph_img__pack"
+        },
+        "09": {
+          "ox": 1,
+          "oy": 4,
+          "cx": 146,
+          "cy": 53,
+          "w": 48,
+          "h": 51,
+          "storage": "clickglyph_img__pack"
+        }
+      }
+    }
+  ],
+  "raw_result_keys": [
+    "anim0",
+    "anim1",
+    "anim10",
+    "anim11",
+    "anim2",
+    "anim3",
+    "anim4",
+    "anim5",
+    "anim6",
+    "anim7",
+    "anim8",
+    "anim9",
+    "icon"
+  ]
+}

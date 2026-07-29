@@ -1,0 +1,17 @@
+%[
+// 表示時アクション
+showaction: %[ zoom : %[ handler:"MoveAction", start:200, value:100, accel:1 ]],
+// 消去時アクション
+hideaction: %[ zoom : %[ handler:"MoveAction", start:"@", value:150, accel:1 ]],
+
+// 表示時間
+time: 300,
+delay: 0,
+
+// トランジション(切り替え時)はこちらの値が優先参照される
+showtime: 300,
+hidetime: 300,
+showdelay: 200,
+hidedelay: 0,
+
+]

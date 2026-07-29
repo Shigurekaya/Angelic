@@ -1,0 +1,733 @@
+{
+  "source": "option_9gamepad2_assign.pbd",
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 1920,
+          "h": 1080,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "page0",
+      "left": 465,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page0",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page1",
+      "left": 593,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page1",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page2",
+      "left": 721,
+      "top": 0,
+      "width": 163,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page2",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 163,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page3",
+      "left": 884,
+      "top": 0,
+      "width": 167,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page3",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 167,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page4",
+      "left": 1051,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page4",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page5",
+      "left": 1179,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page5",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page6",
+      "left": 1307,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page6",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page7",
+      "left": 1455,
+      "top": 0,
+      "width": 102,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page7",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 102,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page8",
+      "left": 1557,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page8",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page9",
+      "left": 1705,
+      "top": 0,
+      "width": 167,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page9",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 167,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "caption",
+      "left": 87,
+      "top": 19,
+      "width": 295,
+      "height": 43,
+      "class": "layer",
+      "uiname": "caption",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 500,
+          "w": 295,
+          "h": 43,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "gamepad",
+      "left": 195,
+      "top": 430,
+      "width": 690,
+      "height": 230,
+      "class": "layer",
+      "uiname": "gamepad",
+      "uistates": {
+        "top": {
+          "ox": 363,
+          "oy": 40,
+          "cx": 329,
+          "cy": 375,
+          "w": 327,
+          "h": 150,
+          "storage": "option_9gamepad__pack"
+        },
+        "front": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 375,
+          "w": 329,
+          "h": 230,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_y",
+      "left": 430,
+      "top": 458,
+      "width": 22,
+      "height": 23,
+      "class": "layer",
+      "uiname": "button_y",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 370,
+          "cy": 570,
+          "w": 22,
+          "h": 23,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_l3",
+      "left": 253,
+      "top": 465,
+      "width": 402,
+      "height": 151,
+      "class": "layer",
+      "uiname": "button_l3",
+      "uistates": {
+        "sub": {
+          "ox": 359,
+          "oy": 136,
+          "cx": 656,
+          "cy": 497,
+          "w": 43,
+          "h": 15,
+          "storage": "option_9gamepad__pack"
+        },
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 329,
+          "cy": 566,
+          "w": 36,
+          "h": 35,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_x",
+      "left": 409,
+      "top": 478,
+      "width": 23,
+      "height": 23,
+      "class": "layer",
+      "uiname": "button_x",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 370,
+          "cy": 547,
+          "w": 23,
+          "h": 23,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_b",
+      "left": 450,
+      "top": 478,
+      "width": 22,
+      "height": 23,
+      "class": "layer",
+      "uiname": "button_b",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 370,
+          "cy": 525,
+          "w": 22,
+          "h": 23,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_select",
+      "left": 323,
+      "top": 493,
+      "width": 20,
+      "height": 12,
+      "class": "layer",
+      "uiname": "button_select",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 393,
+          "cy": 568,
+          "w": 20,
+          "h": 12,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_start",
+      "left": 376,
+      "top": 493,
+      "width": 21,
+      "height": 12,
+      "class": "layer",
+      "uiname": "button_start",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 393,
+          "cy": 547,
+          "w": 21,
+          "h": 12,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_l2",
+      "left": 611,
+      "top": 494,
+      "width": 24,
+      "height": 47,
+      "class": "layer",
+      "uiname": "button_l2",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 656,
+          "cy": 432,
+          "w": 24,
+          "h": 47,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_r2",
+      "left": 807,
+      "top": 494,
+      "width": 25,
+      "height": 47,
+      "class": "layer",
+      "uiname": "button_r2",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 656,
+          "cy": 456,
+          "w": 25,
+          "h": 47,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_a",
+      "left": 430,
+      "top": 499,
+      "width": 22,
+      "height": 22,
+      "class": "layer",
+      "uiname": "button_a",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 393,
+          "cy": 525,
+          "w": 22,
+          "h": 22,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_r3",
+      "left": 385,
+      "top": 528,
+      "width": 405,
+      "height": 88,
+      "class": "layer",
+      "uiname": "button_r3",
+      "uistates": {
+        "sub": {
+          "ox": 359,
+          "oy": 72,
+          "cx": 656,
+          "cy": 481,
+          "w": 46,
+          "h": 16,
+          "storage": "option_9gamepad__pack"
+        },
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 329,
+          "cy": 525,
+          "w": 41,
+          "h": 41,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_l1",
+      "left": 593,
+      "top": 544,
+      "width": 57,
+      "height": 28,
+      "class": "layer",
+      "uiname": "button_l1",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 656,
+          "cy": 375,
+          "w": 57,
+          "h": 28,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "button_r1",
+      "left": 793,
+      "top": 544,
+      "width": 56,
+      "height": 28,
+      "class": "layer",
+      "uiname": "button_r1",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 684,
+          "cy": 375,
+          "w": 56,
+          "h": 28,
+          "storage": "option_9gamepad__pack"
+        }
+      }
+    },
+    {
+      "name": "helpbase",
+      "left": 164,
+      "top": 687,
+      "width": 731,
+      "height": 133,
+      "class": "layer",
+      "uiname": "helpbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 731,
+          "h": 133,
+          "storage": "option_9gamepad2_assign__pack"
+        }
+      }
+    },
+    {
+      "name": "text",
+      "left": 194,
+      "top": 695,
+      "width": 672,
+      "height": 118,
+      "class": "layer",
+      "uiname": "text",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 672,
+          "h": 118,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "skip",
+      "left": 268,
+      "top": 852,
+      "width": 246,
+      "height": 50,
+      "class": "button",
+      "uiname": "skip",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 610,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 660,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 560,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 246,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "reset",
+      "left": 546,
+      "top": 852,
+      "width": 246,
+      "height": 50,
+      "class": "button",
+      "uiname": "reset",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 610,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 660,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 560,
+          "w": 246,
+          "h": 50,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 246,
+          "h": 50,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "helptext",
+      "left": 43,
+      "top": 979,
+      "width": 715,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helptext",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 672,
+          "h": 62,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title"
+    },
+    {
+      "name": "_sysbtn",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_sysbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 326,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 442,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 384,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 315,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back"
+    }
+  ]
+}

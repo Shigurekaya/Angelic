@@ -1,202 +1,186 @@
 {
   "family": "settings",
-  "frame": {
-    "x": 161,
-    "y": 110,
-    "w": 1560,
-    "h": 860
-  },
+  "source": "pbd2json uistates cx/cy + option.pbd templates",
+  "note": "option_locale not in archives; labels from uitexts_cn.toml; help from help_opt_cn.txt",
   "tabs": [
     {
       "id": "0",
-      "label": "基本设置",
-      "plate": "plates/tab_0.png",
-      "page": "0_simple"
+      "label": "基本",
+      "plate": "plates/tab_0.png"
     },
     {
       "id": "1",
-      "label": "画面设置",
-      "plate": "plates/tab_1.png",
-      "page": "1_display"
+      "label": "画面",
+      "plate": "plates/tab_1.png"
     },
     {
       "id": "2",
-      "label": "游戏设置1",
-      "plate": "plates/tab_2.png",
-      "page": "2_game1"
+      "label": "游戏1",
+      "plate": "plates/tab_2.png"
     },
     {
       "id": "3",
-      "label": "游戏设置2",
-      "plate": "plates/tab_3.png",
-      "page": "3_game2"
+      "label": "游戏2",
+      "plate": "plates/tab_3.png"
     },
     {
       "id": "4",
-      "label": "文本设置",
-      "plate": "plates/tab_4.png",
-      "page": "4_text"
+      "label": "文本",
+      "plate": "plates/tab_4.png"
     },
     {
       "id": "5a",
       "label": "音频1",
-      "plate": "plates/tab_5a.png",
-      "page": "5a_sound1"
+      "plate": "plates/tab_5a.png"
     },
     {
       "id": "5b",
       "label": "音频2",
-      "plate": "plates/tab_5b.png",
-      "page": "5b_sound2"
+      "plate": "plates/tab_5b.png"
     },
     {
       "id": "6",
-      "label": "确认信息",
-      "plate": "plates/tab_6.png",
-      "page": "6_dialog"
+      "label": "确认",
+      "plate": "plates/tab_6.png"
     },
     {
       "id": "8",
       "label": "键盘",
-      "plate": "plates/tab_8.png",
-      "page": "8a_keyboard1"
+      "plate": "plates/tab_8.png"
     }
   ],
   "tabs_layout": {
     "items": [
       {
         "id": "0",
-        "label": "基本设置",
-        "x": 160,
-        "y": 28,
-        "w": 177,
-        "h": 52,
-        "label_file": "angelic/settings/tabs/label_0.png",
-        "label_y": 42
+        "label": "基本",
+        "x": 465,
+        "y": 0,
+        "w": 128,
+        "h": 81,
+        "label_y": 28,
+        "label_file": "angelic/settings/tabs/label_0.png"
       },
       {
         "id": "1",
-        "label": "画面设置",
-        "x": 337,
-        "y": 28,
-        "w": 177,
-        "h": 52,
-        "label_file": "angelic/settings/tabs/label_1.png",
-        "label_y": 42
+        "label": "画面",
+        "x": 593,
+        "y": 0,
+        "w": 128,
+        "h": 81,
+        "label_y": 28,
+        "label_file": "angelic/settings/tabs/label_1.png"
       },
       {
         "id": "2",
-        "label": "游戏设置1",
-        "x": 514,
-        "y": 28,
-        "w": 177,
-        "h": 52,
-        "label_file": "angelic/settings/tabs/label_2.png",
-        "label_y": 42
+        "label": "游戏1",
+        "x": 721,
+        "y": 0,
+        "w": 163,
+        "h": 81,
+        "label_y": 28,
+        "label_file": "angelic/settings/tabs/label_2.png"
       },
       {
         "id": "3",
-        "label": "游戏设置2",
-        "x": 691,
-        "y": 28,
-        "w": 177,
-        "h": 52,
-        "label_file": "angelic/settings/tabs/label_3.png",
-        "label_y": 42
+        "label": "游戏2",
+        "x": 884,
+        "y": 0,
+        "w": 167,
+        "h": 81,
+        "label_y": 28,
+        "label_file": "angelic/settings/tabs/label_3.png"
       },
       {
         "id": "4",
-        "label": "文本设置",
-        "x": 868,
-        "y": 28,
-        "w": 177,
-        "h": 52,
-        "label_file": "angelic/settings/tabs/label_4.png",
-        "label_y": 42
+        "label": "文本",
+        "x": 1051,
+        "y": 0,
+        "w": 128,
+        "h": 81,
+        "label_y": 28,
+        "label_file": "angelic/settings/tabs/label_4.png"
       },
       {
         "id": "5a",
         "label": "音频1",
-        "x": 1045,
-        "y": 28,
-        "w": 177,
-        "h": 52,
-        "label_file": "angelic/settings/tabs/label_5.png",
-        "label_y": 42
+        "x": 1179,
+        "y": 0,
+        "w": 64,
+        "h": 81,
+        "label_y": 28,
+        "label_file": "angelic/settings/tabs/label_5a.png"
       },
       {
         "id": "5b",
         "label": "音频2",
-        "x": 1222,
-        "y": 28,
-        "w": 177,
-        "h": 52,
-        "label_file": "angelic/settings/tabs/label_6.png",
-        "label_y": 42
+        "x": 1243,
+        "y": 0,
+        "w": 64,
+        "h": 81,
+        "label_y": 28,
+        "label_file": "angelic/settings/tabs/label_5b.png"
       },
       {
         "id": "6",
-        "label": "确认信息",
-        "x": 1399,
-        "y": 28,
-        "w": 177,
-        "h": 52,
-        "label_file": "angelic/settings/tabs/label_7.png",
-        "label_y": 42
+        "label": "确认",
+        "x": 1307,
+        "y": 0,
+        "w": 148,
+        "h": 81,
+        "label_y": 28,
+        "label_file": "angelic/settings/tabs/label_6.png"
       },
       {
         "id": "8",
         "label": "键盘",
-        "x": 1576,
-        "y": 28,
-        "w": 177,
-        "h": 52,
-        "label_file": "angelic/settings/tabs/label_8.png",
-        "label_y": 42
+        "x": 1557,
+        "y": 0,
+        "w": 148,
+        "h": 81,
+        "label_y": 28,
+        "label_file": "angelic/settings/tabs/label_8.png"
       }
     ]
   },
   "footer": [
     {
       "id": "init",
-      "label": "初始化",
-      "x": 940,
-      "y": 973,
-      "w": 242,
-      "h": 60,
-      "cn": "angelic/settings/chrome/btn_init_cn.png"
+      "label": "恢复默认设置",
+      "x": 923,
+      "y": 989,
+      "w": 315,
+      "h": 58
     },
     {
       "id": "title",
-      "label": "标题",
-      "x": 1187,
-      "y": 973,
-      "w": 242,
-      "h": 60,
-      "cn": "angelic/settings/chrome/btn_title_cn.png"
+      "label": "标题画面",
+      "x": 1252,
+      "y": 989,
+      "w": 315,
+      "h": 58
     },
     {
       "id": "back",
-      "label": "返回",
-      "x": 1434,
-      "y": 973,
-      "w": 242,
-      "h": 60,
-      "cn": "angelic/settings/chrome/btn_back_cn.png"
+      "label": "游戏画面",
+      "x": 1581,
+      "y": 989,
+      "w": 315,
+      "h": 58
     }
   ],
   "back": {
-    "x": 1520,
-    "y": 973,
-    "w": 242,
-    "h": 60,
+    "x": 1581,
+    "y": 989,
+    "w": 315,
+    "h": 58,
     "label": "返回"
   },
   "help_box": {
-    "x": 48,
-    "y": 994,
-    "w": 520,
-    "h": 60
+    "x": 27,
+    "y": 979,
+    "w": 731,
+    "h": 77
   },
   "help": {
     "page0": "前往简单设置选项卡。",
@@ -462,6 +446,17 @@
     "sysvo8": "选择系统语音的角色。\t如果未选择任何角色，则将播放所有。如果进行了多个选择，则在已选中随机播放。",
     "sysvornd": "${isAllSysVoice?\"取消\":\"选择\"}全部系统语音角色。"
   },
-  "layout": "docs/ui-extract/pixel-reverse/settings-layout/angelic_settings_layout.json",
-  "note": "official-only chrome: option__pack / option_cmds / page packs whole slices; no make_chip / no sub-crop"
+  "colorpicker": {
+    "x": 1492,
+    "y": 187,
+    "w": 306,
+    "h": 322
+  },
+  "winsample": {
+    "x": 1030,
+    "y": 685,
+    "w": 800,
+    "h": 156,
+    "text": "天使☆嚣嚣 RE-BOOT!"
+  }
 }

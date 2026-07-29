@@ -1,0 +1,129 @@
+# Text-to-Speech Function Settings Help
+
+This feature provides synthetic voices for sections without audio, such as narrative text and protagonist's dialogue.
+Please note the following limitations:
+
+@if exp="condition('ancient')"
+  - Text-to-speech is activated after the message text is fully displayed and waiting for click.
+@endif
+  - Due to the nature of synthetic speech, some words may be pronounced incorrectly.
+  - Text-to-speech is not available for voiceless text in the backlog.
+
+You can modify various settings from the menu under "[emb exp="getMenuPath()"]".
+@if exp="condition('advanced')"
+Note: The "[emb exp="getMenuPath('troubleShootMenu')"]" menu appears when you enable "[emb exp="getMenuPath('showAdvancedMenuItem')"]".
+@endif
+
+## Settings Description
+
+Below is a detailed explanation of each setting option.
+
+[*] [emb exp="getItemText('Enabled')"]
+  Enable or disable this function by checking this box.
+
+[*] [emb exp="getItemText('grpTYPE')"]
+  Choose from three methods of voice synthesis.
+  These options are unavailable if language pronunciation is not supported due to missing runtime or other requirements.
+  [emb exp="getItemText('UseSAPI')"] is recommended for Windows 10 and later versions.
+
+    - [emb exp="getItemText('UseSAPI')"]
+        Microsoft's API for voice synthesis and recognition.
+        Install required language voices through Windows language settings.
+
+    - [emb exp="getItemText('UseMSSP')"]
+        Microsoft's newer API for voice synthesis and recognition.
+        Available on Windows Vista and later, but requires separate installation of runtime and language libraries from Microsoft.
+        Download and install from:
+        > http://www.microsoft.com/en-us/download/details.aspx?id=27225
+        > http://www.microsoft.com/en-us/download/details.aspx?id=27224
+        Install both 64-bit and 32-bit runtime versions and MSSpeech_TTS_*.msi for your desired language.
+
+    - [emb exp="getItemText('UseXAPP')"]
+        Generates synthesized voice WAV files by calling a specified command-line application.
+        After selecting "[emb exp="getItemText('UseXAPP')"]", click the "[emb exp="getItemText('AppSel')"]" button to choose the command-line application.
+        View command-line parameter instructions by clicking the voice parameter settings button.
+
+        Note: Support cannot be guaranteed as command-line specifications vary between applications.
+
+@if exp="condition('voicevox')"
+    - [emb exp="getItemText('UseVVOX')"]
+        Voice synthesis using the open-source VOICEVOX engine.
+        Download, install, and launch VOICEVOX from https://voicevox.hiroshiba.jp/ before use.
+        Note: VOICEVOX only supports Japanese speech synthesis.
+        When selected, the version displays if the engine is detected.
+        Settings cannot be modified if the engine is not running.
+
+        Only modify API address settings if you've specified custom host address or port number in the engine's startup options.
+@endif
+
+[*] [emb exp="getItemText('grpVOICE')"]
+  Specify voice parameters for two types: "[emb exp="getItemText('NamLabel')"]" and "[emb exp="getItemText('DscLabel')"]".
+  "[emb exp="getItemText('NamLabel')"]" refers to message text with character names but no voice,
+  while "[emb exp="getItemText('DscLabel')"]" refers to message text without name displays.
+
+  Available voice parameter settings for both types:
+
+    - [emb exp="getItemText('ComSetting')"]
+        Use identical voice parameters for both types.
+        Modify parameters using the "[emb exp="getItemText('Config')"]" button next to the "[emb exp="getItemText('ComLabel')"]" field.
+
+    - [emb exp="getItemText('SepSetting')"]
+        Use different voice parameters for each type.
+        Modify parameters using the "[emb exp="getItemText('Config')"]" button next to each selection field.
+
+    - [emb exp="getItemText('Disabled')"]
+        Disable text-to-speech function.
+
+  Clicking the "[emb exp="getItemText('Config')"]" button opens settings for the format selected in "[emb exp="getItemText('grpTYPE')"]".
+  For "[emb exp="getItemText('UseSAPI')"]" and "[emb exp="getItemText('UseMSSP')"]", you can adjust speaker, speed, and pitch.
+  For "[emb exp="getItemText('UseXAPP')"]", you can specify command-line options.
+
+  Click the "[emb exp="getItemText('Play')"]" button for each option to test voice synthesis using the text you enter in the "[emb exp="getItemText('txtLABEL')"]" input field.
+
+[*] [emb exp="getItemText('EnvSave')"]/[emb exp="getItemText('EnvLoad')"]
+  Save and load voice synthesis settings and parameters.
+  Saved settings can be used across different games.
+
+[*] [emb exp="getItemText('grpVOLUME')"]
+  Adjust the volume[if exp="condition('vocoder')"] and speed[endif] of synthetic voices.
+
+    - [emb exp="getItemText('VolGame')"]
+        Use volume from game settings.
+
+    - [emb exp="getItemText('VolIndep')"]
+        Use custom volume set by slider below.
+@if exp="condition('vocoder')"
+
+    - [emb exp="getItemText('EnVocoder')"]
+        Play synthetic voice using game's voice speed settings.
+@endif
+
+[*] [emb exp="getItemText('grpDICT')"]
+  Configure pronunciation dictionary for correction.
+  Text-to-speech processes text after applying dictionary replacements.
+
+    - "[emb exp="getItemText('DictAdd')"]" Button
+        Add dictionary entries.
+        Set word and pronunciation pairs for text replacement.
+        Double-click words in the list to edit pronunciations.
+
+    - "[emb exp="getItemText('DictUp')"]"/"[emb exp="getItemText('DictDown')"]" Buttons
+        Reorder selected entries.
+        Order doesn't affect replacement priority (longest match takes precedence).
+        Use for organizing and categorizing words as needed.
+
+    - "[emb exp="getItemText('DictSel')"]" Button
+        Toggle select all/none for entries.
+        Hold Control key for multiple selections in the word list.
+
+    - "[emb exp="getItemText('DictDel')"]" Button
+        Remove selected entries.
+@if exp="condition('defdict')"
+        Clicking with empty list restores default dictionary.
+@endif
+
+    - [emb exp="getItemText('DictImport')"]
+        Save dictionary entries to file.
+
+    - [emb exp="getItemText('DictExport')"]
+        Import dictionary entries from file.

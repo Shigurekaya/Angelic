@@ -1,0 +1,9 @@
+%[
+method:"multiripple",
+time:5000,
+count:20,
+rwidth:20,
+wavecount:1,
+maxdrift:32,
+delaylast:1.5,
+]

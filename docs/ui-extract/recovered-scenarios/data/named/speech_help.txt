@@ -1,0 +1,145 @@
+■テキスト読み上げ機能設定ヘルプ
+
+地の文章や主人公の発言など、音声のない部分に機械的に生成したボイスを割り当てる機能です。
+ただし、下記のような制限があります。ご注意ください。
+
+@if exp="condition('ancient')"
+・メッセージのテキストが最後まで表示され、クリック待ち状態になってから読み上げ機能が実行されます。
+@endif
+・機械的に読み上げる都合で、間違った読み方で読み上げられる場合があります。
+・バックログの音声の無いテキストに対する読み上げ機能はありません。
+
+各種設定はメニューの「[emb exp="GetTextSpeechMenuItemPath()"]」から変更することができます。
+@if exp="condition('advanced')"
+※「[emb exp="getMenuPath('troubleShootMenu')"]」メニューは「[emb exp="getMenuPath('showAdvancedMenuItem')"]」にチェックを入れることで表示されます。
+@endif
+
+■設定項目の内容説明
+
+設定ダイアログの各項目についての説明です。
+
+・[emb exp="getItemText('Enabled')"]
+　チェックを入れることでこの機能が有効になります。
+
+・[emb exp="getItemText('grpTYPE')"]
+　機械的にボイスを生成する方法を、下記の３種類から選ぶことができます。
+　ランタイムが未インストールの状態などで[if exp="condition('multilang')"]対象言語[else]日本語[endif]の発声ができない場合は選択できません。
+　Windows 10以降の環境では[emb exp="getItemText('UseSAPI')"]の利用を推奨します。
+
+　　* [emb exp="getItemText('UseSAPI')"]
+　　　　マイクロソフトが開発した音声合成・音声認識用のAPIです。
+　　　　Windows 10以降では、OSの言語の音声についてはインストール不要で最初から利用可能です。
+@if exp="condition('multilang')"
+　　　　それ以外の言語については、OSの言語の設定からそれぞれの音声をインストールしてください。
+@else
+　　　　もしOSの言語が日本語でない場合は、OSの言語の設定から日本語をインストールしてください。
+@endif
+
+　　* [emb exp="getItemText('UseMSSP')"]
+　　　　マイクロソフトが開発した音声合成・音声認識用のAPIです。
+　　　　ランタイムと言語ライブラリのインストールが必要です。（無償で利用できます）
+
+　　　　下記からダウンロードしてインストールすることができます。（英語ページです）
+　　　　- ランタイム　　 ： http://www.microsoft.com/en-us/download/details.aspx?id=27225
+　　　　　※ 64bit OS環境の場合、64bit版と32bit版ランタイム両方のインストールが必要です
+　　　　- 言語ライブラリ ： http://www.microsoft.com/en-us/download/details.aspx?id=27224
+@if exp="condition('multilang')"
+　　　　　※ 上記ページ内で、必要な言語の分だけ MSSpeech_TTS_*.msi をインストールしてください
+@else
+　　　　　※ 上記ページ内の MSSpeech_TTS_ja-JP_Haruka.msi をインストールしてください
+@endif
+
+　　* [emb exp="getItemText('UseXAPP')"]
+　　　　指定のコマンドラインアプリケーションを呼び出して、任意のテキスト文章から
+　　　　音声合成された wav ファイルを生成する方法です。
+　　　　「[emb exp="getItemText('UseXAPP')"]」にチェックを入れた後、「[emb exp="getItemText('AppSel')"]」ボタンを押して
+　　　　コマンドラインアプリケーションを選択してください。
+　　　　コマンドラインパラメータの記述方法は、音声パラメータの設定ボタンを押すことで表示されます。
+
+　　　　各アプリごとにコマンドラインの指定が異なるため、動作サポート保障はありません。
+　　　　予めご了承ください。
+
+@if exp="condition('voicevox')"
+　　* [emb exp="getItemText('UseVVOX')"]
+　　　　オープンソースの VOICEVOX エンジンを利用した音声合成です。
+　　　　あらかじめ https://voicevox.hiroshiba.jp/ からVOICEVOXアプリを
+　　　　ダウンロードしてインストール・起動しておく必要があります。
+　　　　エンジンが見つかった場合、項目を選択した時にバージョンが表示されます。
+　　　　エンジンが起動していない場合、選択しても各種設定を変更できません。
+
+　　　　APIアドレスはエンジンの起動オプションでホストアドレスやポート番号を指定した場合にのみ
+　　　　設定を変更してください。
+@endif
+
+・[emb exp="getItemText('grpVOICE')"]
+　「[emb exp="getItemText('NamLabel')"]」と「[emb exp="getItemText('DscLabel')"]」の２種類の音声パラメータを指定できます。
+　「[emb exp="getItemText('NamLabel')"]」は、主人公などの名前表記があるにも関わらずボイスのないメッセージテキストを、
+　「[emb exp="getItemText('DscLabel')"]」は、名前表記のないメッセージテキストを指します。
+
+　２種類の音声パラメータにそれぞれ下記の設定から選択できます。
+
+　　* [emb exp="getItemText('ComSetting')"]
+　　　　２種類とも同じ音声パラメータを使用する場合に選択します。
+　　　　「[emb exp="getItemText('ComLabel')"]」欄の右端にある「[emb exp="getItemText('Config')"]」ボタンで音声パラメータを変更できます。
+
+　　* [emb exp="getItemText('SepSetting')"]
+　　　　それぞれ別の音声パラメータを使用する場合に選択します。
+　　　　選択欄の右端にある「[emb exp="getItemText('Config')"]」ボタンで音声パラメータを変更できます。
+
+　　* [emb exp="getItemText('Disabled')"]
+　　　　読み上げ機能を無効にします。
+
+　各項目の「[emb exp="getItemText('Config')"]」ボタンを押すと、「[emb exp="getItemText('grpTYPE')"]」で指定された形式での設定ダイアログが開きます。
+　「[emb exp="getItemText('UseSAPI')"]」および「[emb exp="getItemText('UseMSSP')"]」では、話者の選択と速さおよび音程が指定できます。
+　「[emb exp="getItemText('UseXAPP')"]」では、コマンドラインオプションが指定できます。
+
+　各項目の「[emb exp="getItemText('Play')"]」ボタンを押すと、「[emb exp="getItemText('txtLABEL')"]」に記入されている文章で発声テストができます。
+
+・[emb exp="getItemText('EnvSave')"]／[emb exp="getItemText('EnvLoad')"]
+　音声合成方法と音声パラメータの各種設定の保存／読み込みを行います。
+　保存した設定は他のゲームでも読み込むことが可能です。
+
+・[emb exp="getItemText('grpVOLUME')"]
+　生成した音声合成ボイスの音量[if exp="condition('vocoder')"]や速度[endif]を指定します。
+
+　　* [emb exp="getItemText('VolGame')"]
+　　　　ゲーム内の設定値の音量で読み上げます。
+
+　　* [emb exp="getItemText('VolIndep')"]
+　　　　下にあるスライダーの設定値の音量で読み上げます。
+@if exp="condition('vocoder')"
+
+　　* [emb exp="getItemText('EnVocoder')"]
+　　　　合成後の音声に対して、ゲーム内のボイス速度設定で音声を再生します。
+@endif
+
+・[emb exp="getItemText('grpDICT')"]
+　読み間違いを修正するための辞書を設定できます。
+　読み上げテキストに対して、登録されている辞書の置換処理を行った後に、読み上げ処理が実行されます。
+
+　　* 「[emb exp="getItemText('DictAdd')"]」ボタン
+　　　　辞書単語を追加します。
+　　　　単語と読みを設定することで、読み上げ前に置換処理を行います。
+　　　　なお、単語一覧リストをダブルクリックすると、その単語の読みを編集することができます。
+
+　　* 「[emb exp="getItemText('DictUp')"]」「[emb exp="getItemText('DictDown')"]」ボタン
+　　　　選択されている単語の順序を変更します。
+　　　　置換処理の優先順位は最長一致が優先のため、表示順序は特に影響しません。
+　　　　単語の分類整理などにご利用ください。
+
+　　* 「[emb exp="getItemText('DictSel')"]」ボタン
+　　　　単語の全選択／解除を行います。
+　　　　なお、単語一覧リストでコントロールキーを押しながら選択すると複数の選択が可能です。
+
+　　* 「[emb exp="getItemText('DictDel')"]」ボタン
+　　　　選択されている単語を削除します。
+@if exp="condition('defdict')"
+　　　　単語一覧リストが空の状態で押すとデフォルトの辞書に初期化されます。
+@endif
+
+　　* [emb exp="getItemText('DictImport')"]
+　　　　登録されている辞書単語をファイルに保存します。
+
+　　* [emb exp="getItemText('DictExport')"]
+　　　　ファイルから辞書単語データを取り込みます。
+

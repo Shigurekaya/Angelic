@@ -1,0 +1,6 @@
+%[
+method:"zoomfade",
+time:1000,
+zoom1:200,
+zoom2:90
+]

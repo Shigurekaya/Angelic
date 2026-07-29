@@ -1,0 +1,23 @@
+# 音楽鑑賞／ゲーム中BGMタイトル表記翻訳定義
+#
+#bgmfile	translate
+BGM51	Our First Time-Kimi to Boku no Hajimete(BGM Ver.)
+BGM61	Our First Time-Kimi to Boku no Hajimete(Quiet Ver.)
+BGM52	Only Me.-Watashi Dake.(BGM Version)
+BGM62	Only Me.-Watashi Dake.(Quiet Version)
+BGM53	Blue Spring Days-Ao Haru Deizu(BGM Ver.)
+BGM63	Blue Spring Days-Ao Haru Deizu(Quiet Ver.)
+BGM54	The Urges of Love-Horete Yurete Koi Isogare(BGM Ver.)
+BGM64	The Urges of Love-Horete Yurete Koi Isogare(Quiet Ver.)
+BGM65	Happy Magic-Shiawase no Mahou(Quiet Ver.)
+BGM66	Wish(Quiet Ver.)
+BGM11	Cute?-Kawaii...?
+BGM12	SUSPICION-AYASHIGE
+BGM13	O-GOD-I-KAN
+SongED2	Hey.-Nee.
+SongED3	Telepathic Journey-Ishindenshin Jaanii
+SongED5	Happy Magic-Shiawase no Mahou
+SongED6	Wish
+
+# Unlistened(locked)
+???	No Data

@@ -1,0 +1,572 @@
+{
+  "source": "qconf_text.pbd",
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 666,
+      "top": 769,
+      "width": 536,
+      "height": 260,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 536,
+          "h": 260,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "textspeed_slider",
+      "left": 836,
+      "top": 789,
+      "width": 276,
+      "height": 54,
+      "class": "slider",
+      "uiname": "textspeed_slider",
+      "uistates": {
+        "over": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "normal": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "on": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 276,
+          "h": 54,
+          "storage": ""
+        },
+        "disable": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "knob": {
+          "ox": 54,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "rail": {
+          "ox": 4,
+          "oy": 21,
+          "cx": 0,
+          "cy": 0,
+          "w": 268,
+          "h": 13,
+          "storage": "qconf__pack"
+        },
+        "dsbase": {
+          "ox": 4,
+          "oy": 21,
+          "cx": 0,
+          "cy": 0,
+          "w": 268,
+          "h": 13,
+          "storage": "qconf__pack"
+        }
+      }
+    },
+    {
+      "name": "caps_textspd",
+      "left": 686,
+      "top": 790,
+      "width": 148,
+      "height": 48,
+      "class": "layer",
+      "uiname": "caps_textspd",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 48,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "textspeed_numbase",
+      "left": 1124,
+      "top": 802,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "textspeed_numbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 273,
+          "cy": 235,
+          "w": 52,
+          "h": 29,
+          "storage": "qconf__pack"
+        }
+      }
+    },
+    {
+      "name": "textspeed_value",
+      "left": 1124,
+      "top": 802,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "textspeed_value",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 52,
+          "h": 29,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "autospeed_slider",
+      "left": 836,
+      "top": 845,
+      "width": 276,
+      "height": 54,
+      "class": "slider",
+      "uiname": "autospeed_slider",
+      "uistates": {
+        "over": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "normal": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "on": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 276,
+          "h": 54,
+          "storage": ""
+        },
+        "disable": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "knob": {
+          "ox": 54,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "rail": {
+          "ox": 4,
+          "oy": 21,
+          "cx": 0,
+          "cy": 0,
+          "w": 268,
+          "h": 13,
+          "storage": "qconf__pack"
+        },
+        "dsbase": {
+          "ox": 4,
+          "oy": 21,
+          "cx": 0,
+          "cy": 0,
+          "w": 268,
+          "h": 13,
+          "storage": "qconf__pack"
+        }
+      }
+    },
+    {
+      "name": "caps_autospd",
+      "left": 686,
+      "top": 846,
+      "width": 148,
+      "height": 48,
+      "class": "layer",
+      "uiname": "caps_autospd",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 48,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "autospeed_numbase",
+      "left": 1124,
+      "top": 858,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "autospeed_numbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 273,
+          "cy": 235,
+          "w": 52,
+          "h": 29,
+          "storage": "qconf__pack"
+        }
+      }
+    },
+    {
+      "name": "autospeed_value",
+      "left": 1124,
+      "top": 858,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "autospeed_value",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 52,
+          "h": 29,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "winopac_slider",
+      "left": 836,
+      "top": 900,
+      "width": 276,
+      "height": 54,
+      "class": "slider",
+      "uiname": "winopac_slider",
+      "uistates": {
+        "over": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "normal": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "on": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 276,
+          "h": 54,
+          "storage": ""
+        },
+        "disable": {
+          "ox": 57,
+          "oy": 1,
+          "cx": 273,
+          "cy": 264,
+          "w": 50,
+          "h": 51,
+          "storage": "qconf__pack"
+        },
+        "knob": {
+          "ox": 54,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "rail": {
+          "ox": 4,
+          "oy": 21,
+          "cx": 0,
+          "cy": 0,
+          "w": 268,
+          "h": 13,
+          "storage": "qconf__pack"
+        },
+        "dsbase": {
+          "ox": 4,
+          "oy": 21,
+          "cx": 0,
+          "cy": 0,
+          "w": 268,
+          "h": 13,
+          "storage": "qconf__pack"
+        }
+      }
+    },
+    {
+      "name": "caps_winopac",
+      "left": 686,
+      "top": 901,
+      "width": 148,
+      "height": 48,
+      "class": "layer",
+      "uiname": "caps_winopac",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 48,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "winopac_numbase",
+      "left": 1124,
+      "top": 913,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "winopac_numbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 273,
+          "cy": 235,
+          "w": 52,
+          "h": 29,
+          "storage": "qconf__pack"
+        }
+      }
+    },
+    {
+      "name": "winopac_value",
+      "left": 1124,
+      "top": 913,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "winopac_value",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 52,
+          "h": 29,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "caps_skipall",
+      "left": 686,
+      "top": 956,
+      "width": 148,
+      "height": 48,
+      "class": "layer",
+      "uiname": "caps_skipall",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 48,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "skipall_off",
+      "left": 835,
+      "top": 965,
+      "width": 173,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "skipall_off",
+      "uistates": {
+        "text": {
+          "ox": 37,
+          "oy": 3,
+          "w": 136,
+          "h": 30,
+          "storage": ""
+        },
+        "over_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 175,
+          "cy": 51,
+          "w": 34,
+          "h": 34,
+          "storage": "qconf__pack"
+        },
+        "over_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 279,
+          "cy": 89,
+          "w": 34,
+          "h": 34,
+          "storage": "qconf__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 209,
+          "cy": 51,
+          "w": 34,
+          "h": 34,
+          "storage": "qconf__pack"
+        },
+        "normal_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 243,
+          "cy": 51,
+          "w": 34,
+          "h": 34,
+          "storage": "qconf__pack"
+        }
+      }
+    },
+    {
+      "name": "skipall_on",
+      "left": 1014,
+      "top": 965,
+      "width": 173,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "skipall_on",
+      "uistates": {
+        "text": {
+          "ox": 37,
+          "oy": 3,
+          "w": 136,
+          "h": 30,
+          "storage": ""
+        },
+        "over_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 175,
+          "cy": 51,
+          "w": 34,
+          "h": 34,
+          "storage": "qconf__pack"
+        },
+        "over_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 279,
+          "cy": 89,
+          "w": 34,
+          "h": 34,
+          "storage": "qconf__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 209,
+          "cy": 51,
+          "w": 34,
+          "h": 34,
+          "storage": "qconf__pack"
+        },
+        "normal_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 243,
+          "cy": 51,
+          "w": 34,
+          "h": 34,
+          "storage": "qconf__pack"
+        }
+      }
+    }
+  ]
+}

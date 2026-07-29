@@ -1,0 +1,14 @@
+{
+  "source": "autoskipmark_pos.pbd",
+  "hotspots": [
+    {
+      "name": "markpos",
+      "left": 1611,
+      "top": 974,
+      "width": 78,
+      "height": 41,
+      "class": "area",
+      "uiname": "markpos"
+    }
+  ]
+}

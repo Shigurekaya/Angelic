@@ -1,0 +1,41 @@
+{
+  "source": "chapter.pbd",
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 49,
+      "width": 342,
+      "height": 105,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 342,
+          "h": 105,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "text",
+      "left": 21,
+      "top": 87,
+      "width": 256,
+      "height": 40,
+      "class": "layer",
+      "uiname": "text",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 256,
+          "h": 40,
+          "storage": ""
+        }
+      }
+    }
+  ]
+}

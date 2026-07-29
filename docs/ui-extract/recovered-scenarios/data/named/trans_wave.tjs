@@ -1,0 +1,9 @@
+%[
+method:"wave",
+time:1000,
+wavetype:0,
+maxh:50,
+maxomega:0.2,
+bgcolor1:0xffffff,
+bgcolor2:0x000000
+]

@@ -1,0 +1,228 @@
+{
+  "source": "E:/GAL/天使☆嚣嚣 live capture ig_option_*_1080",
+  "structure": {
+    "label": "arrow_pill + dark_blue_text",
+    "toggle": "flat wide value bar under label (~571x75)",
+    "slider": "thin rail under label; mute left of right-col rails",
+    "not": "do NOT bake option__pack s005 as category labels"
+  },
+  "arrow": {
+    "file": "label_arrow_truth.png",
+    "w": 96,
+    "h": 50,
+    "src_box": [
+      164,
+      237,
+      260,
+      287
+    ]
+  },
+  "page0": {
+    "left_icon_x": 164,
+    "left_label_x": 270,
+    "left_ctrl_x": 195,
+    "right_icon_x": 1515,
+    "right_label_x": 1620,
+    "right_rail_x": 1655,
+    "mute_x": 1544,
+    "row_label_ys": [
+      237,
+      483,
+      728,
+      880
+    ],
+    "wide_chip": {
+      "w": 571,
+      "h": 75,
+      "dy": 75
+    },
+    "rail": {
+      "w": 288,
+      "h": 13,
+      "dy": 101,
+      "official": "option__pack/s014"
+    },
+    "chips": [
+      {
+        "x": 195,
+        "y": 313,
+        "w": 571,
+        "h": 75
+      },
+      {
+        "x": 194,
+        "y": 558,
+        "w": 572,
+        "h": 75
+      },
+      {
+        "x": 825,
+        "y": 558,
+        "w": 571,
+        "h": 75
+      }
+    ],
+    "rails": [
+      {
+        "x": 1655,
+        "y": 342,
+        "w": 265,
+        "h": 20
+      },
+      {
+        "x": 1654,
+        "y": 586,
+        "w": 266,
+        "h": 21
+      },
+      {
+        "x": 306,
+        "y": 829,
+        "w": 448,
+        "h": 21
+      },
+      {
+        "x": 1655,
+        "y": 831,
+        "w": 265,
+        "h": 21
+      }
+    ],
+    "icons_left": [
+      {
+        "x": 164,
+        "y": 237,
+        "w": 95,
+        "h": 50
+      },
+      {
+        "x": 164,
+        "y": 483,
+        "w": 95,
+        "h": 48
+      },
+      {
+        "x": 165,
+        "y": 728,
+        "w": 93,
+        "h": 48
+      },
+      {
+        "x": 164,
+        "y": 973,
+        "w": 95,
+        "h": 48
+      }
+    ],
+    "icons_right": [
+      {
+        "x": 1515,
+        "y": 238,
+        "w": 94,
+        "h": 48
+      },
+      {
+        "x": 1515,
+        "y": 483,
+        "w": 94,
+        "h": 48
+      },
+      {
+        "x": 1502,
+        "y": 728,
+        "w": 107,
+        "h": 48
+      },
+      {
+        "x": 1515,
+        "y": 972,
+        "w": 95,
+        "h": 50
+      }
+    ],
+    "mutes": [
+      {
+        "x": 1544,
+        "y": 331,
+        "w": 58,
+        "h": 41
+      },
+      {
+        "x": 1543,
+        "y": 576,
+        "w": 59,
+        "h": 41
+      },
+      {
+        "x": 1544,
+        "y": 821,
+        "w": 58,
+        "h": 41
+      }
+    ],
+    "sidebar": {
+      "x": 58,
+      "y": 161,
+      "w": 80,
+      "h": 731
+    },
+    "footer_y": 973,
+    "footer_xs": [
+      940,
+      1187,
+      1434
+    ],
+    "tabs": {
+      "y": 28,
+      "h": 52,
+      "x0": 720,
+      "x1": 1880,
+      "note": "原版顶栏可见基本/画面/游戏1/2/文本/音频；确认/键盘仍保留为后续页签"
+    },
+    "simple_keys": {
+      "left": [
+        "fullscreen",
+        "sqscr",
+        "textspeed",
+        "autospeed"
+      ],
+      "right": [
+        "wave",
+        "bgm",
+        "se",
+        "voice"
+      ],
+      "note": "ig_option_0 可见 4+4；skipall/movie 走详细页"
+    },
+    "label_arrow": {
+      "file": "label_arrow_truth.png",
+      "w": 96,
+      "h": 50,
+      "src_box": [
+        164,
+        237,
+        260,
+        287
+      ]
+    }
+  },
+  "grid": {
+    "left_icon_x": 164,
+    "left_label_x": 270,
+    "left_ctrl_x": 195,
+    "right_icon_x": 1515,
+    "right_label_x": 1620,
+    "right_rail_x": 1655,
+    "mute_x": 1544,
+    "row_ys": [
+      237,
+      483,
+      728,
+      880
+    ],
+    "ctrl_dy": 75,
+    "rail_dy": 101,
+    "wide_chip_w": 571,
+    "wide_chip_h": 75
+  }
+}

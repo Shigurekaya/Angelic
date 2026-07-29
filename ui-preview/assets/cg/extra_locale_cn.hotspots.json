@@ -1,96 +1,76 @@
 {
   "source": "extra_locale_cn.pbd",
+  "tool": "pbd2json",
   "hotspots": [
     {
-      "layer_id": "to_scene",
-      "sort_index": 2087,
-      "height": 131,
-      "ch": 23
-    },
-    {
-      "layer_id": "to_stand",
-      "sort_index": 2123,
-      "height": 238,
-      "ch": 13
-    },
-    {
+      "name": "to_cg",
+      "left": 1235,
+      "top": 0,
+      "width": 125,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_cg",
       "layer_id": "to_cg",
-      "sort_index": 2218,
-      "height": 17,
-      "ch": 124
+      "x": 1235,
+      "y": 0,
+      "w": 125,
+      "h": 81
     },
     {
-      "layer_id": "c",
-      "sort_index": null,
-      "height": 28,
-      "cx": 201,
-      "cy": 218
+      "name": "to_scene",
+      "left": 1361,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_scene",
+      "layer_id": "to_scene",
+      "x": 1361,
+      "y": 0,
+      "w": 148,
+      "h": 81
     },
     {
-      "layer_id": "cref",
-      "sort_index": null,
-      "height": 28
+      "name": "to_stand",
+      "left": 1510,
+      "top": 0,
+      "width": 149,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_stand",
+      "layer_id": "to_stand",
+      "x": 1510,
+      "y": 0,
+      "w": 149,
+      "h": 81
     },
     {
-      "layer_id": "dot_on",
-      "sort_index": null,
-      "ch": 124
-    },
-    {
-      "layer_id": "dot_ov",
-      "sort_index": null,
-      "ch": 112
-    },
-    {
-      "layer_id": "extra_locale_cn__pack",
-      "sort_index": null,
-      "width": 172
-    },
-    {
-      "layer_id": "k",
-      "sort_index": null,
-      "height": 28
-    },
-    {
-      "layer_id": "l",
-      "sort_index": null,
-      "height": 28,
-      "cx": 74,
-      "cy": 23
-    },
-    {
-      "layer_id": "radio",
-      "sort_index": null,
-      "height": 17
-    },
-    {
+      "name": "to_voice",
+      "left": 1660,
+      "top": 0,
+      "width": 212,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_voice",
       "layer_id": "to_voice",
-      "sort_index": null,
-      "height": 28,
-      "ch": 244
+      "x": 1660,
+      "y": 0,
+      "w": 212,
+      "h": 81
     },
     {
-      "layer_id": "width",
-      "sort_index": null,
-      "x": 156
-    },
-    {
-      "layer_id": "x",
-      "sort_index": null,
-      "y": 14
-    },
-    {
-      "layer_id": "y",
-      "sort_index": null,
-      "height": 17
-    },
-    {
-      "layer_id": "z",
-      "sort_index": null,
-      "height": 28,
-      "cx": 47,
-      "cy": 217
+      "name": "alltabs",
+      "left": 1254,
+      "top": 23,
+      "width": 573,
+      "height": 35,
+      "class": "cref",
+      "uiname": "alltabs",
+      "layer_id": "alltabs",
+      "x": 1254,
+      "y": 23,
+      "w": 573,
+      "h": 35
     }
-  ],
-  "bindings": []
+  ]
 }

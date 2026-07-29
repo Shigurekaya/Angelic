@@ -1,0 +1,490 @@
+{
+  "source": "select.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "select",
+    "select_pos0",
+    "select_pos1",
+    "select1_1",
+    "select1_2",
+    "select2_2",
+    "select1_3",
+    "select2_3",
+    "select3_3",
+    "select1_4",
+    "select2_4",
+    "select3_4",
+    "select4_4",
+    "select1_5",
+    "select2_5",
+    "select3_5",
+    "select4_5",
+    "select5_5",
+    "select1_6",
+    "select2_6",
+    "select3_6",
+    "select4_6",
+    "select5_6",
+    "select6_6",
+    "select1_7",
+    "select2_7",
+    "select3_7",
+    "select4_7",
+    "select5_7",
+    "select6_7",
+    "select7_7"
+  ],
+  "layer_count": 31,
+  "hotspot_count": 31,
+  "hotspots": [
+    {
+      "name": "select1_6",
+      "left": 329,
+      "top": 42,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select1_6"
+    },
+    {
+      "name": "select1_7",
+      "left": 329,
+      "top": 42,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select1_7"
+    },
+    {
+      "name": "select1_5",
+      "left": 329,
+      "top": 102,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select1_5"
+    },
+    {
+      "name": "select1_4",
+      "left": 329,
+      "top": 162,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select1_4"
+    },
+    {
+      "name": "select2_6",
+      "left": 329,
+      "top": 162,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select2_6"
+    },
+    {
+      "name": "select2_7",
+      "left": 329,
+      "top": 162,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select2_7"
+    },
+    {
+      "name": "select1_3",
+      "left": 329,
+      "top": 222,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select1_3"
+    },
+    {
+      "name": "select2_5",
+      "left": 329,
+      "top": 222,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select2_5"
+    },
+    {
+      "name": "select1_2",
+      "left": 329,
+      "top": 282,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select1_2"
+    },
+    {
+      "name": "select2_4",
+      "left": 329,
+      "top": 282,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select2_4"
+    },
+    {
+      "name": "select3_6",
+      "left": 329,
+      "top": 282,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select3_6"
+    },
+    {
+      "name": "select3_7",
+      "left": 329,
+      "top": 282,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select3_7"
+    },
+    {
+      "name": "select",
+      "left": 329,
+      "top": 342,
+      "width": 1263,
+      "height": 96,
+      "class": "button",
+      "uiname": "select",
+      "uistates": {
+        "kag": {
+          "ox": 1155,
+          "oy": 14,
+          "cx": 143,
+          "cy": 279,
+          "w": 68,
+          "h": 64,
+          "storage": "select__pack"
+        },
+        "fum": {
+          "ox": 1160,
+          "oy": 26,
+          "cx": 405,
+          "cy": 279,
+          "w": 59,
+          "h": 54,
+          "storage": "select__pack"
+        },
+        "off": {
+          "ox": 1,
+          "oy": 2,
+          "cx": 0,
+          "cy": 0,
+          "w": 1260,
+          "h": 93,
+          "storage": "select__pack"
+        },
+        "pos1": {
+          "ox": 1075,
+          "oy": 11,
+          "w": 78,
+          "h": 75,
+          "storage": ""
+        },
+        "on": {
+          "ox": 1,
+          "oy": 2,
+          "cx": 0,
+          "cy": 93,
+          "w": 1260,
+          "h": 93,
+          "storage": "select__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 1263,
+          "h": 96,
+          "storage": "",
+          "opacity": 128
+        },
+        "ama": {
+          "ox": 1163,
+          "oy": 26,
+          "cx": 464,
+          "cy": 279,
+          "w": 57,
+          "h": 52,
+          "storage": "select__pack"
+        },
+        "ori": {
+          "ox": 1161,
+          "oy": 26,
+          "cx": 345,
+          "cy": 279,
+          "w": 60,
+          "h": 52,
+          "storage": "select__pack"
+        },
+        "other": {
+          "ox": 1155,
+          "oy": 21,
+          "cx": 278,
+          "cy": 279,
+          "w": 67,
+          "h": 57,
+          "storage": "select__pack"
+        },
+        "over": {
+          "ox": 1,
+          "oy": 2,
+          "cx": 0,
+          "cy": 186,
+          "w": 1260,
+          "h": 93,
+          "storage": "select__pack"
+        },
+        "pos0": {
+          "ox": 1153,
+          "oy": 11,
+          "w": 78,
+          "h": 75,
+          "storage": ""
+        },
+        "pos2": {
+          "ox": 997,
+          "oy": 11,
+          "w": 78,
+          "h": 75,
+          "storage": ""
+        },
+        "heart": {
+          "ox": 29,
+          "oy": 23,
+          "cx": 211,
+          "cy": 279,
+          "w": 67,
+          "h": 57,
+          "storage": "select__pack"
+        },
+        "kur": {
+          "ox": 1157,
+          "oy": 28,
+          "cx": 72,
+          "cy": 279,
+          "w": 71,
+          "h": 50,
+          "storage": "select__pack"
+        },
+        "hscene": {
+          "ox": 26,
+          "oy": 11,
+          "w": 74,
+          "h": 75,
+          "storage": ""
+        },
+        "noa": {
+          "ox": 1157,
+          "oy": 21,
+          "cx": 0,
+          "cy": 279,
+          "w": 72,
+          "h": 57,
+          "storage": "select__pack"
+        }
+      }
+    },
+    {
+      "name": "select1_1",
+      "left": 329,
+      "top": 342,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select1_1"
+    },
+    {
+      "name": "select2_3",
+      "left": 329,
+      "top": 342,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select2_3"
+    },
+    {
+      "name": "select3_5",
+      "left": 329,
+      "top": 342,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select3_5"
+    },
+    {
+      "name": "select_pos0",
+      "left": 329,
+      "top": 342,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select_pos0"
+    },
+    {
+      "name": "select2_2",
+      "left": 329,
+      "top": 402,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select2_2"
+    },
+    {
+      "name": "select3_4",
+      "left": 329,
+      "top": 402,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select3_4"
+    },
+    {
+      "name": "select4_6",
+      "left": 329,
+      "top": 402,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select4_6"
+    },
+    {
+      "name": "select4_7",
+      "left": 329,
+      "top": 402,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select4_7"
+    },
+    {
+      "name": "select3_3",
+      "left": 329,
+      "top": 462,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select3_3"
+    },
+    {
+      "name": "select4_5",
+      "left": 329,
+      "top": 462,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select4_5"
+    },
+    {
+      "name": "select_pos1",
+      "left": 329,
+      "top": 462,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select_pos1"
+    },
+    {
+      "name": "select4_4",
+      "left": 329,
+      "top": 522,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select4_4"
+    },
+    {
+      "name": "select5_6",
+      "left": 329,
+      "top": 522,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select5_6"
+    },
+    {
+      "name": "select5_7",
+      "left": 329,
+      "top": 522,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select5_7"
+    },
+    {
+      "name": "select5_5",
+      "left": 329,
+      "top": 582,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select5_5"
+    },
+    {
+      "name": "select6_6",
+      "left": 329,
+      "top": 642,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select6_6"
+    },
+    {
+      "name": "select6_7",
+      "left": 329,
+      "top": 642,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select6_7"
+    },
+    {
+      "name": "select7_7",
+      "left": 329,
+      "top": 762,
+      "width": 1263,
+      "height": 96,
+      "class": "area",
+      "uiname": "select7_7"
+    }
+  ],
+  "raw_result_keys": [
+    "select",
+    "select1_1",
+    "select1_2",
+    "select1_3",
+    "select1_4",
+    "select1_5",
+    "select1_6",
+    "select1_7",
+    "select2_2",
+    "select2_3",
+    "select2_4",
+    "select2_5",
+    "select2_6",
+    "select2_7",
+    "select3_3",
+    "select3_4",
+    "select3_5",
+    "select3_6",
+    "select3_7",
+    "select4_4",
+    "select4_5",
+    "select4_6",
+    "select4_7",
+    "select5_5",
+    "select5_6",
+    "select5_7",
+    "select6_6",
+    "select6_7",
+    "select7_7",
+    "select_pos0",
+    "select_pos1"
+  ]
+}

@@ -1,0 +1,6 @@
+%[
+method:"universal",
+time:1000,
+rule:"map01",
+vague:64
+]

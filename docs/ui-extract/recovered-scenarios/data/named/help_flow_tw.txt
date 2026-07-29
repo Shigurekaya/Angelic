@@ -1,0 +1,60 @@
+# フローチャート画面ヘルプテキスト
+
+back
+	返回遊戲界面。
+
+title	title2
+	返回標題界面。
+
+backlog
+	移動至歷史記錄界面。
+
+page0	page1	page2	page3	page4	page5	page6
+	頁面選擇。
+
+top
+	滾動到上一章節。
+pageup
+	滾動到上一頁。
+pagedown
+	滾動到下一頁。
+end
+	滾動到下一章節。
+
+
+data_bg
+	預覽選擇的場景。
+
+minimap_base
+	這裡是縮圖。拖動滑鼠可以快速滾動。
+
+JUMP
+	跳轉至選擇的場景。
+
+HELP_START
+	流程圖界面。	查看劇情全部流程並跳轉至指定場景。
+
+HELP_JUMP
+	再次單擊以跳轉至該場景。
+HELP_SECTION
+	${_curHelpChapter}單擊選擇該場景。
+HELP_SELECT
+	選擇項。單擊選擇分支。${_curHelpSelect}
+HELP_WARP
+	選擇個人路線。	單擊以顯示對應的路線頁面。
+
+HELP_INDEXHEAD
+	選擇該路線。
+
+HELP_INDEXITEM
+	顯示該場景的流程圖位置。
+
+
+HELP_INOUT
+	※根據對Ｈ場景的系統設置，該選項可能無法選擇。
+
+HELP_CLEARSEL
+	※根據遊戲結局完成情況，可能無法選擇此路線。
+
+HELP_CONDSEL
+	※根據遊戲完成進度，可能無法選擇此路線。

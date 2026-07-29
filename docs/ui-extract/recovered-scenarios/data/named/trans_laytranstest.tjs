@@ -1,0 +1,10 @@
+%[
+laytrans:true,
+type:"trans",
+method:"universal",
+rule:"map02",
+time:1000,
+wait:500,
+color:0x000000,
+vague:64
+]

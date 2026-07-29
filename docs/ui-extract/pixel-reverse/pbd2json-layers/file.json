@@ -1,0 +1,1074 @@
+{
+  "source": "file.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "new",
+    "sdmove_from",
+    "sdmove_to",
+    "itemmove_to",
+    "item_pos00",
+    "item_pos11",
+    "_pgbtn",
+    "page_up100",
+    "page_up10",
+    "page_up1",
+    "slider",
+    "page_dw1",
+    "page_dw10",
+    "page_dw100",
+    "page_sub",
+    "page_num",
+    "page_max",
+    "page_numbase",
+    "page_add",
+    "detail",
+    "detail_base",
+    "hide_thumb",
+    "edit_hold",
+    "_edit",
+    "edit_copy",
+    "edit_swap",
+    "edit_comment",
+    "edit_remove",
+    "to_save",
+    "to_load",
+    "to_quick",
+    "_sysbtn",
+    "title",
+    "back",
+    "helptext",
+    "helpbase"
+  ],
+  "layer_count": 36,
+  "hotspot_count": 36,
+  "hotspots": [
+    {
+      "name": "to_save",
+      "left": 1484,
+      "top": 0,
+      "width": 102,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_save",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 102,
+          "h": 81,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "to_load",
+      "left": 1586,
+      "top": 0,
+      "width": 102,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_load",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 102,
+          "h": 81,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "to_quick",
+      "left": 1688,
+      "top": 0,
+      "width": 190,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_quick",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 190,
+          "h": 81,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "edit_copy",
+      "left": 798,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_copy"
+    },
+    {
+      "name": "edit_swap",
+      "left": 1017,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_swap"
+    },
+    {
+      "name": "edit_comment",
+      "left": 1236,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_comment"
+    },
+    {
+      "name": "_edit",
+      "left": 1455,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "button",
+      "uiname": "_edit",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 364,
+          "cy": 90,
+          "w": 197,
+          "h": 49,
+          "storage": "file__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 413,
+          "cy": 90,
+          "w": 197,
+          "h": 49,
+          "storage": "file__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 315,
+          "cy": 90,
+          "w": 197,
+          "h": 49,
+          "storage": "file__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 197,
+          "h": 49,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "edit_remove",
+      "left": 1455,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_remove"
+    },
+    {
+      "name": "hide_thumb",
+      "left": 86,
+      "top": 107,
+      "width": 317,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "hide_thumb",
+      "uistates": {
+        "text": {
+          "ox": 37,
+          "oy": 3,
+          "w": 280,
+          "h": 30,
+          "storage": ""
+        },
+        "over_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 669,
+          "cy": 179,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "over_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 564,
+          "cy": 203,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 635,
+          "cy": 179,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "normal_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 564,
+          "cy": 237,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "edit_hold",
+      "left": 433,
+      "top": 107,
+      "width": 317,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "edit_hold",
+      "uistates": {
+        "text": {
+          "ox": 37,
+          "oy": 3,
+          "w": 280,
+          "h": 30,
+          "storage": ""
+        },
+        "over_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 669,
+          "cy": 179,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "over_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 564,
+          "cy": 203,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 635,
+          "cy": 179,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "normal_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 564,
+          "cy": 237,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "_pgbtn",
+      "left": 1678,
+      "top": 107,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "_pgbtn",
+      "uistates": {
+        "ov_up": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 462,
+          "cy": 219,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "on_top": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 699,
+          "cy": 240,
+          "w": 26,
+          "h": 26,
+          "storage": "file__pack"
+        },
+        "on_minus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 669,
+          "cy": 145,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "ov_minus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 601,
+          "cy": 213,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "of_btm": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 642,
+          "cy": 111,
+          "w": 26,
+          "h": 25,
+          "storage": "file__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "on_dw": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 486,
+          "cy": 219,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "of_dw": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 462,
+          "cy": 194,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "of_top": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 616,
+          "cy": 111,
+          "w": 26,
+          "h": 26,
+          "storage": "file__pack"
+        },
+        "ov_dw10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 703,
+          "cy": 179,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        },
+        "of_up10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 667,
+          "cy": 240,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        },
+        "ov_dw": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 486,
+          "cy": 194,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "of_plus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 635,
+          "cy": 145,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "ov_plus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 601,
+          "cy": 247,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "ov_up10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 667,
+          "cy": 213,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        },
+        "on_up10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 635,
+          "cy": 213,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        },
+        "on_btm": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 692,
+          "cy": 111,
+          "w": 26,
+          "h": 25,
+          "storage": "file__pack"
+        },
+        "ov_top": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 703,
+          "cy": 145,
+          "w": 26,
+          "h": 26,
+          "storage": "file__pack"
+        },
+        "of_minus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 601,
+          "cy": 145,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "on_plus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 601,
+          "cy": 179,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "ov_btm": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 667,
+          "cy": 111,
+          "w": 26,
+          "h": 25,
+          "storage": "file__pack"
+        },
+        "of_up": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 462,
+          "cy": 244,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "of_dw10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 699,
+          "cy": 213,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        },
+        "on_up": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 486,
+          "cy": 244,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "on_dw10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 635,
+          "cy": 240,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "page_sub",
+      "left": 1678,
+      "top": 107,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_sub"
+    },
+    {
+      "name": "page_add",
+      "left": 1834,
+      "top": 107,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_add"
+    },
+    {
+      "name": "page_max",
+      "left": 1722,
+      "top": 108,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_max",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 104,
+          "h": 35,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "page_num",
+      "left": 1722,
+      "top": 108,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_num",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 104,
+          "h": 35,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "page_numbase",
+      "left": 1722,
+      "top": 108,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_numbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 462,
+          "cy": 90,
+          "w": 104,
+          "h": 35,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "new",
+      "left": 651,
+      "top": 175,
+      "width": 58,
+      "height": 54,
+      "class": "layer",
+      "uiname": "new",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 547,
+          "cy": 145,
+          "w": 58,
+          "h": 54,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "page_up100",
+      "left": 1793,
+      "top": 175,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up100"
+    },
+    {
+      "name": "item_pos00",
+      "left": 664,
+      "top": 184,
+      "width": 273,
+      "height": 256,
+      "class": "area",
+      "uiname": "item_pos00",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 264,
+          "h": 249,
+          "storage": "",
+          "opacity": 0
+        },
+        "sdicon": {
+          "ox": 213,
+          "oy": 204,
+          "w": 60,
+          "h": 52,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "itemmove_to",
+      "left": 664,
+      "top": 184,
+      "width": 264,
+      "height": 249,
+      "class": "area",
+      "uiname": "itemmove_to"
+    },
+    {
+      "name": "detail",
+      "left": 98,
+      "top": 213,
+      "width": 509,
+      "height": 643,
+      "class": "layer",
+      "uiname": "detail",
+      "uistates": {
+        "number": {
+          "ox": 0,
+          "oy": 0,
+          "w": 486,
+          "h": 274,
+          "storage": ""
+        },
+        "comment": {
+          "ox": 141,
+          "oy": 516,
+          "w": 359,
+          "h": 127,
+          "storage": "",
+          "opacity": 0
+        },
+        "text": {
+          "ox": 141,
+          "oy": 516,
+          "w": 359,
+          "h": 127,
+          "storage": "",
+          "opacity": 0
+        },
+        "date": {
+          "ox": 141,
+          "oy": 373,
+          "w": 359,
+          "h": 34,
+          "storage": "",
+          "opacity": 0
+        },
+        "chapter": {
+          "ox": 141,
+          "oy": 446,
+          "w": 359,
+          "h": 34,
+          "storage": "",
+          "opacity": 0
+        },
+        "thumb": {
+          "ox": 0,
+          "oy": 0,
+          "w": 486,
+          "h": 274,
+          "storage": ""
+        },
+        "sdicon": {
+          "ox": 449,
+          "oy": 245,
+          "w": 60,
+          "h": 52,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "page_up10",
+      "left": 1793,
+      "top": 217,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up10"
+    },
+    {
+      "name": "page_up1",
+      "left": 1793,
+      "top": 259,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up1"
+    },
+    {
+      "name": "slider",
+      "left": 1793,
+      "top": 309,
+      "width": 40,
+      "height": 521,
+      "class": "slider",
+      "uiname": "slider",
+      "uistates": {
+        "rail": {
+          "ox": 12,
+          "oy": 4,
+          "cx": 0,
+          "cy": 77,
+          "w": 13,
+          "h": 513,
+          "storage": "file__pack"
+        },
+        "on": {
+          "ox": 2,
+          "oy": 209,
+          "cx": 616,
+          "cy": 77,
+          "w": 34,
+          "h": 103,
+          "storage": "file__pack"
+        },
+        "over": {
+          "ox": 2,
+          "oy": 209,
+          "cx": 513,
+          "cy": 77,
+          "w": 34,
+          "h": 103,
+          "storage": "file__pack"
+        },
+        "normal": {
+          "ox": 2,
+          "oy": 209,
+          "cx": 513,
+          "cy": 111,
+          "w": 34,
+          "h": 103,
+          "storage": "file__pack"
+        },
+        "knob": {
+          "ox": 0,
+          "oy": 209,
+          "w": 40,
+          "h": 104,
+          "storage": "",
+          "opacity": 128
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 40,
+          "h": 521,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "sdmove_from",
+      "left": 877,
+      "top": 388,
+      "width": 60,
+      "height": 52,
+      "class": "area",
+      "uiname": "sdmove_from"
+    },
+    {
+      "name": "item_pos11",
+      "left": 941,
+      "top": 445,
+      "width": 273,
+      "height": 256,
+      "class": "area",
+      "uiname": "item_pos11",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 264,
+          "h": 249,
+          "storage": "",
+          "opacity": 0
+        },
+        "sdicon": {
+          "ox": 213,
+          "oy": 204,
+          "w": 60,
+          "h": 52,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "sdmove_to",
+      "left": 547,
+      "top": 458,
+      "width": 60,
+      "height": 52,
+      "class": "area",
+      "uiname": "sdmove_to"
+    },
+    {
+      "name": "detail_base",
+      "left": 105,
+      "top": 595,
+      "width": 116,
+      "height": 163,
+      "class": "layer",
+      "uiname": "detail_base",
+      "uistates": {
+        "comment": {
+          "ox": 0,
+          "oy": 146,
+          "cx": 513,
+          "cy": 145,
+          "w": 116,
+          "h": 17,
+          "storage": "file__pack"
+        },
+        "date": {
+          "ox": 51,
+          "oy": 0,
+          "cx": 547,
+          "cy": 203,
+          "w": 65,
+          "h": 17,
+          "storage": "file__pack"
+        },
+        "chapter": {
+          "ox": 13,
+          "oy": 73,
+          "cx": 530,
+          "cy": 145,
+          "w": 103,
+          "h": 17,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "page_dw1",
+      "left": 1793,
+      "top": 844,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw1"
+    },
+    {
+      "name": "page_dw10",
+      "left": 1793,
+      "top": 886,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw10"
+    },
+    {
+      "name": "page_dw100",
+      "left": 1793,
+      "top": 928,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw100"
+    },
+    {
+      "name": "helpbase",
+      "left": 27,
+      "top": 979,
+      "width": 731,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helpbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 731,
+          "h": 77,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "helptext",
+      "left": 57,
+      "top": 987,
+      "width": 672,
+      "height": 62,
+      "class": "layer",
+      "uiname": "helptext",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 672,
+          "h": 62,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title"
+    },
+    {
+      "name": "_sysbtn",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_sysbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 0,
+          "cy": 206,
+          "w": 315,
+          "h": 58,
+          "storage": "file__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 0,
+          "cy": 148,
+          "w": 315,
+          "h": 58,
+          "storage": "file__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 0,
+          "cy": 90,
+          "w": 315,
+          "h": 58,
+          "storage": "file__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 315,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back"
+    }
+  ],
+  "raw_result_keys": [
+    "_edit",
+    "_pgbtn",
+    "_sysbtn",
+    "back",
+    "detail",
+    "detail_base",
+    "edit_comment",
+    "edit_copy",
+    "edit_hold",
+    "edit_remove",
+    "edit_swap",
+    "helpbase",
+    "helptext",
+    "hide_thumb",
+    "item_pos00",
+    "item_pos11",
+    "itemmove_to",
+    "new",
+    "page_add",
+    "page_dw1",
+    "page_dw10",
+    "page_dw100",
+    "page_max",
+    "page_num",
+    "page_numbase",
+    "page_sub",
+    "page_up1",
+    "page_up10",
+    "page_up100",
+    "sdmove_from",
+    "sdmove_to",
+    "slider",
+    "title",
+    "to_load",
+    "to_quick",
+    "to_save"
+  ]
+}

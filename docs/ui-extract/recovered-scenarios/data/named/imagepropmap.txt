@@ -1,0 +1,4 @@
+#画像名　　	プロパティ名	値	プロパティ名2	値2 ...
+#image001	resolution	60	center	1
+#image002	resolution	100	center	2
+#emote由夏a制服.psb	resolution	200

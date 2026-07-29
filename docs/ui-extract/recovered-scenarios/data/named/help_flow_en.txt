@@ -1,0 +1,60 @@
+# フローチャート画面ヘルプテキスト
+
+back
+	Return to the game screen.
+
+title	title2
+	Return to the title screen.
+
+backlog
+	Swap to the backlog.
+
+page0	page1	page2	page3	page4	page5	page6
+	Choose route
+
+top
+	Scroll to the previous chapter
+pageup
+	Scroll to previous page
+pagedown
+	Scroll to next page
+end
+	Scroll to next chapter
+
+
+data_bg
+	This screen plays through the currently selected scenario.
+
+minimap_base
+	A reduced map is being displayed. You can drag and scroll around.
+
+JUMP
+	Jump to the selected scenario.
+
+HELP_START
+	This is the flowchart screen. Use it to jump to viewed scenes and look at an overview of the scenario.
+
+HELP_JUMP
+	Click again to jump to the selected scenario.
+HELP_SECTION
+	${_curHelpChapter}Click to choose this scene.
+HELP_SELECT
+	This is a choice. Click to jump to right before the choice is made.${_curHelpSelect}
+HELP_WARP
+	This is a route split. Click to swap to that route's page.
+
+HELP_INDEXHEAD
+	Choose this route.
+
+HELP_INDEXITEM
+	Show where this scene is in the flowchart.
+
+
+HELP_INOUT
+	Note: If H-scene options are set, some choices may not appear.
+
+HELP_CLEARSEL
+	Note: Depending on choices, you may not be able to choose a route.
+
+HELP_CONDSEL
+	Note: Depending on choices, you may not be able to choose a route.

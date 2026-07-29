@@ -1,0 +1,14 @@
+language
+	The following language settings will be changed:
+	- UI Language - Can only be changed here.
+	- Main Text Language
+	- Sub Text Language
+	* Main/Sub Text Language can also be changed in the menu bar
+
+language_fixui
+	The following language settings will be changed:
+	 
+	- Main Text Language
+	- Sub Text Language
+	 
+	* Main/Sub Text Language can also be changed in the menu bar

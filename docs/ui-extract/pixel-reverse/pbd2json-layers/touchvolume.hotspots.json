@@ -1,0 +1,253 @@
+{
+  "source": "touchvolume.pbd",
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 471,
+      "top": 251,
+      "width": 978,
+      "height": 498,
+      "class": "base",
+      "uiname": "base"
+    },
+    {
+      "name": "back",
+      "left": 1359,
+      "top": 260,
+      "width": 81,
+      "height": 81,
+      "class": "button",
+      "uiname": "back",
+      "uistates": {
+        "on": {
+          "ox": 20,
+          "oy": 21,
+          "cx": 459,
+          "cy": 13,
+          "w": 40,
+          "h": 40,
+          "storage": "touchvolume__pack"
+        },
+        "over": {
+          "ox": 20,
+          "oy": 21,
+          "cx": 499,
+          "cy": 13,
+          "w": 40,
+          "h": 40,
+          "storage": "touchvolume__pack"
+        },
+        "off": {
+          "ox": 20,
+          "oy": 21,
+          "cx": 419,
+          "cy": 13,
+          "w": 40,
+          "h": 40,
+          "storage": "touchvolume__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 81,
+          "h": 81,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "header",
+      "left": 567,
+      "top": 279,
+      "width": 295,
+      "height": 43,
+      "class": "layer",
+      "uiname": "header",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 13,
+          "w": 295,
+          "h": 43,
+          "storage": "touchvolume__pack"
+        }
+      }
+    },
+    {
+      "name": "label",
+      "left": 544,
+      "top": 464,
+      "width": 480,
+      "height": 32,
+      "class": "layer",
+      "uiname": "label",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 480,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "wave_slider",
+      "left": 639,
+      "top": 514,
+      "width": 620,
+      "height": 54,
+      "class": "slider",
+      "uiname": "wave_slider",
+      "uistates": {
+        "rail": {
+          "ox": 5,
+          "oy": 20,
+          "cx": 0,
+          "cy": 0,
+          "w": 610,
+          "h": 13,
+          "storage": "touchvolume__pack"
+        },
+        "normal": {
+          "ox": 286,
+          "oy": 1,
+          "cx": 369,
+          "cy": 13,
+          "w": 50,
+          "h": 51,
+          "storage": "touchvolume__pack"
+        },
+        "knob": {
+          "ox": 283,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 620,
+          "h": 54,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "wave_numbase",
+      "left": 1297,
+      "top": 526,
+      "width": 74,
+      "height": 29,
+      "class": "layer",
+      "uiname": "wave_numbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 295,
+          "cy": 13,
+          "w": 74,
+          "h": 29,
+          "storage": "touchvolume__pack"
+        }
+      }
+    },
+    {
+      "name": "wave_value",
+      "left": 1297,
+      "top": 526,
+      "width": 74,
+      "height": 29,
+      "class": "layer",
+      "uiname": "wave_value",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 74,
+          "h": 29,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "wave_mute",
+      "left": 570,
+      "top": 527,
+      "width": 38,
+      "height": 27,
+      "class": "toggle",
+      "uiname": "wave_mute",
+      "uistates": {
+        "on_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 539,
+          "cy": 40,
+          "w": 38,
+          "h": 27,
+          "storage": "touchvolume__pack"
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 419,
+          "cy": 53,
+          "w": 38,
+          "h": 27,
+          "storage": "touchvolume__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 295,
+          "cy": 42,
+          "w": 38,
+          "h": 27,
+          "storage": "touchvolume__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 38,
+          "h": 27,
+          "storage": "",
+          "opacity": 128
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 539,
+          "cy": 13,
+          "w": 38,
+          "h": 27,
+          "storage": "touchvolume__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 499,
+          "cy": 53,
+          "w": 38,
+          "h": 27,
+          "storage": "touchvolume__pack"
+        },
+        "on_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 459,
+          "cy": 53,
+          "w": 38,
+          "h": 27,
+          "storage": "touchvolume__pack"
+        }
+      }
+    }
+  ]
+}

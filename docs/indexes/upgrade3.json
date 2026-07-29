@@ -1,0 +1,106 @@
+{
+  "archive": "upgrade3.xp3",
+  "path": "E:\\GAL\\天使☆嚣嚣\\upgrade3.xp3",
+  "bytes": 1254402819,
+  "files": 8,
+  "encrypted": 7,
+  "hx_resolved": 0,
+  "entries": [
+    {
+      "index": 0,
+      "name": "倀",
+      "name_ord": [
+        20480
+      ],
+      "resolved": null,
+      "original_size": 910,
+      "compressed_size": 910,
+      "encrypted": false,
+      "key": 1754764004
+    },
+    {
+      "index": 1,
+      "name": "倁",
+      "name_ord": [
+        20481
+      ],
+      "resolved": null,
+      "original_size": 192824599,
+      "compressed_size": 192824599,
+      "encrypted": true,
+      "key": 2680303171
+    },
+    {
+      "index": 2,
+      "name": "倂",
+      "name_ord": [
+        20482
+      ],
+      "resolved": null,
+      "original_size": 183304733,
+      "compressed_size": 183304733,
+      "encrypted": true,
+      "key": 2736908933
+    },
+    {
+      "index": 3,
+      "name": "倃",
+      "name_ord": [
+        20483
+      ],
+      "resolved": null,
+      "original_size": 156297511,
+      "compressed_size": 156297511,
+      "encrypted": true,
+      "key": 1932637969
+    },
+    {
+      "index": 4,
+      "name": "倄",
+      "name_ord": [
+        20484
+      ],
+      "resolved": null,
+      "original_size": 189385603,
+      "compressed_size": 189385603,
+      "encrypted": true,
+      "key": 4160394953
+    },
+    {
+      "index": 5,
+      "name": "倅",
+      "name_ord": [
+        20485
+      ],
+      "resolved": null,
+      "original_size": 192872279,
+      "compressed_size": 192872279,
+      "encrypted": true,
+      "key": 3531420878
+    },
+    {
+      "index": 6,
+      "name": "倆",
+      "name_ord": [
+        20486
+      ],
+      "resolved": null,
+      "original_size": 183344446,
+      "compressed_size": 183344446,
+      "encrypted": true,
+      "key": 3679007741
+    },
+    {
+      "index": 7,
+      "name": "倇",
+      "name_ord": [
+        20487
+      ],
+      "resolved": null,
+      "original_size": 156371971,
+      "compressed_size": 156371971,
+      "encrypted": true,
+      "key": 2120585969
+    }
+  ]
+}

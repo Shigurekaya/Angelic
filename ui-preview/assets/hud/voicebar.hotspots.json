@@ -1,151 +1,146 @@
 {
   "source": "voicebar.pbd",
+  "tool": "pbd2json",
   "hotspots": [
     {
-      "layer_id": "text",
-      "sort_index": 773,
-      "height": 73,
-      "ch": 140
-    },
-    {
-      "layer_id": "wait_voice",
-      "sort_index": 1099,
-      "height": 97,
-      "ch": 110
-    },
-    {
-      "layer_id": "frame",
-      "sort_index": 1183,
-      "height": 192,
-      "ch": 168
-    },
-    {
-      "layer_id": "auto_voice",
-      "sort_index": 1194,
-      "height": 26,
-      "ch": 242
-    },
-    {
-      "layer_id": "voice",
-      "sort_index": 1222,
-      "height": 17,
-      "ch": 83
-    },
-    {
-      "layer_id": "wait",
-      "sort_index": 1467,
-      "height": 117,
-      "ch": 65
-    },
-    {
-      "layer_id": "bar",
-      "sort_index": 1486,
-      "height": 1909,
-      "ch": 1823
-    },
-    {
-      "layer_id": "layer",
-      "sort_index": 2185,
-      "height": 170
-    },
-    {
-      "layer_id": "auto",
-      "sort_index": 2599,
-      "height": 170,
-      "ch": 33
-    },
-    {
-      "layer_id": "auto_wait",
-      "sort_index": 2777,
-      "height": 170,
-      "ch": 194
-    },
-    {
+      "name": "base",
+      "left": 1714,
+      "top": 981,
+      "width": 128,
+      "height": 44,
+      "class": "base",
+      "uiname": "base",
       "layer_id": "base",
-      "sort_index": null,
-      "storagex": 35
+      "x": 1714,
+      "y": 981,
+      "w": 128,
+      "h": 44
     },
     {
-      "layer_id": "evals",
-      "sort_index": null,
-      "height": 170
+      "name": "auto",
+      "left": 1716,
+      "top": 983,
+      "width": 54,
+      "height": 24,
+      "class": "layer",
+      "uiname": "auto",
+      "layer_id": "auto",
+      "x": 1716,
+      "y": 983,
+      "w": 54,
+      "h": 24
     },
     {
-      "layer_id": "false",
-      "sort_index": null,
-      "width": 137
+      "name": "auto_voice",
+      "left": 1716,
+      "top": 983,
+      "width": 114,
+      "height": 26,
+      "class": "layer",
+      "uiname": "auto_voice",
+      "layer_id": "auto_voice",
+      "x": 1716,
+      "y": 983,
+      "w": 114,
+      "h": 26
     },
     {
-      "layer_id": "gameparts",
-      "sort_index": null,
-      "height": 170
+      "name": "auto_wait",
+      "left": 1716,
+      "top": 983,
+      "width": 108,
+      "height": 26,
+      "class": "layer",
+      "uiname": "auto_wait",
+      "layer_id": "auto_wait",
+      "x": 1716,
+      "y": 983,
+      "w": 108,
+      "h": 26
     },
     {
-      "layer_id": "holdimage",
-      "sort_index": null,
-      "height": 170
+      "name": "voice",
+      "left": 1716,
+      "top": 983,
+      "width": 55,
+      "height": 24,
+      "class": "layer",
+      "uiname": "voice",
+      "layer_id": "voice",
+      "x": 1716,
+      "y": 983,
+      "w": 55,
+      "h": 24
     },
     {
-      "layer_id": "l",
-      "sort_index": null,
-      "x": 244,
-      "width": 57,
-      "height": 170,
-      "cx": 0
+      "name": "wait_voice",
+      "left": 1716,
+      "top": 983,
+      "width": 110,
+      "height": 26,
+      "class": "layer",
+      "uiname": "wait_voice",
+      "layer_id": "wait_voice",
+      "x": 1716,
+      "y": 983,
+      "w": 110,
+      "h": 26
     },
     {
-      "layer_id": "n",
-      "sort_index": null,
-      "x": 146,
-      "width": 137,
-      "height": 170,
-      "cx": 252
+      "name": "text",
+      "left": 1716,
+      "top": 984,
+      "width": 49,
+      "height": 23,
+      "class": "layer",
+      "uiname": "text",
+      "layer_id": "text",
+      "x": 1716,
+      "y": 984,
+      "w": 49,
+      "h": 23
     },
     {
-      "layer_id": "names",
-      "sort_index": null,
-      "height": 170
+      "name": "wait",
+      "left": 1716,
+      "top": 984,
+      "width": 51,
+      "height": 23,
+      "class": "layer",
+      "uiname": "wait",
+      "layer_id": "wait",
+      "x": 1716,
+      "y": 984,
+      "w": 51,
+      "h": 23
     },
     {
-      "layer_id": "p",
-      "sort_index": null,
-      "height": 1889,
-      "cx": 134
+      "name": "frame",
+      "left": 1716,
+      "top": 1004,
+      "width": 124,
+      "height": 19,
+      "class": "layer",
+      "uiname": "frame",
+      "layer_id": "frame",
+      "x": 1716,
+      "y": 1004,
+      "w": 124,
+      "h": 19
     },
     {
-      "layer_id": "r",
-      "sort_index": null,
-      "x": 132,
-      "width": 104,
-      "height": 170,
-      "cx": 198
-    },
-    {
-      "layer_id": "storagex",
-      "sort_index": null,
-      "storagey": 232
-    },
-    {
-      "layer_id": "voicebar__pack",
-      "sort_index": null,
-      "height": 170,
-      "width": 204
-    },
-    {
-      "layer_id": "width",
-      "sort_index": null,
-      "x": 178
-    },
-    {
-      "layer_id": "x",
-      "sort_index": null,
-      "y": 242
-    },
-    {
-      "layer_id": "y",
-      "sort_index": null,
-      "height": 26
+      "name": "bar",
+      "left": 1721,
+      "top": 1010,
+      "width": 114,
+      "height": 7,
+      "class": "layer",
+      "uiname": "bar",
+      "layer_id": "bar",
+      "x": 1721,
+      "y": 1010,
+      "w": 114,
+      "h": 7
     }
-  ],
-  "bindings": []
+  ]
 }

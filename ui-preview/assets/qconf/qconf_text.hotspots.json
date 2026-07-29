@@ -1,238 +1,230 @@
 {
   "source": "qconf_text.pbd",
+  "tool": "pbd2json",
   "hotspots": [
     {
-      "layer_id": "layer",
-      "sort_index": 2116,
-      "height": 237
-    },
-    {
-      "layer_id": "skipall_off",
-      "sort_index": 2775,
-      "height": 114,
-      "ch": 181
-    },
-    {
-      "layer_id": "drawspeed_slider",
-      "sort_index": 2820,
-      "height": 114
-    },
-    {
-      "layer_id": "skipall_chk",
-      "sort_index": 2843,
-      "height": 114
-    },
-    {
-      "layer_id": "winopac_numbase",
-      "sort_index": 2876,
-      "height": 66,
-      "ch": 193
-    },
-    {
-      "layer_id": "skipall_on",
-      "sort_index": 3109,
-      "height": 237,
-      "ch": 93
-    },
-    {
-      "layer_id": "winopac_slider",
-      "sort_index": 3417,
-      "height": 58,
-      "ch": 49
-    },
-    {
-      "layer_id": "autospeed_numbase",
-      "sort_index": 3719,
-      "height": 237,
-      "ch": 42
-    },
-    {
-      "layer_id": "textspeed_slider",
-      "sort_index": 3925,
-      "height": 74,
-      "ch": 215
-    },
-    {
-      "layer_id": "autospeed_slider",
-      "sort_index": 4024,
-      "height": 223,
-      "ch": 29
-    },
-    {
-      "layer_id": "textspeed_numbase",
-      "sort_index": 4169,
-      "height": 41,
-      "ch": 41
-    },
-    {
-      "layer_id": "skipspeed_slider",
-      "sort_index": 4206,
-      "height": 41
-    },
-    {
+      "name": "base",
+      "left": 666,
+      "top": 769,
+      "width": 536,
+      "height": 260,
+      "class": "base",
+      "uiname": "base",
       "layer_id": "base",
-      "sort_index": 4341,
-      "storagex": 744
+      "x": 666,
+      "y": 769,
+      "w": 536,
+      "h": 260
     },
     {
-      "layer_id": "color",
-      "sort_index": null,
-      "cw": 255
+      "name": "textspeed_slider",
+      "left": 836,
+      "top": 789,
+      "width": 276,
+      "height": 54,
+      "class": "slider",
+      "uiname": "textspeed_slider",
+      "layer_id": "textspeed_slider",
+      "x": 836,
+      "y": 789,
+      "w": 276,
+      "h": 54
     },
     {
-      "layer_id": "disable",
-      "sort_index": null,
-      "ch": 29
+      "name": "caps_textspd",
+      "left": 686,
+      "top": 790,
+      "width": 148,
+      "height": 48,
+      "class": "layer",
+      "uiname": "caps_textspd",
+      "layer_id": "caps_textspd",
+      "x": 686,
+      "y": 790,
+      "w": 148,
+      "h": 48
     },
     {
-      "layer_id": "gameparts",
-      "sort_index": null,
-      "height": 237
+      "name": "textspeed_numbase",
+      "left": 1124,
+      "top": 802,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "textspeed_numbase",
+      "layer_id": "textspeed_numbase",
+      "x": 1124,
+      "y": 802,
+      "w": 52,
+      "h": 29
     },
     {
-      "layer_id": "holdimage",
-      "sort_index": null,
-      "height": 237
+      "name": "textspeed_value",
+      "left": 1124,
+      "top": 802,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "textspeed_value",
+      "layer_id": "textspeed_value",
+      "x": 1124,
+      "y": 802,
+      "w": 52,
+      "h": 29
     },
     {
-      "layer_id": "imports",
-      "sort_index": null,
-      "height": 237
+      "name": "autospeed_slider",
+      "left": 836,
+      "top": 845,
+      "width": 276,
+      "height": 54,
+      "class": "slider",
+      "uiname": "autospeed_slider",
+      "layer_id": "autospeed_slider",
+      "x": 836,
+      "y": 845,
+      "w": 276,
+      "h": 54
     },
     {
-      "layer_id": "names",
-      "sort_index": null,
-      "height": 237
+      "name": "caps_autospd",
+      "left": 686,
+      "top": 846,
+      "width": 148,
+      "height": 48,
+      "class": "layer",
+      "uiname": "caps_autospd",
+      "layer_id": "caps_autospd",
+      "x": 686,
+      "y": 846,
+      "w": 148,
+      "h": 48
     },
     {
-      "layer_id": "normal",
-      "sort_index": null,
-      "ch": 68
+      "name": "autospeed_numbase",
+      "left": 1124,
+      "top": 858,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "autospeed_numbase",
+      "layer_id": "autospeed_numbase",
+      "x": 1124,
+      "y": 858,
+      "w": 52,
+      "h": 29
     },
     {
-      "layer_id": "normal_off",
-      "sort_index": null,
-      "ch": 181
+      "name": "autospeed_value",
+      "left": 1124,
+      "top": 858,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "autospeed_value",
+      "layer_id": "autospeed_value",
+      "x": 1124,
+      "y": 858,
+      "w": 52,
+      "h": 29
     },
     {
-      "layer_id": "normal_on",
-      "sort_index": null,
-      "ch": 138
+      "name": "winopac_slider",
+      "left": 836,
+      "top": 900,
+      "width": 276,
+      "height": 54,
+      "class": "slider",
+      "uiname": "winopac_slider",
+      "layer_id": "winopac_slider",
+      "x": 836,
+      "y": 900,
+      "w": 276,
+      "h": 54
     },
     {
-      "layer_id": "over_off",
-      "sort_index": null,
-      "ch": 201
+      "name": "caps_winopac",
+      "left": 686,
+      "top": 901,
+      "width": 148,
+      "height": 48,
+      "class": "layer",
+      "uiname": "caps_winopac",
+      "layer_id": "caps_winopac",
+      "x": 686,
+      "y": 901,
+      "w": 148,
+      "h": 48
     },
     {
-      "layer_id": "over_on",
-      "sort_index": null,
-      "ch": 5
+      "name": "winopac_numbase",
+      "left": 1124,
+      "top": 913,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "winopac_numbase",
+      "layer_id": "winopac_numbase",
+      "x": 1124,
+      "y": 913,
+      "w": 52,
+      "h": 29
     },
     {
-      "layer_id": "qconf__pack",
-      "sort_index": null,
-      "height": 237,
-      "width": 22
+      "name": "winopac_value",
+      "left": 1124,
+      "top": 913,
+      "width": 52,
+      "height": 29,
+      "class": "layer",
+      "uiname": "winopac_value",
+      "layer_id": "winopac_value",
+      "x": 1124,
+      "y": 913,
+      "w": 52,
+      "h": 29
     },
     {
-      "layer_id": "qconf_text__bg0",
-      "sort_index": null,
-      "storagex": 744
+      "name": "caps_skipall",
+      "left": 686,
+      "top": 956,
+      "width": 148,
+      "height": 48,
+      "class": "layer",
+      "uiname": "caps_skipall",
+      "layer_id": "caps_skipall",
+      "x": 686,
+      "y": 956,
+      "w": 148,
+      "h": 48
     },
     {
-      "layer_id": "skipall",
-      "sort_index": null,
-      "height": 114
+      "name": "skipall_off",
+      "left": 835,
+      "top": 965,
+      "width": 173,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "skipall_off",
+      "layer_id": "skipall_off",
+      "x": 835,
+      "y": 965,
+      "w": 173,
+      "h": 36
     },
     {
-      "layer_id": "skipall_rev",
-      "sort_index": null,
-      "height": 237
-    },
-    {
-      "layer_id": "slider",
-      "sort_index": null,
-      "height": 223
-    },
-    {
-      "layer_id": "storagex",
-      "sort_index": null,
-      "storagey": 747
-    },
-    {
-      "layer_id": "toggle",
-      "sort_index": null,
-      "height": 114
-    },
-    {
-      "layer_id": "width",
-      "sort_index": null,
-      "x": 204
-    },
-    {
-      "layer_id": "x",
-      "sort_index": null,
-      "y": 238
-    },
-    {
-      "layer_id": "y",
-      "sort_index": null,
-      "height": 223
-    }
-  ],
-  "bindings": [
-    {
-      "layer_id": "changeBasicSlider",
-      "bindings": [
-        "changeBasicSlider"
-      ],
-      "geometry": {
-        "height": 114
-      }
-    },
-    {
-      "layer_id": "off_skipall",
-      "bindings": [
-        "setBasicOptionValue/skipall/off"
-      ],
-      "geometry": {
-        "height": 237
-      }
-    },
-    {
-      "layer_id": "onSpeedSliderChange",
-      "bindings": [
-        "onSpeedSliderChange",
-        "onSpeedSliderChange",
-        "onSpeedSliderChange",
-        "onSpeedSliderChange"
-      ],
-      "geometry": {
-        "height": 237,
-        "cw": 110,
-        "w": 233
-      }
-    },
-    {
-      "layer_id": "on_skipall",
-      "bindings": [
-        "setBasicOptionValue/skipall/on"
-      ],
-      "geometry": {
-        "height": 237
-      }
-    },
-    {
-      "layer_id": "toggle_skipall",
-      "bindings": [
-        "setBasicOptionValue/skipall/toggle",
-        "setBasicOptionValue/skipall/toggle"
-      ],
-      "geometry": {
-        "height": 237,
-        "ch": 29
-      }
+      "name": "skipall_on",
+      "left": 1014,
+      "top": 965,
+      "width": 173,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "skipall_on",
+      "layer_id": "skipall_on",
+      "x": 1014,
+      "y": 965,
+      "w": 173,
+      "h": 36
     }
   ]
 }

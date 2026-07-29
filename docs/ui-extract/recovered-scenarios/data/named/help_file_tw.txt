@@ -1,0 +1,199 @@
+# セーブロード画面ヘルプテキスト
+
+back	back2
+	返回遊戲界面。
+
+title	title2
+	返回標題界面。
+
+to_quick
+	移動至快速讀檔界面。
+to_load
+	移動至讀檔界面。
+to_save
+	移動至存檔界面。
+to_voice
+	移動至語音收藏界面。
+to_cg
+	跳轉到ＣＧ鑑賞界面。${_disableExtra}
+to_scene
+	跳轉到場景鑑賞界面。${_disableExtra}
+to_stand
+	跳轉到立繪鑑賞界面。${_disableStand}
+DISABLE_EXTRA
+	（需要先通關主線劇情）
+DISABLE_STAND
+	（需要先通關後日談的所有分歧線路）
+# ※↑help_extra.txt にも同文のテキストがあるので注意
+
+cgmode
+	移動至ＣＧ鑑賞界面。
+scenemode
+	移動至劇情回想界面。
+exchview
+	移動至立繪鑑賞模式。
+
+slider	sl_rail
+	選擇頁面。
+
+edit_copy
+	切換存檔複製模式。
+edit_swap
+	切換存檔移動模式。
+edit_comment
+	切換存檔編輯模式。
+edit_remove
+	切換存檔刪除模式。
+
+# ${_dataName}切り替え(セーブロード/お気に入りボイス)
+FILE_DATA
+	數據
+VOICE_DATA
+	語音
+	
+EDIT_COPY
+	請選擇要拷貝的對象。
+EDIT_SWAP
+	請選擇要替換的對象。
+EDIT_COMMENT
+	請選擇要輸入備註的對象。
+EDIT_REMOVE
+	請選擇要刪除的對象。
+
+
+hide_thumb
+	將每個${_dataName}框的備註放大並詳細顯示。	※詳細顯示狀態下縮圖將不可見。
+#	切換單個存檔的縮圖和注釋文字的顯示。
+edit_hold
+	設置在編輯存檔後是否保留編輯模式。	選中此選項可進行存檔連續編輯。
+
+sceneplay
+	切換到指定聲音的場景回想模式。
+listmode
+	切換到播放列表模式進行語音播放。	取消勾選即可回到語音收藏夾界面。
+
+page_num
+	顯示當前頁面。
+
+page_add
+	添加一個頁面。
+page_sub
+	刪除最後一頁。	最後一頁必須是空白時才能刪除。
+
+page_dw100
+	${_max>101?"向後翻１００頁。":"翻至最後一頁。"}
+page_dw10
+	向後翻１０頁。
+page_dw1
+	向後翻１頁。
+
+page_up100
+	${_max>101?"向前翻１００頁。":"翻至第一頁。"}
+page_up10
+	向前翻１０頁。
+page_up1
+	向前翻１頁。
+
+HELP_EDIT
+	編輯存檔${_currentNumberText}。${_currentNumber?"":"\n※請注意Quick1存檔不能被移動或刪除。"}
+
+#HELP_POP_COM
+#	編輯存檔注釋${_currentNumberText}。
+#HELP_POP_COPY
+#	複製存檔${_currentNumberText}。
+#HELP_POP_MOVE
+#	移動存檔${_currentNumberText}。
+#HELP_POP_DEL
+#	刪除存檔${_currentNumberText}。
+
+# ${_loadName} ${_saveName}切り替え(セーブロード/お気に入りボイス)
+FILE_LOAD
+	讀檔
+FILE_SAVE
+	存檔
+VOICE_LOAD
+	重播
+VOICE_SAVE
+	記錄
+
+ITEM_VOICE
+	播放語音 ${_curHelpNum}。
+ITEM_LOAD
+	讀取存檔 ${_curHelpNum}。
+ITEM_SAVE
+	保存進度 ${_curHelpNum}。
+
+
+HELP_COPY
+	選擇一個位置以黏貼${getNumberText(_copysrc,true)}${_specialPageMode?"":"\n"}${inDrag?"":"（右鍵取消）"}${!_specialPageMode?"":"　※快速存檔將會按時間順序被覆蓋"}
+#	請選擇要複製到的目標存檔。${inDrag?"":"（滑鼠右鍵取消）"}
+
+HELP_SWAP
+	選擇一個位置以替換${getNumberText(_copysrc,true)}${_specialPageMode?"":"\n"}${inDrag?"":"（右鍵取消）"}${!_specialPageMode?"":"　※快速存檔將會按時間順序被覆蓋"}
+#	請選擇要移動到的目標存檔。${inDrag?"":"（滑鼠右鍵取消）"}
+
+HELP_EDITCOPY
+	複製存檔${_currentNumberText}。	選中後單擊要複製的目標位置，或者將存檔拖放到目標位置。
+HELP_EDITMOVE
+	移動存檔${_currentNumberText}。	選中後單擊要複製的目標位置，或者將存檔拖放到目標位置。
+HELP_EDITEDIT
+	編輯存檔${_currentNumberText}的注釋。
+HELP_EDITDEL
+	刪除存檔${_currentNumberText}。
+
+EDIT_ADDLIST
+	${_currentNumberText}加入到列表。
+EDIT_DELLIST
+	請從列表中選中要刪除的對象。
+
+EDIT_SAVELIST
+	將當前的列表保存至存檔${_currentNumberText}。
+
+EDIT_LOADLIST
+	從存檔${_currentNumberText}載入列表。	※當前列表將被清除。
+
+HELP_PLIST_DRAG
+	指定目標位置以更改播放列表順序。
+
+pitem0	pitem1	pitem2	pitem3	pitem4	pitem5	pitem6	pitem7	pitem8	pitem9
+	播放列表一覽，單擊播放指定的語音。	拖動語音以更改列表順序。
+
+edit_addlist
+	添加語音到播放列表。	最多可以在列表中添加${_listModeMaxCount}個語音。
+edit_dellist
+	從播放列表中刪除語音。
+edit_clearlist
+	清除播放列表中的全部語音。
+edit_savelist
+	保存當前播放列表。（可以像普通語音一樣保存在存檔中）${_canExport?"\n同時按住Shift鍵可以保存到文件中。":""}
+edit_loadlist
+	從存檔中載入播放列表。${_canExport?"\n同時按住Shift鍵可以從文件中載入。":""}
+
+pslider	pslider_base	plist_top	plist_pageup	plist_pagedown	plist_end
+	滾動播放列表。
+
+plist_prev
+	播放上一條語音。
+plist_stop
+	停止播放。
+plist_play
+	從頭開始播放。
+plist_next
+	播放下一條語音。
+plist_all
+	順序播放語音。	取消選擇後僅播放一條語音。
+plist_loop
+	循環播放語音。
+
+WEAK_SAVE
+	保存界面。請選擇要保存的存檔。
+
+WEAK_LOAD
+	載入界面。請選擇要載入的存檔。
+
+WEAK_QUICK
+	快速載入界面。請選擇要載入的存檔。	遊戲中的“快速載入”按鈕將始終載入Quick1數據。
+
+WEAK_VOICE
+	${!_listMode?"語音收藏界面。":"語音播放列表界面。"}
+

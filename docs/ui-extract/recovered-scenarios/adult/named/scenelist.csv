@@ -1,0 +1,16 @@
+# ●回想モード一覧
+:,noa
+:,ama
+:,kur
+:,kag
+:,ori
+:,fum
+:,etc
+:,movie
+thum_op,,	replay*movie_op,		@movie_op
+thum_ed_noa,,	replay*movie_ed_noa,		@ed1_noa
+thum_ed_ama,,	replay*movie_ed_ama,		@ed2_ama
+thum_ed_kur,,	replay*movie_ed_kur,		@ed3_kur
+thum_ed_kag,,	replay*movie_ed_kag,		@ed4_kag
+thum_ed_ori,,	replay*movie_ed_ori,		@ed5_ori
+thum_ed_fum,,	replay*movie_ed_fum,		@ed6_fum

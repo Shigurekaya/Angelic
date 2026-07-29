@@ -5794,87 +5794,27 @@
     "gap_y": 20
   },
   "copied": 0,
-  "missing_count": 0,
-  "missing_sample": [],
-  "group_tabs": [
-    {
-      "id": "noa",
-      "label": "乃爱",
-      "x": 80,
-      "y": 168,
-      "w": 96,
-      "h": 36,
-      "selected": true
-    },
-    {
-      "id": "ama",
-      "label": "天音",
-      "x": 190,
-      "y": 168,
-      "w": 96,
-      "h": 36,
-      "selected": false
-    },
-    {
-      "id": "kur",
-      "label": "来海",
-      "x": 300,
-      "y": 168,
-      "w": 96,
-      "h": 36,
-      "selected": false
-    },
-    {
-      "id": "kag",
-      "label": "辉耶",
-      "x": 410,
-      "y": 168,
-      "w": 96,
-      "h": 36,
-      "selected": false
-    },
-    {
-      "id": "ori",
-      "label": "欧丽叶",
-      "x": 520,
-      "y": 168,
-      "w": 96,
-      "h": 36,
-      "selected": false
-    },
-    {
-      "id": "fum",
-      "label": "风实花",
-      "x": 630,
-      "y": 168,
-      "w": 96,
-      "h": 36,
-      "selected": false
-    },
-    {
-      "id": "etc",
-      "label": "其他",
-      "x": 740,
-      "y": 168,
-      "w": 96,
-      "h": 36,
-      "selected": false
-    },
-    {
-      "id": "sd",
-      "label": "ＳＤ",
-      "x": 850,
-      "y": 168,
-      "w": 96,
-      "h": 36,
-      "selected": false
-    }
-  ],
-  "layout_note": "Measured from Angelic EXTRA capture; not CafeStella coords",
-  "back": {
-    "x": 1680,
-    "y": 1000,
-    "w": 200,
-    "h": 48
-  }
+  "missing_count": 153,
+  "missing_sample": [
+    "thum_ev101",
+    "thum_ev102",
+    "thum_ev103",
+    "thum_ev105",
+    "thum_ev104",
+    "thum_ev106",
+    "thum_ev108",
+    "thum_ev123",
+    "thum_ev107",
+    "thum_ev109",
+    "thum_ev122",
+    "thum_ev110",
+    "thum_ev121",
+    "thum_ev111",
+    "thum_ev112",
+    "thum_ev113",
+    "thum_ev114",
+    "thum_ev115",
+    "thum_ev118",
+    "thum_ev116"
+  ]
 }

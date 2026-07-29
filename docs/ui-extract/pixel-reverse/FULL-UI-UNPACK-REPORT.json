@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-07-24T14:06:33.556368+00:00",
+  "slice": {
+    "packs": 71,
+    "slices": 702
+  },
+  "screens_wired": {
+    "title": 11,
+    "settings": 85,
+    "file": 40,
+    "load": 40,
+    "qconf": 18,
+    "hud": 28,
+    "touch": 30,
+    "cg": 63,
+    "flowchart": 37,
+    "phonechat": 11,
+    "afterstory": 12,
+    "langselect": 31
+  },
+  "title_buttons": 8,
+  "hotspots_mirrored": 53,
+  "method": "Cafe-style: pbd2json absolute x/y (= FreeMote left/top)"
+}

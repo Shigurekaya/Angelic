@@ -1,104 +1,160 @@
 {
   "source": "phonechat.pbd",
+  "tool": "pbd2json",
   "hotspots": [
     {
-      "layer_id": "self",
-      "sort_index": 963,
-      "ch": 91
-    },
-    {
-      "layer_id": "talk",
-      "sort_index": 1029,
-      "ch": 95
-    },
-    {
-      "layer_id": "self_arrow",
-      "sort_index": 1155,
-      "height": 18,
-      "ch": 123
-    },
-    {
-      "layer_id": "talk_arrow",
-      "sort_index": 1222,
-      "height": 21,
-      "ch": 111
-    },
-    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "class": "base",
+      "uiname": "base",
       "layer_id": "base",
-      "sort_index": 1742,
-      "storagex": 75
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080
     },
     {
-      "layer_id": "layer",
-      "sort_index": 2255,
-      "height": 82
+      "name": "scroll",
+      "left": 316,
+      "top": 18,
+      "width": 1222,
+      "height": 844,
+      "class": "area",
+      "uiname": "scroll",
+      "layer_id": "scroll",
+      "x": 316,
+      "y": 18,
+      "w": 1222,
+      "h": 844
     },
     {
-      "layer_id": "area",
-      "sort_index": null,
-      "height": 81
+      "name": "top",
+      "left": 1564,
+      "top": 45,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "top",
+      "layer_id": "top",
+      "x": 1564,
+      "y": 45,
+      "w": 36,
+      "h": 36
     },
     {
-      "layer_id": "false",
-      "sort_index": null,
-      "width": 252
+      "name": "pageup",
+      "left": 1564,
+      "top": 84,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "pageup",
+      "layer_id": "pageup",
+      "x": 1564,
+      "y": 84,
+      "w": 36,
+      "h": 36
     },
     {
-      "layer_id": "g",
-      "sort_index": null,
-      "cw": 16,
-      "ox": 948
+      "name": "talk",
+      "left": 515,
+      "top": 107,
+      "width": 76,
+      "height": 76,
+      "class": "layer",
+      "uiname": "talk",
+      "layer_id": "talk",
+      "x": 515,
+      "y": 107,
+      "w": 76,
+      "h": 76
     },
     {
-      "layer_id": "k",
-      "sort_index": null,
-      "height": 18
+      "name": "self",
+      "left": 1265,
+      "top": 107,
+      "width": 76,
+      "height": 76,
+      "class": "layer",
+      "uiname": "self",
+      "layer_id": "self",
+      "x": 1265,
+      "y": 107,
+      "w": 76,
+      "h": 76
     },
     {
-      "layer_id": "normal",
-      "sort_index": null,
-      "ch": 205
+      "name": "slider",
+      "left": 1562,
+      "top": 134,
+      "width": 40,
+      "height": 636,
+      "class": "slider",
+      "uiname": "slider",
+      "layer_id": "slider",
+      "x": 1562,
+      "y": 134,
+      "w": 40,
+      "h": 636
     },
     {
-      "layer_id": "phonechat__bg0",
-      "sort_index": null,
-      "storagex": 75
+      "name": "talk_arrow",
+      "left": 495,
+      "top": 135,
+      "width": 24,
+      "height": 29,
+      "class": "layer",
+      "uiname": "talk_arrow",
+      "layer_id": "talk_arrow",
+      "x": 495,
+      "y": 135,
+      "w": 24,
+      "h": 29
     },
     {
-      "layer_id": "phonechat__pack",
-      "sort_index": null,
-      "width": 54
+      "name": "self_arrow",
+      "left": 1337,
+      "top": 135,
+      "width": 24,
+      "height": 29,
+      "class": "layer",
+      "uiname": "self_arrow",
+      "layer_id": "self_arrow",
+      "x": 1337,
+      "y": 135,
+      "w": 24,
+      "h": 29
     },
     {
-      "layer_id": "rail",
-      "sort_index": null,
-      "ch": 55
+      "name": "pagedown",
+      "left": 1564,
+      "top": 784,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "pagedown",
+      "layer_id": "pagedown",
+      "x": 1564,
+      "y": 784,
+      "w": 36,
+      "h": 36
     },
     {
-      "layer_id": "storagex",
-      "sort_index": null,
-      "storagey": 107
-    },
-    {
-      "layer_id": "true",
-      "sort_index": null,
-      "width": 74
-    },
-    {
-      "layer_id": "width",
-      "sort_index": null,
-      "x": 168
-    },
-    {
-      "layer_id": "x",
-      "sort_index": null,
-      "y": 3
-    },
-    {
-      "layer_id": "y",
-      "sort_index": null,
-      "height": 28
+      "name": "end",
+      "left": 1564,
+      "top": 823,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "end",
+      "layer_id": "end",
+      "x": 1564,
+      "y": 823,
+      "w": 36,
+      "h": 36
     }
-  ],
-  "bindings": []
+  ]
 }

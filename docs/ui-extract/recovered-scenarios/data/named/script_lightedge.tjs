@@ -1,0 +1,32 @@
+// affinelayerベースなので注意
+function(lightColor=0xffffff, diff=8, blur=4) {
+
+	var LAYER = global.Layer;
+
+	// 光生成処理
+	var light = new LAYER(window, parent);
+
+	with (light) {
+		.assignImages(this);
+		.setSizeToImageSize();
+		.operateRect(-diff,0,this,0,0,imageWidth, imageHeight, ltPsNormal, 255);
+		.operateRect(diff,0,this,0,0,imageWidth, imageHeight, ltPsNormal, 255);
+		.operateRect(0,-diff,this,0,0,imageWidth, imageHeight, ltPsNormal, 255);
+		.operateRect(0,diff,this,0,0,imageWidth, imageHeight, ltPsNormal, 255);
+		.doBoxBlur(blur, blur) if (blur > 0);
+		.face = dfMain;
+		.holdAlpha = true;
+		.fillRect(0, 0, .width, .height, +lightColor);
+		.face = dfBoth;
+		.holdAlpha = false;
+	}
+
+	// 自分をコピー
+	light.operateRect(0, 0, this, 0, 0, width, height, ltPsNormal, 255);
+	
+	// 画像さしかえ
+	assignImages(light);
+
+	// 後片付け
+	invalidate light;
+}

@@ -1,0 +1,13 @@
+Text-to-Speech Configuration
+
+This feature creates a speech WAV file by passing the specified command line to the target executable.
+To change the target executable, close this dialog and click the Select button.
+
+Command Line Parameters:
+- Use %t in the command line to specify the text to be read
+- Use %f to specify the output WAV filename
+Note: It is recommended to enclose parameters in double quotes (e.g., "%t" or "%f") as they may contain spaces.
+
+Important Notes:
+- If the target application only supports direct speech output without WAV file generation, the game will not be able to control speech playback features such as voice interruption and auto-mode timing.
+- The voice synthesis may fail if the target application terminates before the WAV file generation is complete. Please wait until the WAV file is fully generated.

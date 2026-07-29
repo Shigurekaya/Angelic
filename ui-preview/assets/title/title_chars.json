@@ -1,0 +1,189 @@
+{
+  "chars": [
+    {
+      "id": "kur",
+      "image": "angelic/title/layers/ch_kur_view.png",
+      "sx": 691,
+      "sy": 213,
+      "ex": 675,
+      "ey": 261,
+      "full_ex": 675,
+      "full_ey": 261,
+      "fade0": 0.5,
+      "fade1": 1.5,
+      "move_end": 1.5,
+      "fm_t0": [
+        -69.0,
+        -79.0
+      ],
+      "fm_t1": [
+        -85,
+        -31
+      ],
+      "origin": [
+        200,
+        248
+      ],
+      "size": [
+        400,
+        497
+      ],
+      "view_top": 0,
+      "mtn_key": "通常|キャラ|通常来海 (結合)"
+    },
+    {
+      "id": "noa",
+      "image": "angelic/title/layers/ch_noa_view.png",
+      "sx": -128,
+      "sy": -24,
+      "ex": -64,
+      "ey": 0,
+      "full_ex": -64,
+      "full_ey": -64,
+      "fade0": 0.5,
+      "fade1": 1.5,
+      "move_end": 1.5,
+      "fm_t0": [
+        -422.0,
+        -24.0
+      ],
+      "fm_t1": [
+        -358,
+        0
+      ],
+      "origin": [
+        666,
+        604
+      ],
+      "size": [
+        1332,
+        1208
+      ],
+      "view_top": 64,
+      "mtn_key": "通常|キャラ|通常乃愛 (結合) "
+    },
+    {
+      "id": "kag",
+      "image": "angelic/title/layers/ch_kag_view.png",
+      "sx": 702,
+      "sy": -108,
+      "ex": 662,
+      "ey": -44,
+      "full_ex": 662,
+      "full_ey": -64,
+      "fade0": 0.5,
+      "fade1": 1.5,
+      "move_end": 1.5,
+      "fm_t0": [
+        387.0,
+        -108.0
+      ],
+      "fm_t1": [
+        347,
+        -44
+      ],
+      "origin": [
+        645,
+        560
+      ],
+      "size": [
+        1290,
+        1120
+      ],
+      "view_top": 20,
+      "mtn_key": "通常|キャラ|通常かぐ耶 (結合)"
+    },
+    {
+      "id": "ama",
+      "image": "angelic/title/layers/ch_ama_view.png",
+      "sx": 375,
+      "sy": 459,
+      "ex": 303,
+      "ey": 419,
+      "full_ex": 303,
+      "full_ey": 419,
+      "fade0": 0.5,
+      "fade1": 1.5,
+      "move_end": 1.5,
+      "fm_t0": [
+        236.0,
+        281.0
+      ],
+      "fm_t1": [
+        164,
+        241
+      ],
+      "origin": [
+        821,
+        362
+      ],
+      "size": [
+        1642,
+        725
+      ],
+      "view_top": 0,
+      "mtn_key": "通常|キャラ|通常天音 (結合)"
+    }
+  ],
+  "order": [
+    "kur",
+    "noa",
+    "kag",
+    "ama"
+  ],
+  "draw_order_back_to_front": [
+    "kur",
+    "noa",
+    "kag",
+    "ama"
+  ],
+  "fps": 60,
+  "char_move_last": 121,
+  "logo_last": 41,
+  "fm_formula": "TL = (960+cx-originX, 540+cy-originY); view_y += center_crop_top",
+  "fm_mse_vs_charall": 200.63,
+  "note": "slots from title_bg.mtn src keys; order 来海→乃愛→かぐ耶→天音",
+  "extras": {
+    "bg_plain": {
+      "image": "angelic/title/layers/bg_plain_view.png",
+      "zx0": 1.1,
+      "zoom_frames": 90
+    },
+    "deco_set": {
+      "image": "angelic/title/layers/deco_set_view.png",
+      "fade0": 0.5,
+      "fade1": 1.5,
+      "zx0": 1.5,
+      "xy": [
+        34,
+        0
+      ]
+    },
+    "lower_gradient": {
+      "image": "angelic/title/layers/lower_gradient.png",
+      "fade0": 1.5,
+      "fade1": 2.0,
+      "y0": 996,
+      "y1": 932,
+      "opa1": 0.8
+    },
+    "frame": {
+      "image": "angelic/title/layers/frame.png",
+      "fade0": 1.5,
+      "fade1": 2.0,
+      "xy": [
+        8,
+        7
+      ]
+    },
+    "logo_cn": {
+      "image": "angelic/title/layers/logo_cn_layer.png",
+      "xy": [
+        6,
+        579
+      ],
+      "zx0": 1.1,
+      "fade1": 0.6833333333333333
+    }
+  }
+}

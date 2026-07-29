@@ -1,0 +1,29 @@
+// 立ち上がり処理アクション
+// 複雑なアクション指定を行う例
+// 連続アクションでは、独自にvisvalueを処理する必要があります
+%[
+// 表示処理アクション
+showaction:
+	[
+		%[ "top" => %[ handler:"MoveAction", value:"@-100", time:0]],
+		%[ "top" => %[ handler:"MoveAction", value:"@+20", time:500, accel:"acdec"],
+		   "visvalue" => %[ handler:"MoveAction", value:"100", time:500, accel:"acdec"]],
+		%[ "top" => %[ handler:"MoveAction", value:"@", time:200, accel:"acdec"]]
+	],
+// 消去処理アクション
+hideaction:
+	[
+		%[ "top" => %[ handler:"MoveAction", value:"@-20", time:300, accel:"acdec"] ],
+		%[ wait:200 ],
+		%[ "visvalue" => %[ handler:"MoveAction", value:"0", time:1000, accel:"acdec"],
+		   "top" => %[ handler:"MoveAction", value:"@+100", time:1000, accel:"acdec"]],
+	],
+// time指定自体は省略可能
+// アクションの値が使われることになる
+// time:0,
+// delay:0,
+
+// トランジション(切り替え時)はこちらの値が優先参照される
+showdelay: 800,
+hidedelay: 0,
+]

@@ -1,0 +1,8 @@
+%[
+method:"ripple",
+time:1000,
+rwidth:128,
+roundness:1.0,
+speed:6.0,
+maxdrift:24,
+]

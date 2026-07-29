@@ -1,0 +1,76 @@
+#ファイル名,タイトル
+#
+# 行頭に「#+,」でサウンドモードには登録しないがゲーム中の曲タイトル表示を行うような定義を行います
+#
+# 例:
+#BGM01,今昔の街
+##+,BGM01i,今昔の街
+
+BGM91,FUN FUN RE-BOOT(TitleVer.),
+
+BGM01,Hot Morning,
+BGM02,Blazing Sunshine,
+BGM03,Familiar School,
+BGM04,Fun Fun Friends,
+BGM05,Fine Everyday,
+BGM06,Usual Interaction,
+BGM07,Summer Holiday,
+BGM08,Happy Memories,
+BGM09,Good Work,
+BGM10,Relaxation,
+BGM19,Slow Time,
+
+BGM51,君とボクのハジメテ(BGM Ver.),
+BGM61,君とボクのハジメテ(QuietVer.),
+BGM52,ワタシだけ。(BGM Ver.),
+BGM62,ワタシだけ。(QuietVer.),
+BGM53,アオハルデイズ(BGM Ver.),
+BGM63,アオハルデイズ(QuietVer.),
+BGM54,惚れて揺れて恋焦がれ(BGM Ver.),
+BGM64,惚れて揺れて恋焦がれ(QuietVer.),
+BGM55,Loyal Servant,
+BGM65,幸せの魔法(QuietVer.),
+BGM56,Dear Teacher,
+BGM66,wish(QuietVer.),
+
+BGM11,Kawaii…?,
+BGM12,AYASHIGE,
+BGM13,I-KAN,
+BGM14,U・F・N,
+BGM15,Punchline,
+
+BGM24,King's Soul,
+BGM25,Previous Era,
+BGM18,Angel Advent,
+BGM31,Thought,
+BGM21,Flicker,
+BGM22,Strange World,
+BGM23,Uninvited Visitor,
+BGM27,Distortion,
+BGM26,Tense Up,
+BGM28,Incomprehensible,
+BGM32,Temptation,
+BGM36,Fear,
+BGM35,Strain,
+BGM33,Lonely,
+BGM34,Disclose,
+BGM37,Figure Out,
+BGM29,Magic Battle,
+BGM30,Target Shooting,
+BGM47,Confrontation,
+BGM48,Beyond Destiny,
+BGM49,Judgment,
+BGM38,Heart-to-Heart,
+BGM20,Make Love,
+
+BGM50,FUN FUN RE-BOOT(PianoVer.),
+
+SongOP,FUN FUN RE-BOOT,,movie_op
+SongED1,Call My Name,,ed1_noa
+SongED2,ねえ。,,ed2_ama
+SongED3,以心伝心ジャーニー,,ed3_kur
+SongED4,DIVE,,ed4_kag
+SongED5,幸せの魔法,,ed5_ori
+SongED6,wish,,ed6_fum
+
+BGM17,Welcome to Cafe Stella!,

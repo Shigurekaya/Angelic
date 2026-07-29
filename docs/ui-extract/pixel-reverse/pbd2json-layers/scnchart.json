@@ -1,0 +1,1363 @@
+{
+  "source": "scnchart.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "branch",
+    "separator",
+    "minsection",
+    "subsection",
+    "select",
+    "section",
+    "top",
+    "pageup",
+    "slider",
+    "pagedown",
+    "end",
+    "page0",
+    "page1",
+    "page2",
+    "page3",
+    "page4",
+    "page5",
+    "page6",
+    "curselected",
+    "playback",
+    "pbhead",
+    "data_bg",
+    "jump",
+    "update",
+    "minimap",
+    "slider2",
+    "minimap_base",
+    "backlog",
+    "title",
+    "back",
+    "helptext",
+    "helpbase",
+    "scroll",
+    "caption",
+    "base",
+    "section_dummy",
+    "section_pick",
+    "new",
+    "mapsection",
+    "mapsection2",
+    "page7",
+    "remove",
+    "grp_slider",
+    "grp_playback",
+    "grp_minimap",
+    "rm_indexmode",
+    "rm_chartmode",
+    "rm_from_title",
+    "rm_from_game"
+  ],
+  "layer_count": 51,
+  "hotspot_count": 37,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1440,
+      "class": "base",
+      "uiname": "base"
+    },
+    {
+      "name": "caption",
+      "left": 87,
+      "top": 19,
+      "width": 223,
+      "height": 43,
+      "class": "layer",
+      "uiname": "caption",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 759,
+          "cy": 493,
+          "w": 223,
+          "h": 43,
+          "storage": "scnchart__pack"
+        }
+      }
+    },
+    {
+      "name": "scroll",
+      "left": 413,
+      "top": 81,
+      "width": 1052,
+      "height": 900,
+      "class": "layer",
+      "uiname": "scroll",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 1052,
+          "h": 900,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "top",
+      "left": 1472,
+      "top": 134,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "top",
+      "uistates": {
+        "on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 362,
+          "cy": 559,
+          "w": 34,
+          "h": 33,
+          "storage": "scnchart__pack"
+        },
+        "over": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 362,
+          "cy": 592,
+          "w": 34,
+          "h": 33,
+          "storage": "scnchart__pack"
+        },
+        "off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 362,
+          "cy": 526,
+          "w": 34,
+          "h": 33,
+          "storage": "scnchart__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "_page",
+      "left": 1560,
+      "top": 138,
+      "width": 291,
+      "height": 53,
+      "class": "button",
+      "uiname": "_page",
+      "uistates": {
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 413,
+          "cy": 881,
+          "w": 291,
+          "h": 53,
+          "storage": "scnchart__pack"
+        },
+        "route6": {
+          "ox": 183,
+          "oy": 0,
+          "cx": 812,
+          "cy": 39,
+          "w": 79,
+          "h": 53,
+          "storage": "scnchart__pack"
+        },
+        "route0": {
+          "ox": 178,
+          "oy": 9,
+          "cx": 168,
+          "cy": 884,
+          "w": 97,
+          "h": 44,
+          "storage": "scnchart__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 706,
+          "cy": 116,
+          "w": 291,
+          "h": 53,
+          "storage": "scnchart__pack"
+        },
+        "route3": {
+          "ox": 150,
+          "oy": 0,
+          "cx": 0,
+          "cy": 881,
+          "w": 136,
+          "h": 53,
+          "storage": "scnchart__pack"
+        },
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 413,
+          "cy": 828,
+          "w": 291,
+          "h": 53,
+          "storage": "scnchart__pack"
+        },
+        "text": {
+          "ox": 10,
+          "oy": 0,
+          "w": 169,
+          "h": 53,
+          "storage": ""
+        },
+        "route4": {
+          "ox": 160,
+          "oy": 0,
+          "cx": 168,
+          "cy": 831,
+          "w": 121,
+          "h": 53,
+          "storage": "scnchart__pack"
+        },
+        "route2": {
+          "ox": 186,
+          "oy": 0,
+          "cx": 891,
+          "cy": 39,
+          "w": 75,
+          "h": 53,
+          "storage": "scnchart__pack"
+        },
+        "route5": {
+          "ox": 182,
+          "oy": 0,
+          "cx": 731,
+          "cy": 39,
+          "w": 81,
+          "h": 53,
+          "storage": "scnchart__pack"
+        },
+        "route1": {
+          "ox": 71,
+          "oy": 0,
+          "cx": 759,
+          "cy": 440,
+          "w": 220,
+          "h": 53,
+          "storage": "scnchart__pack"
+        }
+      }
+    },
+    {
+      "name": "page0",
+      "left": 1560,
+      "top": 138,
+      "width": 291,
+      "height": 53,
+      "class": "copy",
+      "uiname": "page0"
+    },
+    {
+      "name": "separator",
+      "left": 454,
+      "top": 152,
+      "width": 962,
+      "height": 65,
+      "class": "layer",
+      "uiname": "separator",
+      "uistates": {
+        "(~null~)": {
+          "ox": 10,
+          "oy": 16,
+          "cx": 0,
+          "cy": 0,
+          "w": 942,
+          "h": 39,
+          "storage": "scnchart__pack"
+        },
+        "text": {
+          "ox": 42,
+          "oy": 0,
+          "w": 878,
+          "h": 43,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 962,
+          "h": 65,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "pageup",
+      "left": 1472,
+      "top": 173,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "pageup",
+      "uistates": {
+        "on": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 362,
+          "cy": 785,
+          "w": 33,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "over": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 362,
+          "cy": 689,
+          "w": 33,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "off": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 362,
+          "cy": 753,
+          "w": 33,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "page1",
+      "left": 1560,
+      "top": 204,
+      "width": 291,
+      "height": 53,
+      "class": "copy",
+      "uiname": "page1"
+    },
+    {
+      "name": "curselected",
+      "left": 103,
+      "top": 206,
+      "width": 280,
+      "height": 64,
+      "class": "layer",
+      "uiname": "curselected",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 0,
+          "h": 0,
+          "storage": null
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 280,
+          "h": 64,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "slider",
+      "left": 1470,
+      "top": 223,
+      "width": 40,
+      "height": 636,
+      "class": "slider",
+      "uiname": "slider",
+      "uistates": {
+        "rail": {
+          "ox": 14,
+          "oy": 11,
+          "cx": 400,
+          "cy": 116,
+          "w": 13,
+          "h": 615,
+          "storage": "scnchart__pack"
+        },
+        "on": {
+          "ox": 3,
+          "oy": 267,
+          "cx": 323,
+          "cy": 831,
+          "w": 34,
+          "h": 103,
+          "storage": "scnchart__pack"
+        },
+        "over": {
+          "ox": 3,
+          "oy": 267,
+          "cx": 289,
+          "cy": 831,
+          "w": 34,
+          "h": 103,
+          "storage": "scnchart__pack"
+        },
+        "normal": {
+          "ox": 3,
+          "oy": 267,
+          "cx": 357,
+          "cy": 831,
+          "w": 34,
+          "h": 103,
+          "storage": "scnchart__pack"
+        },
+        "knob": {
+          "ox": 0,
+          "oy": 266,
+          "w": 40,
+          "h": 104,
+          "storage": "",
+          "opacity": 128
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 40,
+          "h": 636,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "page2",
+      "left": 1560,
+      "top": 270,
+      "width": 291,
+      "height": 53,
+      "class": "copy",
+      "uiname": "page2"
+    },
+    {
+      "name": "data_bg",
+      "left": 61,
+      "top": 289,
+      "width": 362,
+      "height": 562,
+      "class": "layer",
+      "uiname": "data_bg",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 225,
+          "cx": 0,
+          "cy": 494,
+          "w": 362,
+          "h": 337,
+          "storage": "scnchart__pack"
+        },
+        "frame": {
+          "ox": 8,
+          "oy": 0,
+          "cx": 413,
+          "cy": 440,
+          "w": 346,
+          "h": 214,
+          "storage": "scnchart__pack"
+        }
+      }
+    },
+    {
+      "name": "playback",
+      "left": 61,
+      "top": 312,
+      "width": 362,
+      "height": 539,
+      "class": "layer",
+      "uiname": "playback",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 0,
+          "h": 0,
+          "storage": null
+        },
+        "view": {
+          "ox": 31,
+          "oy": 0,
+          "w": 300,
+          "h": 169,
+          "storage": ""
+        },
+        "text": {
+          "ox": 24,
+          "oy": 226,
+          "w": 314,
+          "h": 289,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 202,
+          "cx": 0,
+          "cy": 494,
+          "w": 362,
+          "h": 337,
+          "storage": "scnchart__pack"
+        }
+      }
+    },
+    {
+      "name": "page3",
+      "left": 1560,
+      "top": 337,
+      "width": 291,
+      "height": 53,
+      "class": "copy",
+      "uiname": "page3"
+    },
+    {
+      "name": "branch",
+      "left": 919,
+      "top": 357,
+      "width": 40,
+      "height": 39,
+      "class": "layer",
+      "uiname": "branch",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 927,
+          "cy": 536,
+          "w": 40,
+          "h": 39,
+          "storage": "scnchart__pack"
+        }
+      }
+    },
+    {
+      "name": "page4",
+      "left": 1560,
+      "top": 403,
+      "width": 291,
+      "height": 53,
+      "class": "copy",
+      "uiname": "page4"
+    },
+    {
+      "name": "section",
+      "left": 796,
+      "top": 452,
+      "width": 280,
+      "height": 64,
+      "class": "toggle",
+      "uiname": "section",
+      "uistates": {
+        "風実花": {
+          "ox": 238,
+          "oy": 31,
+          "cx": 706,
+          "cy": 407,
+          "w": 35,
+          "h": 33,
+          "storage": "scnchart__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 928,
+          "cy": 654,
+          "w": 280,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 828,
+          "cy": 654,
+          "w": 280,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "on": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 878,
+          "cy": 654,
+          "w": 280,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "天音": {
+          "ox": 239,
+          "oy": 31,
+          "cx": 362,
+          "cy": 494,
+          "w": 35,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "オリエ": {
+          "ox": 238,
+          "oy": 31,
+          "cx": 136,
+          "cy": 881,
+          "w": 37,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "enlarge": {
+          "ox": 28,
+          "oy": 0,
+          "w": 224,
+          "h": 64,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 280,
+          "h": 64,
+          "storage": ""
+        },
+        "来海": {
+          "ox": 236,
+          "oy": 32,
+          "cx": 944,
+          "cy": 396,
+          "w": 43,
+          "h": 31,
+          "storage": "scnchart__pack"
+        },
+        "乃愛": {
+          "ox": 236,
+          "oy": 28,
+          "cx": 909,
+          "cy": 396,
+          "w": 44,
+          "h": 35,
+          "storage": "scnchart__pack"
+        },
+        "かぐ耶": {
+          "ox": 234,
+          "oy": 24,
+          "cx": 927,
+          "cy": 586,
+          "w": 42,
+          "h": 39,
+          "storage": "scnchart__pack"
+        }
+      }
+    },
+    {
+      "name": "select",
+      "left": 796,
+      "top": 452,
+      "width": 280,
+      "height": 64,
+      "class": "toggle",
+      "uiname": "select",
+      "uistates": {
+        "風実花": {
+          "ox": 238,
+          "oy": 31,
+          "cx": 706,
+          "cy": 407,
+          "w": 35,
+          "h": 33,
+          "storage": "scnchart__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 778,
+          "cy": 654,
+          "w": 280,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 759,
+          "cy": 116,
+          "w": 280,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "on": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 809,
+          "cy": 116,
+          "w": 280,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "天音": {
+          "ox": 239,
+          "oy": 31,
+          "cx": 362,
+          "cy": 494,
+          "w": 35,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "オリエ": {
+          "ox": 238,
+          "oy": 31,
+          "cx": 136,
+          "cy": 881,
+          "w": 37,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "enlarge": {
+          "ox": 28,
+          "oy": 0,
+          "w": 224,
+          "h": 64,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 280,
+          "h": 64,
+          "storage": ""
+        },
+        "来海": {
+          "ox": 236,
+          "oy": 32,
+          "cx": 944,
+          "cy": 396,
+          "w": 43,
+          "h": 31,
+          "storage": "scnchart__pack"
+        },
+        "乃愛": {
+          "ox": 236,
+          "oy": 28,
+          "cx": 909,
+          "cy": 396,
+          "w": 44,
+          "h": 35,
+          "storage": "scnchart__pack"
+        },
+        "かぐ耶": {
+          "ox": 234,
+          "oy": 24,
+          "cx": 927,
+          "cy": 586,
+          "w": 42,
+          "h": 39,
+          "storage": "scnchart__pack"
+        }
+      }
+    },
+    {
+      "name": "subsection",
+      "left": 796,
+      "top": 452,
+      "width": 280,
+      "height": 64,
+      "class": "toggle",
+      "uiname": "subsection",
+      "uistates": {
+        "風実花": {
+          "ox": 238,
+          "oy": 31,
+          "cx": 706,
+          "cy": 407,
+          "w": 35,
+          "h": 33,
+          "storage": "scnchart__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 909,
+          "cy": 116,
+          "w": 280,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 728,
+          "cy": 654,
+          "w": 280,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "on": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 859,
+          "cy": 116,
+          "w": 280,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "天音": {
+          "ox": 239,
+          "oy": 31,
+          "cx": 362,
+          "cy": 494,
+          "w": 35,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "オリエ": {
+          "ox": 238,
+          "oy": 31,
+          "cx": 136,
+          "cy": 881,
+          "w": 37,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "enlarge": {
+          "ox": 28,
+          "oy": 0,
+          "w": 224,
+          "h": 64,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 280,
+          "h": 64,
+          "storage": ""
+        },
+        "来海": {
+          "ox": 236,
+          "oy": 32,
+          "cx": 944,
+          "cy": 396,
+          "w": 43,
+          "h": 31,
+          "storage": "scnchart__pack"
+        },
+        "乃愛": {
+          "ox": 236,
+          "oy": 28,
+          "cx": 909,
+          "cy": 396,
+          "w": 44,
+          "h": 35,
+          "storage": "scnchart__pack"
+        },
+        "かぐ耶": {
+          "ox": 234,
+          "oy": 24,
+          "cx": 927,
+          "cy": 586,
+          "w": 42,
+          "h": 39,
+          "storage": "scnchart__pack"
+        }
+      }
+    },
+    {
+      "name": "minsection",
+      "left": 908,
+      "top": 452,
+      "width": 168,
+      "height": 64,
+      "class": "toggle",
+      "uiname": "minsection",
+      "uistates": {
+        "風実花": {
+          "ox": 126,
+          "oy": 31,
+          "cx": 706,
+          "cy": 407,
+          "w": 35,
+          "h": 33,
+          "storage": "scnchart__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 759,
+          "cy": 536,
+          "w": 168,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 759,
+          "cy": 586,
+          "w": 168,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "on": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 0,
+          "cy": 831,
+          "w": 168,
+          "h": 50,
+          "storage": "scnchart__pack"
+        },
+        "天音": {
+          "ox": 127,
+          "oy": 31,
+          "cx": 362,
+          "cy": 494,
+          "w": 35,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "オリエ": {
+          "ox": 126,
+          "oy": 31,
+          "cx": 136,
+          "cy": 881,
+          "w": 37,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 168,
+          "h": 64,
+          "storage": ""
+        },
+        "来海": {
+          "ox": 124,
+          "oy": 32,
+          "cx": 944,
+          "cy": 396,
+          "w": 43,
+          "h": 31,
+          "storage": "scnchart__pack"
+        },
+        "乃愛": {
+          "ox": 124,
+          "oy": 28,
+          "cx": 909,
+          "cy": 396,
+          "w": 44,
+          "h": 35,
+          "storage": "scnchart__pack"
+        },
+        "かぐ耶": {
+          "ox": 122,
+          "oy": 24,
+          "cx": 927,
+          "cy": 586,
+          "w": 42,
+          "h": 39,
+          "storage": "scnchart__pack"
+        }
+      }
+    },
+    {
+      "name": "page5",
+      "left": 1560,
+      "top": 469,
+      "width": 291,
+      "height": 53,
+      "class": "copy",
+      "uiname": "page5"
+    },
+    {
+      "name": "page6",
+      "left": 1560,
+      "top": 535,
+      "width": 291,
+      "height": 53,
+      "class": "copy",
+      "uiname": "page6"
+    },
+    {
+      "name": "pbhead",
+      "left": 85,
+      "top": 538,
+      "width": 314,
+      "height": 289,
+      "class": "layer",
+      "uiname": "pbhead",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 314,
+          "h": 289,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "update",
+      "left": 1515,
+      "top": 595,
+      "width": 400,
+      "height": 378,
+      "class": "layer",
+      "uiname": "update",
+      "uistates": {
+        "base": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 116,
+          "w": 400,
+          "h": 378,
+          "storage": "scnchart__pack"
+        },
+        "view": {
+          "ox": 9,
+          "oy": 9,
+          "w": 382,
+          "h": 360,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "minimap_base",
+      "left": 1559,
+      "top": 619,
+      "width": 293,
+      "height": 324,
+      "class": "layer",
+      "uiname": "minimap_base",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 413,
+          "cy": 116,
+          "w": 293,
+          "h": 324,
+          "storage": "scnchart__pack"
+        }
+      }
+    },
+    {
+      "name": "minimap",
+      "left": 1567,
+      "top": 627,
+      "width": 277,
+      "height": 308,
+      "class": "layer",
+      "uiname": "minimap",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 277,
+          "h": 308,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "slider2",
+      "left": 1567,
+      "top": 627,
+      "width": 277,
+      "height": 308,
+      "class": "slider",
+      "uiname": "slider2",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 277,
+          "h": 308,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "jump",
+      "left": 85,
+      "top": 862,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "jump"
+    },
+    {
+      "name": "pagedown",
+      "left": 1472,
+      "top": 873,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "pagedown",
+      "uistates": {
+        "on": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 362,
+          "cy": 657,
+          "w": 33,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "over": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 362,
+          "cy": 721,
+          "w": 33,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "off": {
+          "ox": 2,
+          "oy": 2,
+          "cx": 362,
+          "cy": 625,
+          "w": 33,
+          "h": 32,
+          "storage": "scnchart__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "end",
+      "left": 1472,
+      "top": 912,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "end",
+      "uistates": {
+        "on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 809,
+          "cy": 396,
+          "w": 34,
+          "h": 34,
+          "storage": "scnchart__pack"
+        },
+        "over": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 859,
+          "cy": 396,
+          "w": 34,
+          "h": 34,
+          "storage": "scnchart__pack"
+        },
+        "off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 759,
+          "cy": 396,
+          "w": 34,
+          "h": 34,
+          "storage": "scnchart__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "helpbase",
+      "left": 27,
+      "top": 979,
+      "width": 731,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helpbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 39,
+          "w": 731,
+          "h": 77,
+          "storage": "scnchart__pack"
+        }
+      }
+    },
+    {
+      "name": "helptext",
+      "left": 57,
+      "top": 987,
+      "width": 672,
+      "height": 62,
+      "class": "layer",
+      "uiname": "helptext",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 0,
+          "h": 0,
+          "storage": null,
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "backlog",
+      "left": 923,
+      "top": 987,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "backlog"
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title"
+    },
+    {
+      "name": "_sysbtn",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_sysbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 413,
+          "cy": 770,
+          "w": 315,
+          "h": 58,
+          "storage": "scnchart__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 413,
+          "cy": 654,
+          "w": 315,
+          "h": 58,
+          "storage": "scnchart__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 413,
+          "cy": 712,
+          "w": 315,
+          "h": 58,
+          "storage": "scnchart__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 315,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back"
+    }
+  ],
+  "raw_result_keys": [
+    "_page",
+    "_sysbtn",
+    "back",
+    "backlog",
+    "base",
+    "branch",
+    "caption",
+    "curselected",
+    "data_bg",
+    "end",
+    "grp_minimap",
+    "grp_playback",
+    "grp_slider",
+    "helpbase",
+    "helptext",
+    "jump",
+    "mapsection",
+    "mapsection2",
+    "minimap",
+    "minimap_base",
+    "minsection",
+    "new",
+    "page0",
+    "page1",
+    "page2",
+    "page3",
+    "page4",
+    "page5",
+    "page6",
+    "page7",
+    "pagedown",
+    "pageup",
+    "pbhead",
+    "playback",
+    "remove",
+    "rm_chartmode",
+    "rm_from_game",
+    "rm_from_title",
+    "rm_indexmode",
+    "scroll",
+    "section",
+    "section_dummy",
+    "section_pick",
+    "select",
+    "separator",
+    "slider",
+    "slider2",
+    "subsection",
+    "title",
+    "top",
+    "update"
+  ]
+}

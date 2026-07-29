@@ -1,0 +1,619 @@
+# システム設定画面ヘルプテキスト
+
+#------------------------------------------------------------------------------
+# 共通
+
+page0
+	前往簡單設置選項卡。
+page1
+	前往畫面顯示選項卡。
+page2
+	前往遊戲設置1選項卡。
+page3
+	前往遊戲設置2選項卡。
+page4
+	前往文本選項卡。
+page5
+	前往音訊選項卡。
+page6
+	前往確認選項卡。
+page7
+	前往滑鼠選項卡。
+page8
+	前往鍵盤選項卡。
+page9
+	前往遊戲手把選項卡。
+
+back
+	返回遊戲畫面。
+reset
+	當前頁設定初始化。	同時按下Shift按鍵將初始化全部設定。
+title
+	返回標題界面。
+
+#------------------------------------------------------------------------------
+# 簡易設定
+
+label_a_jump	label_b_jump
+	前往畫面顯示高級設置。
+
+label_c_jump	label_d_jump	label_e_jump
+	前往文本高級設置。
+
+label_f_jump	label_g_jump	label_h_jump	label_i_jump	label_j_jump
+	前往音訊高級設置。
+
+
+#------------------------------------------------------------------------------
+# 畫面設定
+
+fullscreen
+	全螢幕、窗口顯示模式切換。
+
+sqscr
+	１６：９模式與４：３模式切換。
+
+noeffect
+	設定畫面效果。
+
+scanim_on
+	設定高特效動畫效果。
+scanim_off
+	設定高特效動畫效果。	關閉時將使用靜態圖像代替。
+
+esccancel_on
+	設定ＥＳＣ按鍵功能。	取消：與滑鼠右鍵功能相同。
+esccancel_off
+	設定ＥＳＣ按鍵功能。	老闆鍵：分類下欄選擇的功能。
+
+panictype_0
+	選擇老闆鍵功能。	最小化：窗口最小化。
+panictype_1
+	選擇老闆鍵功能。	畫像１：顯示圖像１。再次按下ESC解除。
+panictype_2
+	選擇老闆鍵功能。	畫像２：顯示圖像２。再次按下ESC解除。
+panictype_3
+	選擇老闆鍵功能。	用戶自訂：按下按鈕後，請選擇一個圖像文件。
+
+stayontop
+	開啟時遊戲窗口始終顯示在最前方。
+
+
+item_icon_chk
+	設定遊戲中進度圖示是否顯示。
+item_vprg_chk
+	設定遊戲中語音播放和自動等待時間進度是否顯示。
+item_qmlk_chk
+	設定遊戲中螢幕底部功能按鈕是否顯示。	關閉狀態下滑鼠移動至此可以暫時顯示。
+item_toch_chk
+	設定觸控按鈕功能是否顯示。
+
+chapthidetime
+	設定遊戲中的章節標題是否顯示。	左端始終隱藏，中間會在指定時間（單位秒）後自動隱藏，右端始終顯示。
+
+bgmhidetime
+	設定遊戲中播放音樂的標題是否顯示。	左端始終隱藏，中間會在指定時間（單位秒）後自動隱藏，右端始終顯示。
+
+
+facemode_on
+	啟用後，即使顯示立繪，角色的臉部表情也會顯示在消息窗口中。	（但在某些情況下不會顯示）
+facemode_off
+	關閉時，當顯示立繪時，消息窗口中不再顯示角色的臉部表情。	（但在某些情況下不會隱藏）
+
+qconfpop_over	qconfpop_rclick
+	設置操作方法以顯示窗口菜單附帶的彈出功能。
+
+#------------------------------------------------------------------------------
+# ゲーム進行
+
+readskip
+	設置是否自動跳過/跳轉已閱讀的文本。	快進中可以透過單擊滑鼠左鍵來暫停。
+
+readjump
+	選擇快進模式的跳過/跳轉操作。
+
+curmove
+	設定滑鼠指針是否自動移動。
+
+curmoveyes_on
+	確認時滑鼠指針自動移動到“是”按鈕上。
+curmoveyes_off
+	確認時滑鼠指針自動移動到“否”按鈕上。	但是對於某些確認（例如快速保存與載入），移動到“是”按鈕上。
+
+
+curhidestep_0
+	設定滑鼠指針是否自動隱藏。
+curhidestep_5	curhidestep_10	curhidestep_20	curhidestep_x
+	設定滑鼠指針是否自動隱藏。	在指定的時間後隱藏滑鼠指針。
+filedclk_off
+	保存/載入操作隻需單擊滑鼠。
+filedclk_on
+	保存/載入操作需要雙擊滑鼠。
+
+hsel_area
+	設置是否固定Ｈ場景選擇項。
+
+flowshow_on	flowshow_off
+	打開時，即使未達到對應劇情，也將顯示全部流程圖。
+
+stopdeactive_on
+	設置停止操作遊戲一段時間後會發生什麼事。	停止：暫停遊戲並靜音。
+stopdeactive_off
+	設置停止操作遊戲一段時間後會發生什麼事。	繼續：繼續遊戲而不停止。
+
+icpreview
+	設置任務欄的窗口預覽顯示。
+#	僅在Windows Vista及更高版本有效。
+
+suspend_on	suspend_off
+	設置是否在開始遊戲後立即恢復上一次進度。
+
+#===============================
+
+drawspeed
+	設置遊戲進行速度。
+
+vspeed
+	設置遊戲語音播放速度。	請注意，提高速度會降低音質。
+
+vspeedsync_chk
+	語音播放速度與遊戲進行速度保持一致。	僅在x1.0～x3.0範圍之間有效。
+
+skipspeed	skipspeed_rail
+	設置快進模式速度。	按下Ctrl按鍵是總以最快速度快進。
+
+skipst_0
+	設置快進方式。	普通：即使在快進過程中，也會顯示所有螢幕更新。
+skipst_1
+	設置快進方式。	快進：快進時跳過臉部表情和姿勢的變化。
+skipst_2
+	設置快進方式。	純文字：快進時僅顯示文字，螢幕和音樂不會更新。
+
+movierclick
+	播放動畫時是否允許滑鼠右鍵跳過。	（即便是第一次觀看，右鍵也可以跳過）
+
+movieskip
+	如果快進到已經觀看過的動畫，是否直接跳過，繼續快進。
+
+drama_on
+	設置沉浸式體驗。	開：在自動模式下，在有語音時隱藏文本窗口。
+drama_off
+	設置沉浸式體驗。	OFF：在自動模式下，即使有語音時也顯示文本窗口。
+
+use_speech
+	使用外部語音引擎以讀取沒有語音的文本。	可以從選單欄上的“文字/文本閱讀”中進行詳細設置。
+
+# [TODO]
+txv_voice	txv_novo	txv_other
+	根據文本類別來設置是否顯示文本框。
+
+dramatic_chk
+	按照以前的電影模式來設置。
+
+snapsilent
+	截圖文件命名方式。
+
+snapdetail
+	截圖保存的詳細設置。
+
+
+#------------------------------------------------------------------------------
+# テキスト設定
+
+textspeed
+	設置文本顯示速度。
+
+autospeed
+	設置自動模式速度。
+
+atextwait
+	設置自動模式每個文字的等待時間。
+
+
+autovwait_0
+	設置自動模式類型。	普通：等待直到語音播放結束。
+autovwait_1
+	設置自動模式類型。	語音優先：如果有語音，等到語音結束再繼續，否則按照設定速度繼續。
+autovwait_2
+	設置自動模式類型。	快速：始終按照設定速度進行，不等待語音結束。
+
+skipall
+	設置快進模式跳過的內容。
+
+ctrlskip_on
+	設置按下Ctrl鍵時的快進動作。	${_allSkip?"未讀文本快進設置為開時無效。":"全部：無論未讀文本快進設置如何，都將強制跳過所有內容。"}
+ctrlskip_off
+	設置按下Ctrl鍵時的快進動作。	${_allSkip?"未讀文本快進設置為開時無效。":"已讀內容：僅跳過已經閱讀的文本。"}
+
+afterskip_on	afterskip_off
+	設置遇到選項後是否中斷快進模式。
+
+afterauto_on	afterauto_off
+	設置遇到選項後是否中斷自動模式。
+
+color_win
+	設置普通對話框的顏色。	選擇此按鈕後，在右欄中設置顏色。
+color_owin
+	設置視點變更時對話框的顏色。	選擇此按鈕後，在右欄中設置顏色。
+color_hwin
+	設置Ｈ場景對話框的顏色。	選擇此按鈕後，在右欄中設置顏色。
+color_text
+	設置未讀文字的顏色。	選擇此按鈕後，在右欄中設置顏色。
+color_read
+	設置已讀文字的顏色。	選擇此按鈕後，在右欄中設置顏色。
+
+nohwindow_chk
+	設置在Ｈ場景期間是否使用窗口顯示。
+
+hsv
+	當前顏色狀態。	${hsv?"拖動圖釘以選擇顏色。":"單擊打開顏色設置對話框。"}
+
+hsv_reset
+	恢復默認顏色。
+
+HSV_DRAG_H
+	明度・飽和度設置。
+HSV_DRAG_SV
+	色相設置。
+
+winsample
+	顯示當前設置的文字樣式範例。
+
+winopac
+	設置遊戲中文本窗口的透明度。
+
+fontselect
+	字體選擇。
+
+#------------------------------------------------------------------------------
+# サウンド設定
+
+wave
+	設置遊戲的主音量。
+
+bgm
+	設置遊戲BGM(音樂)的音量。
+
+down_mute
+	如果選中此複選框，則在語音播放期間不會降低BGM的音量。
+down
+	設置語音播放期間的BGM（音樂）音量。
+
+movie
+	設定影片音量。
+mvaudiosample_chk
+	滑鼠放上來時將播放動畫音樂的音訊樣本。	※為了與ＢＧＭ區分，音訊樣本將會帶有混響效果。
+
+se
+	設置遊戲SE（聲音效果）的音量。
+
+bgv
+	設置普通場景中背景語音的音量。
+bgv_mute
+	複選框打開時	不播放背景語音。
+
+bgv2
+	設置Ｈ場景中背景語音的音量。
+bgv2_mute
+	複選框打開時	不播放Ｈ場景的背景語音。
+
+voicecut_on
+	設置語音中斷。	開：在下一條消息顯示時中斷上一條語音播放。
+voicecut_off
+	設置語音中斷。	關：在下一條消息顯示時繼續播放上一條語音。
+
+voiceeff
+	特定場景語音音效開關。
+
+voice
+	設置角色語音的音量。
+
+cap_chvol
+	設置每個角色的語音音量。
+chv0
+	${getVoiceTargetName(0)}的角色語音音量調整。${isVoiceTarget(0)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv1
+	${getVoiceTargetName(1)}的角色語音音量調整。${isVoiceTarget(1)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv2
+	${getVoiceTargetName(2)}的角色語音音量調整。${isVoiceTarget(2)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv3
+	${getVoiceTargetName(3)}的角色語音音量調整。${isVoiceTarget(3)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv4
+	${getVoiceTargetName(4)}的角色語音音量調整。${isVoiceTarget(4)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv5
+	${getVoiceTargetName(5)}的角色語音音量調整。${isVoiceTarget(5)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv6
+	${getVoiceTargetName(6)}的角色語音音量調整。${isVoiceTarget(6)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv7
+	${getVoiceTargetName(7)}的角色語音音量調整。${isVoiceTarget(7)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv8
+	${getVoiceTargetName(8)}的角色語音音量調整。${isVoiceTarget(8)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv9
+	${getVoiceTargetName(9)}的角色語音音量調整。${isVoiceTarget(9)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv10
+	${getVoiceTargetName(10)}的角色語音音量調整。${isVoiceTarget(10)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv11
+	${getVoiceTargetName(11)}的角色語音音量調整。${isVoiceTarget(11)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv12
+	${getVoiceTargetName(12)}的角色語音音量調整。${isVoiceTarget(12)?"\n點擊此按鈕可以切換打開/關閉。":""}
+chv13
+	${getVoiceTargetName(13)}的角色語音音量調整。${isVoiceTarget(13)?"\n點擊此按鈕可以切換打開/關閉。":""}
+
+chv_on	chv_off
+	語音播放開關設置。
+
+chv_test
+	播放語音範例。
+
+chv
+	語音音量調整。
+
+sysse_play
+	關閉或開啟系統音效。
+
+sysvo_play
+	關閉或開啟系統語音。
+
+lowprisysvo_chk
+	遊戲內的角色正在說話時不播放系統語音。
+
+sysvodetail
+	單獨設置每一段系統語音。
+
+sysse
+	設置系統音效的音量。${_sysseEnable?"":"\n請先啟用「音效」之後再進行設置。"}
+
+sysvo
+	設置系統語音的音量。${SystemVoice.enabled?"":"\n請先啟用「角色語音」之後再進行設置。。"}
+
+#sysvovolume_test
+#	播放系統語音範例。
+
+sysvoplay_area
+	是否播放這條系統語音。
+
+sysvoall
+	設置所有的系統語音。
+
+sysvomask_area
+	選擇朗讀系統語音的角色。
+
+sysvo_ok
+	關閉此界面。
+
+#------------------------------------------------------------------------------
+# ダイアログ設定
+
+cfall
+	一次性更改所有設置。
+
+cf_save
+	設置存檔時是否顯示確認對話框。
+cf_overwrite
+	設置覆蓋存檔時是否顯示確認對話框。
+cf_dsave
+	設置直接存檔時是否顯示確認對話框。
+cf_load
+	設置讀檔時是否顯示確認對話框。
+cf_qsave
+	設置快速存檔時是否顯示確認對話框。
+cf_qload
+	設置快速讀檔時是否顯示確認對話框。
+cf_title
+	設置返回標題時是否顯示確認對話框。
+cf_jump
+	設置場景跳轉時是否顯示確認對話框。
+cf_flow
+	設置流程圖跳轉時是否顯示確認對話框。
+cf_next
+	設置跳轉下一個選擇項時是否顯示確認對話框。
+cf_backto
+	設置返回上一個選擇項時是否顯示確認對話框。
+cf_nextscn
+	設置跳轉至下一個場景時是否顯示確認對話框。
+cf_prevscn
+	設置跳轉上一個場景時是否顯示確認對話框。
+cf_vsave
+	設置加入語音收藏夾時是否顯示確認對話框。
+cf_init
+	設置復位設定時是否顯示確認對話框。
+cf_initstand
+	設置立繪鑑賞模式初始化時是否顯示確認對話框。
+cf_delete
+	設置刪除存檔時是否顯示確認對話框。
+cf_swap
+	設置移動存檔時是否顯示確認對話框。
+cf_copy
+	設置複製存檔時是否顯示確認對話框。
+cf_exit
+	設置退出遊戲時是否顯示確認對話框。
+cf_resume
+	設置遊戲啟動後恢復遊戲進度是否顯示確認對話框。
+
+#------------------------------------------------------------------------------
+# マウス設定
+
+gsfunc_save
+	設置存檔界面。	將其拖放到要設置的位置。
+gsfunc_dsave
+	設置直接存檔。	將其拖放到要設置的位置。
+gsfunc_load
+	設置讀檔界面。	將其拖放到要設置的位置。
+gsfunc_qsave
+	設置快速存檔。	將其拖放到要設置的位置。
+gsfunc_qload
+	設置快速讀檔。	將其拖放到要設置的位置。
+
+gsfunc_option
+	設置系統設置。	將其拖放到要設置的位置。
+gsfunc_prev
+	設置上一個選項。	將其拖放到要設置的位置。
+gsfunc_prevscn
+	設置上一個場景。	將其拖放到要設置的位置。
+gsfunc_backskip
+	設置快退。	將其拖放到要設置的位置。
+gsfunc_backone
+	設置上一行文字。	將其拖放到要設置的位置。
+
+gsfunc_log
+	設置歷史記錄。	將其拖放到要設置的位置。
+gsfunc_auto
+	設置自動模式。	將其拖放到要設置的位置。
+gsfunc_skip
+	設置快進模式。	將其拖放到要設置的位置。
+gsfunc_nextscn
+	設置下一個場景。	將其拖放到要設置的位置。
+gsfunc_next
+	設置下一個選項。	將其拖放到要設置的位置。
+
+gsfunc_scnchart
+	設置流程圖。	將其拖放到要設置的位置。
+gsfunc_vreplay
+	設置語音重放。	將其拖放到要設置的位置。
+gsfunc_qvsave
+	設置加入語音收藏。	將其拖放到要設置的位置。
+gsfunc_vsave
+	設置語音收藏夾。	將其拖放到要設置的位置。
+gsfunc_click
+	設置滑鼠左鍵。	將其拖放到要設置的位置。
+
+gsfunc_title
+	設置返回標題界面。	將其拖放到要設置的位置。
+gsfunc_screen
+	設置全螢幕化。	將其拖放到要設置的位置。
+gsfunc_snapshot
+	設置截圖快捷鍵。	請將此圖示拖動到想要設置的位置上。
+gsfunc_panic
+	設置老闆鍵。（老闆鍵顯示的圖片可以在「畫面顯示」設置中更改）	請將此圖示拖動到想要設置的位置上。
+
+gsfunc_none
+	清除功能。	將其拖放到要刪除功能的位置。
+
+gsfunc_key_ctrl
+	設置Ctrl快進。	將其拖放到要設置的位置。
+gsfunc_rclick
+	設置滑鼠右鍵。	將其拖放到要設置的位置。
+gsfunc_volume
+	設置音量調​​整。	將其拖放到要設置的位置。
+gsfunc_key_pageup
+	設置PageUp按鍵（歷史記錄/向上滾動）。	將其拖放到要設置的位置。
+gsfunc_key_pagedown
+	設置PageDown按鍵（向下滾動）。	將其拖放到要設置的位置。
+
+
+gsbind_up
+	設置滑鼠右鍵向上移動的手勢功能。
+gsbind_left
+	設置滑鼠右鍵向左移動的手勢功能。
+gsbind_right
+	設置滑鼠右鍵向右移動的手勢功能。
+gsbind_down
+	設置滑鼠右鍵向下移動的手勢功能。
+gsbind_middle
+	設置滑鼠滾輪的手勢功能。
+# [NOTE] mousex1/x2とUI画面上の拡張1/2は数字が逆であることに注意
+gsbind_mousex1
+	為擴展鍵２分配功能。
+gsbind_mousex2
+	為擴展鍵１分配功能。
+
+gsenable_rev
+	${_enGesture?"關閉":"啟用"}手勢功能。
+
+#------------------------------------------------------------------------------
+
+gamepad_bind1	gamepad_bind2
+	遊戲手把按鍵功能設置。
+
+engamepad_rev
+	設置遊戲手把${_enGamePad?"關閉":"啟用"}。
+
+gamepad_assign
+	重新設置遊戲手把按鍵。${isGamePadExEnabled?"當遊戲手把輸入和螢幕上的按鍵位置不匹配時請使用它。":"如果未連接遊戲手把或無法識別連接，則無法選擇此項。"}
+
+frame_gamepad_front
+	遊戲手把設置示意圖。	識別遊戲手把的輸入後，相應按鈕的顏色就會改變。
+
+frame_gamepad_sholder
+	遊戲手把L/R按鍵設置示意圖。	識別遊戲手把的輸入後，相應按鈕的顏色就會改變。
+
+
+GAMEPAD_CANCEL
+	在此螢幕上，右鍵單擊/設置了ESC功能的遊戲手把操作無效。	在操作之前，請使用滑鼠或鍵盤，或移至另一個螢幕。
+
+#------------------------------------------------------------------------------
+# ショートカット
+
+key_save
+	設置『存檔界面』的快捷鍵。
+key_load
+	設置『讀檔界面』的快捷鍵。
+key_dsave
+	設置『${getKeyBindCaption("dsave")}』的快捷鍵。
+key_qsave
+	設置『快速存檔』的快捷鍵。
+key_qload
+	設置『快速讀檔』的快捷鍵。
+key_option
+	設置『系統設定』的快捷鍵。
+key_screen
+	設置『窗口全螢幕切換』的快捷鍵。
+key_click
+	設置『確定』的快捷鍵。
+key_auto
+	設置『自動模式』的快捷鍵。
+key_skip
+	設置『快進模式』的快捷鍵。
+key_ctrl
+	設置『Ctrl快進』的快捷鍵。
+key_nextscn
+	設置『下一個場景』的快捷鍵。
+key_next
+	設置『下一個選項』的快捷鍵。
+key_log
+	設置『歷史記錄』的快捷鍵。
+key_pageup
+	設置『向上翻頁』的快捷鍵。
+key_pagedown
+	設置『向下翻頁』的快捷鍵。
+key_backone
+	設置『返回上一句文本』的快捷鍵。
+key_backskip
+	設置『快退』的快捷鍵。
+key_prevscn
+	設置『上一個場景』的快捷鍵。
+key_prev
+	設置『上一個選項』的快捷鍵。
+key_scnchart
+	設置『流程圖』的快捷鍵。
+key_title
+	設置『標題界面』的快捷鍵。
+key_volume
+	設置『音量調整』的快捷鍵。
+key_hide
+	設置『隱藏對話框』的快捷鍵。
+key_vreplay
+	設置『語音重播』的快捷鍵。
+key_vsave
+	設置『語音收藏』的快捷鍵。
+key_qvsave
+	設置『${getKeyBindCaption("qvsave")}』的快捷鍵。
+key_snapshot
+	為『${getKeyBindCaption("snapshot")}』功能設置快捷鍵。	系統原生的PrtSc鍵可能會因受系統設置或第三方Ａｐｐ影響而無法工作。
+key_panic
+	為『${getKeyBindCaption("panic")}』功能設置快捷鍵。	ESC鍵只有在「畫面顯示」設置中被設置為老闆鍵功能時才會生效。
+
+keyboard
+	顯示已設置和未設置的鍵盤按鍵。
+
+KEY_RESERVED
+	※一部分字母鍵將會被用於多語言切換，因此無法設置為其他功能。
+
+#------------------------------------------------------------------------------
+# システムボイス
+
+sysvo0	sysvo1	sysvo2	sysvo3	sysvo4	sysvo5	sysvo6	sysvo7	sysvo8
+	選擇系統語音的角色。	如果未選擇任何角色，則將播放所有。如果進行了多個選擇，則在已選中隨機播放。
+
+sysvornd
+	${isAllSysVoice?"取消":"選擇"}全部系統語音角色。

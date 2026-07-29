@@ -1,0 +1,1930 @@
+{
+  "source": "extra_voice.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "new",
+    "sdmove_from",
+    "sdmove_to",
+    "itemmove_to",
+    "item_pos00",
+    "item_pos11",
+    "page_up100",
+    "page_up10",
+    "page_up1",
+    "slider",
+    "page_dw1",
+    "page_dw10",
+    "page_dw100",
+    "page_sub",
+    "page_add",
+    "page_num",
+    "page_max",
+    "page_numbase",
+    "detail",
+    "detail_nodata",
+    "detail_base",
+    "listmode",
+    "edit_hold",
+    "edit_copy",
+    "edit_swap",
+    "edit_comment",
+    "edit_remove",
+    "sceneplay",
+    "edit_addlist",
+    "edit_dellist",
+    "edit_clearlist",
+    "edit_savelist",
+    "edit_loadlist",
+    "plist_prev",
+    "plist_stop",
+    "plist_play",
+    "plist_next",
+    "plist_all",
+    "plist_loop",
+    "pitem_insert",
+    "pitem_pos00",
+    "pitem_pos11",
+    "plist_frame",
+    "plist_top",
+    "plist_pageup",
+    "pslider",
+    "plist_pagedown",
+    "plist_end",
+    "to_cg",
+    "to_scene",
+    "to_stand",
+    "to_voice",
+    "title",
+    "title2",
+    "back",
+    "helptext",
+    "helpbase",
+    "caption",
+    "base",
+    "edit_move",
+    "grp_extra",
+    "grp_detail",
+    "grp_plist",
+    "rm_fromgame",
+    "rm_fromtitle",
+    "rm_listmode_on",
+    "rm_listmode_off",
+    "plist_up",
+    "plist_down"
+  ],
+  "layer_count": 77,
+  "hotspot_count": 67,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "class": "base",
+      "uiname": "base"
+    },
+    {
+      "name": "to_cg",
+      "left": 1235,
+      "top": 0,
+      "width": 125,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_cg",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 125,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "to_scene",
+      "left": 1361,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_scene",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "to_stand",
+      "left": 1510,
+      "top": 0,
+      "width": 149,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_stand",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 149,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "to_voice",
+      "left": 1660,
+      "top": 0,
+      "width": 212,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_voice",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 212,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "caption",
+      "left": 87,
+      "top": 19,
+      "width": 128,
+      "height": 43,
+      "class": "layer",
+      "uiname": "caption",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 315,
+          "cy": 135,
+          "w": 128,
+          "h": 43,
+          "storage": "extra__pack"
+        }
+      }
+    },
+    {
+      "name": "edit_copy",
+      "left": 798,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_copy"
+    },
+    {
+      "name": "edit_swap",
+      "left": 1017,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_swap"
+    },
+    {
+      "name": "edit_comment",
+      "left": 1236,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_comment"
+    },
+    {
+      "name": "_edit",
+      "left": 1455,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "button",
+      "uiname": "_edit",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 364,
+          "cy": 90,
+          "w": 197,
+          "h": 49,
+          "storage": "file__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 413,
+          "cy": 90,
+          "w": 197,
+          "h": 49,
+          "storage": "file__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 315,
+          "cy": 90,
+          "w": 197,
+          "h": 49,
+          "storage": "file__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 197,
+          "h": 49,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "edit_remove",
+      "left": 1455,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_remove"
+    },
+    {
+      "name": "listmode",
+      "left": 86,
+      "top": 107,
+      "width": 317,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "listmode",
+      "uistates": {
+        "text": {
+          "ox": 37,
+          "oy": 3,
+          "w": 280,
+          "h": 30,
+          "storage": ""
+        },
+        "over_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 669,
+          "cy": 179,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "over_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 564,
+          "cy": 203,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 635,
+          "cy": 179,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "normal_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 564,
+          "cy": 237,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "edit_hold",
+      "left": 433,
+      "top": 107,
+      "width": 317,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "edit_hold",
+      "uistates": {
+        "text": {
+          "ox": 37,
+          "oy": 3,
+          "w": 280,
+          "h": 30,
+          "storage": ""
+        },
+        "over_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 669,
+          "cy": 179,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "over_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 564,
+          "cy": 203,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "normal_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 635,
+          "cy": 179,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "normal_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 564,
+          "cy": 237,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "_pgbtn",
+      "left": 1678,
+      "top": 107,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "_pgbtn",
+      "uistates": {
+        "ov_up": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 462,
+          "cy": 219,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "on_top": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 699,
+          "cy": 240,
+          "w": 26,
+          "h": 26,
+          "storage": "file__pack"
+        },
+        "on_minus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 669,
+          "cy": 145,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "ov_minus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 601,
+          "cy": 213,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "of_btm": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 642,
+          "cy": 111,
+          "w": 26,
+          "h": 25,
+          "storage": "file__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        },
+        "on_dw": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 486,
+          "cy": 219,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "of_dw": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 462,
+          "cy": 194,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "of_top": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 616,
+          "cy": 111,
+          "w": 26,
+          "h": 26,
+          "storage": "file__pack"
+        },
+        "ov_dw10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 703,
+          "cy": 179,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        },
+        "of_up10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 667,
+          "cy": 240,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        },
+        "ov_dw": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 486,
+          "cy": 194,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "of_plus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 635,
+          "cy": 145,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "ov_plus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 601,
+          "cy": 247,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "ov_up10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 667,
+          "cy": 213,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        },
+        "on_up10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 635,
+          "cy": 213,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        },
+        "on_btm": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 692,
+          "cy": 111,
+          "w": 26,
+          "h": 25,
+          "storage": "file__pack"
+        },
+        "ov_top": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 703,
+          "cy": 145,
+          "w": 26,
+          "h": 26,
+          "storage": "file__pack"
+        },
+        "of_minus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 601,
+          "cy": 145,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "on_plus": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 601,
+          "cy": 179,
+          "w": 34,
+          "h": 34,
+          "storage": "file__pack"
+        },
+        "ov_btm": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 667,
+          "cy": 111,
+          "w": 26,
+          "h": 25,
+          "storage": "file__pack"
+        },
+        "of_up": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 462,
+          "cy": 244,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "of_dw10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 699,
+          "cy": 213,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        },
+        "on_up": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 486,
+          "cy": 244,
+          "w": 25,
+          "h": 24,
+          "storage": "file__pack"
+        },
+        "on_dw10": {
+          "ox": 4,
+          "oy": 2,
+          "cx": 635,
+          "cy": 240,
+          "w": 27,
+          "h": 32,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "page_sub",
+      "left": 1678,
+      "top": 107,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_sub"
+    },
+    {
+      "name": "page_add",
+      "left": 1834,
+      "top": 107,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_add"
+    },
+    {
+      "name": "page_max",
+      "left": 1722,
+      "top": 108,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_max",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 104,
+          "h": 35,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "page_num",
+      "left": 1722,
+      "top": 108,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_num",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 104,
+          "h": 35,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "page_numbase",
+      "left": 1722,
+      "top": 108,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_numbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 462,
+          "cy": 90,
+          "w": 104,
+          "h": 35,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "new",
+      "left": 709,
+      "top": 175,
+      "width": 58,
+      "height": 54,
+      "class": "layer",
+      "uiname": "new",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 328,
+          "cy": 1044,
+          "w": 58,
+          "h": 54,
+          "storage": "extra_voice__pack"
+        }
+      }
+    },
+    {
+      "name": "page_up100",
+      "left": 1834,
+      "top": 175,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up100"
+    },
+    {
+      "name": "detail_nodata",
+      "left": 83,
+      "top": 177,
+      "width": 558,
+      "height": 346,
+      "class": "layer",
+      "uiname": "detail_nodata",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 550,
+          "cy": 0,
+          "w": 558,
+          "h": 346,
+          "storage": "extra_voice__pack"
+        }
+      }
+    },
+    {
+      "name": "plist_top",
+      "left": 646,
+      "top": 184,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "plist_top"
+    },
+    {
+      "name": "item",
+      "left": 722,
+      "top": 184,
+      "width": 273,
+      "height": 256,
+      "class": "button",
+      "uiname": "item",
+      "uistates": {
+        "bigcomment": {
+          "ox": 23,
+          "oy": 34,
+          "w": 225,
+          "h": 182,
+          "storage": ""
+        },
+        "風実花": {
+          "ox": 217,
+          "oy": 213,
+          "cx": 49,
+          "cy": 498,
+          "w": 47,
+          "h": 43,
+          "storage": "qlpopup__pack"
+        },
+        "date": {
+          "ox": 23,
+          "oy": 217,
+          "w": 188,
+          "h": 23,
+          "storage": ""
+        },
+        "chapter": {
+          "ox": 23,
+          "oy": 9,
+          "w": 219,
+          "h": 25,
+          "storage": ""
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 264,
+          "cy": 249,
+          "w": 264,
+          "h": 249,
+          "storage": "qlpopup__pack"
+        },
+        "thumb": {
+          "ox": 20,
+          "oy": 24,
+          "cx": 0,
+          "cy": 904,
+          "w": 225,
+          "h": 202,
+          "storage": "extra_voice__pack"
+        },
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 550,
+          "cy": 571,
+          "w": 264,
+          "h": 249,
+          "storage": "extra_voice__pack"
+        },
+        "オリエ": {
+          "ox": 218,
+          "oy": 213,
+          "cx": 0,
+          "cy": 498,
+          "w": 49,
+          "h": 42,
+          "storage": "qlpopup__pack"
+        },
+        "nosave": {
+          "ox": 213,
+          "oy": 204,
+          "w": 60,
+          "h": 52,
+          "storage": ""
+        },
+        "来海": {
+          "ox": 215,
+          "oy": 214,
+          "cx": 322,
+          "cy": 498,
+          "w": 57,
+          "h": 41,
+          "storage": "qlpopup__pack"
+        },
+        "かぐ耶": {
+          "ox": 213,
+          "oy": 204,
+          "cx": 379,
+          "cy": 498,
+          "w": 55,
+          "h": 51,
+          "storage": "qlpopup__pack"
+        },
+        "bigtext": {
+          "ox": 23,
+          "oy": 34,
+          "w": 225,
+          "h": 182,
+          "storage": ""
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 550,
+          "cy": 820,
+          "w": 264,
+          "h": 249,
+          "storage": "extra_voice__pack"
+        },
+        "number": {
+          "ox": 23,
+          "oy": 9,
+          "w": 219,
+          "h": 25,
+          "storage": ""
+        },
+        "天音": {
+          "ox": 220,
+          "oy": 213,
+          "cx": 96,
+          "cy": 498,
+          "w": 45,
+          "h": 42,
+          "storage": "qlpopup__pack"
+        },
+        "text": {
+          "ox": 23,
+          "oy": 34,
+          "w": 225,
+          "h": 182,
+          "storage": ""
+        },
+        "乃愛": {
+          "ox": 215,
+          "oy": 209,
+          "cx": 264,
+          "cy": 498,
+          "w": 58,
+          "h": 46,
+          "storage": "qlpopup__pack"
+        },
+        "comment": {
+          "ox": 23,
+          "oy": 34,
+          "w": 225,
+          "h": 182,
+          "storage": ""
+        },
+        "共通": {
+          "ox": 213,
+          "oy": 209,
+          "cx": 434,
+          "cy": 498,
+          "w": 54,
+          "h": 46,
+          "storage": "qlpopup__pack"
+        }
+      }
+    },
+    {
+      "name": "item_pos00",
+      "left": 722,
+      "top": 184,
+      "width": 273,
+      "height": 256,
+      "class": "button",
+      "uiname": "item_pos00",
+      "uistates": {
+        "item": {
+          "ox": 0,
+          "oy": 0,
+          "w": 264,
+          "h": 249,
+          "storage": "",
+          "opacity": 0
+        },
+        "sdicon": {
+          "ox": 213,
+          "oy": 204,
+          "w": 60,
+          "h": 52,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "itemmove_to",
+      "left": 722,
+      "top": 184,
+      "width": 264,
+      "height": 249,
+      "class": "area",
+      "uiname": "itemmove_to"
+    },
+    {
+      "name": "_pledit",
+      "left": 90,
+      "top": 187,
+      "width": 103,
+      "height": 70,
+      "class": "button",
+      "uiname": "_pledit",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 225,
+          "cy": 974,
+          "w": 103,
+          "h": 70,
+          "storage": "extra_voice__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 328,
+          "cy": 904,
+          "w": 103,
+          "h": 70,
+          "storage": "extra_voice__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 225,
+          "cy": 904,
+          "w": 103,
+          "h": 70,
+          "storage": "extra_voice__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 103,
+          "h": 70,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "edit_addlist",
+      "left": 90,
+      "top": 187,
+      "width": 103,
+      "height": 70,
+      "class": "copy",
+      "uiname": "edit_addlist"
+    },
+    {
+      "name": "edit_dellist",
+      "left": 200,
+      "top": 187,
+      "width": 103,
+      "height": 70,
+      "class": "copy",
+      "uiname": "edit_dellist"
+    },
+    {
+      "name": "edit_clearlist",
+      "left": 311,
+      "top": 187,
+      "width": 103,
+      "height": 70,
+      "class": "copy",
+      "uiname": "edit_clearlist"
+    },
+    {
+      "name": "edit_savelist",
+      "left": 421,
+      "top": 187,
+      "width": 103,
+      "height": 70,
+      "class": "copy",
+      "uiname": "edit_savelist"
+    },
+    {
+      "name": "edit_loadlist",
+      "left": 531,
+      "top": 187,
+      "width": 103,
+      "height": 70,
+      "class": "copy",
+      "uiname": "edit_loadlist"
+    },
+    {
+      "name": "detail",
+      "left": 119,
+      "top": 213,
+      "width": 509,
+      "height": 643,
+      "class": "layer",
+      "uiname": "detail",
+      "uistates": {
+        "number": {
+          "ox": 0,
+          "oy": 0,
+          "w": 486,
+          "h": 274,
+          "storage": ""
+        },
+        "text": {
+          "ox": 141,
+          "oy": 516,
+          "w": 359,
+          "h": 127,
+          "storage": "",
+          "opacity": 0
+        },
+        "date": {
+          "ox": 141,
+          "oy": 373,
+          "w": 359,
+          "h": 34,
+          "storage": "",
+          "opacity": 0
+        },
+        "chapter": {
+          "ox": 141,
+          "oy": 446,
+          "w": 359,
+          "h": 34,
+          "storage": "",
+          "opacity": 0
+        },
+        "thumb": {
+          "ox": 0,
+          "oy": 0,
+          "w": 486,
+          "h": 274,
+          "storage": ""
+        },
+        "sdicon": {
+          "ox": 449,
+          "oy": 245,
+          "w": 60,
+          "h": 52,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "page_up10",
+      "left": 1834,
+      "top": 217,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up10"
+    },
+    {
+      "name": "plist_pageup",
+      "left": 646,
+      "top": 225,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "plist_pageup"
+    },
+    {
+      "name": "page_up1",
+      "left": 1834,
+      "top": 259,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up1"
+    },
+    {
+      "name": "pslider",
+      "left": 644,
+      "top": 281,
+      "width": 40,
+      "height": 573,
+      "class": "slider",
+      "uiname": "pslider",
+      "uistates": {
+        "rail": {
+          "ox": 14,
+          "oy": 4,
+          "cx": 896,
+          "cy": 0,
+          "w": 13,
+          "h": 565,
+          "storage": "extra_voice__pack"
+        },
+        "on": {
+          "ox": 2,
+          "oy": 163,
+          "cx": 616,
+          "cy": 77,
+          "w": 34,
+          "h": 103,
+          "storage": "file__pack"
+        },
+        "over": {
+          "ox": 2,
+          "oy": 163,
+          "cx": 513,
+          "cy": 77,
+          "w": 34,
+          "h": 103,
+          "storage": "file__pack"
+        },
+        "normal": {
+          "ox": 2,
+          "oy": 163,
+          "cx": 513,
+          "cy": 111,
+          "w": 34,
+          "h": 103,
+          "storage": "file__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 40,
+          "h": 573,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "plist_frame",
+      "left": 87,
+      "top": 282,
+      "width": 550,
+      "height": 571,
+      "class": "layer",
+      "uiname": "plist_frame",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 550,
+          "h": 571,
+          "storage": "extra_voice__pack"
+        }
+      }
+    },
+    {
+      "name": "slider",
+      "left": 1832,
+      "top": 309,
+      "width": 40,
+      "height": 521,
+      "class": "slider",
+      "uiname": "slider",
+      "uistates": {
+        "rail": {
+          "ox": 12,
+          "oy": 4,
+          "cx": 0,
+          "cy": 77,
+          "w": 13,
+          "h": 513,
+          "storage": "file__pack"
+        },
+        "on": {
+          "ox": 2,
+          "oy": 209,
+          "cx": 616,
+          "cy": 77,
+          "w": 34,
+          "h": 103,
+          "storage": "file__pack"
+        },
+        "over": {
+          "ox": 2,
+          "oy": 209,
+          "cx": 513,
+          "cy": 77,
+          "w": 34,
+          "h": 103,
+          "storage": "file__pack"
+        },
+        "normal": {
+          "ox": 2,
+          "oy": 209,
+          "cx": 513,
+          "cy": 111,
+          "w": 34,
+          "h": 103,
+          "storage": "file__pack"
+        },
+        "knob": {
+          "ox": 0,
+          "oy": 209,
+          "w": 40,
+          "h": 104,
+          "storage": "",
+          "opacity": 128
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 40,
+          "h": 521,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "pitem",
+      "left": 114,
+      "top": 328,
+      "width": 496,
+      "height": 70,
+      "class": "button",
+      "uiname": "pitem",
+      "uistates": {
+        "on": {
+          "ox": 1,
+          "oy": 4,
+          "cx": 409,
+          "cy": 1044,
+          "w": 62,
+          "h": 62,
+          "storage": "extra_voice__pack"
+        },
+        "mark": {
+          "ox": 0,
+          "oy": 3,
+          "w": 64,
+          "h": 64,
+          "storage": ""
+        },
+        "over": {
+          "ox": 1,
+          "oy": 4,
+          "cx": 471,
+          "cy": 1044,
+          "w": 62,
+          "h": 62,
+          "storage": "extra_voice__pack"
+        },
+        "text": {
+          "ox": 69,
+          "oy": 0,
+          "w": 427,
+          "h": 70,
+          "storage": ""
+        },
+        "off": {
+          "ox": 3,
+          "oy": 7,
+          "cx": 490,
+          "cy": 974,
+          "w": 60,
+          "h": 60,
+          "storage": "extra_voice__pack"
+        }
+      }
+    },
+    {
+      "name": "pitem_pos00",
+      "left": 114,
+      "top": 328,
+      "width": 496,
+      "height": 70,
+      "class": "area",
+      "uiname": "pitem_pos00",
+      "uistates": {
+        "mark": {
+          "ox": 0,
+          "oy": 3,
+          "w": 64,
+          "h": 64,
+          "storage": ""
+        },
+        "text": {
+          "ox": 69,
+          "oy": 0,
+          "w": 427,
+          "h": 70,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "sdmove_from",
+      "left": 935,
+      "top": 388,
+      "width": 60,
+      "height": 52,
+      "class": "area",
+      "uiname": "sdmove_from"
+    },
+    {
+      "name": "pitem_insert",
+      "left": 114,
+      "top": 411,
+      "width": 496,
+      "height": 6,
+      "class": "layer",
+      "uiname": "pitem_insert",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 898,
+          "w": 496,
+          "h": 6,
+          "storage": "extra_voice__pack"
+        }
+      }
+    },
+    {
+      "name": "pitem_pos11",
+      "left": 114,
+      "top": 430,
+      "width": 496,
+      "height": 70,
+      "class": "area",
+      "uiname": "pitem_pos11",
+      "uistates": {
+        "mark": {
+          "ox": 0,
+          "oy": 3,
+          "w": 64,
+          "h": 64,
+          "storage": ""
+        },
+        "text": {
+          "ox": 69,
+          "oy": 0,
+          "w": 427,
+          "h": 70,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item_pos11",
+      "left": 999,
+      "top": 445,
+      "width": 273,
+      "height": 256,
+      "class": "button",
+      "uiname": "item_pos11",
+      "uistates": {
+        "item": {
+          "ox": 0,
+          "oy": 0,
+          "w": 264,
+          "h": 249,
+          "storage": "",
+          "opacity": 0
+        },
+        "sdicon": {
+          "ox": 213,
+          "oy": 204,
+          "w": 60,
+          "h": 52,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "sdmove_to",
+      "left": 568,
+      "top": 458,
+      "width": 60,
+      "height": 52,
+      "class": "area",
+      "uiname": "sdmove_to"
+    },
+    {
+      "name": "detail_base",
+      "left": 87,
+      "top": 548,
+      "width": 550,
+      "height": 327,
+      "class": "layer",
+      "uiname": "detail_base",
+      "uistates": {
+        "comment": {
+          "ox": 39,
+          "oy": 193,
+          "cx": 513,
+          "cy": 145,
+          "w": 116,
+          "h": 17,
+          "storage": "file__pack"
+        },
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 571,
+          "w": 550,
+          "h": 327,
+          "storage": "extra_voice__pack"
+        },
+        "date": {
+          "ox": 90,
+          "oy": 47,
+          "cx": 547,
+          "cy": 203,
+          "w": 65,
+          "h": 17,
+          "storage": "file__pack"
+        },
+        "chapter": {
+          "ox": 52,
+          "oy": 120,
+          "cx": 530,
+          "cy": 145,
+          "w": 103,
+          "h": 17,
+          "storage": "file__pack"
+        }
+      }
+    },
+    {
+      "name": "page_dw1",
+      "left": 1834,
+      "top": 844,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw1"
+    },
+    {
+      "name": "plist_pagedown",
+      "left": 646,
+      "top": 873,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "plist_pagedown"
+    },
+    {
+      "name": "_pcbtn",
+      "left": 90,
+      "top": 879,
+      "width": 81,
+      "height": 70,
+      "class": "button",
+      "uiname": "_pcbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 328,
+          "cy": 974,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_voice__pack"
+        },
+        "ic_prev": {
+          "ox": 25,
+          "oy": 19,
+          "cx": 270,
+          "cy": 1075,
+          "w": 31,
+          "h": 31,
+          "storage": "extra_voice__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 409,
+          "cy": 974,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_voice__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 431,
+          "cy": 904,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_voice__pack"
+        },
+        "ic_stop": {
+          "ox": 26,
+          "oy": 20,
+          "cx": 512,
+          "cy": 943,
+          "w": 29,
+          "h": 28,
+          "storage": "extra_voice__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 81,
+          "h": 70,
+          "storage": ""
+        },
+        "ic_next": {
+          "ox": 25,
+          "oy": 19,
+          "cx": 270,
+          "cy": 1044,
+          "w": 31,
+          "h": 31,
+          "storage": "extra_voice__pack"
+        }
+      }
+    },
+    {
+      "name": "_pctrl",
+      "left": 90,
+      "top": 879,
+      "width": 81,
+      "height": 70,
+      "class": "toggle",
+      "uiname": "_pctrl",
+      "uistates": {
+        "ic_rep": {
+          "ox": 18,
+          "oy": 19,
+          "cx": 225,
+          "cy": 1044,
+          "w": 45,
+          "h": 30,
+          "storage": "extra_voice__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 409,
+          "cy": 974,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_voice__pack"
+        },
+        "normal": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 431,
+          "cy": 904,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_voice__pack"
+        },
+        "ic_all": {
+          "ox": 21,
+          "oy": 16,
+          "cx": 512,
+          "cy": 904,
+          "w": 39,
+          "h": 36,
+          "storage": "extra_voice__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 328,
+          "cy": 974,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_voice__pack"
+        },
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 328,
+          "cy": 974,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_voice__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 81,
+          "h": 70,
+          "storage": ""
+        },
+        "ic_play": {
+          "ox": 28,
+          "oy": 19,
+          "cx": 225,
+          "cy": 1074,
+          "w": 31,
+          "h": 32,
+          "storage": "extra_voice__pack"
+        }
+      }
+    },
+    {
+      "name": "plist_prev",
+      "left": 90,
+      "top": 879,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "plist_prev"
+    },
+    {
+      "name": "plist_stop",
+      "left": 183,
+      "top": 879,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "plist_stop"
+    },
+    {
+      "name": "plist_play",
+      "left": 275,
+      "top": 879,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "plist_play"
+    },
+    {
+      "name": "plist_next",
+      "left": 368,
+      "top": 879,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "plist_next"
+    },
+    {
+      "name": "plist_all",
+      "left": 460,
+      "top": 879,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "plist_all"
+    },
+    {
+      "name": "plist_loop",
+      "left": 553,
+      "top": 879,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "plist_loop"
+    },
+    {
+      "name": "page_dw10",
+      "left": 1834,
+      "top": 886,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw10"
+    },
+    {
+      "name": "sceneplay",
+      "left": 205,
+      "top": 891,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "sceneplay"
+    },
+    {
+      "name": "plist_end",
+      "left": 646,
+      "top": 914,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "plist_end"
+    },
+    {
+      "name": "page_dw100",
+      "left": 1834,
+      "top": 928,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw100"
+    },
+    {
+      "name": "helpbase",
+      "left": 27,
+      "top": 979,
+      "width": 731,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helpbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 731,
+          "h": 77,
+          "storage": "extra__pack"
+        }
+      }
+    },
+    {
+      "name": "helptext",
+      "left": 57,
+      "top": 987,
+      "width": 672,
+      "height": 62,
+      "class": "layer",
+      "uiname": "helptext",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 672,
+          "h": 62,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title"
+    },
+    {
+      "name": "_sysbtn",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_sysbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 0,
+          "cy": 135,
+          "w": 315,
+          "h": 58,
+          "storage": "extra__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 315,
+          "cy": 77,
+          "w": 315,
+          "h": 58,
+          "storage": "extra__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 0,
+          "cy": 77,
+          "w": 315,
+          "h": 58,
+          "storage": "extra__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 315,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back"
+    },
+    {
+      "name": "title2",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title2"
+    }
+  ],
+  "raw_result_keys": [
+    "_edit",
+    "_pcbtn",
+    "_pctrl",
+    "_pgbtn",
+    "_pledit",
+    "_sysbtn",
+    "back",
+    "base",
+    "caption",
+    "detail",
+    "detail_base",
+    "detail_nodata",
+    "edit_addlist",
+    "edit_clearlist",
+    "edit_comment",
+    "edit_copy",
+    "edit_dellist",
+    "edit_hold",
+    "edit_loadlist",
+    "edit_move",
+    "edit_remove",
+    "edit_savelist",
+    "edit_swap",
+    "grp_detail",
+    "grp_extra",
+    "grp_plist",
+    "helpbase",
+    "helptext",
+    "item",
+    "item_pos00",
+    "item_pos11",
+    "itemmove_to",
+    "listmode",
+    "new",
+    "page_add",
+    "page_dw1",
+    "page_dw10",
+    "page_dw100",
+    "page_max",
+    "page_num",
+    "page_numbase",
+    "page_sub",
+    "page_up1",
+    "page_up10",
+    "page_up100",
+    "pitem",
+    "pitem_insert",
+    "pitem_pos00",
+    "pitem_pos11",
+    "plist_all",
+    "plist_down",
+    "plist_end",
+    "plist_frame",
+    "plist_loop",
+    "plist_next",
+    "plist_pagedown",
+    "plist_pageup",
+    "plist_play",
+    "plist_prev",
+    "plist_stop",
+    "plist_top",
+    "plist_up",
+    "pslider",
+    "rm_fromgame",
+    "rm_fromtitle",
+    "rm_listmode_off",
+    "rm_listmode_on",
+    "sceneplay",
+    "sdmove_from",
+    "sdmove_to",
+    "slider",
+    "title",
+    "title2",
+    "to_cg",
+    "to_scene",
+    "to_stand",
+    "to_voice"
+  ]
+}

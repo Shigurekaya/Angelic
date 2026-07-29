@@ -1,0 +1,150 @@
+{
+  "source": "qconf_qload.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "item",
+    "item_pos00",
+    "item_pos11",
+    "base",
+    "hit"
+  ],
+  "layer_count": 5,
+  "hotspot_count": 5,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 51,
+      "top": 772,
+      "width": 1004,
+      "height": 257,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "right": {
+          "ox": 733,
+          "oy": 0,
+          "w": 271,
+          "h": 255,
+          "storage": ""
+        },
+        "poppos": {
+          "ox": 0,
+          "oy": 0,
+          "w": 271,
+          "h": 255,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 283,
+          "oy": 45,
+          "w": 438,
+          "h": 212,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "hit",
+      "left": 334,
+      "top": 817,
+      "width": 438,
+      "height": 212,
+      "class": "layer",
+      "uiname": "hit",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 0,
+          "h": 0,
+          "storage": null
+        },
+        "hit": {
+          "ox": 0,
+          "oy": 0,
+          "w": 438,
+          "h": 212,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "item",
+      "left": 361,
+      "top": 838,
+      "width": 91,
+      "height": 54,
+      "class": "button",
+      "uiname": "item",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 127,
+          "w": 91,
+          "h": 54,
+          "storage": "qconf__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 91,
+          "cy": 181,
+          "w": 91,
+          "h": 54,
+          "storage": "qconf__pack"
+        },
+        "number": {
+          "ox": 18,
+          "oy": 0,
+          "w": 70,
+          "h": 14,
+          "storage": ""
+        },
+        "date": {
+          "ox": 6,
+          "oy": 15,
+          "w": 79,
+          "h": 34,
+          "storage": ""
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 235,
+          "w": 91,
+          "h": 54,
+          "storage": "qconf__pack"
+        }
+      }
+    },
+    {
+      "name": "item_pos00",
+      "left": 361,
+      "top": 838,
+      "width": 91,
+      "height": 54,
+      "class": "area",
+      "uiname": "item_pos00"
+    },
+    {
+      "name": "item_pos11",
+      "left": 458,
+      "top": 898,
+      "width": 91,
+      "height": 54,
+      "class": "area",
+      "uiname": "item_pos11"
+    }
+  ],
+  "raw_result_keys": [
+    "base",
+    "hit",
+    "item",
+    "item_pos00",
+    "item_pos11"
+  ]
+}

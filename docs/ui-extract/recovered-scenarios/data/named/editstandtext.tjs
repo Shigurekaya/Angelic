@@ -1,0 +1,93 @@
+/**
+ * 立ち絵モードダミーテキスト編集ダイアログ
+ */
+class        EditStandMessageDialog extends WIN32GenericDialogEX {
+	function EditStandMessageDialog(title, caption, text, namelist, textvisible=true) {
+		with (SystemConfig) super.WIN32GenericDialogEX(
+			%[
+			padding:3,
+			title:title,
+			width:250, fontSize:12, fontFace:.DialogDefaultFont, // "ＭＳ ゴシック",
+			itemtexts:%[
+				/**/Name:GetSystemLangMessage("EditCommentCharName","名前欄"),
+				/**/Text:GetSystemLangMessage("EditCommentMessage","本文"),
+				/**/Enabled:GetSystemLangMessage("EditCommentEnabled", "テキスト表示を有効にする"),
+				/**/IDOK => .DialogOK !== void ? .DialogOK : "決定",
+				/**/IDCANCEL => .DialogCancel !== void ? .DialogCancel : "キャンセル"
+						 ] ]);
+		text    = (string)text;
+		caption = (string)caption;
+		if (text != "") text = text.replace(/\n/g, "\r\n");
+
+		addToggle("Enabled", void);
+		addInit(  "Enabled", "setCheckBox", textvisible);
+		nextLine();
+		beginGroup(GetSystemLangMessage("EditCommentGroup","表示内容"));{
+			addDropInput("Name", 100, makeSpan(0,8,10), caption, namelist);
+			nextLine();
+			addTextInput("Text", 36, void, text);
+			getLastItem().style &= ~(ES_AUTOHSCROLL|WS_HSCROLL);
+			nextLine();
+		} nextLine(); endGroup();
+		nextLine();
+
+		addButton(IDOK,     makeStepRight(1, 50), 2);
+		addButton(IDCANCEL, makeStepRight(0, 50), 2);
+	}
+	function onInit() {
+		super.onInit(...);
+		setCenterPosition(global.Window.mainWindow);
+		sendItemMessage("Name", CB_LIMITTEXT, 18, 0); // [XXX]
+		sendItemMessage("Text", EM_SETSEL, 0, -1);
+		var en = !!getCheckBox("Enabled");
+		updateTextEnabled(en);
+		setItemFocus(en ? "Text" : "Enabled");
+	}
+	function updateTextEnabled(en=!!getCheckBox("Enabled")) {
+		setItemEnabled("Name", en);
+		setItemEnabled("Text", en);
+	}
+	function throwEvent(tag, msg, wp, lp) {
+		if (tag == "onCommand" && getNamedId(wp&0xFFFF) == "Enabled" && (wp>>16)==BN_CLICKED) {
+			updateTextEnabled();
+		}
+		return false;
+	}
+	function open() {
+		var r = super.open(...), text;
+		if (r.result != IDOK) return;
+		var caption = r.items.Name;
+		var text    = r.items.Text;
+		if (text != "") text = text.replace(/\r/g, "");
+		return %[ name:caption, text:text, visible:r.items.Enabled ];
+	}
+}
+
+function EditStandMessage(caption, text, namelist, *) {
+	var title = GetSystemLangMessage("ExchviewEditMessageCaption", "メッセージ窓の内容を編集"); //System.title;
+	if (typeof global.EditStandMessageDialog == "undefined") {
+		try {
+			KAGLoadScript("win32dialog.tjs");
+			KAGLoadScript("editstandtext.tjs");
+		} catch {
+			global.EditStandMessageDialog = null;
+		}
+	}
+	if (typeof global.EditStandMessageDialog == "Object" &&
+		/**/   global.EditStandMessageDialog !== null) {
+		try {
+			var dialog = new EditStandMessageDialog(title, caption, text, namelist, *);
+			var ret = dialog.open(kag);
+			invalidate dialog;
+			return ret;
+		} catch(e) {
+			dm(e.message);
+			global.EditSaveDataCommentDialog = null;
+		}
+	}
+	var r = System.inputString(title, caption, text);
+	if (r !== void) {
+		return %[ name:caption, text:r ];
+	}
+	return void;
+}

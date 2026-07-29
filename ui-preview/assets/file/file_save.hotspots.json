@@ -1,571 +1,566 @@
 {
   "source": "file_save.pbd",
+  "tool": "pbd2json",
   "hotspots": [
     {
-      "layer_id": "caption",
-      "sort_index": 1032,
-      "height": 61,
-      "ch": 23
-    },
-    {
-      "layer_id": "title",
-      "sort_index": 1156,
-      "width": 223,
-      "height": 197
-    },
-    {
-      "layer_id": "page_up1",
-      "sort_index": 1774,
-      "width": 177,
-      "height": 237
-    },
-    {
-      "layer_id": "page_add",
-      "sort_index": 1777,
-      "width": 90,
-      "height": 159
-    },
-    {
-      "layer_id": "copy",
-      "sort_index": 1915,
-      "height": 41
-    },
-    {
-      "layer_id": "detail_nodata",
-      "sort_index": 1962,
-      "height": 76,
-      "ch": 83
-    },
-    {
-      "layer_id": "edit_remove",
-      "sort_index": 1992,
-      "width": 103,
-      "height": 235
-    },
-    {
-      "layer_id": "page_sub",
-      "sort_index": 2048,
-      "width": 235,
-      "height": 106
-    },
-    {
-      "layer_id": "page_dw100",
-      "sort_index": 2068,
-      "width": 2,
-      "height": 23
-    },
-    {
-      "layer_id": "page_numbase",
-      "sort_index": 2137,
-      "height": 138,
-      "ch": 238
-    },
-    {
-      "layer_id": "back",
-      "sort_index": 2250,
-      "width": 87,
-      "height": 41
-    },
-    {
-      "layer_id": "page_up10",
-      "sort_index": 2252,
-      "width": 198,
-      "height": 216
-    },
-    {
-      "layer_id": "layer",
-      "sort_index": 2294,
-      "height": 61
-    },
-    {
-      "layer_id": "sdmove_from",
-      "sort_index": 2354,
-      "width": 205,
-      "height": 15
-    },
-    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "class": "base",
+      "uiname": "base",
       "layer_id": "base",
-      "sort_index": 2357,
-      "width": 172,
-      "height": 4,
-      "storagex": 3
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080
     },
     {
-      "layer_id": "page_up100",
-      "sort_index": 2497,
-      "width": 227,
-      "height": 132
+      "name": "to_save",
+      "left": 1484,
+      "top": 0,
+      "width": 102,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_save",
+      "layer_id": "to_save",
+      "x": 1484,
+      "y": 0,
+      "w": 102,
+      "h": 81
     },
     {
-      "layer_id": "edit_hold",
-      "sort_index": 2502,
-      "height": 138,
-      "ch": 117
+      "name": "to_load",
+      "left": 1586,
+      "top": 0,
+      "width": 102,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_load",
+      "layer_id": "to_load",
+      "x": 1586,
+      "y": 0,
+      "w": 102,
+      "h": 81
     },
     {
+      "name": "to_quick",
+      "left": 1688,
+      "top": 0,
+      "width": 190,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_quick",
+      "layer_id": "to_quick",
+      "x": 1688,
+      "y": 0,
+      "w": 190,
+      "h": 81
+    },
+    {
+      "name": "caption",
+      "left": 87,
+      "top": 19,
+      "width": 208,
+      "height": 43,
+      "class": "layer",
+      "uiname": "caption",
+      "layer_id": "caption",
+      "x": 87,
+      "y": 19,
+      "w": 208,
+      "h": 43
+    },
+    {
+      "name": "edit_copy",
+      "left": 798,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_copy",
       "layer_id": "edit_copy",
-      "sort_index": 2504,
-      "width": 149,
-      "height": 254
+      "x": 798,
+      "y": 100,
+      "w": 197,
+      "h": 49
     },
     {
-      "layer_id": "page_dw1",
-      "sort_index": 2546,
-      "width": 49,
-      "height": 80
-    },
-    {
-      "layer_id": "hide_thumb",
-      "sort_index": 2559,
-      "height": 166,
-      "ch": 226
-    },
-    {
-      "layer_id": "file_save__pack",
-      "sort_index": 2697,
-      "width": 138
-    },
-    {
-      "layer_id": "itemmove_to",
-      "sort_index": 2737,
-      "width": 90,
-      "height": 85
-    },
-    {
-      "layer_id": "edit_move",
-      "sort_index": 2762,
-      "height": 235
-    },
-    {
-      "layer_id": "page_dw10",
-      "sort_index": 2783,
-      "width": 50,
-      "height": 73
-    },
-    {
-      "layer_id": "detail_base",
-      "sort_index": 2802,
-      "height": 228,
-      "ch": 254
-    },
-    {
-      "layer_id": "sdmove_to",
-      "sort_index": 2900,
-      "width": 127,
-      "height": 96
-    },
-    {
-      "layer_id": "new",
-      "sort_index": 2904,
-      "height": 21,
-      "ch": 136
-    },
-    {
-      "layer_id": "edit_comment",
-      "sort_index": 2946,
-      "width": 251,
-      "height": 153
-    },
-    {
+      "name": "edit_swap",
+      "left": 1017,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_swap",
       "layer_id": "edit_swap",
-      "sort_index": 3280,
-      "width": 84,
-      "height": 82
+      "x": 1017,
+      "y": 100,
+      "w": 197,
+      "h": 49
     },
     {
-      "layer_id": "file__pack",
-      "sort_index": 3410,
-      "width": 231
+      "name": "edit_comment",
+      "left": 1236,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_comment",
+      "layer_id": "edit_comment",
+      "x": 1236,
+      "y": 100,
+      "w": 197,
+      "h": 49
     },
     {
+      "name": "_edit",
+      "left": 1455,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "button",
+      "uiname": "_edit",
+      "layer_id": "_edit",
+      "x": 1455,
+      "y": 100,
+      "w": 197,
+      "h": 49
+    },
+    {
+      "name": "edit_remove",
+      "left": 1455,
+      "top": 100,
+      "width": 197,
+      "height": 49,
+      "class": "copy",
+      "uiname": "edit_remove",
+      "layer_id": "edit_remove",
+      "x": 1455,
+      "y": 100,
+      "w": 197,
+      "h": 49
+    },
+    {
+      "name": "hide_thumb",
+      "left": 86,
+      "top": 107,
+      "width": 317,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "hide_thumb",
+      "layer_id": "hide_thumb",
+      "x": 86,
+      "y": 107,
+      "w": 317,
+      "h": 36
+    },
+    {
+      "name": "edit_hold",
+      "left": 433,
+      "top": 107,
+      "width": 317,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "edit_hold",
+      "layer_id": "edit_hold",
+      "x": 433,
+      "y": 107,
+      "w": 317,
+      "h": 36
+    },
+    {
+      "name": "_pgbtn",
+      "left": 1678,
+      "top": 107,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "_pgbtn",
+      "layer_id": "_pgbtn",
+      "x": 1678,
+      "y": 107,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_sub",
+      "left": 1678,
+      "top": 107,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_sub",
+      "layer_id": "page_sub",
+      "x": 1678,
+      "y": 107,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_add",
+      "left": 1834,
+      "top": 107,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_add",
+      "layer_id": "page_add",
+      "x": 1834,
+      "y": 107,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_max",
+      "left": 1722,
+      "top": 108,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_max",
+      "layer_id": "page_max",
+      "x": 1722,
+      "y": 108,
+      "w": 104,
+      "h": 35
+    },
+    {
+      "name": "page_num",
+      "left": 1722,
+      "top": 108,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_num",
+      "layer_id": "page_num",
+      "x": 1722,
+      "y": 108,
+      "w": 104,
+      "h": 35
+    },
+    {
+      "name": "page_numbase",
+      "left": 1722,
+      "top": 108,
+      "width": 104,
+      "height": 35,
+      "class": "layer",
+      "uiname": "page_numbase",
+      "layer_id": "page_numbase",
+      "x": 1722,
+      "y": 108,
+      "w": 104,
+      "h": 35
+    },
+    {
+      "name": "new",
+      "left": 651,
+      "top": 175,
+      "width": 58,
+      "height": 54,
+      "class": "layer",
+      "uiname": "new",
+      "layer_id": "new",
+      "x": 651,
+      "y": 175,
+      "w": 58,
+      "h": 54
+    },
+    {
+      "name": "page_up100",
+      "left": 1793,
+      "top": 175,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up100",
+      "layer_id": "page_up100",
+      "x": 1793,
+      "y": 175,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "detail_nodata",
+      "left": 62,
+      "top": 177,
+      "width": 558,
+      "height": 346,
+      "class": "layer",
+      "uiname": "detail_nodata",
+      "layer_id": "detail_nodata",
+      "x": 62,
+      "y": 177,
+      "w": 558,
+      "h": 346
+    },
+    {
+      "name": "item",
+      "left": 664,
+      "top": 184,
+      "width": 273,
+      "height": 256,
+      "class": "button",
+      "uiname": "item",
+      "layer_id": "item",
+      "x": 664,
+      "y": 184,
+      "w": 273,
+      "h": 256
+    },
+    {
+      "name": "item_pos00",
+      "left": 664,
+      "top": 184,
+      "width": 273,
+      "height": 256,
+      "class": "area",
+      "uiname": "item_pos00",
+      "layer_id": "item_pos00",
+      "x": 664,
+      "y": 184,
+      "w": 273,
+      "h": 256
+    },
+    {
+      "name": "itemmove_to",
+      "left": 664,
+      "top": 184,
+      "width": 264,
+      "height": 249,
+      "class": "area",
+      "uiname": "itemmove_to",
+      "layer_id": "itemmove_to",
+      "x": 664,
+      "y": 184,
+      "w": 264,
+      "h": 249
+    },
+    {
+      "name": "detail",
+      "left": 98,
+      "top": 213,
+      "width": 509,
+      "height": 643,
+      "class": "layer",
+      "uiname": "detail",
+      "layer_id": "detail",
+      "x": 98,
+      "y": 213,
+      "w": 509,
+      "h": 643
+    },
+    {
+      "name": "page_up10",
+      "left": 1793,
+      "top": 217,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up10",
+      "layer_id": "page_up10",
+      "x": 1793,
+      "y": 217,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_up1",
+      "left": 1793,
+      "top": 259,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_up1",
+      "layer_id": "page_up1",
+      "x": 1793,
+      "y": 259,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "slider",
+      "left": 1793,
+      "top": 309,
+      "width": 40,
+      "height": 521,
+      "class": "slider",
+      "uiname": "slider",
+      "layer_id": "slider",
+      "x": 1793,
+      "y": 309,
+      "w": 40,
+      "h": 521
+    },
+    {
+      "name": "sdmove_from",
+      "left": 877,
+      "top": 388,
+      "width": 60,
+      "height": 52,
+      "class": "area",
+      "uiname": "sdmove_from",
+      "layer_id": "sdmove_from",
+      "x": 877,
+      "y": 388,
+      "w": 60,
+      "h": 52
+    },
+    {
+      "name": "item_pos11",
+      "left": 941,
+      "top": 445,
+      "width": 273,
+      "height": 256,
+      "class": "area",
+      "uiname": "item_pos11",
+      "layer_id": "item_pos11",
+      "x": 941,
+      "y": 445,
+      "w": 273,
+      "h": 256
+    },
+    {
+      "name": "sdmove_to",
+      "left": 547,
+      "top": 458,
+      "width": 60,
+      "height": 52,
+      "class": "area",
+      "uiname": "sdmove_to",
+      "layer_id": "sdmove_to",
+      "x": 547,
+      "y": 458,
+      "w": 60,
+      "h": 52
+    },
+    {
+      "name": "detail_base",
+      "left": 66,
+      "top": 548,
+      "width": 550,
+      "height": 327,
+      "class": "layer",
+      "uiname": "detail_base",
+      "layer_id": "detail_base",
+      "x": 66,
+      "y": 548,
+      "w": 550,
+      "h": 327
+    },
+    {
+      "name": "page_dw1",
+      "left": 1793,
+      "top": 844,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw1",
+      "layer_id": "page_dw1",
+      "x": 1793,
+      "y": 844,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_dw10",
+      "left": 1793,
+      "top": 886,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw10",
+      "layer_id": "page_dw10",
+      "x": 1793,
+      "y": 886,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "page_dw100",
+      "left": 1793,
+      "top": 928,
+      "width": 36,
+      "height": 36,
+      "class": "copy",
+      "uiname": "page_dw100",
+      "layer_id": "page_dw100",
+      "x": 1793,
+      "y": 928,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "name": "helpbase",
+      "left": 27,
+      "top": 979,
+      "width": 731,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helpbase",
       "layer_id": "helpbase",
-      "sort_index": 3563,
-      "height": 220,
-      "ch": 205
-    },
-    {
-      "layer_id": "area",
-      "sort_index": null,
-      "height": 241
-    },
-    {
-      "layer_id": "b",
-      "sort_index": null,
-      "y": 236
-    },
-    {
-      "layer_id": "chapter",
-      "sort_index": null,
-      "ch": 27
-    },
-    {
-      "layer_id": "comment",
-      "sort_index": null,
-      "ch": 9
-    },
-    {
-      "layer_id": "cr",
-      "sort_index": null,
-      "cw": 134
-    },
-    {
-      "layer_id": "d",
-      "sort_index": null,
-      "height": 7
-    },
-    {
-      "layer_id": "date",
-      "sort_index": null,
-      "ch": 248
-    },
-    {
-      "layer_id": "f",
-      "sort_index": null,
-      "x": 52,
-      "width": 190
-    },
-    {
-      "layer_id": "false",
-      "sort_index": null,
-      "width": 114
-    },
-    {
-      "layer_id": "file_data",
-      "sort_index": null,
-      "height": 111
-    },
-    {
-      "layer_id": "file_save__bg0",
-      "sort_index": null,
-      "storagex": 3
-    },
-    {
-      "layer_id": "g",
-      "sort_index": null,
-      "cx": 228,
-      "cw": 115,
-      "ch": 9,
-      "ox": 651
-    },
-    {
-      "layer_id": "k",
-      "sort_index": null,
-      "height": 28
-    },
-    {
-      "layer_id": "l",
-      "sort_index": null,
-      "height": 112
-    },
-    {
-      "layer_id": "nodata",
-      "sort_index": null,
-      "ch": 48
-    },
-    {
-      "layer_id": "normal",
-      "sort_index": null,
-      "ch": 144
-    },
-    {
-      "layer_id": "normal_off",
-      "sort_index": null,
-      "ch": 117
-    },
-    {
-      "layer_id": "normal_on",
-      "sort_index": null,
-      "ch": 175
-    },
-    {
-      "layer_id": "of_btm",
-      "sort_index": null,
-      "ch": 112
-    },
-    {
-      "layer_id": "of_dw",
-      "sort_index": null,
-      "ch": 65
-    },
-    {
-      "layer_id": "of_dw10",
-      "sort_index": null,
-      "ch": 155
-    },
-    {
-      "layer_id": "of_minus",
-      "sort_index": null,
-      "ch": 252
-    },
-    {
-      "layer_id": "of_plus",
-      "sort_index": null,
-      "ch": 151
-    },
-    {
-      "layer_id": "of_top",
-      "sort_index": null,
-      "ch": 192
-    },
-    {
-      "layer_id": "of_up",
-      "sort_index": null,
-      "ch": 114
-    },
-    {
-      "layer_id": "of_up10",
-      "sort_index": null,
-      "ch": 160
-    },
-    {
-      "layer_id": "on_btm",
-      "sort_index": null,
-      "ch": 110
-    },
-    {
-      "layer_id": "on_dw",
-      "sort_index": null,
-      "ch": 246
-    },
-    {
-      "layer_id": "on_dw10",
-      "sort_index": null,
-      "ch": 212
-    },
-    {
-      "layer_id": "on_minus",
-      "sort_index": null,
-      "ch": 238
-    },
-    {
-      "layer_id": "on_plus",
-      "sort_index": null,
-      "ch": 206
-    },
-    {
-      "layer_id": "on_top",
-      "sort_index": null,
-      "ch": 28
-    },
-    {
-      "layer_id": "on_up",
-      "sort_index": null,
-      "ch": 249
-    },
-    {
-      "layer_id": "on_up10",
-      "sort_index": null,
-      "ch": 58
-    },
-    {
-      "layer_id": "ov_btm",
-      "sort_index": null,
-      "ch": 205
-    },
-    {
-      "layer_id": "ov_dw",
-      "sort_index": null,
-      "ch": 98
-    },
-    {
-      "layer_id": "ov_dw10",
-      "sort_index": null,
-      "ch": 234
-    },
-    {
-      "layer_id": "ov_minus",
-      "sort_index": null,
-      "ch": 74
-    },
-    {
-      "layer_id": "ov_plus",
-      "sort_index": null,
-      "ch": 116
-    },
-    {
-      "layer_id": "ov_top",
-      "sort_index": null,
-      "ch": 215
-    },
-    {
-      "layer_id": "ov_up",
-      "sort_index": null,
-      "ch": 228
-    },
-    {
-      "layer_id": "ov_up10",
-      "sort_index": null,
-      "ch": 175
-    },
-    {
-      "layer_id": "over_off",
-      "sort_index": null,
-      "ch": 240
-    },
-    {
-      "layer_id": "over_on",
-      "sort_index": null,
-      "ch": 195
-    },
-    {
-      "layer_id": "qlpopup__pack",
-      "sort_index": null,
-      "width": 41
-    },
-    {
-      "layer_id": "radio",
-      "sort_index": null,
-      "height": 123
-    },
-    {
-      "layer_id": "show_thumb",
-      "sort_index": null,
-      "height": 111
-    },
-    {
-      "layer_id": "storagex",
-      "sort_index": null,
-      "storagey": 91
-    },
-    {
-      "layer_id": "storagey",
-      "sort_index": null,
-      "width": 172
-    },
-    {
-      "layer_id": "t",
-      "sort_index": null,
-      "cw": 67,
-      "ch": 248
-    },
-    {
-      "layer_id": "tab",
-      "sort_index": null,
-      "height": 123
-    },
-    {
-      "layer_id": "thumb",
-      "sort_index": null,
-      "ch": 25
-    },
-    {
-      "layer_id": "toggle",
-      "sort_index": null,
-      "height": 138
-    },
-    {
-      "layer_id": "true",
-      "sort_index": null,
-      "width": 75
-    },
-    {
-      "layer_id": "width",
-      "sort_index": null,
-      "x": 17
-    },
-    {
-      "layer_id": "x",
-      "sort_index": null,
-      "y": 9,
-      "width": 42
-    },
-    {
-      "layer_id": "y",
-      "sort_index": null,
-      "height": 7
-    }
-  ],
-  "bindings": [
-    {
-      "layer_id": "addFlexPageCount",
-      "bindings": [
-        "addFlexPageCount"
-      ],
-      "geometry": {
-        "width": 84
-      }
-    },
-    {
-      "layer_id": "changeEditMode",
-      "bindings": [
-        "changeEditMode/comment",
-        "changeEditMode/copy",
-        "changeEditMode/move",
-        "changeEditMode/remove",
-        "changeEditMode/swap"
-      ],
-      "geometry": {
-        "cx": 18,
-        "ch": 28,
-        "x": 82
-      }
-    },
-    {
-      "layer_id": "changeMode",
-      "bindings": [
-        "changeMode/load",
-        "changeMode/quick",
-        "changeMode/save"
-      ],
-      "geometry": {
-        "w": 253,
-        "width": 90
-      }
-    },
-    {
-      "layer_id": "onSliderChanged",
-      "bindings": [
-        "onSliderChanged"
-      ],
-      "geometry": {
-        "cw": 200
-      }
-    },
-    {
-      "layer_id": "pageMove",
-      "bindings": [
-        "pageMove/1",
-        "pageMove/10",
-        "pageMove/100",
-        "pageMove/-1",
-        "pageMove/-10",
-        "pageMove/-100"
-      ],
-      "geometry": {
-        "ox": 104,
-        "cx": 43,
-        "w": 121,
-        "cw": 175
-      }
-    },
-    {
-      "layer_id": "subFlexPageCount",
-      "bindings": [
-        "subFlexPageCount"
-      ],
-      "geometry": {
-        "w": 10
-      }
-    },
-    {
-      "layer_id": "toggleEditHold",
-      "bindings": [
-        "toggleEditHold"
-      ],
-      "geometry": {
-        "oy": 1771
-      }
-    },
-    {
-      "layer_id": "toggleNonThumbMode",
-      "bindings": [
-        "toggleNonThumbMode",
-        "toggleNonThumbMode"
-      ],
-      "geometry": {
-        "x": 2,
-        "ox": 244
-      }
+      "x": 27,
+      "y": 979,
+      "w": 731,
+      "h": 77
+    },
+    {
+      "name": "helptext",
+      "left": 57,
+      "top": 987,
+      "width": 672,
+      "height": 62,
+      "class": "layer",
+      "uiname": "helptext",
+      "layer_id": "helptext",
+      "x": 57,
+      "y": 987,
+      "w": 672,
+      "h": 62
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title",
+      "layer_id": "title",
+      "x": 1252,
+      "y": 989,
+      "w": 315,
+      "h": 58
+    },
+    {
+      "name": "_sysbtn",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_sysbtn",
+      "layer_id": "_sysbtn",
+      "x": 1581,
+      "y": 989,
+      "w": 315,
+      "h": 60
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back",
+      "layer_id": "back",
+      "x": 1581,
+      "y": 989,
+      "w": 315,
+      "h": 58
     }
   ]
 }

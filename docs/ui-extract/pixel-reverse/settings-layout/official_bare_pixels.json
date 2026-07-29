@@ -1,0 +1,5138 @@
+{
+  "source": "pbd2json option_*.pbd (Cafe-style strict unpack; absolute x/y)",
+  "resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "chassis": {
+    "bg": {
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 1080,
+      "src": "option__bg0"
+    },
+    "sep_a": {
+      "left": 89,
+      "top": 125,
+      "width": 4,
+      "height": 830
+    },
+    "sep_b": {
+      "left": 988,
+      "top": 125,
+      "width": 4,
+      "height": 830
+    },
+    "source": "option_0simple.pbd via pbd2json"
+  },
+  "grid": {
+    "note": "derived from option_0simple.pbd absolute rects",
+    "left_ctrl_x": 130,
+    "right_rail_x": 1098,
+    "mute_x": 1021,
+    "row_ys": [
+      137,
+      303,
+      469,
+      635,
+      801
+    ]
+  },
+  "tabs": [
+    {
+      "id": "0",
+      "cafe_id": "0_simple",
+      "label": "基本设置",
+      "rows": [
+        {
+          "slot": "fullscreen",
+          "key": "fullscreen",
+          "label": "显示模式",
+          "icon_x": 110,
+          "x": 176,
+          "y": 137,
+          "w": 480,
+          "h": 32,
+          "detail": {
+            "x": 110,
+            "y": 137,
+            "w": 62,
+            "h": 32
+          },
+          "type": "toggle",
+          "options": [
+            "窗口模式",
+            "全屏模式"
+          ],
+          "ctrl": {
+            "x": 130,
+            "y": 188,
+            "w": 800,
+            "h": 50,
+            "slot": "fullscreen"
+          },
+          "chips": [
+            {
+              "x": 130,
+              "y": 188,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 550,
+              "y": 188,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "chip_w": 380,
+          "chip_h": 50,
+          "chip_gap": 40
+        },
+        {
+          "slot": "sqscr",
+          "key": "sqscr",
+          "label": "画面比例",
+          "icon_x": 110,
+          "x": 176,
+          "y": 303,
+          "w": 480,
+          "h": 32,
+          "detail": {
+            "x": 110,
+            "y": 303,
+            "w": 62,
+            "h": 32
+          },
+          "type": "toggle",
+          "options": [
+            "16:9",
+            "4:3"
+          ],
+          "ctrl": {
+            "x": 130,
+            "y": 354,
+            "w": 800,
+            "h": 50,
+            "slot": "sqscr"
+          },
+          "chips": [
+            {
+              "x": 130,
+              "y": 354,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 550,
+              "y": 354,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "chip_w": 380,
+          "chip_h": 50,
+          "chip_gap": 40
+        },
+        {
+          "slot": "textspeed",
+          "key": "textspeed",
+          "label": "文本显示速度",
+          "icon_x": 110,
+          "x": 176,
+          "y": 469,
+          "w": 480,
+          "h": 32,
+          "detail": {
+            "x": 110,
+            "y": 469,
+            "w": 62,
+            "h": 32
+          },
+          "type": "slider",
+          "ctrl": {
+            "x": 199,
+            "y": 518,
+            "w": 620,
+            "h": 54,
+            "slot": "textspeed"
+          },
+          "track": {
+            "x": 199,
+            "y": 538,
+            "w": 620,
+            "h": 13
+          }
+        },
+        {
+          "slot": "autospeed",
+          "key": "autospeed",
+          "label": "自动模式速度",
+          "icon_x": 110,
+          "x": 176,
+          "y": 635,
+          "w": 480,
+          "h": 32,
+          "detail": {
+            "x": 110,
+            "y": 635,
+            "w": 62,
+            "h": 32
+          },
+          "type": "slider",
+          "ctrl": {
+            "x": 199,
+            "y": 685,
+            "w": 620,
+            "h": 54,
+            "slot": "autospeed"
+          },
+          "track": {
+            "x": 199,
+            "y": 705,
+            "w": 620,
+            "h": 13
+          }
+        },
+        {
+          "slot": "skipall",
+          "key": "skipall",
+          "label": "快进未读文本",
+          "icon_x": 110,
+          "x": 176,
+          "y": 801,
+          "w": 480,
+          "h": 32,
+          "detail": {
+            "x": 110,
+            "y": 801,
+            "w": 62,
+            "h": 32
+          },
+          "type": "toggle",
+          "options": [
+            "关",
+            "开"
+          ],
+          "ctrl": {
+            "x": 130,
+            "y": 852,
+            "w": 800,
+            "h": 50,
+            "slot": "skipall"
+          },
+          "chips": [
+            {
+              "x": 130,
+              "y": 852,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 550,
+              "y": 852,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "chip_w": 380,
+          "chip_h": 50,
+          "chip_gap": 40
+        },
+        {
+          "slot": "wave",
+          "key": "wave",
+          "label": "总音量",
+          "icon_x": 1010,
+          "x": 1076,
+          "y": 137,
+          "w": 480,
+          "h": 32,
+          "detail": {
+            "x": 1010,
+            "y": 137,
+            "w": 62,
+            "h": 32
+          },
+          "type": "slider",
+          "ctrl": {
+            "x": 1098,
+            "y": 187,
+            "w": 620,
+            "h": 54,
+            "slot": "wave"
+          },
+          "track": {
+            "x": 1098,
+            "y": 207,
+            "w": 620,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 1021,
+            "y": 187,
+            "w": 54,
+            "h": 54
+          }
+        },
+        {
+          "slot": "bgm",
+          "key": "bgm",
+          "label": "ＢＧＭ",
+          "icon_x": 1010,
+          "x": 1076,
+          "y": 303,
+          "w": 480,
+          "h": 32,
+          "detail": {
+            "x": 1010,
+            "y": 303,
+            "w": 62,
+            "h": 32
+          },
+          "type": "slider",
+          "ctrl": {
+            "x": 1098,
+            "y": 353,
+            "w": 620,
+            "h": 54,
+            "slot": "bgm"
+          },
+          "track": {
+            "x": 1098,
+            "y": 373,
+            "w": 620,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 1021,
+            "y": 353,
+            "w": 54,
+            "h": 54
+          }
+        },
+        {
+          "slot": "se",
+          "key": "se",
+          "label": "ＳＥ（游戏音效）",
+          "icon_x": 1010,
+          "x": 1076,
+          "y": 469,
+          "w": 480,
+          "h": 32,
+          "detail": {
+            "x": 1010,
+            "y": 469,
+            "w": 62,
+            "h": 32
+          },
+          "type": "slider",
+          "ctrl": {
+            "x": 1098,
+            "y": 519,
+            "w": 620,
+            "h": 54,
+            "slot": "se"
+          },
+          "track": {
+            "x": 1098,
+            "y": 539,
+            "w": 620,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 1021,
+            "y": 519,
+            "w": 54,
+            "h": 54
+          }
+        },
+        {
+          "slot": "voice",
+          "key": "voice",
+          "label": "语音（游戏中）",
+          "icon_x": 1010,
+          "x": 1076,
+          "y": 635,
+          "w": 480,
+          "h": 32,
+          "detail": {
+            "x": 1010,
+            "y": 635,
+            "w": 62,
+            "h": 32
+          },
+          "type": "slider",
+          "ctrl": {
+            "x": 1098,
+            "y": 685,
+            "w": 620,
+            "h": 54,
+            "slot": "voice"
+          },
+          "track": {
+            "x": 1098,
+            "y": 705,
+            "w": 620,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 1021,
+            "y": 685,
+            "w": 54,
+            "h": 54
+          }
+        },
+        {
+          "slot": "movie",
+          "key": "movie",
+          "label": "视频",
+          "icon_x": 1010,
+          "x": 1076,
+          "y": 801,
+          "w": 480,
+          "h": 32,
+          "detail": {
+            "x": 1010,
+            "y": 801,
+            "w": 62,
+            "h": 32
+          },
+          "type": "slider",
+          "ctrl": {
+            "x": 1098,
+            "y": 851,
+            "w": 620,
+            "h": 54,
+            "slot": "movie"
+          },
+          "track": {
+            "x": 1098,
+            "y": 871,
+            "w": 620,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 1021,
+            "y": 851,
+            "w": 54,
+            "h": 54
+          }
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "cafe_id": "1",
+      "label": "画面设置",
+      "rows": [
+        {
+          "slot": "stayontop",
+          "key": "stayontop",
+          "label": "stayontop",
+          "type": "toggle",
+          "x": 1030,
+          "y": 187,
+          "w": 800,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1450,
+            "y": 187,
+            "w": -40,
+            "h": 50,
+            "slot": "stayontop"
+          },
+          "chips": [
+            {
+              "x": 1450,
+              "y": 187,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1030,
+              "y": 187,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "fullscreen",
+          "key": "fullscreen",
+          "label": "显示模式",
+          "type": "toggle",
+          "x": 130,
+          "y": 188,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 188,
+            "w": 800,
+            "h": 50,
+            "slot": "fullscreen"
+          },
+          "chips": [
+            {
+              "x": 130,
+              "y": 188,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 550,
+              "y": 188,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "窗口模式",
+            "全屏模式"
+          ]
+        },
+        {
+          "slot": "sqscr",
+          "key": "sqscr",
+          "label": "画面比例",
+          "type": "toggle",
+          "x": 130,
+          "y": 325,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 325,
+            "w": 800,
+            "h": 50,
+            "slot": "sqscr"
+          },
+          "chips": [
+            {
+              "x": 130,
+              "y": 325,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 550,
+              "y": 325,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "16:9",
+            "4:3"
+          ]
+        },
+        {
+          "slot": "item_icon_chk",
+          "key": "item_icon_chk",
+          "label": "item_icon_chk",
+          "type": "toggle",
+          "x": 1030,
+          "y": 325,
+          "w": 185,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 325,
+            "w": 185,
+            "h": 50,
+            "slot": "item_icon_chk"
+          }
+        },
+        {
+          "slot": "item_vprg_chk",
+          "key": "item_vprg_chk",
+          "label": "item_vprg_chk",
+          "type": "toggle",
+          "x": 1235,
+          "y": 325,
+          "w": 185,
+          "h": 50,
+          "icon_x": 1235,
+          "ctrl": {
+            "x": 1235,
+            "y": 325,
+            "w": 185,
+            "h": 50,
+            "slot": "item_vprg_chk"
+          }
+        },
+        {
+          "slot": "item_qmlk_chk",
+          "key": "item_qmlk_chk",
+          "label": "item_qmlk_chk",
+          "type": "toggle",
+          "x": 1440,
+          "y": 325,
+          "w": 185,
+          "h": 50,
+          "icon_x": 1440,
+          "ctrl": {
+            "x": 1440,
+            "y": 325,
+            "w": 185,
+            "h": 50,
+            "slot": "item_qmlk_chk"
+          }
+        },
+        {
+          "slot": "item_toch_chk",
+          "key": "item_toch_chk",
+          "label": "item_toch_chk",
+          "type": "toggle",
+          "x": 1645,
+          "y": 325,
+          "w": 185,
+          "h": 50,
+          "icon_x": 1645,
+          "ctrl": {
+            "x": 1645,
+            "y": 325,
+            "w": 185,
+            "h": 50,
+            "slot": "item_toch_chk"
+          }
+        },
+        {
+          "slot": "noeffect",
+          "key": "noeffect",
+          "label": "noeffect",
+          "type": "toggle",
+          "x": 130,
+          "y": 463,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 463,
+            "w": 800,
+            "h": 50,
+            "slot": "noeffect"
+          },
+          "chips": [
+            {
+              "x": 130,
+              "y": 463,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 550,
+              "y": 463,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "chapthidetime",
+          "key": "chapthidetime",
+          "label": "chapthidetime",
+          "type": "slider",
+          "x": 1099,
+          "y": 463,
+          "w": 731,
+          "h": 54,
+          "icon_x": 1099,
+          "ctrl": {
+            "x": 1099,
+            "y": 463,
+            "w": 620,
+            "h": 54,
+            "slot": "chapthidetime"
+          },
+          "track": {
+            "x": 1099,
+            "y": 483,
+            "w": 610,
+            "h": 13
+          }
+        },
+        {
+          "slot": "scanim",
+          "key": "scanim",
+          "label": "scanim",
+          "type": "toggle",
+          "x": 130,
+          "y": 601,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 550,
+            "y": 601,
+            "w": -40,
+            "h": 50,
+            "slot": "scanim"
+          },
+          "chips": [
+            {
+              "x": 550,
+              "y": 601,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 601,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "bgmhidetime",
+          "key": "bgmhidetime",
+          "label": "bgmhidetime",
+          "type": "slider",
+          "x": 1099,
+          "y": 601,
+          "w": 731,
+          "h": 54,
+          "icon_x": 1099,
+          "ctrl": {
+            "x": 1099,
+            "y": 601,
+            "w": 620,
+            "h": 54,
+            "slot": "bgmhidetime"
+          },
+          "track": {
+            "x": 1099,
+            "y": 621,
+            "w": 610,
+            "h": 13
+          }
+        },
+        {
+          "slot": "esccancel",
+          "key": "esccancel",
+          "label": "esccancel",
+          "type": "toggle",
+          "x": 130,
+          "y": 739,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 550,
+            "y": 739,
+            "w": -40,
+            "h": 50,
+            "slot": "esccancel"
+          },
+          "chips": [
+            {
+              "x": 550,
+              "y": 739,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 739,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "facemode",
+          "key": "facemode",
+          "label": "facemode",
+          "type": "toggle",
+          "x": 1030,
+          "y": 739,
+          "w": 800,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1450,
+            "y": 739,
+            "w": -40,
+            "h": 50,
+            "slot": "facemode"
+          },
+          "chips": [
+            {
+              "x": 1450,
+              "y": 739,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1030,
+              "y": 739,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "panictype",
+          "key": "panictype",
+          "label": "panictype",
+          "type": "toggle",
+          "x": 130,
+          "y": 877,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 877,
+            "w": 800,
+            "h": 50,
+            "slot": "panictype"
+          }
+        },
+        {
+          "slot": "panictype_0",
+          "key": "panictype_0",
+          "label": "panictype_0",
+          "type": "toggle",
+          "x": 130,
+          "y": 877,
+          "w": 185,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 877,
+            "w": 185,
+            "h": 50,
+            "slot": "panictype_0"
+          }
+        },
+        {
+          "slot": "panictype_1",
+          "key": "panictype_1",
+          "label": "panictype_1",
+          "type": "toggle",
+          "x": 335,
+          "y": 877,
+          "w": 185,
+          "h": 50,
+          "icon_x": 335,
+          "ctrl": {
+            "x": 335,
+            "y": 877,
+            "w": 185,
+            "h": 50,
+            "slot": "panictype_1"
+          }
+        },
+        {
+          "slot": "panictype_2",
+          "key": "panictype_2",
+          "label": "panictype_2",
+          "type": "toggle",
+          "x": 540,
+          "y": 877,
+          "w": 185,
+          "h": 50,
+          "icon_x": 540,
+          "ctrl": {
+            "x": 540,
+            "y": 877,
+            "w": 185,
+            "h": 50,
+            "slot": "panictype_2"
+          }
+        },
+        {
+          "slot": "panictype_3",
+          "key": "panictype_3",
+          "label": "panictype_3",
+          "type": "toggle",
+          "x": 745,
+          "y": 877,
+          "w": 185,
+          "h": 50,
+          "icon_x": 745,
+          "ctrl": {
+            "x": 745,
+            "y": 877,
+            "w": 185,
+            "h": 50,
+            "slot": "panictype_3"
+          }
+        },
+        {
+          "slot": "qcpopover",
+          "key": "qcpopover",
+          "label": "qcpopover",
+          "type": "toggle",
+          "x": 1030,
+          "y": 877,
+          "w": 800,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1450,
+            "y": 877,
+            "w": -40,
+            "h": 50,
+            "slot": "qcpopover"
+          },
+          "chips": [
+            {
+              "x": 1450,
+              "y": 877,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1030,
+              "y": 877,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "cafe_id": "2",
+      "label": "游戏设置1",
+      "rows": [
+        {
+          "slot": "hsel_area",
+          "key": "hsel_area",
+          "label": "hsel_area",
+          "type": "toggle",
+          "x": 1030,
+          "y": 187,
+          "w": 800,
+          "h": 188,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 187,
+            "w": 800,
+            "h": 188,
+            "slot": "hsel_area"
+          }
+        },
+        {
+          "slot": "readskip",
+          "key": "readskip",
+          "label": "readskip",
+          "type": "toggle",
+          "x": 130,
+          "y": 188,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 550,
+            "y": 188,
+            "w": -40,
+            "h": 50,
+            "slot": "readskip"
+          },
+          "chips": [
+            {
+              "x": 550,
+              "y": 188,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 188,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "readjump",
+          "key": "readjump",
+          "label": "readjump",
+          "type": "toggle",
+          "x": 130,
+          "y": 325,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 325,
+            "w": 800,
+            "h": 50,
+            "slot": "readjump"
+          },
+          "chips": [
+            {
+              "x": 130,
+              "y": 325,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 550,
+              "y": 325,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "curmove",
+          "key": "curmove",
+          "label": "curmove",
+          "type": "toggle",
+          "x": 130,
+          "y": 463,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 550,
+            "y": 463,
+            "w": -40,
+            "h": 50,
+            "slot": "curmove"
+          },
+          "chips": [
+            {
+              "x": 550,
+              "y": 463,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 463,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "flowshow",
+          "key": "flowshow",
+          "label": "flowshow",
+          "type": "toggle",
+          "x": 1030,
+          "y": 463,
+          "w": 800,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1450,
+            "y": 463,
+            "w": -40,
+            "h": 50,
+            "slot": "flowshow"
+          },
+          "chips": [
+            {
+              "x": 1450,
+              "y": 463,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1030,
+              "y": 463,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "curmoveyes",
+          "key": "curmoveyes",
+          "label": "curmoveyes",
+          "type": "toggle",
+          "x": 130,
+          "y": 601,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 550,
+            "y": 601,
+            "w": -40,
+            "h": 50,
+            "slot": "curmoveyes"
+          },
+          "chips": [
+            {
+              "x": 550,
+              "y": 601,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 601,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "stopdeactive",
+          "key": "stopdeactive",
+          "label": "stopdeactive",
+          "type": "toggle",
+          "x": 1030,
+          "y": 601,
+          "w": 800,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1450,
+            "y": 601,
+            "w": -40,
+            "h": 50,
+            "slot": "stopdeactive"
+          },
+          "chips": [
+            {
+              "x": 1450,
+              "y": 601,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1030,
+              "y": 601,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "curhidestep",
+          "key": "curhidestep",
+          "label": "curhidestep",
+          "type": "toggle",
+          "x": 130,
+          "y": 739,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 739,
+            "w": 800,
+            "h": 50,
+            "slot": "curhidestep"
+          }
+        },
+        {
+          "slot": "curhidestep_0",
+          "key": "curhidestep_0",
+          "label": "curhidestep_0",
+          "type": "toggle",
+          "x": 130,
+          "y": 739,
+          "w": 185,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 739,
+            "w": 185,
+            "h": 50,
+            "slot": "curhidestep_0"
+          }
+        },
+        {
+          "slot": "curhidestep_5",
+          "key": "curhidestep_5",
+          "label": "curhidestep_5",
+          "type": "toggle",
+          "x": 335,
+          "y": 739,
+          "w": 185,
+          "h": 50,
+          "icon_x": 335,
+          "ctrl": {
+            "x": 335,
+            "y": 739,
+            "w": 185,
+            "h": 50,
+            "slot": "curhidestep_5"
+          }
+        },
+        {
+          "slot": "curhidestep_10",
+          "key": "curhidestep_10",
+          "label": "curhidestep_10",
+          "type": "toggle",
+          "x": 540,
+          "y": 739,
+          "w": 185,
+          "h": 50,
+          "icon_x": 540,
+          "ctrl": {
+            "x": 540,
+            "y": 739,
+            "w": 185,
+            "h": 50,
+            "slot": "curhidestep_10"
+          }
+        },
+        {
+          "slot": "curhidestep_20",
+          "key": "curhidestep_20",
+          "label": "curhidestep_20",
+          "type": "toggle",
+          "x": 745,
+          "y": 739,
+          "w": 185,
+          "h": 50,
+          "icon_x": 745,
+          "ctrl": {
+            "x": 745,
+            "y": 739,
+            "w": 185,
+            "h": 50,
+            "slot": "curhidestep_20"
+          }
+        },
+        {
+          "slot": "icpreview",
+          "key": "icpreview",
+          "label": "icpreview",
+          "type": "toggle",
+          "x": 1030,
+          "y": 739,
+          "w": 800,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 739,
+            "w": 800,
+            "h": 50,
+            "slot": "icpreview"
+          },
+          "chips": [
+            {
+              "x": 1030,
+              "y": 739,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1450,
+              "y": 739,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "filedclk",
+          "key": "filedclk",
+          "label": "filedclk",
+          "type": "toggle",
+          "x": 130,
+          "y": 877,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 550,
+            "y": 877,
+            "w": -40,
+            "h": 50,
+            "slot": "filedclk"
+          },
+          "chips": [
+            {
+              "x": 550,
+              "y": 877,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 877,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "suspend",
+          "key": "suspend",
+          "label": "suspend",
+          "type": "toggle",
+          "x": 1030,
+          "y": 877,
+          "w": 800,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1450,
+            "y": 877,
+            "w": -40,
+            "h": 50,
+            "slot": "suspend"
+          },
+          "chips": [
+            {
+              "x": 1450,
+              "y": 877,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1030,
+              "y": 877,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "cafe_id": "3",
+      "label": "游戏设置2",
+      "rows": [
+        {
+          "slot": "use_speech",
+          "key": "use_speech",
+          "label": "use_speech",
+          "type": "toggle",
+          "x": 1503,
+          "y": 136,
+          "w": 393,
+          "h": 34,
+          "icon_x": 1503,
+          "ctrl": {
+            "x": 1503,
+            "y": 136,
+            "w": 393,
+            "h": 34,
+            "slot": "use_speech"
+          }
+        },
+        {
+          "slot": "drawspeed",
+          "key": "drawspeed",
+          "label": "drawspeed",
+          "type": "slider",
+          "x": 198,
+          "y": 187,
+          "w": 732,
+          "h": 54,
+          "icon_x": 198,
+          "ctrl": {
+            "x": 198,
+            "y": 187,
+            "w": 620,
+            "h": 54,
+            "slot": "drawspeed"
+          },
+          "track": {
+            "x": 198,
+            "y": 207,
+            "w": 610,
+            "h": 13
+          }
+        },
+        {
+          "slot": "txv_voice",
+          "key": "txv_voice",
+          "label": "txv_voice",
+          "type": "toggle",
+          "x": 1030,
+          "y": 251,
+          "w": 800,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 251,
+            "w": 800,
+            "h": 50,
+            "slot": "txv_voice"
+          }
+        },
+        {
+          "slot": "txv_voice_0",
+          "key": "txv_voice_0",
+          "label": "txv_voice_0",
+          "type": "toggle",
+          "x": 1030,
+          "y": 251,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 251,
+            "w": 246,
+            "h": 50,
+            "slot": "txv_voice_0"
+          }
+        },
+        {
+          "slot": "txv_voice_1",
+          "key": "txv_voice_1",
+          "label": "txv_voice_1",
+          "type": "toggle",
+          "x": 1307,
+          "y": 251,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1307,
+          "ctrl": {
+            "x": 1307,
+            "y": 251,
+            "w": 246,
+            "h": 50,
+            "slot": "txv_voice_1"
+          }
+        },
+        {
+          "slot": "txv_voice_2",
+          "key": "txv_voice_2",
+          "label": "txv_voice_2",
+          "type": "toggle",
+          "x": 1584,
+          "y": 251,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1584,
+          "ctrl": {
+            "x": 1584,
+            "y": 251,
+            "w": 246,
+            "h": 50,
+            "slot": "txv_voice_2"
+          }
+        },
+        {
+          "slot": "vspeedsync_chk",
+          "key": "vspeedsync_chk",
+          "label": "vspeedsync_chk",
+          "type": "toggle",
+          "x": 425,
+          "y": 274,
+          "w": 393,
+          "h": 34,
+          "icon_x": 425,
+          "ctrl": {
+            "x": 425,
+            "y": 274,
+            "w": 393,
+            "h": 34,
+            "slot": "vspeedsync_chk"
+          }
+        },
+        {
+          "slot": "vspeed",
+          "key": "vspeed",
+          "label": "vspeed",
+          "type": "slider",
+          "x": 198,
+          "y": 325,
+          "w": 732,
+          "h": 54,
+          "icon_x": 198,
+          "ctrl": {
+            "x": 198,
+            "y": 325,
+            "w": 620,
+            "h": 54,
+            "slot": "vspeed"
+          },
+          "track": {
+            "x": 198,
+            "y": 345,
+            "w": 610,
+            "h": 13
+          }
+        },
+        {
+          "slot": "txv_novo",
+          "key": "txv_novo",
+          "label": "txv_novo",
+          "type": "toggle",
+          "x": 1030,
+          "y": 400,
+          "w": 800,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 400,
+            "w": 800,
+            "h": 50,
+            "slot": "txv_novo"
+          }
+        },
+        {
+          "slot": "txv_novo_0",
+          "key": "txv_novo_0",
+          "label": "txv_novo_0",
+          "type": "toggle",
+          "x": 1030,
+          "y": 400,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 400,
+            "w": 246,
+            "h": 50,
+            "slot": "txv_novo_0"
+          }
+        },
+        {
+          "slot": "txv_novo_1",
+          "key": "txv_novo_1",
+          "label": "txv_novo_1",
+          "type": "toggle",
+          "x": 1307,
+          "y": 400,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1307,
+          "ctrl": {
+            "x": 1307,
+            "y": 400,
+            "w": 246,
+            "h": 50,
+            "slot": "txv_novo_1"
+          }
+        },
+        {
+          "slot": "txv_novo_2",
+          "key": "txv_novo_2",
+          "label": "txv_novo_2",
+          "type": "toggle",
+          "x": 1584,
+          "y": 400,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1584,
+          "ctrl": {
+            "x": 1584,
+            "y": 400,
+            "w": 246,
+            "h": 50,
+            "slot": "txv_novo_2"
+          }
+        },
+        {
+          "slot": "skipspeed",
+          "key": "skipspeed",
+          "label": "skipspeed",
+          "type": "slider",
+          "x": 198,
+          "y": 463,
+          "w": 732,
+          "h": 54,
+          "icon_x": 198,
+          "ctrl": {
+            "x": 198,
+            "y": 463,
+            "w": 620,
+            "h": 54,
+            "slot": "skipspeed"
+          },
+          "track": {
+            "x": 198,
+            "y": 483,
+            "w": 610,
+            "h": 13
+          }
+        },
+        {
+          "slot": "txv_other",
+          "key": "txv_other",
+          "label": "txv_other",
+          "type": "toggle",
+          "x": 1030,
+          "y": 549,
+          "w": 800,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 549,
+            "w": 800,
+            "h": 50,
+            "slot": "txv_other"
+          }
+        },
+        {
+          "slot": "txv_other_0",
+          "key": "txv_other_0",
+          "label": "txv_other_0",
+          "type": "toggle",
+          "x": 1030,
+          "y": 549,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 549,
+            "w": 246,
+            "h": 50,
+            "slot": "txv_other_0"
+          }
+        },
+        {
+          "slot": "txv_other_1",
+          "key": "txv_other_1",
+          "label": "txv_other_1",
+          "type": "toggle",
+          "x": 1307,
+          "y": 549,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1307,
+          "ctrl": {
+            "x": 1307,
+            "y": 549,
+            "w": 246,
+            "h": 50,
+            "slot": "txv_other_1"
+          }
+        },
+        {
+          "slot": "txv_other_2",
+          "key": "txv_other_2",
+          "label": "txv_other_2",
+          "type": "toggle",
+          "x": 1584,
+          "y": 549,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1584,
+          "ctrl": {
+            "x": 1584,
+            "y": 549,
+            "w": 246,
+            "h": 50,
+            "slot": "txv_other_2"
+          }
+        },
+        {
+          "slot": "skipst",
+          "key": "skipst",
+          "label": "skipst",
+          "type": "toggle",
+          "x": 130,
+          "y": 601,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 601,
+            "w": 800,
+            "h": 50,
+            "slot": "skipst"
+          }
+        },
+        {
+          "slot": "skipst_0",
+          "key": "skipst_0",
+          "label": "skipst_0",
+          "type": "toggle",
+          "x": 130,
+          "y": 601,
+          "w": 246,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 601,
+            "w": 246,
+            "h": 50,
+            "slot": "skipst_0"
+          }
+        },
+        {
+          "slot": "skipst_1",
+          "key": "skipst_1",
+          "label": "skipst_1",
+          "type": "toggle",
+          "x": 407,
+          "y": 601,
+          "w": 246,
+          "h": 50,
+          "icon_x": 407,
+          "ctrl": {
+            "x": 407,
+            "y": 601,
+            "w": 246,
+            "h": 50,
+            "slot": "skipst_1"
+          }
+        },
+        {
+          "slot": "skipst_2",
+          "key": "skipst_2",
+          "label": "skipst_2",
+          "type": "toggle",
+          "x": 684,
+          "y": 601,
+          "w": 246,
+          "h": 50,
+          "icon_x": 684,
+          "ctrl": {
+            "x": 684,
+            "y": 601,
+            "w": 246,
+            "h": 50,
+            "slot": "skipst_2"
+          }
+        },
+        {
+          "slot": "dramatic_chk",
+          "key": "dramatic_chk",
+          "label": "dramatic_chk",
+          "type": "toggle",
+          "x": 1031,
+          "y": 622,
+          "w": 393,
+          "h": 34,
+          "icon_x": 1031,
+          "ctrl": {
+            "x": 1031,
+            "y": 622,
+            "w": 393,
+            "h": 34,
+            "slot": "dramatic_chk"
+          }
+        },
+        {
+          "slot": "movierclick",
+          "key": "movierclick",
+          "label": "movierclick",
+          "type": "toggle",
+          "x": 130,
+          "y": 739,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 550,
+            "y": 739,
+            "w": -40,
+            "h": 50,
+            "slot": "movierclick"
+          },
+          "chips": [
+            {
+              "x": 550,
+              "y": 739,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 739,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "snapsilent",
+          "key": "snapsilent",
+          "label": "snapsilent",
+          "type": "toggle",
+          "x": 1030,
+          "y": 739,
+          "w": 523,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1307,
+            "y": 739,
+            "w": -31,
+            "h": 50,
+            "slot": "snapsilent"
+          },
+          "chips": [
+            {
+              "x": 1307,
+              "y": 739,
+              "w": 246,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1030,
+              "y": 739,
+              "w": 246,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "snapdetail",
+          "key": "snapdetail",
+          "label": "snapdetail",
+          "type": "toggle",
+          "x": 1584,
+          "y": 739,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1584,
+          "ctrl": {
+            "x": 1584,
+            "y": 739,
+            "w": 246,
+            "h": 50,
+            "slot": "snapdetail"
+          }
+        },
+        {
+          "slot": "movieskip",
+          "key": "movieskip",
+          "label": "movieskip",
+          "type": "toggle",
+          "x": 130,
+          "y": 877,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 550,
+            "y": 877,
+            "w": -40,
+            "h": 50,
+            "slot": "movieskip"
+          },
+          "chips": [
+            {
+              "x": 550,
+              "y": 877,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 877,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "cafe_id": "4",
+      "label": "文本设置",
+      "rows": [
+        {
+          "slot": "textspeed",
+          "key": "textspeed",
+          "label": "文本显示速度",
+          "type": "slider",
+          "x": 199,
+          "y": 187,
+          "w": 732,
+          "h": 54,
+          "icon_x": 199,
+          "ctrl": {
+            "x": 199,
+            "y": 187,
+            "w": 620,
+            "h": 54,
+            "slot": "textspeed"
+          },
+          "track": {
+            "x": 199,
+            "y": 207,
+            "w": 610,
+            "h": 13
+          }
+        },
+        {
+          "slot": "color_win",
+          "key": "color_win",
+          "label": "color_win",
+          "type": "toggle",
+          "x": 1030,
+          "y": 187,
+          "w": 370,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 187,
+            "w": 370,
+            "h": 50,
+            "slot": "color_win"
+          }
+        },
+        {
+          "slot": "color_owin",
+          "key": "color_owin",
+          "label": "color_owin",
+          "type": "toggle",
+          "x": 1030,
+          "y": 266,
+          "w": 370,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 266,
+            "w": 370,
+            "h": 50,
+            "slot": "color_owin"
+          }
+        },
+        {
+          "slot": "autospeed",
+          "key": "autospeed",
+          "label": "自动模式速度",
+          "type": "slider",
+          "x": 199,
+          "y": 325,
+          "w": 732,
+          "h": 54,
+          "icon_x": 199,
+          "ctrl": {
+            "x": 199,
+            "y": 325,
+            "w": 620,
+            "h": 54,
+            "slot": "autospeed"
+          },
+          "track": {
+            "x": 199,
+            "y": 345,
+            "w": 610,
+            "h": 13
+          }
+        },
+        {
+          "slot": "color_hwin",
+          "key": "color_hwin",
+          "label": "color_hwin",
+          "type": "toggle",
+          "x": 1030,
+          "y": 345,
+          "w": 370,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 345,
+            "w": 370,
+            "h": 50,
+            "slot": "color_hwin"
+          }
+        },
+        {
+          "slot": "nohwindow_chk",
+          "key": "nohwindow_chk",
+          "label": "nohwindow_chk",
+          "type": "toggle",
+          "x": 1031,
+          "y": 400,
+          "w": 393,
+          "h": 34,
+          "icon_x": 1031,
+          "ctrl": {
+            "x": 1031,
+            "y": 400,
+            "w": 393,
+            "h": 34,
+            "slot": "nohwindow_chk"
+          }
+        },
+        {
+          "slot": "autotime",
+          "key": "autotime",
+          "label": "autotime",
+          "type": "toggle",
+          "x": 857,
+          "y": 406,
+          "w": 74,
+          "h": 29,
+          "icon_x": 857,
+          "ctrl": {
+            "x": 857,
+            "y": 406,
+            "w": 74,
+            "h": 29,
+            "slot": "autotime"
+          }
+        },
+        {
+          "slot": "color_text",
+          "key": "color_text",
+          "label": "color_text",
+          "type": "toggle",
+          "x": 1030,
+          "y": 459,
+          "w": 370,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 459,
+            "w": 370,
+            "h": 50,
+            "slot": "color_text"
+          }
+        },
+        {
+          "slot": "atextwait",
+          "key": "atextwait",
+          "label": "atextwait",
+          "type": "slider",
+          "x": 439,
+          "y": 463,
+          "w": 492,
+          "h": 54,
+          "icon_x": 439,
+          "ctrl": {
+            "x": 439,
+            "y": 463,
+            "w": 380,
+            "h": 54,
+            "slot": "atextwait"
+          },
+          "track": {
+            "x": 439,
+            "y": 483,
+            "w": 380,
+            "h": 13
+          }
+        },
+        {
+          "slot": "color_read",
+          "key": "color_read",
+          "label": "color_read",
+          "type": "toggle",
+          "x": 1030,
+          "y": 538,
+          "w": 370,
+          "h": 50,
+          "icon_x": 1030,
+          "ctrl": {
+            "x": 1030,
+            "y": 538,
+            "w": 370,
+            "h": 50,
+            "slot": "color_read"
+          }
+        },
+        {
+          "slot": "hsv_reset",
+          "key": "hsv_reset",
+          "label": "hsv_reset",
+          "type": "toggle",
+          "x": 1460,
+          "y": 538,
+          "w": 370,
+          "h": 50,
+          "icon_x": 1460,
+          "ctrl": {
+            "x": 1460,
+            "y": 538,
+            "w": 370,
+            "h": 50,
+            "slot": "hsv_reset"
+          }
+        },
+        {
+          "slot": "autovwait",
+          "key": "autovwait",
+          "label": "autovwait",
+          "type": "toggle",
+          "x": 130,
+          "y": 601,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 601,
+            "w": 800,
+            "h": 50,
+            "slot": "autovwait"
+          }
+        },
+        {
+          "slot": "autovwait_0",
+          "key": "autovwait_0",
+          "label": "autovwait_0",
+          "type": "toggle",
+          "x": 130,
+          "y": 601,
+          "w": 246,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 601,
+            "w": 246,
+            "h": 50,
+            "slot": "autovwait_0"
+          }
+        },
+        {
+          "slot": "autovwait_1",
+          "key": "autovwait_1",
+          "label": "autovwait_1",
+          "type": "toggle",
+          "x": 407,
+          "y": 601,
+          "w": 246,
+          "h": 50,
+          "icon_x": 407,
+          "ctrl": {
+            "x": 407,
+            "y": 601,
+            "w": 246,
+            "h": 50,
+            "slot": "autovwait_1"
+          }
+        },
+        {
+          "slot": "autovwait_2",
+          "key": "autovwait_2",
+          "label": "autovwait_2",
+          "type": "toggle",
+          "x": 684,
+          "y": 601,
+          "w": 246,
+          "h": 50,
+          "icon_x": 684,
+          "ctrl": {
+            "x": 684,
+            "y": 601,
+            "w": 246,
+            "h": 50,
+            "slot": "autovwait_2"
+          }
+        },
+        {
+          "slot": "skipall",
+          "key": "skipall",
+          "label": "快进未读文本",
+          "type": "toggle",
+          "x": 130,
+          "y": 739,
+          "w": 370,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 325,
+            "y": 739,
+            "w": -20,
+            "h": 50,
+            "slot": "skipall"
+          },
+          "chips": [
+            {
+              "x": 325,
+              "y": 739,
+              "w": 175,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 739,
+              "w": 175,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "afterskip",
+          "key": "afterskip",
+          "label": "afterskip",
+          "type": "toggle",
+          "x": 560,
+          "y": 739,
+          "w": 370,
+          "h": 50,
+          "icon_x": 560,
+          "ctrl": {
+            "x": 755,
+            "y": 739,
+            "w": -20,
+            "h": 50,
+            "slot": "afterskip"
+          },
+          "chips": [
+            {
+              "x": 755,
+              "y": 739,
+              "w": 175,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 560,
+              "y": 739,
+              "w": 175,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "ctrlskip",
+          "key": "ctrlskip",
+          "label": "ctrlskip",
+          "type": "toggle",
+          "x": 130,
+          "y": 877,
+          "w": 370,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 325,
+            "y": 877,
+            "w": -20,
+            "h": 50,
+            "slot": "ctrlskip"
+          },
+          "chips": [
+            {
+              "x": 325,
+              "y": 877,
+              "w": 175,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 877,
+              "w": 175,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "afterauto",
+          "key": "afterauto",
+          "label": "afterauto",
+          "type": "toggle",
+          "x": 560,
+          "y": 877,
+          "w": 370,
+          "h": 50,
+          "icon_x": 560,
+          "ctrl": {
+            "x": 755,
+            "y": 877,
+            "w": -20,
+            "h": 50,
+            "slot": "afterauto"
+          },
+          "chips": [
+            {
+              "x": 755,
+              "y": 877,
+              "w": 175,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 560,
+              "y": 877,
+              "w": 175,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "winopac",
+          "key": "winopac",
+          "label": "winopac",
+          "type": "slider",
+          "x": 1025,
+          "y": 877,
+          "w": 492,
+          "h": 54,
+          "icon_x": 1025,
+          "ctrl": {
+            "x": 1025,
+            "y": 877,
+            "w": 380,
+            "h": 54,
+            "slot": "winopac"
+          },
+          "track": {
+            "x": 1025,
+            "y": 897,
+            "w": 380,
+            "h": 13
+          }
+        },
+        {
+          "slot": "fontselect",
+          "key": "fontselect",
+          "label": "fontselect",
+          "type": "toggle",
+          "x": 1584,
+          "y": 877,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1584,
+          "ctrl": {
+            "x": 1584,
+            "y": 877,
+            "w": 246,
+            "h": 50,
+            "slot": "fontselect"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5a",
+      "cafe_id": "5a",
+      "label": "音频1",
+      "rows": [
+        {
+          "slot": "wave",
+          "key": "wave",
+          "label": "总音量",
+          "type": "slider",
+          "x": 122,
+          "y": 187,
+          "w": 809,
+          "h": 54,
+          "icon_x": 122,
+          "ctrl": {
+            "x": 199,
+            "y": 187,
+            "w": 620,
+            "h": 54,
+            "slot": "wave"
+          },
+          "track": {
+            "x": 199,
+            "y": 207,
+            "w": 610,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 122,
+            "y": 187,
+            "w": 54,
+            "h": 54
+          }
+        },
+        {
+          "slot": "voice",
+          "key": "voice",
+          "label": "语音（游戏中）",
+          "type": "slider",
+          "x": 1022,
+          "y": 187,
+          "w": 808,
+          "h": 54,
+          "icon_x": 1022,
+          "ctrl": {
+            "x": 1099,
+            "y": 187,
+            "w": 620,
+            "h": 54,
+            "slot": "voice"
+          },
+          "track": {
+            "x": 1099,
+            "y": 207,
+            "w": 610,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 1022,
+            "y": 187,
+            "w": 54,
+            "h": 54
+          }
+        },
+        {
+          "slot": "chv",
+          "key": "chv",
+          "label": "chv",
+          "type": "slider",
+          "x": 1307,
+          "y": 325,
+          "w": 523,
+          "h": 116,
+          "icon_x": 1307,
+          "ctrl": {
+            "x": 1409,
+            "y": 387,
+            "w": 345,
+            "h": 54,
+            "slot": "chv"
+          },
+          "chips": [
+            {
+              "x": 1584,
+              "y": 325,
+              "w": 246,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1307,
+              "y": 325,
+              "w": 246,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ],
+          "track": {
+            "x": 1409,
+            "y": 407,
+            "w": 345,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 1339,
+            "y": 387,
+            "w": 54,
+            "h": 54
+          }
+        },
+        {
+          "slot": "bgm",
+          "key": "bgm",
+          "label": "ＢＧＭ",
+          "type": "slider",
+          "x": 125,
+          "y": 334,
+          "w": 377,
+          "h": 78,
+          "icon_x": 125,
+          "ctrl": {
+            "x": 125,
+            "y": 353,
+            "w": 298,
+            "h": 54,
+            "slot": "bgm"
+          },
+          "track": {
+            "x": 125,
+            "y": 373,
+            "w": 298,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 448,
+            "y": 334,
+            "w": 54,
+            "h": 54
+          }
+        },
+        {
+          "slot": "down",
+          "key": "down",
+          "label": "down",
+          "type": "slider",
+          "x": 555,
+          "y": 353,
+          "w": 375,
+          "h": 54,
+          "icon_x": 555,
+          "ctrl": {
+            "x": 555,
+            "y": 353,
+            "w": 298,
+            "h": 54,
+            "slot": "down"
+          },
+          "track": {
+            "x": 555,
+            "y": 373,
+            "w": 298,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 562,
+            "y": 409,
+            "w": 393,
+            "h": 34
+          }
+        },
+        {
+          "slot": "chv0",
+          "key": "chv0",
+          "label": "chv0",
+          "type": "toggle",
+          "x": 1031,
+          "y": 465,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1031,
+          "ctrl": {
+            "x": 1031,
+            "y": 465,
+            "w": 186,
+            "h": 34,
+            "slot": "chv0"
+          }
+        },
+        {
+          "slot": "chv4",
+          "key": "chv4",
+          "label": "chv4",
+          "type": "toggle",
+          "x": 1236,
+          "y": 465,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1236,
+          "ctrl": {
+            "x": 1236,
+            "y": 465,
+            "w": 186,
+            "h": 34,
+            "slot": "chv4"
+          }
+        },
+        {
+          "slot": "chv8",
+          "key": "chv8",
+          "label": "chv8",
+          "type": "toggle",
+          "x": 1440,
+          "y": 465,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1440,
+          "ctrl": {
+            "x": 1440,
+            "y": 465,
+            "w": 186,
+            "h": 34,
+            "slot": "chv8"
+          }
+        },
+        {
+          "slot": "chv12",
+          "key": "chv12",
+          "label": "chv12",
+          "type": "toggle",
+          "x": 1645,
+          "y": 465,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1645,
+          "ctrl": {
+            "x": 1645,
+            "y": 465,
+            "w": 186,
+            "h": 34,
+            "slot": "chv12"
+          }
+        },
+        {
+          "slot": "movie",
+          "key": "movie",
+          "label": "视频",
+          "type": "slider",
+          "x": 125,
+          "y": 500,
+          "w": 377,
+          "h": 78,
+          "icon_x": 125,
+          "ctrl": {
+            "x": 125,
+            "y": 519,
+            "w": 298,
+            "h": 54,
+            "slot": "movie"
+          },
+          "track": {
+            "x": 125,
+            "y": 539,
+            "w": 298,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 448,
+            "y": 500,
+            "w": 54,
+            "h": 54
+          }
+        },
+        {
+          "slot": "se",
+          "key": "se",
+          "label": "ＳＥ（游戏音效）",
+          "type": "slider",
+          "x": 555,
+          "y": 500,
+          "w": 376,
+          "h": 78,
+          "icon_x": 555,
+          "ctrl": {
+            "x": 555,
+            "y": 519,
+            "w": 298,
+            "h": 54,
+            "slot": "se"
+          },
+          "track": {
+            "x": 555,
+            "y": 539,
+            "w": 298,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 877,
+            "y": 500,
+            "w": 54,
+            "h": 54
+          }
+        },
+        {
+          "slot": "chv1",
+          "key": "chv1",
+          "label": "chv1",
+          "type": "toggle",
+          "x": 1031,
+          "y": 508,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1031,
+          "ctrl": {
+            "x": 1031,
+            "y": 508,
+            "w": 186,
+            "h": 34,
+            "slot": "chv1"
+          }
+        },
+        {
+          "slot": "chv5",
+          "key": "chv5",
+          "label": "chv5",
+          "type": "toggle",
+          "x": 1236,
+          "y": 508,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1236,
+          "ctrl": {
+            "x": 1236,
+            "y": 508,
+            "w": 186,
+            "h": 34,
+            "slot": "chv5"
+          }
+        },
+        {
+          "slot": "chv9",
+          "key": "chv9",
+          "label": "chv9",
+          "type": "toggle",
+          "x": 1440,
+          "y": 508,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1440,
+          "ctrl": {
+            "x": 1440,
+            "y": 508,
+            "w": 186,
+            "h": 34,
+            "slot": "chv9"
+          }
+        },
+        {
+          "slot": "chv13",
+          "key": "chv13",
+          "label": "chv13",
+          "type": "toggle",
+          "x": 1645,
+          "y": 508,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1645,
+          "ctrl": {
+            "x": 1645,
+            "y": 508,
+            "w": 186,
+            "h": 34,
+            "slot": "chv13"
+          }
+        },
+        {
+          "slot": "chv2",
+          "key": "chv2",
+          "label": "chv2",
+          "type": "toggle",
+          "x": 1031,
+          "y": 552,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1031,
+          "ctrl": {
+            "x": 1031,
+            "y": 552,
+            "w": 186,
+            "h": 34,
+            "slot": "chv2"
+          }
+        },
+        {
+          "slot": "chv6",
+          "key": "chv6",
+          "label": "chv6",
+          "type": "toggle",
+          "x": 1236,
+          "y": 552,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1236,
+          "ctrl": {
+            "x": 1236,
+            "y": 552,
+            "w": 186,
+            "h": 34,
+            "slot": "chv6"
+          }
+        },
+        {
+          "slot": "chv10",
+          "key": "chv10",
+          "label": "chv10",
+          "type": "toggle",
+          "x": 1440,
+          "y": 552,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1440,
+          "ctrl": {
+            "x": 1440,
+            "y": 552,
+            "w": 186,
+            "h": 34,
+            "slot": "chv10"
+          }
+        },
+        {
+          "slot": "mvaudiosample_chk",
+          "key": "mvaudiosample_chk",
+          "label": "mvaudiosample_chk",
+          "type": "toggle",
+          "x": 132,
+          "y": 575,
+          "w": 392,
+          "h": 34,
+          "icon_x": 132,
+          "ctrl": {
+            "x": 132,
+            "y": 575,
+            "w": 392,
+            "h": 34,
+            "slot": "mvaudiosample_chk"
+          }
+        },
+        {
+          "slot": "chv3",
+          "key": "chv3",
+          "label": "chv3",
+          "type": "toggle",
+          "x": 1031,
+          "y": 595,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1031,
+          "ctrl": {
+            "x": 1031,
+            "y": 595,
+            "w": 186,
+            "h": 34,
+            "slot": "chv3"
+          }
+        },
+        {
+          "slot": "chv7",
+          "key": "chv7",
+          "label": "chv7",
+          "type": "toggle",
+          "x": 1236,
+          "y": 595,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1236,
+          "ctrl": {
+            "x": 1236,
+            "y": 595,
+            "w": 186,
+            "h": 34,
+            "slot": "chv7"
+          }
+        },
+        {
+          "slot": "chv11",
+          "key": "chv11",
+          "label": "chv11",
+          "type": "toggle",
+          "x": 1440,
+          "y": 595,
+          "w": 186,
+          "h": 34,
+          "icon_x": 1440,
+          "ctrl": {
+            "x": 1440,
+            "y": 595,
+            "w": 186,
+            "h": 34,
+            "slot": "chv11"
+          }
+        },
+        {
+          "slot": "bgv",
+          "key": "bgv",
+          "label": "bgv",
+          "type": "slider",
+          "x": 125,
+          "y": 685,
+          "w": 375,
+          "h": 54,
+          "icon_x": 125,
+          "ctrl": {
+            "x": 125,
+            "y": 685,
+            "w": 298,
+            "h": 54,
+            "slot": "bgv"
+          },
+          "track": {
+            "x": 125,
+            "y": 705,
+            "w": 298,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 131,
+            "y": 741,
+            "w": 393,
+            "h": 34
+          }
+        },
+        {
+          "slot": "bgv2",
+          "key": "bgv2",
+          "label": "bgv2",
+          "type": "slider",
+          "x": 555,
+          "y": 685,
+          "w": 375,
+          "h": 54,
+          "icon_x": 555,
+          "ctrl": {
+            "x": 555,
+            "y": 685,
+            "w": 298,
+            "h": 54,
+            "slot": "bgv2"
+          },
+          "track": {
+            "x": 555,
+            "y": 705,
+            "w": 298,
+            "h": 13
+          },
+          "mute": true,
+          "mute_pos": {
+            "x": 562,
+            "y": 741,
+            "w": 393,
+            "h": 34
+          }
+        },
+        {
+          "slot": "lowprisysvo_chk",
+          "key": "lowprisysvo_chk",
+          "label": "lowprisysvo_chk",
+          "type": "toggle",
+          "x": 1205,
+          "y": 688,
+          "w": 625,
+          "h": 34,
+          "icon_x": 1205,
+          "ctrl": {
+            "x": 1205,
+            "y": 688,
+            "w": 625,
+            "h": 34,
+            "slot": "lowprisysvo_chk"
+          }
+        },
+        {
+          "slot": "sysvodetail",
+          "key": "sysvodetail",
+          "label": "sysvodetail",
+          "type": "toggle",
+          "x": 1584,
+          "y": 739,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1584,
+          "ctrl": {
+            "x": 1584,
+            "y": 739,
+            "w": 246,
+            "h": 50,
+            "slot": "sysvodetail"
+          }
+        },
+        {
+          "slot": "voicecut",
+          "key": "voicecut",
+          "label": "voicecut",
+          "type": "toggle",
+          "x": 130,
+          "y": 852,
+          "w": 370,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 325,
+            "y": 852,
+            "w": -20,
+            "h": 50,
+            "slot": "voicecut"
+          },
+          "chips": [
+            {
+              "x": 325,
+              "y": 852,
+              "w": 175,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 852,
+              "w": 175,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "voiceeff",
+          "key": "voiceeff",
+          "label": "voiceeff",
+          "type": "toggle",
+          "x": 560,
+          "y": 852,
+          "w": 370,
+          "h": 50,
+          "icon_x": 560,
+          "ctrl": {
+            "x": 755,
+            "y": 852,
+            "w": -20,
+            "h": 50,
+            "slot": "voiceeff"
+          },
+          "chips": [
+            {
+              "x": 755,
+              "y": 852,
+              "w": 175,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 560,
+              "y": 852,
+              "w": 175,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "sysse",
+          "key": "sysse",
+          "label": "sysse",
+          "type": "slider",
+          "x": 1025,
+          "y": 877,
+          "w": 375,
+          "h": 54,
+          "icon_x": 1025,
+          "ctrl": {
+            "x": 1025,
+            "y": 877,
+            "w": 298,
+            "h": 54,
+            "slot": "sysse"
+          },
+          "track": {
+            "x": 1025,
+            "y": 897,
+            "w": 298,
+            "h": 13
+          }
+        },
+        {
+          "slot": "sysvo",
+          "key": "sysvo",
+          "label": "sysvo",
+          "type": "slider",
+          "x": 1456,
+          "y": 877,
+          "w": 375,
+          "h": 54,
+          "icon_x": 1456,
+          "ctrl": {
+            "x": 1456,
+            "y": 877,
+            "w": 298,
+            "h": 54,
+            "slot": "sysvo"
+          },
+          "track": {
+            "x": 1456,
+            "y": 897,
+            "w": 298,
+            "h": 13
+          }
+        }
+      ]
+    },
+    {
+      "id": "5b",
+      "cafe_id": "5b",
+      "label": "音频2",
+      "rows": [
+        {
+          "slot": "sysvomask_area",
+          "key": "sysvomask_area",
+          "label": "sysvomask_area",
+          "type": "toggle",
+          "x": 1025,
+          "y": 181,
+          "w": 810,
+          "h": 740,
+          "icon_x": 1025,
+          "ctrl": {
+            "x": 1025,
+            "y": 181,
+            "w": 810,
+            "h": 740,
+            "slot": "sysvomask_area"
+          }
+        },
+        {
+          "slot": "sysvoall",
+          "key": "sysvoall",
+          "label": "sysvoall",
+          "type": "toggle",
+          "x": 130,
+          "y": 188,
+          "w": 800,
+          "h": 50,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 550,
+            "y": 188,
+            "w": -40,
+            "h": 50,
+            "slot": "sysvoall"
+          },
+          "chips": [
+            {
+              "x": 550,
+              "y": 188,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 130,
+              "y": 188,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "sysvoplay_area",
+          "key": "sysvoplay_area",
+          "label": "sysvoplay_area",
+          "type": "toggle",
+          "x": 130,
+          "y": 293,
+          "w": 760,
+          "h": 359,
+          "icon_x": 130,
+          "ctrl": {
+            "x": 130,
+            "y": 293,
+            "w": 760,
+            "h": 359,
+            "slot": "sysvoplay_area"
+          }
+        },
+        {
+          "slot": "sysvoplay0_chk",
+          "key": "sysvoplay0_chk",
+          "label": "sysvoplay0_chk",
+          "type": "toggle",
+          "x": 131,
+          "y": 294,
+          "w": 369,
+          "h": 34,
+          "icon_x": 131,
+          "ctrl": {
+            "x": 131,
+            "y": 294,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay0_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay1_chk",
+          "key": "sysvoplay1_chk",
+          "label": "sysvoplay1_chk",
+          "type": "toggle",
+          "x": 521,
+          "y": 294,
+          "w": 369,
+          "h": 34,
+          "icon_x": 521,
+          "ctrl": {
+            "x": 521,
+            "y": 294,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay1_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay2_chk",
+          "key": "sysvoplay2_chk",
+          "label": "sysvoplay2_chk",
+          "type": "toggle",
+          "x": 131,
+          "y": 341,
+          "w": 369,
+          "h": 34,
+          "icon_x": 131,
+          "ctrl": {
+            "x": 131,
+            "y": 341,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay2_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay3_chk",
+          "key": "sysvoplay3_chk",
+          "label": "sysvoplay3_chk",
+          "type": "toggle",
+          "x": 521,
+          "y": 341,
+          "w": 369,
+          "h": 34,
+          "icon_x": 521,
+          "ctrl": {
+            "x": 521,
+            "y": 341,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay3_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay4_chk",
+          "key": "sysvoplay4_chk",
+          "label": "sysvoplay4_chk",
+          "type": "toggle",
+          "x": 131,
+          "y": 387,
+          "w": 369,
+          "h": 34,
+          "icon_x": 131,
+          "ctrl": {
+            "x": 131,
+            "y": 387,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay4_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay5_chk",
+          "key": "sysvoplay5_chk",
+          "label": "sysvoplay5_chk",
+          "type": "toggle",
+          "x": 521,
+          "y": 387,
+          "w": 369,
+          "h": 34,
+          "icon_x": 521,
+          "ctrl": {
+            "x": 521,
+            "y": 387,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay5_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay6_chk",
+          "key": "sysvoplay6_chk",
+          "label": "sysvoplay6_chk",
+          "type": "toggle",
+          "x": 131,
+          "y": 434,
+          "w": 369,
+          "h": 34,
+          "icon_x": 131,
+          "ctrl": {
+            "x": 131,
+            "y": 434,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay6_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay7_chk",
+          "key": "sysvoplay7_chk",
+          "label": "sysvoplay7_chk",
+          "type": "toggle",
+          "x": 521,
+          "y": 434,
+          "w": 369,
+          "h": 34,
+          "icon_x": 521,
+          "ctrl": {
+            "x": 521,
+            "y": 434,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay7_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay8_chk",
+          "key": "sysvoplay8_chk",
+          "label": "sysvoplay8_chk",
+          "type": "toggle",
+          "x": 131,
+          "y": 480,
+          "w": 369,
+          "h": 34,
+          "icon_x": 131,
+          "ctrl": {
+            "x": 131,
+            "y": 480,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay8_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay9_chk",
+          "key": "sysvoplay9_chk",
+          "label": "sysvoplay9_chk",
+          "type": "toggle",
+          "x": 521,
+          "y": 480,
+          "w": 369,
+          "h": 34,
+          "icon_x": 521,
+          "ctrl": {
+            "x": 521,
+            "y": 480,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay9_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay10_chk",
+          "key": "sysvoplay10_chk",
+          "label": "sysvoplay10_chk",
+          "type": "toggle",
+          "x": 131,
+          "y": 527,
+          "w": 369,
+          "h": 34,
+          "icon_x": 131,
+          "ctrl": {
+            "x": 131,
+            "y": 527,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay10_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay11_chk",
+          "key": "sysvoplay11_chk",
+          "label": "sysvoplay11_chk",
+          "type": "toggle",
+          "x": 521,
+          "y": 527,
+          "w": 369,
+          "h": 34,
+          "icon_x": 521,
+          "ctrl": {
+            "x": 521,
+            "y": 527,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay11_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay12_chk",
+          "key": "sysvoplay12_chk",
+          "label": "sysvoplay12_chk",
+          "type": "toggle",
+          "x": 131,
+          "y": 573,
+          "w": 369,
+          "h": 34,
+          "icon_x": 131,
+          "ctrl": {
+            "x": 131,
+            "y": 573,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay12_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay13_chk",
+          "key": "sysvoplay13_chk",
+          "label": "sysvoplay13_chk",
+          "type": "toggle",
+          "x": 521,
+          "y": 573,
+          "w": 369,
+          "h": 34,
+          "icon_x": 521,
+          "ctrl": {
+            "x": 521,
+            "y": 573,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay13_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay14_chk",
+          "key": "sysvoplay14_chk",
+          "label": "sysvoplay14_chk",
+          "type": "toggle",
+          "x": 131,
+          "y": 620,
+          "w": 369,
+          "h": 34,
+          "icon_x": 131,
+          "ctrl": {
+            "x": 131,
+            "y": 620,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay14_chk"
+          }
+        },
+        {
+          "slot": "sysvoplay15_chk",
+          "key": "sysvoplay15_chk",
+          "label": "sysvoplay15_chk",
+          "type": "toggle",
+          "x": 521,
+          "y": 620,
+          "w": 369,
+          "h": 34,
+          "icon_x": 521,
+          "ctrl": {
+            "x": 521,
+            "y": 620,
+            "w": 369,
+            "h": 34,
+            "slot": "sysvoplay15_chk"
+          }
+        },
+        {
+          "slot": "sysvo_ok",
+          "key": "sysvo_ok",
+          "label": "sysvo_ok",
+          "type": "toggle",
+          "x": 1584,
+          "y": 852,
+          "w": 246,
+          "h": 50,
+          "icon_x": 1584,
+          "ctrl": {
+            "x": 1584,
+            "y": 852,
+            "w": 246,
+            "h": 50,
+            "slot": "sysvo_ok"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "cafe_id": "6",
+      "label": "确认信息",
+      "rows": [
+        {
+          "slot": "cfall",
+          "key": "cfall",
+          "label": "cfall",
+          "type": "toggle",
+          "x": 560,
+          "y": 150,
+          "w": 800,
+          "h": 50,
+          "icon_x": 560,
+          "ctrl": {
+            "x": 980,
+            "y": 150,
+            "w": -40,
+            "h": 50,
+            "slot": "cfall"
+          },
+          "chips": [
+            {
+              "x": 980,
+              "y": 150,
+              "w": 380,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 560,
+              "y": 150,
+              "w": 380,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_save",
+          "key": "cf_save",
+          "label": "cf_save",
+          "type": "toggle",
+          "x": 363,
+          "y": 264,
+          "w": 267,
+          "h": 50,
+          "icon_x": 363,
+          "ctrl": {
+            "x": 506,
+            "y": 264,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_save"
+          },
+          "chips": [
+            {
+              "x": 506,
+              "y": 264,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 363,
+              "y": 264,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_jump",
+          "key": "cf_jump",
+          "label": "cf_jump",
+          "type": "toggle",
+          "x": 963,
+          "y": 264,
+          "w": 267,
+          "h": 50,
+          "icon_x": 963,
+          "ctrl": {
+            "x": 1106,
+            "y": 264,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_jump"
+          },
+          "chips": [
+            {
+              "x": 1106,
+              "y": 264,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 963,
+              "y": 264,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_init",
+          "key": "cf_init",
+          "label": "cf_init",
+          "type": "toggle",
+          "x": 1563,
+          "y": 264,
+          "w": 267,
+          "h": 50,
+          "icon_x": 1563,
+          "ctrl": {
+            "x": 1706,
+            "y": 264,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_init"
+          },
+          "chips": [
+            {
+              "x": 1706,
+              "y": 264,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1563,
+              "y": 264,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_overwrite",
+          "key": "cf_overwrite",
+          "label": "cf_overwrite",
+          "type": "toggle",
+          "x": 363,
+          "y": 365,
+          "w": 267,
+          "h": 50,
+          "icon_x": 363,
+          "ctrl": {
+            "x": 506,
+            "y": 365,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_overwrite"
+          },
+          "chips": [
+            {
+              "x": 506,
+              "y": 365,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 363,
+              "y": 365,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_flow",
+          "key": "cf_flow",
+          "label": "cf_flow",
+          "type": "toggle",
+          "x": 963,
+          "y": 365,
+          "w": 267,
+          "h": 50,
+          "icon_x": 963,
+          "ctrl": {
+            "x": 1106,
+            "y": 365,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_flow"
+          },
+          "chips": [
+            {
+              "x": 1106,
+              "y": 365,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 963,
+              "y": 365,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_initstand",
+          "key": "cf_initstand",
+          "label": "cf_initstand",
+          "type": "toggle",
+          "x": 1563,
+          "y": 365,
+          "w": 267,
+          "h": 50,
+          "icon_x": 1563,
+          "ctrl": {
+            "x": 1706,
+            "y": 365,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_initstand"
+          },
+          "chips": [
+            {
+              "x": 1706,
+              "y": 365,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1563,
+              "y": 365,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_dsave",
+          "key": "cf_dsave",
+          "label": "cf_dsave",
+          "type": "toggle",
+          "x": 363,
+          "y": 467,
+          "w": 267,
+          "h": 50,
+          "icon_x": 363,
+          "ctrl": {
+            "x": 506,
+            "y": 467,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_dsave"
+          },
+          "chips": [
+            {
+              "x": 506,
+              "y": 467,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 363,
+              "y": 467,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_next",
+          "key": "cf_next",
+          "label": "cf_next",
+          "type": "toggle",
+          "x": 963,
+          "y": 467,
+          "w": 267,
+          "h": 50,
+          "icon_x": 963,
+          "ctrl": {
+            "x": 1106,
+            "y": 467,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_next"
+          },
+          "chips": [
+            {
+              "x": 1106,
+              "y": 467,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 963,
+              "y": 467,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_delete",
+          "key": "cf_delete",
+          "label": "cf_delete",
+          "type": "toggle",
+          "x": 1563,
+          "y": 467,
+          "w": 267,
+          "h": 50,
+          "icon_x": 1563,
+          "ctrl": {
+            "x": 1706,
+            "y": 467,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_delete"
+          },
+          "chips": [
+            {
+              "x": 1706,
+              "y": 467,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1563,
+              "y": 467,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_load",
+          "key": "cf_load",
+          "label": "cf_load",
+          "type": "toggle",
+          "x": 363,
+          "y": 567,
+          "w": 267,
+          "h": 50,
+          "icon_x": 363,
+          "ctrl": {
+            "x": 506,
+            "y": 567,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_load"
+          },
+          "chips": [
+            {
+              "x": 506,
+              "y": 567,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 363,
+              "y": 567,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_backto",
+          "key": "cf_backto",
+          "label": "cf_backto",
+          "type": "toggle",
+          "x": 963,
+          "y": 567,
+          "w": 267,
+          "h": 50,
+          "icon_x": 963,
+          "ctrl": {
+            "x": 1106,
+            "y": 567,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_backto"
+          },
+          "chips": [
+            {
+              "x": 1106,
+              "y": 567,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 963,
+              "y": 567,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_swap",
+          "key": "cf_swap",
+          "label": "cf_swap",
+          "type": "toggle",
+          "x": 1563,
+          "y": 567,
+          "w": 267,
+          "h": 50,
+          "icon_x": 1563,
+          "ctrl": {
+            "x": 1706,
+            "y": 567,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_swap"
+          },
+          "chips": [
+            {
+              "x": 1706,
+              "y": 567,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1563,
+              "y": 567,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_qsave",
+          "key": "cf_qsave",
+          "label": "cf_qsave",
+          "type": "toggle",
+          "x": 363,
+          "y": 669,
+          "w": 267,
+          "h": 50,
+          "icon_x": 363,
+          "ctrl": {
+            "x": 506,
+            "y": 669,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_qsave"
+          },
+          "chips": [
+            {
+              "x": 506,
+              "y": 669,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 363,
+              "y": 669,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_nextscn",
+          "key": "cf_nextscn",
+          "label": "cf_nextscn",
+          "type": "toggle",
+          "x": 963,
+          "y": 669,
+          "w": 267,
+          "h": 50,
+          "icon_x": 963,
+          "ctrl": {
+            "x": 1106,
+            "y": 669,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_nextscn"
+          },
+          "chips": [
+            {
+              "x": 1106,
+              "y": 669,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 963,
+              "y": 669,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_copy",
+          "key": "cf_copy",
+          "label": "cf_copy",
+          "type": "toggle",
+          "x": 1563,
+          "y": 669,
+          "w": 267,
+          "h": 50,
+          "icon_x": 1563,
+          "ctrl": {
+            "x": 1706,
+            "y": 669,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_copy"
+          },
+          "chips": [
+            {
+              "x": 1706,
+              "y": 669,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1563,
+              "y": 669,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_qload",
+          "key": "cf_qload",
+          "label": "cf_qload",
+          "type": "toggle",
+          "x": 363,
+          "y": 769,
+          "w": 267,
+          "h": 50,
+          "icon_x": 363,
+          "ctrl": {
+            "x": 506,
+            "y": 769,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_qload"
+          },
+          "chips": [
+            {
+              "x": 506,
+              "y": 769,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 363,
+              "y": 769,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_prevscn",
+          "key": "cf_prevscn",
+          "label": "cf_prevscn",
+          "type": "toggle",
+          "x": 963,
+          "y": 769,
+          "w": 267,
+          "h": 50,
+          "icon_x": 963,
+          "ctrl": {
+            "x": 1106,
+            "y": 769,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_prevscn"
+          },
+          "chips": [
+            {
+              "x": 1106,
+              "y": 769,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 963,
+              "y": 769,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_exit",
+          "key": "cf_exit",
+          "label": "cf_exit",
+          "type": "toggle",
+          "x": 1563,
+          "y": 769,
+          "w": 267,
+          "h": 50,
+          "icon_x": 1563,
+          "ctrl": {
+            "x": 1706,
+            "y": 769,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_exit"
+          },
+          "chips": [
+            {
+              "x": 1706,
+              "y": 769,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1563,
+              "y": 769,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_title",
+          "key": "cf_title",
+          "label": "cf_title",
+          "type": "toggle",
+          "x": 363,
+          "y": 871,
+          "w": 267,
+          "h": 50,
+          "icon_x": 363,
+          "ctrl": {
+            "x": 506,
+            "y": 871,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_title"
+          },
+          "chips": [
+            {
+              "x": 506,
+              "y": 871,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 363,
+              "y": 871,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_vsave",
+          "key": "cf_vsave",
+          "label": "cf_vsave",
+          "type": "toggle",
+          "x": 963,
+          "y": 871,
+          "w": 267,
+          "h": 50,
+          "icon_x": 963,
+          "ctrl": {
+            "x": 1106,
+            "y": 871,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_vsave"
+          },
+          "chips": [
+            {
+              "x": 1106,
+              "y": 871,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 963,
+              "y": 871,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        },
+        {
+          "slot": "cf_resume",
+          "key": "cf_resume",
+          "label": "cf_resume",
+          "type": "toggle",
+          "x": 1563,
+          "y": 871,
+          "w": 267,
+          "h": 50,
+          "icon_x": 1563,
+          "ctrl": {
+            "x": 1706,
+            "y": 871,
+            "w": -19,
+            "h": 50,
+            "slot": "cf_resume"
+          },
+          "chips": [
+            {
+              "x": 1706,
+              "y": 871,
+              "w": 124,
+              "h": 50,
+              "i": 0
+            },
+            {
+              "x": 1563,
+              "y": 871,
+              "w": 124,
+              "h": 50,
+              "i": 1
+            }
+          ],
+          "chip_n": 2,
+          "options": [
+            "关",
+            "开"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "cafe_id": "8",
+      "label": "键盘",
+      "rows": [
+        {
+          "slot": "key_save",
+          "key": "key_save",
+          "label": "key_save",
+          "type": "toggle",
+          "x": 394,
+          "y": 138,
+          "w": 236,
+          "h": 50,
+          "icon_x": 394,
+          "ctrl": {
+            "x": 394,
+            "y": 138,
+            "w": 236,
+            "h": 50,
+            "slot": "key_save"
+          }
+        },
+        {
+          "slot": "key_nextscn",
+          "key": "key_nextscn",
+          "label": "key_nextscn",
+          "type": "toggle",
+          "x": 994,
+          "y": 138,
+          "w": 236,
+          "h": 50,
+          "icon_x": 994,
+          "ctrl": {
+            "x": 994,
+            "y": 138,
+            "w": 236,
+            "h": 50,
+            "slot": "key_nextscn"
+          }
+        },
+        {
+          "slot": "key_volume",
+          "key": "key_volume",
+          "label": "key_volume",
+          "type": "toggle",
+          "x": 1594,
+          "y": 138,
+          "w": 236,
+          "h": 50,
+          "icon_x": 1594,
+          "ctrl": {
+            "x": 1594,
+            "y": 138,
+            "w": 236,
+            "h": 50,
+            "slot": "key_volume"
+          }
+        },
+        {
+          "slot": "key_load",
+          "key": "key_load",
+          "label": "key_load",
+          "type": "toggle",
+          "x": 394,
+          "y": 213,
+          "w": 236,
+          "h": 50,
+          "icon_x": 394,
+          "ctrl": {
+            "x": 394,
+            "y": 213,
+            "w": 236,
+            "h": 50,
+            "slot": "key_load"
+          }
+        },
+        {
+          "slot": "key_next",
+          "key": "key_next",
+          "label": "key_next",
+          "type": "toggle",
+          "x": 994,
+          "y": 213,
+          "w": 236,
+          "h": 50,
+          "icon_x": 994,
+          "ctrl": {
+            "x": 994,
+            "y": 213,
+            "w": 236,
+            "h": 50,
+            "slot": "key_next"
+          }
+        },
+        {
+          "slot": "key_hide",
+          "key": "key_hide",
+          "label": "key_hide",
+          "type": "toggle",
+          "x": 1594,
+          "y": 213,
+          "w": 236,
+          "h": 50,
+          "icon_x": 1594,
+          "ctrl": {
+            "x": 1594,
+            "y": 213,
+            "w": 236,
+            "h": 50,
+            "slot": "key_hide"
+          }
+        },
+        {
+          "slot": "key_dsave",
+          "key": "key_dsave",
+          "label": "key_dsave",
+          "type": "toggle",
+          "x": 394,
+          "y": 288,
+          "w": 236,
+          "h": 50,
+          "icon_x": 394,
+          "ctrl": {
+            "x": 394,
+            "y": 288,
+            "w": 236,
+            "h": 50,
+            "slot": "key_dsave"
+          }
+        },
+        {
+          "slot": "key_log",
+          "key": "key_log",
+          "label": "key_log",
+          "type": "toggle",
+          "x": 994,
+          "y": 288,
+          "w": 236,
+          "h": 50,
+          "icon_x": 994,
+          "ctrl": {
+            "x": 994,
+            "y": 288,
+            "w": 236,
+            "h": 50,
+            "slot": "key_log"
+          }
+        },
+        {
+          "slot": "key_vreplay",
+          "key": "key_vreplay",
+          "label": "key_vreplay",
+          "type": "toggle",
+          "x": 1594,
+          "y": 288,
+          "w": 236,
+          "h": 50,
+          "icon_x": 1594,
+          "ctrl": {
+            "x": 1594,
+            "y": 288,
+            "w": 236,
+            "h": 50,
+            "slot": "key_vreplay"
+          }
+        },
+        {
+          "slot": "key_qsave",
+          "key": "key_qsave",
+          "label": "key_qsave",
+          "type": "toggle",
+          "x": 394,
+          "y": 363,
+          "w": 236,
+          "h": 50,
+          "icon_x": 394,
+          "ctrl": {
+            "x": 394,
+            "y": 363,
+            "w": 236,
+            "h": 50,
+            "slot": "key_qsave"
+          }
+        },
+        {
+          "slot": "key_pageup",
+          "key": "key_pageup",
+          "label": "key_pageup",
+          "type": "toggle",
+          "x": 994,
+          "y": 363,
+          "w": 236,
+          "h": 50,
+          "icon_x": 994,
+          "ctrl": {
+            "x": 994,
+            "y": 363,
+            "w": 236,
+            "h": 50,
+            "slot": "key_pageup"
+          }
+        },
+        {
+          "slot": "key_qvsave",
+          "key": "key_qvsave",
+          "label": "key_qvsave",
+          "type": "toggle",
+          "x": 1594,
+          "y": 363,
+          "w": 236,
+          "h": 50,
+          "icon_x": 1594,
+          "ctrl": {
+            "x": 1594,
+            "y": 363,
+            "w": 236,
+            "h": 50,
+            "slot": "key_qvsave"
+          }
+        },
+        {
+          "slot": "key_qload",
+          "key": "key_qload",
+          "label": "key_qload",
+          "type": "toggle",
+          "x": 394,
+          "y": 438,
+          "w": 236,
+          "h": 50,
+          "icon_x": 394,
+          "ctrl": {
+            "x": 394,
+            "y": 438,
+            "w": 236,
+            "h": 50,
+            "slot": "key_qload"
+          }
+        },
+        {
+          "slot": "key_pagedown",
+          "key": "key_pagedown",
+          "label": "key_pagedown",
+          "type": "toggle",
+          "x": 994,
+          "y": 438,
+          "w": 236,
+          "h": 50,
+          "icon_x": 994,
+          "ctrl": {
+            "x": 994,
+            "y": 438,
+            "w": 236,
+            "h": 50,
+            "slot": "key_pagedown"
+          }
+        },
+        {
+          "slot": "key_vsave",
+          "key": "key_vsave",
+          "label": "key_vsave",
+          "type": "toggle",
+          "x": 1594,
+          "y": 438,
+          "w": 236,
+          "h": 50,
+          "icon_x": 1594,
+          "ctrl": {
+            "x": 1594,
+            "y": 438,
+            "w": 236,
+            "h": 50,
+            "slot": "key_vsave"
+          }
+        },
+        {
+          "slot": "key_option",
+          "key": "key_option",
+          "label": "key_option",
+          "type": "toggle",
+          "x": 394,
+          "y": 513,
+          "w": 236,
+          "h": 50,
+          "icon_x": 394,
+          "ctrl": {
+            "x": 394,
+            "y": 513,
+            "w": 236,
+            "h": 50,
+            "slot": "key_option"
+          }
+        },
+        {
+          "slot": "key_backone",
+          "key": "key_backone",
+          "label": "key_backone",
+          "type": "toggle",
+          "x": 994,
+          "y": 513,
+          "w": 236,
+          "h": 50,
+          "icon_x": 994,
+          "ctrl": {
+            "x": 994,
+            "y": 513,
+            "w": 236,
+            "h": 50,
+            "slot": "key_backone"
+          }
+        },
+        {
+          "slot": "key_snapshot",
+          "key": "key_snapshot",
+          "label": "key_snapshot",
+          "type": "toggle",
+          "x": 1594,
+          "y": 513,
+          "w": 236,
+          "h": 50,
+          "icon_x": 1594,
+          "ctrl": {
+            "x": 1594,
+            "y": 513,
+            "w": 236,
+            "h": 50,
+            "slot": "key_snapshot"
+          }
+        },
+        {
+          "slot": "key_screen",
+          "key": "key_screen",
+          "label": "key_screen",
+          "type": "toggle",
+          "x": 394,
+          "y": 588,
+          "w": 236,
+          "h": 50,
+          "icon_x": 394,
+          "ctrl": {
+            "x": 394,
+            "y": 588,
+            "w": 236,
+            "h": 50,
+            "slot": "key_screen"
+          }
+        },
+        {
+          "slot": "key_backskip",
+          "key": "key_backskip",
+          "label": "key_backskip",
+          "type": "toggle",
+          "x": 994,
+          "y": 588,
+          "w": 236,
+          "h": 50,
+          "icon_x": 994,
+          "ctrl": {
+            "x": 994,
+            "y": 588,
+            "w": 236,
+            "h": 50,
+            "slot": "key_backskip"
+          }
+        },
+        {
+          "slot": "key_panic",
+          "key": "key_panic",
+          "label": "key_panic",
+          "type": "toggle",
+          "x": 1594,
+          "y": 588,
+          "w": 236,
+          "h": 50,
+          "icon_x": 1594,
+          "ctrl": {
+            "x": 1594,
+            "y": 588,
+            "w": 236,
+            "h": 50,
+            "slot": "key_panic"
+          }
+        },
+        {
+          "slot": "key_click",
+          "key": "key_click",
+          "label": "key_click",
+          "type": "toggle",
+          "x": 394,
+          "y": 663,
+          "w": 236,
+          "h": 50,
+          "icon_x": 394,
+          "ctrl": {
+            "x": 394,
+            "y": 663,
+            "w": 236,
+            "h": 50,
+            "slot": "key_click"
+          }
+        },
+        {
+          "slot": "key_prevscn",
+          "key": "key_prevscn",
+          "label": "key_prevscn",
+          "type": "toggle",
+          "x": 994,
+          "y": 663,
+          "w": 236,
+          "h": 50,
+          "icon_x": 994,
+          "ctrl": {
+            "x": 994,
+            "y": 663,
+            "w": 236,
+            "h": 50,
+            "slot": "key_prevscn"
+          }
+        },
+        {
+          "slot": "keyboard",
+          "key": "keyboard",
+          "label": "keyboard",
+          "type": "toggle",
+          "x": 1389,
+          "y": 727,
+          "w": 439,
+          "h": 133,
+          "icon_x": 1389,
+          "ctrl": {
+            "x": 1389,
+            "y": 727,
+            "w": 439,
+            "h": 133,
+            "slot": "keyboard"
+          }
+        },
+        {
+          "slot": "key_auto",
+          "key": "key_auto",
+          "label": "key_auto",
+          "type": "toggle",
+          "x": 394,
+          "y": 738,
+          "w": 236,
+          "h": 50,
+          "icon_x": 394,
+          "ctrl": {
+            "x": 394,
+            "y": 738,
+            "w": 236,
+            "h": 50,
+            "slot": "key_auto"
+          }
+        },
+        {
+          "slot": "key_prev",
+          "key": "key_prev",
+          "label": "key_prev",
+          "type": "toggle",
+          "x": 994,
+          "y": 738,
+          "w": 236,
+          "h": 50,
+          "icon_x": 994,
+          "ctrl": {
+            "x": 994,
+            "y": 738,
+            "w": 236,
+            "h": 50,
+            "slot": "key_prev"
+          }
+        },
+        {
+          "slot": "key_skip",
+          "key": "key_skip",
+          "label": "key_skip",
+          "type": "toggle",
+          "x": 394,
+          "y": 813,
+          "w": 236,
+          "h": 50,
+          "icon_x": 394,
+          "ctrl": {
+            "x": 394,
+            "y": 813,
+            "w": 236,
+            "h": 50,
+            "slot": "key_skip"
+          }
+        },
+        {
+          "slot": "key_scnchart",
+          "key": "key_scnchart",
+          "label": "key_scnchart",
+          "type": "toggle",
+          "x": 994,
+          "y": 813,
+          "w": 236,
+          "h": 50,
+          "icon_x": 994,
+          "ctrl": {
+            "x": 994,
+            "y": 813,
+            "w": 236,
+            "h": 50,
+            "slot": "key_scnchart"
+          }
+        },
+        {
+          "slot": "key_ctrl",
+          "key": "key_ctrl",
+          "label": "key_ctrl",
+          "type": "toggle",
+          "x": 394,
+          "y": 888,
+          "w": 236,
+          "h": 50,
+          "icon_x": 394,
+          "ctrl": {
+            "x": 394,
+            "y": 888,
+            "w": 236,
+            "h": 50,
+            "slot": "key_ctrl"
+          }
+        },
+        {
+          "slot": "key_title",
+          "key": "key_title",
+          "label": "key_title",
+          "type": "toggle",
+          "x": 994,
+          "y": 888,
+          "w": 236,
+          "h": 50,
+          "icon_x": 994,
+          "ctrl": {
+            "x": 994,
+            "y": 888,
+            "w": 236,
+            "h": 50,
+            "slot": "key_title"
+          }
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "id": "init",
+      "label": "恢复默认设置",
+      "x": 923,
+      "y": 989,
+      "w": 315,
+      "h": 58
+    },
+    {
+      "id": "title",
+      "label": "标题画面",
+      "x": 1252,
+      "y": 989,
+      "w": 315,
+      "h": 58
+    },
+    {
+      "id": "back",
+      "label": "游戏画面",
+      "x": 1581,
+      "y": 989,
+      "w": 315,
+      "h": 58
+    }
+  ],
+  "help_box": {
+    "x": 27,
+    "y": 979,
+    "w": 731,
+    "h": 77
+  },
+  "tabs_layout": {
+    "items": [
+      {
+        "id": "0",
+        "label": "基本设置",
+        "x": 465,
+        "y": 0,
+        "w": 128,
+        "h": 81
+      },
+      {
+        "id": "1",
+        "label": "画面设置",
+        "x": 593,
+        "y": 0,
+        "w": 128,
+        "h": 81
+      },
+      {
+        "id": "2",
+        "label": "游戏设置1",
+        "x": 721,
+        "y": 0,
+        "w": 163,
+        "h": 81
+      },
+      {
+        "id": "3",
+        "label": "游戏设置2",
+        "x": 884,
+        "y": 0,
+        "w": 167,
+        "h": 81
+      },
+      {
+        "id": "4",
+        "label": "文本设置",
+        "x": 1051,
+        "y": 0,
+        "w": 128,
+        "h": 81
+      },
+      {
+        "id": "5a",
+        "label": "音频1",
+        "x": 1179,
+        "y": 0,
+        "w": 128,
+        "h": 81
+      },
+      {
+        "id": "6",
+        "label": "确认信息",
+        "x": 1307,
+        "y": 0,
+        "w": 148,
+        "h": 81
+      },
+      {
+        "id": "8",
+        "label": "键盘",
+        "x": 1557,
+        "y": 0,
+        "w": 148,
+        "h": 81
+      },
+      {
+        "id": "5b",
+        "label": "音频2",
+        "x": 1179,
+        "y": 0,
+        "w": 128,
+        "h": 81
+      }
+    ]
+  },
+  "exclude_pages": [
+    "7",
+    "9"
+  ],
+  "tool": "pbd2json.exe",
+  "pbd_layers_dir": "docs/ui-extract/pixel-reverse/pbd2json-layers",
+  "note": "Cafe Stella equivalent of FreeMote PSB left/top"
+}

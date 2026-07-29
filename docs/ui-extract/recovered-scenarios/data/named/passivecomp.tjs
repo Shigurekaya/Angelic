@@ -1,0 +1,26 @@
+// パッシブ裏レイヤ（トランジション時に表をpiledCopyするだけのもの）
+class        PassiveCompLayer extends Layer {
+	function PassiveCompLayer(win, par, comp, onpaintcb) {
+		super.Layer(win, par);
+		complay = comp;
+		callback = onpaintcb;
+		var tag = "PassiveComp";
+		this.name = (typeof complay.name == "String") ? (complay.name+ ":"+tag) : tag;
+		this.hitType = htProvince;
+	}
+	function finalize() { super.finalize(...); }
+
+	var complay, callback;
+	function onPaint() {
+		hasImage = true;
+		with (complay) {
+			setImageSize(.width, .height);
+			setSizeToImageSize();
+			setPos(.left, .top);
+			if (callback) callback(this, complay, width, height);
+			else piledCopy(0, 0, complay, -.imageLeft, -.imageTop, width, height);
+		}
+		super.onPaint(...);
+		callOnPaint = false;
+	}
+}

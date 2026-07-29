@@ -1,0 +1,5 @@
+%[
+method:"turn",
+time:1000,
+bgcolor:0x000000,
+]

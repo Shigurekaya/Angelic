@@ -1,0 +1,251 @@
+{
+  "source": "extra.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "to_cg",
+    "to_scene",
+    "to_stand",
+    "to_voice",
+    "title",
+    "title2",
+    "back",
+    "helptext",
+    "helpbase",
+    "caption",
+    "base"
+  ],
+  "layer_count": 12,
+  "hotspot_count": 12,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "class": "base",
+      "uiname": "base"
+    },
+    {
+      "name": "to_cg",
+      "left": 1235,
+      "top": 0,
+      "width": 125,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_cg",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 125,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "to_scene",
+      "left": 1361,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_scene",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "to_stand",
+      "left": 1510,
+      "top": 0,
+      "width": 149,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_stand",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 149,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "to_voice",
+      "left": 1660,
+      "top": 0,
+      "width": 212,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_voice",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 212,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "caption",
+      "left": 87,
+      "top": 19,
+      "width": 128,
+      "height": 43,
+      "class": "layer",
+      "uiname": "caption",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 315,
+          "cy": 135,
+          "w": 128,
+          "h": 43,
+          "storage": "extra__pack"
+        }
+      }
+    },
+    {
+      "name": "helpbase",
+      "left": 27,
+      "top": 979,
+      "width": 731,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helpbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 731,
+          "h": 77,
+          "storage": "extra__pack"
+        }
+      }
+    },
+    {
+      "name": "helptext",
+      "left": 57,
+      "top": 987,
+      "width": 672,
+      "height": 62,
+      "class": "layer",
+      "uiname": "helptext",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 672,
+          "h": 62,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title"
+    },
+    {
+      "name": "_sysbtn",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_sysbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 0,
+          "cy": 135,
+          "w": 315,
+          "h": 58,
+          "storage": "extra__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 315,
+          "cy": 77,
+          "w": 315,
+          "h": 58,
+          "storage": "extra__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 0,
+          "cy": 77,
+          "w": 315,
+          "h": 58,
+          "storage": "extra__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 315,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back"
+    },
+    {
+      "name": "title2",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title2"
+    }
+  ],
+  "raw_result_keys": [
+    "_sysbtn",
+    "back",
+    "base",
+    "caption",
+    "helpbase",
+    "helptext",
+    "title",
+    "title2",
+    "to_cg",
+    "to_scene",
+    "to_stand",
+    "to_voice"
+  ]
+}

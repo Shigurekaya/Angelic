@@ -22,12 +22,18 @@ D:\gamedev\CafeStella\tools\vendor\python311-x86\python.exe -u tools\_run_cxdec_
 
 标题按 **renpy-cafe 同款方法**：只用解包 `title_bg*` / `title_logo_cn` / `*_pack` 切片叠层，**禁止截图抠图**。
 
+设定权威：`tools/bake_settings_from_pbd_uistates.py`（**勿**跑 `rebuild_settings_1to1.py`）。
+
 ```powershell
 .venv\Scripts\python.exe tools\build_title_1to1.py
 .venv\Scripts\python.exe tools\build_other_screens_1to1.py
 .venv\Scripts\python.exe tools\wire_cg_runtime.py
+.venv\Scripts\python.exe tools\bake_settings_from_pbd_uistates.py
 .venv\Scripts\python.exe tools\sync_all_ui_to_renpy.py
+.venv\Scripts\python.exe tools\bake_settings_from_pbd_uistates.py
 ```
+
+或一键：`.venv\Scripts\python.exe tools\recreate_renpy_ui.py`
 
 可运行工程：`D:\gamedev\renpy-angelic`（双击启动游戏.bat）。
 

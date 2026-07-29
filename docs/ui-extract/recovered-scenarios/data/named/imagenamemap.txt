@@ -1,0 +1,54 @@
+#画像名条件マッピング定義
+#画像名  	変換後指定       	条件
+# ※変換後指定は小文字に正規化されるため，もし「&」で評価処理を記述する場合は変数/関数など含め全て小文字で完結させる必要がある
+
+
+#---------------------------------------------------------------
+# UI言語設定に連動
+#imagefile	&uilangimage("imagefile")	_notuijp
+
+#attention	&uilangimage("attention")	_notuijp
+#extra_watermark	&uilangimage("extra_watermark")	_notuijp
+
+#---------------------------------------------------------------
+# テキスト言語設定に連動(jp以外のとき_{en,cn,tw}が存在すればそれを利用する）
+#imagefile	&meslangimage("imagefile")	_notjp
+
+ec__logo_dot|ec_noa.pimg	&meslangforce("ec__logo_dot","|ec_noa.pimg")	_notjp
+ec__logo_dot|ec_ama.pimg	&meslangforce("ec__logo_dot","|ec_ama.pimg")	_notjp
+ec__logo_dot|ec_kur.pimg	&meslangforce("ec__logo_dot","|ec_kur.pimg")	_notjp
+ec__logo_dot|ec_kag.pimg	&meslangforce("ec__logo_dot","|ec_kag.pimg")	_notjp
+ec__logo_dot|ec_ori.pimg	&meslangforce("ec__logo_dot","|ec_ori.pimg")	_notjp
+ec__logo_dot|ec_fum.pimg	&meslangforce("ec__logo_dot","|ec_fum.pimg")	_notjp
+
+
+#---------------------------------------------------------------
+# 全年齢版の差し替え処理(pimg版)
+
+ev219a	ev219a_censored	_allage
+ev302a	ev302a_censored	IsTrial
+ev405a	ev405a_censored	_allage
+ev406a	ev406a_censored	_allage
+ev411a	ev411a_censored	_allage
+ev412a	ev412a_censored	_allage
+ev502_a	ev502_a_censored	_allage
+ev502a	ev502a_censored	_allage
+ev601a	ev601a_censored	_allage
+
+#ev703a	ev703a_censored	_allage
+ev703bf	ev703bf_censored	_allage
+
+# ※システムの都合によりモーションはcensored加工データを元ファイル名とする必要がある
+sd003.mtn	sd003_adult.mtn	!_allage
+
+#---------------------------------------------------------------
+# 全年齢版の差し替え処理(サムネ版)
+#imagefile	imagefile_censored	_allage
+
+#thum_evXXX	thum_evXXX_censored	_allage
+
+# ※システムの都合によりスタンプはcensored加工データを元ファイル名とする必要がある
+stamp_ev201aa	stamp_ev201aa_upgrade	!IsTrial
+stamp_ev201ba	stamp_ev201ba_upgrade	!IsTrial
+stamp_ev201da	stamp_ev201da_upgrade	!IsTrial
+stamp_ev201ea	stamp_ev201ea_upgrade	!IsTrial

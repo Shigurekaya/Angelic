@@ -1,0 +1,142 @@
+{
+  "archive": "adult3.xp3",
+  "path": "E:\\GAL\\天使☆嚣嚣\\adult3.xp3",
+  "bytes": 1721791359,
+  "files": 11,
+  "encrypted": 10,
+  "hx_resolved": 0,
+  "entries": [
+    {
+      "index": 0,
+      "name": "倀",
+      "name_ord": [
+        20480
+      ],
+      "resolved": null,
+      "original_size": 910,
+      "compressed_size": 910,
+      "encrypted": false,
+      "key": 1754764004
+    },
+    {
+      "index": 1,
+      "name": "倁",
+      "name_ord": [
+        20481
+      ],
+      "resolved": null,
+      "original_size": 178651533,
+      "compressed_size": 178651533,
+      "encrypted": true,
+      "key": 3939925200
+    },
+    {
+      "index": 2,
+      "name": "倂",
+      "name_ord": [
+        20482
+      ],
+      "resolved": null,
+      "original_size": 218249989,
+      "compressed_size": 218249989,
+      "encrypted": true,
+      "key": 1072761697
+    },
+    {
+      "index": 3,
+      "name": "倃",
+      "name_ord": [
+        20483
+      ],
+      "resolved": null,
+      "original_size": 186316171,
+      "compressed_size": 186316171,
+      "encrypted": true,
+      "key": 4098709237
+    },
+    {
+      "index": 4,
+      "name": "倄",
+      "name_ord": [
+        20484
+      ],
+      "resolved": null,
+      "original_size": 122138465,
+      "compressed_size": 122138465,
+      "encrypted": true,
+      "key": 4168956542
+    },
+    {
+      "index": 5,
+      "name": "倅",
+      "name_ord": [
+        20485
+      ],
+      "resolved": null,
+      "original_size": 155383609,
+      "compressed_size": 155383609,
+      "encrypted": true,
+      "key": 3546555509
+    },
+    {
+      "index": 6,
+      "name": "倆",
+      "name_ord": [
+        20486
+      ],
+      "resolved": null,
+      "original_size": 178675373,
+      "compressed_size": 178675373,
+      "encrypted": true,
+      "key": 2652966658
+    },
+    {
+      "index": 7,
+      "name": "倇",
+      "name_ord": [
+        20487
+      ],
+      "resolved": null,
+      "original_size": 218393029,
+      "compressed_size": 218393029,
+      "encrypted": true,
+      "key": 2612192658
+    },
+    {
+      "index": 8,
+      "name": "倈",
+      "name_ord": [
+        20488
+      ],
+      "resolved": null,
+      "original_size": 186435371,
+      "compressed_size": 186435371,
+      "encrypted": true,
+      "key": 806670243
+    },
+    {
+      "index": 9,
+      "name": "倉",
+      "name_ord": [
+        20489
+      ],
+      "resolved": null,
+      "original_size": 122043105,
+      "compressed_size": 122043105,
+      "encrypted": true,
+      "key": 831278918
+    },
+    {
+      "index": 10,
+      "name": "倊",
+      "name_ord": [
+        20490
+      ],
+      "resolved": null,
+      "original_size": 155502809,
+      "compressed_size": 155502809,
+      "encrypted": true,
+      "key": 1794120172
+    }
+  ]
+}

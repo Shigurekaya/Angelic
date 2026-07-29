@@ -1,0 +1,1844 @@
+{
+  "source": "option_7mouse.pbd",
+  "hotspots": [
+    {
+      "name": "_cholder",
+      "left": 0,
+      "top": 0,
+      "width": 134,
+      "height": 134,
+      "class": "layer",
+      "uiname": "_cholder",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 60,
+          "w": 134,
+          "h": 134,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "class": "base",
+      "uiname": "base"
+    },
+    {
+      "name": "page0",
+      "left": 465,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page0",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page1",
+      "left": 593,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page1",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page2",
+      "left": 721,
+      "top": 0,
+      "width": 163,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page2",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 163,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page3",
+      "left": 884,
+      "top": 0,
+      "width": 167,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page3",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 167,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page4",
+      "left": 1051,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page4",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page5",
+      "left": 1179,
+      "top": 0,
+      "width": 128,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page5",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page6",
+      "left": 1307,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page6",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page7",
+      "left": 1455,
+      "top": 0,
+      "width": 102,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page7",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 102,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page8",
+      "left": 1557,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page8",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "page9",
+      "left": 1705,
+      "top": 0,
+      "width": 167,
+      "height": 81,
+      "class": "radio",
+      "uiname": "page9",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 167,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "_cmd",
+      "left": 1,
+      "top": 2,
+      "width": 131,
+      "height": 130,
+      "class": "toggle",
+      "uiname": "gsicon",
+      "uistates": {
+        "qload": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 367,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "save": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 196,
+          "cy": 248,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "on": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 0,
+          "cy": 320,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "key_pageup": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 307,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 130,
+          "storage": ""
+        },
+        "load": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 310,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "dsave": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 196,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "prevscn": {
+          "ox": 40,
+          "oy": 29,
+          "cx": 336,
+          "cy": 135,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "vreplay": {
+          "ox": 42,
+          "oy": 25,
+          "cx": 311,
+          "cy": 418,
+          "w": 47,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "hide": {
+          "ox": 42,
+          "oy": 30,
+          "cx": 253,
+          "cy": 424,
+          "w": 49,
+          "h": 48,
+          "storage": "option_cmds__pack"
+        },
+        "title": {
+          "ox": 41,
+          "oy": 23,
+          "cx": 311,
+          "cy": 307,
+          "w": 50,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "nextscn": {
+          "ox": 40,
+          "oy": 29,
+          "cx": 260,
+          "cy": 130,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "over": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 134,
+          "cy": 60,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "none": {
+          "ox": 35,
+          "oy": 21,
+          "cx": 134,
+          "cy": 186,
+          "w": 62,
+          "h": 63,
+          "storage": "option_cmds__pack"
+        },
+        "custom": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 366,
+          "w": 58,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "text": {
+          "ox": 10,
+          "oy": 85,
+          "w": 112,
+          "h": 28,
+          "storage": ""
+        },
+        "backskip": {
+          "ox": 34,
+          "oy": 30,
+          "cx": 361,
+          "cy": 307,
+          "w": 60,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "key_pagedown": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 370,
+          "cy": 248,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "key_ctrl": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 312,
+          "cy": 248,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "click": {
+          "ox": 44,
+          "oy": 23,
+          "cx": 371,
+          "cy": 368,
+          "w": 44,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "skip": {
+          "ox": 39,
+          "oy": 30,
+          "cx": 311,
+          "cy": 368,
+          "w": 60,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "screen": {
+          "ox": 30,
+          "oy": 28,
+          "cx": 134,
+          "cy": 313,
+          "w": 71,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "next": {
+          "ox": 44,
+          "oy": 29,
+          "cx": 388,
+          "cy": 135,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "off": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 0,
+          "cy": 194,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "qsave": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 253,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "scnchart": {
+          "ox": 32,
+          "oy": 25,
+          "cx": 336,
+          "cy": 77,
+          "w": 68,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "vsave": {
+          "ox": 34,
+          "oy": 29,
+          "cx": 196,
+          "cy": 310,
+          "w": 62,
+          "h": 57,
+          "storage": "option_cmds__pack"
+        },
+        "qvsave": {
+          "ox": 34,
+          "oy": 29,
+          "cx": 134,
+          "cy": 384,
+          "w": 62,
+          "h": 57,
+          "storage": "option_cmds__pack"
+        },
+        "snapshot": {
+          "ox": 33,
+          "oy": 27,
+          "cx": 196,
+          "cy": 372,
+          "w": 66,
+          "h": 52,
+          "storage": "option_cmds__pack"
+        },
+        "option": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 248,
+          "w": 59,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "log": {
+          "ox": 38,
+          "oy": 29,
+          "cx": 352,
+          "cy": 0,
+          "w": 47,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "volume": {
+          "ox": 28,
+          "oy": 26,
+          "cx": 260,
+          "cy": 77,
+          "w": 76,
+          "h": 53,
+          "storage": "option_cmds__pack"
+        },
+        "prev": {
+          "ox": 35,
+          "oy": 29,
+          "cx": 251,
+          "cy": 0,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "backone": {
+          "ox": 41,
+          "oy": 29,
+          "cx": 303,
+          "cy": 0,
+          "w": 49,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "rclick": {
+          "ox": 44,
+          "oy": 23,
+          "cx": 371,
+          "cy": 429,
+          "w": 44,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "panic": {
+          "ox": 34,
+          "oy": 23,
+          "cx": 134,
+          "cy": 249,
+          "w": 64,
+          "h": 60,
+          "storage": "option_cmds__pack"
+        },
+        "auto": {
+          "ox": 47,
+          "oy": 29,
+          "cx": 399,
+          "cy": 0,
+          "w": 47,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "gsicon",
+      "left": 1,
+      "top": 2,
+      "width": 131,
+      "height": 130,
+      "class": "toggle",
+      "uiname": "gsicon",
+      "uistates": {
+        "qload": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 367,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "save": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 196,
+          "cy": 248,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "on": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 0,
+          "cy": 320,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "key_pageup": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 307,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 130,
+          "storage": ""
+        },
+        "load": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 310,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "dsave": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 196,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "prevscn": {
+          "ox": 40,
+          "oy": 29,
+          "cx": 336,
+          "cy": 135,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "vreplay": {
+          "ox": 42,
+          "oy": 25,
+          "cx": 311,
+          "cy": 418,
+          "w": 47,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "hide": {
+          "ox": 42,
+          "oy": 30,
+          "cx": 253,
+          "cy": 424,
+          "w": 49,
+          "h": 48,
+          "storage": "option_cmds__pack"
+        },
+        "title": {
+          "ox": 41,
+          "oy": 23,
+          "cx": 311,
+          "cy": 307,
+          "w": 50,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "nextscn": {
+          "ox": 40,
+          "oy": 29,
+          "cx": 260,
+          "cy": 130,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "over": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 134,
+          "cy": 60,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "none": {
+          "ox": 35,
+          "oy": 21,
+          "cx": 134,
+          "cy": 186,
+          "w": 62,
+          "h": 63,
+          "storage": "option_cmds__pack"
+        },
+        "custom": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 366,
+          "w": 58,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "text": {
+          "ox": 10,
+          "oy": 85,
+          "w": 112,
+          "h": 28,
+          "storage": ""
+        },
+        "backskip": {
+          "ox": 34,
+          "oy": 30,
+          "cx": 361,
+          "cy": 307,
+          "w": 60,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "key_pagedown": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 370,
+          "cy": 248,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "key_ctrl": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 312,
+          "cy": 248,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "click": {
+          "ox": 44,
+          "oy": 23,
+          "cx": 371,
+          "cy": 368,
+          "w": 44,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "skip": {
+          "ox": 39,
+          "oy": 30,
+          "cx": 311,
+          "cy": 368,
+          "w": 60,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "screen": {
+          "ox": 30,
+          "oy": 28,
+          "cx": 134,
+          "cy": 313,
+          "w": 71,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "next": {
+          "ox": 44,
+          "oy": 29,
+          "cx": 388,
+          "cy": 135,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "off": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 0,
+          "cy": 194,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "qsave": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 253,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "scnchart": {
+          "ox": 32,
+          "oy": 25,
+          "cx": 336,
+          "cy": 77,
+          "w": 68,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "vsave": {
+          "ox": 34,
+          "oy": 29,
+          "cx": 196,
+          "cy": 310,
+          "w": 62,
+          "h": 57,
+          "storage": "option_cmds__pack"
+        },
+        "qvsave": {
+          "ox": 34,
+          "oy": 29,
+          "cx": 134,
+          "cy": 384,
+          "w": 62,
+          "h": 57,
+          "storage": "option_cmds__pack"
+        },
+        "snapshot": {
+          "ox": 33,
+          "oy": 27,
+          "cx": 196,
+          "cy": 372,
+          "w": 66,
+          "h": 52,
+          "storage": "option_cmds__pack"
+        },
+        "option": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 248,
+          "w": 59,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "log": {
+          "ox": 38,
+          "oy": 29,
+          "cx": 352,
+          "cy": 0,
+          "w": 47,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "volume": {
+          "ox": 28,
+          "oy": 26,
+          "cx": 260,
+          "cy": 77,
+          "w": 76,
+          "h": 53,
+          "storage": "option_cmds__pack"
+        },
+        "prev": {
+          "ox": 35,
+          "oy": 29,
+          "cx": 251,
+          "cy": 0,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "backone": {
+          "ox": 41,
+          "oy": 29,
+          "cx": 303,
+          "cy": 0,
+          "w": 49,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "rclick": {
+          "ox": 44,
+          "oy": 23,
+          "cx": 371,
+          "cy": 429,
+          "w": 44,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "panic": {
+          "ox": 34,
+          "oy": 23,
+          "cx": 134,
+          "cy": 249,
+          "w": 64,
+          "h": 60,
+          "storage": "option_cmds__pack"
+        },
+        "auto": {
+          "ox": 47,
+          "oy": 29,
+          "cx": 399,
+          "cy": 0,
+          "w": 47,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "caption",
+      "left": 87,
+      "top": 19,
+      "width": 295,
+      "height": 43,
+      "class": "layer",
+      "uiname": "caption",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 106,
+          "cy": 500,
+          "w": 295,
+          "h": 43,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "drag",
+      "left": 722,
+      "top": 122,
+      "width": 251,
+      "height": 60,
+      "class": "copy",
+      "uiname": "drag"
+    },
+    {
+      "name": "sep_a",
+      "left": 89,
+      "top": 125,
+      "width": 4,
+      "height": 830,
+      "class": "layer",
+      "uiname": "sep_a",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 4,
+          "h": 830,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "sep_b",
+      "left": 988,
+      "top": 125,
+      "width": 4,
+      "height": 830,
+      "class": "layer",
+      "uiname": "sep_b",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 4,
+          "h": 830,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "_drag",
+      "left": 0,
+      "top": 136,
+      "width": 251,
+      "height": 60,
+      "class": "layer",
+      "uiname": "_drag",
+      "uistates": {
+        "text": {
+          "ox": 52,
+          "oy": 18,
+          "w": 199,
+          "h": 24,
+          "storage": ""
+        },
+        "deftext": {
+          "ox": 53,
+          "oy": 22,
+          "cx": 260,
+          "cy": 60,
+          "w": 143,
+          "h": 17,
+          "storage": "option_cmds__pack"
+        },
+        "arrow": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 251,
+          "h": 60,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "label_a",
+      "left": 106,
+      "top": 137,
+      "width": 480,
+      "height": 32,
+      "class": "layer",
+      "uiname": "label_a",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 480,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "label_b",
+      "left": 1005,
+      "top": 137,
+      "width": 480,
+      "height": 32,
+      "class": "layer",
+      "uiname": "label_b",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 480,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "gsenable_rev",
+      "left": 131,
+      "top": 179,
+      "width": 369,
+      "height": 34,
+      "class": "toggle",
+      "uiname": "gsenable_rev",
+      "uistates": {
+        "text": {
+          "ox": 36,
+          "oy": 2,
+          "w": 333,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 489,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "over_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 326,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 455,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        },
+        "normal_off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 421,
+          "cy": 384,
+          "w": 34,
+          "h": 34,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "gsicon0",
+      "left": 1091,
+      "top": 195,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon0"
+    },
+    {
+      "name": "gsicon1",
+      "left": 1228,
+      "top": 195,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon1"
+    },
+    {
+      "name": "gsicon2",
+      "left": 1365,
+      "top": 195,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon2"
+    },
+    {
+      "name": "gsicon3",
+      "left": 1502,
+      "top": 195,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon3"
+    },
+    {
+      "name": "gsicon4",
+      "left": 1639,
+      "top": 195,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon4"
+    },
+    {
+      "name": "holder_u",
+      "left": 285,
+      "top": 261,
+      "width": 134,
+      "height": 134,
+      "class": "layer",
+      "uiname": "holder_u",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 60,
+          "w": 134,
+          "h": 134,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "gsbind_up",
+      "left": 286,
+      "top": 263,
+      "width": 131,
+      "height": 130,
+      "class": "toggle",
+      "uiname": "gsbind_up",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 130,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "label_a1",
+      "left": 773,
+      "top": 300,
+      "width": 131,
+      "height": 26,
+      "class": "layer",
+      "uiname": "label_a1",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 26,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "holder_m",
+      "left": 770,
+      "top": 325,
+      "width": 134,
+      "height": 134,
+      "class": "layer",
+      "uiname": "holder_m",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 60,
+          "w": 134,
+          "h": 134,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "gsbind_middle",
+      "left": 771,
+      "top": 327,
+      "width": 131,
+      "height": 130,
+      "class": "toggle",
+      "uiname": "gsbind_middle",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 130,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "gsicon5",
+      "left": 1091,
+      "top": 332,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon5"
+    },
+    {
+      "name": "gsicon6",
+      "left": 1228,
+      "top": 332,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon6"
+    },
+    {
+      "name": "gsicon7",
+      "left": 1365,
+      "top": 332,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon7"
+    },
+    {
+      "name": "gsicon8",
+      "left": 1502,
+      "top": 332,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon8"
+    },
+    {
+      "name": "gsicon9",
+      "left": 1639,
+      "top": 332,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon9"
+    },
+    {
+      "name": "mouse2",
+      "left": 254,
+      "top": 389,
+      "width": 192,
+      "height": 271,
+      "class": "layer",
+      "uiname": "mouse2",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 192,
+          "h": 271,
+          "storage": "option_7mouse__pack"
+        }
+      }
+    },
+    {
+      "name": "label_a2",
+      "left": 615,
+      "top": 434,
+      "width": 131,
+      "height": 26,
+      "class": "layer",
+      "uiname": "label_a2",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 26,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "holder_l",
+      "left": 126,
+      "top": 459,
+      "width": 134,
+      "height": 134,
+      "class": "layer",
+      "uiname": "holder_l",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 60,
+          "w": 134,
+          "h": 134,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "holder_r",
+      "left": 444,
+      "top": 459,
+      "width": 134,
+      "height": 134,
+      "class": "layer",
+      "uiname": "holder_r",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 60,
+          "w": 134,
+          "h": 134,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "holder_x2",
+      "left": 612,
+      "top": 459,
+      "width": 134,
+      "height": 134,
+      "class": "layer",
+      "uiname": "holder_x2",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 60,
+          "w": 134,
+          "h": 134,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "gsbind_left",
+      "left": 127,
+      "top": 461,
+      "width": 131,
+      "height": 130,
+      "class": "toggle",
+      "uiname": "gsbind_left",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 130,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "gsbind_right",
+      "left": 445,
+      "top": 461,
+      "width": 131,
+      "height": 130,
+      "class": "toggle",
+      "uiname": "gsbind_right",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 130,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "gsbind_mousex2",
+      "left": 613,
+      "top": 461,
+      "width": 131,
+      "height": 130,
+      "class": "toggle",
+      "uiname": "gsbind_mousex2",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 130,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "gsicon10",
+      "left": 1091,
+      "top": 469,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon10"
+    },
+    {
+      "name": "gsicon11",
+      "left": 1228,
+      "top": 469,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon11"
+    },
+    {
+      "name": "gsicon12",
+      "left": 1365,
+      "top": 469,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon12"
+    },
+    {
+      "name": "gsicon13",
+      "left": 1502,
+      "top": 469,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon13"
+    },
+    {
+      "name": "gsicon14",
+      "left": 1639,
+      "top": 469,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon14"
+    },
+    {
+      "name": "mouse1",
+      "left": 764,
+      "top": 484,
+      "width": 141,
+      "height": 217,
+      "class": "layer",
+      "uiname": "mouse1",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 192,
+          "cy": 0,
+          "w": 141,
+          "h": 217,
+          "storage": "option_7mouse__pack"
+        }
+      }
+    },
+    {
+      "name": "holder_x1",
+      "left": 612,
+      "top": 606,
+      "width": 134,
+      "height": 134,
+      "class": "layer",
+      "uiname": "holder_x1",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 60,
+          "w": 134,
+          "h": 134,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "gsicon15",
+      "left": 1091,
+      "top": 606,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon15"
+    },
+    {
+      "name": "gsicon16",
+      "left": 1228,
+      "top": 606,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon16"
+    },
+    {
+      "name": "gsicon17",
+      "left": 1365,
+      "top": 606,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon17"
+    },
+    {
+      "name": "gsicon18",
+      "left": 1502,
+      "top": 606,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon18"
+    },
+    {
+      "name": "gsicon19",
+      "left": 1639,
+      "top": 606,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon19"
+    },
+    {
+      "name": "gsbind_mousex1",
+      "left": 613,
+      "top": 608,
+      "width": 131,
+      "height": 130,
+      "class": "toggle",
+      "uiname": "gsbind_mousex1",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 130,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "holder_d",
+      "left": 285,
+      "top": 657,
+      "width": 134,
+      "height": 134,
+      "class": "layer",
+      "uiname": "holder_d",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 60,
+          "w": 134,
+          "h": 134,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "gsbind_down",
+      "left": 286,
+      "top": 659,
+      "width": 131,
+      "height": 130,
+      "class": "toggle",
+      "uiname": "gsbind_down",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 130,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "label_a3",
+      "left": 615,
+      "top": 739,
+      "width": 131,
+      "height": 26,
+      "class": "layer",
+      "uiname": "label_a3",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 26,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "gsicon20",
+      "left": 1091,
+      "top": 743,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon20"
+    },
+    {
+      "name": "gsicon21",
+      "left": 1228,
+      "top": 743,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon21"
+    },
+    {
+      "name": "gsicon22",
+      "left": 1365,
+      "top": 743,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon22"
+    },
+    {
+      "name": "gsicon23",
+      "left": 1502,
+      "top": 743,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon23"
+    },
+    {
+      "name": "gsicon24",
+      "left": 1639,
+      "top": 743,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon24"
+    },
+    {
+      "name": "gsicon25",
+      "left": 1639,
+      "top": 743,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon25"
+    },
+    {
+      "name": "gsicon26",
+      "left": 1639,
+      "top": 743,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon26"
+    },
+    {
+      "name": "gsicon27",
+      "left": 1639,
+      "top": 743,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon27"
+    },
+    {
+      "name": "gsicon28",
+      "left": 1639,
+      "top": 743,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon28"
+    },
+    {
+      "name": "gsicon29",
+      "left": 1639,
+      "top": 743,
+      "width": 131,
+      "height": 130,
+      "class": "copy",
+      "uiname": "gsicon29"
+    },
+    {
+      "name": "helpbase",
+      "left": 27,
+      "top": 979,
+      "width": 731,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helpbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 8,
+          "cy": 0,
+          "w": 731,
+          "h": 77,
+          "storage": "option__pack"
+        }
+      }
+    },
+    {
+      "name": "helptext",
+      "left": 43,
+      "top": 979,
+      "width": 715,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helptext",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 672,
+          "h": 62,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "reset",
+      "left": 923,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "reset"
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title"
+    },
+    {
+      "name": "_sysbtn",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_sysbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 326,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 442,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 106,
+          "cy": 384,
+          "w": 315,
+          "h": 58,
+          "storage": "option__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 315,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back"
+    }
+  ]
+}

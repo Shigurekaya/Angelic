@@ -1,0 +1,90 @@
+# 立ち絵鑑賞画面ヘルプテキスト
+
+back	title	title2
+	Go back to title screen.
+
+to_cg
+	Go to CG Gallery
+to_scene
+	Go to Scene Gallery
+to_voice
+	Go to Favorited Voice Clips Screen
+to_stand
+	Move to Sprite Gallery.
+
+?meswin
+	Display text window with text. (The text can be viewed when the screenshot is saved or when the UI is hidden)
+
+edit_save
+	Save current sprite data. Holding down shift key when pressing save will temporarily store sprite data in memory.
+
+edit_load
+	Load current sprite data. Holding down shift key when pressing load will temporarily load sprite data in memory.
+
+edit_hide
+	Hide UI and move characters and background (excluding fixed backgrounds.) (Same function as right-click.)
+
+edit_capt
+	Take a screenshop with the UI hidden.
+
+edit_mybg
+	Load a custom background image.
+
+edit_init
+	Reset all parameters for selected character or background. Holding down shift key when pressing the button will reset Sprite Mode completely.
+
+
+dress_frame	HELP_CHSEL_DRESS
+	Change the outfit of the current character.
+pose_frame	HELP_CHSEL_DIFF
+	Change the pose of the current character.
+face_help	HELP_CHSEL_FACE
+	Change the expression of the current character.
+
+fopt_h	fopt_n	fopt_r	fopt_d	fopt_e
+	Add extras to facial expression. Deactivate by clicking the same button again.
+
+chzoom_frame
+	Change the size of the current character. (Scale will be maintained with other characters)
+
+stage_frame	HELP_BGSEL_STAGE
+	Change the background.
+time_frame	HELP_BGSEL_TIME
+	Change background time of the day / special variations
+?chsel_pageup	?chsel_pagedown	?bgsel_pageup	?bgsel_pagedown
+	Scroll through thumbnail list
+?chsel_close	?bgsel_close
+	Close the thumbnail list display. You can also close it with right-click.
+
+chlock
+	Lock the position and size of selected characters. Also disables erase button.
+
+?chadd
+	Add more characters
+?chpale
+	Highlights the character being moved or modifed. When turned on, it locks all other elements besides the selected character.
+
+chdel
+	Erases selected character. ${!_chlocked?"":"\n[NOTE] Please unlock to erase this character."}
+?chfront
+	Bring selected character to the foreground.
+?chsort
+	Sort character list.
+
+
+HELP_DRAG
+	Select character by clicking and dragging.
+HELP_NODRAG
+	This character cannot be dragged. To move, select and unlock.
+
+HELP_CHIDX
+	Change selected character.
+HELP_CHIDX_DRAG
+	Change selected character. Change display order by dragging.
+
+HELP_CHDEL
+	Erase this character.
+
+HELP_CHDRAG
+	Drag into position to select display order.
+

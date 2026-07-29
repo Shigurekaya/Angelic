@@ -7,38 +7,39 @@
   },
   "btn_xy": {
     "start": [
-      137,
-      1003
+      88,
+      984
     ],
     "load": [
-      354,
-      1003
+      306,
+      984
     ],
     "continue": [
-      570,
-      1003
+      525,
+      984
     ],
     "flowchart": [
-      804,
-      1001
+      743,
+      984
     ],
     "extra": [
-      1010,
-      1003
+      962,
+      984
     ],
     "after": [
-      1228,
-      1003
+      1180,
+      984
     ],
     "system": [
-      1449,
-      1003
+      1399,
+      984
     ],
     "exit": [
-      1665,
-      1001
+      1617,
+      984
     ]
   },
+  "coord_source": "title_locale_cn.pbd via pbd2json",
   "language": {
     "x": 1798,
     "y": 59
@@ -51,90 +52,114 @@
     {
       "id": "start",
       "label": "从头开始",
-      "action": "toast",
-      "w": 118,
-      "h": 37,
+      "action": "start",
+      "w": 215,
+      "h": 96,
       "idle": "buttons/start_idle.png",
       "hover": "buttons/start_hover.png",
-      "x": 137,
-      "y": 1003
+      "sprite_w": 118,
+      "sprite_h": 37,
+      "x": 88,
+      "y": 984,
+      "source": "title_locale_cn.pbd via pbd2json"
     },
     {
       "id": "load",
       "label": "载入进度",
       "action": "load",
-      "w": 119,
-      "h": 37,
+      "w": 215,
+      "h": 96,
       "idle": "buttons/load_idle.png",
       "hover": "buttons/load_hover.png",
-      "x": 354,
-      "y": 1003
+      "sprite_w": 119,
+      "sprite_h": 37,
+      "x": 306,
+      "y": 984,
+      "source": "title_locale_cn.pbd via pbd2json"
     },
     {
       "id": "continue",
       "label": "继续游戏",
-      "action": "toast",
-      "w": 122,
-      "h": 41,
+      "action": "continue",
+      "w": 215,
+      "h": 96,
       "idle": "buttons/continue_idle.png",
       "hover": "buttons/continue_hover.png",
-      "x": 570,
-      "y": 1003
+      "sprite_w": 122,
+      "sprite_h": 41,
+      "x": 525,
+      "y": 984,
+      "source": "title_locale_cn.pbd via pbd2json"
     },
     {
       "id": "flowchart",
       "label": "流程图",
       "action": "flowchart",
-      "w": 95,
-      "h": 41,
+      "w": 215,
+      "h": 96,
       "idle": "buttons/flowchart_idle.png",
       "hover": "buttons/flowchart_hover.png",
-      "x": 804,
-      "y": 1001
+      "sprite_w": 95,
+      "sprite_h": 41,
+      "x": 743,
+      "y": 984,
+      "source": "title_locale_cn.pbd via pbd2json"
     },
     {
       "id": "extra",
       "label": "鉴赏模式",
       "action": "cg",
-      "w": 119,
-      "h": 38,
+      "w": 215,
+      "h": 96,
       "idle": "buttons/extra_idle.png",
       "hover": "buttons/extra_hover.png",
-      "x": 1010,
-      "y": 1003
+      "sprite_w": 119,
+      "sprite_h": 38,
+      "x": 962,
+      "y": 984,
+      "source": "title_locale_cn.pbd via pbd2json"
     },
     {
       "id": "after",
       "label": "追加剧情",
       "action": "afterstory",
-      "w": 119,
-      "h": 38,
+      "w": 215,
+      "h": 96,
       "idle": "buttons/after_idle.png",
       "hover": "buttons/after_hover.png",
-      "x": 1228,
-      "y": 1003
+      "sprite_w": 119,
+      "sprite_h": 38,
+      "x": 1180,
+      "y": 984,
+      "source": "title_locale_cn.pbd via pbd2json"
     },
     {
       "id": "system",
       "label": "系统设定",
       "action": "settings",
-      "w": 117,
-      "h": 38,
+      "w": 215,
+      "h": 96,
       "idle": "buttons/system_idle.png",
       "hover": "buttons/system_hover.png",
-      "x": 1449,
-      "y": 1003
+      "sprite_w": 117,
+      "sprite_h": 38,
+      "x": 1399,
+      "y": 984,
+      "source": "title_locale_cn.pbd via pbd2json"
     },
     {
       "id": "exit",
       "label": "退出游戏",
       "action": "quit",
-      "w": 121,
-      "h": 41,
+      "w": 215,
+      "h": 96,
       "idle": "buttons/exit_idle.png",
       "hover": "buttons/exit_hover.png",
-      "x": 1665,
-      "y": 1001
+      "sprite_w": 121,
+      "sprite_h": 41,
+      "x": 1617,
+      "y": 984,
+      "source": "title_locale_cn.pbd via pbd2json"
     }
   ],
   "layered": true

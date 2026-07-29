@@ -1,0 +1,6742 @@
+// ■チャートデータ各種定義
+//	※このファイルは自動生成されたものです！手動での編集はご遠慮ください！
+(const) %[
+	"branches" => (const) [
+		"s013*013_01_jump",
+		"s013*013_02_jump",
+		"s013*013_ama_route",
+		"s013*part_013_routejump"
+	],
+	"captions" => (const) %[
+		"s001*part_001" => (const) [
+			"【CHAPTER 1-1】"
+		],
+		"s002*part_002" => (const) [
+			"【CHAPTER 1-2】"
+		],
+		"s003*part_003" => (const) [
+			"【CHAPTER 1-3】"
+		],
+		"s003*part_003_sel1" => (const) [
+			"正直、可愛いと思う。"
+		],
+		"s004*part_004" => (const) [
+			"【CHAPTER 1-4】"
+		],
+		"s005*part_005" => (const) [
+			"【CHAPTER 1-5】"
+		],
+		"s005*part_005_sel1" => (const) [
+			"【天音】「じゃあ……どうしよっか？　誰の服から見に行く？」"
+		],
+		"s006*part_006" => (const) [
+			"【CHAPTER 2-1】"
+		],
+		"s006*part_006_sel1" => (const) [
+			"なんて返信すべきか。"
+		],
+		"s007*part_007" => (const) [
+			"【CHAPTER 2-2】"
+		],
+		"s008*part_008" => (const) [
+			"【CHAPTER 2-3】"
+		],
+		"s008*part_008_sel1" => (const) [
+			"【乃愛】「それで、どうだろうか？」"
+		],
+		"s009*chapter2-5" => (const) [
+			"【CHAPTER 2-5】"
+		],
+		"s009*part_009" => (const) [
+			"【CHAPTER 2-4】"
+		],
+		"s009*part_009_sel1" => (const) [
+			"【来海】「食べ物は……その時々かな。お菓子の時もあるし、軽めの食事を取ることもあるし」"
+		],
+		"s010*part_010" => (const) [
+			"【CHAPTER 2-6】"
+		],
+		"s011*part_011" => (const) [
+			"【CHAPTER 3-1】"
+		],
+		"s011*part_011_sel1" => (const) [
+			"【かぐ耶】「それに……こう見えても嫌いじゃないのよ。家事をすることが」"
+		],
+		"s012*chapter3-3" => (const) [
+			"【CHAPTER 3-3】"
+		],
+		"s012*part_012" => (const) [
+			"【CHAPTER 3-2】"
+		],
+		"s012*part_012_sel1" => (const) [
+			"【風実花】「なにかわからないことがあったら、いつでも質問しに来ていいからね」"
+		],
+		"s013*013_01com_jump" => (const) [
+			"【CHAPTER 3-4】"
+		],
+		"s013*part_013" => (const) [
+			"【CHAPTER 3-4】"
+		],
+		"s013*part_013_01com" => (const) [
+			"【CHAPTER 3-4】"
+		],
+		"s013*part_013_02com" => (const) [
+			"【CHAPTER 3-4】"
+		],
+		"s013*part_013_03com" => (const) [
+			"【CHAPTER 3-4】"
+		],
+		"s013*part_013_sel1" => (const) [
+			"それでも目を引く。特に俺の目を引いたのは――"
+		],
+		"s013*part_013_sel2" => (const) [
+			"同時に、ここで意地になって雰囲気を悪くするのも申し訳ないと思うようになって、俺は……。"
+		],
+		"s013*part_013_sel3" => (const) [
+			"【李空】「俺も探した方がいいかな……？」"
+		],
+		"s013*part_013_sel4" => (const) [
+			"【オリエ】「では、どういう意味でしょうか？」"
+		],
+		"s101" => (const) [
+			"CHAPTER 4",
+			"【乃愛】01.ks"
+		],
+		"s101*part_101" => (const) [
+			"【CHAPTER 4-1】"
+		],
+		"s102" => (const) [
+			"CHAPTER 4",
+			"【乃愛】02.ks"
+		],
+		"s102*part_102" => (const) [
+			"【CHAPTER 4-2】"
+		],
+		"s103" => (const) [
+			"CHAPTER 4",
+			"【乃愛】03.ks"
+		],
+		"s103*part_103" => (const) [
+			"【CHAPTER 4-3】"
+		],
+		"s104" => (const) [
+			"CHAPTER 5",
+			"【乃愛】04.ks"
+		],
+		"s104*part_104" => (const) [
+			"【CHAPTER 5-1】"
+		],
+		"s105" => (const) [
+			"CHAPTER 5",
+			"【乃愛】05.ks"
+		],
+		"s105*part_105" => (const) [
+			"【CHAPTER 5-2】"
+		],
+		"s106" => (const) [
+			"CHAPTER 5",
+			"【乃愛】06.ks"
+		],
+		"s106*part_106" => (const) [
+			"【CHAPTER 5-3】"
+		],
+		"s107" => (const) [
+			"CHAPTER 5",
+			"【乃愛】07（H1）.ks"
+		],
+		"s107*part_107" => (const) [
+			"【CHAPTER 5-4】"
+		],
+		"s107*part_107_sel1" => (const) [
+			"【乃愛】「だから……いいよ。出していいんだ。僕にもっと、君のことを教えて欲しいから」"
+		],
+		"s107*part_107_sel2" => (const) [
+			"【李空】「乃愛……！　イく……っ！」"
+		],
+		"s108" => (const) [
+			"CHAPTER 6",
+			"【乃愛】08.ks"
+		],
+		"s108*part_108" => (const) [
+			"【CHAPTER 6-1】"
+		],
+		"s109" => (const) [
+			"CHAPTER 6",
+			"【乃愛】09（H2）.ks"
+		],
+		"s109*part_109" => (const) [
+			"【CHAPTER 6-2】"
+		],
+		"s109*part_109_sel1" => (const) [
+			"このまま、乃愛と一緒に昇りつめたい。そして――"
+		],
+		"s110" => (const) [
+			"CHAPTER 6",
+			"【乃愛】10.ks"
+		],
+		"s110*part_110" => (const) [
+			"【CHAPTER 6-3】"
+		],
+		"s111" => (const) [
+			"CHAPTER 6",
+			"【乃愛】11.ks"
+		],
+		"s111*part_111" => (const) [
+			"【CHAPTER 6-4】"
+		],
+		"s112" => (const) [
+			"CHAPTER 6",
+			"【乃愛】12（BAD-H）.ks"
+		],
+		"s112*part_112" => (const) [
+			"【CHAPTER 6-5】"
+		],
+		"s112*part_112_sel1" => (const) [
+			"【乃愛】「李空？　どうか、した？　僕とするの、いや？」"
+		],
+		"s113" => (const) [
+			"CHAPTER 7",
+			"【乃愛】13.ks"
+		],
+		"s113*part_113" => (const) [
+			"【CHAPTER 7-1】"
+		],
+		"s114" => (const) [
+			"CHAPTER 7",
+			"【乃愛】14（H3）END.ks"
+		],
+		"s114*part_114" => (const) [
+			"【CHAPTER 7-2】"
+		],
+		"s114*part_114_sel1" => (const) [
+			"【乃愛】「しゃせい、して……また、だして。びゅるびゅる～って、らして……んっ、んっ、んっ……んんんーー」"
+		],
+		"s114*part_114_sel2" => (const) [
+			"【李空】「乃愛、ゴメン……我慢、できないっ」"
+		],
+		"s115" => (const) [
+			"EPILOGUE",
+			"【乃愛】15（EP）.ks"
+		],
+		"s115*part_115" => (const) [
+			"【epilogue】"
+		],
+		"s116" => (const) [
+			"AFTER STORY",
+			"【乃愛】16（H4）.ks"
+		],
+		"s116*part_116" => (const) [
+			"【after story】"
+		],
+		"s116*part_116_sel1" => (const) [
+			"【乃愛】「いいよ、なってぇ……おち●ぽ、バカになっちゃぇ……んっ、んっ、んんんんーーーっ！」"
+		],
+		"s200" => (const) [
+			"CHAPTER 3",
+			"【天音】00_分岐.ks"
+		],
+		"s200*part_200" => (const) [
+			"【CHAPTER 3-4】"
+		],
+		"s201" => (const) [
+			"CHAPTER 4",
+			"【天音】01.ks"
+		],
+		"s201*part_201" => (const) [
+			"【CHAPTER 4-1】"
+		],
+		"s202" => (const) [
+			"CHAPTER 4",
+			"【天音】02_2.ks"
+		],
+		"s202*part_202" => (const) [
+			"【CHAPTER 4-2】"
+		],
+		"s203" => (const) [
+			"CHAPTER 4",
+			"【天音】03.ks"
+		],
+		"s203*part_203" => (const) [
+			"【CHAPTER 4-3】"
+		],
+		"s204" => (const) [
+			"CHAPTER 4",
+			"【天音】04.ks"
+		],
+		"s204*part_204" => (const) [
+			"【CHAPTER 4-4】"
+		],
+		"s205" => (const) [
+			"CHAPTER 5",
+			"【天音】05_2.ks"
+		],
+		"s205*part_205" => (const) [
+			"【CHAPTER 5-1】"
+		],
+		"s206" => (const) [
+			"CHAPTER 5",
+			"【天音】06（H1）.ks"
+		],
+		"s206*part_206" => (const) [
+			"【CHAPTER 5-2】"
+		],
+		"s206*part_206_sel1" => (const) [
+			"【天音】「ぢゅぽ、ぢゅっぽぢゅっぽ……んんーーーっ、ぷぁ！　お兄の匂い、どんどん濃くなってる……イきそう……？」"
+		],
+		"s206*part_206_sel2" => (const) [
+			"【李空】「ぅぅぅぁぁぁっ」"
+		],
+		"s207" => (const) [
+			"CHAPTER 5",
+			"【天音】07.ks"
+		],
+		"s207*part_207" => (const) [
+			"【CHAPTER 5-3】"
+		],
+		"s208" => (const) [
+			"CHAPTER 5",
+			"【天音】08（H2）.ks"
+		],
+		"s208*part_208" => (const) [
+			"【CHAPTER 5-4】"
+		],
+		"s208*part_208_sel1" => (const) [
+			"【天音】「また、来た……！　これ、お腹、響いて……引きずり、出されるみたいな……ぁぁぁぁあああ゛あ゛あ゛」"
+		],
+		"s209" => (const) [
+			"CHAPTER 6",
+			"【天音】09.ks"
+		],
+		"s209*part_209" => (const) [
+			"【CHAPTER 6-1】"
+		],
+		"s210" => (const) [
+			"CHAPTER 6",
+			"【天音】10（H3）.ks"
+		],
+		"s210*part_210" => (const) [
+			"【CHAPTER 6-2】"
+		],
+		"s211" => (const) [
+			"CHAPTER 6",
+			"【天音】11.ks"
+		],
+		"s211*part_211" => (const) [
+			"【CHAPTER 6-3】"
+		],
+		"s212" => (const) [
+			"CHAPTER 7",
+			"【天音】12（END）.ks"
+		],
+		"s212*part_212" => (const) [
+			"【CHAPTER 7-1】"
+		],
+		"s213" => (const) [
+			"EPILOGUE",
+			"【天音】13（EP-H4）.ks"
+		],
+		"s213*part_213" => (const) [
+			"【epilogue】"
+		],
+		"s213*part_213_sel1" => (const) [
+			"【李空】「……っ！　天音、もぅ……イく……っ」"
+		],
+		"s213*part_213_sel2" => (const) [
+			"意識が飛びそうになるのを、なんとか堪えながら、俺は――"
+		],
+		"s214" => (const) [
+			"AFTER STORY",
+			"【天音】14（after）.ks"
+		],
+		"s214*part_214" => (const) [
+			"【after story】"
+		],
+		"s214*part_214_sel1" => (const) [
+			"【天音】「ごめっんっ、なさぃっ……でも、ワタシッ、ワタシッ……ああああっ、ぎもぢよす゛き゛て゛ぇ゛ぇ゛……ん゛ん゛ん゛っ！」"
+		],
+		"s214*part_214_sel2" => (const) [
+			"【李空】「はっ、はぁ……はぁ……俺も、イく……っ、出すからな、天音」"
+		],
+		"s301" => (const) [
+			"CHAPTER 4",
+			"【来海】01.ks"
+		],
+		"s301*part_301" => (const) [
+			"【CHAPTER 4-1】"
+		],
+		"s302" => (const) [
+			"CHAPTER 4",
+			"【来海】02.ks"
+		],
+		"s302*part_302" => (const) [
+			"【CHAPTER 4-2】"
+		],
+		"s303" => (const) [
+			"CHAPTER 4",
+			"【来海】03.ks"
+		],
+		"s303*part_303" => (const) [
+			"【CHAPTER 4-3】"
+		],
+		"s304" => (const) [
+			"CHAPTER 4",
+			"【来海】04.ks"
+		],
+		"s304*part_304" => (const) [
+			"【CHAPTER 4-4】"
+		],
+		"s305" => (const) [
+			"CHAPTER 4",
+			"【来海】05.ks"
+		],
+		"s305*part_305" => (const) [
+			"【CHAPTER 4-5】"
+		],
+		"s306" => (const) [
+			"CHAPTER 4",
+			"【来海】06.ks"
+		],
+		"s306*part_306" => (const) [
+			"【CHAPTER 4-6】"
+		],
+		"s307" => (const) [
+			"CHAPTER 5",
+			"【来海】07.ks"
+		],
+		"s307*part_307" => (const) [
+			"【CHAPTER 5-1】"
+		],
+		"s308" => (const) [
+			"CHAPTER 5",
+			"【来海】08.ks"
+		],
+		"s308*part_308" => (const) [
+			"【CHAPTER 5-2】"
+		],
+		"s309" => (const) [
+			"CHAPTER 5",
+			"【来海】09.ks"
+		],
+		"s309*part_309" => (const) [
+			"【CHAPTER 5-3】"
+		],
+		"s310" => (const) [
+			"CHAPTER 5",
+			"【来海】10.ks"
+		],
+		"s310*part_310" => (const) [
+			"【CHAPTER 5-4】"
+		],
+		"s311" => (const) [
+			"CHAPTER 6",
+			"【来海】11.ks"
+		],
+		"s311*part_311" => (const) [
+			"【CHAPTER 6-1】"
+		],
+		"s312" => (const) [
+			"CHAPTER 6",
+			"【来海】12.ks"
+		],
+		"s312*part_312" => (const) [
+			"【CHAPTER 6-2】"
+		],
+		"s313" => (const) [
+			"CHAPTER 6",
+			"【来海】13.ks"
+		],
+		"s313*part_313" => (const) [
+			"【CHAPTER 6-3】"
+		],
+		"s314" => (const) [
+			"CHAPTER 6",
+			"【来海】14.ks"
+		],
+		"s314*part_314" => (const) [
+			"【CHAPTER 6-4】"
+		],
+		"s315" => (const) [
+			"CHAPTER 7",
+			"【来海】15.ks"
+		],
+		"s315*part_315" => (const) [
+			"【CHAPTER 7-1】"
+		],
+		"s316" => (const) [
+			"CHAPTER 7",
+			"【来海】16.ks"
+		],
+		"s316*part_316" => (const) [
+			"【CHAPTER 7-2】"
+		],
+		"s317" => (const) [
+			"CHAPTER 7",
+			"【来海】17.ks"
+		],
+		"s317*part_317" => (const) [
+			"【CHAPTER 7-3】"
+		],
+		"s317*part_317_sel1" => (const) [
+			"【来海】「出そう？　いいよ、出して、出して、ぁ、んっ、出してぇっ、ふぁ、ぁ、ぁ、ぁっ！」"
+		],
+		"s318" => (const) [
+			"CHAPTER 7",
+			"【来海】18.ks"
+		],
+		"s318*part_318" => (const) [
+			"【CHAPTER 7-4】"
+		],
+		"s319" => (const) [
+			"CHAPTER 8",
+			"【来海】19.ks"
+		],
+		"s319*part_319" => (const) [
+			"【CHAPTER 8-1】"
+		],
+		"s319*part_319_sel1" => (const) [
+			"だったら、さりげなく確認を――あぁいや駄目だっ！　もう間に合わない！"
+		],
+		"s320" => (const) [
+			"CHAPTER 8",
+			"【来海】20.ks"
+		],
+		"s320*part_320" => (const) [
+			"【CHAPTER 8-2】"
+		],
+		"s320*part_320_sel1" => (const) [
+			"【来海】「ぁ、はっ、んんっ！　それ、すごっ、んんっ、も、ダメッ、イク、ぁ、イクイク……ッ！」"
+		],
+		"s321" => (const) [
+			"EPILOGUE",
+			"【来海】21.ks"
+		],
+		"s321*part_321" => (const) [
+			"【epilogue】"
+		],
+		"s322" => (const) [
+			"AFTER STORY",
+			"【来海】アフター.ks"
+		],
+		"s322*part_322" => (const) [
+			"【after story】"
+		],
+		"s401" => (const) [
+			"CHAPTER 4",
+			"【かぐ耶】01.ks"
+		],
+		"s401*part_401" => (const) [
+			"【CHAPTER 4-1】"
+		],
+		"s402" => (const) [
+			"CHAPTER 4",
+			"【かぐ耶】02.ks"
+		],
+		"s402*part_402" => (const) [
+			"【CHAPTER 4-2】"
+		],
+		"s403" => (const) [
+			"CHAPTER 4",
+			"【かぐ耶】03.ks"
+		],
+		"s403*part_403" => (const) [
+			"【CHAPTER 4-3】"
+		],
+		"s404" => (const) [
+			"CHAPTER 4",
+			"【かぐ耶】04.ks"
+		],
+		"s404*chapter4-5_kag" => (const) [
+			"【CHAPTER 4-5】"
+		],
+		"s404*part_404" => (const) [
+			"【CHAPTER 4-4】"
+		],
+		"s405" => (const) [
+			"CHAPTER 4",
+			"【かぐ耶】05.ks"
+		],
+		"s405*part_405" => (const) [
+			"【CHAPTER 4-6】"
+		],
+		"s406" => (const) [
+			"CHAPTER 4",
+			"【かぐ耶】06.ks"
+		],
+		"s406*chapter4-8_kag" => (const) [
+			"【CHAPTER 4-8】"
+		],
+		"s406*part_406" => (const) [
+			"【CHAPTER 4-7】"
+		],
+		"s407" => (const) [
+			"CHAPTER 4",
+			"【かぐ耶】07.ks"
+		],
+		"s407*part_407" => (const) [
+			"【CHAPTER 4-9】"
+		],
+		"s408" => (const) [
+			"CHAPTER 5",
+			"【かぐ耶】08.ks"
+		],
+		"s408*chapter5-2_kag" => (const) [
+			"【CHAPTER 5-2】"
+		],
+		"s408*chapter5-3_kag" => (const) [
+			"【CHAPTER 5-3】"
+		],
+		"s408*part_408" => (const) [
+			"【CHAPTER 5-1】"
+		],
+		"s409" => (const) [
+			"CHAPTER 5",
+			"【かぐ耶】09.ks"
+		],
+		"s409*part_409" => (const) [
+			"【CHAPTER 5-4】"
+		],
+		"s410" => (const) [
+			"CHAPTER 5",
+			"【かぐ耶】10.ks"
+		],
+		"s410*part_410" => (const) [
+			"【CHAPTER 5-5】"
+		],
+		"s411" => (const) [
+			"CHAPTER 5",
+			"【かぐ耶】11.ks"
+		],
+		"s411*part_411" => (const) [
+			"【CHAPTER 5-6】"
+		],
+		"s412" => (const) [
+			"CHAPTER 6",
+			"【かぐ耶】12.ks"
+		],
+		"s412*chapter6-2_kag" => (const) [
+			"【CHAPTER 6-2】"
+		],
+		"s412*part_412" => (const) [
+			"【CHAPTER 6-1】"
+		],
+		"s413" => (const) [
+			"CHAPTER 6",
+			"【かぐ耶】13.ks"
+		],
+		"s413*chapter6-4_kag" => (const) [
+			"【CHAPTER 6-4】"
+		],
+		"s413*part_413" => (const) [
+			"【CHAPTER 6-3】"
+		],
+		"s414" => (const) [
+			"CHAPTER 6",
+			"【かぐ耶】14.ks"
+		],
+		"s414*part_414" => (const) [
+			"【CHAPTER 6-5】"
+		],
+		"s415" => (const) [
+			"CHAPTER 6",
+			"【かぐ耶】15.ks"
+		],
+		"s415*part_415" => (const) [
+			"【CHAPTER 6-6】"
+		],
+		"s416" => (const) [
+			"CHAPTER 7",
+			"【かぐ耶】16.ks"
+		],
+		"s416*part_416" => (const) [
+			"【CHAPTER 7-1】"
+		],
+		"s417" => (const) [
+			"CHAPTER 7",
+			"【かぐ耶】17.ks"
+		],
+		"s417*part_417" => (const) [
+			"【CHAPTER 7-2】"
+		],
+		"s418" => (const) [
+			"CHAPTER 7",
+			"【かぐ耶】18.ks"
+		],
+		"s418*part_418" => (const) [
+			"【CHAPTER 7-3】"
+		],
+		"s419" => (const) [
+			"EPILOGUE",
+			"【かぐ耶】19.ks"
+		],
+		"s419*part_419" => (const) [
+			"【epilogue】"
+		],
+		"s420" => (const) [
+			"AFTER STORY",
+			"【かぐ耶】20.ks"
+		],
+		"s420*part_420" => (const) [
+			"【after story】"
+		],
+		"s501" => (const) [
+			"CHAPTER 4",
+			"E01_4.ks"
+		],
+		"s501*part_501" => (const) [
+			"【CHAPTER 4-1】"
+		],
+		"s502" => (const) [
+			"CHAPTER 4",
+			"E02_2.ks"
+		],
+		"s502*part_502" => (const) [
+			"【CHAPTER 4-1】"
+		],
+		"s503" => (const) [
+			"CHAPTER 4",
+			"E03_3.ks"
+		],
+		"s503*part_503" => (const) [
+			"【CHAPTER 4-2】"
+		],
+		"s504" => (const) [
+			"CHAPTER 4",
+			"E04H.ks"
+		],
+		"s504*part_504" => (const) [
+			"【CHAPTER 4-3】"
+		],
+		"s505" => (const) [
+			"CHAPTER 4",
+			"E05.ks"
+		],
+		"s505*part_505" => (const) [
+			"【CHAPTER 4-3】"
+		],
+		"s506" => (const) [
+			"CHAPTER 5",
+			"E06_2.ks"
+		],
+		"s506*chapter5-2_ori" => (const) [
+			"【CHAPTER 5-2】"
+		],
+		"s506*part_506" => (const) [
+			"【CHAPTER 5-1】"
+		],
+		"s507" => (const) [
+			"CHAPTER 5",
+			"E07_3.ks"
+		],
+		"s507*chapter5-4_ori" => (const) [
+			"【CHAPTER 5-4】"
+		],
+		"s507*part_507" => (const) [
+			"【CHAPTER 5-3】"
+		],
+		"s508" => (const) [
+			"CHAPTER 5",
+			"E08_3.ks"
+		],
+		"s508*part_508" => (const) [
+			"【CHAPTER 5-4】"
+		],
+		"s509" => (const) [
+			"CHAPTER 6",
+			"E09_2.ks"
+		],
+		"s509*part_509" => (const) [
+			"【CHAPTER 6-1】"
+		],
+		"s510" => (const) [
+			"CHAPTER 6",
+			"E10_2.ks"
+		],
+		"s510*part_510" => (const) [
+			"【CHAPTER 6-2】"
+		],
+		"s511" => (const) [
+			"CHAPTER 6",
+			"E11H_2.ks"
+		],
+		"s511*part_511" => (const) [
+			"【CHAPTER 6-2】"
+		],
+		"s512" => (const) [
+			"CHAPTER 6",
+			"E12.ks"
+		],
+		"s512*part_512" => (const) [
+			"【CHAPTER 6-2】"
+		],
+		"s513" => (const) [
+			"CHAPTER 7",
+			"E13_3.ks"
+		],
+		"s513*part_513" => (const) [
+			"【CHAPTER 7-1】"
+		],
+		"s514" => (const) [
+			"CHAPTER 7",
+			"E14H.ks"
+		],
+		"s515" => (const) [
+			"CHAPTER 7",
+			"E15_2.ks"
+		],
+		"s515*part_515" => (const) [
+			"【CHAPTER 7-1】"
+		],
+		"s516" => (const) [
+			"CHAPTER 7",
+			"E16.ks"
+		],
+		"s516*part_516" => (const) [
+			"【CHAPTER 7-2】"
+		],
+		"s517" => (const) [
+			"CHAPTER 7",
+			"E17.ks"
+		],
+		"s517*part_517" => (const) [
+			"【CHAPTER 7-2】"
+		],
+		"s518" => (const) [
+			"CHAPTER 7",
+			"E18H.ks"
+		],
+		"s519" => (const) [
+			"CHAPTER 7",
+			"E19.ks"
+		],
+		"s519*part_519" => (const) [
+			"【CHAPTER 7-2】"
+		],
+		"s520" => (const) [
+			"EPILOGUE",
+			"E20.ks"
+		],
+		"s520*part_520" => (const) [
+			"【epilogue】"
+		],
+		"s521" => (const) [
+			"AFTER STORY",
+			"E21アフターH.ks"
+		],
+		"s521*part_521" => (const) [
+			"【after story】"
+		],
+		"s601" => (const) [
+			"CHAPTER 4",
+			"【風実花】01（お土産）.ks"
+		],
+		"s601*part_601" => (const) [
+			"【CHAPTER 4-1】"
+		],
+		"s602" => (const) [
+			"CHAPTER 4",
+			"【風実花】02（ドキドキ）.ks"
+		],
+		"s602*part_602" => (const) [
+			"【CHAPTER 4-2】"
+		],
+		"s603" => (const) [
+			"CHAPTER 4",
+			"【風実花】03（水着）.ks"
+		],
+		"s603*part_603" => (const) [
+			"【CHAPTER 4-3】"
+		],
+		"s604" => (const) [
+			"CHAPTER 4",
+			"【風実花】04（課外授業）.ks"
+		],
+		"s604*chapter4-5_fum" => (const) [
+			"【CHAPTER 4-5】"
+		],
+		"s604*chapter4-6_fum" => (const) [
+			"【CHAPTER 4-6】"
+		],
+		"s604*part_604" => (const) [
+			"【CHAPTER 4-4】"
+		],
+		"s605" => (const) [
+			"CHAPTER 5",
+			"【風実花】05（海）.ks"
+		],
+		"s605*chapter5-2_fum" => (const) [
+			"【CHAPTER 5-2】"
+		],
+		"s605*part_605" => (const) [
+			"【CHAPTER 5-1】"
+		],
+		"s606" => (const) [
+			"CHAPTER 5",
+			"【風実花】06（しつこい男）.ks"
+		],
+		"s606*part_606" => (const) [
+			"【CHAPTER 5-3】"
+		],
+		"s607" => (const) [
+			"EPILOGUE",
+			"【風実花】07（END）.ks"
+		],
+		"s607*part_607" => (const) [
+			"【epilogue】"
+		],
+		"s608" => (const) [
+			"AFTER STORY",
+			"【風実花】08（after）.ks"
+		],
+		"s608*part_608" => (const) [
+			"【after story】"
+		]
+	],
+	"chain" => (const) %[
+		"s001*part_001" => "s002*part_002",
+		"s002*part_002" => "s003*part_003",
+		"s003*part_003" => "s003*part_003_sel1",
+		"s003*part_003_01B" => "s004*part_004",
+		"s003*part_003_sel1" => (const) [
+			"s099*part_003_01A",
+			"s003*part_003_01B"
+		],
+		"s003*part_003_sel1:s003*part_003_01B" => (const) [
+			"select",
+			2
+		],
+		"s003*part_003_sel1:s099*part_003_01A" => (const) [
+			"select",
+			1
+		],
+		"s004*part_004" => "s005*part_005",
+		"s005*part_005" => "s005*part_005_sel1",
+		"s005*part_005_01A" => "s005*part_005_01com",
+		"s005*part_005_01B" => "s005*part_005_01com",
+		"s005*part_005_01C" => "s005*part_005_01com",
+		"s005*part_005_01com" => "s006*part_006",
+		"s005*part_005_sel1" => (const) [
+			"s005*part_005_01A",
+			"s005*part_005_01B",
+			"s005*part_005_01C"
+		],
+		"s005*part_005_sel1:s005*part_005_01A" => (const) [
+			"select",
+			1
+		],
+		"s005*part_005_sel1:s005*part_005_01B" => (const) [
+			"select",
+			2
+		],
+		"s005*part_005_sel1:s005*part_005_01C" => (const) [
+			"select",
+			3
+		],
+		"s006*part_006" => "s006*part_006_sel1",
+		"s006*part_006_01A" => "s006*part_006_01com",
+		"s006*part_006_01B" => "s006*part_006_01com",
+		"s006*part_006_01com" => "s007*part_007",
+		"s006*part_006_sel1" => (const) [
+			"s006*part_006_01A",
+			"s006*part_006_01B"
+		],
+		"s006*part_006_sel1:s006*part_006_01A" => (const) [
+			"select",
+			1
+		],
+		"s006*part_006_sel1:s006*part_006_01B" => (const) [
+			"select",
+			2
+		],
+		"s007*part_007" => "s008*part_008",
+		"s008*part_008" => "s008*part_008_sel1",
+		"s008*part_008_01A" => "s009*part_009",
+		"s008*part_008_01B" => "s009*part_009",
+		"s008*part_008_sel1" => (const) [
+			"s008*part_008_01A",
+			"s008*part_008_01B"
+		],
+		"s008*part_008_sel1:s008*part_008_01A" => (const) [
+			"select",
+			1
+		],
+		"s008*part_008_sel1:s008*part_008_01B" => (const) [
+			"select",
+			2
+		],
+		"s009*chapter2-5" => "s009*part_009_sel1",
+		"s009*part_009" => "s009*chapter2-5",
+		"s009*part_009_01A" => "s009*part_009_01com",
+		"s009*part_009_01B" => "s009*part_009_01com",
+		"s009*part_009_01com" => "s010*part_010",
+		"s009*part_009_sel1" => (const) [
+			"s009*part_009_01A",
+			"s009*part_009_01B"
+		],
+		"s009*part_009_sel1:s009*part_009_01A" => (const) [
+			"select",
+			1
+		],
+		"s009*part_009_sel1:s009*part_009_01B" => (const) [
+			"select",
+			2
+		],
+		"s010*part_010" => "s011*part_011",
+		"s011*part_011" => "s011*part_011_sel1",
+		"s011*part_011_01A" => "s012*part_012",
+		"s011*part_011_01B" => "s012*part_012",
+		"s011*part_011_sel1" => (const) [
+			"s011*part_011_01A",
+			"s011*part_011_01B"
+		],
+		"s011*part_011_sel1:s011*part_011_01A" => (const) [
+			"select",
+			1
+		],
+		"s011*part_011_sel1:s011*part_011_01B" => (const) [
+			"select",
+			2
+		],
+		"s012*chapter3-3" => "s013*part_013",
+		"s012*part_012" => "s012*part_012_sel1",
+		"s012*part_012_01A" => "s012*chapter3-3",
+		"s012*part_012_01B" => "s012*chapter3-3",
+		"s012*part_012_sel1" => (const) [
+			"s012*part_012_01A",
+			"s012*part_012_01B"
+		],
+		"s012*part_012_sel1:s012*part_012_01A" => (const) [
+			"select",
+			1
+		],
+		"s012*part_012_sel1:s012*part_012_01B" => (const) [
+			"select",
+			2
+		],
+		"s013*013_01A_jump" => "s013*013_01com_jump",
+		"s013*013_01_jump" => (const) [
+			"s013*013_01A_jump",
+			"s600*part_600",
+			"s013*013_01com_jump"
+		],
+		"s013*013_01_jump:s013*013_01A_jump" => (const) [
+			"branch",
+			"ama == 2"
+		],
+		"s013*013_01_jump:s013*013_01com_jump" => (const) [
+			"branch",
+			void
+		],
+		"s013*013_01_jump:s600*part_600" => (const) [
+			"branch",
+			"fum == 2"
+		],
+		"s013*013_01com_jump" => "s013*013_02_jump",
+		"s013*013_02_jump" => (const) [
+			"s100*part_100",
+			"s013*013_02com_jump"
+		],
+		"s013*013_02_jump:s013*013_02com_jump" => (const) [
+			"branch",
+			void
+		],
+		"s013*013_02_jump:s100*part_100" => (const) [
+			"branch",
+			"noa == 2"
+		],
+		"s013*013_02com_jump" => "s013*part_013_sel3",
+		"s013*013_04com" => "s013*part_013_routejump",
+		"s013*013_ama_route" => (const) [
+			"s013*route_jump_ama",
+			"s013*013_04com"
+		],
+		"s013*013_ama_route:s013*013_04com" => (const) [
+			"branch",
+			void
+		],
+		"s013*013_ama_route:s013*route_jump_ama" => (const) [
+			"branch",
+			"ama == 2 && sel08_flag == 0"
+		],
+		"s013*part_013" => "s013*part_013_sel1",
+		"s013*part_013_01A" => "s013*part_013_01com",
+		"s013*part_013_01B" => "s013*part_013_01com",
+		"s013*part_013_01C" => "s013*part_013_01com",
+		"s013*part_013_01D" => "s013*part_013_01com",
+		"s013*part_013_01E" => "s013*part_013_01com",
+		"s013*part_013_01com" => "s013*part_013_sel2",
+		"s013*part_013_02A" => "s013*part_013_02com",
+		"s013*part_013_02B" => "s013*part_013_02com",
+		"s013*part_013_02com" => "s013*013_01_jump",
+		"s013*part_013_03A" => "s013*part_013_03com",
+		"s013*part_013_03B" => "s013*part_013_03com",
+		"s013*part_013_03C" => "s013*part_013_sel4",
+		"s013*part_013_03com" => "s013*013_ama_route",
+		"s013*part_013_04A" => "s013*part_013_03com",
+		"s013*part_013_04B" => "s013*part_013_03com",
+		"s013*part_013_routejump" => (const) [
+			"s013*route_jump_noa",
+			"s013*route_jump_kur",
+			"s013*route_jump_kag",
+			"s013*route_jump_ori",
+			"s013*route_jump_fum",
+			"s013*normal_end"
+		],
+		"s013*part_013_routejump:s013*normal_end" => (const) [
+			"branch",
+			void
+		],
+		"s013*part_013_routejump:s013*route_jump_fum" => (const) [
+			"branch",
+			"fum == 2 && sel08_flag == 0 && .checkAnyClear"
+		],
+		"s013*part_013_routejump:s013*route_jump_kag" => (const) [
+			"branch",
+			"kag == 2 && sel08_flag == 0"
+		],
+		"s013*part_013_routejump:s013*route_jump_kur" => (const) [
+			"branch",
+			"kur == 2 && sel08_flag == 0"
+		],
+		"s013*part_013_routejump:s013*route_jump_noa" => (const) [
+			"branch",
+			"noa == 2 && sel08_flag == 1"
+		],
+		"s013*part_013_routejump:s013*route_jump_ori" => (const) [
+			"branch",
+			"ori == 2 && sel08_flag == 0 && .checkAnyClear"
+		],
+		"s013*part_013_sel1" => (const) [
+			"s013*part_013_01A",
+			"s013*part_013_01C",
+			"s013*part_013_01D",
+			"s013*part_013_01E",
+			"s013*part_013_01B"
+		],
+		"s013*part_013_sel1:s013*part_013_01A" => (const) [
+			"select",
+			1
+		],
+		"s013*part_013_sel1:s013*part_013_01B" => (const) [
+			"select",
+			5
+		],
+		"s013*part_013_sel1:s013*part_013_01C" => (const) [
+			"select",
+			2
+		],
+		"s013*part_013_sel1:s013*part_013_01D" => (const) [
+			"select",
+			3
+		],
+		"s013*part_013_sel1:s013*part_013_01E" => (const) [
+			"select",
+			4
+		],
+		"s013*part_013_sel2" => (const) [
+			"s013*part_013_02A",
+			"s013*part_013_02B"
+		],
+		"s013*part_013_sel2:s013*part_013_02A" => (const) [
+			"select",
+			1
+		],
+		"s013*part_013_sel2:s013*part_013_02B" => (const) [
+			"select",
+			2
+		],
+		"s013*part_013_sel3" => (const) [
+			"s013*part_013_03A",
+			"s013*part_013_03B",
+			"s013*part_013_03C"
+		],
+		"s013*part_013_sel3:s013*part_013_03A" => (const) [
+			"select",
+			1
+		],
+		"s013*part_013_sel3:s013*part_013_03B" => (const) [
+			"select",
+			2
+		],
+		"s013*part_013_sel3:s013*part_013_03C" => (const) [
+			"select",
+			3
+		],
+		"s013*part_013_sel4" => (const) [
+			"s013*part_013_04A",
+			"s013*part_013_04B"
+		],
+		"s013*part_013_sel4:s013*part_013_04A" => (const) [
+			"select",
+			1
+		],
+		"s013*part_013_sel4:s013*part_013_04B" => (const) [
+			"select",
+			2
+		],
+		"s100*part_100" => "s013*part_013_03com",
+		"s101*chapter_noaH2" => "s101*chapter_noaH2_after",
+		"s101*chapter_noaH2_after" => "s102*part_102",
+		"s101*part_101" => "s101*chapter_noaH2",
+		"s102*chapter_noaH3" => "s102*chapter_noaH3_after",
+		"s102*chapter_noaH3_after" => "s103*part_103",
+		"s102*part_102" => "s102*chapter_noaH3",
+		"s103*part_103" => "s104*part_104",
+		"s104*part_104" => "s105*part_105",
+		"s105*part_105" => "s106*part_106",
+		"s106*chapter_noaH4" => "s106*chapter_noaH4_after",
+		"s106*chapter_noaH4_after" => "s107*part_107",
+		"s106*part_106" => "s106*chapter_noaH4",
+		"s107*107_01A" => "s107*107_01com",
+		"s107*107_01B" => "s107*107_01com",
+		"s107*107_01com" => "s107*part_107_sel2",
+		"s107*107_02A" => "s107*107_02com",
+		"s107*107_02B" => "s107*107_02com",
+		"s107*107_02com" => "s107*chapter_noaH5_after",
+		"s107*chapter_noaH5" => "s107*part_107_sel1",
+		"s107*chapter_noaH5_after" => "s108*part_108",
+		"s107*part_107" => "s107*chapter_noaH5",
+		"s107*part_107_sel1" => (const) [
+			"s107*107_01A",
+			"s107*107_01B"
+		],
+		"s107*part_107_sel1:s107*107_01A" => (const) [
+			"select",
+			1
+		],
+		"s107*part_107_sel1:s107*107_01B" => (const) [
+			"select",
+			2
+		],
+		"s107*part_107_sel2" => (const) [
+			"s107*107_02A",
+			"s107*107_02B"
+		],
+		"s107*part_107_sel2:s107*107_02A" => (const) [
+			"select",
+			1
+		],
+		"s107*part_107_sel2:s107*107_02B" => (const) [
+			"select",
+			2
+		],
+		"s108*part_108" => "s109*part_109",
+		"s109*109_01A" => "s109*109_01com",
+		"s109*109_01B" => "s109*109_01com",
+		"s109*109_01com" => "s109*chapter_noaH6_after",
+		"s109*chapter_noaH6" => "s109*part_109_sel1",
+		"s109*chapter_noaH6_after" => "s110*part_110",
+		"s109*part_109" => "s109*chapter_noaH6",
+		"s109*part_109_sel1" => (const) [
+			"s109*109_01A",
+			"s109*109_01B"
+		],
+		"s109*part_109_sel1:s109*109_01A" => (const) [
+			"select",
+			1
+		],
+		"s109*part_109_sel1:s109*109_01B" => (const) [
+			"select",
+			2
+		],
+		"s110*part_110" => "s111*part_111",
+		"s111*part_111" => "s112*part_112",
+		"s112*112_01B" => "s113*part_113",
+		"s112*part_112" => "s112*part_112_sel1",
+		"s112*part_112_sel1" => (const) [
+			"s112*112_01A",
+			"s112*112_01B"
+		],
+		"s112*part_112_sel1:s112*112_01A" => (const) [
+			"select",
+			1
+		],
+		"s112*part_112_sel1:s112*112_01B" => (const) [
+			"select",
+			2
+		],
+		"s113*part_113" => "s114*part_114",
+		"s114*114_01A" => "s114*114_01com",
+		"s114*114_01B" => "s114*114_01com",
+		"s114*114_01com" => "s114*part_114_sel2",
+		"s114*114_02A" => "s114*114_02com",
+		"s114*114_02B" => "s114*114_02com",
+		"s114*114_02com" => "s114*chapter_noaH8__after",
+		"s114*chapter_noaH8" => "s114*part_114_sel1",
+		"s114*chapter_noaH8__after" => "s115*part_115",
+		"s114*part_114" => "s114*chapter_noaH8",
+		"s114*part_114_sel1" => (const) [
+			"s114*114_01A",
+			"s114*114_01B"
+		],
+		"s114*part_114_sel1:s114*114_01A" => (const) [
+			"select",
+			1
+		],
+		"s114*part_114_sel1:s114*114_01B" => (const) [
+			"select",
+			2
+		],
+		"s114*part_114_sel2" => (const) [
+			"s114*114_02A",
+			"s114*114_02B"
+		],
+		"s114*part_114_sel2:s114*114_02A" => (const) [
+			"select",
+			1
+		],
+		"s114*part_114_sel2:s114*114_02B" => (const) [
+			"select",
+			2
+		],
+		"s116*116_01A" => "s116*116_01com",
+		"s116*116_01B" => "s116*116_01com",
+		"s116*116_01com" => "s116*chapter_noaH9_after",
+		"s116*chapter_noaH9" => "s116*part_116_sel1",
+		"s116*part_116" => "s116*chapter_noaH9",
+		"s116*part_116_sel1" => (const) [
+			"s116*116_01A",
+			"s116*116_01B"
+		],
+		"s116*part_116_sel1:s116*116_01A" => (const) [
+			"select",
+			1
+		],
+		"s116*part_116_sel1:s116*116_01B" => (const) [
+			"select",
+			2
+		],
+		"s200*part_200" => "s201*part_201",
+		"s201*part_201" => "s202*part_202",
+		"s202*part_202" => "s203*part_203",
+		"s203*part_203" => "s204*part_204",
+		"s204*chapter_amaH1" => "s204*chapter_amaH1_after",
+		"s204*chapter_amaH1_after" => "s205*part_205",
+		"s204*part_204" => "s204*chapter_amaH1",
+		"s205*part_205" => "s206*part_206",
+		"s206*206_01A" => "s206*206_01com",
+		"s206*206_01B" => "s206*206_01com",
+		"s206*206_01com" => "s206*part_206_sel2",
+		"s206*206_02A" => "s206*206_02com",
+		"s206*206_02B" => "s206*206_02com",
+		"s206*206_02com" => "s206*chapter_amaH2_after",
+		"s206*chapter_amaH2" => "s206*part_206_sel1",
+		"s206*chapter_amaH2_after" => "s207*part_207",
+		"s206*part_206" => "s206*chapter_amaH2",
+		"s206*part_206_sel1" => (const) [
+			"s206*206_01A",
+			"s206*206_01B"
+		],
+		"s206*part_206_sel1:s206*206_01A" => (const) [
+			"select",
+			1
+		],
+		"s206*part_206_sel1:s206*206_01B" => (const) [
+			"select",
+			2
+		],
+		"s206*part_206_sel2" => (const) [
+			"s206*206_02A",
+			"s206*206_02B"
+		],
+		"s206*part_206_sel2:s206*206_02A" => (const) [
+			"select",
+			1
+		],
+		"s206*part_206_sel2:s206*206_02B" => (const) [
+			"select",
+			2
+		],
+		"s207*part_207" => "s208*part_208",
+		"s208*208_01A" => "s208*208_01com",
+		"s208*208_01B" => "s208*208_01com",
+		"s208*208_01com" => "s208*chapter_amaH3_after",
+		"s208*chapter_amaH3" => "s208*part_208_sel1",
+		"s208*chapter_amaH3_after" => "s209*part_209",
+		"s208*part_208" => "s208*chapter_amaH3",
+		"s208*part_208_sel1" => (const) [
+			"s208*208_01A",
+			"s208*208_01B"
+		],
+		"s208*part_208_sel1:s208*208_01A" => (const) [
+			"select",
+			1
+		],
+		"s208*part_208_sel1:s208*208_01B" => (const) [
+			"select",
+			2
+		],
+		"s209*part_209" => "s210*part_210",
+		"s210*chapter_amaH4" => "s210*chapter_amaH4_after",
+		"s210*chapter_amaH4_after" => "s211*part_211",
+		"s210*part_210" => "s210*chapter_amaH4",
+		"s211*part_211" => "s212*part_212",
+		"s212*chapter7-2_ama" => "s213*part_213",
+		"s212*part_212" => "s212*chapter7-2_ama",
+		"s213*213_01A" => "s213*213_01com",
+		"s213*213_01B" => "s213*213_01com",
+		"s213*213_01com" => "s213*part_213_sel2",
+		"s213*213_02A" => "s213*213_02com",
+		"s213*213_02B" => "s213*213_02com",
+		"s213*213_02com" => "s213*chapter_amaH5_after",
+		"s213*chapter_amaH5" => "s213*part_213_sel1",
+		"s213*part_213" => "s213*chapter_amaH5",
+		"s213*part_213_sel1" => (const) [
+			"s213*213_01A",
+			"s213*213_01B"
+		],
+		"s213*part_213_sel1:s213*213_01A" => (const) [
+			"select",
+			1
+		],
+		"s213*part_213_sel1:s213*213_01B" => (const) [
+			"select",
+			2
+		],
+		"s213*part_213_sel2" => (const) [
+			"s213*213_02A",
+			"s213*213_02B"
+		],
+		"s213*part_213_sel2:s213*213_02A" => (const) [
+			"select",
+			1
+		],
+		"s213*part_213_sel2:s213*213_02B" => (const) [
+			"select",
+			2
+		],
+		"s214*214_01A" => "s214*214_01com",
+		"s214*214_01B" => "s214*214_01com",
+		"s214*214_01com" => "s214*part_214_sel2",
+		"s214*214_02A" => "s214*214_02com",
+		"s214*214_02B" => "s214*214_02com",
+		"s214*214_02com" => "s214*chapter_amaH6_after",
+		"s214*chapter_amaH6" => "s214*part_214_sel1",
+		"s214*part_214" => "s214*chapter_amaH6",
+		"s214*part_214_sel1" => (const) [
+			"s214*214_01A",
+			"s214*214_01B"
+		],
+		"s214*part_214_sel1:s214*214_01A" => (const) [
+			"select",
+			1
+		],
+		"s214*part_214_sel1:s214*214_01B" => (const) [
+			"select",
+			2
+		],
+		"s214*part_214_sel2" => (const) [
+			"s214*214_02A",
+			"s214*214_02B"
+		],
+		"s214*part_214_sel2:s214*214_02A" => (const) [
+			"select",
+			1
+		],
+		"s214*part_214_sel2:s214*214_02B" => (const) [
+			"select",
+			2
+		],
+		"s301*part_301" => "s302*part_302",
+		"s302*part_302" => "s303*part_303",
+		"s303*part_303" => "s304*part_304",
+		"s304*part_304" => "s305*part_305",
+		"s305*part_305" => "s306*part_306",
+		"s306*part_306" => "s307*part_307",
+		"s307*part_307" => "s308*part_308",
+		"s308*part_308" => "s309*part_309",
+		"s309*part_309" => "s310*part_310",
+		"s310*part_310" => "s311*part_311",
+		"s311*part_311" => "s312*part_312",
+		"s312*part_312" => "s313*part_313",
+		"s313*part_313" => "s314*part_314",
+		"s314*part_314" => "s315*part_315",
+		"s315*chapter_kurH1" => "s315*chapter_kurH1_after",
+		"s315*chapter_kurH1_after" => "s316*part_316",
+		"s315*part_315" => "s315*chapter_kurH1",
+		"s316*part_316" => "s317*part_317",
+		"s317*317_01A" => "s317*317_01com",
+		"s317*317_01B" => "s317*317_01com",
+		"s317*317_01com" => "s317*chapter_kurH2_after",
+		"s317*chapter_kurH2" => "s317*part_317_sel1",
+		"s317*chapter_kurH2_after" => "s318*part_318",
+		"s317*part_317" => "s317*chapter_kurH2",
+		"s317*part_317_sel1" => (const) [
+			"s317*317_01A",
+			"s317*317_01B"
+		],
+		"s317*part_317_sel1:s317*317_01A" => (const) [
+			"select",
+			1
+		],
+		"s317*part_317_sel1:s317*317_01B" => (const) [
+			"select",
+			2
+		],
+		"s318*part_318" => "s319*part_319",
+		"s319*319_01A" => "s319*319_01com",
+		"s319*319_01B" => "s319*319_01com",
+		"s319*319_01com" => "s319*chapter_kurH3_after",
+		"s319*chapter_kurH3" => "s319*part_319_sel1",
+		"s319*chapter_kurH3_after" => "s320*part_320",
+		"s319*part_319" => "s319*chapter_kurH3",
+		"s319*part_319_sel1" => (const) [
+			"s319*319_01A",
+			"s319*319_01B"
+		],
+		"s319*part_319_sel1:s319*319_01A" => (const) [
+			"select",
+			1
+		],
+		"s319*part_319_sel1:s319*319_01B" => (const) [
+			"select",
+			2
+		],
+		"s320*320_01A" => "s320*320_01com",
+		"s320*320_01B" => "s320*320_01com",
+		"s320*320_01com" => "s320*chapter_kurH4_after",
+		"s320*chapter_kurH4" => "s320*part_320_sel1",
+		"s320*chapter_kurH4_after" => "s321*part_321",
+		"s320*part_320" => "s320*chapter_kurH4",
+		"s320*part_320_sel1" => (const) [
+			"s320*320_01A",
+			"s320*320_01B"
+		],
+		"s320*part_320_sel1:s320*320_01A" => (const) [
+			"select",
+			1
+		],
+		"s320*part_320_sel1:s320*320_01B" => (const) [
+			"select",
+			2
+		],
+		"s322*chapter_kurH5" => "s322*chapter_kurH5_after",
+		"s322*chapter_kurH5_after" => "s322*chapter9-2_kur",
+		"s322*part_322" => "s322*chapter_kurH5",
+		"s401*part_401" => "s402*part_402",
+		"s402*part_402" => "s403*part_403",
+		"s403*part_403" => "s404*part_404",
+		"s404*chapter4-5_kag" => "s405*part_405",
+		"s404*part_404" => "s404*chapter4-5_kag",
+		"s405*part_405" => "s406*part_406",
+		"s406*chapter4-8_kag" => "s407*part_407",
+		"s406*part_406" => "s406*chapter4-8_kag",
+		"s407*part_407" => "s408*part_408",
+		"s408*chapter5-2_kag" => "s408*chapter5-3_kag",
+		"s408*chapter5-3_kag" => "s409*part_409",
+		"s408*part_408" => "s408*chapter5-2_kag",
+		"s409*chapter_kagH1" => "s410*part_410",
+		"s409*part_409" => "s409*chapter_kagH1",
+		"s410*chapter_kagH2" => "s410*chapter_kagH2_after",
+		"s410*chapter_kagH2_after" => "s411*part_411",
+		"s410*part_410" => "s410*chapter_kagH2",
+		"s411*chapter_kagH3" => "s411*chapter_kagH3_after",
+		"s411*chapter_kagH3_after" => "s412*part_412",
+		"s411*part_411" => "s411*chapter_kagH3",
+		"s412*chapter6-2_kag" => "s413*part_413",
+		"s412*part_412" => "s412*chapter6-2_kag",
+		"s413*413_01A" => "s413*413_01com",
+		"s413*413_01B" => "s413*413_01com",
+		"s413*413_01com" => "s413*part_413_sel2",
+		"s413*413_02A" => "s413*413_02com",
+		"s413*413_02B" => "s413*413_02com",
+		"s413*413_02com" => "s413*chapter_kagH4_after",
+		"s413*chapter6-4_kag" => "s414*part_414",
+		"s413*chapter_kagH4" => "s413*part_413_sel1",
+		"s413*chapter_kagH4_after" => "s413*chapter6-4_kag",
+		"s413*part_413" => "s413*chapter_kagH4",
+		"s413*part_413_sel1" => (const) [
+			"s413*413_01A",
+			"s413*413_01B"
+		],
+		"s413*part_413_sel1:s413*413_01A" => (const) [
+			"select",
+			1
+		],
+		"s413*part_413_sel1:s413*413_01B" => (const) [
+			"select",
+			2
+		],
+		"s413*part_413_sel2" => (const) [
+			"s413*413_02A",
+			"s413*413_02B"
+		],
+		"s413*part_413_sel2:s413*413_02A" => (const) [
+			"select",
+			1
+		],
+		"s413*part_413_sel2:s413*413_02B" => (const) [
+			"select",
+			2
+		],
+		"s414*414_01A" => "s414*414_01com",
+		"s414*414_01B" => "s414*414_01com",
+		"s414*414_01com" => "s414*part_414_sel2",
+		"s414*414_02A" => "s414*414_02com",
+		"s414*414_02B" => "s414*414_02com",
+		"s414*414_02com" => "s414*chapter_kagH5_after",
+		"s414*chapter_kagH5" => "s414*part_414_sel1",
+		"s414*chapter_kagH5_after" => "s415*part_415",
+		"s414*part_414" => "s414*chapter_kagH5",
+		"s414*part_414_sel1" => (const) [
+			"s414*414_01A",
+			"s414*414_01B"
+		],
+		"s414*part_414_sel1:s414*414_01A" => (const) [
+			"select",
+			1
+		],
+		"s414*part_414_sel1:s414*414_01B" => (const) [
+			"select",
+			2
+		],
+		"s414*part_414_sel2" => (const) [
+			"s414*414_02A",
+			"s414*414_02B"
+		],
+		"s414*part_414_sel2:s414*414_02A" => (const) [
+			"select",
+			1
+		],
+		"s414*part_414_sel2:s414*414_02B" => (const) [
+			"select",
+			2
+		],
+		"s415*part_415" => "s416*part_416",
+		"s416*part_416" => "s417*part_417",
+		"s417*417_01A" => "s417*417_01com",
+		"s417*417_01B" => "s417*417_01com",
+		"s417*417_01com" => "s418*part_418",
+		"s417*chapter_kagH6" => "s417*part_417_sel1",
+		"s417*part_417" => "s417*chapter_kagH6",
+		"s417*part_417_sel1" => (const) [
+			"s417*417_01A",
+			"s417*417_01B"
+		],
+		"s417*part_417_sel1:s417*417_01A" => (const) [
+			"select",
+			1
+		],
+		"s417*part_417_sel1:s417*417_01B" => (const) [
+			"select",
+			2
+		],
+		"s418*part_418" => "s419*part_419",
+		"s420*420_01A" => "s420*420_01com",
+		"s420*420_01B" => "s420*420_01com",
+		"s420*420_01com" => "s420*part_420_sel2",
+		"s420*420_02A" => "s420*420_02com",
+		"s420*420_02B" => "s420*420_02com",
+		"s420*420_02com" => "s420*chapter_kagH7_after",
+		"s420*chapter_kagH7" => "s420*part_420_sel1",
+		"s420*part_420" => "s420*chapter_kagH7",
+		"s420*part_420_sel1" => (const) [
+			"s420*420_01A",
+			"s420*420_01B"
+		],
+		"s420*part_420_sel1:s420*420_01A" => (const) [
+			"select",
+			1
+		],
+		"s420*part_420_sel1:s420*420_01B" => (const) [
+			"select",
+			2
+		],
+		"s420*part_420_sel2" => (const) [
+			"s420*420_02A",
+			"s420*420_02B"
+		],
+		"s420*part_420_sel2:s420*420_02A" => (const) [
+			"select",
+			1
+		],
+		"s420*part_420_sel2:s420*420_02B" => (const) [
+			"select",
+			2
+		],
+		"s501*part_501" => "s502*part_502",
+		"s502*part_502" => "s503*part_503",
+		"s503*chapter_oriH1" => "s504*part_504",
+		"s503*part_503" => "s503*chapter_oriH1",
+		"s504*chapter_oriH2" => "s505*part_505",
+		"s504*part_504" => "s504*chapter_oriH2",
+		"s505*part_505" => "s506*part_506",
+		"s506*chapter5-2_ori" => "s507*part_507",
+		"s506*part_506" => "s506*chapter5-2_ori",
+		"s507*chapter5-4_ori" => "s508*part_508",
+		"s507*part_507" => "s507*chapter5-4_ori",
+		"s508*part_508" => "s509*part_509",
+		"s509*part_509" => "s510*part_510",
+		"s510*part_510" => "s511*part_511",
+		"s511*511_01A" => "s511*511_01com",
+		"s511*511_01B" => "s511*511_01com",
+		"s511*511_01com" => "s511*part_511_sel2",
+		"s511*511_02A" => "s512*part_512",
+		"s511*511_02B" => "s512*part_512",
+		"s511*chapter_oriH3" => "s511*part_511_sel1",
+		"s511*part_511" => "s511*chapter_oriH3",
+		"s511*part_511_sel1" => (const) [
+			"s511*511_01A",
+			"s511*511_01B"
+		],
+		"s511*part_511_sel1:s511*511_01A" => (const) [
+			"select",
+			1
+		],
+		"s511*part_511_sel1:s511*511_01B" => (const) [
+			"select",
+			2
+		],
+		"s511*part_511_sel2" => (const) [
+			"s511*511_02A",
+			"s511*511_02B"
+		],
+		"s511*part_511_sel2:s511*511_02A" => (const) [
+			"select",
+			1
+		],
+		"s511*part_511_sel2:s511*511_02B" => (const) [
+			"select",
+			2
+		],
+		"s512*part_512" => "s513*part_513",
+		"s513*part_513" => "s514*part_514",
+		"s514*514_01A" => "s515*part_515",
+		"s514*514_01B" => "s515*part_515",
+		"s514*chapter_oriH4" => "s514*part_514_sel1",
+		"s514*part_514" => "s514*chapter_oriH4",
+		"s514*part_514_sel1" => (const) [
+			"s514*514_01A",
+			"s514*514_01B"
+		],
+		"s514*part_514_sel1:s514*514_01A" => (const) [
+			"select",
+			1
+		],
+		"s514*part_514_sel1:s514*514_01B" => (const) [
+			"select",
+			2
+		],
+		"s515*part_515" => "s516*part_516",
+		"s516*part_516" => "s517*part_517",
+		"s517*part_517" => "s518*part_518",
+		"s518*518_01A" => "s518*518_01com",
+		"s518*518_01B" => "s518*518_01com",
+		"s518*518_01com" => "s519*part_519",
+		"s518*chapter_oriH5" => "s518*part_518_sel1",
+		"s518*part_518" => "s518*chapter_oriH5",
+		"s518*part_518_sel1" => (const) [
+			"s518*518_01A",
+			"s518*518_01B"
+		],
+		"s518*part_518_sel1:s518*518_01A" => (const) [
+			"select",
+			1
+		],
+		"s518*part_518_sel1:s518*518_01B" => (const) [
+			"select",
+			2
+		],
+		"s519*part_519" => "s520*part_520",
+		"s521*521_01A" => "s521*521_01com",
+		"s521*521_01B" => "s521*521_01com",
+		"s521*521_01com" => "s521*part_521_sel2",
+		"s521*521_02A" => "s521*521_02com",
+		"s521*521_02B" => "s521*521_02com",
+		"s521*521_02com" => "s521*chapter_oriH6_after",
+		"s521*chapter_oriH6" => "s521*part_521_sel1",
+		"s521*part_521" => "s521*chapter_oriH6",
+		"s521*part_521_sel1" => (const) [
+			"s521*521_01A",
+			"s521*521_01B"
+		],
+		"s521*part_521_sel1:s521*521_01A" => (const) [
+			"select",
+			1
+		],
+		"s521*part_521_sel1:s521*521_01B" => (const) [
+			"select",
+			2
+		],
+		"s521*part_521_sel2" => (const) [
+			"s521*521_02A",
+			"s521*521_02B"
+		],
+		"s521*part_521_sel2:s521*521_02A" => (const) [
+			"select",
+			1
+		],
+		"s521*part_521_sel2:s521*521_02B" => (const) [
+			"select",
+			2
+		],
+		"s600*part_600" => "s013*013_01com_jump",
+		"s601*part_601" => "s602*part_602",
+		"s602*part_602" => "s603*part_603",
+		"s603*part_603" => "s604*part_604",
+		"s604*604_01A" => "s604*604_01com",
+		"s604*604_01B" => "s604*604_01com",
+		"s604*604_01com" => "s605*part_605",
+		"s604*chapter4-5_fum" => "s604*chapter_fumH1",
+		"s604*chapter4-6_fum" => "s604*chapter_fumH2",
+		"s604*chapter_fumH1" => "s604*chapter_fumH1_after",
+		"s604*chapter_fumH1_after" => "s604*chapter4-6_fum",
+		"s604*chapter_fumH2" => "s604*part_604_sel1",
+		"s604*part_604" => "s604*chapter4-5_fum",
+		"s604*part_604_sel1" => (const) [
+			"s604*604_01A",
+			"s604*604_01B"
+		],
+		"s604*part_604_sel1:s604*604_01A" => (const) [
+			"select",
+			1
+		],
+		"s604*part_604_sel1:s604*604_01B" => (const) [
+			"select",
+			2
+		],
+		"s605*605_01A" => "s605*605_01com",
+		"s605*605_01B" => "s605*605_01com",
+		"s605*605_01com" => "s605*chapter_fumH3_after",
+		"s605*chapter5-2_fum" => "s605*chapter_fumH3",
+		"s605*chapter_fumH3" => "s605*part_605_sel1",
+		"s605*chapter_fumH3_after" => "s606*part_606",
+		"s605*part_605" => "s605*chapter5-2_fum",
+		"s605*part_605_sel1" => (const) [
+			"s605*605_01A",
+			"s605*605_01B"
+		],
+		"s605*part_605_sel1:s605*605_01A" => (const) [
+			"select",
+			1
+		],
+		"s605*part_605_sel1:s605*605_01B" => (const) [
+			"select",
+			2
+		],
+		"s606*606_01A" => "s606*606_01com",
+		"s606*606_01B" => "s606*606_01com",
+		"s606*606_01com" => "s607*part_607",
+		"s606*chapter_fumH4" => "s606*part_606_sel1",
+		"s606*part_606" => "s606*chapter_fumH4",
+		"s606*part_606_sel1" => (const) [
+			"s606*606_01A",
+			"s606*606_01B"
+		],
+		"s606*part_606_sel1:s606*606_01A" => (const) [
+			"select",
+			1
+		],
+		"s606*part_606_sel1:s606*606_01B" => (const) [
+			"select",
+			2
+		],
+		"s608*chapter6-2_fum" => "s608*chapter_fumH5",
+		"s608*chapter_fumH5" => "s608*chapter6-3_fum",
+		"s608*part_608" => "s608*chapter6-2_fum"
+	],
+	"flagkeys" => (const) [
+		"EV111sel",
+		"EV113sel",
+		"EV115sel",
+		"EV116sel",
+		"EV117sel",
+		"EV120sel",
+		"EV211sel",
+		"EV212sel",
+		"EV213sel",
+		"EV214sel",
+		"EV215sel",
+		"EV216sel",
+		"EV218sel",
+		"EV311sel",
+		"EV314sel",
+		"EV317sel",
+		"EV414sel",
+		"EV415sel",
+		"EV416sel",
+		"EV417sel",
+		"EV419sel",
+		"EV421sel",
+		"EV504sel",
+		"EV505sel",
+		"EV506sel",
+		"EV507sel",
+		"EV509sel",
+		"EV510sel",
+		"EV602sel",
+		"EV603sel",
+		"EV606sel",
+		"ama",
+		"fum",
+		"kag",
+		"kur",
+		"noa",
+		"ori",
+		"sel05_flag",
+		"sel06_flag",
+		"sel08_flag",
+		"sel09_flag",
+		"sel11_flag",
+		"sel12_flag",
+		"sel13_2_flag",
+		"sel13_3_flag",
+		"sel13_4_flag",
+		"sel13_flag"
+	],
+	"flags" => (const) %[
+		"EV111sel" => (const) [
+			(const) [
+				"s107*part_107_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s107*part_107_sel1",
+				2,
+				1
+			]
+		],
+		"EV113sel" => (const) [
+			(const) [
+				"s107*part_107_sel2",
+				1,
+				0
+			],
+			(const) [
+				"s107*part_107_sel2",
+				2,
+				1
+			]
+		],
+		"EV115sel" => (const) [
+			(const) [
+				"s109*part_109_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s109*part_109_sel1",
+				2,
+				1
+			]
+		],
+		"EV116sel" => (const) [
+			(const) [
+				"s114*part_114_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s114*part_114_sel1",
+				2,
+				1
+			]
+		],
+		"EV117sel" => (const) [
+			(const) [
+				"s114*part_114_sel2",
+				1,
+				0
+			],
+			(const) [
+				"s114*part_114_sel2",
+				2,
+				1
+			]
+		],
+		"EV120sel" => (const) [
+			(const) [
+				"s116*part_116_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s116*part_116_sel1",
+				2,
+				1
+			]
+		],
+		"EV211sel" => (const) [
+			(const) [
+				"s213*part_213_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s213*part_213_sel1",
+				2,
+				1
+			]
+		],
+		"EV212sel" => (const) [
+			(const) [
+				"s213*part_213_sel2",
+				1,
+				0
+			],
+			(const) [
+				"s213*part_213_sel2",
+				2,
+				1
+			]
+		],
+		"EV213sel" => (const) [
+			(const) [
+				"s206*part_206_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s206*part_206_sel1",
+				2,
+				1
+			]
+		],
+		"EV214sel" => (const) [
+			(const) [
+				"s206*part_206_sel2",
+				1,
+				0
+			],
+			(const) [
+				"s206*part_206_sel2",
+				2,
+				1
+			]
+		],
+		"EV215sel" => (const) [
+			(const) [
+				"s214*part_214_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s214*part_214_sel1",
+				2,
+				1
+			]
+		],
+		"EV216sel" => (const) [
+			(const) [
+				"s214*part_214_sel2",
+				1,
+				0
+			],
+			(const) [
+				"s214*part_214_sel2",
+				2,
+				1
+			]
+		],
+		"EV218sel" => (const) [
+			(const) [
+				"s208*part_208_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s208*part_208_sel1",
+				2,
+				1
+			]
+		],
+		"EV311sel" => (const) [
+			(const) [
+				"s317*part_317_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s317*part_317_sel1",
+				2,
+				1
+			]
+		],
+		"EV314sel" => (const) [
+			(const) [
+				"s319*part_319_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s319*part_319_sel1",
+				2,
+				1
+			]
+		],
+		"EV317sel" => (const) [
+			(const) [
+				"s320*part_320_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s320*part_320_sel1",
+				2,
+				1
+			]
+		],
+		"EV414sel" => (const) [
+			(const) [
+				"s413*part_413_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s413*part_413_sel1",
+				2,
+				1
+			]
+		],
+		"EV415sel" => (const) [
+			(const) [
+				"s413*part_413_sel2",
+				1,
+				0
+			],
+			(const) [
+				"s413*part_413_sel2",
+				2,
+				1
+			]
+		],
+		"EV416sel" => (const) [
+			(const) [
+				"s414*part_414_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s414*part_414_sel1",
+				2,
+				1
+			]
+		],
+		"EV417sel" => (const) [
+			(const) [
+				"s414*part_414_sel2",
+				1,
+				0
+			],
+			(const) [
+				"s414*part_414_sel2",
+				2,
+				1
+			]
+		],
+		"EV419sel" => (const) [
+			(const) [
+				"s417*part_417_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s417*part_417_sel1",
+				2,
+				1
+			]
+		],
+		"EV421sel" => (const) [
+			(const) [
+				"s420*part_420_sel2",
+				1,
+				0
+			],
+			(const) [
+				"s420*part_420_sel2",
+				2,
+				1
+			]
+		],
+		"EV504sel" => (const) [
+			(const) [
+				"s511*part_511_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s511*part_511_sel1",
+				2,
+				1
+			]
+		],
+		"EV505sel" => (const) [
+			(const) [
+				"s511*part_511_sel2",
+				1,
+				0
+			],
+			(const) [
+				"s511*part_511_sel2",
+				2,
+				1
+			]
+		],
+		"EV506sel" => (const) [
+			(const) [
+				"s514*part_514_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s514*part_514_sel1",
+				2,
+				1
+			]
+		],
+		"EV507sel" => (const) [
+			(const) [
+				"s518*part_518_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s518*part_518_sel1",
+				2,
+				1
+			]
+		],
+		"EV509sel" => (const) [
+			(const) [
+				"s521*part_521_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s521*part_521_sel1",
+				2,
+				1
+			]
+		],
+		"EV510sel" => (const) [
+			(const) [
+				"s521*part_521_sel2",
+				1,
+				0
+			],
+			(const) [
+				"s521*part_521_sel2",
+				2,
+				1
+			]
+		],
+		"EV602sel" => (const) [
+			(const) [
+				"s604*part_604_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s604*part_604_sel1",
+				2,
+				1
+			]
+		],
+		"EV603sel" => (const) [
+			(const) [
+				"s605*part_605_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s605*part_605_sel1",
+				2,
+				1
+			]
+		],
+		"EV606sel" => (const) [
+			(const) [
+				"s606*part_606_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s606*part_606_sel1",
+				2,
+				1
+			]
+		],
+		"ama" => (const) [
+			(const) [
+				"s011*part_011_sel1",
+				2,
+				1
+			],
+			(const) [
+				"s013*part_013_sel2",
+				2,
+				1
+			]
+		],
+		"fum" => (const) [
+			(const) [
+				"s005*part_005_sel1",
+				3,
+				1
+			],
+			(const) [
+				"s012*part_012_sel1",
+				1,
+				1
+			]
+		],
+		"kag" => (const) [
+			(const) [
+				"s011*part_011_sel1",
+				1,
+				1
+			],
+			(const) [
+				"s013*part_013_sel3",
+				1,
+				1
+			]
+		],
+		"kur" => (const) [
+			(const) [
+				"s013*part_013_sel2",
+				1,
+				1
+			],
+			(const) [
+				"s013*part_013_sel3",
+				2,
+				1
+			]
+		],
+		"noa" => (const) [
+			(const) [
+				"s005*part_005_sel1",
+				1,
+				1
+			],
+			(const) [
+				"s008*part_008_sel1",
+				1,
+				1
+			]
+		],
+		"ori" => (const) [
+			(const) [
+				"s013*part_013_sel3",
+				3,
+				1
+			],
+			(const) [
+				"s013*part_013_sel4",
+				1,
+				1
+			]
+		],
+		"sel05_flag" => (const) [
+			(const) [
+				"s005*part_005_sel1",
+				1,
+				1
+			],
+			(const) [
+				"s005*part_005_sel1",
+				2,
+				0
+			],
+			(const) [
+				"s005*part_005_sel1",
+				3,
+				2
+			]
+		],
+		"sel06_flag" => (const) [
+			(const) [
+				"s006*part_006_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s006*part_006_sel1",
+				2,
+				1
+			]
+		],
+		"sel08_flag" => (const) [
+			(const) [
+				"s008*part_008_sel1",
+				1,
+				1
+			],
+			(const) [
+				"s008*part_008_sel1",
+				2,
+				0
+			]
+		],
+		"sel09_flag" => (const) [
+			(const) [
+				"s009*part_009_sel1",
+				1,
+				1
+			],
+			(const) [
+				"s009*part_009_sel1",
+				2,
+				0
+			]
+		],
+		"sel11_flag" => (const) [
+			(const) [
+				"s011*part_011_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s011*part_011_sel1",
+				2,
+				1
+			]
+		],
+		"sel12_flag" => (const) [
+			(const) [
+				"s012*part_012_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s012*part_012_sel1",
+				2,
+				1
+			]
+		],
+		"sel13_2_flag" => (const) [
+			(const) [
+				"s013*part_013_sel2",
+				1,
+				0
+			],
+			(const) [
+				"s013*part_013_sel2",
+				2,
+				1
+			]
+		],
+		"sel13_3_flag" => (const) [
+			(const) [
+				"s013*part_013_sel3",
+				1,
+				0
+			],
+			(const) [
+				"s013*part_013_sel3",
+				2,
+				1
+			],
+			(const) [
+				"s013*part_013_sel3",
+				3,
+				2
+			]
+		],
+		"sel13_4_flag" => (const) [
+			(const) [
+				"s013*part_013_sel4",
+				1,
+				0
+			],
+			(const) [
+				"s013*part_013_sel4",
+				2,
+				1
+			]
+		],
+		"sel13_flag" => (const) [
+			(const) [
+				"s013*part_013_sel1",
+				1,
+				0
+			],
+			(const) [
+				"s013*part_013_sel1",
+				2,
+				1
+			],
+			(const) [
+				"s013*part_013_sel1",
+				3,
+				2
+			],
+			(const) [
+				"s013*part_013_sel1",
+				4,
+				3
+			],
+			(const) [
+				"s013*part_013_sel1",
+				5,
+				4
+			]
+		]
+	],
+	"items" => (const) [
+		(const) [
+			(const) %[
+				"id" => "chapter_1_1",
+				"name" => "CHAPTER 1",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "いつも通り？",
+				"id" => "s001*part_001",
+				"storage" => "x_【共通】01.ks",
+				"tag" => "s001",
+				"target" => "*part_001",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "天使降臨",
+				"id" => "s002*part_002",
+				"storage" => "x_【共通】02.ks",
+				"tag" => "s002",
+				"target" => "*part_002",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "新たなる日々",
+				"id" => "s003*part_003",
+				"storage" => "x_【共通】03.ks",
+				"tag" => "s003",
+				"target" => "*part_003",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "初めての告白",
+				"id" => "s003*part_003_sel1",
+				"selects" => (const) [
+					"うん。可愛すぎる……っ！",
+					1,
+					"いや、可愛いけど……",
+					2
+				],
+				"selevals" => (const) %[
+					"!1" => "heart:hscene"
+				],
+				"storage" => "x_【共通】03.ks",
+				"tag" => "s003",
+				"target" => "*part_003_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "勢いに任せて…",
+				"id" => "s099*part_003_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【共通】99（BAD-H）.ks",
+				"tag" => "s099",
+				"target" => "*part_003_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "一旦冷静になる",
+				"id" => "s003*part_003_01B",
+				"shape" => "subsection",
+				"storage" => "x_【共通】03.ks",
+				"tag" => "s003",
+				"target" => "*part_003_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "来訪者たち",
+				"id" => "s004*part_004",
+				"preofs" => 50,
+				"storage" => "【共通】04.ks",
+				"tag" => "s004",
+				"target" => "*part_004",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "お買い物",
+				"id" => "s005*part_005",
+				"storage" => "【共通】05.ks",
+				"tag" => "s005",
+				"target" => "*part_005",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "誰の服から？",
+				"id" => "s005*part_005_sel1",
+				"selects" => (const) [
+					"乃愛から",
+					1,
+					"シュトリアさんから",
+					2,
+					"とりあえず休憩",
+					3
+				],
+				"storage" => "【共通】05.ks",
+				"tag" => "s005",
+				"target" => "*part_005_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "乃愛",
+				"id" => "s005*part_005_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "【共通】05.ks",
+				"tag" => "s005",
+				"target" => "*part_005_01A",
+				"type" => "section",
+				"vdenom" => 3,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "シュトリアさん",
+				"id" => "s005*part_005_01B",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "【共通】05.ks",
+				"tag" => "s005",
+				"target" => "*part_005_01B",
+				"type" => "section",
+				"vdenom" => 3,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "休憩",
+				"id" => "s005*part_005_01C",
+				"shape" => "subsection",
+				"storage" => "【共通】05.ks",
+				"tag" => "s005",
+				"target" => "*part_005_01C",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 3,
+				"vnumer" => 2
+			],
+			(const) %[
+				"comment" => "今日の夕食は？",
+				"id" => "s005*part_005_01com",
+				"preofs" => 50,
+				"storage" => "【共通】05.ks",
+				"tag" => "s005",
+				"target" => "*part_005_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_1_2",
+				"name" => "CHAPTER 2",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "乃愛との暮らし",
+				"id" => "s006*part_006",
+				"storage" => "x_【共通】06.ks",
+				"tag" => "s006",
+				"target" => "*part_006",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "天音からのメッセージ",
+				"id" => "s006*part_006_sel1",
+				"selects" => (const) [
+					"もういいよ",
+					1,
+					"気になることを訊いてみる",
+					2
+				],
+				"storage" => "x_【共通】06.ks",
+				"tag" => "s006",
+				"target" => "*part_006_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "もういいよ",
+				"id" => "s006*part_006_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【共通】06.ks",
+				"tag" => "s006",
+				"target" => "*part_006_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "紐パンって",
+				"id" => "s006*part_006_01B",
+				"shape" => "subsection",
+				"storage" => "x_【共通】06.ks",
+				"tag" => "s006",
+				"target" => "*part_006_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "新たな被害者",
+				"id" => "s006*part_006_01com",
+				"preofs" => 50,
+				"storage" => "x_【共通】06.ks",
+				"tag" => "s006",
+				"target" => "*part_006_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "事情説明",
+				"id" => "s007*part_007",
+				"storage" => "x_【共通】07.ks",
+				"tag" => "s007",
+				"target" => "*part_007",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "特訓しよう",
+				"id" => "s008*part_008",
+				"storage" => "x_【共通】08.ks",
+				"tag" => "s008",
+				"target" => "*part_008",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "乃愛からの申し出",
+				"id" => "s008*part_008_sel1",
+				"selects" => (const) [
+					"見せられるわけ……",
+					1,
+					"見せられるわけがない",
+					2
+				],
+				"selevals" => (const) %[
+					"!1" => "heart:hscene"
+				],
+				"storage" => "x_【共通】08.ks",
+				"tag" => "s008",
+				"target" => "*part_008_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "丸出し",
+				"id" => "s008*part_008_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【共通】08.ks",
+				"tag" => "s008",
+				"target" => "*part_008_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "見せない",
+				"id" => "s008*part_008_01B",
+				"shape" => "subsection",
+				"storage" => "x_【共通】08.ks",
+				"tag" => "s008",
+				"target" => "*part_008_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "特訓は続くよ",
+				"id" => "s009*part_009",
+				"preofs" => 50,
+				"storage" => "x_【共通】09.ks",
+				"tag" => "s009",
+				"target" => "*part_009",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "最終確認！",
+				"id" => "s009*chapter2-5",
+				"storage" => "x_【共通】09.ks",
+				"tag" => "s009",
+				"target" => "*chapter2-5",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "来海を誘う？",
+				"id" => "s009*part_009_sel1",
+				"selects" => (const) [
+					"なら……誘ってみるか",
+					1,
+					"気にする必要はないか",
+					2
+				],
+				"storage" => "x_【共通】09.ks",
+				"tag" => "s009",
+				"target" => "*part_009_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "皆でラーメン",
+				"id" => "s009*part_009_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【共通】09.ks",
+				"tag" => "s009",
+				"target" => "*part_009_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "その場で解散",
+				"id" => "s009*part_009_01B",
+				"shape" => "subsection",
+				"storage" => "x_【共通】09.ks",
+				"tag" => "s009",
+				"target" => "*part_009_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "買い物中の二人",
+				"id" => "s009*part_009_01com",
+				"preofs" => 50,
+				"storage" => "x_【共通】09.ks",
+				"tag" => "s009",
+				"target" => "*part_009_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "襲撃",
+				"id" => "s010*part_010",
+				"storage" => "【共通】10.ks",
+				"tag" => "s010",
+				"target" => "*part_010",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_1_3",
+				"name" => "CHAPTER 3",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "二日酔い？",
+				"id" => "s011*part_011",
+				"storage" => "【共通】11.ks",
+				"tag" => "s011",
+				"target" => "*part_011",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "天音の雑炊を…",
+				"id" => "s011*part_011_sel1",
+				"selects" => (const) [
+					"お願いする",
+					1,
+					"やっぱり俺が",
+					2
+				],
+				"storage" => "【共通】11.ks",
+				"tag" => "s011",
+				"target" => "*part_011_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "かぐ耶にお願い",
+				"id" => "s011*part_011_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "【共通】11.ks",
+				"tag" => "s011",
+				"target" => "*part_011_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "俺が作る",
+				"id" => "s011*part_011_01B",
+				"shape" => "subsection",
+				"storage" => "【共通】11.ks",
+				"tag" => "s011",
+				"target" => "*part_011_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "夢か現か？",
+				"id" => "s012*part_012",
+				"preofs" => 50,
+				"storage" => "【共通】12.ks",
+				"tag" => "s012",
+				"target" => "*part_012",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "風実花さんに…",
+				"id" => "s012*part_012_sel1",
+				"selects" => (const) [
+					"なら……質問に行く",
+					1,
+					"特に……ないな",
+					2
+				],
+				"storage" => "【共通】12.ks",
+				"tag" => "s012",
+				"target" => "*part_012_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "質問をしに行く",
+				"id" => "s012*part_012_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "【共通】12.ks",
+				"tag" => "s012",
+				"target" => "*part_012_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "いつも通りに過ごす",
+				"id" => "s012*part_012_01B",
+				"shape" => "subsection",
+				"storage" => "【共通】12.ks",
+				"tag" => "s012",
+				"target" => "*part_012_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "水着を買いに！",
+				"id" => "s012*chapter3-3",
+				"preofs" => 50,
+				"storage" => "【共通】12.ks",
+				"tag" => "s012",
+				"target" => "*chapter3-3",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "夏だ！　海だ！",
+				"id" => "s013*part_013",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "誰の水着が…",
+				"id" => "s013*part_013_sel1",
+				"selects" => (const) [
+					"乃愛",
+					1,
+					"小雲雀さん",
+					2,
+					"かぐ耶",
+					3,
+					"オリエ",
+					4,
+					"……天音？",
+					5
+				],
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "乃愛の水着",
+				"id" => "s013*part_013_01A",
+				"nocr" => 1,
+				"shape" => "minsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_01A",
+				"type" => "section",
+				"vdenom" => 5,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "小雲雀さんの水着",
+				"id" => "s013*part_013_01C",
+				"nocr" => 1,
+				"shape" => "minsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_01C",
+				"type" => "section",
+				"vdenom" => 5,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "かぐ耶の水着",
+				"id" => "s013*part_013_01D",
+				"nocr" => 1,
+				"shape" => "minsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_01D",
+				"type" => "section",
+				"vdenom" => 5,
+				"vnumer" => 2
+			],
+			(const) %[
+				"comment" => "オリエの水着",
+				"id" => "s013*part_013_01E",
+				"nocr" => 1,
+				"shape" => "minsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_01E",
+				"type" => "section",
+				"vdenom" => 5,
+				"vnumer" => 3
+			],
+			(const) %[
+				"comment" => "天音の水着",
+				"id" => "s013*part_013_01B",
+				"shape" => "minsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 5,
+				"vnumer" => 4
+			],
+			(const) %[
+				"comment" => "海の続き",
+				"id" => "s013*part_013_01com",
+				"preofs" => 50,
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "褒めるのは…",
+				"id" => "s013*part_013_sel2",
+				"selects" => (const) [
+					"よく似合ってると思うと褒める",
+					1,
+					"気になっていることを尋ねる",
+					2
+				],
+				"selevals" => (const) %[
+					"2" => "sel06_flag == 1"
+				],
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_sel2",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "来海を褒める",
+				"id" => "s013*part_013_02A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_02A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "天音に尋ねる",
+				"id" => "s013*part_013_02B",
+				"shape" => "subsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_02B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "海、その後",
+				"id" => "s013*part_013_02com",
+				"preofs" => 50,
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_02com",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "s013*013_01_jump",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*013_01_jump",
+				"type" => "branch"
+			],
+			(const) %[
+				"comment" => "いい匂い？",
+				"id" => "s013*013_01A_jump",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*013_01A_jump",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "お土産に？",
+				"id" => "s600*part_600",
+				"shape" => "subsection",
+				"storage" => "【風実花】00_分岐.ks",
+				"tag" => "s600",
+				"target" => "*part_600",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "砂浜から見る光景",
+				"id" => "s013*013_01com_jump",
+				"preofs" => 50,
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*013_01com_jump",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "s013*013_02_jump",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*013_02_jump",
+				"type" => "branch"
+			],
+			(const) %[
+				"comment" => "乃愛との時間",
+				"id" => "s100*part_100",
+				"longpass" => "-100",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "【乃愛】00_分岐.ks",
+				"tag" => "s100",
+				"target" => "*part_100",
+				"type" => "section",
+				"vdenom" => 3,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "オリエの行方",
+				"id" => "s013*013_02com_jump",
+				"shape" => "subsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*013_02com_jump",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 3,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "オリエを追って…",
+				"id" => "s013*part_013_sel3",
+				"selects" => (const) [
+					"一緒に行く",
+					1,
+					"このまま荷物番を",
+					2,
+					"俺も探してみる",
+					3
+				],
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_sel3",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "オリエを探す",
+				"id" => "s013*part_013_03C",
+				"nocr" => 1,
+				"shape" => "minsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_03C",
+				"type" => "section",
+				"vdenom" => 5,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "かぐ耶と一緒",
+				"id" => "s013*part_013_03A",
+				"longpass" => "-100",
+				"nocr" => 1,
+				"shape" => "minsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_03A",
+				"type" => "section",
+				"vdenom" => 5,
+				"vnumer" => 3
+			],
+			(const) %[
+				"comment" => "荷物番",
+				"id" => "s013*part_013_03B",
+				"longpass" => "-100",
+				"shape" => "minsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_03B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 5,
+				"vnumer" => 4
+			],
+			(const) %[
+				"comment" => "オリエの水着",
+				"id" => "s013*part_013_sel4",
+				"selects" => (const) [
+					"言ってみる",
+					1,
+					"言わないまま",
+					2
+				],
+				"storage" => "x_【共通】13.ks",
+				"syncvert" => "s013*part_013_03C",
+				"tag" => "s013",
+				"target" => "*part_013_sel4",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "褒めてみる",
+				"id" => "s013*part_013_04A",
+				"longpass" => "-100",
+				"nocr" => 1,
+				"shape" => "minsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_04A",
+				"type" => "section",
+				"vdenom" => 3,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "止めておく",
+				"id" => "s013*part_013_04B",
+				"longpass" => "-100",
+				"shape" => "minsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_04B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 3,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "遊び終えて",
+				"id" => "s013*part_013_03com",
+				"preofs" => 50,
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_03com",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "s013*013_ama_route",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*013_ama_route",
+				"type" => "branch"
+			],
+			(const) %[
+				"id" => "s013*route_jump_ama",
+				"nocr" => 1,
+				"shape" => "nonsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*route_jump_ama",
+				"type" => "section",
+				"vdenom" => 3,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "帰宅",
+				"flowjump" => "*flowjump",
+				"id" => "s013*013_04com",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*013_04com",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 3,
+				"vnumer" => 1
+			],
+			(const) %[
+				"fromid" => "s013*route_jump_ama",
+				"id" => "warp_1_1",
+				"route" => "天音",
+				"syncpos" => "s013*route_jump_ama",
+				"syncvert" => "s013*route_jump_ama",
+				"type" => "warp"
+			],
+			(const) %[
+				"id" => "s013*part_013_routejump",
+				"preofs" => 70,
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*part_013_routejump",
+				"type" => "branch"
+			],
+			(const) %[
+				"comment" => "ノーマルED ",
+				"id" => "s013*normal_end",
+				"shape" => "minsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*normal_end",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 6,
+				"vnumer" => 5
+			],
+			(const) %[
+				"id" => "s013*route_jump_noa",
+				"nocr" => 1,
+				"shape" => "nonsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*route_jump_noa",
+				"type" => "section",
+				"vdenom" => 3,
+				"vnumer" => 0
+			],
+			(const) %[
+				"id" => "s013*route_jump_kag",
+				"nocr" => 1,
+				"shape" => "nonsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*route_jump_kag",
+				"type" => "section",
+				"vdenom" => 3,
+				"vnumer" => 1
+			],
+			(const) %[
+				"id" => "s013*route_jump_fum",
+				"shape" => "nonsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*route_jump_fum",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 3,
+				"vnumer" => 2
+			],
+			(const) %[
+				"id" => "s013*route_jump_kur",
+				"nocr" => 1,
+				"shape" => "nonsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*route_jump_kur",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"id" => "s013*route_jump_ori",
+				"shape" => "nonsection",
+				"storage" => "x_【共通】13.ks",
+				"tag" => "s013",
+				"target" => "*route_jump_ori",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"fromid" => "s013*route_jump_noa",
+				"id" => "warp_1_2",
+				"route" => "乃愛",
+				"syncpos" => "s013*route_jump_noa",
+				"syncvert" => "s013*route_jump_noa",
+				"type" => "warp"
+			],
+			(const) %[
+				"fromid" => "s013*route_jump_kur",
+				"id" => "warp_1_3",
+				"route" => "来海",
+				"syncpos" => "s013*route_jump_kur",
+				"syncvert" => "s013*route_jump_kur",
+				"type" => "warp"
+			],
+			(const) %[
+				"fromid" => "s013*route_jump_kag",
+				"id" => "warp_1_4",
+				"route" => "かぐ耶",
+				"syncpos" => "s013*route_jump_kag",
+				"syncvert" => "s013*route_jump_kag",
+				"type" => "warp"
+			],
+			(const) %[
+				"fromid" => "s013*route_jump_ori",
+				"id" => "warp_1_5",
+				"route" => "オリエ",
+				"syncpos" => "s013*route_jump_ori",
+				"syncvert" => "s013*route_jump_ori",
+				"type" => "warp"
+			],
+			(const) %[
+				"fromid" => "s013*route_jump_fum",
+				"id" => "warp_1_6",
+				"route" => "風実花",
+				"syncpos" => "s013*route_jump_fum",
+				"syncvert" => "s013*route_jump_fum",
+				"type" => "warp"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_2_1",
+				"name" => "CHAPTER 4",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "夏が始まる",
+				"id" => "s101*part_101",
+				"storage" => "x_【乃愛】01.ks",
+				"tag" => "s101",
+				"target" => "*part_101",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "練習再開",
+				"id" => "s101*chapter_noaH2",
+				"storage" => "x_【乃愛】01.ks",
+				"tag" => "s101",
+				"target" => "*chapter_noaH2",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "気まずさ…",
+				"flowjump" => "*flowjump",
+				"id" => "s101*chapter_noaH2_after",
+				"storage" => "x_【乃愛】01.ks",
+				"tag" => "s101",
+				"target" => "*chapter_noaH2_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "夢",
+				"id" => "s102*part_102",
+				"storage" => "x_【乃愛】02.ks",
+				"tag" => "s102",
+				"target" => "*part_102",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "もっと練習",
+				"id" => "s102*chapter_noaH3",
+				"storage" => "x_【乃愛】02.ks",
+				"tag" => "s102",
+				"target" => "*chapter_noaH3",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "何故、魔王は…",
+				"id" => "s102*chapter_noaH3_after",
+				"storage" => "x_【乃愛】02.ks",
+				"tag" => "s102",
+				"target" => "*chapter_noaH3_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "天使の前は",
+				"id" => "s103*part_103",
+				"storage" => "【乃愛】03.ks",
+				"tag" => "s103",
+				"target" => "*part_103",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_2_2",
+				"name" => "CHAPTER 5",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "気分転換",
+				"id" => "s104*part_104",
+				"storage" => "x_【乃愛】04.ks",
+				"tag" => "s104",
+				"target" => "*part_104",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "守ったもの",
+				"id" => "s105*part_105",
+				"storage" => "【乃愛】05.ks",
+				"tag" => "s105",
+				"target" => "*part_105",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "残る問題は…",
+				"id" => "s106*part_106",
+				"storage" => "x_【乃愛】06.ks",
+				"tag" => "s106",
+				"target" => "*part_106",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "練習への葛藤",
+				"id" => "s106*chapter_noaH4",
+				"storage" => "x_【乃愛】06.ks",
+				"tag" => "s106",
+				"target" => "*chapter_noaH4",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "キス…",
+				"id" => "s106*chapter_noaH4_after",
+				"storage" => "x_【乃愛】06.ks",
+				"tag" => "s106",
+				"target" => "*chapter_noaH4_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "昂る身体",
+				"id" => "s107*part_107",
+				"storage" => "x_【乃愛】07（H1）.ks",
+				"tag" => "s107",
+				"target" => "*part_107",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "初体験",
+				"id" => "s107*chapter_noaH5",
+				"storage" => "x_【乃愛】07（H1）.ks",
+				"tag" => "s107",
+				"target" => "*chapter_noaH5",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s107*part_107_sel1",
+				"selects" => (const) [
+					"口で……",
+					1,
+					"顔に……",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkMOUTH",
+					"2" => ".checkFACE"
+				],
+				"storage" => "x_【乃愛】07（H1）.ks",
+				"tag" => "s107",
+				"target" => "*part_107_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "口で",
+				"id" => "s107*107_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】07（H1）.ks",
+				"tag" => "s107",
+				"target" => "*107_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "顔で",
+				"id" => "s107*107_01B",
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】07（H1）.ks",
+				"tag" => "s107",
+				"target" => "*107_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "初体験続き…",
+				"id" => "s107*107_01com",
+				"preofs" => 50,
+				"storage" => "x_【乃愛】07（H1）.ks",
+				"tag" => "s107",
+				"target" => "*107_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s107*part_107_sel2",
+				"selects" => (const) [
+					"このまま擦り続ける",
+					1,
+					"潰されるのは困る",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【乃愛】07（H1）.ks",
+				"tag" => "s107",
+				"target" => "*part_107_sel2",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中で",
+				"id" => "s107*107_02A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】07（H1）.ks",
+				"tag" => "s107",
+				"target" => "*107_02A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外で",
+				"id" => "s107*107_02B",
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】07（H1）.ks",
+				"tag" => "s107",
+				"target" => "*107_02B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "初体験続き…",
+				"id" => "s107*107_02com",
+				"preofs" => 50,
+				"storage" => "x_【乃愛】07（H1）.ks",
+				"tag" => "s107",
+				"target" => "*107_02com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "そして朝…",
+				"id" => "s107*chapter_noaH5_after",
+				"storage" => "x_【乃愛】07（H1）.ks",
+				"tag" => "s107",
+				"target" => "*chapter_noaH5_after",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_2_3",
+				"name" => "CHAPTER 6",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "新たな幸せ",
+				"id" => "s108*part_108",
+				"storage" => "x_【乃愛】08.ks",
+				"tag" => "s108",
+				"target" => "*part_108",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "初めてのデート",
+				"id" => "s109*part_109",
+				"storage" => "x_【乃愛】09（H2）.ks",
+				"tag" => "s109",
+				"target" => "*part_109",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "まだデート終わらない",
+				"id" => "s109*chapter_noaH6",
+				"storage" => "x_【乃愛】09（H2）.ks",
+				"tag" => "s109",
+				"target" => "*chapter_noaH6",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s109*part_109_sel1",
+				"selects" => (const) [
+					"中に出したい……",
+					1,
+					"乃愛をドロドロにしたい",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【乃愛】09（H2）.ks",
+				"tag" => "s109",
+				"target" => "*part_109_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中で",
+				"id" => "s109*109_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】09（H2）.ks",
+				"tag" => "s109",
+				"target" => "*109_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外で",
+				"id" => "s109*109_01B",
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】09（H2）.ks",
+				"tag" => "s109",
+				"target" => "*109_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "デート続き",
+				"id" => "s109*109_01com",
+				"preofs" => 50,
+				"storage" => "x_【乃愛】09（H2）.ks",
+				"tag" => "s109",
+				"target" => "*109_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "違和感",
+				"id" => "s109*chapter_noaH6_after",
+				"storage" => "x_【乃愛】09（H2）.ks",
+				"tag" => "s109",
+				"target" => "*chapter_noaH6_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "脱・天使",
+				"id" => "s110*part_110",
+				"storage" => "x_【乃愛】10.ks",
+				"tag" => "s110",
+				"target" => "*part_110",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "人になったら…",
+				"id" => "s111*part_111",
+				"storage" => "x_【乃愛】11.ks",
+				"tag" => "s111",
+				"target" => "*part_111",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "日用品を買いに行こう",
+				"id" => "s112*part_112",
+				"storage" => "x_【乃愛】12（BAD-H）.ks",
+				"tag" => "s112",
+				"target" => "*part_112",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "大胆な乃愛？",
+				"id" => "s112*part_112_sel1",
+				"selects" => (const) [
+					"したい",
+					1,
+					"いやなわけないが……",
+					2
+				],
+				"selevals" => (const) %[
+					"!1" => "heart:hscene"
+				],
+				"storage" => "x_【乃愛】12（BAD-H）.ks",
+				"tag" => "s112",
+				"target" => "*part_112_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "したい",
+				"id" => "s112*112_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】12（BAD-H）.ks",
+				"tag" => "s112",
+				"target" => "*112_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "何か変だ",
+				"id" => "s112*112_01B",
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】12（BAD-H）.ks",
+				"tag" => "s112",
+				"target" => "*112_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"id" => "chapter_2_4",
+				"name" => "CHAPTER 7",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "因縁",
+				"id" => "s113*part_113",
+				"storage" => "【乃愛】13.ks",
+				"tag" => "s113",
+				"target" => "*part_113",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "過去との決別",
+				"id" => "s114*part_114",
+				"storage" => "x_【乃愛】14（H3）END.ks",
+				"tag" => "s114",
+				"target" => "*part_114",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "二人でお風呂",
+				"id" => "s114*chapter_noaH8",
+				"storage" => "x_【乃愛】14（H3）END.ks",
+				"tag" => "s114",
+				"target" => "*chapter_noaH8",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s114*part_114_sel1",
+				"selects" => (const) [
+					"お口にしゃせい",
+					1,
+					"お顔にしゃせい",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkMOUTH",
+					"2" => ".checkFACE"
+				],
+				"storage" => "x_【乃愛】14（H3）END.ks",
+				"tag" => "s114",
+				"target" => "*part_114_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "口に",
+				"id" => "s114*114_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】14（H3）END.ks",
+				"tag" => "s114",
+				"target" => "*114_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "顔に",
+				"id" => "s114*114_01B",
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】14（H3）END.ks",
+				"tag" => "s114",
+				"target" => "*114_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "お風呂続き…",
+				"id" => "s114*114_01com",
+				"preofs" => 50,
+				"storage" => "x_【乃愛】14（H3）END.ks",
+				"tag" => "s114",
+				"target" => "*114_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s114*part_114_sel2",
+				"selects" => (const) [
+					"このまま乃愛の奥に",
+					1,
+					"乃愛の身体に",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【乃愛】14（H3）END.ks",
+				"tag" => "s114",
+				"target" => "*part_114_sel2",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に",
+				"id" => "s114*114_02A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】14（H3）END.ks",
+				"tag" => "s114",
+				"target" => "*114_02A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に",
+				"id" => "s114*114_02B",
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】14（H3）END.ks",
+				"tag" => "s114",
+				"target" => "*114_02B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "お風呂続き…",
+				"id" => "s114*114_02com",
+				"preofs" => 50,
+				"storage" => "x_【乃愛】14（H3）END.ks",
+				"tag" => "s114",
+				"target" => "*114_02com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "白雪乃愛",
+				"id" => "s114*chapter_noaH8__after",
+				"storage" => "x_【乃愛】14（H3）END.ks",
+				"tag" => "s114",
+				"target" => "*chapter_noaH8__after",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_2_5",
+				"name" => "EPILOGUE",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "EPILOGUE",
+				"id" => "s115*part_115",
+				"storage" => "x_【乃愛】15（EP）.ks",
+				"tag" => "s115",
+				"target" => "*part_115",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_2_6",
+				"name" => "AFTER STORY",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "AFTER STORY",
+				"head" => "true",
+				"id" => "s116*part_116",
+				"storage" => "x_【乃愛】16（H4）.ks",
+				"tag" => "s116",
+				"target" => "*part_116",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "パイズリ？",
+				"id" => "s116*chapter_noaH9",
+				"storage" => "x_【乃愛】16（H4）.ks",
+				"tag" => "s116",
+				"target" => "*chapter_noaH9",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s116*part_116_sel1",
+				"selects" => (const) [
+					"バカにされちゃう",
+					1,
+					"理性を保つ",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【乃愛】16（H4）.ks",
+				"tag" => "s116",
+				"target" => "*part_116_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に",
+				"id" => "s116*116_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】16（H4）.ks",
+				"tag" => "s116",
+				"target" => "*116_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に",
+				"id" => "s116*116_01B",
+				"shape" => "subsection",
+				"storage" => "x_【乃愛】16（H4）.ks",
+				"tag" => "s116",
+				"target" => "*116_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "パイズリ続き…",
+				"id" => "s116*116_01com",
+				"preofs" => 50,
+				"storage" => "x_【乃愛】16（H4）.ks",
+				"tag" => "s116",
+				"target" => "*116_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "やり過ぎた二人",
+				"flowjump" => "*flowjump",
+				"id" => "s116*chapter_noaH9_after",
+				"storage" => "x_【乃愛】16（H4）.ks",
+				"tag" => "s116",
+				"target" => "*chapter_noaH9_after",
+				"type" => "section"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_3_1",
+				"name" => "CHAPTER 3",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "いい匂い？",
+				"id" => "s200*part_200",
+				"storage" => "【天音】00_分岐.ks",
+				"tag" => "s200",
+				"target" => "*part_200",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_3_2",
+				"name" => "CHAPTER 4",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "天音の前世返り",
+				"id" => "s201*part_201",
+				"storage" => "x_【天音】01.ks",
+				"tag" => "s201",
+				"target" => "*part_201",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "同調",
+				"id" => "s202*part_202",
+				"storage" => "【天音】02_2.ks",
+				"tag" => "s202",
+				"target" => "*part_202",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "一緒のベッドで…",
+				"id" => "s203*part_203",
+				"storage" => "x_【天音】03.ks",
+				"tag" => "s203",
+				"target" => "*part_203",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "同調した気持ち",
+				"id" => "s204*part_204",
+				"storage" => "x_【天音】04.ks",
+				"tag" => "s204",
+				"target" => "*part_204",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "抑えられない欲望",
+				"id" => "s204*chapter_amaH1",
+				"storage" => "x_【天音】04.ks",
+				"tag" => "s204",
+				"target" => "*chapter_amaH1",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "スッキリしたものの…",
+				"id" => "s204*chapter_amaH1_after",
+				"storage" => "x_【天音】04.ks",
+				"tag" => "s204",
+				"target" => "*chapter_amaH1_after",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_3_3",
+				"name" => "CHAPTER 5",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "天音？",
+				"id" => "s205*part_205",
+				"storage" => "【天音】05_2.ks",
+				"tag" => "s205",
+				"target" => "*part_205",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "風実花の手伝い",
+				"id" => "s206*part_206",
+				"storage" => "x_【天音】06（H1）.ks",
+				"tag" => "s206",
+				"target" => "*part_206",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "初体験",
+				"id" => "s206*chapter_amaH2",
+				"storage" => "x_【天音】06（H1）.ks",
+				"tag" => "s206",
+				"target" => "*chapter_amaH2",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s206*part_206_sel1",
+				"selects" => (const) [
+					"負けてたまるかっ",
+					1,
+					"素直に認める",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkMOUTH",
+					"2" => ".checkFACE"
+				],
+				"storage" => "x_【天音】06（H1）.ks",
+				"tag" => "s206",
+				"target" => "*part_206_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "口に…",
+				"id" => "s206*206_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【天音】06（H1）.ks",
+				"tag" => "s206",
+				"target" => "*206_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "顔に…",
+				"id" => "s206*206_01B",
+				"shape" => "subsection",
+				"storage" => "x_【天音】06（H1）.ks",
+				"tag" => "s206",
+				"target" => "*206_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "初体験続き…",
+				"id" => "s206*206_01com",
+				"preofs" => 50,
+				"storage" => "x_【天音】06（H1）.ks",
+				"tag" => "s206",
+				"target" => "*206_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s206*part_206_sel2",
+				"selects" => (const) [
+					"遠慮しない。今度も中で",
+					1,
+					"やっぱり、今度は外で",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【天音】06（H1）.ks",
+				"tag" => "s206",
+				"target" => "*part_206_sel2",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s206*206_02A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【天音】06（H1）.ks",
+				"tag" => "s206",
+				"target" => "*206_02A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s206*206_02B",
+				"shape" => "subsection",
+				"storage" => "x_【天音】06（H1）.ks",
+				"tag" => "s206",
+				"target" => "*206_02B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "初体験続き…",
+				"id" => "s206*206_02com",
+				"preofs" => 50,
+				"storage" => "x_【天音】06（H1）.ks",
+				"tag" => "s206",
+				"target" => "*206_02com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "踏み越えた二人",
+				"id" => "s206*chapter_amaH2_after",
+				"storage" => "x_【天音】06（H1）.ks",
+				"tag" => "s206",
+				"target" => "*chapter_amaH2_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "デートしたい！",
+				"id" => "s207*part_207",
+				"storage" => "x_【天音】07.ks",
+				"tag" => "s207",
+				"target" => "*part_207",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "海・再び！",
+				"id" => "s208*part_208",
+				"storage" => "x_【天音】08（H2）.ks",
+				"tag" => "s208",
+				"target" => "*part_208",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "ホテルに戻って…",
+				"id" => "s208*chapter_amaH3",
+				"storage" => "x_【天音】08（H2）.ks",
+				"tag" => "s208",
+				"target" => "*chapter_amaH3",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s208*part_208_sel1",
+				"selects" => (const) [
+					"もっとお腹に響かせる",
+					1,
+					"いっそ、お腹を引きずり出す",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【天音】08（H2）.ks",
+				"tag" => "s208",
+				"target" => "*part_208_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s208*208_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【天音】08（H2）.ks",
+				"tag" => "s208",
+				"target" => "*208_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s208*208_01B",
+				"shape" => "subsection",
+				"storage" => "x_【天音】08（H2）.ks",
+				"tag" => "s208",
+				"target" => "*208_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "ホテル続き…",
+				"id" => "s208*208_01com",
+				"preofs" => 50,
+				"storage" => "x_【天音】08（H2）.ks",
+				"tag" => "s208",
+				"target" => "*208_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "夏の夜は花火",
+				"id" => "s208*chapter_amaH3_after",
+				"storage" => "x_【天音】08（H2）.ks",
+				"tag" => "s208",
+				"target" => "*chapter_amaH3_after",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_3_4",
+				"name" => "CHAPTER 6",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "一緒にゲーム",
+				"id" => "s209*part_209",
+				"storage" => "x_【天音】09.ks",
+				"tag" => "s209",
+				"target" => "*part_209",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "夏休みも終わり…",
+				"id" => "s210*part_210",
+				"storage" => "x_【天音】10（H3）.ks",
+				"tag" => "s210",
+				"target" => "*part_210",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "天音の実験",
+				"id" => "s210*chapter_amaH4",
+				"storage" => "x_【天音】10（H3）.ks",
+				"tag" => "s210",
+				"target" => "*chapter_amaH4",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "意外と成功",
+				"id" => "s210*chapter_amaH4_after",
+				"storage" => "x_【天音】10（H3）.ks",
+				"tag" => "s210",
+				"target" => "*chapter_amaH4_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "彼女の勇気",
+				"id" => "s211*part_211",
+				"storage" => "【天音】11.ks",
+				"tag" => "s211",
+				"target" => "*part_211",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_3_5",
+				"name" => "CHAPTER 7",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "その後の顛末",
+				"id" => "s212*part_212",
+				"storage" => "x_【天音】12（END）.ks",
+				"tag" => "s212",
+				"target" => "*part_212",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "結婚式",
+				"id" => "s212*chapter7-2_ama",
+				"storage" => "x_【天音】12（END）.ks",
+				"tag" => "s212",
+				"target" => "*chapter7-2_ama",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_3_6",
+				"name" => "EPILOGUE",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "EPILOGUE",
+				"id" => "s213*part_213",
+				"storage" => "x_【天音】13（EP-H4）.ks",
+				"tag" => "s213",
+				"target" => "*part_213",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "鎮まらない勃起",
+				"id" => "s213*chapter_amaH5",
+				"storage" => "x_【天音】13（EP-H4）.ks",
+				"tag" => "s213",
+				"target" => "*chapter_amaH5",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s213*part_213_sel1",
+				"selects" => (const) [
+					"思いっきり飲ませる",
+					1,
+					"思いっきり浴びせる",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkMOUTH",
+					"2" => ".checkFACE"
+				],
+				"storage" => "x_【天音】13（EP-H4）.ks",
+				"tag" => "s213",
+				"target" => "*part_213_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "口に…",
+				"id" => "s213*213_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【天音】13（EP-H4）.ks",
+				"tag" => "s213",
+				"target" => "*213_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "顔に…",
+				"id" => "s213*213_01B",
+				"shape" => "subsection",
+				"storage" => "x_【天音】13（EP-H4）.ks",
+				"tag" => "s213",
+				"target" => "*213_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "勃起続き…",
+				"id" => "s213*213_01com",
+				"preofs" => 50,
+				"storage" => "x_【天音】13（EP-H4）.ks",
+				"tag" => "s213",
+				"target" => "*213_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s213*part_213_sel2",
+				"selects" => (const) [
+					"両方とも白く染める",
+					1,
+					"今度は肌を白く……",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【天音】13（EP-H4）.ks",
+				"tag" => "s213",
+				"target" => "*part_213_sel2",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s213*213_02A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【天音】13（EP-H4）.ks",
+				"tag" => "s213",
+				"target" => "*213_02A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s213*213_02B",
+				"shape" => "subsection",
+				"storage" => "x_【天音】13（EP-H4）.ks",
+				"tag" => "s213",
+				"target" => "*213_02B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "勃起続き…",
+				"id" => "s213*213_02com",
+				"preofs" => 50,
+				"storage" => "x_【天音】13（EP-H4）.ks",
+				"tag" => "s213",
+				"target" => "*213_02com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "エンディング",
+				"id" => "s213*chapter_amaH5_after",
+				"storage" => "x_【天音】13（EP-H4）.ks",
+				"tag" => "s213",
+				"target" => "*chapter_amaH5_after",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_3_7",
+				"name" => "AFTER STORY",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "AFTER STORY",
+				"head" => "true",
+				"id" => "s214*part_214",
+				"storage" => "x_【天音】14（after）.ks",
+				"tag" => "s214",
+				"target" => "*part_214",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "やる気みなぎる天音",
+				"id" => "s214*chapter_amaH6",
+				"storage" => "x_【天音】14（after）.ks",
+				"tag" => "s214",
+				"target" => "*chapter_amaH6",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s214*part_214_sel1",
+				"selects" => (const) [
+					"腰を掴んだまま逃がさない",
+					1,
+					"腰を掴む力を緩める",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【天音】14（after）.ks",
+				"tag" => "s214",
+				"target" => "*part_214_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s214*214_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【天音】14（after）.ks",
+				"tag" => "s214",
+				"target" => "*214_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "身体に…",
+				"id" => "s214*214_01B",
+				"shape" => "subsection",
+				"storage" => "x_【天音】14（after）.ks",
+				"tag" => "s214",
+				"target" => "*214_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "やる気続き",
+				"id" => "s214*214_01com",
+				"preofs" => 50,
+				"storage" => "x_【天音】14（after）.ks",
+				"tag" => "s214",
+				"target" => "*214_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s214*part_214_sel2",
+				"selects" => (const) [
+					"天音のおま●こにわからせる",
+					1,
+					"天音の身体にわからせる",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【天音】14（after）.ks",
+				"tag" => "s214",
+				"target" => "*part_214_sel2",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s214*214_02A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【天音】14（after）.ks",
+				"tag" => "s214",
+				"target" => "*214_02A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "身体に…",
+				"id" => "s214*214_02B",
+				"shape" => "subsection",
+				"storage" => "x_【天音】14（after）.ks",
+				"tag" => "s214",
+				"target" => "*214_02B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "やる気続き",
+				"id" => "s214*214_02com",
+				"preofs" => 50,
+				"storage" => "x_【天音】14（after）.ks",
+				"tag" => "s214",
+				"target" => "*214_02com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "満足天音",
+				"flowjump" => "*flowjump",
+				"id" => "s214*chapter_amaH6_after",
+				"storage" => "x_【天音】14（after）.ks",
+				"tag" => "s214",
+				"target" => "*chapter_amaH6_after",
+				"type" => "section"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_4_1",
+				"name" => "CHAPTER 4",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "来海からの相談",
+				"id" => "s301*part_301",
+				"storage" => "【来海】01.ks",
+				"tag" => "s301",
+				"target" => "*part_301",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "天才？",
+				"id" => "s302*part_302",
+				"storage" => "【来海】02.ks",
+				"tag" => "s302",
+				"target" => "*part_302",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "制御できるかな？",
+				"id" => "s303*part_303",
+				"storage" => "【来海】03.ks",
+				"tag" => "s303",
+				"target" => "*part_303",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "レッスン中",
+				"id" => "s304*part_304",
+				"storage" => "【来海】04.ks",
+				"tag" => "s304",
+				"target" => "*part_304",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "ばったり遭遇",
+				"id" => "s305*part_305",
+				"storage" => "【来海】05.ks",
+				"tag" => "s305",
+				"target" => "*part_305",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "デート？　相談？",
+				"id" => "s306*part_306",
+				"storage" => "【来海】06.ks",
+				"tag" => "s306",
+				"target" => "*part_306",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_4_2",
+				"name" => "CHAPTER 5",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "恋人（仮）",
+				"id" => "s307*part_307",
+				"storage" => "【来海】07.ks",
+				"tag" => "s307",
+				"target" => "*part_307",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "クルミとリックン",
+				"id" => "s308*part_308",
+				"storage" => "【来海】08.ks",
+				"tag" => "s308",
+				"target" => "*part_308",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "彼女の不安",
+				"id" => "s309*part_309",
+				"storage" => "【来海】09.ks",
+				"tag" => "s309",
+				"target" => "*part_309",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "試してみる？",
+				"id" => "s310*part_310",
+				"storage" => "x_【来海】10.ks",
+				"tag" => "s310",
+				"target" => "*part_310",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_4_3",
+				"name" => "CHAPTER 6",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "それぞれの夏休み",
+				"id" => "s311*part_311",
+				"storage" => "【来海】11.ks",
+				"tag" => "s311",
+				"target" => "*part_311",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "プレゼント",
+				"id" => "s312*part_312",
+				"storage" => "【来海】12.ks",
+				"tag" => "s312",
+				"target" => "*part_312",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "不運にもほどがある",
+				"id" => "s313*part_313",
+				"storage" => "【来海】13.ks",
+				"tag" => "s313",
+				"target" => "*part_313",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "呪われた李空",
+				"id" => "s314*part_314",
+				"storage" => "【来海】14.ks",
+				"tag" => "s314",
+				"target" => "*part_314",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_4_4",
+				"name" => "CHAPTER 7",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "刺客を探せ！",
+				"id" => "s315*part_315",
+				"storage" => "x_【来海】15.ks",
+				"tag" => "s315",
+				"target" => "*part_315",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "初体験",
+				"id" => "s315*chapter_kurH1",
+				"storage" => "x_【来海】15.ks",
+				"tag" => "s315",
+				"target" => "*chapter_kurH1",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "その姿は、意外にも…",
+				"id" => "s315*chapter_kurH1_after",
+				"storage" => "x_【来海】15.ks",
+				"tag" => "s315",
+				"target" => "*chapter_kurH1_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "宵の監視者",
+				"id" => "s316*part_316",
+				"storage" => "【来海】16.ks",
+				"tag" => "s316",
+				"target" => "*part_316",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "彼の選択",
+				"id" => "s317*part_317",
+				"storage" => "x_【来海】17.ks",
+				"tag" => "s317",
+				"target" => "*part_317",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "真面目な話が終われば…",
+				"id" => "s317*chapter_kurH2",
+				"storage" => "x_【来海】17.ks",
+				"tag" => "s317",
+				"target" => "*chapter_kurH2",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち",
+				"id" => "s317*part_317_sel1",
+				"selects" => (const) [
+					"中に出す",
+					1,
+					"外に出す",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【来海】17.ks",
+				"tag" => "s317",
+				"target" => "*part_317_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s317*317_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【来海】17.ks",
+				"tag" => "s317",
+				"target" => "*317_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s317*317_01B",
+				"shape" => "subsection",
+				"storage" => "x_【来海】17.ks",
+				"tag" => "s317",
+				"target" => "*317_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "真面目な話続き…",
+				"id" => "s317*317_01com",
+				"preofs" => 50,
+				"storage" => "x_【来海】17.ks",
+				"tag" => "s317",
+				"target" => "*317_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "約束",
+				"id" => "s317*chapter_kurH2_after",
+				"storage" => "x_【来海】17.ks",
+				"tag" => "s317",
+				"target" => "*chapter_kurH2_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "ヴェガと届ける言葉",
+				"id" => "s318*part_318",
+				"storage" => "【来海】18.ks",
+				"tag" => "s318",
+				"target" => "*part_318",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_4_5",
+				"name" => "CHAPTER 8",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "夏休みの過ごし方",
+				"id" => "s319*part_319",
+				"storage" => "x_【来海】19.ks",
+				"tag" => "s319",
+				"target" => "*part_319",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "イラマチオ",
+				"id" => "s319*chapter_kurH3",
+				"storage" => "x_【来海】19.ks",
+				"tag" => "s319",
+				"target" => "*chapter_kurH3",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s319*part_319_sel1",
+				"selects" => (const) [
+					"口に出す",
+					1,
+					"顔にかける",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkMOUTH",
+					"2" => ".checkFACE"
+				],
+				"storage" => "x_【来海】19.ks",
+				"tag" => "s319",
+				"target" => "*part_319_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "口に…",
+				"id" => "s319*319_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【来海】19.ks",
+				"tag" => "s319",
+				"target" => "*319_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "顔に…",
+				"id" => "s319*319_01B",
+				"shape" => "subsection",
+				"storage" => "x_【来海】19.ks",
+				"tag" => "s319",
+				"target" => "*319_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "イラマチオ続き",
+				"id" => "s319*319_01com",
+				"preofs" => 50,
+				"storage" => "x_【来海】19.ks",
+				"tag" => "s319",
+				"target" => "*319_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "気持ちの整理",
+				"id" => "s319*chapter_kurH3_after",
+				"storage" => "x_【来海】19.ks",
+				"tag" => "s319",
+				"target" => "*chapter_kurH3_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "約束の海",
+				"id" => "s320*part_320",
+				"storage" => "x_【来海】20.ks",
+				"tag" => "s320",
+				"target" => "*part_320",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "シャワー室で",
+				"id" => "s320*chapter_kurH4",
+				"storage" => "x_【来海】20.ks",
+				"tag" => "s320",
+				"target" => "*chapter_kurH4",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s320*part_320_sel1",
+				"selects" => (const) [
+					"中に出す",
+					1,
+					"外に出す",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【来海】20.ks",
+				"tag" => "s320",
+				"target" => "*part_320_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s320*320_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【来海】20.ks",
+				"tag" => "s320",
+				"target" => "*320_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s320*320_01B",
+				"shape" => "subsection",
+				"storage" => "x_【来海】20.ks",
+				"tag" => "s320",
+				"target" => "*320_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "シャワー室続き",
+				"id" => "s320*320_01com",
+				"preofs" => 50,
+				"storage" => "x_【来海】20.ks",
+				"tag" => "s320",
+				"target" => "*320_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "（仮）じゃなくて",
+				"id" => "s320*chapter_kurH4_after",
+				"storage" => "x_【来海】20.ks",
+				"tag" => "s320",
+				"target" => "*chapter_kurH4_after",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_4_6",
+				"name" => "EPILOGUE",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "EPILOGUE",
+				"id" => "s321*part_321",
+				"storage" => "x_【来海】21.ks",
+				"tag" => "s321",
+				"target" => "*part_321",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_4_7",
+				"name" => "AFTER STORY",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "AFTER STORY",
+				"head" => "true",
+				"id" => "s322*part_322",
+				"storage" => "x_【来海】アフター.ks",
+				"tag" => "s322",
+				"target" => "*part_322",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "来海のコンプレックス",
+				"id" => "s322*chapter_kurH5",
+				"storage" => "x_【来海】アフター.ks",
+				"tag" => "s322",
+				"target" => "*chapter_kurH5",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "確認事項",
+				"id" => "s322*chapter_kurH5_after",
+				"storage" => "x_【来海】アフター.ks",
+				"tag" => "s322",
+				"target" => "*chapter_kurH5_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "意外な再会",
+				"id" => "s322*chapter9-2_kur",
+				"storage" => "x_【来海】アフター.ks",
+				"tag" => "s322",
+				"target" => "*chapter9-2_kur",
+				"type" => "section"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_5_1",
+				"name" => "CHAPTER 4",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "詰められる距離感",
+				"id" => "s401*part_401",
+				"storage" => "x_【かぐ耶】01.ks",
+				"tag" => "s401",
+				"target" => "*part_401",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "とにもかくにも終業式",
+				"id" => "s402*part_402",
+				"storage" => "【かぐ耶】02.ks",
+				"tag" => "s402",
+				"target" => "*part_402",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "二人だけの秘密の特訓",
+				"id" => "s403*part_403",
+				"storage" => "x_【かぐ耶】03.ks",
+				"tag" => "s403",
+				"target" => "*part_403",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "かぐ耶の寂しさ",
+				"id" => "s404*part_404",
+				"storage" => "x_【かぐ耶】04.ks",
+				"tag" => "s404",
+				"target" => "*part_404",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "繋がりを求めるあまりに",
+				"id" => "s404*chapter4-5_kag",
+				"storage" => "x_【かぐ耶】04.ks",
+				"tag" => "s404",
+				"target" => "*chapter4-5_kag",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "これはもう恋だった",
+				"id" => "s405*part_405",
+				"storage" => "【かぐ耶】05.ks",
+				"tag" => "s405",
+				"target" => "*part_405",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "俺の魔法",
+				"id" => "s406*part_406",
+				"storage" => "【かぐ耶】06.ks",
+				"tag" => "s406",
+				"target" => "*part_406",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "マジックジャマー",
+				"id" => "s406*chapter4-8_kag",
+				"storage" => "【かぐ耶】06.ks",
+				"tag" => "s406",
+				"target" => "*chapter4-8_kag",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "結ばれる“特別”",
+				"id" => "s407*part_407",
+				"storage" => "x_【かぐ耶】07.ks",
+				"tag" => "s407",
+				"target" => "*part_407",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_5_2",
+				"name" => "CHAPTER 5",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "きちんと段階を踏んで",
+				"id" => "s408*part_408",
+				"storage" => "x_【かぐ耶】08.ks",
+				"tag" => "s408",
+				"target" => "*part_408",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "まずは両親に挨拶を",
+				"id" => "s408*chapter5-2_kag",
+				"storage" => "x_【かぐ耶】08.ks",
+				"tag" => "s408",
+				"target" => "*chapter5-2_kag",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "そして…",
+				"id" => "s408*chapter5-3_kag",
+				"storage" => "x_【かぐ耶】08.ks",
+				"tag" => "s408",
+				"target" => "*chapter5-3_kag",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "キスから先に進むために",
+				"id" => "s409*part_409",
+				"storage" => "x_【かぐ耶】09.ks",
+				"tag" => "s409",
+				"target" => "*part_409",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "かぐ耶と練習",
+				"id" => "s409*chapter_kagH1",
+				"storage" => "x_【かぐ耶】09.ks",
+				"tag" => "s409",
+				"target" => "*chapter_kagH1",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "心は既に結ばれてるのに",
+				"id" => "s410*part_410",
+				"storage" => "x_【かぐ耶】10.ks",
+				"tag" => "s410",
+				"target" => "*part_410",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "かぐ耶と練習・再び",
+				"id" => "s410*chapter_kagH2",
+				"storage" => "x_【かぐ耶】10.ks",
+				"tag" => "s410",
+				"target" => "*chapter_kagH2",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "原因はどこに……？",
+				"id" => "s410*chapter_kagH2_after",
+				"storage" => "x_【かぐ耶】10.ks",
+				"tag" => "s410",
+				"target" => "*chapter_kagH2_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "やっと やっと 身も心も",
+				"id" => "s411*part_411",
+				"storage" => "x_【かぐ耶】11.ks",
+				"tag" => "s411",
+				"target" => "*part_411",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "初体験",
+				"id" => "s411*chapter_kagH3",
+				"storage" => "x_【かぐ耶】11.ks",
+				"tag" => "s411",
+				"target" => "*chapter_kagH3",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "この先も…",
+				"id" => "s411*chapter_kagH3_after",
+				"storage" => "x_【かぐ耶】11.ks",
+				"tag" => "s411",
+				"target" => "*chapter_kagH3_after",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_5_3",
+				"name" => "CHAPTER 6",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "報告もしっかりと",
+				"id" => "s412*part_412",
+				"storage" => "x_【かぐ耶】12.ks",
+				"tag" => "s412",
+				"target" => "*part_412",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "初デートとお姉ちゃん",
+				"id" => "s412*chapter6-2_kag",
+				"storage" => "x_【かぐ耶】12.ks",
+				"tag" => "s412",
+				"target" => "*chapter6-2_kag",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "愛し合える誇らしさ",
+				"id" => "s413*part_413",
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*part_413",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "嫉妬するなら",
+				"id" => "s413*chapter_kagH4",
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*chapter_kagH4",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s413*part_413_sel1",
+				"selects" => (const) [
+					"今日も思いっきり中に出す",
+					1,
+					"今日は制服姿にぶっかける",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*part_413_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s413*413_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*413_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s413*413_01B",
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*413_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "嫉妬続き…",
+				"id" => "s413*413_01com",
+				"preofs" => 50,
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*413_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s413*part_413_sel2",
+				"selects" => (const) [
+					"上品な口の中",
+					1,
+					"整った顔中に",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkMOUTH",
+					"2" => ".checkFACE"
+				],
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*part_413_sel2",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "口に…",
+				"id" => "s413*413_02A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*413_02A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "顔に…",
+				"id" => "s413*413_02B",
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*413_02B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "嫉妬続き…",
+				"id" => "s413*413_02com",
+				"preofs" => 50,
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*413_02com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "伝え合う気持ち",
+				"id" => "s413*chapter_kagH4_after",
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*chapter_kagH4_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "的中せず…",
+				"id" => "s413*chapter6-4_kag",
+				"storage" => "x_【かぐ耶】13.ks",
+				"tag" => "s413",
+				"target" => "*chapter6-4_kag",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "お泊まりなら、朝までも",
+				"id" => "s414*part_414",
+				"storage" => "x_【かぐ耶】14.ks",
+				"tag" => "s414",
+				"target" => "*part_414",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "お泊りＨ",
+				"id" => "s414*chapter_kagH5",
+				"storage" => "x_【かぐ耶】14.ks",
+				"tag" => "s414",
+				"target" => "*chapter_kagH5",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s414*part_414_sel1",
+				"selects" => (const) [
+					"孕ませたい程に！",
+					1,
+					"染め上げたい程に！",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【かぐ耶】14.ks",
+				"tag" => "s414",
+				"target" => "*part_414_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s414*414_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】14.ks",
+				"tag" => "s414",
+				"target" => "*414_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s414*414_01B",
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】14.ks",
+				"tag" => "s414",
+				"target" => "*414_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "お泊り続き…",
+				"id" => "s414*414_01com",
+				"preofs" => 50,
+				"storage" => "x_【かぐ耶】14.ks",
+				"tag" => "s414",
+				"target" => "*414_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s414*part_414_sel2",
+				"selects" => (const) [
+					"このまま一緒に達する",
+					1,
+					"寸前で抜いて浴びせる",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【かぐ耶】14.ks",
+				"tag" => "s414",
+				"target" => "*part_414_sel2",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s414*414_02A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】14.ks",
+				"tag" => "s414",
+				"target" => "*414_02A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s414*414_02B",
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】14.ks",
+				"tag" => "s414",
+				"target" => "*414_02B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "お泊り続き…",
+				"id" => "s414*414_02com",
+				"preofs" => 50,
+				"storage" => "x_【かぐ耶】14.ks",
+				"tag" => "s414",
+				"target" => "*414_02com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "最終目標は？",
+				"id" => "s414*chapter_kagH5_after",
+				"storage" => "x_【かぐ耶】14.ks",
+				"tag" => "s414",
+				"target" => "*chapter_kagH5_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "形勢逆転の一手",
+				"id" => "s415*part_415",
+				"storage" => "x_【かぐ耶】15.ks",
+				"tag" => "s415",
+				"target" => "*part_415",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_5_4",
+				"name" => "CHAPTER 7",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "女王の座",
+				"id" => "s416*part_416",
+				"storage" => "【かぐ耶】16.ks",
+				"tag" => "s416",
+				"target" => "*part_416",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "永遠すら信じられるほど",
+				"id" => "s417*part_417",
+				"storage" => "x_【かぐ耶】17.ks",
+				"tag" => "s417",
+				"target" => "*part_417",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "王城セックス",
+				"id" => "s417*chapter_kagH6",
+				"storage" => "x_【かぐ耶】17.ks",
+				"tag" => "s417",
+				"target" => "*chapter_kagH6",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s417*part_417_sel1",
+				"selects" => (const) [
+					"２発目も中に",
+					1,
+					"今度は抜いて",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【かぐ耶】17.ks",
+				"tag" => "s417",
+				"target" => "*part_417_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s417*417_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】17.ks",
+				"tag" => "s417",
+				"target" => "*417_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s417*417_01B",
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】17.ks",
+				"tag" => "s417",
+				"target" => "*417_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "王城セックス続き…",
+				"id" => "s417*417_01com",
+				"preofs" => 50,
+				"storage" => "x_【かぐ耶】17.ks",
+				"tag" => "s417",
+				"target" => "*417_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "未来へのお見送り",
+				"id" => "s418*part_418",
+				"storage" => "x_【かぐ耶】18.ks",
+				"tag" => "s418",
+				"target" => "*part_418",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_5_5",
+				"name" => "EPILOGUE",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "EPILOGUE",
+				"id" => "s419*part_419",
+				"storage" => "x_【かぐ耶】19.ks",
+				"tag" => "s419",
+				"target" => "*part_419",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_5_6",
+				"name" => "AFTER STORY",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "AFTER STORY",
+				"head" => "true",
+				"id" => "s420*part_420",
+				"storage" => "x_【かぐ耶】20.ks",
+				"tag" => "s420",
+				"target" => "*part_420",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "腕を抱く意味",
+				"id" => "s420*chapter_kagH7",
+				"storage" => "x_【かぐ耶】20.ks",
+				"tag" => "s420",
+				"target" => "*chapter_kagH7",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s420*part_420_sel1",
+				"selects" => (const) [
+					"初の乳内射精で応える",
+					1,
+					"舌に出して味わわせる",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkFACE",
+					"2" => ".checkMOUTH"
+				],
+				"storage" => "x_【かぐ耶】20.ks",
+				"tag" => "s420",
+				"target" => "*part_420_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "乳内に…",
+				"id" => "s420*420_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】20.ks",
+				"tag" => "s420",
+				"target" => "*420_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "舌に…",
+				"id" => "s420*420_01B",
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】20.ks",
+				"tag" => "s420",
+				"target" => "*420_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "抱く意味続き",
+				"id" => "s420*420_01com",
+				"preofs" => 50,
+				"storage" => "x_【かぐ耶】20.ks",
+				"tag" => "s420",
+				"target" => "*420_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s420*part_420_sel2",
+				"selects" => (const) [
+					"膣内射精以外あり得ない！",
+					1,
+					"ぶっかけ以外あり得ない！",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【かぐ耶】20.ks",
+				"tag" => "s420",
+				"target" => "*part_420_sel2",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s420*420_02A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】20.ks",
+				"tag" => "s420",
+				"target" => "*420_02A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s420*420_02B",
+				"shape" => "subsection",
+				"storage" => "x_【かぐ耶】20.ks",
+				"tag" => "s420",
+				"target" => "*420_02B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "抱く意味続き",
+				"id" => "s420*420_02com",
+				"preofs" => 50,
+				"storage" => "x_【かぐ耶】20.ks",
+				"tag" => "s420",
+				"target" => "*420_02com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "幸せな日々",
+				"id" => "s420*chapter_kagH7_after",
+				"storage" => "x_【かぐ耶】20.ks",
+				"tag" => "s420",
+				"target" => "*chapter_kagH7_after",
+				"type" => "section"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_6_1",
+				"name" => "CHAPTER 4",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "待望の夏休み",
+				"id" => "s501*part_501",
+				"storage" => "E01_4.ks",
+				"tag" => "s501",
+				"target" => "*part_501",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "みんなで遊ぼう",
+				"id" => "s502*part_502",
+				"storage" => "E02_2.ks",
+				"tag" => "s502",
+				"target" => "*part_502",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "協力体制の確立",
+				"id" => "s503*part_503",
+				"storage" => "x_E03_3.ks",
+				"tag" => "s503",
+				"target" => "*part_503",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "勉強会のはずが",
+				"id" => "s503*chapter_oriH1",
+				"storage" => "x_E03_3.ks",
+				"tag" => "s503",
+				"target" => "*chapter_oriH1",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "青い性と誠意の両立",
+				"id" => "s504*part_504",
+				"storage" => "x_E04H.ks",
+				"tag" => "s504",
+				"target" => "*part_504",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "彼女の生真面目さ",
+				"id" => "s504*chapter_oriH2",
+				"storage" => "x_E04H.ks",
+				"tag" => "s504",
+				"target" => "*chapter_oriH2",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "境界線",
+				"id" => "s505*part_505",
+				"storage" => "x_E05.ks",
+				"tag" => "s505",
+				"target" => "*part_505",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_6_2",
+				"name" => "CHAPTER 5",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "殺傷兵器？",
+				"id" => "s506*part_506",
+				"storage" => "E06_2.ks",
+				"tag" => "s506",
+				"target" => "*part_506",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "あいえいちに気をつけて",
+				"id" => "s506*chapter5-2_ori",
+				"storage" => "E06_2.ks",
+				"tag" => "s506",
+				"target" => "*chapter5-2_ori",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "お休み下手ガール",
+				"id" => "s507*part_507",
+				"storage" => "E07_3.ks",
+				"tag" => "s507",
+				"target" => "*part_507",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "進化の話",
+				"id" => "s507*chapter5-4_ori",
+				"storage" => "E07_3.ks",
+				"tag" => "s507",
+				"target" => "*chapter5-4_ori",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "潮の香りの去り際に",
+				"id" => "s508*part_508",
+				"storage" => "E08_3.ks",
+				"tag" => "s508",
+				"target" => "*part_508",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_6_3",
+				"name" => "CHAPTER 6",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "私は、そういう女です",
+				"id" => "s509*part_509",
+				"storage" => "x_E09_2.ks",
+				"tag" => "s509",
+				"target" => "*part_509",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "同じになっていく",
+				"id" => "s510*part_510",
+				"storage" => "x_E10_2.ks",
+				"tag" => "s510",
+				"target" => "*part_510",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "抑えきれない衝動",
+				"id" => "s511*part_511",
+				"storage" => "x_E11H_2.ks",
+				"tag" => "s511",
+				"target" => "*part_511",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "初体験",
+				"id" => "s511*chapter_oriH3",
+				"storage" => "x_E11H_2.ks",
+				"tag" => "s511",
+				"target" => "*chapter_oriH3",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s511*part_511_sel1",
+				"selects" => (const) [
+					"また口に射精す",
+					1,
+					"顔にぶっかける",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkMOUTH",
+					"2" => ".checkFACE"
+				],
+				"storage" => "x_E11H_2.ks",
+				"tag" => "s511",
+				"target" => "*part_511_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "口に…",
+				"id" => "s511*511_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_E11H_2.ks",
+				"tag" => "s511",
+				"target" => "*511_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "顔に…",
+				"id" => "s511*511_01B",
+				"shape" => "subsection",
+				"storage" => "x_E11H_2.ks",
+				"tag" => "s511",
+				"target" => "*511_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "初体験続き…",
+				"id" => "s511*511_01com",
+				"preofs" => 50,
+				"storage" => "x_E11H_2.ks",
+				"tag" => "s511",
+				"target" => "*511_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s511*part_511_sel2",
+				"selects" => (const) [
+					"このまま膣内に出す",
+					1,
+					"抜いて身体に出す",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_E11H_2.ks",
+				"tag" => "s511",
+				"target" => "*part_511_sel2",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s511*511_02A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_E11H_2.ks",
+				"tag" => "s511",
+				"target" => "*511_02A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s511*511_02B",
+				"shape" => "subsection",
+				"storage" => "x_E11H_2.ks",
+				"tag" => "s511",
+				"target" => "*511_02B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "愛おしい違い",
+				"id" => "s512*part_512",
+				"preofs" => 50,
+				"storage" => "x_E12.ks",
+				"tag" => "s512",
+				"target" => "*part_512",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_6_4",
+				"name" => "CHAPTER 7",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "あの海の色を忘れないで",
+				"id" => "s513*part_513",
+				"storage" => "x_E13_3.ks",
+				"tag" => "s513",
+				"target" => "*part_513",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "不器用なキス",
+				"id" => "s514*part_514",
+				"storage" => "x_E14H.ks",
+				"tag" => "s514",
+				"target" => "*part_514",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "あふれる行動",
+				"id" => "s514*chapter_oriH4",
+				"storage" => "x_E14H.ks",
+				"tag" => "s514",
+				"target" => "*chapter_oriH4",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s514*part_514_sel1",
+				"selects" => (const) [
+					"このまま中に出す",
+					1,
+					"抜いてオリエに出す",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_E14H.ks",
+				"tag" => "s514",
+				"target" => "*part_514_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s514*514_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_E14H.ks",
+				"tag" => "s514",
+				"target" => "*514_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s514*514_01B",
+				"shape" => "subsection",
+				"storage" => "x_E14H.ks",
+				"tag" => "s514",
+				"target" => "*514_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "お互い様だから一緒に",
+				"id" => "s515*part_515",
+				"preofs" => 50,
+				"storage" => "x_E15_2.ks",
+				"tag" => "s515",
+				"target" => "*part_515",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "突然の家族計画",
+				"id" => "s516*part_516",
+				"storage" => "x_E16.ks",
+				"tag" => "s516",
+				"target" => "*part_516",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "収斂する運命",
+				"id" => "s517*part_517",
+				"storage" => "x_E17.ks",
+				"tag" => "s517",
+				"target" => "*part_517",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "行為の意味を理解して",
+				"id" => "s518*part_518",
+				"storage" => "x_E18H.ks",
+				"tag" => "s518",
+				"target" => "*part_518",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "胸で包んで",
+				"id" => "s518*chapter_oriH5",
+				"storage" => "x_E18H.ks",
+				"tag" => "s518",
+				"target" => "*chapter_oriH5",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s518*part_518_sel1",
+				"selects" => (const) [
+					"咥えてもらって口に出す",
+					1,
+					"このままぶっかける",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkMOUTH",
+					"2" => ".checkFACE"
+				],
+				"storage" => "x_E18H.ks",
+				"tag" => "s518",
+				"target" => "*part_518_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s518*518_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_E18H.ks",
+				"tag" => "s518",
+				"target" => "*518_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s518*518_01B",
+				"shape" => "subsection",
+				"storage" => "x_E18H.ks",
+				"tag" => "s518",
+				"target" => "*518_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "包んで続き…",
+				"id" => "s518*518_01com",
+				"preofs" => 50,
+				"storage" => "x_E18H.ks",
+				"tag" => "s518",
+				"target" => "*518_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "偶然に感謝",
+				"id" => "s519*part_519",
+				"storage" => "x_E19.ks",
+				"tag" => "s519",
+				"target" => "*part_519",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_6_5",
+				"name" => "EPILOGUE",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "EPILOGUE",
+				"id" => "s520*part_520",
+				"storage" => "E20.ks",
+				"tag" => "s520",
+				"target" => "*part_520",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_6_6",
+				"name" => "AFTER STORY",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "AFTER STORY",
+				"head" => "true",
+				"id" => "s521*part_521",
+				"storage" => "x_E21アフターH.ks",
+				"tag" => "s521",
+				"target" => "*part_521",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "彼女の魔法",
+				"id" => "s521*chapter_oriH6",
+				"storage" => "x_E21アフターH.ks",
+				"tag" => "s521",
+				"target" => "*chapter_oriH6",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s521*part_521_sel1",
+				"selects" => (const) [
+					"やさしくじっくりする",
+					1,
+					"このままイカせ続ける",
+					2
+				],
+				"storage" => "x_E21アフターH.ks",
+				"tag" => "s521",
+				"target" => "*part_521_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "じっくり…",
+				"id" => "s521*521_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_E21アフターH.ks",
+				"tag" => "s521",
+				"target" => "*521_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "このまま…",
+				"id" => "s521*521_01B",
+				"shape" => "subsection",
+				"storage" => "x_E21アフターH.ks",
+				"tag" => "s521",
+				"target" => "*521_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "魔法続き…",
+				"id" => "s521*521_01com",
+				"preofs" => 50,
+				"storage" => "x_E21アフターH.ks",
+				"tag" => "s521",
+				"target" => "*521_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s521*part_521_sel2",
+				"selects" => (const) [
+					"このまま膣内に出す",
+					1,
+					"抜いてオリエにぶっかける",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_E21アフターH.ks",
+				"tag" => "s521",
+				"target" => "*part_521_sel2",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s521*521_02A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_E21アフターH.ks",
+				"tag" => "s521",
+				"target" => "*521_02A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s521*521_02B",
+				"shape" => "subsection",
+				"storage" => "x_E21アフターH.ks",
+				"tag" => "s521",
+				"target" => "*521_02B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "魔法続き…",
+				"id" => "s521*521_02com",
+				"preofs" => 50,
+				"storage" => "x_E21アフターH.ks",
+				"tag" => "s521",
+				"target" => "*521_02com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "魔法…？",
+				"id" => "s521*chapter_oriH6_after",
+				"storage" => "x_E21アフターH.ks",
+				"tag" => "s521",
+				"target" => "*chapter_oriH6_after",
+				"type" => "section"
+			]
+		],
+		(const) [
+			(const) %[
+				"id" => "chapter_7_1",
+				"name" => "CHAPTER 4",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "お中元？",
+				"id" => "s601*part_601",
+				"storage" => "x_【風実花】01（お土産）.ks",
+				"tag" => "s601",
+				"target" => "*part_601",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "ドキドキ風実花",
+				"id" => "s602*part_602",
+				"storage" => "x_【風実花】02（ドキドキ）.ks",
+				"tag" => "s602",
+				"target" => "*part_602",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "今年こそは！",
+				"id" => "s603*part_603",
+				"storage" => "【風実花】03（水着）.ks",
+				"tag" => "s603",
+				"target" => "*part_603",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "魔王とファリ",
+				"id" => "s604*part_604",
+				"storage" => "x_【風実花】04（課外授業）.ks",
+				"tag" => "s604",
+				"target" => "*part_604",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "お勉強？",
+				"id" => "s604*chapter4-5_fum",
+				"storage" => "x_【風実花】04（課外授業）.ks",
+				"tag" => "s604",
+				"target" => "*chapter4-5_fum",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "課外授業",
+				"id" => "s604*chapter_fumH1",
+				"storage" => "x_【風実花】04（課外授業）.ks",
+				"tag" => "s604",
+				"target" => "*chapter_fumH1",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "一旦落ち着け",
+				"id" => "s604*chapter_fumH1_after",
+				"storage" => "x_【風実花】04（課外授業）.ks",
+				"tag" => "s604",
+				"target" => "*chapter_fumH1_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "そして翌日",
+				"id" => "s604*chapter4-6_fum",
+				"storage" => "x_【風実花】04（課外授業）.ks",
+				"tag" => "s604",
+				"target" => "*chapter4-6_fum",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "課外授業・再び",
+				"id" => "s604*chapter_fumH2",
+				"storage" => "x_【風実花】04（課外授業）.ks",
+				"tag" => "s604",
+				"target" => "*chapter_fumH2",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s604*part_604_sel1",
+				"selects" => (const) [
+					"優しく出す",
+					1,
+					"思いっきり出す",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkMOUTH",
+					"2" => ".checkFACE"
+				],
+				"storage" => "x_【風実花】04（課外授業）.ks",
+				"tag" => "s604",
+				"target" => "*part_604_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "口に…",
+				"id" => "s604*604_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【風実花】04（課外授業）.ks",
+				"tag" => "s604",
+				"target" => "*604_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "顔に…",
+				"id" => "s604*604_01B",
+				"shape" => "subsection",
+				"storage" => "x_【風実花】04（課外授業）.ks",
+				"tag" => "s604",
+				"target" => "*604_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "射精完了！",
+				"id" => "s604*604_01com",
+				"preofs" => 50,
+				"storage" => "x_【風実花】04（課外授業）.ks",
+				"tag" => "s604",
+				"target" => "*604_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_7_2",
+				"name" => "CHAPTER 5",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "以前の約束",
+				"id" => "s605*part_605",
+				"storage" => "x_【風実花】05（海）.ks",
+				"tag" => "s605",
+				"target" => "*part_605",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "海へ",
+				"id" => "s605*chapter5-2_fum",
+				"storage" => "x_【風実花】05（海）.ks",
+				"tag" => "s605",
+				"target" => "*chapter5-2_fum",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "海でＨ",
+				"id" => "s605*chapter_fumH3",
+				"storage" => "x_【風実花】05（海）.ks",
+				"tag" => "s605",
+				"target" => "*chapter_fumH3",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s605*part_605_sel1",
+				"selects" => (const) [
+					"中に注ぎ込む",
+					1,
+					"外にぶっかける",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【風実花】05（海）.ks",
+				"tag" => "s605",
+				"target" => "*part_605_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s605*605_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【風実花】05（海）.ks",
+				"tag" => "s605",
+				"target" => "*605_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s605*605_01B",
+				"shape" => "subsection",
+				"storage" => "x_【風実花】05（海）.ks",
+				"tag" => "s605",
+				"target" => "*605_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "海でＨ続き…",
+				"id" => "s605*605_01com",
+				"preofs" => 50,
+				"storage" => "x_【風実花】05（海）.ks",
+				"tag" => "s605",
+				"target" => "*605_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "初めての失恋",
+				"id" => "s605*chapter_fumH3_after",
+				"storage" => "x_【風実花】05（海）.ks",
+				"tag" => "s605",
+				"target" => "*chapter_fumH3_after",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "新たな事実",
+				"id" => "s606*part_606",
+				"storage" => "x_【風実花】06（しつこい男）.ks",
+				"tag" => "s606",
+				"target" => "*part_606",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "我慢できず…",
+				"id" => "s606*chapter_fumH4",
+				"storage" => "x_【風実花】06（しつこい男）.ks",
+				"tag" => "s606",
+				"target" => "*chapter_fumH4",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "どっち？",
+				"id" => "s606*part_606_sel1",
+				"selects" => (const) [
+					"膣内に出す",
+					1,
+					"お尻にかける",
+					2
+				],
+				"selevals" => (const) %[
+					"1" => ".checkIN",
+					"2" => ".checkOUT"
+				],
+				"storage" => "x_【風実花】06（しつこい男）.ks",
+				"tag" => "s606",
+				"target" => "*part_606_sel1",
+				"type" => "select"
+			],
+			(const) %[
+				"comment" => "中に…",
+				"id" => "s606*606_01A",
+				"nocr" => 1,
+				"shape" => "subsection",
+				"storage" => "x_【風実花】06（しつこい男）.ks",
+				"tag" => "s606",
+				"target" => "*606_01A",
+				"type" => "section",
+				"vdenom" => 2,
+				"vnumer" => 0
+			],
+			(const) %[
+				"comment" => "外に…",
+				"id" => "s606*606_01B",
+				"shape" => "subsection",
+				"storage" => "x_【風実花】06（しつこい男）.ks",
+				"tag" => "s606",
+				"target" => "*606_01B",
+				"type" => "section",
+				"vclose" => 1,
+				"vdenom" => 2,
+				"vnumer" => 1
+			],
+			(const) %[
+				"comment" => "お泊りで",
+				"id" => "s606*606_01com",
+				"preofs" => 50,
+				"storage" => "x_【風実花】06（しつこい男）.ks",
+				"tag" => "s606",
+				"target" => "*606_01com",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_7_3",
+				"name" => "EPILOGUE",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "EPILOGUE",
+				"id" => "s607*part_607",
+				"storage" => "x_【風実花】07（END）.ks",
+				"tag" => "s607",
+				"target" => "*part_607",
+				"type" => "section"
+			],
+			(const) %[
+				"id" => "chapter_7_4",
+				"name" => "AFTER STORY",
+				"type" => "chapter"
+			],
+			(const) %[
+				"comment" => "AFTER STORY",
+				"head" => "true",
+				"id" => "s608*part_608",
+				"storage" => "x_【風実花】08（after）.ks",
+				"tag" => "s608",
+				"target" => "*part_608",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "休みの二人",
+				"id" => "s608*chapter6-2_fum",
+				"storage" => "x_【風実花】08（after）.ks",
+				"tag" => "s608",
+				"target" => "*chapter6-2_fum",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "部屋でそのまま…",
+				"id" => "s608*chapter_fumH5",
+				"storage" => "x_【風実花】08（after）.ks",
+				"tag" => "s608",
+				"target" => "*chapter_fumH5",
+				"type" => "section"
+			],
+			(const) %[
+				"comment" => "切り替えは大事",
+				"id" => "s608*chapter6-3_fum",
+				"storage" => "x_【風実花】08（after）.ks",
+				"tag" => "s608",
+				"target" => "*chapter6-3_fum",
+				"type" => "section"
+			]
+		]
+	],
+	"routes" => (const) [
+		"共通",
+		"乃愛",
+		"天音",
+		"来海",
+		"かぐ耶",
+		"オリエ",
+		"風実花"
+	],
+	"selects" => (const) [
+		"s003*part_003_sel1",
+		"s005*part_005_sel1",
+		"s006*part_006_sel1",
+		"s008*part_008_sel1",
+		"s009*part_009_sel1",
+		"s011*part_011_sel1",
+		"s012*part_012_sel1",
+		"s013*part_013_sel1",
+		"s013*part_013_sel2",
+		"s013*part_013_sel3",
+		"s013*part_013_sel4",
+		"s107*part_107_sel1",
+		"s107*part_107_sel2",
+		"s109*part_109_sel1",
+		"s112*part_112_sel1",
+		"s114*part_114_sel1",
+		"s114*part_114_sel2",
+		"s116*part_116_sel1",
+		"s206*part_206_sel1",
+		"s206*part_206_sel2",
+		"s208*part_208_sel1",
+		"s213*part_213_sel1",
+		"s213*part_213_sel2",
+		"s214*part_214_sel1",
+		"s214*part_214_sel2",
+		"s317*part_317_sel1",
+		"s319*part_319_sel1",
+		"s320*part_320_sel1",
+		"s413*part_413_sel1",
+		"s413*part_413_sel2",
+		"s414*part_414_sel1",
+		"s414*part_414_sel2",
+		"s417*part_417_sel1",
+		"s420*part_420_sel1",
+		"s420*part_420_sel2",
+		"s511*part_511_sel1",
+		"s511*part_511_sel2",
+		"s514*part_514_sel1",
+		"s518*part_518_sel1",
+		"s521*part_521_sel1",
+		"s521*part_521_sel2",
+		"s604*part_604_sel1",
+		"s605*part_605_sel1",
+		"s606*part_606_sel1"
+	]
+]

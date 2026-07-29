@@ -1,121 +1,118 @@
 {
   "source": "touchvolume.pbd",
+  "tool": "pbd2json",
   "hotspots": [
     {
-      "layer_id": "header",
-      "sort_index": 1043,
-      "height": 168,
-      "ch": 145
-    },
-    {
-      "layer_id": "wave_numbase",
-      "sort_index": 1204,
-      "height": 52,
-      "ch": 25
-    },
-    {
-      "layer_id": "layer",
-      "sort_index": 2051,
-      "height": 168
-    },
-    {
-      "layer_id": "wave_mute",
-      "sort_index": 2948,
-      "height": 40,
-      "ch": 80
-    },
-    {
+      "name": "base",
+      "left": 471,
+      "top": 251,
+      "width": 978,
+      "height": 498,
+      "class": "base",
+      "uiname": "base",
       "layer_id": "base",
-      "sort_index": null,
-      "width": 246,
-      "height": 14,
-      "storagex": 128
+      "x": 471,
+      "y": 251,
+      "w": 978,
+      "h": 498
     },
     {
-      "layer_id": "gameparts",
-      "sort_index": null,
-      "height": 14
+      "name": "back",
+      "left": 1359,
+      "top": 260,
+      "width": 81,
+      "height": 81,
+      "class": "button",
+      "uiname": "back",
+      "layer_id": "back",
+      "x": 1359,
+      "y": 260,
+      "w": 81,
+      "h": 81
     },
     {
-      "layer_id": "normal",
-      "sort_index": null,
-      "ch": 30
+      "name": "header",
+      "left": 567,
+      "top": 279,
+      "width": 295,
+      "height": 43,
+      "class": "layer",
+      "uiname": "header",
+      "layer_id": "header",
+      "x": 567,
+      "y": 279,
+      "w": 295,
+      "h": 43
     },
     {
-      "layer_id": "normal_off",
-      "sort_index": null,
-      "ch": 80
+      "name": "label",
+      "left": 544,
+      "top": 464,
+      "width": 480,
+      "height": 32,
+      "class": "layer",
+      "uiname": "label",
+      "layer_id": "label",
+      "x": 544,
+      "y": 464,
+      "w": 480,
+      "h": 32
     },
     {
-      "layer_id": "normal_on",
-      "sort_index": null,
-      "ch": 51
+      "name": "wave_slider",
+      "left": 639,
+      "top": 514,
+      "width": 620,
+      "height": 54,
+      "class": "slider",
+      "uiname": "wave_slider",
+      "layer_id": "wave_slider",
+      "x": 639,
+      "y": 514,
+      "w": 620,
+      "h": 54
     },
     {
-      "layer_id": "on_off",
-      "sort_index": null,
-      "ch": 207
+      "name": "wave_numbase",
+      "left": 1297,
+      "top": 526,
+      "width": 74,
+      "height": 29,
+      "class": "layer",
+      "uiname": "wave_numbase",
+      "layer_id": "wave_numbase",
+      "x": 1297,
+      "y": 526,
+      "w": 74,
+      "h": 29
     },
     {
-      "layer_id": "on_on",
-      "sort_index": null,
-      "ch": 160
+      "name": "wave_value",
+      "left": 1297,
+      "top": 526,
+      "width": 74,
+      "height": 29,
+      "class": "layer",
+      "uiname": "wave_value",
+      "layer_id": "wave_value",
+      "x": 1297,
+      "y": 526,
+      "w": 74,
+      "h": 29
     },
     {
-      "layer_id": "over_off",
-      "sort_index": null,
-      "ch": 6
-    },
-    {
-      "layer_id": "over_on",
-      "sort_index": null,
-      "ch": 189
-    },
-    {
-      "layer_id": "slider",
-      "sort_index": null,
-      "height": 128
-    },
-    {
-      "layer_id": "storagex",
-      "sort_index": null,
-      "storagey": 229
-    },
-    {
-      "layer_id": "storagey",
-      "sort_index": null,
-      "width": 246
-    },
-    {
-      "layer_id": "toggle",
-      "sort_index": null,
-      "height": 40
-    },
-    {
-      "layer_id": "touchvolume__bg0",
-      "sort_index": null,
-      "storagex": 128
-    },
-    {
-      "layer_id": "touchvolume__pack",
-      "sort_index": null,
-      "width": 126
-    },
-    {
-      "layer_id": "width",
-      "sort_index": null,
-      "x": 107
-    },
-    {
-      "layer_id": "x",
-      "sort_index": null,
-      "y": 229
-    },
-    {
-      "layer_id": "y",
-      "sort_index": null,
-      "height": 163
+      "name": "wave_mute",
+      "left": 570,
+      "top": 527,
+      "width": 38,
+      "height": 27,
+      "class": "toggle",
+      "uiname": "wave_mute",
+      "layer_id": "wave_mute",
+      "x": 570,
+      "y": 527,
+      "w": 38,
+      "h": 27
     }
-  ],
-  "bindings": []
+  ]
 }

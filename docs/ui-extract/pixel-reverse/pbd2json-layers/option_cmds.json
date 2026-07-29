@@ -1,0 +1,410 @@
+{
+  "source": "option_cmds.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [],
+  "layer_count": 3,
+  "hotspot_count": 3,
+  "hotspots": [
+    {
+      "name": "_cholder",
+      "left": 0,
+      "top": 0,
+      "width": 134,
+      "height": 134,
+      "class": "layer",
+      "uiname": "_cholder",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 60,
+          "w": 134,
+          "h": 134,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "_cmd",
+      "left": 1,
+      "top": 2,
+      "width": 131,
+      "height": 130,
+      "class": "toggle",
+      "uiname": "_cmd",
+      "uistates": {
+        "qload": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 367,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "save": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 196,
+          "cy": 248,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "on": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 0,
+          "cy": 320,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "key_pageup": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 307,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 131,
+          "h": 130,
+          "storage": ""
+        },
+        "load": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 310,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "dsave": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 196,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "prevscn": {
+          "ox": 40,
+          "oy": 29,
+          "cx": 336,
+          "cy": 135,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "vreplay": {
+          "ox": 42,
+          "oy": 25,
+          "cx": 311,
+          "cy": 418,
+          "w": 47,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "hide": {
+          "ox": 42,
+          "oy": 30,
+          "cx": 253,
+          "cy": 424,
+          "w": 49,
+          "h": 48,
+          "storage": "option_cmds__pack"
+        },
+        "title": {
+          "ox": 41,
+          "oy": 23,
+          "cx": 311,
+          "cy": 307,
+          "w": 50,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "nextscn": {
+          "ox": 40,
+          "oy": 29,
+          "cx": 260,
+          "cy": 130,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "over": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 134,
+          "cy": 60,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "none": {
+          "ox": 35,
+          "oy": 21,
+          "cx": 134,
+          "cy": 186,
+          "w": 62,
+          "h": 63,
+          "storage": "option_cmds__pack"
+        },
+        "custom": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 366,
+          "w": 58,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "text": {
+          "ox": 10,
+          "oy": 85,
+          "w": 112,
+          "h": 28,
+          "storage": ""
+        },
+        "backskip": {
+          "ox": 34,
+          "oy": 30,
+          "cx": 361,
+          "cy": 307,
+          "w": 60,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "key_pagedown": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 370,
+          "cy": 248,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "key_ctrl": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 312,
+          "cy": 248,
+          "w": 58,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "click": {
+          "ox": 44,
+          "oy": 23,
+          "cx": 371,
+          "cy": 368,
+          "w": 44,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "skip": {
+          "ox": 39,
+          "oy": 30,
+          "cx": 311,
+          "cy": 368,
+          "w": 60,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "screen": {
+          "ox": 30,
+          "oy": 28,
+          "cx": 134,
+          "cy": 313,
+          "w": 71,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "next": {
+          "ox": 44,
+          "oy": 29,
+          "cx": 388,
+          "cy": 135,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "off": {
+          "ox": 3,
+          "oy": 2,
+          "cx": 0,
+          "cy": 194,
+          "w": 126,
+          "h": 126,
+          "storage": "option_cmds__pack"
+        },
+        "qsave": {
+          "ox": 38,
+          "oy": 21,
+          "cx": 253,
+          "cy": 186,
+          "w": 57,
+          "h": 62,
+          "storage": "option_cmds__pack"
+        },
+        "scnchart": {
+          "ox": 32,
+          "oy": 25,
+          "cx": 336,
+          "cy": 77,
+          "w": 68,
+          "h": 58,
+          "storage": "option_cmds__pack"
+        },
+        "vsave": {
+          "ox": 34,
+          "oy": 29,
+          "cx": 196,
+          "cy": 310,
+          "w": 62,
+          "h": 57,
+          "storage": "option_cmds__pack"
+        },
+        "qvsave": {
+          "ox": 34,
+          "oy": 29,
+          "cx": 134,
+          "cy": 384,
+          "w": 62,
+          "h": 57,
+          "storage": "option_cmds__pack"
+        },
+        "snapshot": {
+          "ox": 33,
+          "oy": 27,
+          "cx": 196,
+          "cy": 372,
+          "w": 66,
+          "h": 52,
+          "storage": "option_cmds__pack"
+        },
+        "option": {
+          "ox": 37,
+          "oy": 25,
+          "cx": 253,
+          "cy": 248,
+          "w": 59,
+          "h": 59,
+          "storage": "option_cmds__pack"
+        },
+        "log": {
+          "ox": 38,
+          "oy": 29,
+          "cx": 352,
+          "cy": 0,
+          "w": 47,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        },
+        "volume": {
+          "ox": 28,
+          "oy": 26,
+          "cx": 260,
+          "cy": 77,
+          "w": 76,
+          "h": 53,
+          "storage": "option_cmds__pack"
+        },
+        "prev": {
+          "ox": 35,
+          "oy": 29,
+          "cx": 251,
+          "cy": 0,
+          "w": 52,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "backone": {
+          "ox": 41,
+          "oy": 29,
+          "cx": 303,
+          "cy": 0,
+          "w": 49,
+          "h": 51,
+          "storage": "option_cmds__pack"
+        },
+        "rclick": {
+          "ox": 44,
+          "oy": 23,
+          "cx": 371,
+          "cy": 429,
+          "w": 44,
+          "h": 61,
+          "storage": "option_cmds__pack"
+        },
+        "panic": {
+          "ox": 34,
+          "oy": 23,
+          "cx": 134,
+          "cy": 249,
+          "w": 64,
+          "h": 60,
+          "storage": "option_cmds__pack"
+        },
+        "auto": {
+          "ox": 47,
+          "oy": 29,
+          "cx": 399,
+          "cy": 0,
+          "w": 47,
+          "h": 50,
+          "storage": "option_cmds__pack"
+        }
+      }
+    },
+    {
+      "name": "_drag",
+      "left": 0,
+      "top": 136,
+      "width": 251,
+      "height": 60,
+      "class": "layer",
+      "uiname": "_drag",
+      "uistates": {
+        "text": {
+          "ox": 52,
+          "oy": 18,
+          "w": 199,
+          "h": 24,
+          "storage": ""
+        },
+        "deftext": {
+          "ox": 53,
+          "oy": 22,
+          "cx": 260,
+          "cy": 60,
+          "w": 143,
+          "h": 17,
+          "storage": "option_cmds__pack"
+        },
+        "arrow": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 251,
+          "h": 60,
+          "storage": "option_cmds__pack"
+        }
+      }
+    }
+  ],
+  "raw_result_keys": [
+    "_cholder",
+    "_cmd",
+    "_drag"
+  ]
+}

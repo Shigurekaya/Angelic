@@ -1,0 +1,59 @@
+/**
+ * レイヤのモザイク加工スクリプト
+ *
+ * [レイヤオブジェクト script="mosaic,ピクセル大きさ"]
+ * [レイヤオブジェクト script="mosaic,横ピクセル大きさ,縦ピクセル大きさ"]
+ *
+ * のようにして使います
+ */
+
+(function(pxw, pxh=pxw) {
+	// 状態記憶
+	var face = this.face;
+	var ha = this.holdAlpha;
+
+	if (pxw <= 0) pwx = 1;
+	if (pxh <= 0) pwh = 1;
+
+	// 作業レイヤ
+	var lay = new global.Layer(window, this);
+	try {
+		// ⇒addAlpha⇒Alpha に変換してα=0の部分を完全に黒にする
+		this.face = dfAddAlpha;
+		this.convertType(dfAlpha);
+		this.face = dfAlpha;
+		this.convertType(dfAddAlpha);
+
+		var iw = this.imageWidth;
+		var ih = this.imageHeight;
+		var w = iw\pxw;
+		var h = ih\pxh;
+		lay.assignImages(this);
+
+		// 横縮小
+		while (iw > w) {
+			var tw = (iw+1)\2 > w ? (iw+1)\2 : w;
+			lay.stretchCopy(0, 0, tw, ih, lay, 0, 0, iw, ih, stFastLinear);
+			iw = tw;
+		}
+
+		// 縦縮小
+		while (ih > h) {
+			var th = (ih+1)\2 > h ? (ih+1)\2 : h;
+			lay.stretchCopy(0, 0, w, th, lay, 0, 0, w, ih, stFastLinear);
+			ih = th;
+		}
+
+		this.stretchCopy(0, 0, imageWidth, imageHeight, lay, 0,0, w, h, stNearest);
+
+	} catch (e) {
+		// 戻す
+		this.face = face;
+		this.holdAlpha = ha;
+		invalidate lay;
+		throw e;
+	}
+	this.face = face;
+	this.holdAlpha = ha;
+	invalidate lay;
+})

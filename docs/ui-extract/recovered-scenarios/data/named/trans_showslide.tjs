@@ -1,0 +1,16 @@
+%[
+// 表示時アクション
+showaction: %[ left : %[ handler:"MoveAction", start:"@+50", value:"@" ]	],
+// 消去時アクション
+hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"@-50" ]	],
+
+// 表示時間
+time: 300,
+delay: 0,
+
+// トランジション(切り替え時)はこちらの値が優先参照される
+showtime: 300,
+hidetime: 300,
+showdelay: 100,
+hidedelay: 0,
+]

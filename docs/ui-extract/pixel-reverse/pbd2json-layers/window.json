@@ -1,0 +1,167 @@
+{
+  "source": "window.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "logo",
+    "base",
+    "colorover",
+    "colorbase",
+    "colorframe"
+  ],
+  "layer_count": 5,
+  "hotspot_count": 5,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 752,
+      "width": 1920,
+      "height": 385,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "click": {
+          "ox": 1623,
+          "oy": 227,
+          "w": 54,
+          "h": 56,
+          "storage": ""
+        },
+        "text": {
+          "ox": 468,
+          "oy": 123,
+          "w": 1154,
+          "h": 160,
+          "storage": ""
+        },
+        "name": {
+          "ox": 450,
+          "oy": 78,
+          "w": 792,
+          "h": 53,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 1920,
+          "h": 385,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "colorbase",
+      "left": 0,
+      "top": 752,
+      "width": 1920,
+      "height": 385,
+      "class": "layer",
+      "uiname": "colorbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 1920,
+          "h": 385,
+          "storage": "window__pack"
+        }
+      }
+    },
+    {
+      "name": "colorframe",
+      "left": 0,
+      "top": 752,
+      "width": 1920,
+      "height": 385,
+      "class": "layer",
+      "uiname": "colorframe",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 0,
+          "h": 0,
+          "storage": null,
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "logo",
+      "left": 129,
+      "top": 871,
+      "width": 294,
+      "height": 176,
+      "class": "layer",
+      "uiname": "logo",
+      "uistates": {
+        "logo_jp": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 294,
+          "cy": 593,
+          "w": 272,
+          "h": 176,
+          "storage": "window__pack"
+        },
+        "logo_tw": {
+          "ox": 18,
+          "oy": 11,
+          "cx": 824,
+          "cy": 593,
+          "w": 258,
+          "h": 131,
+          "storage": "window__pack"
+        },
+        "logo_en": {
+          "ox": 0,
+          "oy": 7,
+          "cx": 0,
+          "cy": 593,
+          "w": 294,
+          "h": 162,
+          "storage": "window__pack"
+        },
+        "logo_cn": {
+          "ox": 18,
+          "oy": 11,
+          "cx": 566,
+          "cy": 593,
+          "w": 258,
+          "h": 131,
+          "storage": "window__pack"
+        }
+      }
+    },
+    {
+      "name": "colorover",
+      "left": 0,
+      "top": 929,
+      "width": 1920,
+      "height": 208,
+      "class": "layer",
+      "uiname": "colorover",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 385,
+          "w": 1920,
+          "h": 208,
+          "storage": "window__pack"
+        }
+      }
+    }
+  ],
+  "raw_result_keys": [
+    "base",
+    "colorbase",
+    "colorframe",
+    "colorover",
+    "logo"
+  ]
+}

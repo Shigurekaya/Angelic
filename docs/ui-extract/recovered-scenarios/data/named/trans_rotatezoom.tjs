@@ -1,0 +1,8 @@
+%[
+method:"rotatezoom",
+time:1000,
+factor:3,
+accel:0,
+twist:2,
+twistaccel:-2
+]

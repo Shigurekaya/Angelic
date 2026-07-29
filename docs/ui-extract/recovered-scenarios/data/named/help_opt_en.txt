@@ -1,0 +1,621 @@
+# システム設定画面ヘルプテキスト
+
+#------------------------------------------------------------------------------
+# 共通
+
+page0
+	Go to basic settings.
+page1
+	Go to screen settings.
+page2
+	Go to general settings 1.
+page3
+	Go to general settings 2.
+page4
+	Go to text settings.
+page5
+	Go to sound settings.
+page6
+	Go to confirmation settings.
+page7
+	Go to mouse settings.
+page8
+	Go to keyboard settings.
+page9
+	Go to gamepad settings.
+
+back
+	Return to previous window.
+reset
+	Reset all setting on this page to default. If you press this button while holding down shift, you can reset settings for all pages at once.
+title
+	Return to the title screen.
+
+#------------------------------------------------------------------------------
+# 簡易設定
+
+label_a_jump	label_b_jump
+	Go to the display settings tab to access advanced settings.
+
+label_c_jump	label_d_jump	label_e_jump
+	Go to the text settings tab to access advanced settings.
+
+label_f_jump	label_g_jump	label_h_jump	label_i_jump	label_j_jump
+	Go to the sound settings tab to access advanced settings.
+
+
+#------------------------------------------------------------------------------
+# 画面設定
+
+fullscreen
+	Switch between windowed mode and fullscreen.
+
+sqscr
+	Switch between 16:9 and 4:3 aspect ratios.
+
+noeffect
+	Turn effects on/off.
+
+scanim_on
+	Turn performance demanding animation on/off.
+scanim_off
+	Turn performance demanding animation on/off.	Still images will be used in place when turned off.
+
+esccancel_on
+	Set esc key function.	Assigns same function as right click cancel.
+esccancel_off
+	Set esc key function.	Panic Button: A panic button behavior can be set below.
+
+panictype_0
+	Set panic button behavior.	Minimize: Minimizes the game to the taskbar.
+panictype_1
+	Set panic button behavior.	Image 1: Dummy image 1 is displayed. Press esc to cancel.
+panictype_2
+	Set panic button behavior.	Image 2: Dummy image 2 is displayed. Press esc to cancel.
+panictype_3
+	Set panic button behavior.	Custom: Custom image is displayed. Select an image file after pressing this button.
+
+stayontop
+	When switched on, the game window is going to always be on top.
+
+item_icon_chk
+	Switch mode icon display on/off.
+#	ゲーム中の進行状態アイコンの表示を設定します。
+item_vprg_chk
+	Switch voice playback and auto mode wait time progress meter.
+item_qmlk_chk
+	Determine if the menu at the bottom of the screen is always visible.	If this setting is off, hovering over the bottom of the screen will still bring the menu up.
+item_toch_chk
+	Rearrange the UI to be touch-screen optimized.
+
+chapthidetime
+	Change the chapter display settings. The leftmost option hides the current chapter while playing, the middle option hides after a set amount of seconds, and the rightmost option keeps displayed at all times.
+
+bgmhidetime
+	Change how long the BGM title is displayed when a new BGM starts to play. Dragging the slider to the far left will make the title never display whereas dragging it to the far right keeps it always displayed.
+
+
+facemode_on
+	When portrait mode is switched on, character portraits will usually be displayed next to the text box with some exceptions.
+facemode_off
+	When portrait mode is switched off, no character portraits will be displayed next to the text box with some exceptions.
+
+qcpopover
+	Change how menu bar pop-up windows are accessed.
+
+#------------------------------------------------------------------------------
+# ゲーム進行
+
+readskip
+	Switch auto skip/jump for read text on/off.	Auto-skip that is in progress can be stopped with left-click.
+
+readjump
+	Set whether read text should be automatically skipped or jumped over.
+
+curmove
+	Switch automatic cursor movement on/off for confirmation popups.
+
+curmoveyes_on
+	Mouse cursor will always be moved to "Yes" when a confirmation popup is displayed. 
+curmoveyes_off
+	Mouse cursor will be moved to "No" when a confirmation popup is displayed.	For some confirmation popups such as quicksave, it will be "Yes."
+
+
+curhidestep_0
+	Set mouse cursor to never be hidden.
+curhidestep_5	curhidestep_10	curhidestep_20	curhidestep_x
+	Set mouse cursor to be hidden after it has not been moved for the set amount of seconds.
+
+filedclk_off
+	Let a single click save or load.
+filedclk_on
+	Require double-clicking to save or load.
+
+hsel_area
+	Fixate H-scene choices.
+
+flowshow_on	flowshow_off
+	Turn this on to show the entire flow chart at all times, including scenes you haven't reached.
+
+stopdeactive_on
+	Set whether game is to be paused when game window is inactive.	Pause: The game is paused.
+stopdeactive_off
+	Set whether game is to be paused when game window is inactive.	Continue: The game keeps running.
+
+icpreview
+	Switch taskbar preview on/off.
+#	This function is available for Windows Vista and higher.
+
+suspend_on	suspend_off
+	Turn the suspend function that allows you to resume your game where you previously left on startup on or off.
+
+#===============================
+
+drawspeed
+	Change the speed at which the game is running.
+
+vspeed
+	Change the voice playback speed.	Caution: Sound quality will drop when speed is increased.
+
+vspeedsync_chk
+	Synchronize voice playback speed with game speed.	Only works in the range between x1.0 and x3.0.
+
+skipspeed	skipspeed_rail
+	Adjust skip mode speed.	Ctrl key skipping is always conducted at the maximum speed regardless.
+
+skipst_0
+	Set the skip style.	Normal: Update screen/music with all changes while skipping.
+skipst_1
+	Set the skip style.	Fast: Omit changes of facial expressions and poses of sprites.
+skipst_2
+	Set the skip style.	Text: Only display text without updating display/music.
+
+movierclick
+	Set whether to skip movies by right-clicking. (It does not matter if this is the first time the movie is being played)
+
+movieskip
+	Set whether to continue skipping if previously watched movie is reached during skip mode.
+
+drama_on
+	Switch dramatic mode on/off.	On: Text box will be hidden for voiced lines during auto mode.
+drama_off
+	Switch dramatic mode on/off.	Off: Text box is always displayed.
+
+use_speech
+	Launch external TTS tool for reading out unvoiced lines.
+
+# [TODO]
+txv_voice	txv_novo	txv_other
+	Set whether to display the text window for each type of text.
+dramatic_chk
+	Change the settings to be compatible with the old dramatic mode.
+
+snapsilent
+	Change the screenshot saving settings.
+
+snapdetail
+	Open the advanced settings for screenshot saving.
+
+
+#------------------------------------------------------------------------------
+# テキスト設定
+
+textspeed
+	Set the drawing speed of the text.
+
+autospeed
+	Set the auto mode speed.
+
+atextwait
+	Set adittional waiting time per character in auto mode. The final waiting time will be the sum of adding the number of text characters and the basic waiting time.
+
+autovwait_0
+	Set voice playback waiting behavior during auto mode.	Normal: Always wait until voice has finished playing.
+autovwait_1
+	Set voice playback waiting behavior during auto mode.	Voice: Wait until voice has finished playing only when following line is voiced.
+autovwait_2
+	Set voice playback waiting behavior during auto mode.	Speed: Always advance according the set auto mode speed.
+
+skipall
+	Set whether all or only read text should be skipped in skip mode.
+
+ctrlskip_on
+	Set whether only read or all text should be skipped with ctrl skip.	${_allSkip?"Cannot be set when the above is set to on.":"All text is skipped regardless of the above setting."}
+ctrlskip_off
+	Set whether only read or all text should be skipped with ctrl skip.	${_allSkip?"Cannot be set when the above is set to on.":"Only read text will be skipped."}
+
+afterskip_on	afterskip_off
+	Set whether skip mode should be canceled or not after choices.
+
+afterauto_on	afterauto_off
+	Set whether auto mode should be canceled or not after choices.
+
+color_win
+	Change text box color for the regular POV. After clicking this button,	use the color palette to the right to choose a color.
+color_owin
+	Change text box color for other POVs. After clicking this button,	use the color palette to the right to choose a color.
+color_hwin
+	Change text box color for H-scenes. After clicking this button,	use the color palette to the right to choose a color.
+color_text
+	Change the text color of regular text. After clicking this button,	use the color palette to the right to choose a color.
+color_read
+	Change the text color of read text. After clicking this button,	use the color palette to the right to choose a color.
+
+nohwindow_chk
+	Set whether to use a small window display during H-scenes	No matter if it's enabled or disabled, the window color change will still happen.
+
+hsv
+	Current color settings for the selected type of text or text box.	${hsv?"Drag the round pins to adjust color.":""}
+
+hsv_reset
+	Reset color settings for the currently selected type of text or text box.
+
+HSV_DRAG_H
+	Changing color brightness/saturation.
+HSV_DRAG_SV
+	Changing color hue.
+
+winsample
+	Displays a text sample with all the current settings applied.
+
+winopac
+	Adjust the opacity of the text box.
+
+fontselect
+	Change the font.
+
+#------------------------------------------------------------------------------
+# サウンド設定
+
+wave
+	Adjust the game's master volume.
+
+bgm
+	Adjust the BGM volume.
+
+down_mute
+	When checked, BGM won't be lowered during voice playback.
+down
+	Adjust the BGM volume during voice playback.
+
+movie
+	Adjust the movie volume.
+mvaudiosample_chk
+	As long as the mouse cursor is near this area, a movie volume sample will play. (Sound effects are added to the volume sample to differentiate it from BGM)
+
+se
+	Adjust the SFX volume.
+
+bgv
+	Adjust the volume of background voices.
+bgv_mute
+	When checked, background voices will be disabled.
+
+bgv2
+	Adjust the volume of background voices during H-scenes.
+bgv2_mute
+	When checked, H-scene background voices will be disabled.
+
+voicecut_on
+	Switch voice clipping on/off.	On: Stop voice playback when text is advanced.
+voicecut_off
+	Switch voice clipping on/off.	Off: Keep playing voice line when text is advanced.
+
+voiceeff
+	Set voice sound effects in scenes on/off.
+
+voice
+	Adjust the voice volume.
+
+cap_chvol
+	Adjust the voice volume for specific characters.
+chv0
+	Adjust the sound settings for ${getVoiceTargetName(0)}.${isVoiceTarget(0)?"\nPress again to turn on/off.":""}
+chv1
+	Adjust the sound settings for ${getVoiceTargetName(1)}.${isVoiceTarget(1)?"\nPress again to turn on/off.":""}
+chv2
+	Adjust the sound settings for ${getVoiceTargetName(2)}.${isVoiceTarget(2)?"\nPress again to turn on/off.":""}
+chv3
+	Adjust the sound settings for ${getVoiceTargetName(3)}.${isVoiceTarget(3)?"\nPress again to turn on/off.":""}
+chv4
+	Adjust the sound settings for ${getVoiceTargetName(4)}.${isVoiceTarget(4)?"\nPress again to turn on/off.":""}
+chv5
+	Adjust the sound settings for ${getVoiceTargetName(5)}.${isVoiceTarget(5)?"\nPress again to turn on/off.":""}
+chv6
+	Adjust the sound settings for ${getVoiceTargetName(6)}.${isVoiceTarget(6)?"\nPress again to turn on/off.":""}
+chv7
+	Adjust the sound settings for ${getVoiceTargetName(7)}.${isVoiceTarget(7)?"\nPress again to turn on/off.":""}
+chv8
+	Adjust the sound settings for ${getVoiceTargetName(8)}.${isVoiceTarget(8)?"\nPress again to turn on/off.":""}
+chv9
+	Adjust the sound settings for ${getVoiceTargetName(9)}.${isVoiceTarget(9)?"\nPress again to turn on/off.":""}
+chv10
+	Adjust the sound settings for ${getVoiceTargetName(10)}.${isVoiceTarget(10)?"\nPress again to turn on/off.":""}
+chv11
+	Adjust the sound settings for ${getVoiceTargetName(11)}.${isVoiceTarget(11)?"\nPress again to turn on/off.":""}
+chv12
+	Adjust the sound settings for ${getVoiceTargetName(12)}.${isVoiceTarget(12)?"\nPress again to turn on/off.":""}
+chv13
+	Adjust the sound settings for ${getVoiceTargetName(13)}.${isVoiceTarget(13)?"\nPress again to turn on/off.":""}
+
+chv_on	chv_off
+	Switch ${getVoiceTargetName()}'s voice on/off.
+
+chv_test
+	Test the voice volume of ${getVoiceTargetName()}.
+
+chv
+	Adjust the voice volume for ${getVoiceTargetName()}.
+
+sysse_play
+	Turn system sound effects On/Off.
+#	${_sysseEnable?"Disable":"Enable"} system sfx.	The volume can be changed in the sound settings.
+
+sysvo_play
+	Turn system voices On/Off.
+#	${_sysvoEnable?"Disable":"Enable"} system voices.
+
+lowprisysvo_chk
+	If game voice lines are playing, system voices won't play.
+
+sysvodetail
+	Open individual settings for system voices.
+
+sysse
+	Adjust the system SFX volume.${_sysseEnable?"":"\n System sfx needs to be enabled in the general settings 2 tab."}
+
+sysvo
+	Adjust the system voice volume.${SystemVoice.enabled?"":"\n上欄の「キャラボイス」を有効にしてから調整してください。"}
+
+#sysvovolume_test
+#	Test the volume of system voices.
+
+sysvoplay_area
+	Adjust individual settings for system voices.
+
+sysvoall
+	Adjust all individual settings for system voice scenes.
+
+sysvomask_area
+	Select the character to play as the system voice.
+
+sysvo_ok
+	Close this screen.
+
+#------------------------------------------------------------------------------
+# ダイアログ設定
+
+cfall
+	Switch all settings on/off
+
+cf_save
+	Turn confirmation before saving on/off.
+cf_overwrite
+	Turn confirmation before overwriting on/off.
+cf_dsave
+	Turn confirmation before direct saving on/off.
+cf_load
+	Turn confirmation before loading on/off.
+cf_qsave
+	Turn confirmation before quicksaving on/off.
+cf_qload
+	Turn confirmation before quickloading on/off.
+cf_title
+	Turn confirmation before returning to the title screen on/off.
+cf_jump
+	Turn confirmation before a backlog jump on/off.
+cf_flow
+	Turn confirmation before jumping to scenes via the flowchart on/off.
+cf_next
+	Turn confirmation before jumping to the next choice on/off.
+cf_backto
+	Turn confirmation before returning to the previous choice on/off.
+cf_nextscn
+	Turn confirmation before skipping to the next scene on/off.
+cf_prevscn
+	Turn confirmation before skipping to the previous scene on/off.
+cf_vsave
+	Turn confirmation before bookmarking a voice line on/off.
+cf_init
+	Turn confirmation before resetting settings on/off.
+cf_initstand
+	Turn confirmation before resetting Sprite Mode on/off.
+cf_delete
+	Turn confirmation before deleting save data on/off.
+cf_swap
+	Turn confirmation before swapping save data on/off.
+cf_copy
+	Turn confirmation before copying on/off.
+cf_exit
+	Turn confirmation before closing the game on/off.
+cf_resume
+	Turn confirmation when utilizing the suspend function on/off.
+
+#------------------------------------------------------------------------------
+# マウス設定
+
+gsfunc_save
+	Save function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_dsave
+	Direct save function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_load
+	Load function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_qsave
+	Quicksave function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_qload
+	Quickload function.	Drag and drop to the slot you want to assign this function to.
+
+gsfunc_option
+	System settings function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_prev
+	Return to previous choice function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_prevscn
+	Return to previous scene function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_backskip
+	Rewind function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_backone
+	Return to previous line function.	Drag and drop to the slot you want to assign this function to.
+
+gsfunc_log
+	Backlog function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_auto
+	Auto mode function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_skip
+	Skip mode function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_nextscn
+	Jump to next scene function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_next
+	Jump to next choice function.	Drag and drop to the slot you want to assign this function to.
+
+gsfunc_scnchart
+	Flowchart function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_vreplay
+	Voice replay function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_qvsave
+	Voice save function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_vsave
+	Voice line bookmark function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_click
+	Left-click function.	Drag and drop to the slot you want to assign this function to.
+
+gsfunc_title
+	Title screen function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_screen
+	Switch to fullscreen function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_snapshot
+	Assign screenshot function. Drag and drop to the slot you want to assign this function to.
+gsfunc_panic
+	Assign Scramble Function. (Scramble functions can be set on the image display tab) Drag and drop to the slot you want to assign this function to.
+
+gsfunc_none
+	No function.	Drag and drop to the slot you want to disable.
+
+gsfunc_key_ctrl
+	Ctrl-skip function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_rclick
+	Right-click function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_volume
+	Volume function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_key_pageup
+	PageUp (backlog/upwards scroll) function.	Drag and drop to the slot you want to assign this function to.
+gsfunc_key_pagedown
+	PageDown (downwards scroll) function.	Drag and drop to the slot you want to assign this function to.
+
+
+gsbind_up
+	Assign designated function to holding right click + stirring mouse upwards.
+gsbind_left
+	Assign designated function to holding right click + stirring mouse left.
+gsbind_right
+	Assign designated function to holding right click + stirring mouse right.
+gsbind_down
+	Assign designated function to holding right click + stirring mouse down.
+gsbind_middle
+	Assign designated function to middle click.
+# [NOTE] mousex1/x2とUI画面上の拡張1/2は数字が逆であることに注意
+gsbind_mousex1
+	Assign designated function to extra button two.
+gsbind_mousex2
+	Assign designated function to extra button one.
+
+gsenable_rev
+	${_enGesture?"Deactive":"Activate"} the mouse gesture function.
+
+#------------------------------------------------------------------------------
+
+gamepad_bind1	gamepad_bind2
+	Assign a function to this gamepad button.
+
+engamepad_rev
+	Turn ${_enGamePad?"off":"on"} gamepad.
+
+gamepad_assign
+	Rebind gamepad buttons.${isGamePadExEnabled?"Only use when the buttons of your gamepad don't match with the visualization on the screen.":"This button is disabled if no gamepad is connected or detected."}
+
+frame_gamepad_front
+	Visualization of gamepad's front.	When you press a button on your gamepad, the corresponding button lights up.
+
+frame_gamepad_sholder
+	Visualization of gamepad's L/R triggers.	When you press a button on your gamepad, the corresponding button lights up.
+
+
+GAMEPAD_CANCEL
+	Usage of gamepads that have the right-Click or ESC functions assigend is disabled on this screen.	Either use mouse and keyboard, or move to a different screen to use your gamepad.
+
+#------------------------------------------------------------------------------
+# ショートカット
+
+key_save
+	Choose the keyboard shortcut for "${getKeyBindCaption("save")}"
+key_load
+	Choose the keyboard shortcut for "${getKeyBindCaption("load")}"
+key_dsave
+	Choose the keyboard shortcut for "${getKeyBindCaption("dsave")}"
+key_qsave
+	Choose the keyboard shortcut for "${getKeyBindCaption("qsave")}"
+key_qload
+	Choose the keyboard shortcut for "${getKeyBindCaption("qload")}"
+key_option
+	Choose the keyboard shortcut for "${getKeyBindCaption("option")}"
+key_screen
+	Choose the keyboard shortcut for "${getKeyBindCaption("screen")}"
+key_click
+	Choose the keyboard shortcut for "${getKeyBindCaption("click")}"
+key_auto
+	Choose the keyboard shortcut for "${getKeyBindCaption("auto")}"
+key_skip
+	Choose the keyboard shortcut for "${getKeyBindCaption("skip")}"
+key_ctrl
+	Choose the keyboard shortcut for "${getKeyBindCaption("ctrl")}"
+key_nextscn
+	Choose the keyboard shortcut for "${getKeyBindCaption("nextscn")}"
+key_next
+	Choose the keyboard shortcut for "${getKeyBindCaption("next")}"
+key_log
+	Choose the keyboard shortcut for "${getKeyBindCaption("log")}"
+key_pageup
+	Choose the keyboard shortcut for "${getKeyBindCaption("pageup")}"
+key_pagedown
+	Choose the keyboard shortcut for "${getKeyBindCaption("pagedown")}"
+key_backone
+	Choose the keyboard shortcut for "${getKeyBindCaption("backone")}"
+key_backskip
+	Choose the keyboard shortcut for "${getKeyBindCaption("backskip")}"
+key_prevscn
+	Choose the keyboard shortcut for "${getKeyBindCaption("prevscn")}"
+key_prev
+	Choose the keyboard shortcut for "${getKeyBindCaption("prev")}"
+key_scnchart
+	Choose the keyboard shortcut for "${getKeyBindCaption("scnchart")}"
+key_title
+	Choose the keyboard shortcut for "${getKeyBindCaption("title")}"
+key_volume
+	Choose the keyboard shortcut for "${getKeyBindCaption("volume")}"
+key_hide
+	Choose the keyboard shortcut for "${getKeyBindCaption("hide")}"
+key_vreplay
+	Choose the keyboard shortcut for "${getKeyBindCaption("vreplay")}"
+key_vsave
+	Choose the keyboard shortcut for "${getKeyBindCaption("vsave")}"
+key_qvsave
+	Choose the keyboard shortcut for "${getKeyBindCaption("qvsave")}"
+key_snapshot
+	Choose the keyboard shortcut for "${getKeyBindCaption("snapshot")}"	The fixed PrtSc key may not work due to OS settings and external applications
+key_panic
+	Choose the keyboard shortcut for "${getKeyBindCaption("panic")}"	The ESC is valid only when the "ESC function" in the image display settings is set to scrambled.
+
+keyboard
+	View your keyboard shortcuts and remove unnecessary ones.
+
+KEY_RESERVED
+	Some alphabet keys are reserved for language switching, so no functions can be assigned to them.
+
+#------------------------------------------------------------------------------
+# システムボイス
+
+sysvo0	sysvo1	sysvo2	sysvo3	sysvo4	sysvo5	sysvo6	sysvo7	sysvo8
+	Choose characters as the system voices. If multiple are chosen, system voice will be random from among all or the selected characters respectively.
+
+sysvornd
+	${isAllSysVoice?"Disable":"Enable"} all characters.
+

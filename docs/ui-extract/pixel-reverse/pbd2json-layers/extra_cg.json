@@ -1,0 +1,2186 @@
+{
+  "source": "extra_cg.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "helptext",
+    "helpbase",
+    "sep_a",
+    "sep_b",
+    "caption_cg",
+    "item",
+    "item_pos00",
+    "item_pos11",
+    "itemarea",
+    "subpg",
+    "grp0",
+    "grp1",
+    "grp2",
+    "grp3",
+    "grp4",
+    "grp5",
+    "grp6",
+    "grp7",
+    "grouparea",
+    "top",
+    "up",
+    "slider",
+    "down",
+    "end",
+    "keepbgm",
+    "mitem",
+    "mitem_pos00",
+    "mitem_pos11",
+    "snd_itemarea",
+    "snd_scroll",
+    "snd_top",
+    "snd_pageup",
+    "snd_slider",
+    "snd_pagedown",
+    "snd_end",
+    "ptime_now",
+    "ptime_len",
+    "seek_bar",
+    "seek",
+    "ptime_base",
+    "pprev",
+    "playstop",
+    "playpause",
+    "pnext",
+    "repeat_a",
+    "repeat_s",
+    "volume_min",
+    "volume",
+    "volume_max",
+    "musicplayer",
+    "caption_music",
+    "to_cg",
+    "to_scene",
+    "to_stand",
+    "to_voice",
+    "back",
+    "caption",
+    "base",
+    "pageup",
+    "pagedown",
+    "snd_up",
+    "snd_down",
+    "play",
+    "stop"
+  ],
+  "layer_count": 69,
+  "hotspot_count": 63,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080,
+      "class": "base",
+      "uiname": "base"
+    },
+    {
+      "name": "to_cg",
+      "left": 1235,
+      "top": 0,
+      "width": 125,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_cg",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 125,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "to_scene",
+      "left": 1361,
+      "top": 0,
+      "width": 148,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_scene",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 148,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "to_stand",
+      "left": 1510,
+      "top": 0,
+      "width": 149,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_stand",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 149,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "to_voice",
+      "left": 1660,
+      "top": 0,
+      "width": 212,
+      "height": 81,
+      "class": "radio",
+      "uiname": "to_voice",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 212,
+          "h": 81,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "caption",
+      "left": 87,
+      "top": 19,
+      "width": 128,
+      "height": 43,
+      "class": "layer",
+      "uiname": "caption",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 315,
+          "cy": 135,
+          "w": 128,
+          "h": 43,
+          "storage": "extra__pack"
+        }
+      }
+    },
+    {
+      "name": "sep_a",
+      "left": 89,
+      "top": 125,
+      "width": 4,
+      "height": 830,
+      "class": "layer",
+      "uiname": "sep_a",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 4,
+          "h": 830,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "sep_b",
+      "left": 1196,
+      "top": 125,
+      "width": 4,
+      "height": 830,
+      "class": "copy",
+      "uiname": "sep_b"
+    },
+    {
+      "name": "keepbgm",
+      "left": 1457,
+      "top": 135,
+      "width": 317,
+      "height": 36,
+      "class": "toggle",
+      "uiname": "keepbgm",
+      "uistates": {
+        "text": {
+          "ox": 37,
+          "oy": 3,
+          "w": 280,
+          "h": 30,
+          "storage": "",
+          "opacity": 128
+        },
+        "over_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 313,
+          "cy": 774,
+          "w": 34,
+          "h": 34,
+          "storage": "extra_cgscene__pack"
+        },
+        "over_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 81,
+          "cy": 766,
+          "w": 34,
+          "h": 34,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": "",
+          "opacity": 128
+        },
+        "normal_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 458,
+          "cy": 781,
+          "w": 34,
+          "h": 34,
+          "storage": "extra_cgscene__pack"
+        },
+        "normal_off": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 424,
+          "cy": 781,
+          "w": 34,
+          "h": 34,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "caption_cg",
+      "left": 109,
+      "top": 137,
+      "width": 480,
+      "height": 32,
+      "class": "layer",
+      "uiname": "caption_cg",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 480,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "caption_music",
+      "left": 1216,
+      "top": 137,
+      "width": 480,
+      "height": 32,
+      "class": "layer",
+      "uiname": "caption_music",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 480,
+          "h": 32,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "subpg",
+      "left": 197,
+      "top": 184,
+      "width": 32,
+      "height": 31,
+      "class": "layer",
+      "uiname": "subpg",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 115,
+          "cy": 798,
+          "w": 32,
+          "h": 31,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "snd_top",
+      "left": 1805,
+      "top": 184,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "snd_top",
+      "uistates": {
+        "on": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 4,
+          "cy": 757,
+          "w": 26,
+          "h": 26,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 30,
+          "cy": 731,
+          "w": 26,
+          "h": 26,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 4,
+          "cy": 731,
+          "w": 26,
+          "h": 26,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "musicplayer",
+      "left": 1230,
+      "top": 196,
+      "width": 550,
+      "height": 602,
+      "class": "layer",
+      "uiname": "musicplayer",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 0,
+          "w": 550,
+          "h": 602,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "grouparea",
+      "left": 123,
+      "top": 199,
+      "width": 988,
+      "height": 70,
+      "class": "area",
+      "uiname": "grouparea"
+    },
+    {
+      "name": "grp0",
+      "left": 123,
+      "top": 199,
+      "width": 113,
+      "height": 70,
+      "class": "toggle",
+      "uiname": "grp0",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 667,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 113,
+          "h": 70,
+          "storage": "",
+          "opacity": 0
+        },
+        "disable_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "disable": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "grp1",
+      "left": 248,
+      "top": 199,
+      "width": 113,
+      "height": 70,
+      "class": "toggle",
+      "uiname": "grp1",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 667,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 113,
+          "h": 70,
+          "storage": "",
+          "opacity": 0
+        },
+        "disable_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "disable": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "grp2",
+      "left": 373,
+      "top": 199,
+      "width": 113,
+      "height": 70,
+      "class": "toggle",
+      "uiname": "grp2",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 667,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 113,
+          "h": 70,
+          "storage": "",
+          "opacity": 0
+        },
+        "disable_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "disable": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "grp3",
+      "left": 498,
+      "top": 199,
+      "width": 113,
+      "height": 70,
+      "class": "toggle",
+      "uiname": "grp3",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 667,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 113,
+          "h": 70,
+          "storage": "",
+          "opacity": 0
+        },
+        "disable_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "disable": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "grp4",
+      "left": 623,
+      "top": 199,
+      "width": 113,
+      "height": 70,
+      "class": "toggle",
+      "uiname": "grp4",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 667,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 113,
+          "h": 70,
+          "storage": "",
+          "opacity": 0
+        },
+        "disable_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "disable": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "grp5",
+      "left": 748,
+      "top": 199,
+      "width": 113,
+      "height": 70,
+      "class": "toggle",
+      "uiname": "grp5",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 667,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 113,
+          "h": 70,
+          "storage": "",
+          "opacity": 0
+        },
+        "disable_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "disable": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "grp6",
+      "left": 873,
+      "top": 199,
+      "width": 113,
+      "height": 70,
+      "class": "toggle",
+      "uiname": "grp6",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 667,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 113,
+          "h": 70,
+          "storage": "",
+          "opacity": 0
+        },
+        "disable_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "disable": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "grp7",
+      "left": 998,
+      "top": 199,
+      "width": 113,
+      "height": 70,
+      "class": "toggle",
+      "uiname": "grp7",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 667,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 113,
+          "h": 70,
+          "storage": "",
+          "opacity": 0
+        },
+        "disable_on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 200,
+          "cy": 737,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "disable": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 696,
+          "w": 113,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "mitem",
+      "left": 1257,
+      "top": 222,
+      "width": 496,
+      "height": 64,
+      "class": "toggle",
+      "uiname": "mitem",
+      "uistates": {
+        "on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 567,
+          "cy": 711,
+          "w": 62,
+          "h": 62,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 505,
+          "cy": 711,
+          "w": 62,
+          "h": 62,
+          "storage": "extra_cgscene__pack"
+        },
+        "text": {
+          "ox": 69,
+          "oy": 8,
+          "w": 427,
+          "h": 48,
+          "storage": ""
+        },
+        "off": {
+          "ox": 3,
+          "oy": 4,
+          "cx": 350,
+          "cy": 770,
+          "w": 60,
+          "h": 60,
+          "storage": "extra_cgscene__pack"
+        },
+        "over_on": {
+          "ox": 1,
+          "oy": 1,
+          "cx": 567,
+          "cy": 711,
+          "w": 62,
+          "h": 62,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 64,
+          "h": 64,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "mitem_pos00",
+      "left": 1257,
+      "top": 222,
+      "width": 496,
+      "height": 64,
+      "class": "area",
+      "uiname": "mitem_pos00",
+      "uistates": {
+        "mark": {
+          "ox": 0,
+          "oy": 0,
+          "w": 64,
+          "h": 64,
+          "storage": ""
+        },
+        "text": {
+          "ox": 69,
+          "oy": 8,
+          "w": 427,
+          "h": 48,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "snd_itemarea",
+      "left": 1257,
+      "top": 222,
+      "width": 496,
+      "height": 490,
+      "class": "area",
+      "uiname": "snd_itemarea",
+      "uistates": {
+        "mark": {
+          "ox": 0,
+          "oy": 426,
+          "w": 64,
+          "h": 64,
+          "storage": ""
+        },
+        "text": {
+          "ox": 69,
+          "oy": 434,
+          "w": 427,
+          "h": 48,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "snd_scroll",
+      "left": 1257,
+      "top": 222,
+      "width": 496,
+      "height": 490,
+      "class": "layer",
+      "uiname": "snd_scroll",
+      "uistates": {
+        "mark": {
+          "ox": 0,
+          "oy": 426,
+          "w": 64,
+          "h": 64,
+          "storage": ""
+        },
+        "text": {
+          "ox": 69,
+          "oy": 434,
+          "w": 427,
+          "h": 48,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "snd_pageup",
+      "left": 1805,
+      "top": 225,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "snd_pageup",
+      "uistates": {
+        "on": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 55,
+          "cy": 757,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 30,
+          "cy": 781,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 30,
+          "cy": 757,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "snd_slider",
+      "left": 1803,
+      "top": 281,
+      "width": 40,
+      "height": 417,
+      "class": "slider",
+      "uiname": "snd_slider",
+      "uistates": {
+        "rail": {
+          "ox": 14,
+          "oy": 4,
+          "cx": 81,
+          "cy": 628,
+          "w": 13,
+          "h": 409,
+          "storage": "extra_cgscene__pack"
+        },
+        "on": {
+          "ox": 4,
+          "oy": 164,
+          "cx": 383,
+          "cy": 667,
+          "w": 33,
+          "h": 103,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 2,
+          "oy": 162,
+          "cx": 313,
+          "cy": 667,
+          "w": 37,
+          "h": 107,
+          "storage": "extra_cgscene__pack"
+        },
+        "normal": {
+          "ox": 4,
+          "oy": 164,
+          "cx": 350,
+          "cy": 667,
+          "w": 33,
+          "h": 103,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 40,
+          "h": 417,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "top",
+      "left": 1134,
+      "top": 285,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "top",
+      "uistates": {
+        "on": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 4,
+          "cy": 757,
+          "w": 26,
+          "h": 26,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 30,
+          "cy": 731,
+          "w": 26,
+          "h": 26,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 5,
+          "oy": 5,
+          "cx": 4,
+          "cy": 731,
+          "w": 26,
+          "h": 26,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item",
+      "left": 123,
+      "top": 307,
+      "width": 241,
+      "height": 144,
+      "class": "button",
+      "uiname": "item",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 144,
+          "cy": 0,
+          "w": 241,
+          "h": 144,
+          "storage": "extra_cg__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 144,
+          "cy": 144,
+          "w": 241,
+          "h": 144,
+          "storage": "extra_cg__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 241,
+          "h": 144,
+          "storage": "extra_cg__pack"
+        },
+        "thumb": {
+          "ox": 10,
+          "oy": 10,
+          "w": 221,
+          "h": 124,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 241,
+          "h": 144,
+          "storage": "",
+          "opacity": 0
+        }
+      }
+    },
+    {
+      "name": "item_pos00",
+      "left": 123,
+      "top": 307,
+      "width": 241,
+      "height": 144,
+      "class": "area",
+      "uiname": "item_pos00"
+    },
+    {
+      "name": "itemarea",
+      "left": 123,
+      "top": 307,
+      "width": 988,
+      "height": 629,
+      "class": "area",
+      "uiname": "itemarea"
+    },
+    {
+      "name": "mitem_pos11",
+      "left": 1257,
+      "top": 307,
+      "width": 496,
+      "height": 64,
+      "class": "area",
+      "uiname": "mitem_pos11",
+      "uistates": {
+        "mark": {
+          "ox": 0,
+          "oy": 0,
+          "w": 64,
+          "h": 64,
+          "storage": ""
+        },
+        "text": {
+          "ox": 69,
+          "oy": 8,
+          "w": 427,
+          "h": 48,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "up",
+      "left": 1134,
+      "top": 326,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "up",
+      "uistates": {
+        "on": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 55,
+          "cy": 757,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 30,
+          "cy": 781,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 30,
+          "cy": 757,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "slider",
+      "left": 1132,
+      "top": 381,
+      "width": 40,
+      "height": 473,
+      "class": "slider",
+      "uiname": "slider",
+      "uistates": {
+        "rail": {
+          "ox": 13,
+          "oy": 4,
+          "cx": 81,
+          "cy": 602,
+          "w": 13,
+          "h": 465,
+          "storage": "extra_cgscene__pack"
+        },
+        "on": {
+          "ox": 4,
+          "oy": 64,
+          "cx": 383,
+          "cy": 667,
+          "w": 33,
+          "h": 103,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 2,
+          "oy": 62,
+          "cx": 313,
+          "cy": 667,
+          "w": 37,
+          "h": 107,
+          "storage": "extra_cgscene__pack"
+        },
+        "normal": {
+          "ox": 4,
+          "oy": 64,
+          "cx": 350,
+          "cy": 667,
+          "w": 33,
+          "h": 103,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 40,
+          "h": 473,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "item_pos11",
+      "left": 372,
+      "top": 469,
+      "width": 241,
+      "height": 144,
+      "class": "area",
+      "uiname": "item_pos11"
+    },
+    {
+      "name": "snd_pagedown",
+      "left": 1805,
+      "top": 718,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "snd_pagedown",
+      "uistates": {
+        "on": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 30,
+          "cy": 805,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 4,
+          "cy": 783,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 55,
+          "cy": 781,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "seek",
+      "left": 1267,
+      "top": 724,
+      "width": 343,
+      "height": 48,
+      "class": "slider",
+      "uiname": "seek",
+      "uistates": {
+        "rail": {
+          "ox": 0,
+          "oy": 16,
+          "cx": 81,
+          "cy": 641,
+          "w": 343,
+          "h": 13,
+          "storage": "extra_cgscene__pack"
+        },
+        "normal": {
+          "ox": 279,
+          "oy": 16,
+          "cx": 55,
+          "cy": 805,
+          "w": 14,
+          "h": 13,
+          "storage": "extra_cgscene__pack"
+        },
+        "knob": {
+          "ox": 261,
+          "oy": 0,
+          "w": 48,
+          "h": 48,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 16,
+          "w": 343,
+          "h": 13,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "ptime_base",
+      "left": 1625,
+      "top": 732,
+      "width": 119,
+      "height": 29,
+      "class": "layer",
+      "uiname": "ptime_base",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 667,
+          "w": 119,
+          "h": 29,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "ptime_len",
+      "left": 1625,
+      "top": 732,
+      "width": 119,
+      "height": 29,
+      "class": "layer",
+      "uiname": "ptime_len",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 119,
+          "h": 29,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "ptime_now",
+      "left": 1625,
+      "top": 732,
+      "width": 119,
+      "height": 29,
+      "class": "layer",
+      "uiname": "ptime_now",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 119,
+          "h": 29,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "seek_bar",
+      "left": 1267,
+      "top": 740,
+      "width": 343,
+      "height": 13,
+      "class": "layer",
+      "uiname": "seek_bar",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 81,
+          "cy": 654,
+          "w": 343,
+          "h": 13,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "snd_end",
+      "left": 1805,
+      "top": 759,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "snd_end",
+      "uistates": {
+        "on": {
+          "ox": 5,
+          "oy": 6,
+          "cx": 505,
+          "cy": 803,
+          "w": 26,
+          "h": 25,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 5,
+          "oy": 6,
+          "cx": 56,
+          "cy": 731,
+          "w": 26,
+          "h": 25,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 5,
+          "oy": 6,
+          "cx": 531,
+          "cy": 803,
+          "w": 26,
+          "h": 25,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "_cbtn",
+      "left": 1233,
+      "top": 815,
+      "width": 81,
+      "height": 70,
+      "class": "button",
+      "uiname": "_cbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 424,
+          "cy": 711,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "ic_prev": {
+          "ox": 25,
+          "oy": 19,
+          "cx": 146,
+          "cy": 766,
+          "w": 31,
+          "h": 31,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 505,
+          "cy": 641,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 424,
+          "cy": 641,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 81,
+          "h": 70,
+          "storage": ""
+        },
+        "ic_next": {
+          "ox": 25,
+          "oy": 19,
+          "cx": 146,
+          "cy": 797,
+          "w": 31,
+          "h": 31,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "_ctrl",
+      "left": 1233,
+      "top": 815,
+      "width": 81,
+      "height": 70,
+      "class": "toggle",
+      "uiname": "_ctrl",
+      "uistates": {
+        "ic_rep": {
+          "ox": 18,
+          "oy": 19,
+          "cx": 505,
+          "cy": 773,
+          "w": 45,
+          "h": 30,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 505,
+          "cy": 641,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "ic_all": {
+          "ox": 21,
+          "oy": 16,
+          "cx": 586,
+          "cy": 675,
+          "w": 39,
+          "h": 36,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 424,
+          "cy": 641,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "on": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 424,
+          "cy": 711,
+          "w": 81,
+          "h": 70,
+          "storage": "extra_cgscene__pack"
+        },
+        "ic_stop": {
+          "ox": 26,
+          "oy": 20,
+          "cx": 81,
+          "cy": 800,
+          "w": 29,
+          "h": 28,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 81,
+          "h": 70,
+          "storage": ""
+        },
+        "ic_play": {
+          "ox": 28,
+          "oy": 19,
+          "cx": 115,
+          "cy": 766,
+          "w": 31,
+          "h": 32,
+          "storage": "extra_cgscene__pack"
+        },
+        "ic_pause": {
+          "ox": 29,
+          "oy": 21,
+          "cx": 177,
+          "cy": 797,
+          "w": 23,
+          "h": 29,
+          "storage": "extra_cgscene__pack"
+        },
+        "ic_rnd": {
+          "ox": 19,
+          "oy": 18,
+          "cx": 586,
+          "cy": 641,
+          "w": 43,
+          "h": 34,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "pprev",
+      "left": 1233,
+      "top": 815,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "pprev"
+    },
+    {
+      "name": "playstop",
+      "left": 1326,
+      "top": 815,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "playstop"
+    },
+    {
+      "name": "playpause",
+      "left": 1418,
+      "top": 815,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "playpause"
+    },
+    {
+      "name": "pnext",
+      "left": 1511,
+      "top": 815,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "pnext"
+    },
+    {
+      "name": "repeat_a",
+      "left": 1603,
+      "top": 815,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "repeat_a"
+    },
+    {
+      "name": "repeat_s",
+      "left": 1696,
+      "top": 815,
+      "width": 81,
+      "height": 70,
+      "class": "copy",
+      "uiname": "repeat_s"
+    },
+    {
+      "name": "down",
+      "left": 1134,
+      "top": 873,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "down",
+      "uistates": {
+        "on": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 30,
+          "cy": 805,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 4,
+          "cy": 783,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 6,
+          "oy": 6,
+          "cx": 55,
+          "cy": 781,
+          "w": 25,
+          "h": 24,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "volume",
+      "left": 1271,
+      "top": 897,
+      "width": 468,
+      "height": 54,
+      "class": "slider",
+      "uiname": "volume",
+      "uistates": {
+        "rail": {
+          "ox": 4,
+          "oy": 20,
+          "cx": 81,
+          "cy": 615,
+          "w": 460,
+          "h": 13,
+          "storage": "extra_cgscene__pack"
+        },
+        "normal": {
+          "ox": 210,
+          "oy": 1,
+          "cx": 567,
+          "cy": 773,
+          "w": 50,
+          "h": 51,
+          "storage": "extra_cgscene__pack"
+        },
+        "knob": {
+          "ox": 207,
+          "oy": 0,
+          "w": 54,
+          "h": 54,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 468,
+          "h": 54,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "end",
+      "left": 1134,
+      "top": 914,
+      "width": 36,
+      "height": 36,
+      "class": "button",
+      "uiname": "end",
+      "uistates": {
+        "on": {
+          "ox": 5,
+          "oy": 6,
+          "cx": 505,
+          "cy": 803,
+          "w": 26,
+          "h": 25,
+          "storage": "extra_cgscene__pack"
+        },
+        "over": {
+          "ox": 5,
+          "oy": 6,
+          "cx": 56,
+          "cy": 731,
+          "w": 26,
+          "h": 25,
+          "storage": "extra_cgscene__pack"
+        },
+        "off": {
+          "ox": 5,
+          "oy": 6,
+          "cx": 531,
+          "cy": 803,
+          "w": 26,
+          "h": 25,
+          "storage": "extra_cgscene__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 36,
+          "h": 36,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "volume_min",
+      "left": 1226,
+      "top": 917,
+      "width": 29,
+      "height": 12,
+      "class": "layer",
+      "uiname": "volume_min",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 177,
+          "cy": 766,
+          "w": 29,
+          "h": 12,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "volume_max",
+      "left": 1754,
+      "top": 917,
+      "width": 36,
+      "height": 12,
+      "class": "layer",
+      "uiname": "volume_max",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 625,
+          "cy": 675,
+          "w": 36,
+          "h": 12,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "helpbase",
+      "left": 27,
+      "top": 979,
+      "width": 731,
+      "height": 77,
+      "class": "layer",
+      "uiname": "helpbase",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 4,
+          "cy": 0,
+          "w": 731,
+          "h": 77,
+          "storage": "extra_cgscene__pack"
+        }
+      }
+    },
+    {
+      "name": "helptext",
+      "left": 57,
+      "top": 987,
+      "width": 672,
+      "height": 62,
+      "class": "layer",
+      "uiname": "helptext",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 672,
+          "h": 62,
+          "storage": "",
+          "opacity": 128
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 672,
+          "h": 62,
+          "storage": "",
+          "opacity": 128
+        }
+      }
+    },
+    {
+      "name": "title",
+      "left": 1252,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title"
+    },
+    {
+      "name": "_sysbtn",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 60,
+      "class": "button",
+      "uiname": "_sysbtn",
+      "uistates": {
+        "on": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 0,
+          "cy": 135,
+          "w": 315,
+          "h": 58,
+          "storage": "extra__pack"
+        },
+        "over": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 315,
+          "cy": 77,
+          "w": 315,
+          "h": 58,
+          "storage": "extra__pack"
+        },
+        "off": {
+          "ox": 0,
+          "oy": 2,
+          "cx": 0,
+          "cy": 77,
+          "w": 315,
+          "h": 58,
+          "storage": "extra__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 315,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "back",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "back"
+    },
+    {
+      "name": "title2",
+      "left": 1581,
+      "top": 989,
+      "width": 315,
+      "height": 58,
+      "class": "copy",
+      "uiname": "title2"
+    }
+  ],
+  "raw_result_keys": [
+    "_cbtn",
+    "_ctrl",
+    "_sysbtn",
+    "back",
+    "base",
+    "caption",
+    "caption_cg",
+    "caption_music",
+    "down",
+    "end",
+    "grouparea",
+    "grp0",
+    "grp1",
+    "grp2",
+    "grp3",
+    "grp4",
+    "grp5",
+    "grp6",
+    "grp7",
+    "helpbase",
+    "helptext",
+    "item",
+    "item_pos00",
+    "item_pos11",
+    "itemarea",
+    "keepbgm",
+    "mitem",
+    "mitem_pos00",
+    "mitem_pos11",
+    "musicplayer",
+    "pagedown",
+    "pageup",
+    "play",
+    "playpause",
+    "playstop",
+    "pnext",
+    "pprev",
+    "ptime_base",
+    "ptime_len",
+    "ptime_now",
+    "repeat_a",
+    "repeat_s",
+    "seek",
+    "seek_bar",
+    "sep_a",
+    "sep_b",
+    "slider",
+    "snd_down",
+    "snd_end",
+    "snd_itemarea",
+    "snd_pagedown",
+    "snd_pageup",
+    "snd_scroll",
+    "snd_slider",
+    "snd_top",
+    "snd_up",
+    "stop",
+    "subpg",
+    "title",
+    "title2",
+    "to_cg",
+    "to_scene",
+    "to_stand",
+    "to_voice",
+    "top",
+    "up",
+    "volume",
+    "volume_max",
+    "volume_min"
+  ]
+}

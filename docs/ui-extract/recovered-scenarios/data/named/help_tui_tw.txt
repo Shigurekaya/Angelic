@@ -1,0 +1,177 @@
+# タッチＵＩカスタマイズ画面ヘルプテキスト
+
+FIRST
+	可以透過拖放來更改${!qmEditMode?"觸控面板":"窗口菜單"}的按鈕布局。
+
+DRAG
+	將其拖放到目標位置。
+
+DROP
+	將其放置在目標位置。您不能放置多個相同的按鈕。
+
+ONDRAG1
+	${DROP}	（操作後另一個地方的相同按鈕可能會消失）
+
+ONDRAG2
+	${DROP}	（請注意，無法從欄中刪除此按鈕）
+
+
+preview
+	這是實際遊戲中顯示的預覽。可以檢查尺寸和透明度。	不能通過拖放在此處放置按鈕。使用一下欄進行放置。
+
+icons_area
+	當前按鈕的放置狀態。可以透過向左或向右拖動來更改順序。	將其放置在空白區域以刪除。
+
+tab_window
+	自訂窗口菜單按鈕。
+tab_touch
+	自訂觸控面板按鈕。
+menulink
+	統一窗口菜單與觸控面板的按鈕布局。
+entouch	qmlock
+	啟用顯示${!qmEditMode?"觸控面板":"窗口菜單"}。
+
+func0
+	這是打開此自訂螢幕的按鈕。無法從工具欄上刪除此按鈕。${!qmEditMode?"\n您也可以透過點擊並按住（右鍵單擊）觸摸面板上的ＵＩ欄來打開它。":""}
+
+func1
+	${GetFuncHelp(1)}	${DRAG}
+func2
+	${GetFuncHelp(2)}	${DRAG}
+func3
+	${GetFuncHelp(3)}	${DRAG}
+func4
+	${GetFuncHelp(4)}	${DRAG}
+func5
+	${GetFuncHelp(5)}	${DRAG}
+func6
+	${GetFuncHelp(6)}	${DRAG}
+func7
+	${GetFuncHelp(7)}	${DRAG}
+func8
+	${GetFuncHelp(8)}	${DRAG}
+func9
+	${GetFuncHelp(9)}	${DRAG}
+func10
+	${GetFuncHelp(10)}	${DRAG}
+func11
+	${GetFuncHelp(11)}	${DRAG}
+func12
+	${GetFuncHelp(12)}	${DRAG}
+func13
+	${GetFuncHelp(13)}	${DRAG}
+func14
+	${GetFuncHelp(14)}	${DRAG}
+func15
+	${GetFuncHelp(15)}	${DRAG}
+func16
+	${GetFuncHelp(16)}	${DRAG}
+func17
+	${GetFuncHelp(17)}	${DRAG}
+func18
+	${GetFuncHelp(18)}	${DRAG}
+func19
+	${GetFuncHelp(19)}	${DRAG}
+func20
+	${GetFuncHelp(20)}	${DRAG}
+func21
+	${GetFuncHelp(21)}	${DRAG}
+
+cmd_pad
+	${qmEditMode?"在這裡留出空間":syncMode?"在窗口菜單旁邊留出空間":""}
+
+ITEM_SAVE
+	存檔。
+
+ITEM_LOAD
+	讀檔。
+
+ITEM_QSAVE
+	快速存檔。
+
+ITEM_DSAVE
+	直接存檔。
+
+ITEM_QLOAD
+	快速讀檔。
+
+ITEM_OPTION
+	系統設定。
+
+ITEM_VREPLAY
+	語音重放。
+
+ITEM_VSAVE
+	語音收藏夾。
+
+ITEM_QVSAVE
+	加入語音收藏。
+
+ITEM_PREVSCN
+	上一個場景。
+
+ITEM_PREV
+	上一個選項。
+
+ITEM_BACKONE
+	上一行文本。
+
+ITEM_BACKSKIP
+	快退。
+
+ITEM_LOG
+	歷史記錄。
+
+ITEM_AUTO
+	自動模式。
+
+ITEM_SKIP
+	快進模式。
+
+ITEM_NEXTSCN
+	下一個場景。
+
+ITEM_NEXT
+	下一個選擇項。
+
+ITEM_SCNCHART
+	流程圖。
+
+ITEM_VOLUME
+	音量調整。
+
+ITEM_HIDE
+	隱藏消息窗口。
+
+ITEM_TITLE
+	返回標題界面。
+
+ITEM_SNAPSHOT
+	這是保存截圖的按鍵。
+
+sl_size
+	更改觸控面板的尺寸。	在遊戲過程中，可以隨時透過觸摸來放大或縮小尺寸。
+
+useqvsave
+	切換語音收藏按鍵。
+
+usedsave
+	切換存檔按鍵。
+	
+
+
+sl_opac
+	更改觸控面板的透明度。
+
+init
+	將${_helpTabName}的自訂內容初始化。
+NAME_WINDOW
+	文本框菜單
+NAME_TOUCH
+	觸控菜單
+
+revert
+	將設置恢復到打開此界面時的狀態。	※注意，該操作無需確認。
+
+ok
+	關閉自訂按鈕界面。

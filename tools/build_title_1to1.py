@@ -47,17 +47,54 @@ BUTTON_ORDER = [
     ("exit", "退出游戏", "quit"),
 ]
 
-# 底栏坐标：解包字模在原版查看态上的模板匹配结果（非均分猜测）
-BTN_XY = {
-    "start": (137, 1003),
-    "load": (354, 1003),
-    "continue": (570, 1003),  # 原版常半透禁用，字模匹配不可靠，按间距内插
-    "flowchart": (804, 1001),
-    "extra": (1010, 1003),
-    "after": (1228, 1003),
-    "system": (1449, 1003),
-    "exit": (1665, 1001),
-}
+# 底栏坐标：title_locale_cn.pbd via pbd2json（Cafe 式官方绝对坐标）
+def _btn_xy_from_pbd() -> dict[str, tuple[int, int]]:
+    hs_path = ROOT / "docs/ui-extract/pixel-reverse/pbd2json-layers/title_locale_cn.hotspots.json"
+    fallback = {
+        "start": (88, 984),
+        "load": (306, 984),
+        "continue": (525, 984),
+        "flowchart": (743, 984),
+        "extra": (962, 984),
+        "after": (1180, 984),
+        "system": (1399, 984),
+        "exit": (1617, 984),
+    }
+    if not hs_path.exists():
+        return fallback
+    doc = json.loads(hs_path.read_text(encoding="utf-8"))
+    out = dict(fallback)
+    for h in doc.get("hotspots") or []:
+        name = h.get("name")
+        if name in out:
+            out[name] = (int(h["left"]), int(h["top"]))
+    return out
+
+
+BTN_XY = _btn_xy_from_pbd()
+
+
+def _btn_rect_from_pbd() -> dict[str, dict[str, int]]:
+    hs_path = ROOT / "docs/ui-extract/pixel-reverse/pbd2json-layers/title_locale_cn.hotspots.json"
+    out = {}
+    if hs_path.exists():
+        doc = json.loads(hs_path.read_text(encoding="utf-8"))
+        for h in doc.get("hotspots") or []:
+            name = h.get("name")
+            if name in BTN_XY:
+                out[name] = {
+                    "x": int(h["left"]),
+                    "y": int(h["top"]),
+                    "w": int(h["width"]),
+                    "h": int(h["height"]),
+                }
+    if not out:
+        for k, (x, y) in BTN_XY.items():
+            out[k] = {"x": x, "y": y, "w": 215, "h": 96}
+    return out
+
+
+BTN_RECT = _btn_rect_from_pbd()
 
 # 右上语言 / 右下切背景：原版查看态匹配
 LAYOUT = {
@@ -243,13 +280,18 @@ def bake_reload(out_dir: Path) -> dict:
 
 
 def place_buttons(raw_btns: list[dict]) -> list[dict]:
-    """按实测坐标落点，保留解包字模原生宽高。"""
+    """按 pbd2json 官方命中盒落点；sprite_w/h 保留字模原生尺寸。"""
     out = []
     for b in raw_btns:
-        x, y = BTN_XY[b["id"]]
+        rect = BTN_RECT[b["id"]]
         nb = dict(b)
-        nb["x"] = int(x)
-        nb["y"] = int(y)
+        nb["sprite_w"] = int(b.get("w") or rect["w"])
+        nb["sprite_h"] = int(b.get("h") or rect["h"])
+        nb["x"] = int(rect["x"])
+        nb["y"] = int(rect["y"])
+        nb["w"] = int(rect["w"])
+        nb["h"] = int(rect["h"])
+        nb["source"] = "title_locale_cn.pbd via pbd2json"
         out.append(nb)
     return out
 
@@ -358,6 +400,7 @@ def main() -> None:
         "locale": "cn",
         "logo": {"x": 0, "y": 0},
         "btn_xy": BTN_XY,
+        "coord_source": "title_locale_cn.pbd via pbd2json",
         "language": {"x": lang["x"], "y": lang["y"]},
         "reload_title": {"x": rel["x"], "y": rel["y"]},
         "buttons": buttons,
@@ -369,9 +412,15 @@ def main() -> None:
     if RENPY_GAME.exists():
         shutil.copy2(PREV / "title_1to1_layout.json", RENPY_GAME / "title_1to1_layout.json")
 
-    if RENPY_IMG.exists():
-        shutil.rmtree(RENPY_IMG)
-    shutil.copytree(PREV, RENPY_IMG)
+    # Merge into renpy title dir — never rmtree (would wipe layers/ / bg*_ui / title_chars).
+    RENPY_IMG.mkdir(parents=True, exist_ok=True)
+    for src in PREV.rglob("*"):
+        if not src.is_file():
+            continue
+        rel_path = src.relative_to(PREV)
+        dst = RENPY_IMG / rel_path
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, dst)
     print("wrote", PREV)
     print(
         json.dumps(

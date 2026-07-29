@@ -1,15 +1,95 @@
 {
-  "generated_at": "2026-07-16T14:30:48.101739+00:00",
+  "generated_at": "2026-07-23T12:41:42.377675+00:00",
   "hxnames": "D:\\gamedev\\Angelic\\tools\\vendor\\ten_sz_hxnames\\HxNames-Tenshi.lst",
   "hx_entries": 57748,
   "archives": [
     {
-      "archive": "image.xp3",
-      "error": "TypeError(\"'XP3File' object is not iterable\")"
+      "archive": "adult.xp3",
+      "path": "E:\\GAL\\天使☆嚣嚣\\adult.xp3",
+      "bytes": 1986479551,
+      "files": 9827,
+      "encrypted": 9826,
+      "hx_resolved": 0
+    },
+    {
+      "archive": "adult2.xp3",
+      "path": "E:\\GAL\\天使☆嚣嚣\\adult2.xp3",
+      "bytes": 1705512510,
+      "files": 82,
+      "encrypted": 81,
+      "hx_resolved": 0
+    },
+    {
+      "archive": "adult3.xp3",
+      "path": "E:\\GAL\\天使☆嚣嚣\\adult3.xp3",
+      "bytes": 1721791359,
+      "files": 11,
+      "encrypted": 10,
+      "hx_resolved": 0
     },
     {
       "archive": "data.xp3",
-      "error": "TypeError(\"'XP3File' object is not iterable\")"
+      "path": "E:\\GAL\\天使☆嚣嚣\\data.xp3",
+      "bytes": 1119070153,
+      "files": 1421,
+      "encrypted": 1420,
+      "hx_resolved": 0
+    },
+    {
+      "archive": "evimage.xp3",
+      "path": "E:\\GAL\\天使☆嚣嚣\\evimage.xp3",
+      "bytes": 245051939,
+      "files": 164,
+      "encrypted": 163,
+      "hx_resolved": 0
+    },
+    {
+      "archive": "fgimage.xp3",
+      "path": "E:\\GAL\\天使☆嚣嚣\\fgimage.xp3",
+      "bytes": 595198790,
+      "files": 2486,
+      "encrypted": 2485,
+      "hx_resolved": 0
+    },
+    {
+      "archive": "image.xp3",
+      "path": "E:\\GAL\\天使☆嚣嚣\\image.xp3",
+      "bytes": 126000554,
+      "files": 78,
+      "encrypted": 77,
+      "hx_resolved": 0
+    },
+    {
+      "archive": "upgrade.xp3",
+      "path": "E:\\GAL\\天使☆嚣嚣\\upgrade.xp3",
+      "bytes": 1597582698,
+      "files": 1413,
+      "encrypted": 1412,
+      "hx_resolved": 0
+    },
+    {
+      "archive": "upgrade2.xp3",
+      "path": "E:\\GAL\\天使☆嚣嚣\\upgrade2.xp3",
+      "bytes": 1149514907,
+      "files": 27147,
+      "encrypted": 27146,
+      "hx_resolved": 0
+    },
+    {
+      "archive": "upgrade3.xp3",
+      "path": "E:\\GAL\\天使☆嚣嚣\\upgrade3.xp3",
+      "bytes": 1254402819,
+      "files": 8,
+      "encrypted": 7,
+      "hx_resolved": 0
+    },
+    {
+      "archive": "voice.xp3",
+      "path": "E:\\GAL\\天使☆嚣嚣\\voice.xp3",
+      "bytes": 250415054,
+      "files": 6489,
+      "encrypted": 6488,
+      "hx_resolved": 0
     }
   ]
 }

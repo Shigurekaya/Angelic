@@ -1,0 +1,239 @@
+{
+  "source": "uitexts + PBD static storage_with_formula + official pack slices (NO screenshot)",
+  "sidebar": {
+    "x": 58,
+    "y": 141,
+    "w": 80,
+    "h": 731,
+    "from": "option.pbd storagex/storagey"
+  },
+  "footer_y": 973,
+  "pages": {
+    "0": {
+      "stem": "option_0simple",
+      "label": "基本设置",
+      "slot_count": 10,
+      "keys": [
+        "fullscreen",
+        "sqscr",
+        "textspeed",
+        "autospeed",
+        "skipall",
+        "wave",
+        "bgm",
+        "se",
+        "voice",
+        "movie"
+      ],
+      "pack_places": []
+    },
+    "1": {
+      "stem": "option_1display",
+      "label": "画面设置",
+      "slot_count": 12,
+      "keys": [
+        "fullscreen",
+        "sqscr",
+        "noeffect",
+        "scanim",
+        "esccancel",
+        "panictype",
+        "stayontop",
+        "showitems",
+        "chapthidetime",
+        "bgmhidetime",
+        "talkface",
+        "popup"
+      ],
+      "pack_places": []
+    },
+    "2": {
+      "stem": "option_2game1",
+      "label": "游戏设置1",
+      "slot_count": 12,
+      "keys": [
+        "readskip",
+        "readjump",
+        "curmove",
+        "curmoveyes",
+        "curhidestep",
+        "filedclk",
+        "hselfix",
+        "hfin",
+        "allflow",
+        "deactive",
+        "preview",
+        "suspend"
+      ],
+      "pack_places": []
+    },
+    "3": {
+      "stem": "option_3game2",
+      "label": "游戏设置2",
+      "slot_count": 8,
+      "keys": [
+        "drawspeed",
+        "voplspeed",
+        "skipspeed",
+        "skipstyle",
+        "rclkmvskip",
+        "skipmvskip",
+        "dramatic",
+        "snapshot"
+      ],
+      "pack_places": []
+    },
+    "4": {
+      "stem": "option_4text",
+      "label": "文本设置",
+      "slot_count": 18,
+      "keys": [
+        "textspeed",
+        "autospeed",
+        "autotime_readout",
+        "atextwait",
+        "autovwait",
+        "skipall",
+        "ctrlskip",
+        "afterskip",
+        "afterauto",
+        "color_win",
+        "color_owin",
+        "color_hwin",
+        "nohwindow",
+        "color_text",
+        "color_read",
+        "hsv_reset",
+        "fontselect",
+        "winopac"
+      ],
+      "pack_places": [
+        {
+          "i": 0,
+          "x": 963,
+          "y": 473
+        },
+        {
+          "i": 1,
+          "x": 793,
+          "y": 592
+        }
+      ]
+    },
+    "5a": {
+      "stem": "option_5sound1",
+      "label": "音频1",
+      "slot_count": 28,
+      "keys": [
+        "wave",
+        "bgm",
+        "bgmdown",
+        "movie",
+        "se",
+        "bgv",
+        "bgv2",
+        "voicecut",
+        "voeffect",
+        "sysse",
+        "voice",
+        "chvall",
+        "chv",
+        "chv0",
+        "chv1",
+        "chv2",
+        "chv3",
+        "chv4",
+        "chv5",
+        "chv6",
+        "chv7",
+        "chv8",
+        "chv9",
+        "chv10",
+        "chv11",
+        "chv12",
+        "chv13",
+        "sysvo"
+      ],
+      "pack_places": [
+        {
+          "i": 3,
+          "x": 949,
+          "y": 619
+        }
+      ]
+    },
+    "5b": {
+      "stem": "option_5sound2",
+      "label": "音频2",
+      "slot_count": 29,
+      "keys": [
+        "sysvoall",
+        "sysvoplay0",
+        "sysvoplay1",
+        "sysvoplay2",
+        "sysvoplay3",
+        "sysvoplay4",
+        "sysvoplay5",
+        "sysvoplay6",
+        "sysvoplay7",
+        "sysvoplay8",
+        "sysvoplay9",
+        "sysvoplay10",
+        "sysvoplay11",
+        "sysvoplay12",
+        "sysvoplay13",
+        "sysvoplay14",
+        "sysvoplay15",
+        "sysvo0",
+        "sysvo1",
+        "sysvo2",
+        "sysvo3",
+        "sysvo4",
+        "sysvo5",
+        "sysvo6",
+        "sysvo7",
+        "sysvo8",
+        "sysvo9",
+        "sysvo10",
+        "sysvo11"
+      ],
+      "pack_places": []
+    },
+    "6": {
+      "stem": "option_6dialog",
+      "label": "确认信息",
+      "slot_count": 22,
+      "keys": [
+        "cfall",
+        "cf_save",
+        "cf_overwrite",
+        "cf_dsave",
+        "cf_load",
+        "cf_qsave",
+        "cf_qload",
+        "cf_title",
+        "cf_jump",
+        "cf_flow",
+        "cf_next",
+        "cf_backto",
+        "cf_nextscn",
+        "cf_prevscn",
+        "cf_vsave",
+        "cf_init",
+        "cf_initstand",
+        "cf_delete",
+        "cf_swap",
+        "cf_copy",
+        "cf_exit",
+        "cf_resume"
+      ],
+      "pack_places": [
+        {
+          "i": 0,
+          "x": 956,
+          "y": 403
+        }
+      ]
+    }
+  }
+}

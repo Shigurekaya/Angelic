@@ -1,0 +1,108 @@
+{
+  "source": "option.tjs + uioption.tjs + pbd2json + settings_truth.json",
+  "status": "working",
+  "notes": [
+    "This is the local semantic mapping for settings-page reconstruction.",
+    "It intentionally separates original module semantics from current RenPy rendering layers.",
+    "Page count in original OptionPageModule is 10, but current reconstruction is temporarily collapsed to 6 visible pages in the UI preview/runtime.",
+    "The `simple` page uses slots a-j in the original model; `skipall` and `movie` are routed to deeper/detail or later-page behavior in current reconstruction.",
+    "Angelic layout truth is not Cafe absolute coordinates; use settings_truth.json as the current geometry guide and option.tjs/uioption.tjs for behavior semantics."
+  ],
+  "pages": {
+    "01basic": {
+      "visible_in_current_ui": true,
+      "role": "basic/simple settings page",
+      "module": "OptionStandardModule + CustomOption",
+      "slots": [
+        {"slot": "a", "key": "fullscreen", "type": "toggle", "label_id": "label_a", "jump": "label_a_jump", "detail_page": 1},
+        {"slot": "b", "key": "sqscr", "type": "toggle", "label_id": "label_b", "jump": "label_b_jump", "detail_page": 1},
+        {"slot": "c", "key": "textspeed", "type": "slider", "label_id": "label_c", "jump": "label_c_jump", "detail_page": 4},
+        {"slot": "d", "key": "autospeed", "type": "slider", "label_id": "label_d", "jump": "label_d_jump", "detail_page": 4},
+        {"slot": "e", "key": "skipall", "type": "toggle", "label_id": "label_e", "jump": "label_e_jump", "detail_page": 4},
+        {"slot": "f", "key": "wave", "type": "slider", "label_id": "label_f", "jump": "label_f_jump", "detail_page": "06sound"},
+        {"slot": "g", "key": "bgm", "type": "slider", "label_id": "label_g", "jump": "label_g_jump", "detail_page": "06sound"},
+        {"slot": "h", "key": "se", "type": "slider", "label_id": "label_h", "jump": "label_h_jump", "detail_page": "06sound"},
+        {"slot": "i", "key": "voice", "type": "slider", "label_id": "label_i", "jump": "label_i_jump", "detail_page": "06sound"},
+        {"slot": "j", "key": "movie", "type": "slider", "label_id": "label_j", "jump": "label_j_jump", "detail_page": "06sound"}
+      ]
+    },
+    "02image": {
+      "visible_in_current_ui": true,
+      "role": "display / image settings",
+      "module": "OptionBasicPropertyModule + CustomOption"
+    },
+    "03game1": {
+      "visible_in_current_ui": true,
+      "role": "game settings page 1",
+      "module": "CustomOption"
+    },
+    "04game2": {
+      "visible_in_current_ui": true,
+      "role": "game settings page 2",
+      "module": "CustomOption"
+    },
+    "05text": {
+      "visible_in_current_ui": true,
+      "role": "text / color / speed settings",
+      "module": "OptionSpeedSliderModule + OptionFontSelectModule + OptionRenderSampleModule + CustomOption"
+    },
+    "06sound": {
+      "visible_in_current_ui": true,
+      "role": "audio settings",
+      "module": "OptionAudioVolumeModule + OptionSystemVoiceDetailPanel + CustomOption"
+    },
+    "07dialog": {
+      "visible_in_current_ui": false,
+      "role": "dialog confirmation/related settings",
+      "module": "CustomOption + confirm dialog helpers"
+    },
+    "08mouse": {
+      "visible_in_current_ui": false,
+      "role": "mouse and gesture bindings",
+      "module": "CustomOption + mouse gesture helpers"
+    },
+    "09keyboard": {
+      "visible_in_current_ui": false,
+      "role": "keyboard bindings",
+      "module": "CustomKeyboardPanelInputDialog + bind UI"
+    },
+    "10gamepad": {
+      "visible_in_current_ui": false,
+      "role": "gamepad bindings",
+      "module": "GamePadButtonAssin + gamepad binding helpers"
+    }
+  },
+  "semantic_keys": {
+    "fullscreen": {"page": "01basic", "kind": "toggle", "property": "_fullscreen"},
+    "sqscr": {"page": "01basic", "kind": "toggle", "property": "square_screen_aspect"},
+    "textspeed": {"page": "01basic", "kind": "slider", "property": "kag.textspeed"},
+    "autospeed": {"page": "01basic", "kind": "slider", "property": "kag.autospeed"},
+    "skipall": {"page": "01basic", "kind": "toggle", "property": "_allSkip"},
+    "wave": {"page": "01basic", "kind": "slider", "property": "kag.wavevolume"},
+    "bgm": {"page": "01basic", "kind": "slider", "property": "kag.bgmvolume"},
+    "se": {"page": "01basic", "kind": "slider", "property": "kag.sevolume"},
+    "voice": {"page": "01basic", "kind": "slider", "property": "kag.voicevolume"},
+    "movie": {"page": "01basic", "kind": "slider", "property": "kag.movieaudio"},
+    "winopac": {"page": "02image", "kind": "slider", "property": "sf.windowOpac"},
+    "font": {"page": "05text", "kind": "select", "property": "kag.chDefaultFace"},
+    "txv_voice": {"page": "05text", "kind": "radio", "property": "kag.dramaticMode voice bits"},
+    "txv_novo": {"page": "05text", "kind": "radio", "property": "kag.dramaticMode no-voice bits"},
+    "txv_other": {"page": "05text", "kind": "radio", "property": "kag.dramaticMode other bits"},
+    "vspeed": {"page": "05text", "kind": "slider", "property": "kag.voicespeed"},
+    "vspeedsync": {"page": "05text", "kind": "toggle", "property": "kag.scflags.voiceSpeedSync"},
+    "engamepad": {"page": "10gamepad", "kind": "toggle", "property": "GamePadEnabled"}
+  },
+  "known_overlaps_to_fix": [
+    "Do not render page labels twice (top tabs vs internal labels).",
+    "Do not layer both arrow helper and label_jump debug text.",
+    "Do not keep keyboard/mouse/gamepad UI active inside the main visible settings screen.",
+    "Use one source of truth for page tabs: runtime meta.json or truth geometry, not both with fallback duplication.",
+    "Audio mute buttons must be bound only on pages/rows that actually expose mute state."
+  ],
+  "next_actions": [
+    "Split current UI runtime by page visibility rules from semantic mapping.",
+    "Remove duplicate overlays introduced by generic hotspot rendering.",
+    "Rebuild page 01basic with geometry from settings_truth.json and slot-to-key mapping from pbd2json.",
+    "Then reintroduce other pages only when their module-specific layouts are separated."
+  ]
+}

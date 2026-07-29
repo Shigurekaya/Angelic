@@ -1,0 +1,7 @@
+%[
+method:"rotatevanish",
+time:1000,
+accel:2,
+twist:2,
+twistaccel:2,
+]

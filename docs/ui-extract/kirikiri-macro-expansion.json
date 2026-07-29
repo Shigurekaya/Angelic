@@ -1,0 +1,2989 @@
+{
+  "summary": {
+    "_afterstory": {
+      "count": 1,
+      "files": [
+        "adult/detected/9590269567CD6D3565BBF72689CE0235229B2ABB9D53B61E28229B16724ECB98.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "set",
+          "args": "name='tf.start_storage' value='&\"x_\"+mp.storage'",
+          "line": 6
+        },
+        {
+          "kind": "command",
+          "name": "return",
+          "args": "target=*jump",
+          "line": 7
+        }
+      ]
+    },
+    "initbase": {
+      "count": 2,
+      "files": [
+        "data/named/macro.ks",
+        "data/named/parsermacro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "clearlayers",
+          "args": "",
+          "line": 4
+        },
+        {
+          "kind": "command",
+          "name": "stopquake",
+          "args": "",
+          "line": 5
+        },
+        {
+          "kind": "command",
+          "name": "stopbgm",
+          "args": "cond=!mp.nostopbgm",
+          "line": 6
+        },
+        {
+          "kind": "command",
+          "name": "stopse",
+          "args": "buf=all cond=!mp.nostopse",
+          "line": 7
+        },
+        {
+          "kind": "command",
+          "name": "stopvideo",
+          "args": "",
+          "line": 8
+        },
+        {
+          "kind": "command",
+          "name": "sysmovie",
+          "args": "state=end",
+          "line": 9
+        },
+        {
+          "kind": "command",
+          "name": "history",
+          "args": "enabled=true",
+          "line": 10
+        },
+        {
+          "kind": "command",
+          "name": "sysrclick",
+          "args": "",
+          "line": 11
+        },
+        {
+          "kind": "command",
+          "name": "noeffect",
+          "args": "enabled=true",
+          "line": 12
+        },
+        {
+          "kind": "command",
+          "name": "clickskip",
+          "args": "enabled=true",
+          "line": 13
+        }
+      ]
+    },
+    "initscene": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "initbase",
+          "args": "*",
+          "line": 27
+        },
+        {
+          "kind": "command",
+          "name": "initmode",
+          "args": "*",
+          "line": 28
+        },
+        {
+          "kind": "command",
+          "name": "voeff",
+          "args": "clear cond=%translate|false",
+          "line": 29
+        }
+      ]
+    },
+    "initmode": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "linemode",
+          "args": "mode=page erafterpage=true checknextvoice=true",
+          "line": 34
+        },
+        {
+          "kind": "command",
+          "name": "autoindent",
+          "args": "mode=true",
+          "line": 35
+        },
+        {
+          "kind": "command",
+          "name": "initmsgmode",
+          "args": "*",
+          "line": 36
+        }
+      ]
+    },
+    "initmsgmode": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "initmeswin",
+          "args": "* cond=%initmeswin|true",
+          "line": 40
+        },
+        {
+          "kind": "command",
+          "name": "msgmode",
+          "args": "mode=true history=true cond=%msgmode|false",
+          "line": 42
+        },
+        {
+          "kind": "command",
+          "name": "msgmode",
+          "args": "mode=true history=true language=&GetScnConvertLangList() cond=%translate|false",
+          "line": 43
+        }
+      ]
+    },
+    "reloadmeswin": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "meswinload",
+          "args": "page=both",
+          "line": 48
+        }
+      ]
+    },
+    "movie": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "cancelskip",
+          "args": "cond=%cancelskip|false",
+          "line": 63
+        },
+        {
+          "kind": "command",
+          "name": "_movie_sysmenu_hide_",
+          "args": "",
+          "line": 64
+        },
+        {
+          "kind": "command",
+          "name": "beginskip",
+          "args": "skip=%skip eval='&mp.eval!=\"\"?mp.eval:\"sf.movie_\"+(((string)mp.file).toLowerCase())'",
+          "line": 65
+        },
+        {
+          "kind": "command",
+          "name": "begintrans",
+          "args": "",
+          "line": 66
+        },
+        {
+          "kind": "command",
+          "name": "msgoff",
+          "args": "",
+          "line": 67
+        },
+        {
+          "kind": "command",
+          "name": "allimage",
+          "args": "hide",
+          "line": 68
+        },
+        {
+          "kind": "command",
+          "name": "_movie_fill_",
+          "args": "* coltag=beforecolor defcol=0x000000",
+          "line": 69
+        },
+        {
+          "kind": "command",
+          "name": "endtrans",
+          "args": "trans=%beforetrans|normal sync",
+          "line": 70
+        },
+        {
+          "kind": "command",
+          "name": "sysmovie",
+          "args": "file=%file disablerclick=%disablerclick mode=%mode begincolor=%beforecolor|0x000000 endcolor=%aftercolor|0x000000 keepcolor eval=\"kag.skipMode<SKIP_CANCEL\" stopcheck=\"SKIP_CANCEL\"",
+          "line": 71
+        },
+        {
+          "kind": "command",
+          "name": "begintrans",
+          "args": "",
+          "line": 72
+        }
+      ]
+    },
+    "_movie_fill_": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "layer",
+          "args": "name=_movie_fill_layer class=effect file='&@\"color,${(mp[mp.coltag]!==void?+mp[mp.coltag]:+mp.defcol)&0xFFFFFF|0xFF000000},width,${kag.scWidth},height,${kag.scHeight}\"'",
+          "line": 88
+        }
+      ]
+    },
+    "_movie_sysmenu_hide_": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": []
+    },
+    "_movie_sysmenu_restore_": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": []
+    },
+    "chat_se": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "if",
+          "args": "exp=%right|false",
+          "line": 170
+        },
+        {
+          "kind": "command",
+          "name": "se",
+          "args": "file=\"♪LIENメッセージ２\"",
+          "line": 171
+        },
+        {
+          "kind": "command",
+          "name": "else",
+          "args": "",
+          "line": 172
+        },
+        {
+          "kind": "command",
+          "name": "se",
+          "args": "file=\"♪LIENメッセージ１\"",
+          "line": 173
+        },
+        {
+          "kind": "command",
+          "name": "endif",
+          "args": "",
+          "line": 174
+        }
+      ]
+    },
+    "背景中": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=0 ypos=-350",
+          "line": 199
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=2",
+          "line": 200
+        }
+      ]
+    },
+    "背景左": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=1200 ypos=-350",
+          "line": 203
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=2",
+          "line": 204
+        }
+      ]
+    },
+    "背景右": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=-1200 ypos=-350",
+          "line": 207
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=2",
+          "line": 208
+        }
+      ]
+    },
+    "背景左外": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=1500 ypos=-350",
+          "line": 211
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=2",
+          "line": 212
+        }
+      ]
+    },
+    "背景右外": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=-1500 ypos=-350",
+          "line": 215
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=2",
+          "line": 216
+        }
+      ]
+    },
+    "背景左大外": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=1800 ypos=-350",
+          "line": 219
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=2",
+          "line": 220
+        }
+      ]
+    },
+    "背景右大外": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=-1800 ypos=-350",
+          "line": 223
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=2",
+          "line": 224
+        }
+      ]
+    },
+    "背景初期": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=100 xpos=0 ypos=0",
+          "line": 227
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=0",
+          "line": 228
+        }
+      ]
+    },
+    "背景拡大": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=150 xpos=0 ypos=-276",
+          "line": 231
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=1",
+          "line": 232
+        }
+      ]
+    },
+    "背景下": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=0 ypos=350",
+          "line": 236
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=2",
+          "line": 237
+        }
+      ]
+    },
+    "背景左下": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=900 ypos=350",
+          "line": 240
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=2",
+          "line": 241
+        }
+      ]
+    },
+    "背景右下": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=-900 ypos=350",
+          "line": 244
+        },
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "blur=2",
+          "line": 245
+        }
+      ]
+    },
+    "アップ中": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=0 ypos=-350",
+          "line": 249
+        }
+      ]
+    },
+    "アップ左": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=1200 ypos=-350",
+          "line": 252
+        }
+      ]
+    },
+    "アップ右": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=-1200 ypos=-350",
+          "line": 255
+        }
+      ]
+    },
+    "アップ大外左": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=2000 ypos=-350",
+          "line": 258
+        }
+      ]
+    },
+    "アップ大外右": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "stage",
+          "args": "zoom=200 xpos=-2000 ypos=-350",
+          "line": 261
+        }
+      ]
+    },
+    "視点変化": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "begintrans",
+          "args": "",
+          "line": 268
+        },
+        {
+          "kind": "command",
+          "name": "bar_top",
+          "args": "show xpos=0 ypos=605",
+          "line": 270
+        },
+        {
+          "kind": "command",
+          "name": "bar_und",
+          "args": "show xpos=0 ypos=-605",
+          "line": 271
+        },
+        {
+          "kind": "command",
+          "name": "endtrans",
+          "args": "0sec msgoff",
+          "line": 272
+        },
+        {
+          "kind": "command",
+          "name": "bar_top",
+          "args": "xpos=0 ypos=495 time=750 nosync",
+          "line": 274
+        },
+        {
+          "kind": "command",
+          "name": "bar_und",
+          "args": "xpos=0 ypos=-495 time=750 sync",
+          "line": 275
+        },
+        {
+          "kind": "command",
+          "name": "bar_top",
+          "args": "stopaction",
+          "line": 276
+        },
+        {
+          "kind": "command",
+          "name": "meswinchange",
+          "args": "type=another",
+          "line": 279
+        },
+        {
+          "kind": "command",
+          "name": "wait",
+          "args": "time=500",
+          "line": 280
+        }
+      ]
+    },
+    "視点通常": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "msgoff",
+          "args": "",
+          "line": 284
+        },
+        {
+          "kind": "command",
+          "name": "bar_top",
+          "args": "ypos=605 time=750 nosync",
+          "line": 286
+        },
+        {
+          "kind": "command",
+          "name": "bar_und",
+          "args": "ypos=-605 time=750 sync",
+          "line": 287
+        },
+        {
+          "kind": "command",
+          "name": "bar_top",
+          "args": "stopaction",
+          "line": 288
+        },
+        {
+          "kind": "command",
+          "name": "begintrans",
+          "args": "",
+          "line": 290
+        },
+        {
+          "kind": "command",
+          "name": "bar_top",
+          "args": "delete",
+          "line": 291
+        },
+        {
+          "kind": "command",
+          "name": "bar_und",
+          "args": "delete",
+          "line": 292
+        },
+        {
+          "kind": "command",
+          "name": "endtrans",
+          "args": "0sec sync",
+          "line": 293
+        },
+        {
+          "kind": "command",
+          "name": "meswinchange",
+          "args": "type=default",
+          "line": 295
+        },
+        {
+          "kind": "command",
+          "name": "wait",
+          "args": "time=500",
+          "line": 297
+        }
+      ]
+    },
+    "視点変化ＣＧ": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "meswinchange",
+          "args": "type=another",
+          "line": 301
+        }
+      ]
+    },
+    "視点通常ＣＧ": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "meswinchange",
+          "args": "type=default",
+          "line": 304
+        }
+      ]
+    },
+    "黒半透明": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "msgoff",
+          "args": "",
+          "line": 308
+        },
+        {
+          "kind": "command",
+          "name": "object",
+          "args": "name=half_trans class=centerlayer file=画面_黒 zoffset=40 hide 0sec",
+          "line": 309
+        },
+        {
+          "kind": "command",
+          "name": "half_trans",
+          "args": "show 500sec opacity=100",
+          "line": 310
+        }
+      ]
+    },
+    "白半透明": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "msgoff",
+          "args": "",
+          "line": 314
+        },
+        {
+          "kind": "command",
+          "name": "object",
+          "args": "name=half_trans class=centerlayer file=画面_白 zoffset=40 hide 0sec",
+          "line": 315
+        },
+        {
+          "kind": "command",
+          "name": "half_trans",
+          "args": "show 500sec opacity=100",
+          "line": 316
+        }
+      ]
+    },
+    "透明解除": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "msgoff",
+          "args": "",
+          "line": 320
+        },
+        {
+          "kind": "command",
+          "name": "half_trans",
+          "args": "hide 500sec",
+          "line": 321
+        },
+        {
+          "kind": "command",
+          "name": "half_trans",
+          "args": "delete",
+          "line": 322
+        }
+      ]
+    },
+    "集中": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "concentration",
+          "args": "show",
+          "line": 327
+        }
+      ]
+    },
+    "集中解除": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "concentration",
+          "args": "delete",
+          "line": 331
+        }
+      ]
+    },
+    "妄想": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "refrain",
+          "args": "show",
+          "line": 338
+        }
+      ]
+    },
+    "妄想解除": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "refrain",
+          "args": "delete",
+          "line": 343
+        }
+      ]
+    },
+    "覗き": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "peeping",
+          "args": "show",
+          "line": 351
+        }
+      ]
+    },
+    "覗き解除": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "peeping",
+          "args": "delete",
+          "line": 356
+        }
+      ]
+    },
+    "覗き横": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "peeping_y",
+          "args": "show",
+          "line": 363
+        }
+      ]
+    },
+    "覗き横解除": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "peeping_y",
+          "args": "delete",
+          "line": 368
+        }
+      ]
+    },
+    "アイキャッチボイス": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "sysvoice",
+          "args": "eyecatch name=title chara=%chara",
+          "line": 377
+        }
+      ]
+    },
+    "共通アイキャッチ": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "quickmenu",
+          "args": "fadeout",
+          "line": 381
+        },
+        {
+          "kind": "command",
+          "name": "msgoff",
+          "args": "",
+          "line": 382
+        },
+        {
+          "kind": "command",
+          "name": "begintrans",
+          "args": "",
+          "line": 383
+        },
+        {
+          "kind": "command",
+          "name": "object",
+          "args": "name=i_base class=centerlayer zoffset=100 file=アイキャッチ共通",
+          "line": 384
+        },
+        {
+          "kind": "command",
+          "name": "i_base",
+          "args": "show",
+          "line": 385
+        },
+        {
+          "kind": "command",
+          "name": "endtrans",
+          "args": "ターン",
+          "line": 386
+        },
+        {
+          "kind": "command",
+          "name": "wait",
+          "args": "time=500",
+          "line": 387
+        },
+        {
+          "kind": "command",
+          "name": "アイキャッチボイス",
+          "args": "chara=\"noa:ama:kur:kag:ori:fum\"",
+          "line": 388
+        },
+        {
+          "kind": "command",
+          "name": "wait",
+          "args": "time=2000",
+          "line": 389
+        },
+        {
+          "kind": "command",
+          "name": "begintrans",
+          "args": "",
+          "line": 390
+        }
+      ]
+    },
+    "アイキャッチ個別": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "quickmenu",
+          "args": "fadeout",
+          "line": 398
+        },
+        {
+          "kind": "command",
+          "name": "msgoff",
+          "args": "",
+          "line": 399
+        },
+        {
+          "kind": "command",
+          "name": "eval",
+          "args": "exp='&@\"tf.ec_random=intrandom(1,${mp.max})\"'",
+          "line": 400
+        },
+        {
+          "kind": "command",
+          "name": "begintrans",
+          "args": "",
+          "line": 401
+        },
+        {
+          "kind": "command",
+          "name": "ec_layer_base",
+          "args": "zorder=200 order=0 file='&@\"ec_${mp.tag}.pimg\"' seton=\"base\"",
+          "line": 402
+        },
+        {
+          "kind": "command",
+          "name": "ec_layer_open",
+          "args": "zorder=200 order=1 file='&@\"ec_${mp.tag}.pimg\"' seton=\"open\"",
+          "line": 403
+        },
+        {
+          "kind": "command",
+          "name": "ec_layer_chr0",
+          "args": "zorder=200 order=2 file='&@\"ec_${mp.tag}.pimg\"' seton=\"0\"",
+          "line": 404
+        },
+        {
+          "kind": "command",
+          "name": "ec_layer_chr1",
+          "args": "zorder=200 order=3 file='&@\"アイキャッチ${mp.name}rand\"'      opacity=0",
+          "line": 405
+        },
+        {
+          "kind": "command",
+          "name": "ec_layer_close",
+          "args": "zorder=200 order=4 file='&@\"ec_${mp.tag}.pimg\"' seton=\"close\" opacity=0",
+          "line": 406
+        },
+        {
+          "kind": "command",
+          "name": "ec_layer_logo",
+          "args": "zorder=250 order=0 file=\"ec__logo_dot.pimg\" seton=\"共通ロゴ\" opacity=0",
+          "line": 407
+        }
+      ]
+    },
+    "opmovie": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "beforemovie",
+          "args": "flag=movie_op",
+          "line": 455
+        },
+        {
+          "kind": "command",
+          "name": "quickmenu",
+          "args": "fadeout wait",
+          "line": 456
+        },
+        {
+          "kind": "command",
+          "name": "begintrans",
+          "args": "",
+          "line": 457
+        },
+        {
+          "kind": "command",
+          "name": "all",
+          "args": "ontype=layer delete",
+          "line": 458
+        },
+        {
+          "kind": "command",
+          "name": "endtrans",
+          "args": "0sec msgoff",
+          "line": 459
+        },
+        {
+          "kind": "command",
+          "name": "sysmovie",
+          "args": "file=\"OP\" flag=\"movie_op\" bgmflag=SongOP",
+          "line": 460
+        },
+        {
+          "kind": "command",
+          "name": "quickmenu",
+          "args": "visible=true hidden",
+          "line": 464
+        },
+        {
+          "kind": "command",
+          "name": "sflag",
+          "args": "name=\"movie_op\"",
+          "line": 465
+        }
+      ]
+    },
+    "edmovie": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "lse",
+          "args": "stop time=1000",
+          "line": 472
+        },
+        {
+          "kind": "command",
+          "name": "lse2",
+          "args": "stop time=1000",
+          "line": 473
+        },
+        {
+          "kind": "command",
+          "name": "bgm",
+          "args": "stop time=1000",
+          "line": 474
+        },
+        {
+          "kind": "command",
+          "name": "quickmenu",
+          "args": "fadeout",
+          "line": 475
+        },
+        {
+          "kind": "command",
+          "name": "msgoff",
+          "args": "",
+          "line": 476
+        },
+        {
+          "kind": "command",
+          "name": "chapter",
+          "args": "hide",
+          "line": 477
+        },
+        {
+          "kind": "command",
+          "name": "beforemovie",
+          "args": "flag=%flag",
+          "line": 478
+        },
+        {
+          "kind": "command",
+          "name": "env",
+          "args": "sync",
+          "line": 479
+        },
+        {
+          "kind": "command",
+          "name": "noeffect",
+          "args": "enabled=false",
+          "line": 481
+        },
+        {
+          "kind": "command",
+          "name": "begintrans",
+          "args": "",
+          "line": 482
+        }
+      ]
+    },
+    "メガネ選択": {
+      "count": 1,
+      "files": [
+        "data/named/macro.ks"
+      ],
+      "first_body": [
+        {
+          "kind": "command",
+          "name": "initscene",
+          "args": "",
+          "line": 511
+        },
+        {
+          "kind": "command",
+          "name": "scenewear_seladd",
+          "args": "flag=true  text=\"眼鏡もかけていただけると……\"\ttag=\"MM_01A\" exp='SetBranchFlags(\"s410*part_410_sel1\",1)'",
+          "line": 512
+        },
+        {
+          "kind": "command",
+          "name": "scenewear_seladd",
+          "args": "flag=false text=\"なんでもないです\"\t\t\ttag=\"MM_01B\" exp='SetBranchFlags(\"s410*part_410_sel1\",2)'",
+          "line": 513
+        },
+        {
+          "kind": "text",
+          "raw": "[select][msgoff][ws buf=9]",
+          "line": 514
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "_afterstory": [
+      {
+        "file": "adult/detected/9590269567CD6D3565BBF72689CE0235229B2ABB9D53B61E28229B16724ECB98.ks",
+        "start_line": 5,
+        "end_line": 8,
+        "body": [
+          {
+            "kind": "command",
+            "name": "set",
+            "args": "name='tf.start_storage' value='&\"x_\"+mp.storage'",
+            "line": 6
+          },
+          {
+            "kind": "command",
+            "name": "return",
+            "args": "target=*jump",
+            "line": 7
+          }
+        ]
+      }
+    ],
+    "initbase": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 3,
+        "end_line": 16,
+        "body": [
+          {
+            "kind": "command",
+            "name": "clearlayers",
+            "args": "",
+            "line": 4
+          },
+          {
+            "kind": "command",
+            "name": "stopquake",
+            "args": "",
+            "line": 5
+          },
+          {
+            "kind": "command",
+            "name": "stopbgm",
+            "args": "cond=!mp.nostopbgm",
+            "line": 6
+          },
+          {
+            "kind": "command",
+            "name": "stopse",
+            "args": "buf=all cond=!mp.nostopse",
+            "line": 7
+          },
+          {
+            "kind": "command",
+            "name": "stopvideo",
+            "args": "",
+            "line": 8
+          },
+          {
+            "kind": "command",
+            "name": "sysmovie",
+            "args": "state=end",
+            "line": 9
+          },
+          {
+            "kind": "command",
+            "name": "history",
+            "args": "enabled=true",
+            "line": 10
+          },
+          {
+            "kind": "command",
+            "name": "sysrclick",
+            "args": "",
+            "line": 11
+          },
+          {
+            "kind": "command",
+            "name": "noeffect",
+            "args": "enabled=true",
+            "line": 12
+          },
+          {
+            "kind": "command",
+            "name": "clickskip",
+            "args": "enabled=true",
+            "line": 13
+          },
+          {
+            "kind": "command",
+            "name": "current",
+            "args": "layer=message0",
+            "line": 14
+          },
+          {
+            "kind": "command",
+            "name": "init",
+            "args": "nostopbgm=%nostopbgm",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "file": "data/named/parsermacro.ks",
+        "start_line": 2,
+        "end_line": 4,
+        "body": [
+          {
+            "kind": "command",
+            "name": "init",
+            "args": "nostopbgm=%nostopbgm",
+            "line": 3
+          }
+        ]
+      }
+    ],
+    "initscene": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 26,
+        "end_line": 30,
+        "body": [
+          {
+            "kind": "command",
+            "name": "initbase",
+            "args": "*",
+            "line": 27
+          },
+          {
+            "kind": "command",
+            "name": "initmode",
+            "args": "*",
+            "line": 28
+          },
+          {
+            "kind": "command",
+            "name": "voeff",
+            "args": "clear cond=%translate|false",
+            "line": 29
+          }
+        ]
+      }
+    ],
+    "initmode": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 32,
+        "end_line": 37,
+        "body": [
+          {
+            "kind": "command",
+            "name": "linemode",
+            "args": "mode=page erafterpage=true checknextvoice=true",
+            "line": 34
+          },
+          {
+            "kind": "command",
+            "name": "autoindent",
+            "args": "mode=true",
+            "line": 35
+          },
+          {
+            "kind": "command",
+            "name": "initmsgmode",
+            "args": "*",
+            "line": 36
+          }
+        ]
+      }
+    ],
+    "initmsgmode": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 39,
+        "end_line": 44,
+        "body": [
+          {
+            "kind": "command",
+            "name": "initmeswin",
+            "args": "* cond=%initmeswin|true",
+            "line": 40
+          },
+          {
+            "kind": "command",
+            "name": "msgmode",
+            "args": "mode=true history=true cond=%msgmode|false",
+            "line": 42
+          },
+          {
+            "kind": "command",
+            "name": "msgmode",
+            "args": "mode=true history=true language=&GetScnConvertLangList() cond=%translate|false",
+            "line": 43
+          }
+        ]
+      }
+    ],
+    "reloadmeswin": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 47,
+        "end_line": 49,
+        "body": [
+          {
+            "kind": "command",
+            "name": "meswinload",
+            "args": "page=both",
+            "line": 48
+          }
+        ]
+      }
+    ],
+    "movie": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 62,
+        "end_line": 86,
+        "body": [
+          {
+            "kind": "command",
+            "name": "cancelskip",
+            "args": "cond=%cancelskip|false",
+            "line": 63
+          },
+          {
+            "kind": "command",
+            "name": "_movie_sysmenu_hide_",
+            "args": "",
+            "line": 64
+          },
+          {
+            "kind": "command",
+            "name": "beginskip",
+            "args": "skip=%skip eval='&mp.eval!=\"\"?mp.eval:\"sf.movie_\"+(((string)mp.file).toLowerCase())'",
+            "line": 65
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 66
+          },
+          {
+            "kind": "command",
+            "name": "msgoff",
+            "args": "",
+            "line": 67
+          },
+          {
+            "kind": "command",
+            "name": "allimage",
+            "args": "hide",
+            "line": 68
+          },
+          {
+            "kind": "command",
+            "name": "_movie_fill_",
+            "args": "* coltag=beforecolor defcol=0x000000",
+            "line": 69
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "trans=%beforetrans|normal sync",
+            "line": 70
+          },
+          {
+            "kind": "command",
+            "name": "sysmovie",
+            "args": "file=%file disablerclick=%disablerclick mode=%mode begincolor=%beforecolor|0x000000 endcolor=%aftercolor|0x000000 keepcolor eval=\"kag.skipMode<SKIP_CANCEL\" stopcheck=\"SKIP_CANCEL\"",
+            "line": 71
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 72
+          },
+          {
+            "kind": "command",
+            "name": "clearlayers",
+            "args": "page=back",
+            "line": 73
+          },
+          {
+            "kind": "command",
+            "name": "_movie_fill_",
+            "args": "*  coltag=aftercolor defcol=0x000000",
+            "line": 74
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "notrans sync",
+            "line": 75
+          },
+          {
+            "kind": "command",
+            "name": "sysmovie",
+            "args": "state=end",
+            "line": 76
+          },
+          {
+            "kind": "command",
+            "name": "if",
+            "args": "exp=%afterhide|true",
+            "line": 77
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 78
+          },
+          {
+            "kind": "command",
+            "name": "allimage",
+            "args": "hide",
+            "line": 79
+          },
+          {
+            "kind": "command",
+            "name": "layer",
+            "args": "name=_movie_fill_layer delete",
+            "line": 80
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "trans=%aftertrans|normal sync",
+            "line": 81
+          },
+          {
+            "kind": "command",
+            "name": "endif",
+            "args": "",
+            "line": 82
+          },
+          {
+            "kind": "command",
+            "name": "endskip",
+            "args": "",
+            "line": 83
+          },
+          {
+            "kind": "command",
+            "name": "_movie_sysmenu_restore_",
+            "args": "*",
+            "line": 84
+          },
+          {
+            "kind": "command",
+            "name": "sflag",
+            "args": "name=&@\"movie_${((string)mp.file).toLowerCase()}\"",
+            "line": 85
+          }
+        ]
+      }
+    ],
+    "_movie_fill_": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 87,
+        "end_line": 89,
+        "body": [
+          {
+            "kind": "command",
+            "name": "layer",
+            "args": "name=_movie_fill_layer class=effect file='&@\"color,${(mp[mp.coltag]!==void?+mp[mp.coltag]:+mp.defcol)&0xFFFFFF|0xFF000000},width,${kag.scWidth},height,${kag.scHeight}\"'",
+            "line": 88
+          }
+        ]
+      }
+    ],
+    "_movie_sysmenu_hide_": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 90,
+        "end_line": 92,
+        "body": []
+      }
+    ],
+    "_movie_sysmenu_restore_": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 93,
+        "end_line": 95,
+        "body": []
+      }
+    ],
+    "chat_se": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 169,
+        "end_line": 175,
+        "body": [
+          {
+            "kind": "command",
+            "name": "if",
+            "args": "exp=%right|false",
+            "line": 170
+          },
+          {
+            "kind": "command",
+            "name": "se",
+            "args": "file=\"♪LIENメッセージ２\"",
+            "line": 171
+          },
+          {
+            "kind": "command",
+            "name": "else",
+            "args": "",
+            "line": 172
+          },
+          {
+            "kind": "command",
+            "name": "se",
+            "args": "file=\"♪LIENメッセージ１\"",
+            "line": 173
+          },
+          {
+            "kind": "command",
+            "name": "endif",
+            "args": "",
+            "line": 174
+          }
+        ]
+      }
+    ],
+    "背景中": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 198,
+        "end_line": 201,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=0 ypos=-350",
+            "line": 199
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=2",
+            "line": 200
+          }
+        ]
+      }
+    ],
+    "背景左": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 202,
+        "end_line": 205,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=1200 ypos=-350",
+            "line": 203
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=2",
+            "line": 204
+          }
+        ]
+      }
+    ],
+    "背景右": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 206,
+        "end_line": 209,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=-1200 ypos=-350",
+            "line": 207
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=2",
+            "line": 208
+          }
+        ]
+      }
+    ],
+    "背景左外": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 210,
+        "end_line": 213,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=1500 ypos=-350",
+            "line": 211
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=2",
+            "line": 212
+          }
+        ]
+      }
+    ],
+    "背景右外": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 214,
+        "end_line": 217,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=-1500 ypos=-350",
+            "line": 215
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=2",
+            "line": 216
+          }
+        ]
+      }
+    ],
+    "背景左大外": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 218,
+        "end_line": 221,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=1800 ypos=-350",
+            "line": 219
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=2",
+            "line": 220
+          }
+        ]
+      }
+    ],
+    "背景右大外": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 222,
+        "end_line": 225,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=-1800 ypos=-350",
+            "line": 223
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=2",
+            "line": 224
+          }
+        ]
+      }
+    ],
+    "背景初期": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 226,
+        "end_line": 229,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=100 xpos=0 ypos=0",
+            "line": 227
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=0",
+            "line": 228
+          }
+        ]
+      }
+    ],
+    "背景拡大": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 230,
+        "end_line": 233,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=150 xpos=0 ypos=-276",
+            "line": 231
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=1",
+            "line": 232
+          }
+        ]
+      }
+    ],
+    "背景下": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 235,
+        "end_line": 238,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=0 ypos=350",
+            "line": 236
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=2",
+            "line": 237
+          }
+        ]
+      }
+    ],
+    "背景左下": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 239,
+        "end_line": 242,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=900 ypos=350",
+            "line": 240
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=2",
+            "line": 241
+          }
+        ]
+      }
+    ],
+    "背景右下": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 243,
+        "end_line": 246,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=-900 ypos=350",
+            "line": 244
+          },
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "blur=2",
+            "line": 245
+          }
+        ]
+      }
+    ],
+    "アップ中": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 248,
+        "end_line": 250,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=0 ypos=-350",
+            "line": 249
+          }
+        ]
+      }
+    ],
+    "アップ左": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 251,
+        "end_line": 253,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=1200 ypos=-350",
+            "line": 252
+          }
+        ]
+      }
+    ],
+    "アップ右": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 254,
+        "end_line": 256,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=-1200 ypos=-350",
+            "line": 255
+          }
+        ]
+      }
+    ],
+    "アップ大外左": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 257,
+        "end_line": 259,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=2000 ypos=-350",
+            "line": 258
+          }
+        ]
+      }
+    ],
+    "アップ大外右": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 260,
+        "end_line": 262,
+        "body": [
+          {
+            "kind": "command",
+            "name": "stage",
+            "args": "zoom=200 xpos=-2000 ypos=-350",
+            "line": 261
+          }
+        ]
+      }
+    ],
+    "視点変化": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 266,
+        "end_line": 281,
+        "body": [
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 268
+          },
+          {
+            "kind": "command",
+            "name": "bar_top",
+            "args": "show xpos=0 ypos=605",
+            "line": 270
+          },
+          {
+            "kind": "command",
+            "name": "bar_und",
+            "args": "show xpos=0 ypos=-605",
+            "line": 271
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "0sec msgoff",
+            "line": 272
+          },
+          {
+            "kind": "command",
+            "name": "bar_top",
+            "args": "xpos=0 ypos=495 time=750 nosync",
+            "line": 274
+          },
+          {
+            "kind": "command",
+            "name": "bar_und",
+            "args": "xpos=0 ypos=-495 time=750 sync",
+            "line": 275
+          },
+          {
+            "kind": "command",
+            "name": "bar_top",
+            "args": "stopaction",
+            "line": 276
+          },
+          {
+            "kind": "command",
+            "name": "meswinchange",
+            "args": "type=another",
+            "line": 279
+          },
+          {
+            "kind": "command",
+            "name": "wait",
+            "args": "time=500",
+            "line": 280
+          }
+        ]
+      }
+    ],
+    "視点通常": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 283,
+        "end_line": 298,
+        "body": [
+          {
+            "kind": "command",
+            "name": "msgoff",
+            "args": "",
+            "line": 284
+          },
+          {
+            "kind": "command",
+            "name": "bar_top",
+            "args": "ypos=605 time=750 nosync",
+            "line": 286
+          },
+          {
+            "kind": "command",
+            "name": "bar_und",
+            "args": "ypos=-605 time=750 sync",
+            "line": 287
+          },
+          {
+            "kind": "command",
+            "name": "bar_top",
+            "args": "stopaction",
+            "line": 288
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 290
+          },
+          {
+            "kind": "command",
+            "name": "bar_top",
+            "args": "delete",
+            "line": 291
+          },
+          {
+            "kind": "command",
+            "name": "bar_und",
+            "args": "delete",
+            "line": 292
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "0sec sync",
+            "line": 293
+          },
+          {
+            "kind": "command",
+            "name": "meswinchange",
+            "args": "type=default",
+            "line": 295
+          },
+          {
+            "kind": "command",
+            "name": "wait",
+            "args": "time=500",
+            "line": 297
+          }
+        ]
+      }
+    ],
+    "視点変化ＣＧ": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 300,
+        "end_line": 302,
+        "body": [
+          {
+            "kind": "command",
+            "name": "meswinchange",
+            "args": "type=another",
+            "line": 301
+          }
+        ]
+      }
+    ],
+    "視点通常ＣＧ": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 303,
+        "end_line": 305,
+        "body": [
+          {
+            "kind": "command",
+            "name": "meswinchange",
+            "args": "type=default",
+            "line": 304
+          }
+        ]
+      }
+    ],
+    "黒半透明": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 307,
+        "end_line": 311,
+        "body": [
+          {
+            "kind": "command",
+            "name": "msgoff",
+            "args": "",
+            "line": 308
+          },
+          {
+            "kind": "command",
+            "name": "object",
+            "args": "name=half_trans class=centerlayer file=画面_黒 zoffset=40 hide 0sec",
+            "line": 309
+          },
+          {
+            "kind": "command",
+            "name": "half_trans",
+            "args": "show 500sec opacity=100",
+            "line": 310
+          }
+        ]
+      }
+    ],
+    "白半透明": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 313,
+        "end_line": 317,
+        "body": [
+          {
+            "kind": "command",
+            "name": "msgoff",
+            "args": "",
+            "line": 314
+          },
+          {
+            "kind": "command",
+            "name": "object",
+            "args": "name=half_trans class=centerlayer file=画面_白 zoffset=40 hide 0sec",
+            "line": 315
+          },
+          {
+            "kind": "command",
+            "name": "half_trans",
+            "args": "show 500sec opacity=100",
+            "line": 316
+          }
+        ]
+      }
+    ],
+    "透明解除": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 319,
+        "end_line": 323,
+        "body": [
+          {
+            "kind": "command",
+            "name": "msgoff",
+            "args": "",
+            "line": 320
+          },
+          {
+            "kind": "command",
+            "name": "half_trans",
+            "args": "hide 500sec",
+            "line": 321
+          },
+          {
+            "kind": "command",
+            "name": "half_trans",
+            "args": "delete",
+            "line": 322
+          }
+        ]
+      }
+    ],
+    "集中": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 326,
+        "end_line": 328,
+        "body": [
+          {
+            "kind": "command",
+            "name": "concentration",
+            "args": "show",
+            "line": 327
+          }
+        ]
+      }
+    ],
+    "集中解除": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 330,
+        "end_line": 332,
+        "body": [
+          {
+            "kind": "command",
+            "name": "concentration",
+            "args": "delete",
+            "line": 331
+          }
+        ]
+      }
+    ],
+    "妄想": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 335,
+        "end_line": 339,
+        "body": [
+          {
+            "kind": "command",
+            "name": "refrain",
+            "args": "show",
+            "line": 338
+          }
+        ]
+      }
+    ],
+    "妄想解除": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 341,
+        "end_line": 345,
+        "body": [
+          {
+            "kind": "command",
+            "name": "refrain",
+            "args": "delete",
+            "line": 343
+          }
+        ]
+      }
+    ],
+    "覗き": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 348,
+        "end_line": 352,
+        "body": [
+          {
+            "kind": "command",
+            "name": "peeping",
+            "args": "show",
+            "line": 351
+          }
+        ]
+      }
+    ],
+    "覗き解除": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 354,
+        "end_line": 358,
+        "body": [
+          {
+            "kind": "command",
+            "name": "peeping",
+            "args": "delete",
+            "line": 356
+          }
+        ]
+      }
+    ],
+    "覗き横": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 360,
+        "end_line": 364,
+        "body": [
+          {
+            "kind": "command",
+            "name": "peeping_y",
+            "args": "show",
+            "line": 363
+          }
+        ]
+      }
+    ],
+    "覗き横解除": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 366,
+        "end_line": 370,
+        "body": [
+          {
+            "kind": "command",
+            "name": "peeping_y",
+            "args": "delete",
+            "line": 368
+          }
+        ]
+      }
+    ],
+    "アイキャッチボイス": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 376,
+        "end_line": 378,
+        "body": [
+          {
+            "kind": "command",
+            "name": "sysvoice",
+            "args": "eyecatch name=title chara=%chara",
+            "line": 377
+          }
+        ]
+      }
+    ],
+    "共通アイキャッチ": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 380,
+        "end_line": 395,
+        "body": [
+          {
+            "kind": "command",
+            "name": "quickmenu",
+            "args": "fadeout",
+            "line": 381
+          },
+          {
+            "kind": "command",
+            "name": "msgoff",
+            "args": "",
+            "line": 382
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 383
+          },
+          {
+            "kind": "command",
+            "name": "object",
+            "args": "name=i_base class=centerlayer zoffset=100 file=アイキャッチ共通",
+            "line": 384
+          },
+          {
+            "kind": "command",
+            "name": "i_base",
+            "args": "show",
+            "line": 385
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "ターン",
+            "line": 386
+          },
+          {
+            "kind": "command",
+            "name": "wait",
+            "args": "time=500",
+            "line": 387
+          },
+          {
+            "kind": "command",
+            "name": "アイキャッチボイス",
+            "args": "chara=\"noa:ama:kur:kag:ori:fum\"",
+            "line": 388
+          },
+          {
+            "kind": "command",
+            "name": "wait",
+            "args": "time=2000",
+            "line": 389
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 390
+          },
+          {
+            "kind": "command",
+            "name": "i_base",
+            "args": "delete",
+            "line": 391
+          },
+          {
+            "kind": "command",
+            "name": "暗転",
+            "args": "",
+            "line": 392
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "ターン",
+            "line": 393
+          },
+          {
+            "kind": "command",
+            "name": "quickmenu",
+            "args": "fadein",
+            "line": 394
+          }
+        ]
+      }
+    ],
+    "アイキャッチ個別": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 397,
+        "end_line": 443,
+        "body": [
+          {
+            "kind": "command",
+            "name": "quickmenu",
+            "args": "fadeout",
+            "line": 398
+          },
+          {
+            "kind": "command",
+            "name": "msgoff",
+            "args": "",
+            "line": 399
+          },
+          {
+            "kind": "command",
+            "name": "eval",
+            "args": "exp='&@\"tf.ec_random=intrandom(1,${mp.max})\"'",
+            "line": 400
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 401
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_base",
+            "args": "zorder=200 order=0 file='&@\"ec_${mp.tag}.pimg\"' seton=\"base\"",
+            "line": 402
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_open",
+            "args": "zorder=200 order=1 file='&@\"ec_${mp.tag}.pimg\"' seton=\"open\"",
+            "line": 403
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_chr0",
+            "args": "zorder=200 order=2 file='&@\"ec_${mp.tag}.pimg\"' seton=\"0\"",
+            "line": 404
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_chr1",
+            "args": "zorder=200 order=3 file='&@\"アイキャッチ${mp.name}rand\"'      opacity=0",
+            "line": 405
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_close",
+            "args": "zorder=200 order=4 file='&@\"ec_${mp.tag}.pimg\"' seton=\"close\" opacity=0",
+            "line": 406
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_logo",
+            "args": "zorder=250 order=0 file=\"ec__logo_dot.pimg\" seton=\"共通ロゴ\" opacity=0",
+            "line": 407
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_dot",
+            "args": "zorder=250 order=1 file=\"ec__logo_dot.pimg\" seton=\"ドット\"   opacity=0",
+            "line": 408
+          },
+          {
+            "kind": "command",
+            "name": "ec_motion",
+            "args": "file='&@\"アイキャッチ${mp.name}show\"'",
+            "line": 409
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "ターン nosync",
+            "line": 410
+          },
+          {
+            "kind": "command",
+            "name": "beginskip",
+            "args": "",
+            "line": 411
+          },
+          {
+            "kind": "command",
+            "name": "wait",
+            "args": "time=800",
+            "line": 412
+          },
+          {
+            "kind": "command",
+            "name": "ec_motion",
+            "args": "file='&@\"アイキャッチ${mp.name}show\"'",
+            "line": 413
+          },
+          {
+            "kind": "command",
+            "name": "wait",
+            "args": "time=700",
+            "line": 414
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_logo",
+            "args": "opacity=255 xpos=0:50 accel=-1 time=500 sync",
+            "line": 415
+          },
+          {
+            "kind": "command",
+            "name": "se",
+            "args": "file=\"♪アイキャッチ／カーテン\"",
+            "line": 416
+          },
+          {
+            "kind": "command",
+            "name": "se",
+            "args": "file=\"☆コミカル29\" fade=75",
+            "line": 417
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 418
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_chr0",
+            "args": "delete",
+            "line": 419
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_open",
+            "args": "hide",
+            "line": 420
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_close",
+            "args": "opacity=255",
+            "line": 421
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "500sec sync",
+            "line": 422
+          },
+          {
+            "kind": "command",
+            "name": "wait",
+            "args": "time=500",
+            "line": 423
+          },
+          {
+            "kind": "command",
+            "name": "ec_motion",
+            "args": "file='&@\"アイキャッチ${mp.name}open\"' notrans",
+            "line": 424
+          },
+          {
+            "kind": "command",
+            "name": "se",
+            "args": "file=\"♪アイキャッチ／カーテン\"",
+            "line": 425
+          },
+          {
+            "kind": "command",
+            "name": "se",
+            "args": "file=\"☆コミカル25\" fade=50",
+            "line": 426
+          },
+          {
+            "kind": "command",
+            "name": "se",
+            "args": "file=\"☆キラキラ２\"",
+            "line": 427
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 428
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_close",
+            "args": "delete",
+            "line": 429
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_chr1",
+            "args": "opacity=255",
+            "line": 430
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_open",
+            "args": "show",
+            "line": 431
+          },
+          {
+            "kind": "command",
+            "name": "ec_layer_dot",
+            "args": "opacity=255",
+            "line": 432
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "300sec",
+            "line": 433
+          },
+          {
+            "kind": "command",
+            "name": "endskip",
+            "args": "",
+            "line": 434
+          },
+          {
+            "kind": "command",
+            "name": "アイキャッチボイス",
+            "args": "chara=%tag",
+            "line": 435
+          },
+          {
+            "kind": "command",
+            "name": "wait",
+            "args": "time=2000",
+            "line": 436
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 437
+          },
+          {
+            "kind": "command",
+            "name": "allfixcaption",
+            "args": "delete",
+            "line": 438
+          },
+          {
+            "kind": "command",
+            "name": "暗転",
+            "args": "",
+            "line": 439
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "ターン",
+            "line": 440
+          },
+          {
+            "kind": "command",
+            "name": "eval",
+            "args": "exp=\"delete tf.ec_random\"",
+            "line": 441
+          },
+          {
+            "kind": "command",
+            "name": "quickmenu",
+            "args": "fadein",
+            "line": 442
+          }
+        ]
+      }
+    ],
+    "opmovie": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 454,
+        "end_line": 467,
+        "body": [
+          {
+            "kind": "command",
+            "name": "beforemovie",
+            "args": "flag=movie_op",
+            "line": 455
+          },
+          {
+            "kind": "command",
+            "name": "quickmenu",
+            "args": "fadeout wait",
+            "line": 456
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 457
+          },
+          {
+            "kind": "command",
+            "name": "all",
+            "args": "ontype=layer delete",
+            "line": 458
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "0sec msgoff",
+            "line": 459
+          },
+          {
+            "kind": "command",
+            "name": "sysmovie",
+            "args": "file=\"OP\" flag=\"movie_op\" bgmflag=SongOP",
+            "line": 460
+          },
+          {
+            "kind": "command",
+            "name": "quickmenu",
+            "args": "visible=true hidden",
+            "line": 464
+          },
+          {
+            "kind": "command",
+            "name": "sflag",
+            "args": "name=\"movie_op\"",
+            "line": 465
+          }
+        ]
+      }
+    ],
+    "edmovie": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 471,
+        "end_line": 491,
+        "body": [
+          {
+            "kind": "command",
+            "name": "lse",
+            "args": "stop time=1000",
+            "line": 472
+          },
+          {
+            "kind": "command",
+            "name": "lse2",
+            "args": "stop time=1000",
+            "line": 473
+          },
+          {
+            "kind": "command",
+            "name": "bgm",
+            "args": "stop time=1000",
+            "line": 474
+          },
+          {
+            "kind": "command",
+            "name": "quickmenu",
+            "args": "fadeout",
+            "line": 475
+          },
+          {
+            "kind": "command",
+            "name": "msgoff",
+            "args": "",
+            "line": 476
+          },
+          {
+            "kind": "command",
+            "name": "chapter",
+            "args": "hide",
+            "line": 477
+          },
+          {
+            "kind": "command",
+            "name": "beforemovie",
+            "args": "flag=%flag",
+            "line": 478
+          },
+          {
+            "kind": "command",
+            "name": "env",
+            "args": "sync",
+            "line": 479
+          },
+          {
+            "kind": "command",
+            "name": "noeffect",
+            "args": "enabled=false",
+            "line": 481
+          },
+          {
+            "kind": "command",
+            "name": "begintrans",
+            "args": "",
+            "line": 482
+          },
+          {
+            "kind": "command",
+            "name": "allimage",
+            "args": "delete",
+            "line": 483
+          },
+          {
+            "kind": "command",
+            "name": "endtrans",
+            "args": "normal time=1000 sync",
+            "line": 484
+          },
+          {
+            "kind": "command",
+            "name": "sysmovie",
+            "args": "file=%file flag=%flag bgmflag=%bgm",
+            "line": 486
+          },
+          {
+            "kind": "command",
+            "name": "noeffect",
+            "args": "enabled=true",
+            "line": 487
+          },
+          {
+            "kind": "command",
+            "name": "env",
+            "args": "sync",
+            "line": 488
+          },
+          {
+            "kind": "command",
+            "name": "quickmenu",
+            "args": "visible=true hidden",
+            "line": 489
+          },
+          {
+            "kind": "command",
+            "name": "sflag",
+            "args": "name=%flag cond='mp.flag!=\"\"'",
+            "line": 490
+          }
+        ]
+      }
+    ],
+    "メガネ選択": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 510,
+        "end_line": 515,
+        "body": [
+          {
+            "kind": "command",
+            "name": "initscene",
+            "args": "",
+            "line": 511
+          },
+          {
+            "kind": "command",
+            "name": "scenewear_seladd",
+            "args": "flag=true  text=\"眼鏡もかけていただけると……\"\ttag=\"MM_01A\" exp='SetBranchFlags(\"s410*part_410_sel1\",1)'",
+            "line": 512
+          },
+          {
+            "kind": "command",
+            "name": "scenewear_seladd",
+            "args": "flag=false text=\"なんでもないです\"\t\t\ttag=\"MM_01B\" exp='SetBranchFlags(\"s410*part_410_sel1\",2)'",
+            "line": 513
+          },
+          {
+            "kind": "text",
+            "raw": "[select][msgoff][ws buf=9]",
+            "line": 514
+          }
+        ]
+      }
+    ]
+  }
+}

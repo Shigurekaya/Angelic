@@ -1,0 +1,6 @@
+# About posting images to Twitter using the Game Bar function
+
+The game bar in Windows 10 (*Version 1809 or later) has a Twitter posting function.
+The game bar can be displayed by pressing the Windows key + G (*in the default setting).
+In the game bar, go to "Delivery and Capture" and click "Show All Captures" to display the capture list. Select the image you want to post to Twitter, press "Publish to Twitter" and follow the instructions.
+To save an image from the game's snapshot saving feature to the game bar's capture folder, click the "Save" button at the bottom of this window. Click the "Make capture folder the default destination" button at the bottom of this window.

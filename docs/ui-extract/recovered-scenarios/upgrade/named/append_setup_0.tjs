@@ -1,0 +1,3 @@
+global.IsTrial = false; // 体験版フラグ消去
+SystemConfig.scnchartInfo = "scnchartdata.tjs"; // チャート定義上書き
+SystemConfig.UpgradePatchExists = true;

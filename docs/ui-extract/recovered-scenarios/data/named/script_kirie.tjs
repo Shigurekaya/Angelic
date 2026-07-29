@@ -1,0 +1,51 @@
+function(edgeColor=0x000000, diff=6, blur=1, dx=10, dy=10, shadowBlur=4, shadowColor=0x000022, shadowOpacity=200) {
+
+	var LAYER = global.Layer;
+
+	// 作業用レイヤ
+	var work = new LAYER(window, parent);
+	work.setImagePos(imageLeft, imageTop);
+	work.setImageSize(imageWidth, imageHeight);
+
+	// 縁生成
+	var edge = new LAYER(window, parent);
+	with (edge) {
+		.assignImages(this);
+		.setSizeToImageSize();
+		.operateRect(-diff,0,this,0,0,imageWidth, imageHeight, ltPsNormal, 255);
+		.operateRect(diff,0,this,0,0,imageWidth, imageHeight, ltPsNormal, 255);
+		.operateRect(0,-diff,this,0,0,imageWidth, imageHeight, ltPsNormal, 255);
+		.operateRect(0,diff,this,0,0,imageWidth, imageHeight, ltPsNormal, 255);
+		.doBoxBlur(blur, blur);
+		.face = dfMain;
+		.holdAlpha = true;
+		.fillRect(0, 0, .width, .height, +edgeColor);
+		.face = dfBoth;
+		.holdAlpha = false;
+	}
+
+	// 影生成
+	var shadow = new LAYER(window, parent);
+	with (shadow) {
+		.assignImages(edge);
+		.setSizeToImageSize();
+		.doBoxBlur(shadowBlur, shadowBlur);
+		.face = dfMain;
+		.holdAlpha = true;
+		.fillRect(0, 0, .width, .height, +shadowColor);
+		.face = dfBoth;
+		.holdAlpha = false;
+	}
+	
+	// 合成
+	work.operateRect(dx, dy, shadow, 0, 0, shadow.width, shadow.height, ltPsNormal, shadowOpacity);
+	work.operateRect(0, 0, edge, 0, 0, edge.width, edge.height, ltPsNormal, 255);
+	work.operateRect(0, 0, this, 0, 0, width, height, ltPsNormal, 255);
+	
+	// 画像さしかえ
+	assignImages(work);
+
+	// 後片付け
+	invalidate edge;
+	invalidate shadow;
+}

@@ -1,0 +1,210 @@
+{
+  "source": "voicebar.pbd",
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 1714,
+      "top": 981,
+      "width": 128,
+      "height": 44,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 128,
+          "h": 44,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "auto",
+      "left": 1716,
+      "top": 983,
+      "width": 54,
+      "height": 24,
+      "class": "layer",
+      "uiname": "auto",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 55,
+          "cy": 104,
+          "w": 54,
+          "h": 24,
+          "storage": "voicebar__pack"
+        }
+      }
+    },
+    {
+      "name": "auto_voice",
+      "left": 1716,
+      "top": 983,
+      "width": 114,
+      "height": 26,
+      "class": "layer",
+      "uiname": "auto_voice",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 19,
+          "w": 114,
+          "h": 26,
+          "storage": "voicebar__pack"
+        }
+      }
+    },
+    {
+      "name": "auto_wait",
+      "left": 1716,
+      "top": 983,
+      "width": 108,
+      "height": 26,
+      "class": "layer",
+      "uiname": "auto_wait",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 78,
+          "w": 108,
+          "h": 26,
+          "storage": "voicebar__pack"
+        }
+      }
+    },
+    {
+      "name": "voice",
+      "left": 1716,
+      "top": 983,
+      "width": 55,
+      "height": 24,
+      "class": "layer",
+      "uiname": "voice",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 104,
+          "w": 55,
+          "h": 24,
+          "storage": "voicebar__pack"
+        }
+      }
+    },
+    {
+      "name": "wait_voice",
+      "left": 1716,
+      "top": 983,
+      "width": 110,
+      "height": 26,
+      "class": "layer",
+      "uiname": "wait_voice",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 52,
+          "w": 110,
+          "h": 26,
+          "storage": "voicebar__pack"
+        }
+      }
+    },
+    {
+      "name": "text",
+      "left": 1716,
+      "top": 984,
+      "width": 49,
+      "height": 23,
+      "class": "layer",
+      "uiname": "text",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 128,
+          "w": 49,
+          "h": 23,
+          "storage": "voicebar__pack"
+        }
+      }
+    },
+    {
+      "name": "wait",
+      "left": 1716,
+      "top": 984,
+      "width": 51,
+      "height": 23,
+      "class": "layer",
+      "uiname": "wait",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 55,
+          "cy": 128,
+          "w": 51,
+          "h": 23,
+          "storage": "voicebar__pack"
+        }
+      }
+    },
+    {
+      "name": "frame",
+      "left": 1716,
+      "top": 1004,
+      "width": 124,
+      "height": 19,
+      "class": "layer",
+      "uiname": "frame",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 124,
+          "h": 19,
+          "storage": "voicebar__pack"
+        }
+      }
+    },
+    {
+      "name": "bar",
+      "left": 1721,
+      "top": 1010,
+      "width": 114,
+      "height": 7,
+      "class": "layer",
+      "uiname": "bar",
+      "uistates": {
+        "(~null~)": {
+          "ox": 1,
+          "oy": 0,
+          "cx": 0,
+          "cy": 45,
+          "w": 112,
+          "h": 7,
+          "storage": "voicebar__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 114,
+          "h": 7,
+          "storage": ""
+        }
+      }
+    }
+  ]
+}

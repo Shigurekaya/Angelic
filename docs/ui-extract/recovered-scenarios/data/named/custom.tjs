@@ -1,0 +1,271 @@
+// ゲームタイトル依存の特殊処理等
+
+//--------------------------------------------------------------
+// モジュール
+
+with (SystemConfig)
+{
+	// 一括ロード処理
+	(function /*LoadModule*/(load, files) {
+		var ext = Storages.extractStorageExt;
+		var log = Debug.message;
+		for (var i = 0, cnt = files.count; i < cnt; i++) {
+			var file = files[i];
+			switch (typeof file) {
+			case "void": continue;
+			case "String":
+				if (file == "") continue;
+				if (ext(file) == ".tjs") {
+//					log(file);
+					load(file);
+					continue;
+				}
+				break;
+			case "Object":
+				// SystemConfig初期値を埋め込みたい場合に使用
+				if (file instanceof "Function") file(SystemConfig, load);
+				else if (file instanceof "Dictionary" || file instanceof "Array") {
+					(Dictionary.assign incontextof SystemConfig)(file, false);
+				}
+				continue;
+			}
+			log("custom:LoadModule", i, file); // unknown data, file
+		}
+	})(
+		KAGLoadScriptOnce,// ロード処理
+	[
+		// SystemConfigに値を書くサンプル
+	@if (0)
+		// すべてのロードより前（引数渡し時に評価）
+		(.HogeHoge = 123,
+		 .FugaFuga = "456",
+		 void), // 最終的な評価値をvoidにすること
+		// オンデマンド設定（配列）
+		[
+			"HogeHoge" => 123,
+			"FugaFuga" => "456",
+			],
+		// オンデマンド設定（辞書）
+		%[
+			HogeHoge: 123,
+			FugaFuga: "456",
+			],
+		// オンデマンド設定（関数）
+		function (sc, load) { with (sc) {
+			.Hoge.Fuga = void; // デフォルトで設定される辞書などを後から書き換えたいケースなどに利用
+			.TextParam = FilterDrawTextParam("hoge.fuga"); // 以前にロードしたモジュールの関数を利用
+		} },
+	@endif
+
+		//==============================
+
+		// ■特殊用途
+//		"d3d.tjs",					// D3D用オブジェクト生成
+//		"bishamon.tjs",				// BISHAMON用モジュールの読み込み ※d3dmode でないと動作しません
+		"emotion.tjs",				// エモーション機能有効化
+		"speech.tjs",				// テキスト読み上げ
+		"autoface.tjs",				// 顔窓自動処理制御
+//		"voicematch.tjs",			// ボイスマッチング処理
+//		"diffimage2.tjs",			// 機械差分画像ロード機能
+		"name.tjs",					// 名前入力ベース／dispNameFilterの【】表示実装例
+
+		// ■基礎ライブラリ
+		"scrollutil.tjs",			// スクロール処理ベース
+		"dragutil.tjs",				// ドラッグ処理ベース
+		"drawtextparam.tjs",		// システム文字表示の修飾パラメータの一カ所集約
+
+		// ■操作系
+		"gesture.tjs",				// マウスジェスチャ機能／★OptionModule
+		"keybinder.tjs",			// キーボードバインド変更／★OptionModule
+		"exgamepad.tjs",			// ゲームパッド入力拡張／カスタマイズ（※要gamepad.dll）
+		"mscurautohide.tjs",		// マウスカーソル自動消去／★OptionModule
+		"touchui.tjs",				// タッチ系操作ベース
+
+		// ■UI系全般
+		"nocfchkdialog.tjs",		// 次からは表示しないチェックつきダイアログ／★OptionModule
+		"quickmenu.tjs",			// ゲーム画面常駐機能ボタン
+		"backlog.tjs",				// ブロックベースのバックログ表示
+		"helptextman.tjs",			// ヘルプ表示機能処理ベース／★OptionModule／▼FileStoreModule／◆ExGalleryModule
+		"facethumbdraw.tjs",		// 汎用顔窓描画処理ベース（※要backlog）
+
+		// ■メッセージ表示拡張
+		"rendermsgwin.tjs",			// レンダー方式メッセージ窓機能の有効化
+		"msghack.tjs",				// フチ影同時表示やグラデ表示・テキストフェード表示拡張
+//		"fonteffect.tjs",			// フォント修飾表示のConfig化（※要msghack）／★OptionModule
+		(.AutoSkipMarkAbsolute = 2000000-1, void), // quickmenu.absolute - 1
+		"autoskipmark.tjs",			// オート・スキップ時のアイコン表示機能／★OptionModule
+//		"textspeedex.tjs",			// 既読テキスト速度／オートモードテキスト速度変更／★OptionModule
+//		"iconfader.tjs",			// メッセージ窓sysボタン自動消去
+//		"nameframe.tjs",			// 名前欄のラベルの連動表示処理 (※要msghack)
+
+		// ■通知系
+		"qlpopup.tjs",				// セーブデータのポップアップ表示処理／サムネデータ汎用描画（※要drawtextparam）
+		"bgmtitleindicator.tjs",	// BGMタイトル通知ポップアップ／★OptionModule
+		"showdate.tjs",				// ゲーム中の日付表示
+
+		// ■セーブデータ系
+		"gamecont.tjs",				// サスペンドセーブ／前回の続き復帰
+		(.rotateDefaultSaveCount = .savedataCountPerPage, void), // rotate個数指定(cf. default.tjs)
+		"rotatesave.tjs",			// QSave/AutoSaveの順繰りセーブ機能
+
+		// ■音声系
+		(.sysvoVolumeRaw = true, void), // sysvoiceはvoicevolumeに影響を受けない
+		"sysvoice.tjs",				// 汎用システムボイス再生
+		"voicemode.tjs",			// お気に入りボイス登録機能／▼FileStoreModule
+		"voiceprogress.tjs",		// ボイス再生プログレスバー
+		"voiceeffect.tjs",			// ボイス加工スクリプト拡張（※要wf*.dllプラグイン）
+//		"voiceboost.tjs",			// ボイス速度(kag.voicespeed)の一時変更（※Unmainted）
+//		"vcutfade.tjs",				// ボイスカット時にフェードアウトを行う／★OptionModule
+
+		// ■sysargモジュール
+		"sqscr.tjs",				// 4:3画面モード／★OptionModule
+		"stayontop.tjs",			// 常に手前表示／★OptionModule
+		"stopdeactive.tjs",			// 非アクティブ動作停止／★OptionModule
+//		"designmscur.tjs",			// デザインマウスカーソル変更／★OptionModule
+
+		// ■コンフィグUI拡張
+//		"optrevundo.tjs",			// 設定変更アンドゥ実装（※★OptionModuleの専用対応必須）
+		"hsvcpick.tjs",				// カラーサークルによる色選択UI
+		"colorspace.tjs",			// 色空間変換
+		"movieaudiosample.tjs",		// ムービー音量確認／★OptionModule
+
+		// ■ムービー・エンドロール系
+//		"exroll.tjs",				// エンドロール拡張
+//		"movieqsel.tjs",			// ムービークォリティ選択
+
+		// ■エクストラ系
+		"cgview.tjs",				// CG鑑賞中の操作UI拡張
+		"exgallery.tjs",			// エクストラ画面全般の拡張・モジュール化
+		"exchview.tjs",				// 立ち絵鑑賞画面
+
+		// ■多言語対応
+@if (CUSTOM_MULTILANG)
+		"advancedmenu.tjs",			// メニューバー内容の整理（高度な設定に分離）
+		"syslangtext.tjs",			// 多言語対応切り替えデータベース
+		"multilang.tjs",			// 多言語対応hack集（※要rendermsgwin）
+@endif
+		// ■sysscn加入候補（要検討）
+//		"emoteD3D.tjs",				// E-mote汎用初期化（※順序注意 speech > multi|advmenu > emodeD3D）
+//		"quickpanel.tjs",			// ゲーム常駐パネル汎用
+//		"mfchange.tjs",				// メッセージ窓切り替え汎用
+//		"scnchart_*.tjs",			// フローチャート機能
+		"scnchart.tjs",
+		"scnchart_ui.tjs",
+//		"tipsbase.tjs",				// TIPS機能
+		"snapcapture.tjs",			// 画面キャプチャ汎用
+//		"mswrclick.tjs",			// マウス中・右クリックカスタマイズ（※gesture排他？）
+
+			]);
+}
+//--------------------------------------------------------------
+// 固有実装
+
+// UIパック形式対応
+&System._uiloadDefaultPackUse = 0;
+
+//------------------------------
+// オンデマンドコンパイルロード
+
+// 特殊コンパイルオプション
+@set (QMENU_DSQVS_TOGGLE=0) // D.saveとqvsaveのUI構成をトグルで対応するかどうか
+@set (QMENU_ALIGN_CENTER=1) // 中央ぞろえ
+@set (SIMPLEANIM_USE_ADDALPHA=1)
+
+with (SystemConfig) {
+	// チャットUI設定
+	.phoneChatBaseImageFile = "phonechat__bg0"; // ベース画像（※scWidth/Heighサイズと一致させること）
+//	.phoneChatArrowOffset   = -32; // フキダシオフセット
+//	.phoneChatIconOffset    = -32; // アイコンオフセット
+}
+OndemandCompiledLoad(
+	"simpleanim.tjs",
+	"phonechat.tjs",
+	"uisystem.tjs",
+	"uitouch.tjs",
+	"uitext.tjs",
+	"uimain.tjs",
+	"uiparts.tjs",
+	"uifile.tjs",
+	"uivoice.tjs",
+	"uichart.tjs",
+	"uioption.tjs",
+	"uiqconfpop.tjs",
+	"uiextra.tjs",
+	"uistand.tjs",
+//	"uimapsel.tjs",
+
+	"uisupport.tjs",
+	);
+
+//--------------------------------------------------------------
+// 作品特殊
+
+
+function GetKeyBoardUI(fmt) { return fmt.sprintf("jp109"); } // [XXX]キーボード種別スタブ
+function UIDrawLayerText(lay,elm,text,tag) { CustomDrawLayerText(lay, text, tag); } // for func custom
+
+//[TRIALMOD]フローチャート封印処理
+//with (SystemConfig) { .scnchartEnabledCheck = function { return false; }; }
+
+//------------------------------
+// Hシーン中外選択判定用
+property checkOUT   { getter() { return !sf.hselectFix ||  sf.hselectOUTIN ; }}
+property checkIN    { getter() { return !sf.hselectFix || !sf.hselectOUTIN ; }}
+property checkMOUTH { getter() { return !sf.hselectFix ||  sf.hselectMOUTHFACE ; }}
+property checkFACE  { getter() { return !sf.hselectFix || !sf.hselectMOUTHFACE ; }}
+
+
+//------------------------------
+// アニメ無効時のSE
+function animOffSE(name)
+{
+	return enableSceneAnimEffect ? "" : name;
+}
+
+//------------------------------
+// pimgを保持し続ける（obsoleted）
+
+function HoldPsdFile {}
+
+//------------------------------
+// アイキャッチ用 (cf. envinit
+function makeEyeCatchRandom(tag, max, motion) {
+	function rand_motion {
+		var rnd = tf.ec_random >= 1 && tf.ec_random <= this[1] ? int(+tf.ec_random) : intrandom(1, this[1]);
+		//dm("ec_rand:motion", rnd);
+		return %[ storage:this[0], chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:%[ kisekae:rnd, language:_meslangnum ] ];
+	}
+	function rand_image {
+		var rnd = tf.ec_random >= 1 && tf.ec_random <= this[1] ? int(+tf.ec_random) : intrandom(1, this[1]);
+		//dm("ec_rand:image", rnd);
+		return %[ storage:"ec_%s.pimg".sprintf(this[0]), seton:"%d".sprintf(rnd) ];
+	}
+	return (motion != "") ? (rand_motion incontextof [ motion, max ]) : (rand_image incontextof [ tag, max ]);
+}
+
+
+//------------------------------
+// オンライン修正パッチ問い合わせ
+
+KAGLoadScript("yuzu_patchdetect.tjs") if (typeof global.Steam == "undefined" && !SystemConfig.noPatchDetect);
+
+//--------------------------------------------------------------
+// アペンド設定
+
+global.IsTrial = true; // 体験版フラグ（※append側で打ち消られる）
+SystemConfig.scnchartInfo = "t_scnchartdata.tjs"; // チャート定義をtrial baseに変更
+
+@if (APPEND_EXTENTION)
+SetupAppendData();
+@endif
+SetupFullHDMovie() if (typeof global.SetupFullHDMovie == "Object"); // [NOTE] mp4設定はappend初期化後(低画質ムービー提供パッチを想定)
+ChangeDrawDeviceD2D() if (typeof global.Steam == "undefined" && typeof global.ChangeDrawDeviceD2D == "Object"); // D2D描画
+
+// アップグレードが無い場合は日本語固定
+if (IsTrial) with (SystemConfig) {
+	.multiLangLanguageTags.count = 1;
+	LanguageTags.assign(.multiLangLanguageTags);
+}
+@if (CUSTOM_MULTILANG)
+CheckSingleLanguage(); // cf. uisupport.tjs
+@endif

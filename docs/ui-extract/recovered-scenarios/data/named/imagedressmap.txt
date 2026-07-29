@@ -1,0 +1,8 @@
+#画像名 	指定名	差し替え名	条件　の列挙
+#由夏.stand	制服	裸	sf.裸パッチ==1
+
+#愛衣.stand	選択眼鏡	制服	f.glass_flag==0
+#愛衣.stand	選択眼鏡	選択眼鏡	f.glass_flag==1
+
+天音.stand	前世	前世検閲	_allage
+ヴィズ.stand	前世	前世検閲	_allage

@@ -1,0 +1,5 @@
+%%：%， %Y：Year(4 digits)， %y：Year(2d)
+%m：Month(2d)， %d：Day(2d)
+%H：Hour(2d)， %M：Min(2d)， %S：Sec(2d)
+%A：Day of Week， %a：DoW(3 letters)
+%B：Month(word)， %b：Month(3 letters)

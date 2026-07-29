@@ -1,0 +1,655 @@
+{
+  "macro_count": 50,
+  "macros": {
+    "_afterstory": [
+      {
+        "file": "adult/detected/9590269567CD6D3565BBF72689CE0235229B2ABB9D53B61E28229B16724ECB98.ks",
+        "start_line": 5,
+        "end_line": 8,
+        "body_lines": 2,
+        "preview": [
+          "[set name='tf.start_storage' value='&\"x_\"+mp.storage']",
+          "[return target=*jump]"
+        ]
+      }
+    ],
+    "initbase": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 3,
+        "end_line": 16,
+        "body_lines": 12,
+        "preview": [
+          "[clearlayers]",
+          "[stopquake]",
+          "@stopbgm        cond=!mp.nostopbgm",
+          "@stopse buf=all cond=!mp.nostopse",
+          "[stopvideo]",
+          "[sysmovie state=end]",
+          "[history enabled=true]",
+          "[sysrclick]"
+        ]
+      },
+      {
+        "file": "data/named/parsermacro.ks",
+        "start_line": 2,
+        "end_line": 4,
+        "body_lines": 1,
+        "preview": [
+          "[init nostopbgm=%nostopbgm]"
+        ]
+      }
+    ],
+    "initscene": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 26,
+        "end_line": 30,
+        "body_lines": 3,
+        "preview": [
+          "[initbase *]",
+          "[initmode *]",
+          "[voeff clear cond=%translate|false]"
+        ]
+      }
+    ],
+    "initmode": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 32,
+        "end_line": 37,
+        "body_lines": 4,
+        "preview": [
+          ";[linemode mode=free craftername=true erafterpage=true]",
+          "[linemode mode=page erafterpage=true checknextvoice=true]",
+          "[autoindent mode=true]",
+          "[initmsgmode *]"
+        ]
+      }
+    ],
+    "initmsgmode": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 39,
+        "end_line": 44,
+        "body_lines": 4,
+        "preview": [
+          "[initmeswin * cond=%initmeswin|true]",
+          "; for rendermsgwin, multilang/translate",
+          "[msgmode mode=true history=true cond=%msgmode|false]",
+          "[msgmode mode=true history=true language=&GetScnConvertLangList() cond=%translate|false]"
+        ]
+      }
+    ],
+    "reloadmeswin": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 47,
+        "end_line": 49,
+        "body_lines": 1,
+        "preview": [
+          "[meswinload page=both]"
+        ]
+      }
+    ],
+    "movie": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 62,
+        "end_line": 86,
+        "body_lines": 23,
+        "preview": [
+          "\t\t[cancelskip cond=%cancelskip|false]",
+          "\t\t[_movie_sysmenu_hide_]",
+          "\t\t[beginskip skip=%skip eval='&mp.eval!=\"\"?mp.eval:\"sf.movie_\"+(((string)mp.file).toLowerCase())']",
+          "\t\t\t[begintrans]",
+          "\t\t\t\t[msgoff]",
+          "\t\t\t\t[allimage hide]",
+          "\t\t\t\t[_movie_fill_ * coltag=beforecolor defcol=0x000000]",
+          "\t\t\t[endtrans trans=%beforetrans|normal sync]"
+        ]
+      }
+    ],
+    "_movie_fill_": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 87,
+        "end_line": 89,
+        "body_lines": 1,
+        "preview": [
+          "\t\t[layer name=_movie_fill_layer class=effect file='&@\"color,${(mp[mp.coltag]!==void?+mp[mp.coltag]:+mp.defcol)&0xFFFFFF|0xFF000000},width,${kag.scWidth},height,${kag.scHeight}\"']"
+        ]
+      }
+    ],
+    "_movie_sysmenu_hide_": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 90,
+        "end_line": 92,
+        "body_lines": 1,
+        "preview": [
+          ";\t\t[quickmenu fadeout]"
+        ]
+      }
+    ],
+    "_movie_sysmenu_restore_": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 93,
+        "end_line": 95,
+        "body_lines": 1,
+        "preview": [
+          ";\t\t[quickmenu fadein]"
+        ]
+      }
+    ],
+    "chat_se": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 169,
+        "end_line": 175,
+        "body_lines": 5,
+        "preview": [
+          "\t@if exp=%right|false",
+          "\t\t@se file=\"♪LIENメッセージ２\"",
+          "\t@else",
+          "\t\t@se file=\"♪LIENメッセージ１\"",
+          "\t@endif"
+        ]
+      }
+    ],
+    "背景中": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 198,
+        "end_line": 201,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=200 xpos=0 ypos=-350]",
+          "[stage blur=2]"
+        ]
+      }
+    ],
+    "背景左": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 202,
+        "end_line": 205,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=200 xpos=1200 ypos=-350]",
+          "[stage blur=2]"
+        ]
+      }
+    ],
+    "背景右": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 206,
+        "end_line": 209,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=200 xpos=-1200 ypos=-350]",
+          "[stage blur=2]"
+        ]
+      }
+    ],
+    "背景左外": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 210,
+        "end_line": 213,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=200 xpos=1500 ypos=-350]",
+          "[stage blur=2]"
+        ]
+      }
+    ],
+    "背景右外": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 214,
+        "end_line": 217,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=200 xpos=-1500 ypos=-350]",
+          "[stage blur=2]"
+        ]
+      }
+    ],
+    "背景左大外": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 218,
+        "end_line": 221,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=200 xpos=1800 ypos=-350]",
+          "[stage blur=2]"
+        ]
+      }
+    ],
+    "背景右大外": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 222,
+        "end_line": 225,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=200 xpos=-1800 ypos=-350]",
+          "[stage blur=2]"
+        ]
+      }
+    ],
+    "背景初期": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 226,
+        "end_line": 229,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=100 xpos=0 ypos=0]",
+          "[stage blur=0]"
+        ]
+      }
+    ],
+    "背景拡大": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 230,
+        "end_line": 233,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=150 xpos=0 ypos=-276]",
+          "[stage blur=1]"
+        ]
+      }
+    ],
+    "背景下": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 235,
+        "end_line": 238,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=200 xpos=0 ypos=350]",
+          "[stage blur=2]"
+        ]
+      }
+    ],
+    "背景左下": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 239,
+        "end_line": 242,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=200 xpos=900 ypos=350]",
+          "[stage blur=2]"
+        ]
+      }
+    ],
+    "背景右下": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 243,
+        "end_line": 246,
+        "body_lines": 2,
+        "preview": [
+          "[stage zoom=200 xpos=-900 ypos=350]",
+          "[stage blur=2]"
+        ]
+      }
+    ],
+    "アップ中": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 248,
+        "end_line": 250,
+        "body_lines": 1,
+        "preview": [
+          "[stage zoom=200 xpos=0 ypos=-350]"
+        ]
+      }
+    ],
+    "アップ左": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 251,
+        "end_line": 253,
+        "body_lines": 1,
+        "preview": [
+          "[stage zoom=200 xpos=1200 ypos=-350]"
+        ]
+      }
+    ],
+    "アップ右": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 254,
+        "end_line": 256,
+        "body_lines": 1,
+        "preview": [
+          "[stage zoom=200 xpos=-1200 ypos=-350]"
+        ]
+      }
+    ],
+    "アップ大外左": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 257,
+        "end_line": 259,
+        "body_lines": 1,
+        "preview": [
+          "[stage zoom=200 xpos=2000 ypos=-350]"
+        ]
+      }
+    ],
+    "アップ大外右": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 260,
+        "end_line": 262,
+        "body_lines": 1,
+        "preview": [
+          "[stage zoom=200 xpos=-2000 ypos=-350]"
+        ]
+      }
+    ],
+    "視点変化": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 266,
+        "end_line": 281,
+        "body_lines": 14,
+        "preview": [
+          ";[layer name=ano_bar file=bar level=0 hide]",
+          "[begintrans]",
+          ";[chapter hide]",
+          "[bar_top show xpos=0 ypos=605]",
+          "[bar_und show xpos=0 ypos=-605]",
+          "[endtrans 0sec msgoff]",
+          ";[beginskip]",
+          "[bar_top xpos=0 ypos=495 time=750 nosync]"
+        ]
+      }
+    ],
+    "視点通常": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 283,
+        "end_line": 298,
+        "body_lines": 14,
+        "preview": [
+          "[msgoff]",
+          ";[beginskip]",
+          "[bar_top ypos=605 time=750 nosync]",
+          "[bar_und ypos=-605 time=750 sync]",
+          "[bar_top stopaction]",
+          ";[endskip]",
+          "[begintrans]",
+          "[bar_top delete]"
+        ]
+      }
+    ],
+    "視点変化ＣＧ": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 300,
+        "end_line": 302,
+        "body_lines": 1,
+        "preview": [
+          "[meswinchange type=another]"
+        ]
+      }
+    ],
+    "視点通常ＣＧ": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 303,
+        "end_line": 305,
+        "body_lines": 1,
+        "preview": [
+          "[meswinchange type=default]"
+        ]
+      }
+    ],
+    "黒半透明": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 307,
+        "end_line": 311,
+        "body_lines": 3,
+        "preview": [
+          "[msgoff]",
+          "[object name=half_trans class=centerlayer file=画面_黒 zoffset=40 hide 0sec]",
+          "[half_trans show 500sec opacity=100]"
+        ]
+      }
+    ],
+    "白半透明": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 313,
+        "end_line": 317,
+        "body_lines": 3,
+        "preview": [
+          "[msgoff]",
+          "[object name=half_trans class=centerlayer file=画面_白 zoffset=40 hide 0sec]",
+          "[half_trans show 500sec opacity=100]"
+        ]
+      }
+    ],
+    "透明解除": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 319,
+        "end_line": 323,
+        "body_lines": 3,
+        "preview": [
+          "[msgoff]",
+          "[half_trans hide 500sec]",
+          "[half_trans delete]"
+        ]
+      }
+    ],
+    "集中": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 326,
+        "end_line": 328,
+        "body_lines": 1,
+        "preview": [
+          "[concentration show]"
+        ]
+      }
+    ],
+    "集中解除": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 330,
+        "end_line": 332,
+        "body_lines": 1,
+        "preview": [
+          "[concentration delete]"
+        ]
+      }
+    ],
+    "妄想": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 335,
+        "end_line": 339,
+        "body_lines": 3,
+        "preview": [
+          ";[layer name=refrain 回想枠 level=6]",
+          ";[chapter hide]",
+          "[refrain show]"
+        ]
+      }
+    ],
+    "妄想解除": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 341,
+        "end_line": 345,
+        "body_lines": 3,
+        "preview": [
+          ";[layer name=refrain delete]",
+          "[refrain delete]",
+          ";[chapter show]"
+        ]
+      }
+    ],
+    "覗き": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 348,
+        "end_line": 352,
+        "body_lines": 3,
+        "preview": [
+          ";[layer name=refrain 回想枠 level=6]",
+          ";[chapter hide]",
+          "[peeping show]"
+        ]
+      }
+    ],
+    "覗き解除": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 354,
+        "end_line": 358,
+        "body_lines": 3,
+        "preview": [
+          ";[layer name=refrain delete]",
+          "[peeping delete]",
+          ";[chapter show]"
+        ]
+      }
+    ],
+    "覗き横": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 360,
+        "end_line": 364,
+        "body_lines": 3,
+        "preview": [
+          ";[layer name=refrain 回想枠 level=6]",
+          ";[chapter hide]",
+          "[peeping_y show]"
+        ]
+      }
+    ],
+    "覗き横解除": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 366,
+        "end_line": 370,
+        "body_lines": 3,
+        "preview": [
+          ";[layer name=refrain delete]",
+          "[peeping_y delete]",
+          ";[chapter show]"
+        ]
+      }
+    ],
+    "アイキャッチボイス": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 376,
+        "end_line": 378,
+        "body_lines": 1,
+        "preview": [
+          "[sysvoice eyecatch name=title chara=%chara]"
+        ]
+      }
+    ],
+    "共通アイキャッチ": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 380,
+        "end_line": 395,
+        "body_lines": 14,
+        "preview": [
+          "[quickmenu fadeout]",
+          "[msgoff]",
+          "[begintrans]",
+          "[object name=i_base class=centerlayer zoffset=100 file=アイキャッチ共通]",
+          "[i_base show]",
+          "[endtrans ターン]",
+          "[wait time=500]",
+          "[アイキャッチボイス chara=\"noa:ama:kur:kag:ori:fum\"]"
+        ]
+      }
+    ],
+    "アイキャッチ個別": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 397,
+        "end_line": 443,
+        "body_lines": 45,
+        "preview": [
+          "\t[quickmenu fadeout]",
+          "\t[msgoff]",
+          "\t[eval exp='&@\"tf.ec_random=intrandom(1,${mp.max})\"']",
+          "\t[begintrans]",
+          "\t\t[ec_layer_base  zorder=200 order=0 file='&@\"ec_${mp.tag}.pimg\"' seton=\"base\"]",
+          "\t\t[ec_layer_open  zorder=200 order=1 file='&@\"ec_${mp.tag}.pimg\"' seton=\"open\"]",
+          "\t\t[ec_layer_chr0  zorder=200 order=2 file='&@\"ec_${mp.tag}.pimg\"' seton=\"0\"]",
+          "\t\t[ec_layer_chr1  zorder=200 order=3 file='&@\"アイキャッチ${mp.name}rand\"'      opacity=0]"
+        ]
+      }
+    ],
+    "opmovie": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 454,
+        "end_line": 467,
+        "body_lines": 12,
+        "preview": [
+          "[beforemovie flag=movie_op]",
+          "[quickmenu fadeout wait]",
+          "[begintrans]",
+          "[all ontype=layer delete]",
+          "[endtrans 0sec msgoff]",
+          "[sysmovie file=\"OP\" flag=\"movie_op\" bgmflag=SongOP]",
+          ";BGMフラグを更新が必要？",
+          ";[白画面 notrans sync]"
+        ]
+      }
+    ],
+    "edmovie": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 471,
+        "end_line": 491,
+        "body_lines": 19,
+        "preview": [
+          "[lse  stop time=1000]",
+          "[lse2 stop time=1000]",
+          "[bgm  stop time=1000]",
+          "[quickmenu fadeout]",
+          "[msgoff]",
+          "[chapter hide]",
+          "[beforemovie flag=%flag]",
+          "[env sync]"
+        ]
+      }
+    ],
+    "メガネ選択": [
+      {
+        "file": "data/named/macro.ks",
+        "start_line": 510,
+        "end_line": 515,
+        "body_lines": 4,
+        "preview": [
+          "[initscene]",
+          "\t[scenewear_seladd flag=true  text=\"眼鏡もかけていただけると……\"\ttag=\"MM_01A\" exp='SetBranchFlags(\"s410*part_410_sel1\",1)']",
+          "\t[scenewear_seladd flag=false text=\"なんでもないです\"\t\t\ttag=\"MM_01B\" exp='SetBranchFlags(\"s410*part_410_sel1\",2)']",
+          "[select][msgoff][ws buf=9]"
+        ]
+      }
+    ]
+  }
+}

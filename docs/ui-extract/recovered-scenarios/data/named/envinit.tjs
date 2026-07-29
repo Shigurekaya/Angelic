@@ -1,0 +1,2937 @@
+%[
+	"excommands", %[
+		"sysvoice", 0,
+		"beforemovie", COMMAND_SYNC,
+		"break", COMMAND_SYNC,
+		"suspendsave", COMMAND_SAVE,
+		],
+
+	// シーン区切りになるラベル
+	"sceneLabel", /^\*chapter|:/,
+
+	//"showExtend", [800,50,800,50], // 立ち絵カット処理時にその状態をトリミング表示
+	//"checkExtend", true, // 立ち絵カット処理時にはみで表示が見えていると警告を出す
+	
+	// コンバート時に条件に応じて画像多重化処理を行う対応
+	//"imageConvertConditions",  [
+	//	// sf:dressnamemap 処理用の変数定義 eval:実行時での判定式 conveval:条件登録するかどうかの判定
+	//	%[sf:%[dlc:1],eval:"checkDLC(1)",conveval:'imageConvertOptions.target=="VITA"'], // VITA用
+	//	%[sf:%[dlc:2],eval:"checkDLC(2)",conveval:'imageConvertOptions.target=="VITA"'], // VITA用
+	//	],
+
+	// レイヤ系スケーリング指定
+	// スクリプトでの座標値と実画面での座標値のスケーリング処理を行う
+	//"scalex", 1.6,    X方向のスケール(default:1.0)
+	//"scaley", 1.6,    Y方向のスケール(default:1.0)
+	//"width" , 800,    仮想画面サイズ横幅(default:scWidth/scalex)
+	//"height", 600,    仮想画面サイズ縦幅(default:scHeight/scaley)
+
+	// スケール補正対応
+//	"envWidth", 1280,
+//	"envHeight", 720,
+
+	// 舞台情報定義
+	// 基準になる stage ファイルを指定する
+	"stageInfo" => "base.stage",
+	
+	// stage/stime/アクションを直接コマンドとして使った場合の
+	// デフォルトターゲットを変更
+	// ※未指定時は環境に対して処理される
+	"defaultTarget" => "stage",
+
+	// posのカンマ指定の3つ目のパラメータをzorderにする
+	//"posInfoZorder" => true,
+	
+	// ------------------------------------------------------------------
+	// レイヤ配置情報定義
+	// disp
+	// xpos
+	// ypos
+	// zpos
+	// reset
+	// front
+	// back
+
+	// レイヤ配置情報定義
+	// disp
+	// xpos
+	// ypos
+	// zpos
+	// reset
+	// front
+	// back
+
+	// ------------------------------------------------------------------
+
+	// autoface.tjs 設定
+	"autoFaceShow",  true,  // 顔窓自動表示	 false :無効							[true]:有効(話者にあわせて表示制御する)
+//	"syncFaceShow",  true,  // face同期表示	 false :顔位置オブジェクトのみ対象		[true]:立ち絵に同期した顔窓表示を追加する
+	"eventFaceShow", true, // イベント時	[false]:イベント絵時は自動表示しない	 true :イベント絵時も自動表示する
+//	"forceFaceShow", false, // 強制表示		[false]:顔窓を立ち絵の表示状態に合わせる true :立ち絵が消えていても表示する
+//	"autoFaceHide",  true,  // 顔窓自動消去  false :無効							[true]:有効(地の文やコマンド演出時に消去する)
+	"facePosMode", 0, // 座標を実行時に補正
+
+	// レベル番号とzorderの対応を記載する
+	"levels" => [ 35,50,65,75,85,90,100,120 ], 
+	
+	"positions" => %[
+		// ※type定義は不要になりました。disp/xpos/ypos/level いずれかの定義が記述されていればそれが使用されます。
+
+		// 表示定義（顔表示は，フェイスウィンドウ機能がない場合には意味を持ちません）
+		"出" => %[ "disp" => KAGEnvImage.SHOW  ,"className" => "" ], // 表示
+		"立" => %[ "disp" => KAGEnvImage.SHOW  ,"className" => "bu"     ], // 表示
+		"消" => %[ "disp" => KAGEnvImage.CLEAR     ], // 一時非表示（状態変更による自動表示は有効）※基本はこちらを使います
+		"無" => %[ "disp" => KAGEnvImage.INVISIBLE ], // 完全非表示（状態変更による自動表示も無効）
+
+		"顔" => %[ "disp" => KAGEnvImage.SHOW, "className", "msgwin" ], // 顔配置用クラス指定
+		"両" => %[ "disp" => KAGEnvImage.SHOW, "className", "" ], // 標準に戻す(立ち絵と顔両方)クラス指定
+		
+		// 位置定義
+		"中"   => %[ "xpos" => int    0 ],
+		"左接" => %[ "xpos" => int -240 ],
+		"右接" => %[ "xpos" => int  240 ],
+		"左近"   => %[ "xpos" => int -360 ],
+		"右近"   => %[ "xpos" => int  360 ],
+		"左中" => %[ "xpos" => int -480 ],
+		"右中" => %[ "xpos" => int  480 ],
+		"左" => %[ "xpos" => int -600 ],
+		"右" => %[ "xpos" => int  600 ],
+		"左奥" => %[ "xpos" => int -720 ],
+		"右奥" => %[ "xpos" => int  720 ],
+		"左外" => %[ "xpos" => int -840 ],
+		"右外" => %[ "xpos" => int  840 ],
+		"左大外" => %[ "xpos" => int -960 ],
+		"右大外" => %[ "xpos" => int  960 ],
+		"左枠外" => %[ "xpos" => int -1080 ],
+		"右枠外" => %[ "xpos" => int  1080 ],
+
+		// yposは直で個別に指定する場合が多いようです
+		"真中" => %[ "ypos" => int    0 ],
+		"アップ"   => %[ "ypos" => int   25 ],
+//		"縦背伸"     => %[ "ypos" => int  -20 ],
+
+		"仮100" => %[ "ypos" => int    -100 ],
+		"仮200" => %[ "ypos" => int    -200 ],
+		"仮250" => %[ "ypos" => int    -250 ],
+		"仮300" => %[ "ypos" => int    -300 ],
+
+		// レベル指定 + リセット処理
+		// ※zpos指定は純粋な座標指定に仕様変更になりました。
+		// ズーム値での指定は zorder が使えます
+		"50%"   => %[ zorder: int 50, ypos:0, resetpos:true, front:true, className:"" ],
+		"60%"   => %[ zorder: int 60, ypos:0, resetpos:true, front:true, className:"" ],
+		"65%"   => %[ zorder: int 65, ypos:0, resetpos:true, front:true, className:"" ],
+		"70%"   => %[ zorder: int 70, ypos:0, resetpos:true, front:true, className:"" ],
+		"75%"   => %[ zorder: int 75, ypos:0, resetpos:true, front:true, className:"" ],
+		"80%"   => %[ zorder: int 80, ypos:0, resetpos:true, front:true, className:"" ],
+		"85%"   => %[ zorder: int 85, ypos:0, resetpos:true, front:true, className:"" ],
+		"90%"   => %[ zorder: int 90, ypos:0, resetpos:true, front:true, className:"" ],
+		"100%"  => %[ zorder: int 100,ypos:0, resetpos:true, front:true, className:"" ],
+		"110%"  => %[ zorder: int 110,ypos:0, resetpos:true, front:true, className:"" ],
+		"120%"  => %[ zorder: int 120,ypos:0, resetpos:true, front:true, className:"" ],
+
+
+		],
+
+	// 自動レイアウト指定
+	"layouts" => %[
+		"入場" => %[ "type", "normal", "pos", "right", "trans", "showslide" ],
+		"割込" => %[ "type", "normal", "pos", "center", "trans", "showslide" ],
+		"退場" => %[ "type", "normal", "pos", "hide", "trans", "showslide" ],
+		// 入退場定義・サイズ補正あり
+		"入場2" => %[ "type", "autolevel", "pos", "right", "reload", true, "trans", "showslide" ],
+		"退場2" => %[ "type", "autolevel", "pos", "hide", "reload", true, "trans", "showslide" ],
+	],
+
+	// レイアウト用座標定義・レベルあり
+	"layouts_autolevel" => [
+		%[ "xpos", [0], "level", 2, "leveltrans", "showslide", "time", 300 ],
+		%[ "xpos", [-250,250], "level", 1, "leveltrans", "showslide", "time", 300 ],
+		%[ "xpos", [-400,0,400], "level", 1, "leveltrans", "showslide", "time", 300 ],
+		%[ "xpos", [-500,-200,200,500], "level", 1, "leveltrans", "showslide", "time", 300 ],
+	],
+	// レイアウト用座標定義・レベル無し
+	"layouts_normal" => [
+		%[ "xpos", [0], "time", 300],
+		%[ "xpos", [-250,250], "time", 300 ],
+		%[ "xpos", [-400,0,400], "time", 300  ],
+		%[ "xpos", [-500,-200,200,500], "time", 300  ],
+	],
+	
+	// ------------------------------------------------------------------
+	// 加工定義
+	// ------------------------------------------------------------------
+	"modifies" => %[
+		"セピア" => %[grayscale:true, rgamma:2.1, ggamma:1.5],
+		"魔法" => %[grayscale:true, rgamma:1.5, ggamma:1.5, bgamma:1.5],
+		"モノクロ" => %[grayscale:true],
+		"魔王" => %[grayscale:true, rgamma:0.7, ggamma:0.7, bgamma:0.7],
+		"フルカラー" => %[grayscale:"", rgamma:"", ggamma:"", bgamma:""],
+
+		// 立ち絵鑑賞の操作対象外キャラの塗りつぶし色0xAARRGGBBを決定します
+//		"立ち絵鑑賞操作外：シャーリィ"  => %[ filter:0xE0FFFFDF ],
+
+		],
+
+	// ------------------------------------------------------------------
+	// アクション定義
+	// ------------------------------------------------------------------
+	
+	"actions" => %[
+
+		// --------------------------------------------------------
+		// 旧スタイル定義
+		// --------------------------------------------------------
+
+		"おじぎ" => %[
+			"module" => "LayerJumpOnceActionModule",
+			"vibration" => 20,
+			"cycle" => 2000,
+			],
+
+		"どっきり" => %[
+			"module" => "LayerHeartBeatZoomModule",
+			"time" => 200,
+			"zoom" => 110,
+			],
+
+//		"びょんびょん" => %[
+//			"module" => "LayerJumpActionModule",
+//			"vibration" => -30,
+//			"cycle" => 1000,
+//			],
+
+		"あああ" => %[
+			"module" => "LayerJumpActionModule",
+			"vibration" => -10,
+			"cycle" => 300,
+			"nowait" => true,
+			],
+
+		"旧ガクガク" => %[
+			"module" => "LayerVibrateActionModule",
+			"vibration" => 10,
+			"waitTime" => 40
+			],
+
+		"うろうろ" => %[
+            "module" => "LayerWaveActionModule",
+            "vibration" => 100,
+            "cycle" => 5000,
+			"nowait" => true,
+            ],
+
+		"あうあう" => %[
+            "module" => "LayerWaveActionModule",
+            "vibration" => 10,
+            "cycle" => 600,
+			"nowait" => true,
+            ],
+
+
+		"おじぎ" => %[
+			"module" => "LayerJumpOnceActionModule",
+			"vibration" => 20,
+			"cycle" => 2000,
+			],
+		"どっきり" => %[
+			"module" => "LayerHeartBeatZoomModule",
+			"time" => 200,
+			"zoom" => 110,
+			],
+		"びょんびょん" => %[
+			"module" => "LayerJumpActionModule",
+			"vibration" => -30,
+			"cycle" => 1000,
+			],
+		"びょん×２" => %[
+			"module" => "LayerJumpActionModule",
+			"vibration" => -30,
+			"cycle" => 1000,
+			"time" => 2000,
+			],
+		"びょんびょん待ち無" => %[
+			"module" => "LayerJumpActionModule",
+			"vibration" => -30,
+			"cycle" => 1000,
+			"nowait" => true,
+			],
+		"ふわふわ" => %[
+			"module" => "LayerJumpActionModule",
+			"vibration" => -30,
+			"cycle" => 2000,
+			"nowait" => true,
+			],
+		"がくがく" => %[
+			"module" => "LayerVibrateActionModule",
+			"vibration" => 10,
+			"waitTime" => 100
+			],
+		"がくがく継続" => %[
+			"module" => "LayerVibrateActionModule",
+			"vibration" => 20,
+			"waitTime" => 250,
+			"nowait" => true,
+			],
+		"画面揺れ" => %[
+			"module" => "LayerVibrateActionModule",
+			"vibration" => 20,
+			"waitTime" => 150
+			],
+		"画面揺れ継続" => %[
+			"module" => "LayerVibrateActionModule",
+			"vibration" => 20,
+			"waitTime" => 150,
+			"nowait" => true,
+			],
+		"眩暈" => %[
+			"module" => "LayerWaveActionModule",
+			"vibration" => 20,
+			"cycle" => 2000,
+			],
+
+		"眩暈継続" => %[
+			"module" => "LayerWaveActionModule",
+			"vibration" => 20,
+			"cycle" => 2000,
+			"nowait" => true,
+			],
+
+		"歩く" => %[
+			"module" => "LayerJumpActionModule",
+			"vibration" => -4,
+			"cycle" => 1500,
+			"nowait" => true,
+			],
+
+        "ブルブル" => %[
+            "module" => "LayerWaveActionModule",
+            "vibration" => 70,
+            "cycle" => 35,
+            "time" => 200
+            ],
+
+        "反転" => %[
+            "module" => "LayerNormalRotateModule",
+            "angvel" => -180,
+            "time" => 500
+            ],
+
+        "縦小１" => %[
+            "module" => "LayerJumpOnceActionModule",
+            "vibration" => 50,
+            "cycle" => 200
+            ],
+
+        "縦小" => %[
+            "module" => "LayerJumpActionModule",
+            "vibration" => 50,
+            "cycle" => 200
+            ],
+
+        "縦中" => %[
+            "module" => "LayerJumpActionModule",
+            "vibration" => 80,
+            "cycle" => 200
+            ],
+
+        "背景衝撃" => %[
+            "module" => "LayerJumpActionModule",
+            "time" => 150,
+            "vibration" => 100,
+            "cycle" => 50
+            ],
+
+        "キャラ衝撃" => %[
+            "module" => "LayerJumpActionModule",
+            "time" => 150,
+            "vibration" => 6,
+            "cycle" => 50
+            ],
+
+        "背景衝撃長" => %[
+            "module" => "LayerJumpActionModule",
+            "time" => 500,
+            "vibration" => 100,
+            "cycle" => 50
+            ],
+
+        "ペシ" => %[
+            "module" => "LayerJumpOnceActionModule",
+            "vibration" => 6,
+            "cycle" => 200
+            ],
+
+        "殴り" => %[
+            "module" => "LayerJumpActionModule",
+            "time" => 100,
+            "vibration" => 6,
+            "cycle" => 50
+            ],
+
+        "横小１" => %[
+            "module" => "LayerWaveOnceActionModule",
+            "vibration" => 14,
+            "cycle" => 200
+            ],
+
+        "怒声" => %[
+            "module" => "LayerJumpActionModule",
+            "time" => 200,
+            "vibration" => 6,
+            "cycle" => 100
+            ],
+
+        "背景怒声" => %[
+            "module" => "LayerJumpActionModule",
+            "time" => 200,
+            "vibration" => 30,
+            "cycle" => 50
+            ],
+
+        "驚き" => %[
+            "module" => "LayerVibrateActionModule",
+            "time" => 74,
+            "vibration" => 8,
+            "waitTime" => 40
+            ],
+
+        "ジャンプ" => %[
+            "module" => "LayerJumpOnceActionModule",
+            "vibration" => -50,
+            "cycle" => 300
+            ],
+
+        "ビク" => %[
+            "module" => "LayerJumpOnceActionModule",
+            "vibration" => -4,
+            "cycle" => 150
+            ],
+
+        "！？" => %[
+            "module" => "LayerJumpOnceActionModule",
+            "vibration" => -10,
+            "cycle" => 200
+            ],
+
+        "うぐっ" => %[
+            "module" => "LayerJumpOnceActionModule",
+            "vibration" => -6,
+            "cycle" => 100
+            ],
+
+        "衝撃" => %[
+            "module" => "LayerVibrateActionModule",
+            "time" => 250,
+            "vibration" => 30,
+            "waitTime" => 20
+            ],
+
+        "小揺れ" => %[
+            "module" => "LayerVibrateActionModule",
+            "time" => 200,
+            "vibration" => 10,
+            "waitTime" => 20
+            ],
+
+        "ガツ" => %[
+            "module" => "LayerVibrateActionModule",
+            "time" => 150,
+            "vibration" => 50,
+            "waitTime" => 20
+            ],
+
+        "画面揺らし" => %[
+            "module" => "LayerVibrateActionModule",
+            "time" => 250,
+            "vibration" => 50,
+            "waitTime" => 20
+            ],
+
+        "画面揺れ長" => %[
+            "module" => "LayerVibrateActionModule",
+            "vibration" => 50,
+            "waitTime" => 20
+            ],
+
+        "画面揺らし大" => %[
+            "module" => "LayerVibrateActionModule",
+            "time" => 300,
+            "vibration" => 70,
+            "waitTime" => 20
+            ],
+
+
+        "飛ぶ" => %[
+            "module" => "LayerJumpOnceActionModule",
+            "vibration" => -200,
+            "cycle" => 1000 ,
+            ],
+
+
+		"ガクガク" => %[
+			"left"	=> %[ handler:"RandomAction", vibration:10, waittime:20],
+			"top"	=> %[ handler:"RandomAction", vibration:10, waittime:20],
+			],
+		
+		"ゆさゆさ" => %[
+			"left"	=> %[ handler:"SinAction", vibration: -12, cycle: "%cycle|800", ],
+			"top"	=> %[ handler:"SinAction", vibration: 4, cycle: "%cycle|800", ],
+			 ],
+		
+		"カメラガクガク" => %[
+			"camerax"	=> %[ handler:"RandomAction", vibration:10, waittime:20],
+			"cameray"	=> %[ handler:"RandomAction", vibration:10, waittime:20],
+			],
+
+		"シフトガクガク" => %[
+			"shiftx"	=> %[ handler:"RandomAction", vibration:10, waittime:20],
+			"shifty"	=> %[ handler:"RandomAction", vibration:10, waittime:20],
+			],
+
+		
+		// --------------------------------------------------------
+		// 新スタイル定義
+		// --------------------------------------------------------
+
+		"移動テスト" => %[ // 現在位置から+300の位置に500ms かけて移動
+						   "time" => 500,
+						   "left" => %[ handler:"MoveAction", value:"@+300" ],
+						   ],
+
+		"パス移動テスト" => %[ // 複数移動の一括指定
+						   "time" => 1000,
+						   "left" => %[ handler:"PathAction", value:"@+300,@-300,@+100" ],
+						   ],
+
+		"パス移動テスト2" => %[ // KAGのmove互換表記
+								"time" => 3000,
+								"path" => "(-400,400,128)(-400,-400,100)(0,0,256)",
+								"spline" => true,
+						   ],
+		
+		"回転テスト" => %[ // 1000msの間回転
+						   "time" => 1000,
+						   "rotate" => %[ handler:"TriangleAction", vibration:360,  ontime:1000, offtime:0 ]
+						   ],
+
+		"スローズーム" => %[ // 20000msの間ちょっとずつズーム
+						   "time" => 20000,
+						   "zoom" => %[ handler:"MoveAction", value:110 ]
+						   ],
+
+		"タイルスライド" => %[
+			"$tilex" => %[ handler:"LoopMoveAction", max:800, loop:2000 ],
+			"$tiley" => %[ handler:"LoopMoveAction", max:600, loop:2000 ]
+			],
+
+		"横スライド" => %[
+			"$tilex"  => %[ handler:"LoopMoveAction", max:2700, loop:2700 ],
+			"nowait" => true,
+			],
+		
+		// --------------------------------------------------------
+		// 連続アクション
+		// --------------------------------------------------------
+
+		"連続テスト" => [
+			// 座標移動の初期値は全アクション実行の前の位置になるのに注意
+			%[ // 現在位置から +300 の位置に 500ms かけて移動
+			   "time" => 500,
+			   "left" => %[ handler:"MoveAction", value:"@+300" ],
+				],
+			%[ // 現在位置から -300 の位置に 500ms かけて移動
+				"time" => 1000,
+				"left" => %[ handler:"MoveAction", value:"@-300" ],
+				],
+			%[ // 現在位置から +300 の位置に 500ms かけて移動
+				"time" => 1000,
+				"left" => %[ handler:"MoveAction", value:"@+300" ],
+			   ],
+			%[ // 現在位置に 500ms かけて移動
+			   "time" => 1000,
+			   "left" => %[ handler:"MoveAction", value:"@" ]
+			   ]
+			],
+
+		"連続テスト２" => [ // アクション名で連続指定も可能
+							"移動テスト", "回転テスト" ],
+
+		"背伸び" => [
+			%[ "top" => %[ handler:"MoveAction", value:"@+6", time:1000, accel:"acdec"] ],
+			%[ "top" => %[ handler:"MoveAction", value:"@+3", time:300, accel:1] ],
+			%[ "top" => %[ handler:"MoveAction", value:"@", time:500, accel:-1] ],
+			],
+		
+		"がっくり" => [
+			%[ "top" => %[ handler:"MoveAction", value:"@-10", time:500, accel:1] ],
+			%[ "top" => %[ handler:"MoveAction", value:"@-4", time:300, accel:-1] ],
+			],
+
+		"ふるふる" => [
+			%[ "left" => %[ handler:"MoveAction", value:"@-4", time:200, accel:"acdec"] ],
+			%[ "left" => %[ handler:"MoveAction", value:"@+4", time:200, accel:"acdec"] ],
+			%[ "left" => %[ handler:"MoveAction", value:"@-4", time:200, accel:"acdec"] ],
+			%[ "left" => %[ handler:"MoveAction", value:"@+4", time:200, accel:"acdec"] ],
+			%[ "left" => %[ handler:"MoveAction", value:"@", time:200, accel:"acdec"] ],
+			],
+
+		"こくこく" => [
+			%[ "top" => %[ handler:"MoveAction", value:"@-10", time:200, accel:"acdec"] ],
+			%[ "top" => %[ handler:"MoveAction", value:"@", time:200, accel:"acdec"] ],
+			%[ wait:5 ],
+			%[ "top" => %[ handler:"MoveAction", value:"@-10", time:200, accel:"acdec"] ],
+			%[ "top" => %[ handler:"MoveAction", value:"@", time:200, accel:"acdec"] ],
+			],
+
+
+		"否定" => [
+			%[
+				"time" => 250,
+				 "left" => %[ handler:"MoveAction", value:"@-20" ],
+				],
+			%[
+				"time" => 500,
+				"left" => %[ handler:"MoveAction", value:"@+20" ],
+				],
+			%[
+				"time" => 250,
+				"left" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+		"揺れ" => [
+			%[
+				"time" => 100,
+				 "left" => %[ handler:"MoveAction", value:"@-4" ],
+				],
+			%[
+				"time" => 200,
+				"left" => %[ handler:"MoveAction", value:"@+4" ],
+				],
+			%[
+				"time" => 100,
+				"left" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+		"もじもじ" => [
+			%[
+				"time" => 300,
+				 "left" => %[ handler:"MoveAction", value:"@-10" ],
+				],
+			%[
+				"time" => 600,
+				"left" => %[ handler:"MoveAction", value:"@+10" ],
+				],
+			%[
+				"time" => 300,
+				"left" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+
+		"肯定" => [
+			%[
+				"time" => 250,
+				 "top" => %[ handler:"MoveAction", value:"@-20" ],
+				],
+			%[
+				"time" => 250,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+		"ゆっくりコク" => [
+			%[
+				"time" => 400,
+				 "top" => %[ handler:"MoveAction", value:"@-20" ],
+				],
+			%[
+				"time" => 400,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+		"ゆっくりコクコク" => [
+			%[
+				"time" => 400,
+				 "top" => %[ handler:"MoveAction", value:"@-8" ],
+				],
+			%[
+				"time" => 400,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			%[
+				"time" => 400,
+				 "top" => %[ handler:"MoveAction", value:"@-8" ],
+				],
+			%[
+				"time" => 400,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+
+		"謝罪" => [
+			%[
+				"time" => 500,
+				 "top" => %[ handler:"MoveAction", value:"@-30" ],
+				],
+			%[
+				"time" => 300,
+				"top" => %[ handler:"MoveAction", value:"@-30" ],
+				],
+			%[
+				"time" => 500,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+		"ため息" => [
+			%[
+				"time" => 400,
+				 "top" => %[ handler:"MoveAction", value:"@-6" ],
+				],
+			%[
+				"time" => 500,
+				"top" => %[ handler:"MoveAction", value:"@-6" ],
+				],
+			%[
+				"time" => 500,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+
+		"ジャンプ右" => [
+			%[
+				"time" => 200,
+				 "top" => %[ handler:"MoveAction", value:"@+75"],
+				 "left" => %[ handler:"MoveAction", value:"@+200" ],
+				],
+			%[
+				"time" => 150,
+				 "top" => %[ handler:"MoveAction", value:"@"],
+				 "left" => %[ handler:"MoveAction", value:"@+250" ],
+				],
+			],
+
+
+		"やれやれ" => [
+			%[
+				"time" => 250,
+				 "top" => %[ handler:"MoveAction", value:"@-20" ],
+				],
+			%[
+				"time" => 50,
+				 "top" => %[ handler:"MoveAction", value:"@-20" ],
+				],
+			%[
+				"time" => 250,
+				 "left" => %[ handler:"MoveAction", value:"@-10" ],
+				],
+			%[
+				"time" => 500,
+				"left" => %[ handler:"MoveAction", value:"@+10" ],
+				],
+			%[
+				"time" => 250,
+				"left" => %[ handler:"MoveAction", value:"@" ],
+				],
+			%[
+				"time" => 50,
+				 "top" => %[ handler:"MoveAction", value:"@-20" ],
+				],
+			%[
+				"time" => 250,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+
+		"頷き" => [
+			%[
+				"time" => 250,
+				 "top" => %[ handler:"MoveAction", value:"@-20" ],
+				],
+			%[
+				"time" => 250,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			%[
+				"time" => 250,
+				 "top" => %[ handler:"MoveAction", value:"@-20" ],
+				],
+			%[
+				"time" => 250,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+		"コク" => [
+			%[
+				"time" => 300,
+				 "top" => %[ handler:"MoveAction", value:"@-12" ],
+				],
+			%[
+				"time" => 250,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+		"ケホケホ" => [
+			%[
+				"time" => 50,
+				"top" => %[ handler:"MoveAction", value:"@-4"],
+				],
+			%[
+				"time" => 50,
+				"top" => %[ handler:"MoveAction", value:"@"],
+				],
+			%[
+				"time" => 50,
+				"top" => %[ handler:"MoveAction", value:"@-4"],
+				],
+			%[
+				"time" => 50,
+				"top" => %[ handler:"MoveAction", value:"@"],
+				],
+			],
+
+		"コクコク" => [
+			%[
+				"time" => 100,
+				"top" => %[ handler:"MoveAction", value:"@-8"],
+				],
+			%[
+				"time" => 100,
+				"top" => %[ handler:"MoveAction", value:"@"],
+				],
+			%[
+				"time" => 100,
+				"top" => %[ handler:"MoveAction", value:"@-8"],
+				],
+			%[
+				"time" => 100,
+				"top" => %[ handler:"MoveAction", value:"@"],
+				],
+			],
+
+		"拡大コクコク" => [
+			%[
+				"time" => 150,
+				"top" => %[ handler:"MoveAction", value:"@-8"],
+				],
+			%[
+				"time" => 150,
+				"top" => %[ handler:"MoveAction", value:"@"],
+				],
+			%[
+				"time" => 150,
+				"top" => %[ handler:"MoveAction", value:"@-8"],
+				],
+			%[
+				"time" => 150,
+				"top" => %[ handler:"MoveAction", value:"@"],
+				],
+			],
+
+        "ピョン" => [
+			%[
+				"time" => 200,
+				 "top" => %[ handler:"MoveAction", value:"@+14" ],
+				],
+			%[
+				"time" => 150,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+            ],
+
+
+		"笑う" => [
+			%[
+				"time" => 150,
+				"top" => %[ handler:"MoveAction", value:"@+14"],
+				],
+			%[
+				"time" => 150,
+				"top" => %[ handler:"MoveAction", value:"@"],
+				],
+			%[
+				"time" => 150,
+				"top" => %[ handler:"MoveAction", value:"@+14"],
+				],
+			%[
+				"time" => 150,
+				"top" => %[ handler:"MoveAction", value:"@"],
+				],
+			],
+
+		"ゆっくり笑う" => [
+			%[
+				"time" => 250,
+				"top" => %[ handler:"MoveAction", value:"@+10"],
+				],
+			%[
+				"time" => 250,
+				"top" => %[ handler:"MoveAction", value:"@"],
+				],
+			%[
+				"time" => 250,
+				"top" => %[ handler:"MoveAction", value:"@+10"],
+				],
+			%[
+				"time" => 250,
+				"top" => %[ handler:"MoveAction", value:"@"],
+				],
+			],
+
+		"肩竦め" => [
+			%[
+				"time" => 300,
+				 "top" => %[ handler:"MoveAction", value:"@+6" ],
+				],
+			%[
+				"time" => 300,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+
+		"背伸び" => [
+			%[
+				"time" => 150,
+				 "top" => %[ handler:"MoveAction", value:"@+4" ],
+				],
+			%[
+				"time" => 200,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+
+		"伸び" => [
+			%[
+				"time" => 500,
+				 "top" => %[ handler:"MoveAction", value:"@+30" ],
+				],
+			%[
+				"time" => 250,
+				"top" => %[ handler:"MoveAction", value:"@" ],
+				],
+			],
+
+
+		"右下がり" => [
+			%[
+				"time" => 250,
+				"left" => %[ handler:"MoveAction", value:"@+30" ],
+				],
+			%[
+				"time" => 350,
+				"left" => %[ handler:"MoveAction", value:"@+50" ],
+				]
+			],
+
+		"左下がり" => [
+			%[
+				"time" => 250,
+				"left" => %[ handler:"MoveAction", value:"@-30" ],
+				],
+			%[
+				"time" => 350,
+				"left" => %[ handler:"MoveAction", value:"@-50" ],
+				]
+			],
+
+
+		"ぺこぺこ" => [
+			%[
+				"time" => 300,
+				"top" => %[ handler:"MoveAction", value:"@-50", accel:-1],
+				],
+			%[
+				"time" => 300,
+				"top" => %[ handler:"MoveAction", value:"@", accel:1],
+				],
+			%[
+				"time" => 50,
+				"top" => %[ handler:"MoveAction", value:"@"],
+				],
+			%[
+				"time" => 300,
+				"top" => %[ handler:"MoveAction", value:"@-50", accel:-1],
+				],
+			%[
+				"time" => 300,
+				"top" => %[ handler:"MoveAction", value:"@", accel:1],
+				],
+			],
+
+		"フラフラ" => [
+			%[
+				"time" => 400,
+				"left" => %[ handler:"MoveAction", value:"@+20" ], top : %[ handler:"MoveAction", value:"@+10"],
+				],
+			%[
+				"time" => 750,
+				"left" => %[ handler:"MoveAction", value:"@+70" ], top : %[ handler:"MoveAction", value:"@+4"],
+				],
+			%[
+				"time" => 300,
+				"left" => %[ handler:"MoveAction", value:"@+90" ], top : %[ handler:"MoveAction", value:"@+8"],
+				],
+			%[
+				"time" => 300,
+				"left" => %[ handler:"MoveAction", value:"@+70" ], top : %[ handler:"MoveAction", value:"@+4"],
+				],
+			%[
+				"time" => 750,
+				"left" => %[ handler:"MoveAction", value:"@+20" ], top : %[ handler:"MoveAction", value:"@+10"],
+				],
+			%[
+				"time" => 400,
+				"left" => %[ handler:"MoveAction", value:"@" ], top : %[ handler:"MoveAction", value:"@"],
+				],
+			],
+
+
+		"ガクン" => [
+			%[
+				"time" => 300,
+				"left" => %[ handler:"MoveAction", value:"@+40" ], top : %[ handler:"MoveAction", value:"@-30", accel:-1],
+				],
+			%[
+				"time" => 100,
+				"left" => %[ handler:"MoveAction", value:"@+40" ], top : %[ handler:"MoveAction", value:"@-30"],
+				],
+			%[
+				"time" => 250,
+				"left" => %[ handler:"MoveAction", value:"@-40" ], top : %[ handler:"MoveAction", value:"@-60", accel:-1],
+				],
+			%[
+				"time" => 150,
+				"left" => %[ handler:"MoveAction", value:"@-40" ], top : %[ handler:"MoveAction", value:"@-60"],
+				],
+			%[
+				"time" => 500,
+				"left" => %[ handler:"MoveAction", value:"@+30" ], top : %[ handler:"MoveAction", value:"@-180", accel:1], opacity: %[ handler:"MoveAction", value:0],
+				],
+			],
+
+
+
+		"フラ" => [
+			%[
+				"time" => 400,
+				"left" => %[ handler:"MoveAction", value:"@+20" ], top : %[ handler:"MoveAction", value:"@+10"],
+				],
+			%[
+				"time" => 750,
+				"left" => %[ handler:"MoveAction", value:"@+40" ], top : %[ handler:"MoveAction", value:"@+4"],
+				],
+			%[
+				"time" => 300,
+				"left" => %[ handler:"MoveAction", value:"@+70" ], top : %[ handler:"MoveAction", value:"@+10"], opacity: %[ handler:"MoveAction", value:0],
+				],
+			],
+
+
+		"キョロキョロ" => [
+			%[
+				"time" => 500,
+				 "left" => %[ handler:"MoveAction", value:"@-30" ],
+				],
+			%[
+				"time" => 300,
+				"left" => %[ handler:"MoveAction", value:"@-40" ],
+				],
+			%[
+				"time" => 1000,
+				"left" => %[ handler:"MoveAction", value:"@+10" ],
+				],
+			%[
+				"time" => 100,
+				"left" => %[ handler:"MoveAction", value:"@+10" ],
+				],
+			%[
+				"time" => 400,
+				"left" => %[ handler:"MoveAction", value:"@" ]
+				]
+			],
+
+
+		"オロロ" => [
+			%[
+				"time" => 150,
+				"left" => %[ handler:"MoveAction", value:"@+10"],
+				],
+			%[
+				"time" => 300,
+				"left" => %[ handler:"MoveAction", value:"@-10"],
+				],
+			%[
+				"time" => 150,
+				"left" => %[ handler:"MoveAction", value:"@"]
+				]
+			],
+
+		"オロロ速" => [
+			%[
+				"time" => 75,
+				"left" => %[ handler:"MoveAction", value:"@+4"],
+				],
+			%[
+				"time" => 150,
+				"left" => %[ handler:"MoveAction", value:"@-4"],
+				],
+			%[
+				"time" => 75,
+				"left" => %[ handler:"MoveAction", value:"@"]
+				]
+			],
+
+
+
+		"オロオロ" => [
+			%[
+				"time" => 100,
+				"left" => %[ handler:"MoveAction", value:"@-14"],
+				],
+			%[
+				"time" => 200,
+				"left" => %[ handler:"MoveAction", value:"@+14"],
+				],
+			%[
+				"time" => 200,
+				"left" => %[ handler:"MoveAction", value:"@-14"],
+				],
+			%[
+				"time" => 200,
+				"left" => %[ handler:"MoveAction", value:"@+14"],
+				],
+			%[
+				"time" => 100,
+				"left" => %[ handler:"MoveAction", value:"@"]
+				]
+			],
+
+		],
+
+	// 画像のトランジションの sync 指定のデフォルト
+	"transitionDefaultSync" => true,
+
+	// ------------------------------------------------------------------
+    // 画面トランジション定義
+	// ------------------------------------------------------------------
+	"transitions" => %[
+		"normal" => %[
+			"time" => 1000,
+			"method" => "",
+			],
+
+		// セピア化を含むトランジション
+		"sepianormal" => %[
+			"time" => 1000,
+			"method" => "",
+			"modify" => "セピア化",
+			],
+		
+		"notrans" => %[
+			"time" => 0,
+			"method" => void,
+			],
+
+		"1000sec" => %[
+			"time" => 1000,
+			"method" => "",
+			],
+
+		"750sec" => %[
+			"time" => 750,
+			"method" => "",
+			],
+
+		"500sec" => %[
+			"time" => 500,
+			"method" => "",
+			],
+
+		"300sec" => %[
+			"time" => 300,
+			"method" => "",
+			],
+
+		"300secNosync" => %[
+			"time" => 300,
+			"method" => "",
+			"nosync" => true,
+			],
+		
+		"100sec" => %[
+			"time" => 100,
+			"method" => "",
+			],
+
+		"0sec" => %[
+			"time" => 0,
+			"method" => void,
+			],
+
+
+		"モザイク" => %[
+			"time" => 750,
+			"method" => "mosaic",
+			],
+
+		"波" => %[
+			"time" => 750,
+			"method" => "ripple",
+			],
+
+		"回転" => %[
+			"time" => 750,
+			"method" => "rotateswap",
+			],
+
+		"回転縮小" => %[
+			"time" => 750,
+			"method" => "rotatevanish",
+			],
+
+		"回転拡大" => %[
+			"time" => 750,
+			"method" => "rotatezoom",
+			],
+
+		"スクロール右" => %[
+			"time" => 750,
+			"method" => "scroll",
+			],
+
+		"ターン" => %[
+			"time" => 2000,
+			"method" => "turn",
+			],
+
+		"急右" => %[
+			"time" => 500,
+			"method" => "universal",
+			"rule" => "rule_1",
+			],
+
+		"急左" => %[
+			"time" => 500,
+			"method" => "universal",
+			"rule" => "rule_2",
+			],
+
+		"シャッタ右" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "rule_3",
+			],
+
+		"シャッタ左" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "rule_4",
+			],
+
+		"目閉じ" => %[
+			"time" => 1500,
+			"method" => "universal",
+			"rule" => "rule_6",
+			],
+
+		"目開け" => %[
+			"time" => 1500,
+			"method" => "universal",
+			"rule" => "rule_7",
+			],
+
+		"中心" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "rule_12",
+			],
+
+		"周囲" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "rule_13",
+			],
+
+		"フェード右" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "rule_10",
+			],
+
+		"フェード左" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "rule_9",
+			],
+
+		"フェード下" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "rule_17",
+			],
+
+		"フェード上" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "rule_18",
+			],
+
+		"中央" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "map502y",
+			],
+
+		"両端" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "map502b",
+			],
+
+		"クロック" => %[
+			"time" => 1500,
+			"method" => "universal",
+			"rule" => "rule_16",
+			],
+
+		"扇" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "rule_8",
+			],
+
+		"雲" => %[
+			"time" => 1000,
+			"method" => "universal",
+			"rule" => "rule_19",
+			],
+
+		"蛇腹" => %[
+			"time" => 750,
+			"method" => "wave",
+			],
+
+		"波紋" => %[
+			"time" => 1000,
+			"method" => "multiripple",
+			],
+
+		"六角" => %[
+			"time" => 1000,
+			"method" => "honeyturn",
+			],
+
+		"本" => %[
+			"time" => 1000,
+			"method" => "book",
+			],
+
+		"ページ" => %[
+			"time" => 1000,
+			"method" => "flutter",
+			],
+
+		"立方体" => %[
+			"time" => 750,
+			"method" => "spin",
+			],
+
+		"ブラー" => %[
+			"time" => 1000,
+			"method" => "blurfade",
+			],
+
+		"スキャン" => %[
+			"time" => 1000,
+			"method" => "scanline",
+			],
+
+		"拡大750sec" => %[
+			"time" => 750,
+			"method" => "zoomfade",
+			],
+
+		// パラメータ指定型トランジション定義例
+		// %distance で距離制御可能
+		"showslide" => %[
+		time: 1000,
+		showaction: %[ left : %[ handler:"MoveAction", start:"&@+${distance}", value:"@", distance:50 ]	],
+		hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"&@-${distance}", distance:50 ]	]
+			],
+
+		"show_fade" => %[
+		time: 300,
+		showaction: %[],
+		hideaction: %[],
+			],
+
+		"show_big" => %[
+		time: 300,
+		showaction: %[ zoom : %[ handler:"MoveAction", start:110, value:100, accel:1 ]],
+		hideaction: %[ zoom : %[ handler:"MoveAction", start:"@", value:110, accel:-1 ]]
+			],
+
+		"show_small" => %[
+		time: 300,
+		showaction: %[ zoom : %[ handler:"MoveAction", start:90, value:100, accel:1 ]],
+		hideaction: %[ zoom : %[ handler:"MoveAction", start:"@", value:90, accel:-1 ]]
+			],
+
+		"show_logo" => %[
+		time: 300,
+		showaction: %[ zoom : %[ handler:"MoveAction", start:150, value:100, accel:1 ]],
+		hideaction: %[ zoom : %[ handler:"MoveAction", start:"@", value:150, accel:-1 ]]
+			],
+
+		"show_zoom_sm" => %[
+		time: 300,
+		showaction: %[ zoom : %[ handler:"MoveAction", start:106, value:100, accel:1 ]],
+		hideaction: %[ zoom : %[ handler:"MoveAction", start:"@", value:106, accel:-1 ]]
+			],
+
+		"show_sm_zoom" => %[
+		time: 300,
+		showaction: %[ zoom : %[ handler:"MoveAction", start:96, value:100, accel:-1 ]],
+		hideaction: %[ zoom : %[ handler:"MoveAction", start:"@", value:96, accel:1 ]]
+			],
+
+		"show_rig400sec" => %[
+		time: 400,
+		showaction: %[ left : %[ handler:"MoveAction", start:"@+50", value:"@" ]	],
+		hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"@+50" ]	],
+			],
+
+		"show_rig" => %[
+		time: 300,
+		showaction: %[ left : %[ handler:"MoveAction", start:"@+50", value:"@" ]	],
+		hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"@+50" ]	],
+			],
+
+		"sonic_rig" => %[
+		time: 200,
+		showaction: %[ left : %[ handler:"MoveAction", start:"@+70", value:"@" ]	],
+		hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"@+70" ]	],
+			],
+
+		"show_lef" => %[
+		time: 300,
+		showaction: %[ left : %[ handler:"MoveAction", start:"@-50", value:"@" ]	],
+		hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"@-50" ]	],
+			],
+
+		"show_lef400sec" => %[
+		time: 400,
+		showaction: %[ left : %[ handler:"MoveAction", start:"@-50", value:"@" ]	],
+		hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"@-50" ]	],
+			],
+
+		"sonic_lef" => %[
+		time: 200,
+		showaction: %[ left : %[ handler:"MoveAction", start:"@-70", value:"@" ]	],
+		hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"@-70" ]	],
+			],
+
+		"show_top" => %[
+		time: 300,
+		showaction: %[ top : %[ handler:"MoveAction", start:"@+50", value:"@" , accel:-1]	],
+		hideaction: %[ top : %[ handler:"MoveAction", start:"@", value:"@+50" , accel:1]	]
+			],
+
+		"show_toper" => %[
+		time: 300,
+		showaction: %[ top : %[ handler:"MoveAction", start:"@+150", value:"@" , accel:-1]	],
+		hideaction: %[ top : %[ handler:"MoveAction", start:"@", value:"@+150" , accel:1]	]
+			],
+
+		"show_top500sec" => %[
+		time: 500,
+		showaction: %[ top : %[ handler:"MoveAction", start:"@+150", value:"@" , accel:-1]	],
+		hideaction: %[ top : %[ handler:"MoveAction", start:"@", value:"@+150" , accel:1]	]
+			],
+
+		"show_und" => %[
+		time: 300,
+		showaction: %[ top : %[ handler:"MoveAction", start:"@-50", value:"@" , accel:-1]	],
+		hideaction: %[ top : %[ handler:"MoveAction", start:"@", value:"@-50" , accel:1]	]
+			],
+
+		"show_under" => %[
+		time: 300,
+		showaction: %[ top : %[ handler:"MoveAction", start:"@-150", value:"@" , accel:-1]	],
+		hideaction: %[ top : %[ handler:"MoveAction", start:"@", value:"@-150" , accel:1]	]
+			],
+
+		"show_und500sec" => %[
+		time: 500,
+		showaction: %[ top : %[ handler:"MoveAction", start:"@-150", value:"@" , accel:-1]	],
+		hideaction: %[ top : %[ handler:"MoveAction", start:"@", value:"@-150" , accel:1]	]
+			],
+
+		"cutin_lef" => %[
+		time: 500,
+		showaction: %[ left : %[ handler:"MoveAction", start:"@-70", value:"@" ]	],
+		hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"@-70" ]	],
+			],
+		"cutin_rig" => %[
+		time: 500,
+		showaction: %[ left : %[ handler:"MoveAction", start:"@+70", value:"@" ]	],
+		hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"@+70" ]	],
+			],
+		"cutin_und" => %[
+		time: 500,
+		showaction: %[ top : %[ handler:"MoveAction", start:"@-70", value:"@" ]	],
+		hideaction: %[ top : %[ handler:"MoveAction", start:"@", value:"@-70" ]	]
+			],
+		"cutin_top" => %[
+		time: 500,
+		showaction: %[ top : %[ handler:"MoveAction", start:"@+70", value:"@" ]	],
+		hideaction: %[ top : %[ handler:"MoveAction", start:"@", value:"@+70" ]	]
+			],
+
+
+
+		// クロスフェードとアクションを複合したもの
+		// 一応他の method でも動作しますが動作的にわかりにくくなるのでクロスフェードと合わせるのが無難です
+		// 全体トランジションの場合は全てのレイヤに対して作用します
+		"右クロス" => %[
+		time: 300,
+		method: "",
+		showaction: %[ left : %[ handler:"MoveAction", start:"@-50", value:"@" ]	],
+		hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"@+50" ]	],
+			],
+
+		"左クロス" => %[
+		time: 300,
+		method: "",
+		showaction: %[ left : %[ handler:"MoveAction", start:"@+50", value:"@" ]	],
+		hideaction: %[ left : %[ handler:"MoveAction", start:"@", value:"@-50" ]	],
+			],
+		
+		// ------------------------------------------------------------------------
+		// デフォルトトランジション定義
+		// 標準レイヤの未指定時トランジション指定です。レイヤ側でオーバライドできます
+		// ------------------------------------------------------------------------
+		
+		"dispTrans"=> %[ "time" =>  500, "method" => "", "sync" => true ],       // 表示・消去時
+		"trans"    => %[ "time" => 1000, "method" => "", "sync" => true ],       // 画像変更時
+		"modifyTrans"   => %[ "time" => 1000, "method" => "", "sync" => true ],  // 画像加工時
+		"positionTrans" => %[ "time" =>  300, "method" => "", "sync" => true ],  // 位置変更時
+
+		// ------------------------------------------------------------------------
+		// 舞台変更デフォルトトランジション定義
+		// 舞台変更のデフォルトトランジションは全体に影響するので共通定義となります
+		// ------------------------------------------------------------------------
+		
+		"timeTrans"     => %[ "time" => 1000, "method" => "", "sync" => true ],  // 時間変更
+		"stageTrans"    => %[ "time" => 1000, "method" => "", "sync" => true ],  // 舞台変更
+
+		"faceTrans", %[ "time" =>  300, "method" => "", "sync", false],
+
+		// ------------------------------------------------------------------------
+		// システム画面遷移用定義
+		"sysopen"  => %[ time:300, method:"universal", rule:"systrans_rule", vague:4, accel:SysTransEffectOpen  ],
+		"sysclose" => %[ time:300, method:"universal", rule:"systrans_rev",  vague:4, accel:SysTransEffectClose ],
+		"syspage"  => %[ time:300, method:"crossfade" ],
+
+		],
+		
+	// fade の規定値:全体用 (未定義の場合埋め込み値 500)
+	"fadeValue" => 1000,
+
+	// ------------------------------------------------------------------
+	// 音楽更新パラメータ
+	// ------------------------------------------------------------------
+
+	"soundTransitions" => %[
+		"start" => %[
+			"time" => 0,
+			],
+		"normal" => %[
+			"time" => 1000,
+			],
+		"quick" => %[
+			"time" => 500,
+			],
+		],
+	
+	// ------------------------------------------------------------------
+	// オブジェクトのクラス定義の列挙
+	// 名前は正規表現指定可能です
+	// ------------------------------------------------------------------
+
+	"classList" => [
+		// 標準レイヤ用(予約名)
+		%[
+			"name", "layer",  // クラス名
+			"type", "dlayer", // クラス型  layer:通常レイヤ dlayer:d3dレイヤ music:音楽 sound:効果音
+
+			// フラグ指定
+			// FLAG_EVENT     イベント絵：舞台変更時に自動消去
+			// FLAG_STAGE     背景      ：舞台変更時に影響
+			// FLAG_STAND     立ち絵    ：立ち絵消去指定、レイアウト指定の対象になる
+			// FLAG_NOSTOP    リセット処理時にstopactionしない
+			// FLAG_NOINIT    画像ロード時に初期化しない
+			// FLAG_NORESET   画像ロード時にリセットしない
+			// FLAG_INITPOS   画像ロード時に座標を初期化する
+			// FLAG_INITCLIP  画像ロード時にクリッピングを初期化する
+			// FLAG_ENVCOLOR    環境の加工設定を反映する
+			// FLAG_TIMECOLOR   舞台の時間色加工指定を反映する
+			// FLAG_DISPFRONT   表示時に自動front処理を行う
+			// FLAG_NODISPAUTO  画像更新時や配置指定時にの自動表示の無効化
+			// FLAG_NEWFRONT    初回表示時およびレベル変更時に自動front処理を行う※旧来互換
+			// FLAG_ONLYIMAGE   初期化時など以外は画像コマンドのみうけつける
+			// 未指定時は FLAG_NEWFRONT | FLAG_INITPOS | FLAG_INITCLIP;
+			
+			"flag", FLAG_DISPFRONT, // |FLAG_STAND,
+
+			// モード指定
+			//"shiftMode", true, // カメラシフトに反応するかどうか
+			//"cameraMode",true, // カメラ移動に反応するかどうか
+			"zorderZoom", false, // Z位置に応じてズーム補正する (cameraMode=true の場合に動作) 
+			"zorderMove", false, // Z位置に応じて移動補正する (cameraMode=trueの場合の動作)
+			//"msgwinMode", false, // メッセージ窓に所属している扱い
+			//"rightHandMode", false, // 座標系の左手系/右手系の指定。左手なら上が正
+			
+			"initProps", %[],  // 生成時に初期化されるプロパティ指定
+			"resetProps", %[], // リセット時に初期化されるプロパティ指定
+
+			//"create", false, // 空タグでも生成する指定
+			//"exclusive", false, // 排他指定・同じ場所に同時に表示できるのは1つだけになる
+
+			//"absoluteBase" , 0, // 表示absolute のベース値
+			
+			// 自動トランジション指定
+			"fadeValue", 300, // "fade" パラメータ指定時の標準フェード時間
+			"dispTrans", %[ "time" =>  300, "method" => "", "sync" => true ], // 表示/消去時のトランジション
+			//"xxxxTrans",%[ "time" =>  300, "method" => "" ], // setOptionの帰り値(dress とか pose など)に対応したトランジション指定
+			"trans",     %[ "time" =>  300, "method" => "" ], // 標準のトランジション
+
+			// イベント処理
+			//"onDisp", function(disp, elm) {}, // 表示状態変更時のイベント・該当オブジェクトのコンテキストで動作
+			//"onSetOptions", function(cmd, value, elm) {}, // 画像オプション変更時のイベント
+			//"onPosition", function(posName, posInfo, elm) {}, // position コマンド実行時イベント
+			//"onImageUpdate", function(elm){}, // 画像がなにかしらの理由で更新された場合のイベント
+			
+			// 画像更新時の自動アクション
+			// ファイルロード時および画像オプションで更新された時に自動実行される
+			//"xxxxAction", setOptionの帰り値(dressとかposeなど)に対応した自動アクション名
+			//"xxxxActionParam", パラメータ
+			//"imageAction", ↑のフォールバック指定
+			//"imageActionParam", void; // パラメータ setAction(imageAction, imageActionParam,
+
+//			"defaultCenter", 1,
+//			"defaultOrigin", 1,
+			"initOptions", %[ "center", 1 ],
+			"initProps",   %[ "origin", 1 ],
+
+			// 正規表現マッチによるコマンド追加
+			"matchList", [
+				%[
+					// 正規表現または文字列でコマンド名を指定
+					"name", /^XXXXXXXXX$/,
+					// 呼び出される関数。該当オブジェクトのコンテキストで実行される
+					// cmd=param  elm は全体パラメータ
+					"func", function(cmd,param,elm) { /* do some command */ }
+					],
+				],
+		],
+		// zorderとカメラに反応するレイヤ
+		%[
+			"name", "zlayer",
+			"type", "dlayer",
+			"zorderZoom",true,
+			"zorderMove",true,
+			"cameraMode",true,
+		],
+		// キャラクタ用(予約名)
+		%[
+			"name","character",
+			"type","dlayer",
+			"flag", FLAG_STAND | FLAG_ENVCOLOR | FLAG_TIMECOLOR | FLAG_DISPFRONT | FLAG_NOHIDECLEAR,
+			"fadeValue", 300,
+			"dispTrans", %[ "time" =>  300, "method" => "", "sync" => true ], // 表示/消去時のトランジション
+			"trans",     %[ "time" =>  300, "method" => "" ], // 標準のトランジション
+			"dressTrans",%[ "time" =>  300, "method" => "" ], // 服装変更時
+			"poseTrans", %[ "time" =>  300, "method" => "" ], // ポーズ変更時
+			"faceTrans", %[ "time" =>  300, "method" => "" ], // 表情変更時
+			"initProps", %["originx", 0, "originy", 0, /*"clip", """*/], // 初期指定 msgwin位置での指定状態を復帰させるために定義
+			"zorderZoom",true,
+			"zorderMove",true,
+			"cameraMode",true,
+			//"imageAction", createAutoEyeLipFlipAction, // 自動目ぱち口パク制御追加
+			// 特殊マッチングコマンド定義
+			"initProps", %["originx", 0, "originy", 0, /*"clip", """*/], // 初期指定 msgwin位置での指定状態を復帰させるために定義
+			"matchList", [
+				%[
+					"name", /^[0-9][0-9][0-9][a-z]?$/,
+					"func", function(cmd,param,elm) { doImageCommand("pose", cmd.substring(0,1), elm); doImageCommand("face", cmd.substring(1), elm); }
+					],
+				],
+		],
+		%[
+			// 立ち絵のみ表示用継承
+			"name",   "bu",
+			"parent", "character",
+		],
+
+		%[
+			// 時間色反映がかからないキャラ
+			"name","character2",
+			"parent", "character",
+			"flag", FLAG_STAND | FLAG_ENVCOLOR | FLAG_DISPFRONT | FLAG_NOHIDECLEAR,
+		],
+		// 顔窓用(予約名)
+		// キャラクタ用(顔窓専用モード)
+		%[
+			"name","msgwin",
+			"type","layer",
+			"flag", FLAG_STAND | FLAG_ONLYIMAGE | FLAG_NOHIDECLEAR, // コマンドに反応しない
+			//"flag", FLAG_STAND,
+			"shiftMode",false,
+			"zorderZoom", false,
+			"zorderMove", false,
+			"cameraMode", false,
+			"msgwinMode", true, // メッセージ窓処理処理に反応する
+			"fadeValue", 300,
+			"dispTrans", "notrans", // 表示/消去時のトランジション
+			"trans",     %[ "time" =>  300, "method" => "" ], // 標準のトランジション
+			"dressTrans",%[ "time" =>  300, "method" => "" ], // 服装変更時
+			"poseTrans", %[ "time" =>  300, "method" => "" ], // ポーズ変更時
+			"faceTrans", %[ "time" =>  300, "method" => "" ], // 表情変更時
+			"initProps", %["originx", -480, "originy", 320, /*"clip", "facemask"*/],
+			"resetProps", %["xpos",0, "ypos", 0, "zpos", 0, "zoom", 90 ],
+			"exclusive",true, // 排他指定
+			"absoluteBase" , 1000001, // メッセージ窓の上
+			// 特殊マッチングコマンド定義
+			"matchList", [
+				%[
+					"name", /^[0-9][0-9][0-9][a-z]?$/,
+					"func", function(cmd,param,elm) { doImageCommand("pose", cmd.substring(0,1), elm); doImageCommand("face", cmd.substring(1), elm); }
+					],
+				],
+		    "filePrefix", "face"
+			
+			],
+		// 背景用
+		%[
+			"name","stage",
+			"type","dlayer",
+			"flag", FLAG_STAGE | FLAG_INITPOS | FLAG_ENVCOLOR,
+			"zorderZoom",false,
+			"zorderMove",true,
+			"cameraMode",true,
+		],
+		// stageと同様の指定だが FALG_STAGE が無いので背景指定に自動追従はしないレイヤ
+		%[
+			"name","stage2",
+			"parent", "stage",
+			"flag", FLAG_INITPOS | FLAG_ENVCOLOR,
+		],
+		%[
+			"name","event",
+			"type","layer",
+			"flag", FLAG_EVENT | FLAG_INITPOS | FLAG_ENVCOLOR,
+			"zorderZoom", false,
+			"zorderMove", false,
+			"cameraMode",true,
+			"dispTrans", "500sec",       // イベント絵表示のデフォルト
+			"trans"    , "300secNosync", // イベント絵変更のデフォルト
+		],
+		// eventと同様の指定だが FALG_EVENT が無いので背景指定に自動追従はしないレイヤ
+		%[
+			"name","event2",
+			"parent","event",
+			"flag", FLAG_INITPOS,
+		],
+		// 固定用
+		%[
+			"name","fixcaption",
+			"parent","event2",
+			"cameraMode",false,
+			"dispTrans", "",
+			"trans"    , "",
+		],
+		// エフェクト用
+		%[
+			"name","effect",
+			"type","layer",
+			"flag", 0,
+			"initProps", %["level", 5],
+			"dispTrans", %[ "time" => 500, "method" => "" ], // 表示/消去時のトランジション
+			"trans",     %[ "time" => 500, "method" => "" ], // 標準のトランジション
+			"create", true, // 空タグでも生成する指定
+		],
+		%[
+			"name","effect2",
+			"type","layer",
+			"flag", 0,
+			"cameraMode", true,
+		],
+		// パーティクル用
+		%[
+			"name","particle",
+			"type","layer",
+			"flag", 0,
+			"zorderZoom", false,
+			"zorderMove", false,
+			"dispTrans","notrans",
+			"trans","notrans",
+			"create", true, // 空タグでも生成する指定
+		],
+		// 最前面での動画再生用
+		%[
+			"name","movie",
+			"type","layer",
+			"flag", 0,
+			"zorderZoom", false,
+			"zorderMove", false,
+			"cameraMode",true,
+//			"initProps", %["level", 5],
+			"dispTrans","normal",
+			"trans","normal",
+//			"defaultCenter", 1,
+//			"defaultOrigin", 1,
+			"initOptions", %[ "center", 1 ],
+			"initProps",   %[ "origin", 1 ],
+		],
+		// BGM用
+		%[
+			"name","bgm",
+			"type","music",
+			"volumeName", "downbgm",   // 参照ボリューム名 ※音量ダウンに追従
+			"eventFlag", true,
+			"loop",true,
+			"playTrans", "start",  // 再生時のトランジション
+			"stopTrans", "normal",// 停止時のトランジション
+			"trans", "normal",    // 切り替え時のトランジション
+			"saveFlag", "true",   // 再生記録をするかどうか
+			],
+		// ループ効果音用
+		%[
+			"name","loopse",
+			"type","music",
+			"volumeName", "se",   // 参照ボリューム名
+			"loop",true,
+			"playTrans", "start", // 再生時のトランジション
+			"stopTrans", "normal",// 停止時のトランジション
+			"trans", "normal",    // 切り替え時のトランジション
+			],
+		// 通常効果音用
+		%[
+			"name","se",
+			"type","sound",
+			"track",8
+		],
+
+		// BGV用
+		%[
+			"name","bgv",
+			"type","sound",
+			"volumeName","bgv",  // 参照ボリューム名
+			//"volume",50,         // ボリューム補正値
+			"track", 5           // トラック数
+		],
+		%[
+			"name", "endsong",
+			"type", "music",
+			"volumeName", "movieaudio",   // 参照ボリューム名 ※音量ダウンに追従
+			"loop", false,
+			"saveFlag", true,
+			],
+		
+		// H効果音クラス
+		%[
+			"name","hse",          // 名前
+			"type","sound",       // クラス種別
+			"volumeName", "se",   // 参照ボリューム名 ※kag.hse{volume,enable}はcustomで存在
+			"track", 5            // トラック数
+		],
+		// Hループ効果音クラス
+		%[
+			"name","hloopse",
+			"parent", "loopse",
+			"volumeName", "se",   // 参照ボリューム名
+		],
+
+		
+		// ------------------------------
+		// 座標系違いの定義
+		// ------------------------------
+
+		// 原点は画面中央・回転中心はは左上のレイヤ
+		// parent 指定で既存の定義を元にすることができます。
+		// ※parentはかならず先に記述しておく必要があります
+		%[
+			"name", "centerlayer",
+			"parent", "layer",
+//			"defaultCenter", 9,
+//			"defaultOrigin", 9,
+			"initOptions", %[ "center", 9 ],
+			"initProps",   %[ "origin", 9 ],
+			"flag", 0,
+			"trans",     %[ "time" =>  300, "method" => "", "nosync", true ], // 標準のトランジション
+		],
+		
+		// 左上原点のレイヤ例
+		%[
+			"name","base",
+			"parent","layer",
+			"cameraMode",true,
+//			"defaultCenter", 1,
+//			"defaultOrigin", 1,
+			"initOptions", %[ "center", 1 ],
+			"initProps",   %[ "origin", 1 ],
+		],
+
+		// 単発指定キャラレイヤ例
+		%[
+			"name","clayer",
+			"type","layer",
+//			"flag", FLAG_STAND | FLAG_ENVCOLOR | FLAG_TIMECOLOR,
+			"flag", FLAG_STAND,
+			"zorderZoom", false,
+			"zorderMove", false,
+			"cameraMode",true,
+//			"defaultCenter", 1,
+//			"defaultOrigin", 1,
+			"initOptions", %[ "center", 1 ],
+			"initProps",   %[ "origin", 1 ],
+			"fadeValue", 300,
+			"dispTrans", %[ "time" =>  300, "method" => "", "sync" => true ], // 表示/消去時のトランジション
+			"trans",     %[ "time" =>  300, "method" => "" ], // 標準のトランジション
+		],
+
+		// ------------------------------
+		// システム演出用
+		%[
+			"name","watermark",
+			"type","layer",
+			"flag", 0,
+			"shiftMode",false,
+			"zorderZoom",false,
+			"zorderMove", false,
+			"cameraMode", false,
+			"dispTrans","notrans",
+			"trans","notrans",
+			"absoluteBase" , 1001001, // メッセージ窓の上
+		],
+		// ------------------------------
+		// 立ち絵鑑賞背景（INITPOSなしstage）
+		%[
+			"name", "exchview_bg",
+			"parent","stage",
+			"flag", FLAG_STAGE | /*FLAG_INITPOS |*/ FLAG_ENVCOLOR,
+			"zorderZoom",false,
+			"zorderMove",false,
+			"cameraMode",false,
+			"resetProps", %[ "xpos", 0, "ypos", 0 ], // reset時に座標を初期化する仕組みに変更
+		],
+		// ------------------------------
+		// システム用
+		%[
+			"name","system",
+			"type","layer",
+			"flag", 0,
+			"shiftMode",  false,
+			"zorderZoom", false,
+			"zorderMove", false,
+			"cameraMode", false,
+			],
+
+		// チャットスクリーン
+		%[
+			"name","phoneclass",
+			"parent", "system",
+			"dispTrans","normal",
+			"trans","normal",
+			"absoluteBase" , 1000000-10, // メッセージ窓の下
+		],
+	],
+
+	// ------------------------------------------------------------------
+	// オブジェクト名前定義
+	// 名前に合致する未定義タグがあった場合は、
+	// 指定された初期化パラメータでオブジェクトが生成されます
+	// 名前は正規表現指定可能です
+	// ------------------------------------------------------------------
+	"objectList" => [
+		// stageは背景用レイヤ
+		%[
+			"name", "stage",
+			"class", "stage",
+			"init",  ["file", "base.stage", "zorder", 30, "hide", true], // level0より少し下
+		],
+		// 舞台複数処理用・一時利用用なのでロックさせない
+		%[
+			"name", "stage2",
+			"class", "stage2",
+			"init",  ["file", "base.stage", "zorder", 52, "hide", true], // level0より少し下
+		],
+		%[
+			"name", "stage3",
+			"class", "stage2",
+			"init",  ["file", "base.stage", "zorder", 52, "hide", true], // level0より少し下
+		],
+		%[
+			"name", "stage4",
+			"class", "stage2",
+			"init",  ["file", "base.stage", "zorder", 52, "hide", true], // level0より少し下
+		],
+		%[
+			"name", "ev",
+			"class", "event",
+			"init", ["zorder", 250], // level4相当
+		],
+		%[
+			"name", "ev2",
+			"class", "event2",
+			"init", ["zorder", 250], // level4相当
+		],
+
+		%[
+			"name", "effect_battle1",
+			"class", "effect2",
+			"init", ["zorder", 40],
+		],
+		%[
+			"name", "ef_movie",
+			"class", "event",
+			"init", ["zorder", 250],
+		],
+		%[
+			"name", "bg_voice",
+			"class", "event",
+			"init", ["zorder", 250],
+		],
+
+		// アイキャッチ用
+		%[
+			"name", /^ec_layer/,
+			"class", "fixcaption",
+		],
+		%[
+			"name", "ec_motion",
+			"class", "fixcaption",
+			"init", ["zorder", 300],
+		],
+
+		// SD絵用レイヤ
+		%[
+			"name", "sd",
+			"class", "centerlayer",
+			"init", ["zorder", 300], // level5相当
+		],
+/*		%[
+			// 常に単色で初期化されるレイヤ
+			"name", "ホワイトアウト",
+			"class", "effect",
+			"init",  ["file", "color,0xffffffff"],      // 初期化パラメータ
+		], */
+		%[
+			"name", "bgm",
+			"lock", true,            // ロック対象
+			"class", "bgm",
+		],
+		%[
+			"name", "se",
+			"class", "se",
+		],
+		%[
+			"name", "se2",
+			"class", "se",
+		],
+		%[
+			"name", /^lse/,
+			"class", "loopse",
+		],
+		%[
+			"name",  "endsong",
+			"class", "endsong",
+		],
+		%[
+			"name", "bgv",
+			"class", "bgv",
+		],
+		%[
+			"name", "base",
+			"class", "base",
+			"init", ["zorder", 30],
+		],
+		%[
+			"name", "face",
+			"class", "msgwin",
+		],
+		/*
+		%[
+			"name", /^ch/,
+			"class", "clayer",
+			"init", ["zorder", 100],
+		],
+		 */
+		%[
+			"name", "white",
+			"class", "centerlayer",
+			"init", ["zorder", 250, "storage", "画面_白"], // level4相当
+		],
+		%[
+			"name", "refrain",
+			"class", "centerlayer",
+			"init", ["zorder", 350, "storage", "回想枠"], // level6ぐらいかしら？
+		],
+		%[
+			"name", "peeping",
+			"class", "centerlayer",
+			"init", ["zorder", 350, "storage", "覗き枠"], // level6ぐらいかしら？
+		],
+		%[
+			"name", "peeping_y",
+			"class", "centerlayer",
+			"init", ["zorder", 350, "storage", "覗き枠横"], // level6ぐらいかしら？
+		],
+		%[
+			"name", "concentration",
+			"class", "centerlayer",
+			"init", ["zorder", 350, "storage", "集中線"], // level6ぐらいかしら？
+		],
+		%[
+			"name", "bar_top",
+			"class", "centerlayer",
+			"init", ["zorder", 55, "storage", "bar1"], // level1ぐらいかしら？（背景以上＜レイヤ＜立ち絵）
+		],
+		%[
+			"name", "bar_und",
+			"class", "centerlayer",
+			"init", ["zorder", 55, "storage", "bar2"], // level1ぐらいかしら？（背景以上＜レイヤ＜立ち絵）
+		],
+
+		//--------------------------------------------------------------
+		// タイトル画面用
+		%[
+			"name", "title_bg",
+			"class", "system",
+			"init", [ "level",1, "file","title_bg" ],
+		],
+		%[
+			"name", "title_logo",
+			"class", "system",
+			"init", [ "level",2, "file","title_logo" ],
+		],
+		// 立ち絵観賞用
+		%[
+			"name", "exchvbg",
+			"class", "exchview_bg",
+			"init",  ["file", "base.stage", "zorder", 30], // level0より少し下
+		],
+		%[
+			"name", "exchview_watermark",
+			"class", "watermark",
+			"init", [ "file","extra_watermark" ],
+		],
+		%[
+			"name", "exchview_chcursor",
+			"class", "character",
+		],
+		// システム用
+		%[
+			"name", "syslay",
+			"class","system",
+		],
+		%[
+			"name", /^syslay_/,
+			"class","system",
+		],
+		// チャット用
+		%[
+			"name", SystemConfig.phoneChatEnvObjectName,
+			"class", "phoneclass",
+			"init", ["file", SystemConfig.phoneChatBaseImageFile, "script", "%s,%d,%d".sprintf(SystemConfig.phoneChatImageScript, kag.scWidth, kag.scHeight)],
+		],
+	],
+	// チャット用加工
+	"scripts" => %[
+		SystemConfig.phoneChatImageScript => global.PilePhoneChatScreen incontextof null,
+		],
+
+	// ------------------------------------------------------------------
+	// タグ名自動マッチ処理定義
+	// 名前に合致する未定義タグがあった場合は
+	// 指定したオブジェクトに対して storage= コマンドとして処理されます
+	// 該当オブジェクトが無い場合は自動生成されます
+	// 名前は正規表現指定可能です
+	// ------------------------------------------------------------------
+	"filenameList" => [
+		%[
+			"name", /^bgm.+/,
+			"object", "bgm",
+		],
+		%[
+			"name", /^se.+/,
+			"object", "se",
+		],
+		%[
+			"name", /^ev.+/,
+			"object", "ev",
+		],
+		%[
+			"name", /^bg[0-9]/,
+			"object", "bg",
+		],
+		%[
+			"name", /^sd.+/,
+			"object", "sd",
+		],
+	],
+
+	// ------------------------------------------------------------------
+	// モーション画像の単発名定義
+	// storage:画像名
+	// colorkey: カラーキー指定
+	// asdfile: asdfile を明示指定
+	// tile: タイル画像指定 width,height も併用
+	// width,height,color 指定色での塗りつぶし画像
+	// その他の値ロード時の追加オプションパラメータとして指定されます
+	// ------------------------------------------------------------------
+	"motions" => %[
+
+		// 単色画像定義
+		"lay_white" => %[
+			"width", 1280,
+			"height", 720,
+			"color", 0xffffff,
+			],
+		"lay_black" => %[
+			"width", 1280,
+			"height", 720,
+			"color", 0x000000,
+			],
+		"lay_red" => %[
+			"width", 1280,
+			"height", 720,
+			"color", 0xff0000,
+			],
+
+		"amvfile" => %[
+			"fliptype", "amovie",
+			"loop", true,
+			"storage", "alphamovie.amv",
+			"width", 1280,
+			"height", 720
+			],
+
+		"ノイズ" => %[
+			"noise",100, // interval
+			"width",1920,
+			"height",1080,
+			//"resolution",50, // 解像度半分指定すると実サイズ2倍に
+			],
+		
+		"title_bg0",     %[ storage:"title_bg.mtn",  chara:"title_bg",  motion:"title",     noseparate:false, altStorage:"title_bg0_logo.pbd", variables:"%[language:_uilangnum]" ],
+		"title_bg1",     %[ storage:"title_bg2.mtn", chara:"title_bg2", motion:"title",     noseparate:false, altStorage:"title_bg1_logo.pbd", variables:"%[language:_uilangnum]" ],
+		"title_bg2",     %[ storage:"title_bg3.mtn", chara:"title_bg3", motion:"title_0",   noseparate:false, altStorage:"title_bg2_logo.pbd", variables:"%[language:_uilangnum]" ],
+		"title_bg3",     %[ storage:"title_bg3.mtn", chara:"title_bg3", motion:"title_1",   noseparate:false, altStorage:"title_bg3_logo.pbd", variables:"%[language:_uilangnum]" ],
+		"title_bg4",     %[ storage:"title_bg3.mtn", chara:"title_bg3", motion:"title_2",   noseparate:false, altStorage:"title_bg4_logo.pbd", variables:"%[language:_uilangnum]" ],
+		"title_bg5",     %[ storage:"title_bg3.mtn", chara:"title_bg3", motion:"title_3",   noseparate:false, altStorage:"title_bg5_logo.pbd", variables:"%[language:_uilangnum]" ],
+		"title_bg6",     %[ storage:"title_bg3.mtn", chara:"title_bg3", motion:"title_4",   noseparate:false, altStorage:"title_bg6_logo.pbd", variables:"%[language:_uilangnum]" ],
+		"title_bg7",     %[ storage:"title_bg3.mtn", chara:"title_bg3", motion:"title_5",   noseparate:false, altStorage:"title_bg7_logo.pbd", variables:"%[language:_uilangnum]" ],
+		"title_bg8",     %[ storage:"title_bg4.mtn", chara:"title_bg4", motion:"title",     noseparate:false, altStorage:"title_bg8_logo.pbd", variables:"%[language:_uilangnum]" ],
+//		"title_bg", %[ storage:"title_bg.mtn", chara:"title_bg", motion:"title", noseparate:true , resolution:200],
+
+//		"sealoop", %[ storage:"sea_loop.amv",  fliptype:"amovie", loop:true, width:1280, height:360 ],
+//		"monoloop_movie",  %[ storage:"mono_loop",  fliptype:"movie", loop:true ],
+//		"monoloop_motion", %[ storage:"mono_loop.psb",  chara:"mono_loop", motion:"mono_loop" ],
+
+//		"sd001aa", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001AA", noseparate:true , resolution:133.33],
+//		"sd102ab2", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102AB2", altStorage:"SD102AB", noseparate:false , resolution:133.33],
+//		"sd102be", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102BE", noseparate:false , resolution:133.33, variables:"%[language:_meslangnum]" ],
+
+		"アイキャッチ乃愛show",   %[ storage:"eyecatch1.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+		"アイキャッチ天音show",   %[ storage:"eyecatch2.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+		"アイキャッチ来海show",   %[ storage:"eyecatch3.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+		"アイキャッチかぐ耶show", %[ storage:"eyecatch4.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+		"アイキャッチオリエshow", %[ storage:"eyecatch5.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+		"アイキャッチ風実花show", %[ storage:"eyecatch6.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+
+		"アイキャッチ乃愛open"   => makeEyeCatchRandom("noa", 6, "eyecatch1.mtn"),
+		"アイキャッチ天音open"   => makeEyeCatchRandom("ama", 6, "eyecatch2.mtn"),
+		"アイキャッチ来海open"   => makeEyeCatchRandom("kur", 6, "eyecatch3.mtn"),
+		"アイキャッチかぐ耶open" => makeEyeCatchRandom("kag", 6, "eyecatch4.mtn"),
+		"アイキャッチオリエopen" => makeEyeCatchRandom("ori", 4, "eyecatch5.mtn"),
+		"アイキャッチ風実花open" => makeEyeCatchRandom("fum", 4, "eyecatch6.mtn"),
+
+		"アイキャッチ乃愛rand"   => makeEyeCatchRandom("noa", 6),
+		"アイキャッチ天音rand"   => makeEyeCatchRandom("ama", 6),
+		"アイキャッチ来海rand"   => makeEyeCatchRandom("kur", 6),
+		"アイキャッチかぐ耶rand" => makeEyeCatchRandom("kag", 6),
+		"アイキャッチオリエrand" => makeEyeCatchRandom("ori", 4),
+		"アイキャッチ風実花rand" => makeEyeCatchRandom("fum", 4),
+
+		// 鑑賞画面用
+		"eyecatch_noa0", %[ altStorage:"as_eyecatch_noa0", storage:"eyecatch1.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+		"eyecatch_noa1", %[ altStorage:"as_eyecatch_noa1", storage:"eyecatch1.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:1]" ],
+		"eyecatch_noa2", %[ altStorage:"as_eyecatch_noa2", storage:"eyecatch1.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:2]" ],
+		"eyecatch_noa3", %[ altStorage:"as_eyecatch_noa3", storage:"eyecatch1.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:3]" ],
+		"eyecatch_noa4", %[ altStorage:"as_eyecatch_noa4", storage:"eyecatch1.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:4]" ],
+		"eyecatch_noa5", %[ altStorage:"as_eyecatch_noa5", storage:"eyecatch1.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:5]" ],
+		"eyecatch_noa6", %[ altStorage:"as_eyecatch_noa6", storage:"eyecatch1.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:6]" ],
+
+		"eyecatch_ama0", %[ altStorage:"as_eyecatch_ama0", storage:"eyecatch2.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+		"eyecatch_ama1", %[ altStorage:"as_eyecatch_ama1", storage:"eyecatch2.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:1]" ],
+		"eyecatch_ama2", %[ altStorage:"as_eyecatch_ama2", storage:"eyecatch2.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:2]" ],
+		"eyecatch_ama3", %[ altStorage:"as_eyecatch_ama3", storage:"eyecatch2.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:3]" ],
+		"eyecatch_ama4", %[ altStorage:"as_eyecatch_ama4", storage:"eyecatch2.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:4]" ],
+		"eyecatch_ama5", %[ altStorage:"as_eyecatch_ama5", storage:"eyecatch2.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:5]" ],
+		"eyecatch_ama6", %[ altStorage:"as_eyecatch_ama6", storage:"eyecatch2.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:6]" ],
+
+		"eyecatch_kur0", %[ altStorage:"as_eyecatch_kur0", storage:"eyecatch3.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+		"eyecatch_kur1", %[ altStorage:"as_eyecatch_kur1", storage:"eyecatch3.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:1]" ],
+		"eyecatch_kur2", %[ altStorage:"as_eyecatch_kur2", storage:"eyecatch3.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:2]" ],
+		"eyecatch_kur3", %[ altStorage:"as_eyecatch_kur3", storage:"eyecatch3.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:3]" ],
+		"eyecatch_kur4", %[ altStorage:"as_eyecatch_kur4", storage:"eyecatch3.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:4]" ],
+		"eyecatch_kur5", %[ altStorage:"as_eyecatch_kur5", storage:"eyecatch3.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:5]" ],
+		"eyecatch_kur6", %[ altStorage:"as_eyecatch_kur6", storage:"eyecatch3.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:6]" ],
+
+		"eyecatch_kag0", %[ altStorage:"as_eyecatch_kag0", storage:"eyecatch4.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+		"eyecatch_kag1", %[ altStorage:"as_eyecatch_kag1", storage:"eyecatch4.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:1]" ],
+		"eyecatch_kag2", %[ altStorage:"as_eyecatch_kag2", storage:"eyecatch4.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:2]" ],
+		"eyecatch_kag3", %[ altStorage:"as_eyecatch_kag3", storage:"eyecatch4.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:3]" ],
+		"eyecatch_kag4", %[ altStorage:"as_eyecatch_kag4", storage:"eyecatch4.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:4]" ],
+		"eyecatch_kag5", %[ altStorage:"as_eyecatch_kag5", storage:"eyecatch4.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:5]" ],
+		"eyecatch_kag6", %[ altStorage:"as_eyecatch_kag6", storage:"eyecatch4.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:6]" ],
+
+		"eyecatch_ori0", %[ altStorage:"as_eyecatch_ori0", storage:"eyecatch5.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+		"eyecatch_ori1", %[ altStorage:"as_eyecatch_ori1", storage:"eyecatch5.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:1]" ],
+		"eyecatch_ori2", %[ altStorage:"as_eyecatch_ori2", storage:"eyecatch5.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:2]" ],
+		"eyecatch_ori3", %[ altStorage:"as_eyecatch_ori3", storage:"eyecatch5.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:3]" ],
+		"eyecatch_ori4", %[ altStorage:"as_eyecatch_ori4", storage:"eyecatch5.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:4]" ],
+
+		"eyecatch_fum0", %[ altStorage:"as_eyecatch_fum0", storage:"eyecatch6.mtn", chara:"eyecatch", motion:"show", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum]" ],
+		"eyecatch_fum1", %[ altStorage:"as_eyecatch_fum1", storage:"eyecatch6.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:1]" ],
+		"eyecatch_fum2", %[ altStorage:"as_eyecatch_fum2", storage:"eyecatch6.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:2]" ],
+		"eyecatch_fum3", %[ altStorage:"as_eyecatch_fum3", storage:"eyecatch6.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:3]" ],
+		"eyecatch_fum4", %[ altStorage:"as_eyecatch_fum4", storage:"eyecatch6.mtn", chara:"eyecatch", motion:"open", noseparate:false, resolution:133.33, variables:"%[language:_meslangnum, kisekae:4]" ],
+
+
+
+		"sd001aa", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001AA", noseparate:false],
+		"sd001ae", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001AE", noseparate:false],
+		"sd001be", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001BE", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd001cb", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001CB", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd001db", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001DB", noseparate:false],
+		"sd001dc", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001DC", noseparate:false],
+		"sd001dd", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001DD", noseparate:false],
+		"sd001de", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001DE", noseparate:false],
+		"sd001df", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001DF", noseparate:false],
+		"sd001dg", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001DG", noseparate:false],
+		"sd001dh", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001DH", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd001di", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001DI", noseparate:false],
+		"sd001dl", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001DL", noseparate:false],
+		"sd001ej", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001EJ", noseparate:false],
+		"sd001ek", %[ storage:"SD001.mtn", chara:"SD001", motion:"SD001EK", noseparate:false],
+
+
+		"sd002aa", %[ storage:"SD002.mtn", chara:"SD002", motion:"SD002AA", noseparate:false],
+		"sd002ba", %[ storage:"SD002.mtn", chara:"SD002", motion:"SD002BA", noseparate:false],
+		"sd002ca", %[ storage:"SD002.mtn", chara:"SD002", motion:"SD002CA", noseparate:false],
+		"sd002cb", %[ storage:"SD002.mtn", chara:"SD002", motion:"SD002CB", noseparate:false],
+		"sd002cc", %[ storage:"SD002.mtn", chara:"SD002", motion:"SD002CC", noseparate:false],
+		"sd002cd2", %[ storage:"SD002.mtn", chara:"SD002", motion:"SD002CD", noseparate:false],
+		"sd002dd2", %[ storage:"SD002.mtn", chara:"SD002", motion:"SD002DD", noseparate:false],
+		"sd002de2", %[ storage:"SD002.mtn", chara:"SD002", motion:"SD002DE", noseparate:false],
+		"sd002df", %[ storage:"SD002.mtn", chara:"SD002", motion:"SD002DF", noseparate:false],
+
+
+		"sd003ae", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003AE", noseparate:false],
+		"sd003aa", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003AA", noseparate:false],
+		"sd003ab", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003AB", noseparate:false],
+//		"sd003ak2", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003AK", noseparate:false],
+		"sd003al2", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003AL", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd003bb", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003BB", noseparate:false],
+		"sd003cc", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003CC", noseparate:false],
+		"sd003ce", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003CE", noseparate:false],
+		"sd003ch", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003CH", noseparate:false],
+		"sd003ci", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003CI", noseparate:false],
+		"sd003cj", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003CJ", noseparate:false],
+		"sd003dd", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003DD", noseparate:false],
+		"sd003ee", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003EE", noseparate:false],
+		"sd003eh", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003EH", noseparate:false],
+		"sd003ff", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003FF", noseparate:false],
+		"sd003gk2", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003GK", noseparate:false],
+		"sd003hk2", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003HK", noseparate:false],
+		"sd003ii", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003II", noseparate:false],
+//		"sd003ik2", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003IK", noseparate:false],
+		"sd003il2", %[ storage:"SD003.mtn", chara:"SD003", motion:"SD003IL", noseparate:false, variables:"%[language:_meslangnum]" ],
+
+		"sd004aa", %[ storage:"SD004.mtn", chara:"SD004", motion:"SD004AA", noseparate:false],
+		"sd004ba", %[ storage:"SD004.mtn", chara:"SD004", motion:"SD004BA", noseparate:false],
+		"sd004cb", %[ storage:"SD004.mtn", chara:"SD004", motion:"SD004CB", noseparate:false],
+
+		"sd005aa", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005AA", noseparate:false],
+		"sd005ac", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005AC", noseparate:false],
+		"sd005ba", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005BA", noseparate:false],
+		"sd005cb", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005CB", noseparate:false],
+		"sd005db", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005DB", noseparate:false],
+		"sd005ea", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005EA", noseparate:false],
+		"sd005ec", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005EC", noseparate:false],
+		"sd005fa", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005FA", noseparate:false],
+		"sd005fb", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005FB", noseparate:false],
+		"sd005fc", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005FC", noseparate:false],
+		"sd005fd", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005FD", noseparate:false],
+		"sd005ga", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005GA", noseparate:false],
+		"sd005gb", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005GB", noseparate:false],
+		"sd005gd", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005GD", noseparate:false],
+		"sd005ha", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005HA", noseparate:false],
+		"sd005ia", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005IA", noseparate:false],
+		"sd005ja", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005JA", noseparate:false],
+		"sd005jf", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005JF", noseparate:false],
+		"sd005ka", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005KA", noseparate:false],
+		"sd005kf", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005KF", noseparate:false],
+		"sd005la", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005LA", noseparate:false],
+		"sd005mb", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005MB", noseparate:false],
+		"sd005na", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005NA", noseparate:false],
+		"sd005nb", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005NB", noseparate:false],
+		"sd005oa", %[ storage:"SD005.mtn", chara:"SD005", motion:"SD005OA", noseparate:false],
+
+		"sd006aa", %[ storage:"SD006.mtn", chara:"SD006", motion:"SD006AA", noseparate:false],
+		"sd006ab", %[ storage:"SD006.mtn", chara:"SD006", motion:"SD006AB", noseparate:false],
+		"sd006ac", %[ storage:"SD006.mtn", chara:"SD006", motion:"SD006AC", noseparate:false],
+		"sd006ae", %[ storage:"SD006.mtn", chara:"SD006", motion:"SD006AE", noseparate:false],
+		"sd006bd", %[ storage:"SD006.mtn", chara:"SD006", motion:"SD006BD", noseparate:false],
+
+		"sd007aa", %[ storage:"SD007.mtn", chara:"SD007", motion:"SD007AA", noseparate:false],
+		"sd007ab", %[ storage:"SD007.mtn", chara:"SD007", motion:"SD007AB", noseparate:false],
+		"sd007ac", %[ storage:"SD007.mtn", chara:"SD007", motion:"SD007AC", noseparate:false],
+		"sd007ba", %[ storage:"SD007.mtn", chara:"SD007", motion:"SD007BA", noseparate:false],
+		"sd007bb", %[ storage:"SD007.mtn", chara:"SD007", motion:"SD007BB", noseparate:false],
+		"sd007cc", %[ storage:"SD007.mtn", chara:"SD007", motion:"SD007CC", noseparate:false],
+
+		"sd008aa", %[ storage:"SD008.mtn", chara:"SD008", motion:"SD008AA", noseparate:false],
+		"sd008ab", %[ storage:"SD008.mtn", chara:"SD008", motion:"SD008AB", noseparate:false],
+
+		"sd009aa", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009AA", noseparate:false],
+		"sd009ab", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009AB", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd009ac", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009AC", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd009ad", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009AD", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd009bd", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009BD", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd009cd", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009CD", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd009ce", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009CE", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd009de", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009DE", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd009ee", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009EE", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd009fa", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009FA", noseparate:false],
+		"sd009gb", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009GB", noseparate:false],
+		"sd009gc", %[ storage:"SD009.mtn", chara:"SD009", motion:"SD009GC", noseparate:false],
+
+		"sd010aa", %[ storage:"SD010.mtn", chara:"SD010", motion:"SD010AA", noseparate:false],
+		"sd010ab", %[ storage:"SD010.mtn", chara:"SD010", motion:"SD010AB", noseparate:false],
+		"sd010bb", %[ storage:"SD010.mtn", chara:"SD010", motion:"SD010BB", noseparate:false],
+		"sd010ca", %[ storage:"SD010.mtn", chara:"SD010", motion:"SD010CA", noseparate:false],
+		"sd010db", %[ storage:"SD010.mtn", chara:"SD010", motion:"SD010DB", noseparate:false],
+		"sd010dc", %[ storage:"SD010.mtn", chara:"SD010", motion:"SD010DC", noseparate:false],
+
+		"sd011aa", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011AA", noseparate:false],
+		"sd011ab", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011AB", noseparate:false],
+		"sd011ba", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011BA", noseparate:false],
+		"sd011bb", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011BB", noseparate:false],
+		"sd011bc", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011BC", noseparate:false],
+		"sd011bd", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011BD", noseparate:false],
+		"sd011ca", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011CA", noseparate:false],
+		"sd011cb", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011CB", noseparate:false],
+		"sd011cd", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011CD", noseparate:false],
+		"sd011db", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011DB", noseparate:false],
+		"sd011de", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011DE", noseparate:false],
+		"sd011eb", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011EB", noseparate:false],
+		"sd011ee", %[ storage:"SD011.mtn", chara:"SD011", motion:"SD011EE", noseparate:false],
+
+		"sd012aa", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012AA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012ab", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012AB", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012ac", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012AC", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012ba", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012BA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012ca", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012CA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012cb", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012CB", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012cc", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012CC", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012cd", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012CD", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012da", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012DA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012db", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012DB", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012dc", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012DC", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012dd", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012DD", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012de", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012DE", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012df", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012DF", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012dg", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012DG", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012ea", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012EA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012eb", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012EB", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012ec", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012EC", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012ed", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012ED", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012ee", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012EE", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012ef", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012EF", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012fa", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012FA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012ga", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012GA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd012ha", %[ storage:"SD012.mtn", chara:"SD012", motion:"SD012HA", noseparate:false, variables:"%[language:_meslangnum]" ],
+
+		"sd013aa", %[ storage:"SD013.mtn", chara:"SD013", motion:"SD013AA", noseparate:false],
+		"sd013ba", %[ storage:"SD013.mtn", chara:"SD013", motion:"SD013BA", noseparate:false],
+		"sd013cb", %[ storage:"SD013.mtn", chara:"SD013", motion:"SD013CB", noseparate:false],
+		"sd013cc", %[ storage:"SD013.mtn", chara:"SD013", motion:"SD013CC", noseparate:false],
+		"sd013cd", %[ storage:"SD013.mtn", chara:"SD013", motion:"SD013CD", noseparate:false],
+		"sd013ce", %[ storage:"SD013.mtn", chara:"SD013", motion:"SD013CE", noseparate:false],
+		"sd013cf", %[ storage:"SD013.mtn", chara:"SD013", motion:"SD013CF", noseparate:false],
+
+		"sd014aa", %[ storage:"SD014.mtn", chara:"SD014", motion:"SD014AA", noseparate:false],
+		"sd014ab", %[ storage:"SD014.mtn", chara:"SD014", motion:"SD014AB", noseparate:false],
+		"sd014bc", %[ storage:"SD014.mtn", chara:"SD014", motion:"SD014BC", noseparate:false],
+		"sd014cd", %[ storage:"SD014.mtn", chara:"SD014", motion:"SD014CD", noseparate:false],
+		"sd014de", %[ storage:"SD014.mtn", chara:"SD014", motion:"SD014DE", noseparate:false],
+		"sd014ee", %[ storage:"SD014.mtn", chara:"SD014", motion:"SD014EE", noseparate:false],
+		"sd014fe", %[ storage:"SD014.mtn", chara:"SD014", motion:"SD014FE", noseparate:false],
+		"sd014ge", %[ storage:"SD014.mtn", chara:"SD014", motion:"SD014GE", noseparate:false],
+
+		"sd015aa", %[ storage:"SD015.mtn", chara:"SD015", motion:"SD015AA", noseparate:false],
+		"sd015ba", %[ storage:"SD015.mtn", chara:"SD015", motion:"SD015BA", noseparate:false],
+		"sd015ca", %[ storage:"SD015.mtn", chara:"SD015", motion:"SD015CA", noseparate:false],
+		"sd015cb", %[ storage:"SD015.mtn", chara:"SD015", motion:"SD015CB", noseparate:false],
+		"sd015dc", %[ storage:"SD015.mtn", chara:"SD015", motion:"SD015DC", noseparate:false],
+		"sd015ec", %[ storage:"SD015.mtn", chara:"SD015", motion:"SD015EC", noseparate:false],
+		"sd015fc", %[ storage:"SD015.mtn", chara:"SD015", motion:"SD015FC", noseparate:false],
+		"sd015gc", %[ storage:"SD015.mtn", chara:"SD015", motion:"SD015GC", noseparate:false],
+		"sd015hc", %[ storage:"SD015.mtn", chara:"SD015", motion:"SD015HC", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd015hd", %[ storage:"SD015.mtn", chara:"SD015", motion:"SD015HD", noseparate:false, variables:"%[language:_meslangnum]" ],
+
+		"sd016aa", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016AA", noseparate:false],
+		"sd016ab", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016AB", noseparate:false],
+		"sd016ba", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016BA", noseparate:false],
+		"sd016bb", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016BB", noseparate:false],
+		"sd016be", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016BE", noseparate:false],
+		"sd016bg", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016BG", noseparate:false],
+		"sd016ca", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016CA", noseparate:false],
+		"sd016cb", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016CB", noseparate:false],
+		"sd016cc", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016CC", noseparate:false],
+		"sd016cd", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016CD", noseparate:false],
+		"sd016cf", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016CF", noseparate:false],
+		"sd016cg", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016CG", noseparate:false],
+		"sd016da", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016DA", noseparate:false],
+		"sd016db", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016DB", noseparate:false],
+		"sd016dc", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016DC", noseparate:false],
+		"sd016dd", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016DD", noseparate:false],
+		"sd016dg", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016DG", noseparate:false],
+		"sd016fa", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016FA", noseparate:false],
+		"sd016fb", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016FB", noseparate:false],
+		"sd016ff", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016FF", noseparate:false],
+		"sd016fg", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016FG", noseparate:false],
+		"sd016ha", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016HA", noseparate:false],
+		"sd016hb", %[ storage:"SD016.mtn", chara:"SD016", motion:"SD016HB", noseparate:false],
+
+
+		"sd101aa", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101AA", noseparate:false],
+		"sd101ba", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101BA", noseparate:false],
+		"sd101bb", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101BB", noseparate:false],
+		"sd101bc", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101BC", noseparate:false],
+		"sd101ca", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101CA", noseparate:false],
+		"sd101cb", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101CB", noseparate:false],
+		"sd101db", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101DB", noseparate:false],
+		"sd101eb", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101EB", noseparate:false],
+		"sd101fb", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101FB", noseparate:false],
+		"sd101gd", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101GD", noseparate:false],
+		"sd101hd", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101HD", noseparate:false],
+		"sd101id", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101ID", noseparate:false],
+		"sd101ie", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101IE", noseparate:false],
+		"sd101je", %[ storage:"SD101.mtn", chara:"SD101", motion:"SD101JE", noseparate:false],
+
+		"sd102aa", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102AA", noseparate:false],
+		"sd102ab", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102AB", noseparate:false],
+		"sd102ac", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102AC", noseparate:false],
+		"sd102ba", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102BA", noseparate:false],
+		"sd102bb", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102BB", noseparate:false],
+		"sd102cb", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102CB", noseparate:false],
+		"sd102db", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102DB", noseparate:false],
+		"sd102dc", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102DC", noseparate:false],
+		"sd102eb", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102EB", noseparate:false],
+		"sd102ed", %[ storage:"SD102.mtn", chara:"SD102", motion:"SD102ED", noseparate:false],
+
+		"sd103aa", %[ storage:"SD103.mtn", chara:"SD103", motion:"SD103AA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd103ab", %[ storage:"SD103.mtn", chara:"SD103", motion:"SD103AB", noseparate:false],
+		"sd103ad", %[ storage:"SD103.mtn", chara:"SD103", motion:"SD103AD", noseparate:false],
+		"sd103ae", %[ storage:"SD103.mtn", chara:"SD103", motion:"SD103AE", noseparate:false],
+		"sd103ag", %[ storage:"SD103.mtn", chara:"SD103", motion:"SD103AG", noseparate:false],
+		"sd103ba", %[ storage:"SD103.mtn", chara:"SD103", motion:"SD103BA", noseparate:false],
+		"sd103bb", %[ storage:"SD103.mtn", chara:"SD103", motion:"SD103BB", noseparate:false],
+		"sd103bc", %[ storage:"SD103.mtn", chara:"SD103", motion:"SD103BC", noseparate:false],
+		"sd103bd", %[ storage:"SD103.mtn", chara:"SD103", motion:"SD103BD", noseparate:false],
+		"sd103bf", %[ storage:"SD103.mtn", chara:"SD103", motion:"SD103BF", noseparate:false],
+
+		"sd104aa", %[ storage:"SD104.mtn", chara:"SD104", motion:"SD104AA", noseparate:false],
+		"sd104ab", %[ storage:"SD104.mtn", chara:"SD104", motion:"SD104AB", noseparate:false],
+		"sd104ae", %[ storage:"SD104.mtn", chara:"SD104", motion:"SD104AE", noseparate:false],
+		"sd104ba", %[ storage:"SD104.mtn", chara:"SD104", motion:"SD104BA", noseparate:false],
+		"sd104ca", %[ storage:"SD104.mtn", chara:"SD104", motion:"SD104CA", noseparate:false],
+		"sd104cc", %[ storage:"SD104.mtn", chara:"SD104", motion:"SD104CC", noseparate:false],
+		"sd104ce", %[ storage:"SD104.mtn", chara:"SD104", motion:"SD104CE", noseparate:false],
+		"sd104da", %[ storage:"SD104.mtn", chara:"SD104", motion:"SD104DA", noseparate:false],
+		"sd104dd", %[ storage:"SD104.mtn", chara:"SD104", motion:"SD104DD", noseparate:false],
+		"sd104eb", %[ storage:"SD104.mtn", chara:"SD104", motion:"SD104EB", noseparate:false],
+		"sd104ed", %[ storage:"SD104.mtn", chara:"SD104", motion:"SD104ED", noseparate:false],
+
+		"sd201ab", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201AB", noseparate:false],
+		"sd201ac", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201AC", noseparate:false],
+		"sd201ad", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201AD", noseparate:false],
+		"sd201ae", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201AE", noseparate:false],
+		"sd201af", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201AF", noseparate:false],
+		"sd201ag", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201AG", noseparate:false],
+		"sd201ax", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201AX", noseparate:false],
+		"sd201ay", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201AY", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd201az", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201AZ", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd201ba", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201BA", noseparate:false],
+		"sd201bb", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201BB", noseparate:false],
+		"sd201bx", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201BX", noseparate:false],
+		"sd201cg", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201CG", noseparate:false],
+		"sd201ch", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201CH", noseparate:false],
+		"sd201ci", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201CI", noseparate:false],
+		"sd201cj", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201CJ", noseparate:false],
+		"sd201dg", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201DG", noseparate:false],
+		"sd201dh", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201DH", noseparate:false],
+		"sd201di", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201DI", noseparate:false],
+		"sd201dj", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201DJ", noseparate:false],
+		"sd201dk", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201DK", noseparate:false],
+		"sd201eg", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201EG", noseparate:false],
+		"sd201ek", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201EK", noseparate:false],
+		"sd201fi", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201FI", noseparate:false],
+		"sd201fj", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201FJ", noseparate:false],
+		"sd201fk", %[ storage:"SD201.mtn", chara:"SD201", motion:"SD201FK", noseparate:false],
+
+		"sd202aa", %[ storage:"SD202.mtn", chara:"SD202", motion:"SD202AA", noseparate:false],
+		"sd202ab", %[ storage:"SD202.mtn", chara:"SD202", motion:"SD202AB", noseparate:false],
+		"sd202ac", %[ storage:"SD202.mtn", chara:"SD202", motion:"SD202AC", noseparate:false],
+		"sd202ba", %[ storage:"SD202.mtn", chara:"SD202", motion:"SD202BA", noseparate:false],
+		"sd202ba2", %[ storage:"SD202.mtn", chara:"SD202", motion:"SD202BA", noseparate:false],
+		"sd202bb", %[ storage:"SD202.mtn", chara:"SD202", motion:"SD202BB", noseparate:false],
+
+		"sd203aa", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203AA", noseparate:false],
+		"sd203ab", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203AB", noseparate:false],
+		"sd203ac", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203AC", noseparate:false],
+		"sd203ad", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203AD", noseparate:false],
+		"sd203ae", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203AE", noseparate:false],
+		"sd203ba", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203BA", noseparate:false],
+		"sd203bc", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203BC", noseparate:false],
+		"sd203be", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203BE", noseparate:false],
+		"sd203bf", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203BF", noseparate:false],
+		"sd203bg", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203BG", noseparate:false],
+		"sd203ch", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203CH", noseparate:false],
+		"sd203ci", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203CI", noseparate:false],
+		"sd203cj", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203CJ", noseparate:false],
+		"sd203dh", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203DH", noseparate:false],
+		"sd203di", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203DI", noseparate:false],
+		"sd203dj", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203DJ", noseparate:false],
+		"sd203ej", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203EJ", noseparate:false],
+		"sd203fi", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203FI", noseparate:false],
+		"sd203fk", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203FK", noseparate:false],
+		"sd203gc", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203GC", noseparate:false],
+		"sd203gh", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203GH", noseparate:false],
+		"sd203gi", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203GI", noseparate:false],
+		"sd203gk", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203GK", noseparate:false],
+		"sd203hh", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203HH", noseparate:false],
+		"sd203ih", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203IH", noseparate:false],
+		"sd203ii", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203II", noseparate:false],
+		"sd203jk", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203IK", noseparate:false], // [NOTE] motionが IK になっているので注意 （現物合わせ）		"sd203jk", %[ storage:"SD203.mtn", chara:"SD203", motion:"SD203JK", noseparate:false], // [NOTE] 正しいものも複製して追加
+
+
+		"sd204aa", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204AA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd204ab", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204AB", noseparate:false],
+		"sd204ba", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204BA", noseparate:false],
+		"sd204bb", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204BB", noseparate:false],
+		"sd204cb", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204CB", noseparate:false],
+		"sd204cd", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204CD", noseparate:false],
+		"sd204cf", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204CF", noseparate:false],
+		"sd204dc", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204DC", noseparate:false],
+		"sd204dd", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204DD", noseparate:false],
+		"sd204de", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204DE", noseparate:false],
+		"sd204df", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204DF", noseparate:false],
+		"sd204ec", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204EC", noseparate:false],
+		"sd204ee", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204EE", noseparate:false],
+		"sd204ef", %[ storage:"SD204.mtn", chara:"SD204", motion:"SD204EF", noseparate:false],
+
+		"sd205aa", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205AA", noseparate:false],
+		"sd205ab", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205AB", noseparate:false],
+		"sd205ac", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205AC", noseparate:false],
+		"sd205ad", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205AD", noseparate:false],
+		"sd205ae", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205AE", noseparate:false],
+		"sd205af", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205AF", noseparate:false],
+		"sd205ag", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205AG", noseparate:false],
+		"sd205bc", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205BC", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd205cc", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205CC", noseparate:false],
+		"sd205cg", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205CG", noseparate:false],
+		"sd205ch", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205CH", noseparate:false],
+		"sd205ci", %[ storage:"SD205.mtn", chara:"SD205", motion:"SD205CI", noseparate:false],
+
+		"sd301aa", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301AA", noseparate:false],
+		"sd301ab", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301AB", noseparate:false],
+		"sd301ad", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301AD", noseparate:false],
+		"sd301ae", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301AE", noseparate:false],
+		"sd301ai", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301AI", noseparate:false],
+		"sd301at", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301AT", noseparate:false],
+		"sd301bm", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301BM", noseparate:false],
+		"sd301bn", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301BN", noseparate:false],
+		"sd301bo", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301BO", noseparate:false],
+		"sd301br", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301BR", noseparate:false],
+		"sd301cd", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301CD", noseparate:false],
+		"sd301ce", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301CE", noseparate:false],
+		"sd301dj", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301DJ", noseparate:false],
+		"sd301dk", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301DK", noseparate:false],
+		"sd301dl", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301DL", noseparate:false],
+		"sd301ef", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301EF", noseparate:false],
+		"sd301eg", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301EG", noseparate:false],
+		"sd301fe", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301FE", noseparate:false],
+		"sd301fg", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301FG", noseparate:false],
+		"sd301fi", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301FI", noseparate:false],
+		"sd301fj", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301FJ", noseparate:false],
+		"sd301fl", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301FL", noseparate:false],
+		"sd301fm", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301FM", noseparate:false],
+		"sd301fp", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301FP", noseparate:false],
+		"sd301fr", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301FR", noseparate:false],
+		"sd301fs", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301FS", noseparate:false],
+		"sd301gf", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301GF", noseparate:false],
+		"sd301gi", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301GI", noseparate:false],
+		"sd301he", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301HE", noseparate:false],
+		"sd301hf", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301HF", noseparate:false],
+		"sd301hg", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301HG", noseparate:false],
+		"sd301hm", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301HM", noseparate:false],
+		"sd301hn", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301HN", noseparate:false],
+		"sd301hp", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301HP", noseparate:false],
+		"sd301it", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301IT", noseparate:false],
+		"sd301iu", %[ storage:"SD301.mtn", chara:"SD301", motion:"SD301IU", noseparate:false],
+
+		"sd302aa", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302AA", noseparate:false],
+		"sd302ba", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302BA", noseparate:false],
+		"sd302ca", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302CA", noseparate:false],
+		"sd302ca2", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302CA2", noseparate:false],
+		"sd302cb", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302CB", noseparate:false],
+		"sd302cb2", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302CB", noseparate:false],
+		"sd302cc", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302CC", noseparate:false],
+		"sd302cc2", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302CC", noseparate:false],
+		"sd302dd", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302DD", noseparate:false],
+		"sd302ed", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302ED", noseparate:false],
+		"sd302ee", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302EE", noseparate:false],
+		"sd302ef", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302EF", noseparate:false],
+		"sd302fb", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302FB", noseparate:false],
+		"sd302gb", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302GB", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd302ge", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302GE", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd302hb", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302HB", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd302he", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302HE", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd302ib", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302IB", noseparate:false],
+		"sd302ie", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302IE", noseparate:false],
+		"sd302jb", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302JB", noseparate:false],
+		"sd302je", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302JE", noseparate:false],
+		"sd302jf", %[ storage:"SD302.mtn", chara:"SD302", motion:"SD302JF", noseparate:false],
+
+		"sd401aa", %[ storage:"SD401.mtn", chara:"SD401", motion:"SD401AA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd401bb", %[ storage:"SD401.mtn", chara:"SD401", motion:"SD401BB", noseparate:false],
+		"sd401bc", %[ storage:"SD401.mtn", chara:"SD401", motion:"SD401BC", noseparate:false],
+		"sd401bd", %[ storage:"SD401.mtn", chara:"SD401", motion:"SD401BD", noseparate:false],
+		"sd401bf", %[ storage:"SD401.mtn", chara:"SD401", motion:"SD401BF", noseparate:false],
+		"sd401ce", %[ storage:"SD401.mtn", chara:"SD401", motion:"SD401CE", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd401cf", %[ storage:"SD401.mtn", chara:"SD401", motion:"SD401CF", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd401da", %[ storage:"SD401.mtn", chara:"SD401", motion:"SD401DA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd401da2", %[ storage:"SD401.mtn", chara:"SD401", motion:"SD401DA2", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd401dg", %[ storage:"SD401.mtn", chara:"SD401", motion:"SD401DG", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd401dg2", %[ storage:"SD401.mtn", chara:"SD401", motion:"SD401DG2", noseparate:false, variables:"%[language:_meslangnum]" ],
+
+		"sd402aa", %[ storage:"SD402.mtn", chara:"SD402", motion:"SD402AA", noseparate:false],
+		"sd402ab", %[ storage:"SD402.mtn", chara:"SD402", motion:"SD402AB", noseparate:false],
+		"sd402bb", %[ storage:"SD402.mtn", chara:"SD402", motion:"SD402BB", noseparate:false],
+		"sd402bc", %[ storage:"SD402.mtn", chara:"SD402", motion:"SD402BC", noseparate:false],
+		"sd402bd", %[ storage:"SD402.mtn", chara:"SD402", motion:"SD402BD", noseparate:false],
+		"sd402cc", %[ storage:"SD402.mtn", chara:"SD402", motion:"SD402CC", noseparate:false],
+		"sd402cd", %[ storage:"SD402.mtn", chara:"SD402", motion:"SD402CD", noseparate:false],
+		"sd402dc", %[ storage:"SD402.mtn", chara:"SD402", motion:"SD402DC", noseparate:false],
+		"sd402ea", %[ storage:"SD402.mtn", chara:"SD402", motion:"SD402EA", noseparate:false, variables:"%[language:_meslangnum]" ],
+		"sd402eb", %[ storage:"SD402.mtn", chara:"SD402", motion:"SD402EB", noseparate:false, variables:"%[language:_meslangnum]" ],
+
+		"sd501aa", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501AA", noseparate:false],
+		"sd501bb", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501BB", noseparate:false],
+		"sd501bc", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501BC", noseparate:false],
+		"sd501bh", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501BH", noseparate:false],
+		"sd501ce", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501CE", noseparate:false],
+		"sd501de", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501DE", noseparate:false],
+		"sd501ea", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501EA", noseparate:false],
+		"sd501ee", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501EE", noseparate:false],
+		"sd501fe", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501FE", noseparate:false],
+		"sd501ff", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501FF", noseparate:false],
+		"sd501gb", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501GB", noseparate:false],
+		"sd501gd", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501GD", noseparate:false],
+		"sd501gf", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501GF", noseparate:false],
+		"sd501gi", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501GI", noseparate:false],
+		"sd501he", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501HE", noseparate:false],
+		"sd501hg", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501HG", noseparate:false],
+		"sd501hi", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501HI", noseparate:false],
+		"sd501ih", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501IH", noseparate:false],
+		"sd501jh", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501JH", noseparate:false],
+		"sd501jj", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501JJ", noseparate:false],
+		"sd501ki", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501KI", noseparate:false],
+		"sd501kj", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501KJ", noseparate:false],
+		"sd501lj", %[ storage:"SD501.mtn", chara:"SD501", motion:"SD501LJ", noseparate:false],
+
+		"sd601aa", %[ storage:"SD601.mtn", chara:"SD601", motion:"SD601AA", noseparate:false],
+		"sd601ab", %[ storage:"SD601.mtn", chara:"SD601", motion:"SD601AB", noseparate:false],
+		"sd601ac", %[ storage:"SD601.mtn", chara:"SD601", motion:"SD601AC", noseparate:false],
+		"sd601ad", %[ storage:"SD601.mtn", chara:"SD601", motion:"SD601AD", noseparate:false],
+		"sd601ae", %[ storage:"SD601.mtn", chara:"SD601", motion:"SD601AE", noseparate:false],
+		"sd601bd", %[ storage:"SD601.mtn", chara:"SD601", motion:"SD601BD", noseparate:false],
+		"sd601be", %[ storage:"SD601.mtn", chara:"SD601", motion:"SD601BE", noseparate:false],
+
+		"sd602aa", %[ storage:"SD602.mtn", chara:"SD602", motion:"SD602AA", noseparate:false],
+		"sd602ab", %[ storage:"SD602.mtn", chara:"SD602", motion:"SD602AB", noseparate:false],
+		"sd602ba", %[ storage:"SD602.mtn", chara:"SD602", motion:"SD602BA", noseparate:false],
+		"sd602bb", %[ storage:"SD602.mtn", chara:"SD602", motion:"SD602BB", noseparate:false],
+		"sd602bc", %[ storage:"SD602.mtn", chara:"SD602", motion:"SD602BC", noseparate:false],
+		"sd602bd", %[ storage:"SD602.mtn", chara:"SD602", motion:"SD602BD", noseparate:false],
+		"sd602ca", %[ storage:"SD602.mtn", chara:"SD602", motion:"SD602CA", noseparate:false],
+		"sd602ce", %[ storage:"SD602.mtn", chara:"SD602", motion:"SD602CE", noseparate:false],
+		"sd602ce2", %[ storage:"SD602.mtn", chara:"SD602", motion:"SD602CE", noseparate:false],
+
+
+		],
+
+	// モーションに結びついたSE(単発SEのみ)
+	// モーション中に "se名前" のアクションを配置しておくと、motionseobj のオブジェクト(Soundオブジェクト)
+	// を使ってそのサウンドを再生する
+	"motionseobj", "se",
+	"motionse", %[
+//		"001", %[storage:"se001", "volume", 50],
+//		"002", %[storage:"se002", "volume", 30],
+
+		"001", %[storage:"【システム】ロゴ(SOUR)", "volume", 50],
+		"002", %[storage:"♪キラキラ２", "volume", 50],
+
+		"015", %[storage:"☆コミカル20(-3)", "volume", 40],
+		"202", %[storage:"☆コミカル29", "volume", 50],
+		"2022", %[storage:"★倒れる（ベッド）", "volume", 100],
+		"302", %[storage:"♪スマホ／シャッター", "volume", 50],
+		"401", %[storage:"☆コミカル20", "volume", 50],
+		"4012", %[storage:"☆コミカル29", "volume", 50],
+		"402", %[storage:"★ぶつかる５", "volume", 50],
+		"4022", %[storage:"★殴る６", "volume", 50],
+		"602", %[storage:"☆コミカル15", "volume", 50],
+
+
+
+
+
+		],
+	
+	// ------------------------------------------------------------------
+	// クリッピングマスク定義用
+	// ------------------------------------------------------------------
+
+	"clips" => %[
+//		"clipstar", %[ image:"star.png" ],
+		"cliparea", %[ left:10, top:10, width:100, height:100 ],
+		],
+
+	// ------------------------------------------------------------------
+	// エモーション定義
+	// ------------------------------------------------------------------
+
+	// エモーション標準座標
+	"emotionX" => 0, // エモーション基準位置（ポーズで調整可能）
+	"emotionY" => 0, // エモーション基準位置（ポーズで調整可能）
+
+	// エモーション画像定義
+	"emotions" => %[
+		"！" => %[
+			"xoff" => 0,                // 基準位置からの相対位置X
+			"yoff" => 0,                // 基準位置からの相対位置Y
+			"image" => "びっくり",      // 画像名 LEVEL の部分はオブジェクトのlevelで置換される
+			 imageRev: "びっくり_rev",    // 反転時画像名・反転指定はポーズ別定義で行う
+			"action" => "びょん大",         // エモーションに適用するアクションを指定
+			"time" => 1500            // エモーション消去までの時間・指定するとopacity制御で消去されます
+			],
+
+		],
+	
+	// ------------------------------------------------------------------
+	// フィルタ用コマンド定義
+	// ------------------------------------------------------------------
+
+	"filterList" => [
+		%[
+			// 名前指定
+			"name", "allimage",
+			// フィルタ指定: 文字列:他の定義を参照 関数:帰り値が真なら参照 正規表現:名前でマッチング。配列で複数指定可能
+			"filter", function(obj, elm) { return obj instanceof "KAGEnvImage" && (elm.env === void || elm.env == obj.env.name); },
+			// コマンド実行前に排除するタグ・判定などで使ったものを誤動作防止で処理。配列で複数指定可能。
+			"remove", "env",
+		],
+		%[
+			"name", "allchar",
+			// 継承すると親の条件を満たした後追加でしぼりこむ
+			"parent", "allimage",
+			"filter", function(obj,elm) { return obj.className == "character"; }
+		],
+		%[
+			"name", "allbase",
+			"parent", "allimage",
+			"filter", function(obj,elm) { return obj.className == "stage" || obj.className == "event"; }
+		],
+		%[
+			"name", "allse",
+			"filter", function(obj,elm) { return obj.className == "se" || obj.className == "lse"; }
+		],
+		%[
+			"name", "allfixcaption",
+			"filter", function(obj,elm) { return obj.className == "fixcaption"; }
+		]
+	],
+
+	// ------------------------------------------------------------------
+	// 変数名対応マップ
+	// E-mote で変数名に大文字が入っているのでそれに対する対応用
+	// ------------------------------------------------------------------
+
+	"variableMap", %[
+		"face_eye_lr","face_eye_LR",
+		"face_eye_ud","face_eye_UD",
+		"head_lr","head_LR",
+		"head_ud","head_UD",
+		"body_lr","body_LR",
+		"body_ud","body_UD",
+		"move_lr","move_LR",
+		"move_ud","move_UD",
+		"bust_lr","bust_LR",
+		"bust_ud","bust_UD",
+		"hair_lr_front","hair_LR_front",
+		"hair_lr_m_front","hair_LR_M_front",
+		"hair_ud_front","hair_UD_front",
+		"hair_lr_sidel","hair_LR_sideL",
+		"hair_lr_m_sidel","hair_LR_M_sideL",
+		"hair_ud_sidel","hair_UD_sideL",
+		"hair_lr_sider","hair_LR_sideR",
+		"hair_lr_m_sider","hair_LR_M_sideR",
+		"hair_ud_sider","hair_UD_sideR",
+		"hair_lr","hair_LR",
+		"hair_lr_m","hair_LR_M",
+		"hair_ud","hair_UD",
+		"quake_lr","quake_LR",
+		"quake_lr_m","quake_LR_M",
+		"quake_ud","quake_UD",
+		"quake_lr_spare","quake_LR_spare",
+		"quake_lr_m_spare","quake_LR_M_spare",
+		"quake_ud_spare","quake_UD_spare",
+		],
+
+	// 値がステップ値な変数
+	"stepVariable", %[
+		"face_cheek", true,
+		"face_mouth", true,
+		"face_tears", true,
+		"face_eye_hi", true,
+	],
+
+
+]

@@ -1,0 +1,278 @@
+{
+  "source": "qlpopup.pbd",
+  "tool": "pbd2json.exe (Cafe Stella vendor)",
+  "names": [
+    "thumb",
+    "base",
+    "route",
+    "save",
+    "load",
+    "quick"
+  ],
+  "layer_count": 7,
+  "hotspot_count": 7,
+  "hotspots": [
+    {
+      "name": "base",
+      "left": 0,
+      "top": 0,
+      "width": 282,
+      "height": 267,
+      "class": "base",
+      "uiname": "base",
+      "uistates": {
+        "bigcomment": {
+          "ox": 32,
+          "oy": 43,
+          "w": 225,
+          "h": 182,
+          "storage": ""
+        },
+        "number": {
+          "ox": 32,
+          "oy": 18,
+          "w": 219,
+          "h": 25,
+          "storage": ""
+        },
+        "date": {
+          "ox": 32,
+          "oy": 226,
+          "w": 188,
+          "h": 23,
+          "storage": ""
+        },
+        "chapter": {
+          "ox": 32,
+          "oy": 18,
+          "w": 219,
+          "h": 25,
+          "storage": ""
+        },
+        "text": {
+          "ox": 32,
+          "oy": 167,
+          "w": 225,
+          "h": 58,
+          "storage": ""
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 282,
+          "h": 267,
+          "storage": ""
+        },
+        "bigtext": {
+          "ox": 32,
+          "oy": 43,
+          "w": 225,
+          "h": 182,
+          "storage": ""
+        },
+        "comment": {
+          "ox": 32,
+          "oy": 167,
+          "w": 225,
+          "h": 58,
+          "storage": ""
+        }
+      }
+    },
+    {
+      "name": "load",
+      "left": 9,
+      "top": 9,
+      "width": 264,
+      "height": 249,
+      "class": "layer",
+      "uiname": "load",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 0,
+          "w": 264,
+          "h": 249,
+          "storage": "qlpopup__pack"
+        }
+      }
+    },
+    {
+      "name": "quick",
+      "left": 9,
+      "top": 9,
+      "width": 264,
+      "height": 249,
+      "class": "layer",
+      "uiname": "quick",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 264,
+          "cy": 0,
+          "w": 264,
+          "h": 249,
+          "storage": "qlpopup__pack"
+        }
+      }
+    },
+    {
+      "name": "save",
+      "left": 9,
+      "top": 9,
+      "width": 264,
+      "height": 249,
+      "class": "layer",
+      "uiname": "save",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 0,
+          "cy": 249,
+          "w": 264,
+          "h": 249,
+          "storage": "qlpopup__pack"
+        }
+      }
+    },
+    {
+      "name": "voice",
+      "left": 9,
+      "top": 9,
+      "width": 264,
+      "height": 249,
+      "class": "layer",
+      "uiname": "voice",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 264,
+          "cy": 249,
+          "w": 264,
+          "h": 249,
+          "storage": "qlpopup__pack"
+        }
+      }
+    },
+    {
+      "name": "thumb",
+      "left": 32,
+      "top": 43,
+      "width": 219,
+      "height": 124,
+      "class": "layer",
+      "uiname": "thumb",
+      "uistates": {
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 0,
+          "h": 0,
+          "storage": null
+        }
+      }
+    },
+    {
+      "name": "route",
+      "left": 222,
+      "top": 213,
+      "width": 60,
+      "height": 52,
+      "class": "layer",
+      "uiname": "route",
+      "uistates": {
+        "風実花": {
+          "ox": 4,
+          "oy": 9,
+          "cx": 49,
+          "cy": 498,
+          "w": 47,
+          "h": 43,
+          "storage": "qlpopup__pack"
+        },
+        "天音": {
+          "ox": 7,
+          "oy": 9,
+          "cx": 96,
+          "cy": 498,
+          "w": 45,
+          "h": 42,
+          "storage": "qlpopup__pack"
+        },
+        "オリエ": {
+          "ox": 5,
+          "oy": 9,
+          "cx": 0,
+          "cy": 498,
+          "w": 49,
+          "h": 42,
+          "storage": "qlpopup__pack"
+        },
+        "nosave": {
+          "ox": 0,
+          "oy": 0,
+          "w": 60,
+          "h": 52,
+          "storage": ""
+        },
+        "来海": {
+          "ox": 2,
+          "oy": 10,
+          "cx": 322,
+          "cy": 498,
+          "w": 57,
+          "h": 41,
+          "storage": "qlpopup__pack"
+        },
+        "(~null~)": {
+          "ox": 0,
+          "oy": 0,
+          "w": 0,
+          "h": 0,
+          "storage": null
+        },
+        "乃愛": {
+          "ox": 2,
+          "oy": 5,
+          "cx": 264,
+          "cy": 498,
+          "w": 58,
+          "h": 46,
+          "storage": "qlpopup__pack"
+        },
+        "かぐ耶": {
+          "ox": 0,
+          "oy": 0,
+          "cx": 379,
+          "cy": 498,
+          "w": 55,
+          "h": 51,
+          "storage": "qlpopup__pack"
+        },
+        "共通": {
+          "ox": 0,
+          "oy": 5,
+          "cx": 434,
+          "cy": 498,
+          "w": 54,
+          "h": 46,
+          "storage": "qlpopup__pack"
+        }
+      }
+    }
+  ],
+  "raw_result_keys": [
+    "base",
+    "load",
+    "quick",
+    "route",
+    "save",
+    "thumb",
+    "voice"
+  ]
+}

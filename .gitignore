@@ -12,6 +12,16 @@ wheels/
 # Full dumps / duplicates (not CN-JP UI scope)
 docs/ui-extract/full-static/
 docs/ui-extract/static-force/
+docs/ui-extract/static-offline/
+docs/ui-extract/static-offline-named/
+docs/ui-extract/static-offline-unmatched/
+
+# Local vendor binaries / scratch QA
+tools/vendor/
+tools/_audit_crops/
+tools/_qa_pbd_crops/
+tools/_qa_tab0*.png
+tools/_tmp_*.py
 
 # Raw / full data.xp3 mirrors (contain non-UI + >100MB blobs).
 # UI images + design logic live in image/ and filtered-cn-jp/.

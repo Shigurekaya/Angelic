@@ -1,0 +1,5 @@
+%[
+method:"mosaic",
+time:1000,
+maxsize:30,
+]

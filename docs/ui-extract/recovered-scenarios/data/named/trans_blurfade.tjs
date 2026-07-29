@@ -1,0 +1,9 @@
+%[
+method:"blurfade",
+time:1000,
+blur1:7,
+blur2:9,
+prerender:1
+//blur1x:
+//blur2x:
+]

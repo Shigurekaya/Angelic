@@ -24,24 +24,42 @@ def load_hxnames(path: Path) -> dict[str, str]:
     return out
 
 
+def hx_lookup(hx: dict[str, str], name: str) -> str | None:
+    """Match HxNames by unicode name / UTF-16-LE hex / ordinals hex."""
+    resolved = hx.get(name.upper())
+    if resolved:
+        return resolved
+    try:
+        resolved = hx.get(name.encode("utf-16-le").hex().upper())
+        if resolved:
+            return resolved
+    except Exception:
+        pass
+    # HxV4-style: name chars are U+5000+; some tables key by ordinals
+    try:
+        ords = "".join(f"{ord(c):04X}" for c in name)
+        resolved = hx.get(ords)
+        if resolved:
+            return resolved
+    except Exception:
+        pass
+    return None
+
+
 def index_one(xp3: Path, hx: dict[str, str]) -> dict:
     from tamago.formats.xp3 import XP3File
 
     entries = []
     encrypted = 0
+    # Always iterate xp.files (list) — never iterate XP3File itself.
     xp = XP3File(xp3)
     try:
-        for i, f in enumerate(xp.files):
+        files = list(xp.files)
+        for i, f in enumerate(files):
             if f.encrypted:
                 encrypted += 1
             name = str(f.file_name)
-            # hashed names are opaque chars; also try hex of name bytes
-            resolved = hx.get(name.upper())
-            if not resolved:
-                try:
-                    resolved = hx.get(name.encode("utf-16-le").hex().upper())
-                except Exception:
-                    resolved = None
+            resolved = hx_lookup(hx, name)
             entries.append(
                 {
                     "index": i,
@@ -71,17 +89,11 @@ def index_one(xp3: Path, hx: dict[str, str]) -> dict:
 def main() -> None:
     INDEXES.mkdir(parents=True, exist_ok=True)
     hx = load_hxnames(HXNAMES)
-    targets = []
-    for n in UI_ARCHIVES:
-        p = GAME / n
-        if p.exists():
-            targets.append(p)
-    # also index all non-excluded for inventory
-    for p in sorted(GAME.glob("*.xp3")):
-        if p.name.lower() in {x.lower() for x in EXCLUDE_ARCHIVES}:
-            continue
-        if p not in targets:
-            targets.append(p)
+    # Index ALL xp3 archives for inventory (UI + rest).
+    targets = sorted(GAME.glob("*.xp3"))
+    if not targets:
+        # fallback to UI list
+        targets = [GAME / n for n in UI_ARCHIVES if (GAME / n).exists()]
 
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -95,10 +107,15 @@ def main() -> None:
             info = index_one(xp3, hx)
         except Exception as e:
             info = {"archive": xp3.name, "error": repr(e)}
+            print(f"  ERROR {e!r}", flush=True)
         report["archives"].append({k: v for k, v in info.items() if k != "entries"})
         out = INDEXES / f"{xp3.stem}.json"
         out.write_text(json.dumps(info, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"  -> {out} files={info.get('files')} hx={info.get('hx_resolved')}", flush=True)
+        print(
+            f"  -> {out} files={info.get('files')} enc={info.get('encrypted')} "
+            f"hx={info.get('hx_resolved')}",
+            flush=True,
+        )
 
     summary = INDEXES / "summary.json"
     summary.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
